@@ -1,0 +1,79 @@
+input:focus { outline: none !important;}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 6%;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  }
+  .homemodalhead{
+    border: none;
+    background-color: lightblue;
+  }
+  .homemodalinput {
+    text-decoration: none;
+    border: 1px solid lightblue;
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 250px;
+  }
+  .homemodalAgree{
+    margin-left: 2%;
+    font-weight: 200;
+    font-size: 11px;
+    color: #545151f2;
+  }
+ .homemodalbody{ box-shadow: 5px 10px 8px 10px #888888;}
+.homemodalclosebtn{
+  color: lightblue;
+  margin-left: 94%;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 1%;
+}
+.homemain-modalimg {height: 270px;}
+
+  .homepagese2cont{
+    margin: 3%  0px;
+    background-image: linear-gradient(to left, rgb(43, 50, 53) 0%, rgb(48, 166, 233) 100%); 
+  }
+.homesec3img{
+    margin-top: 10%;
+    animation: MoveUpDown 1s linear infinite;
+    position: absolute;
+  }
+  .homesec3brandimg{
+    margin-left: -200px;
+    margin-top: 10%;
+    animation: MoveUpDown 1s linear infinite;
+    position: absolute;
+  }
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 10px;
+    }
+  }
+  
+  @keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+  }
+
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+}
+.prov-methodmagnam{
+    font-size: 15px;
+    color: black;
+  }
+/* Main Modal responsive */
+@media only screen and (min-width: 320px)and (max-width: 575px){
+  .homemain-modalimg {height: 270px;
+  width: 800px;}
+}

@@ -1,0 +1,141 @@
+.team .member {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #fff;
+  }
+  .rolandimg{
+      width: 60%;
+      border-radius: 10px;
+      margin: 10% 0px;
+      box-shadow: 0 4px 8px 0 #30a6e9, 0 6px 20px 0 #30a6e9;
+  }
+  .rolandname{margin-top: 10%;}
+  .rolandiconcol i{
+      color:#30a6e9 ;
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #30a6e9;
+    padding: 0.5em 0.6em;
+  }
+  .rolandiconcol i:hover{
+      background-color: #30a6e9;
+      color:white;
+  }
+  .team .member .member-img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .team .member .social {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+  }
+  
+  .team .member .social a {
+    transition: color 0.3s;
+    color: #111111;
+    margin: 0 3px;
+    padding-top: 7px;
+    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+    background: #30a6e9;
+    display: inline-block;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+  }
+  
+  .team .member .social a:hover { background: #111111;}
+  
+  .team .member .social i {font-size: 18px;}
+  
+  .team .member .member-info {
+    padding: 25px 15px;
+  }
+  .team .member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #111111;
+  }
+  .team .member .member-info span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #30a6e9;
+  }
+  .team .member .member-info p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #777777;
+  }
+.team .member:hover .social {
+    opacity: 1;
+    bottom: 15px;
+  }
+.btn03 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.btn03 img {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.btn03 .ovrly {
+    background: rgba(118, 206, 233, 0.35);
+    height: 100%;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btn03 .buttons {
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: translate(-50%, 50%);
+    -moz-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    -o-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+}
+.btn03 .buttons .fa {
+    margin: 0 1px;
+    background: rgb(256, 256, 256);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: rgba(50, 50, 50, 0.9);
+    display: inline-block;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+}
+.btn03:hover .buttons { bottom: 50%;}
+.btn03:hover .ovrly { top: 0;}

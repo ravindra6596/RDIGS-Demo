@@ -1,0 +1,30 @@
+.carbox{
+    width: 300px;
+    height: 200px;  
+    border: 1px solid #30a6e9;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 8px 1px #30a6e9;
+    border-radius: 5px;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+.carboximg{
+    width: 35%;
+    position:absolute;
+    top: -85px;
+    left: 90px;
+    z-index: 2;
+}
+.carboximg:hover{
+    transform: scale(1.1);
+}
+.carbox h4{
+    margin-top: 20%;
+    color: #30a6e9;
+}
+.carbox p{
+    padding: 3%;
+    font-size: 15px;
+    font-weight: 600;
+}

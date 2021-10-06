@@ -1,0 +1,213 @@
+import React, { useState,useRef } from 'react';
+import {Link} from 'react-router-dom';
+import Button from '../ButtonGroup/Button/button';
+import ind from '../../img/india.jpg';
+import us from '../../img/US.jpg';
+import footenvolep from '../../img/Call-Icon.jpg';
+import './Footer.css';
+import Recaptcha from 'react-google-invisible-recaptcha';
+import {Modal, ModalBody} from 'reactstrap';
+import corporatedeskimg from '../../img/corpomodalimg.png'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
+const Footer = () => {
+// variable for copy right get system date function
+    const getCurrentYear = () => {
+        return new Date().getFullYear();
+      };
+// function for corporate disk
+      const toggle = () => setModal(!modal);
+      const [modal, setModal] = useState(false);
+      const recaptchaRef = React.createRef();
+      let recaptcha = useRef(null);
+  
+      const onResolveddata = () => {
+          console.log("a" + recaptcha.current.getResponse());
+      }
+
+// footer scrollup icons show state
+const [showScrollup, setShowScroll] = useState(false)
+
+const checkingScrollTop = () => {
+  if (!showScrollup && window.pageYOffset > 400) {
+    setShowScroll(true)
+  } else if (showScrollup && window.pageYOffset <= 400) {
+    setShowScroll(false)
+  }
+};
+const scrollgoTop = () => {
+  window.scrollTo({ top:0, behavior: 'smooth' });
+};
+window.addEventListener('scroll', checkingScrollTop)
+
+
+    return (
+        <>
+        <div>
+            <button  className="back-to-top "  onClick={scrollgoTop}
+            style={{visibility: showScrollup ? 'visible' : 'hidden' }} >
+           <i class="fa fa-angle-double-up"></i></button>
+        </div>
+
+        <section className="media-kit">
+            <div className="container mediakit-cont">
+            <div className="row">
+                    <div className="col-sm-8 col-lg-8 col-md-8 text-light">
+                        <div className="mediakitdiv">
+                        <h1 className="mediakithead data-shadow='dang!'">CORPORATE DECK 2021</h1>
+                        </div>
+                        <div className="mediakit-para slide-right">
+                           <p className="mediakit-para" data-aos="flip-left">By focusing on top of the funnel,we arm your sales and marketing team with larger audience of potential leads to keep you ahead in the game.</p>
+                        </div>
+                    </div>
+                    <div className="col-sm-4 col-lg-4 col-md-4 cop-btn" style={{ paddingTop: '5%' }}>
+                        <div className="downbtncop">
+                    <Button text="DOWNLOAD NOW" fun={()=>setModal(true)} className="btn btn-primary glow-on-hover"/>
+                    </div>
+                    </div>
+                    <div className="Modal-animation">
+                         <Modal isOpen={modal} toggle={toggle} className="model-corporatedeck-style">
+                                <ModalBody>
+                                <span  className="homemodalclosebtn"  onClick={() => setModal(false)} ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                                            <div className="container"> 
+                                                <div className="row">
+                                                    <div className="col-sm-6 col-md-6 col-lg-6">
+                                                        <img src={corporatedeskimg} alt="corporate-dec-img" className="corporate-img img-fluid"></img>
+                                                    </div>
+                                                    <div className="col-sm-6 col-md-6 col-lg-6">
+                                                        <h2 className="text-center model-head-cop">Corporate Deck 2021</h2>
+                                                            <form onSubmit={onResolveddata}>
+                                                              <div className="corporate-form-in1">
+                                                                <input type="text" className="form-corporateDeck-fname" id="Fname" placeholder="First Name" 
+                                                                />
+                                                                <i className="fa fa-user"></i>
+                                                                </div>
+                                                                <div className="corporate-form-in2">
+                                                                <input type="text" className="form-corporateDeck-lname" id="Lname" placeholder="Last Name" 
+                                                                />
+                                                                <i className="fa fa-user"></i>
+                                                                </div>
+                                                                <div className="corporate-form-in3">
+                                                                <input type="number" className="form-corporateDeck-number" id="Pnumber" placeholder="Phone Number"
+                                                                 maxLength="10"/>
+                                                                <i className="fa fa-phone"></i>
+                                                                </div>
+                                                                <div className="corporate-form-in4">
+                                                                <input type="text" className="form-corporateDeck-email" id="Email" placeholder="Your Email"/>
+                                                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                                                </div>
+                                                                <div className="corporate-form-in5">
+                                                                <input type="text" className="form-corporateDeck-company" id="Company" placeholder="Company Name"/>
+                                                                <i className="fa fa-address-book" aria-hidden="true"></i>
+                                                                </div>
+                                                                <Link to ="#" className="corporate-submit">
+                                                                    <div class="buttons" style={{marginTop:'10px'}}>
+                                                                     <Button text="Submit" className="btn btn-primary glow-on-hover"></Button>
+                                                                    </div>
+                                                                </Link>
+                                                                <Recaptcha
+                                                                    badge="bottomleft"
+                                                                    ref={recaptcha}
+                                                                    onChange={onResolveddata}
+                                                                    onExpired={() => {
+                                                                        recaptcha.current.reset();
+                                                                    }}
+                                                                    sitekey="6Lf2AmsbAAAAAFdfecORFmrsAYstfD4DD4CTyHxE"
+                                                                />
+                                                            </form>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                    
+                                </ModalBody>
+                        </Modal>
+                    </div>               
+                </div>
+            </div>
+        </section>
+        <section className="footer-cont">
+            <div className="container">
+                <div className="row footer-row" >
+                <div className="col-lg-3 col-md-6 col-sm-6 col-xs-6 footrescol">
+                        <div className="footersec-RDInfo">
+                            <h5 className="footer-tit text-light">RD INFO GLOBAL SOLUTIONS</h5>
+                            <p><a href="#" className="underline"></a></p>
+                            <div className="sep"></div>
+                            <h6 className="text-footer-info text-light">RDIGS was founded in 2013 formerly known as RD info Solutions.
+                                Bootstrapped serving clients for B2C Lead Generation campaigns.It was not too late when we identified the need of lead generation activities for B2B Marketers.
+                            </h6>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6  col-sm-6 col-xs-6 footrescol" style={{textAlign:'justify'}}>
+                        <h5 className="text-light contactus-footer">CONTACT US</h5>
+                        <i className="fa fa-map-marker footaddmapicon"> </i> 
+                        <span className="footaddvascon">
+                         402, Vascon Garnets Bay,Besides Hotel Four Points By Sheraton, Viman Nagar, Pune-411014.
+                        </span>
+                        <div className="footresdiv" style={{marginTop:'5px'}}> 
+                            <img className="footemailimg" src={footenvolep} alt="No" />
+                            <span className="Email-info" style={{color:'white'}}> sales@rdigs.com </span>
+                        </div>
+                        <div className="footresdivhr" style={{marginTop:'5px'}}> 
+                        <img className="footemailimg" src={footenvolep} alt="No" />  
+                        <span className="Email-info" style={{color:'white'}}> hr@rdigs.com  </span>
+                        </div>
+                        <div className="footresdiv" style={{marginTop:'5px'}}> 
+                        <span className="ind">
+                            <img className="text-light img-us" src={ind} alt="No" />
+                            <span className="Email-info" style={{color:'white'}}> +91 848-404-0734  </span>
+                        </span>
+                        </div>
+                        <div className="footresdiv" style={{marginTop:'5px'}}> 
+                        <span className="us">
+                            <img className="text-light img-ind" src={us} alt="No" />
+                            <span className="Email-info" style={{color:'white'}}> +1 302-261-5312</span>
+                        </span>
+                        </div>
+                    </div>
+                  
+                    <div className="col-lg-3 col-md-6  col-sm-6 col-xs-6 footer-links footrescol">
+                        <h5 className="ourservices text-light">OUR SERVICES</h5>
+                        <ul className="text-light services">
+                            <li> <a className="services-webdevlopment" href="#">Demand Generation</a></li>
+                            <li><a className="services-webdevlopment" href="#">Lead generation</a></li>
+                            <li> <a className="services-webdevlopment" href="#">Product Management</a></li>  
+                            <li><a className="services-webdevlopment" href="#">Privacy Policy</a></li>   
+                            <li> <a className="services-webdevlopment" href="#">Terms And Conditions</a></li>   
+                            <li><a className="services-webdevlopment" href="#">Unsubscribe</a></li>                             
+                        </ul>
+                    </div>
+                    <div className="col-lg-3 col-md-6  col-sm-6 col-xs-6 text-light footer-newsletter footrescol">
+                        <h5 style={{fontSize:'18px'}}>JOIN OUR NEWSLATTER</h5>
+                        <p>Subscribe to our newsletter to get latest updates.</p>
+                        <div className="footsubscridiv">
+                            <input  className="footsubinput" placeholder="Enter Your Email.." />
+                            <span>Subscribe</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <section className="copyright-section">
+            <div className="container">
+                <div className="row d-flex justify-space-between">
+                    <div className="col-lg-6 col-md-6 col-sm-6 me-md-auto text-center text-md-start footrescol">
+                        <div id="copyright" className="clr copyright-center" role="contentinfo">
+                            Copyright © <span>{getCurrentYear()}</span> <a href="https://rdigs.com/" target="_blank" className="footerlinkhover">RDIGS Info Global Solution</a>
+                        </div>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-6">
+                        <div  className="copydesign" >
+                           Designed by <a href="http://lead-tronics.com/" target="_blank" className="footerlinkhover">Lead-Tronics</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </section>
+    </>
+    )
+}
+export default Footer;

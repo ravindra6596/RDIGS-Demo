@@ -1,0 +1,83 @@
+.contactfirst-sec{
+    background-image: url("../../img/Contact-Us.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 70px 0px 64px 0px;
+}
+.contgetin{
+    text-align: left;
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight: 600;
+    margin: 3% 4%;
+    color: #000000; 
+}
+.contacthead{
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight: 600;
+    margin: 1% 8%;
+}
+.conradiodiv{
+    display: flex;
+}
+.conwhattxt{
+    color: black;
+    margin-right: 41%;
+    font-weight: 600;
+}
+.form-controlall{
+    margin:2% 4%;
+    width: 85%;
+        display: block;
+        height: calc(1.5em + .75rem + 2px);
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.conradiofirst{margin-left: 22%;}
+.btngetintouch{margin-right: 15%;}
+.consubtxt{font-size: 20px;}
+.conaddmaker{
+    font-size: 25px;
+    color: #30a6e9;
+    margin-right: 2%;
+}
+.conformcleardiv{ margin-left: 19%;}
+.conUSAoffice{margin-right: 55%;}
+.conaddphone{ margin-right: 15%;}
+.usaconaddphone{ margin-right: 60%;}
+.contactuscols i.fa {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #30a6e9;
+    padding: 0.5em 0.6em;
+}
+.flagimg{
+    width: 30px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+/* Media queries for contact */
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .conwhattxt { margin-right: 0%}
+       
+}
+@media only screen and (min-width: 425px) and (max-width: 575px) {
+    .conwhattxt {margin-right: 25%;}
+}
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+    .conwhattxt {  margin-right: 51%;}
+}
+
+  

@@ -1,0 +1,27 @@
+.CompanyProfile-section{
+    background-color: white;
+}
+.row-companyprofile{
+    margin-bottom: 30px;   
+}
+.why-chooseus{color: #2196f3;}
+.rounded-company-icon{
+    border-radius: 50%;
+    background-color: #30a6e9;;
+    width: 40%;
+    height: 30%;
+    margin-top: 50px;
+}
+.rounded-company-icon i{
+    margin-top: 30px;
+    font-size: 50px;
+    color:white;
+}
+.CompanyProfile-para1{
+    text-align: left;
+    font-size: 20px;
+}
+.CompanyProfile-icon-heading{
+    text-align: left;
+    padding:20px;
+}

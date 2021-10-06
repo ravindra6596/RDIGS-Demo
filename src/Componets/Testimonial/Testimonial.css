@@ -1,0 +1,183 @@
+.testimonil-img{
+    background-image:url('../../img/testimonial/testimonialbg.png') ;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.testuser-img{
+    width: 68px;
+    height: 65px;
+    border-radius: 50%;
+}
+.testproinfodiv{line-height: 5px;}
+.testproname{
+    font-size: 20px;
+    font-weight: 500;}
+.testprodesi{font-size: 12px;}
+.testimonialkinds{
+    font-size: 50px;
+}
+.testimonial-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,2);
+    padding:20px;
+    background-color: white;
+    margin: 50px 0px 20px 20px;
+    border-radius: 5px;
+    height: 220px;
+}
+.testimonial-card:hover{
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.item {
+    position: relative;
+    border-radius: 8px;
+}
+.testcardtxt {
+    font-size: 14px;
+    color: grey;
+    text-align: initial;
+}
+
+.item-i {
+    background-color: #95adbe;
+    color: white;
+    border-radius:50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -45px;
+}
+.testimonial-heading{
+    color: #30a6e9;
+    margin: 10px 5px;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: #30a6e9;
+}
+.testimonial-heading span{
+    color:#30a6e9;
+}
+.card-top{
+   margin-top: -200px;
+}
+.card-leftright{
+    margin-bottom: 50px;
+}
+ .text{
+    width:250px;
+    height:250px;    
+}
+.newtestislider{
+    margin: 0px 12%;
+    position: relative;}
+@media only screen and (min-width: 320px) and (max-width: 370px) {
+    .newtestislider{margin: 0px -5px;}
+    .testimonial-card{margin-left: 16px;}
+}
+/* css for Slick height */
+@media only screen and (min-width: 320px) and (max-width: 329px) {
+.slick-track{height: 150px;}
+}
+@media only screen and (min-width: 371px) and (max-width: 385px) {
+    .slick-track{height: 150px;}
+    }
+@media only screen and (min-width: 421px) and (max-width: 439px) {
+        .slick-track{height: 150px;}
+        }
+@media only screen and (min-width: 471px) and (max-width: 500px) {
+            .slick-track{height: 150px;}
+ }
+ @media only screen and (min-width: 500px) and (max-width: 513px) {
+    .slick-track{height: 150px;}
+}
+@media only screen and (min-width: 551px) and (max-width: 565px) {
+    .slick-track{height: 150px;}
+}
+@media only screen and (min-width: 601px) and (max-width: 630px) {
+    .slick-track{height: 150px;}
+}
+
+@media only screen and (min-width: 371px) and (max-width: 420px) {
+    .newtestislider{margin: 0px 23px;}
+}
+@media only screen and (min-width: 421px) and (max-width: 470px) {
+    .newtestislider{margin: 0px 50px;}
+}
+@media only screen and (min-width: 471px) and (max-width: 550px) {
+    .newtestislider{margin: 0px 87px;}
+}
+@media only screen and (min-width: 551px) and (max-width: 600px) {
+    .newtestislider{margin: 0px 113px;}
+}
+@media only screen and (min-width: 601px) and (max-width: 650px) {
+    .newtestislider{margin: 0px 142px;}
+}
+@media only screen and (min-width: 651px) and (max-width: 700px) {
+    .newtestislider {margin: 0px -3%}
+}
+@media only screen and (min-width: 701px) and (max-width: 768px) {
+    .newtestislider {margin: 0px 4%}
+}
+@media only screen and (min-width: 769px) and (max-width: 850px) {
+    .newtestislider {margin: 0px 8%}
+}
+@media only screen and (min-width: 851px) and (max-width: 900px) {
+    .newtestislider {margin: 0px 11%}
+}
+@media only screen and (min-width: 901px) and (max-width: 965px) {
+    .newtestislider {margin: 0px 13%}
+}
+@media only screen and (min-width: 966px) and (max-width: 1024px) {
+    .newtestislider {margin: 0px 15%}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1052px) {
+    .newtestislider { margin: 0px 0%;}
+}
+@media only screen and (min-width: 1053px) and (max-width: 1100px) {
+    .newtestislider { margin: 0px 2%;}
+}
+@media only screen and (min-width: 1101px) and (max-width: 1150px) {
+    .newtestislider { margin: 0px 5%;}
+}
+@media only screen and (min-width: 1151px) and (max-width: 1200px) {
+    .newtestislider { margin: 0px 6%;}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1260px) {
+    .newtestislider { margin: 0px 8%;}
+}
+@media only screen and (min-width: 1260px) and (max-width: 1300px) {
+    .newtestislider { margin: 0px 10%;}
+} 
+@media only screen and (min-width: 1400px) and (max-width: 1470px) {
+    .newtestislider { margin: 0px 14%;}
+} 
+@media only screen and (min-width: 1471px) and (max-width: 1500px) {
+    .newtestislider { margin: 0px 15%;}
+} 
+@media only screen and (min-width: 1501px) and (max-width: 1550px) {
+    .newtestislider { margin: 0px 17%;}
+} 
+@media only screen and (min-width: 1551px) and (max-width: 1600px) {
+    .newtestislider { margin: 0px 17%;}
+}
+@media only screen and (min-width: 1601px) and (max-width: 1700px) {
+    .newtestislider { margin: 0px 19%;}
+}
+@media only screen and (min-width: 1701px) and (max-width: 1750px) {
+    .newtestislider { margin: 0px 20%;}
+}
+@media only screen and (min-width: 1751px) and (max-width: 1800px) {
+    .newtestislider { margin: 0px 21%;}
+}
+@media only screen and (min-width: 1801px) and (max-width: 1850px) {
+    .newtestislider { margin: 0px 22%;}
+}
+@media only screen and (min-width: 1851px) and (max-width: 1920px) {
+    .newtestislider { margin: 0px 23%;}
+}

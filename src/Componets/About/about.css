@@ -1,0 +1,30 @@
+.aboutsecimg{margin: 5%;}
+.aboutpara{
+    font-size: 20px;
+    text-align: left;
+}
+.aboutsec1{
+    background-image: url('../../img/About-usbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (min-width: 320px) and (max-width: 574px) {
+    .aboutsecimg {height: 200px!important;}
+    .aboutpara {font-size: 15px;}
+}
+@media only screen and (min-width: 575px) and (max-width: 768px) {
+    .aboutsecimg {height: 200px!important;    
+        margin-top: 20%;}
+    .aboutpara { font-size: 13px;}
+    .aboutsecbackimg{height: 525px;}      
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .aboutsecbackimg {
+        height: 301px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    .aboutpara {
+        font-size: 16px;
+        margin: 5%;}
+    .aboutsecbackimg {height: 300px;}
+}

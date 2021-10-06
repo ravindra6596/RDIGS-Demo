@@ -1,0 +1,68 @@
+.services-head{
+  padding:30px;
+  color: #30a6e9;
+  text-underline-offset: var(--offset, 0.2em);
+  text-decoration: underline 0.15em;
+  transition: --offset 400ms, text-decoration-color 400ms;
+}
+.services-head:hover,
+.services-head:focus {
+  --offset: 0.4em;
+  text-decoration-color: #30a6e9;
+    text-underline-offset: 0.4em;
+}
+@supports not (background: paint(something)) {
+  .services-head {
+    transition: text-underline-offset 400ms, text-decoration-color 400ms;
+  }
+}
+.service-para{font-size: 20px;}
+#services{background-color: lightblue;}
+.flip-card {
+    background-color: lightblue;
+    width: 100%;
+    height: 200px;
+    perspective: 1000px;
+ 
+  }
+  .flip-card-inner {
+    bottom: 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+.flip-card-front {color: black;}
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+.servic-img{
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+.flip-card-back {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out; 
+}
+.flip-card-back:hover{
+	opacity: .5;
+  background: rgb(0, 183, 255);
+  box-shadow: 5px 5px 5px 5px #30a6e9;
+}

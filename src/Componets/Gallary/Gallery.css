@@ -1,0 +1,97 @@
+.Gallery-section {
+    position: relative;
+    background-color: white;
+    overflow: hidden;  
+}
+.gallary-img{
+    cursor: pointer;
+    margin:30px;
+    width:450px;
+    height:300px;
+}
+.gallary-img:hover{
+    cursor: pointer;
+    animation-name: bounce;
+    animation-timing-function: ease;
+  }
+  @keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+  }
+  .bdt-gallery-thumbnail img{
+	transform: scale(1.1);
+	transition: .3s ease-in-out;
+  }
+  .bdt-gallery-thumbnail:hover img { 
+	transform: scale(1);
+}
+/* heading */
+.heading-gallary{  color:#30a6e9;}
+
+.modelhead1 i:hover{border-radius: 50%;   }
+.modal-div{ top:20px;}
+.image-gallary-popup img{
+  width: 100%;
+  height: 100%;
+}
+
+.bdt-advanced-image-gallery .bdt-gallery-item .bdt-gallery-thumbnail {
+    overflow: hidden;
+}
+.bdt-advanced-image-gallery .bdt-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+}
+.bdt-transition-fade, [class*='bdt-transition-scale'], [class*='bdt-transition-slide'], .bdt-transition-stroke {
+    transition: .3s ease-out;
+    transition-property: opacity,transform,filter,stroke-dashoffset;
+    opacity: 0;
+}
+.bdt-position-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.bdt-overlay-default {background: rgba(255,255,255,0.8);}
+.bdt-overlay {
+    padding: 30px 30px;
+}
+.bdt-overlay>:last-child {
+    margin-bottom: 0;
+}
+.bdt-flex-inline {
+    display: inline-flex;
+}
+.bdt-advanced-image-gallery.bdt-skin-default .bdt-gallery-item-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    color: #333;
+}
+.bdt-advanced-image-gallery.bdt-skin-default .bdt-gallery-item-link.icon-type-icon .bdt-icon {
+    transition: transform .3s cubic-bezier(0, .36, .38, 1.01);
+}
+.bdt-icon {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    padding: 0;
+    background-color: transparent;
+    display: inline-block;
+    fill: currentcolor;
+    line-height: 0;
+}
+.bdt-icon>* {
+    transform: translate(0, 0);
+}
