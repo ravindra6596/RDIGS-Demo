@@ -11,6 +11,41 @@ import service6 from '../../img/services/service6.jpg';
 import service7 from '../../img/services/service7.jpg';
 import service8 from '../../img/services/service8.jpg';
 const DemandGeneration=()=>{
+    const data=[
+        {
+            servicename:"Cash Management",
+            serviceimg:service1,
+        },
+        {
+            servicename:"Payments",
+            serviceimg:service2,
+        },
+        {
+            servicename:"M &amp; A Assistance",
+            serviceimg:service3,
+        },
+        {
+            servicename:"Local Expertise",
+            serviceimg:service4,
+        },
+        {
+            servicename:"Video &amp; Photo Production",
+            serviceimg:service5,
+        },
+        {
+            servicename:"Graphic designed",
+            serviceimg:service6,
+        },
+        {
+            servicename:"Strategy",
+            serviceimg:service7,
+        },
+        {
+            servicename:"Branding",
+            serviceimg:service8,
+        }
+       
+    ];
     return(
         <>
       <div className="nav-contaniner"/>
@@ -66,45 +101,20 @@ const DemandGeneration=()=>{
           <h3 className="heading-services" data-aos="fade-down">Services</h3>
           <p><span class="text-width-1" data-aos="fade-down">As the most qualified accounting services provider, we offer an amazing variety of financial solutions designed to help you solve all bookkeeping issues, no matter big or small.</span></p>
           <div class="row row-50 row-xxl-70 offset-top-2 services-row">
-            <div class="col-sm-6 col-lg-3">
-                    <img class="thumbnail-light-image" src={service1} alt="" />
-                    <h5 class="thumbnail-light-title" data-aos="fade-left">Cash Management</h5>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                    <img class="thumbnail-light-image" src={service2} alt="" />
-                    <h5 class="thumbnail-light-title"data-aos="fade-left">Payments</h5>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                    <img class="thumbnail-light-image" src={service3} alt="" />
-                    <h5 class="thumbnail-light-title" data-aos="fade-left">M &amp; A Assistance</h5>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                    <img class="thumbnail-light-image" src={service4} alt="" />
-                    <h5 class="thumbnail-light-title" data-aos="fade-left">Local Expertise</h5>
-            </div>
-        <div class="row row-50 row-xxl-70 offset-top-2 services-row">
-                <div class="col-sm-6 col-lg-3">
-                        <img class="thumbnail-light-image" src={service5} alt="" />
-                        <h5 class="thumbnail-light-title"data-aos="fade-left">Video &amp; Photo Production</h5> 
-                </div>
-                <div class="col-sm-6 col-lg-3">  
-                        <img class="thumbnail-light-image" src={service6} alt=""/>
-                        <h5 class="thumbnail-light-title" data-aos="fade-left">Graphic designed</h5>
-                
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                        <img class="thumbnail-light-image" src={service7} alt=""/>
-                        <h5 class="thumbnail-light-title" data-aos="fade-left">Strategy</h5>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                        <img class="thumbnail-light-image" src={service8} alt=""/>
-                        <h5 class="thumbnail-light-title" data-aos="fade-left">Branding</h5>
-                </div>
-            </div>
-            <div class="row row-50 row-xxl-70 offset-top-2 services-row">
-            </div>
-          </div>
-        </div>
+                    {
+                        data.map((user,index)=>{
+                            return(
+                                <div class="col-sm-6 col-lg-3">
+                                    <div className="serviceLead">
+                                      <img class="thumbnail-light-image" src={user.serviceimg} alt="" />
+                                    </div>
+                                <h5 class="thumbnail-light-title" data-aos="fade-left">{user.servicename}</h5>
+                            </div>
+                            )
+                        })
+                    }
+                </div>  
+         </div>
       </section>
         </>
     )
