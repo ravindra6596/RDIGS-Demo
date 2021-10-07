@@ -64,13 +64,13 @@ window.addEventListener('scroll', checkingScrollTop)
                     </div>
                     <div className="col-sm-4 col-lg-4 col-md-4 cop-btn" style={{ paddingTop: '5%' }}>
                         <div className="downbtncop">
-                    <Button text="DOWNLOAD NOW" fun={()=>setModal(true)} className="btn btn-primary glow-on-hover"/>
+                    <Button text="DOWNLOAD NOW" fun={()=>setModal(true)} classNames="allbtn-primary glow-on-hover text-light"/>
                     </div>
                     </div>
                     <div className="Modal-animation">
                          <Modal isOpen={modal} toggle={toggle} className="model-corporatedeck-style">
                                 <ModalBody>
-                                <span  className="homemodalclosebtn"  onClick={() => setModal(false)} ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                                  <span  className="homemodalclosebtn"  onClick={() => setModal(false)} ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
                                             <div className="container"> 
                                                 <div className="row">
                                                     <div className="col-sm-6 col-md-6 col-lg-6">
@@ -104,7 +104,7 @@ window.addEventListener('scroll', checkingScrollTop)
                                                                 </div>
                                                                 <Link to ="#" className="corporate-submit">
                                                                     <div class="buttons" style={{marginTop:'10px'}}>
-                                                                     <Button text="Submit" className="btn btn-primary glow-on-hover"></Button>
+                                                                     <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
                                                                     </div>
                                                                 </Link>
                                                                 <Recaptcha

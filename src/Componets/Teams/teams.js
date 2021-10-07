@@ -11,23 +11,27 @@ const teams =()=>{
     const data = [
         { 
             teamimg:team1,
-            teamName:"Emma White", 
-            teamdesi: "Web Developer",
+            teamalt:"Ajay Rawat",
+            teamName:"Ajay Rawat", 
+            teamdesi: "Chief Operating Officer",
         },
         { 
             teamimg:team2,
-            teamName:"Glen Elee", 
-            teamdesi: "IOS Developer",
+            teamalt:"Rachel ",
+            teamName:"Rachel Mendis", 
+            teamdesi: "HR",
         },
         { 
             teamimg:team3,
-            teamName:"Emmee Whann", 
-            teamdesi: "Fluter Developer",
+            teamalt:"Gurdeep",
+            teamName:"Gurdeep Singh", 
+            teamdesi: "Sales Manager",
         },
         { 
             teamimg:team4,
-            teamName:"Whann Shubban", 
-            teamdesi: "Graphics Developer",
+            teamalt:"Swapnil patil",
+            teamName:"Swapnil Patil", 
+            teamdesi: "Sr Software Developer",
         },
       ];
     return(
@@ -65,7 +69,7 @@ const teams =()=>{
                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="100">
                       <div class="member-img">
-                          <img src={data.teamimg} class="img-fluid" alt=""/>
+                          <img src={data.teamimg} class="img-fluid" alt={data.teamalt}/>
                       </div>
                         <div class="member-info">
                             <h4>{data.teamName}</h4>

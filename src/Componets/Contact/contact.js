@@ -3,8 +3,6 @@ import './contact.css';
 import indiaflag from "../../img/india.jpg";
 import unitedflag from "../../img/US.jpg";
 import Button from "../ButtonGroup/Button/button";
-import Buttonclear from "../ButtonGroup/ButtonClear/buttonclear";
-
 
 const contact =()=>{
     return(
@@ -54,8 +52,8 @@ const contact =()=>{
 
 
                             <div className="row" style={{padding:'4%'}}>
-                                <div className="col conformcleardiv"> <Buttonclear text="Clear"/></div>
-                                <div className="col btngetintouch"><Button text="GET IN TOUCH" /></div>
+                                <div className="col conformcleardiv"> <Button classNames="btnclear" text="Clear"/></div>
+                                <div className="col btngetintouch"><Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" /></div>
                             </div>
                         </form>
                     </div>

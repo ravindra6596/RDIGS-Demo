@@ -1,28 +1,28 @@
-.btn-primary {
+.allbtn-primary {
     color: #fff;
     background-color:  #30a6e9;
     border-radius: 20px;
-    border-color:#30a6e9 ;
     font-weight: 500;
-
 }
-.btn-primary:hover{
+.allbtn-primary:hover{
     opacity: 1;
     background-color: #6cbeee;
     border-color: #0062cc;
 }
-.btn-primary:focus {
+.allbtn-primary:focus {
+    outline: none;
     color: #fff;
-    background-color: #6cbeee;;
+    background-color: #6cbeee;
     border-color: #0062cc;}
 
 /* / button animation / */
     .glow-on-hover {
-        width:170px;
-        height:40px;
+        width:180px; 
+         height:40px; 
         position: relative;
         z-index: 0;
         border-radius: 20px;
+        border: 1px solid #30a6e9;
     }
     
     .glow-on-hover:before {
@@ -78,3 +78,14 @@
         50% { background-position: 400% 0; }
         100% { background-position: 0 0; }
     }
+    /* Button clear css */
+    .btnclear{
+        width: 130px;
+        height: 40px;
+        color:#30a6e9 ;
+        background-color: transparent;
+        border-color: #30a6e9;
+        margin-right: 20%;
+        border-radius: 20px;
+    }
+    .btnclear:focus{outline: none;}

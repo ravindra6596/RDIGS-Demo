@@ -7,8 +7,5 @@
     transition: 0s 0.5s, background-size 0.5s; */
   }
   .aboutwherewe:hover {
-    /* margin: 0%;
-    --d: 100%;
-    background-position: 0% calc(100% - 3px), 100% calc(100% - 3px);
-    transition: 0.3s, background-position 0.3s 0.3s; */
+    color:black;
   }

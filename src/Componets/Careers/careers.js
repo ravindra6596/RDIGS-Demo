@@ -4,24 +4,49 @@ import CareerAccordian from "../Careers/CareerAccordian/careeraccordian";
 import career1 from "../../img/career/career-1.png";
 import career2 from "../../img/career/career-2.png";
 import career3 from "../../img/career/career-3.png";
+import career4 from "../../img/career/career-4.png";
+import career5 from "../../img/career/career-5.png";
+import career6 from "../../img/career/career-6.png";
+
 
 const careers =()=>{
 
      const data = [
         { 
             carimg:career1, 
+            caralt:"Diverse img",
             heading: "Diversified Work Culture",
             para:"We are all equals and respect individuality. We don't believe in hierarchy"
         },
         { 
             carimg:career2,
-            heading: "Victor Wayne",
-            para:"My Lorem ipsummmmmmmmmmm"
+            caralt:"Team Hardwork img",
+            heading: "Team of Hardworking Individuals",
+            para:"Good team-work comes from well-synced and hardworking team members"
         },
         { 
             carimg:career3,
-            heading: "Jane Doe",
-            para:"lorem ipsum"
+            caralt:"career img",
+            heading: "Career Growth",
+            para:"Develop your talent and expand your skills"
+        },
+        { 
+            carimg:career4,
+            caralt:"Learning img",
+            heading: "Learning Opportunity",
+            para:"Our training sessions are continuous, thus giving you a greater boost that is needed"
+        },
+        { 
+            carimg:career5,
+            caralt:"Promotion img",
+            heading: "Promotion",
+            para:"Find lots of opportunities throughout the year"
+        },
+        { 
+            carimg:career6,
+            caralt:"Fun img",
+            heading: "Fun Fiesta",
+            para:"Enthusiasm #Zeal #Excitement #Surprise #Party #Food #Fest #Bollywood #Festivals"
         },
         
       ];
@@ -35,29 +60,17 @@ const careers =()=>{
                         <h1 style={{color:'#30a6e9'}}>Benefits of joining our Team</h1>
                     </div>
                 </div>
-                <div className="row" style={{marginTop:'10%'}} data-aos="fade-up" data-aos-delay="200">
+                <div className="row" style={{marginBottom:'5%'}} data-aos="fade-up" data-aos-delay="200">
                 {/* Using Map Function to access the data */}
                     {data.map((data) => ( 
-                        <div className="col-lg-4 col-md-4 col-sm-4"  >
+                        <div className="col-lg-4 col-md-4 col-sm-6 careercolm" data-aos="fade-up" data-aos-delay="200">
                             <div className="carbox" >
-                            <img src={data.carimg} className="carboximg"/>
+                            <img src={data.carimg} className="carboximg" alt={data.caralt}/>
                                 <h4 data-aos="fade-right" data-aos-delay="200">{data.heading}</h4>
                                 <p data-aos="fade-right" data-aos-delay="200">{data.para}</p>
                             </div>
                         </div>
                     ))}   
-                </div>
-
-                <div className="row" style={{marginTop:'10%',marginBottom:'5%'}} data-aos="fade-up" data-aos-delay="200">
-                    {data.map((data) => ( 
-                            <div className="col-lg-4 col-md-4 col-sm-4"  >
-                                <div className="carbox" >
-                                <img src={data.carimg} className="carboximg"/>
-                                    <h4 data-aos="fade-right" data-aos-delay="200">{data.heading}</h4>
-                                    <p data-aos="fade-right" data-aos-delay="200">{data.para}</p>
-                                </div>
-                            </div>
-                        ))}
                 </div>
             </div>
             </section>
