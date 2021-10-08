@@ -6,7 +6,7 @@ import { BrowserRouter, Route,Switch } from 'react-router-dom';
 import Header from './Componets/Header/header';
 import Footer from './Componets/Footer/Footer';
 
-AOS.init({
+AOS.init({ 
  duration: 1500
 });
 function App() {
