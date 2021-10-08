@@ -44,17 +44,14 @@ const Servicess =()=>{
         <section id="services" className="portfolio">
             <div className="container" data-aos="fade-up">
             <div className="section-title"> 
-                 <div className="d-flex justify-content-center text-center pt-4">
-                     <Heading title="Services"/>
-                     </div>
+                 <span> <Heading title="Services"/></span>
                 <p className="service-para">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
-            </div>
-            
-            <div className="row servicess-row" data-aos="fade-up" data-aos-delay="200">
+            </div> 
+               
+            <div className="row" data-aos="fade-up" data-aos-delay="200" >
             {               
                 data.map((user, index) => (
                 <div className="col-lg-4 col-md-4 col-sm-4"style={{marginTop:'3%'}}>
-                
                     <div className="flip-card">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">      

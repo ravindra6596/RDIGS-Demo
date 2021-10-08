@@ -70,7 +70,7 @@ window.addEventListener('scroll', checkingScrollTop)
                     <div className="Modal-animation">
                          <Modal isOpen={modal} toggle={toggle} className="model-corporatedeck-style">
                                 <ModalBody>
-                                <span  className="homemodalclosebtn"  onClick={() => setModal(false)} ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                                  <span  className="homemodalclosebtn"  onClick={() => setModal(false)} ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
                                             <div className="container"> 
                                                 <div className="row">
                                                     <div className="col-sm-6 col-md-6 col-lg-6">
@@ -105,6 +105,9 @@ window.addEventListener('scroll', checkingScrollTop)
                                                                 <Link to ="#" className="corporate-submit">
                                                                     <div class="buttons d-flex justify-content-center" style={{marginTop:'10px'}}>
                                                                      <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light "></Button>
+
+                                                                    <div class="buttons" style={{marginTop:'10px'}}>
+                                                                     <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
                                                                     </div>
                                                                 </Link>
                                                                 <Recaptcha
@@ -182,14 +185,18 @@ window.addEventListener('scroll', checkingScrollTop)
                     <div className="col-lg-3 col-md-6  col-sm-6 col-xs-6 text-light footer-newsletter footrescol">
                         <h5 style={{fontSize:'18px'}}>JOIN OUR NEWSLATTER</h5>
                         <p>Subscribe to our newsletter to get latest updates.</p>
-                        <div className="footsubscridiv">
+                        <div className="inputs">
+                            <input maxlength="60" className="webform__form-control" name="email" size="20" type="email" required="" placeholder="Enter Email Address"/>
+                            <input type="submit" name="submit" id="eesubmit" className="EWF__subscribe" value="SUBCRIBE"/>
+                        </div>
+                        {/* <div className="footsubscridiv">
                             <input  className="footsubinput" placeholder="Enter Your Email.." />
                             <span>Subscribe</span>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
-                
             </div>
+
             <section className="copyright-section">
             <div className="container">
                 <div className="row d-flex justify-space-between">

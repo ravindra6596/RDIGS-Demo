@@ -1,22 +1,36 @@
-.panel-default {
-    border-color: #ddd;
+.accordiansec{
+    background-color: #f8f9fa!important;
 }
-.panel {
-    margin-bottom: 20px;
+.carshadow{
+    box-shadow: 0px 15px 15px 0px rgb(8 18 109 / 10%) !important;
+    padding: 1% 0px;
+    margin: 1% 0;
     background-color: #fff;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
-    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    border-radius: .30rem!important;
+    text-align: justify;
+    
 }
-.panel-heading {
-    color: #fff;
-    background: linear-gradient(to left, #013c5d 0%, #379ad2 100%);
-    border-color: #ddd;
-    padding: 10px 15px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+.carshadow:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
-.panel-heading a{color: white;}
-.panel-heading a:hover{text-decoration: none;}
+.accordimg{
+    width: 100px;
+    border-radius: .25rem!important;
+    margin: 0px 5%;
+    padding: 1rem;
+}
+.oppheading{
+    color: #242f3e;
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 1.2;
+    transition: 0.2s ease;
+    padding: 2% 0px 0px;
+}
+.oppdetails{
+    font-weight: 400;
+    color: #8b8e93;
+    font-size: 15px;
+    line-height: 1.6;
+}

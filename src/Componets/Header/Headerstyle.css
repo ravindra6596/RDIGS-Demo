@@ -1,12 +1,9 @@
 /* Navbar css */
 .headlogo{
     width: 100% !important;
-    height: 70px !important;
-  }
+    height: 70px !important; }
 
-.mainnav{
-    height: auto;
-}
+.mainnav{height: auto;}
 
 .navbar-expand-lg .navbar-collapse {justify-content: end;}
 .navbar-light .navbar-nav .nav-link  {
