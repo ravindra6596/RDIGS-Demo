@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Heading from "../Heading/Heading";
 import './contact.css';
 import indiaflag from "../../img/india.jpg";
 import unitedflag from "../../img/US.jpg";
@@ -62,7 +63,7 @@ const contact = () => {
 
             <section>
                 <div className="container">
-                    <h2 className="contacthead" data-aos="fade-up" >Contact Us</h2>
+                     <Heading title="Contact Us" />
                     <p className="consubtxt">Get in Touch with us to embark on a path of success</p>
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6" style={{ textAlign: 'justify' }}>
