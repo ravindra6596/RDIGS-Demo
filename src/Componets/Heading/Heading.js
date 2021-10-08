@@ -1,10 +1,12 @@
 import React from "react";
-import './Heading.css';
-const Heading=(props)=>{
-return(
+import "./Heading.css";
+const Heading = (props) => {
+  return (
     <>
-     <h1 className="aboutwherewe" data-aos="fade-down">{props.title}</h1>
+      <h1 className="aboutwherewe" data-aos="fade-down">
+        {props.title}
+      </h1>
     </>
-)
-}
-export default React.memo(Heading) ;
+  );
+};
+export default React.memo(Heading);
