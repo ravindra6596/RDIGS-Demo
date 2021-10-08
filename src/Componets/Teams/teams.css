@@ -1,9 +1,3 @@
-.team .member {
-    margin-bottom: 20px;
-    overflow: hidden;
-    border-radius: 5px;
-    background: #fff;
-  }
   .rolandimg{
       width: 60%;
       border-radius: 10px;
@@ -22,120 +16,98 @@
       background-color: #30a6e9;
       color:white;
   }
-  .team .member .member-img {
+
+  #team {
+    padding: 60px 0;
+    text-align: center;
+    color: #145889;
+}
+#team h2 {
+    position: relative;
+    padding: 0px 0px 15px;
+}
+#team p {
+    font-size: 15px;
+    padding: 0px;
+    margin: 25px 0px 40px;
+}
+#team h2::after {
+    content: '';
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    width: 90px;
+    margin: 0 auto;
+    display: block;
+}
+#team .member {
+    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
-  }
-  
-  .team .member .social {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px 0px 15px 0px;
+}
+#team .member .member-info {
+    display: block;
     position: absolute;
-    left: 0;
-    bottom: 30px;
-    right: 0;
-    opacity: 0;
-    transition: ease-in-out 0.3s;
-    text-align: center;
-  }
-  
-  .team .member .social a {
-    transition: color 0.3s;
-    color: #111111;
-    margin: 0 3px;
-    padding-top: 7px;
-    border-radius: 50px;
-    width: 36px;
-    height: 36px;
-    background: #30a6e9;
-    display: inline-block;
-    transition: ease-in-out 0.3s;
-    color: #fff;
-  }
-  
-  .team .member .social a:hover { background: #111111;}
-  
-  .team .member .social i {font-size: 18px;}
-  
-  .team .member .member-info {
-    padding: 25px 15px;
-  }
-  .team .member .member-info h4 {
+    bottom: 0px;
+    left: -200px;
+    transition: 0.4s;
+    padding: 15px 0;
+    background: #30a6e947
+}
+#team .member:hover .member-info {
+    left: 0px;
+    right: 0px;
+}
+#team .member:hover{
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4);
+}
+#team .member h4 {
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     font-size: 18px;
-    color: #111111;
-  }
-  .team .member .member-info span {
+    color: #fff;
+}
+#team .member span {
+    font-style: italic;
     display: block;
     font-size: 13px;
-    font-weight: 400;
-    color: #30a6e9;
-  }
-  .team .member .member-info p {
-    font-size: 14px;
-    line-height: 26px;
-    color: #777777;
-  }
-.team .member:hover .social {
-    opacity: 1;
-    bottom: 15px;
-  }
-.btn03 {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    color: #0f74af;
+    font-weight: bold;
 }
-.btn03 img {
-    position: relative;
-    width: 100%;
-    top: 0;
-    left: 0;
+#team .member .social-links {
+    margin-top: 15px;
 }
-.btn03 .ovrly {
-    background: rgba(118, 206, 233, 0.35);
-    height: 100%;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    position: absolute;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+#team .member .social-links a {
+    transition: none;
+    color: #fff;
+   
 }
-.btn03 .buttons {
-    position: absolute;
-    bottom: -100%;
-    left: 50%;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    -webkit-transform: translate(-50%, 50%);
-    -moz-transform: translate(-50%, 50%);
-    -ms-transform: translate(-50%, 50%);
-    -o-transform: translate(-50%, 50%);
-    transform: translate(-50%, 50%);
+#team .member .social-links a :hover {
+    color:  #0f74af;
 }
-.btn03 .buttons .fa {
-    margin: 0 1px;
-    background: rgb(256, 256, 256);
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    color: rgba(50, 50, 50, 0.9);
-    display: inline-block;
-    line-height: 40px;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
+#team .member .social-links i {
+    font-size: 30px;
+    margin: 0 2px;
+    -webkit-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;  
+    padding: 3px;   
 }
-.btn03:hover .buttons { bottom: 50%;}
-.btn03:hover .ovrly { top: 0;}
+#team .member .social-links i:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}

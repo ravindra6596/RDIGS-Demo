@@ -6,12 +6,38 @@ import team3 from '../../img/team/team-3.jpg';
 import team4 from '../../img/team/team-4.jpg';
 import Rolandimg from '../../img/team/Roland-Dcosta.jpg';
 
-
 const teams =()=>{
+
+    const data = [
+        { 
+            teamimg:team1,
+            teamalt:"Ajay Rawat",
+            teamName:"Ajay Rawat", 
+            teamdesi: "Chief Operating Officer",
+        },
+        { 
+            teamimg:team2,
+            teamalt:"Rachel ",
+            teamName:"Rachel Mendis", 
+            teamdesi: "HR",
+        },
+        { 
+            teamimg:team3,
+            teamalt:"Gurdeep",
+            teamName:"Gurdeep Singh", 
+            teamdesi: "Sales Manager",
+        },
+        { 
+            teamimg:team4,
+            teamalt:"Swapnil patil",
+            teamName:"Swapnil Patil", 
+            teamdesi: "Sr Software Developer",
+        },
+      ];
     return(
     <>
         <div className="nav-contaniner"/>
-
+          {/* <!-- ======= Director Section ======= --> */}
         <div className="container" style={{backgroundColor:'rgba(118, 206, 233, 0.35)',boxShadow:'0 4px 8px 0 #30a6e9, 0 6px 20px 0 #30a6e9',marginTop:'2%'}}>
             <div className="row">
                 <div className="col-lg-8 col-md-8 col-sm-8 rolandiconcol" style={{textAlign:'justify'}}>
@@ -22,7 +48,6 @@ const teams =()=>{
                     <i class="fa fa-facebook" style={{fontSize:'20px',marginRight:'2%'}}></i>
                     <i class="fa fa-instagram" style={{fontSize:'20px',marginRight:'2%'}}></i>
                     <i class="fa fa-linkedin" style={{fontSize:'20px',marginRight:'2%'}}></i>
-
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-4" data-aos="fade-right" >
                      <img src={Rolandimg} className="rolandimg" alt=""/>
@@ -30,111 +55,40 @@ const teams =()=>{
             </div>
         </div>
         {/* <!-- ======= Team Section ======= --> */}
-            <section id="team" class="team section-bg" style={{marginTop:'3%'}}>
-            <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                <h1  style={{color:'#30a6e9'}}>Team</h1>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
-                </div>
-
-                <div class="row">
-
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                    <div class="member" data-aos="fade-up" data-aos-delay="100">
-                    <div class="member-img">
-                        <div class="btn03">
-                            <img src={team1} alt=""/>
-                                <div class="ovrly"></div>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-instagram"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                        </div>
-                       
-                    </div>
-                    <div class="member-info">
-                        <h4>Walter White</h4>
-                        <span className="teamdesignation">Chief Executive Officer</span>
-                        <p>Jane is in charge of digital activities for global brands.</p>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                    <div class="member" data-aos="fade-up" data-aos-delay="200">
-                    <div class="member-img">
-                    <div class="btn03">
-                            <img src={team2} alt=""/>
-                                <div class="ovrly"></div>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-instagram"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h4>Sarah Jhonson</h4>
-                        <span>Product Manager</span>
-                        <p>Jane is in charge of digital activities for global brands.</p>
-
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                    <div class="member" data-aos="fade-up" data-aos-delay="300">
-                    <div class="member-img">
-                    <div class="btn03">
-                            <img src={team3} alt=""/>
-                                <div class="ovrly"></div>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-instagram"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h4>William Anderson</h4>
-                        <span>CTO</span>
-                        <p>Jane is in charge of digital activities for global brands.</p>
-
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                    <div class="member" data-aos="fade-up" data-aos-delay="400">
-                    <div class="member-img">
-                    <div class="btn03">
-                            <img src={team4} alt=""/>
-                                <div class="ovrly"></div>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-instagram"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h4>Amanda Jepson</h4>
-                        <span>Accountant</span>
-                        <p>Jane is in charge of digital activities for global brands.</p>
-
-                    </div>
-                    </div>
-                </div>
-
+        <section  id="team" class="team section-bg" style={{marginTop:'3%'}}>
+        <div class="container" data-aos="fade-up">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <h2>Meet Our Team</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text</p>
                 </div>
             </div>
-            </section>
 
+            <div class="row">
+                 {data.map((data) => ( 
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="100">
+                      <div class="member-img">
+                          <img src={data.teamimg} class="img-fluid" alt={data.teamalt}/>
+                      </div>
+                        <div class="member-info">
+                            <h4>{data.teamName}</h4>
+                            <span>{data.teamdesi}</span>
+                            <div class="social-links">
+                                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                                <a href="#"><i class="fa fa-twitter-square"></i></a>
+                                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 ))}  
+
+            </div>
+        </div>
+    </section>
+        
     </>
 )
 }

@@ -207,26 +207,34 @@ input::-webkit-inner-spin-button {
     }
   }
    
-
 /* Subscribe css */
- input[type=email]{
+.inputs{margin-top: 10%;}
+.webform__form-control[type=email]{
     background: #fff;
     border: 0;
     padding: 6px 8px;
     width: 60%;
-    outline: none;}
-input[type=submit] {
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
-        background-color: #009ffd;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.EWF__subscribe[type=submit]{
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: #219ee5;
         border: 0;
-        width: 35%;
-        padding: 6px 0;
+        width: 37%;
+        padding: 6px 2px;
         text-align: center;
         color: #fff;
         transition: .3s;
-        cursor: pointer;}
-
+        cursor: pointer;
+    }
+.EWF__subscribe:hover {
+    background-image: linear-gradient(to right,#30a6e9 , lightblue);
+    color: #fff;
+    font-weight: bold;
+}
 /* css for RD info p */
 .text-footer-info{
   text-align: left;
