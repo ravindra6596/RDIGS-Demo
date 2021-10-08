@@ -182,14 +182,18 @@ window.addEventListener('scroll', checkingScrollTop)
                     <div className="col-lg-3 col-md-6  col-sm-6 col-xs-6 text-light footer-newsletter footrescol">
                         <h5 style={{fontSize:'18px'}}>JOIN OUR NEWSLATTER</h5>
                         <p>Subscribe to our newsletter to get latest updates.</p>
-                        <div className="footsubscridiv">
+                        <div className="inputs">
+                            <input maxlength="60" className="webform__form-control" name="email" size="20" type="email" required="" placeholder="Enter Email Address"/>
+                            <input type="submit" name="submit" id="eesubmit" className="EWF__subscribe" value="SUBCRIBE"/>
+                        </div>
+                        {/* <div className="footsubscridiv">
                             <input  className="footsubinput" placeholder="Enter Your Email.." />
                             <span>Subscribe</span>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
-                
             </div>
+
             <section className="copyright-section">
             <div className="container">
                 <div className="row d-flex justify-space-between">

@@ -1,8 +1,5 @@
 .allbtn-primary {
     color: #fff;
-    background-color:  #30a6e9;
-    border-radius: 20px;
-    font-weight: 500;
 }
 .allbtn-primary:hover{
     opacity: 1;
@@ -17,6 +14,8 @@
 
 /* / button animation / */
     .glow-on-hover {
+        background-color: #1799e3;
+        font-weight: 500;
         width:180px; 
          height:40px; 
         position: relative;
