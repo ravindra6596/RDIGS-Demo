@@ -14,12 +14,6 @@
     margin: 3% 4%;
     color: #000000; 
 }
-.contacthead{
-    font-size: 40px;
-    line-height: 1.3;
-    font-weight: 600;
-    margin: 1% 8%;
-}
 .conradiodiv{
     display: flex;
 }
@@ -47,7 +41,6 @@
 .conradiofirst{margin-left: 22%;
     margin-top: 5px;
 }
-.btngetintouch{margin-right: 15%;}
 .consubtxt{font-size: 20px;}
 .conaddmaker{
     font-size: 25px;

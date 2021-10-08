@@ -104,7 +104,7 @@ window.addEventListener('scroll', checkingScrollTop)
                                                                 </div>
                                                                 <Link to ="#" className="corporate-submit">
 
-                                                                    <div class="buttons" style={{marginTop:'10px'}}>
+                                                                    <div className="buttons d-flex justify-content-center" style={{marginTop:'10px'}}>
                                                                      <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
                                                                     </div>
                                                                 </Link>
