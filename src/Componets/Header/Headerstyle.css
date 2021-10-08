@@ -103,17 +103,7 @@ transition:0.5s;
     font-size: 30px;
     font-weight: 900;
 }
-.social-hide-button:hover + #navbar{
-    display:flex;
-    border:none;
-    background-color:lightblue;
-}
-.social-hide-button i{
-    color:#30a6e9;
-}
-.social-hide-button:active,.social-hide-button:focus{
-    outline: none;
-}
+
 /* ===============social icon section===================== */
 #custom_html-9 {
     position: fixed;
