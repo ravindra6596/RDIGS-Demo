@@ -42,11 +42,10 @@ const Blog = React.lazy(() => import('./Componets/Blog/Blog'));
               <Route path='/companyprofile1' exact={true} component={CompanyProfile1}/>
               <Route path='/blog' exact={true} component={Blog}/>
               <Route path='/footer' exact={true} component={Footer}/>
- 
+
           </Switch>
           <Footer/>
           </Suspense>
-         
         </div>
     </BrowserRouter>
     </div>

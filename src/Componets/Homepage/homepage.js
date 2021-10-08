@@ -45,7 +45,7 @@ const Home =()=>{
                                          <input type="checkbox" checked/>
                                          <p className="homemodalAgree">I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our <span style={{color:'#30a6e9'}}>Privacy Policy</span> And <span style={{color:'#30a6e9'}}>Terms and Codition.</span> </p>
                                    </div>
-                                   <div style={{textAlign:'center'}} ><Button text="Submit" /></div>                              
+                                   <div style={{textAlign:'center'}} ><Button classNames="allbtn-primary glow-on-hover text-light" text="Submit" /></div>                              
                                </div>
                            </div>
                        </div>

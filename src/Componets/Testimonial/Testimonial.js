@@ -1,4 +1,5 @@
 import React from 'react';
+import Heading from '../Heading/Heading';
 import team from '../../img/testimonial/testimonial1.png';
 import './Testimonial.css';
 import Slider from "react-slick";
@@ -45,12 +46,12 @@ const Testimonial=()=>{
 
         <section className="ftco-section testimony-section ftco-no-pb" >
             <div className="testimonil-img">
-                <div className="row justify-content-center mb-5">
-                    <div className="col-md-7 text-center heading-section heading-section-white ftco-animate testimonial-heading">
-                    <h1 className=" testimonialkinds mb-3">Testimonial</h1>
-                    <span className="subheading">Kinds Words From Clients</span>
-                    </div>
-                </div> 
+            <div className="section-title" > 
+                 <span> <Heading title="Testimonial"/></span>
+                <p className="service-para" style={{marginTop:'2%'}}>Kinds Words From Clients.</p>
+            </div> 
+          
+             
             </div>
         </section>
         <section className="card-top">
@@ -60,7 +61,7 @@ const Testimonial=()=>{
                     <div className="container">
                         <div className="row">
                         <div className="col">
-                            <div className="  testimonial-card"> 
+                            <div className="testimonial-card"> 
                                 <div className="testitem" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" >
                                     <div className="testimony-wrap py-4">
                                         <div className="icon d-flex align-items-center justify-content-center  item-i">

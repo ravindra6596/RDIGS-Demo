@@ -28,7 +28,7 @@ const LeadGeneration=()=>{
                                 demographics to drive more conversions. We generate target accounts and nurture them based
                                  on content, relevant communications and contextual marketing.
                             </p>
-                                <Button text="Drive Excess Conversion" data-aos="fade-left"></Button>
+                                <Button  classNames="allbtn-primary glow-on-hover text-light"  text="Drive Excess Conversion" data-aos="fade-left"></Button>
                         </div>
                     </div>
                     <div className="col-sm-6 col-md-6 col-lg-6">
@@ -51,7 +51,7 @@ const LeadGeneration=()=>{
                                 by professional demographics to drive more conversions. We generate target 
                                 accounts and nurture them based on content, relevant communications and contextual marketing.
                             </p>
-                                <Button text="Drive Excess Conversion" data-aos="fade-left">Strengthen your ABM Strategy</Button>
+                                <Button   classNames="allbtn-primary glow-on-hover text-light"  text="Drive Excess Conversion" data-aos="fade-left">Strengthen your ABM Strategy</Button>
                             <br></br>
                         </div>  
                     </div>
