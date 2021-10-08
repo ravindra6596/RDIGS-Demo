@@ -108,7 +108,6 @@ const DemandGeneration=()=>{
 
                                 <Button classNames="allbtn-primary glow-on-hover text-light Drive-Excess-Conversion" text="Reach Customers Across the web" data-aos="fade-left"></Button>
 
-                                <Button  classNames="allbtn-primary glow-on-hover text-light"  text="Reach Customers Across the web" data-aos="fade-left"></Button>
 
                         </div>
                     </div>
@@ -118,26 +117,7 @@ const DemandGeneration=()=>{
                         </div>
                     </div>
                 </div>
-
-                <div className="row">
-                    <div className="col-sm-6 col-md-6 col-lg-6">
-                        <div class="text-center lg-img aos-init aos-animate" data-aos="fade-left">
-                            <img src={demad2} alt="Demand Generation" className="Demand-img1" data-aos="fade-up"/>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="Demand-title aos-init aos-animate" data-aos="fade-left">
-                            <h4 className="Demand-subhead" data-aos="fade-up">Reach your Target Audience</h4>
-                            <p class="Demand-right" data-aos="fade-up">
-                                We run account-based marketing (ABM) campaigns for targeting the accounts 
-                                by professional demographics to drive more conversions. We generate target 
-                                accounts and nurture them based on content, relevant communications and contextual marketing.
-                            </p>
-                                <Button  classNames="allbtn-primary glow-on-hover text-light"  text="Drive Excess Conversion" data-aos="fade-left">Strengthen your ABM Strategy</Button>
-                            <br></br>
-                        </div>  
-                    </div>
-                </div>
+ 
 
             </div>
         </section>

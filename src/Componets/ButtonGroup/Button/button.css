@@ -1,9 +1,5 @@
 .allbtn-primary {
     color: #fff;
-    background-color:  #30a6e9;
-    border-radius: 20px;
-    font-weight: 500;
-
 }
 .allbtn-primary:hover{
     opacity: 1;
@@ -16,16 +12,12 @@
     background-color: #6cbeee;
     border-color: #0062cc;}
 
-/* / button animation / */
+/* / / button animation / / */
     .glow-on-hover {
-
-        padding:10px 20px;
-
         background-color: #1799e3;
         font-weight: 500;
         width:180px; 
          height:40px; 
-
         position: relative;
         z-index: 0;
         border-radius: 20px;
@@ -85,24 +77,14 @@
         50% { background-position: 400% 0; }
         100% { background-position: 0 0; }
     }
-
-
-    .btnclear{
-    /* Button clear css */
+    /* / Button clear css / */
     .btnclear{
         width: 130px;
         height: 40px;
         color:#30a6e9 ;
         background-color: transparent;
         border-color: #30a6e9;
-        width: 100px;
         margin-right: 20%;
         border-radius: 20px;
     }
     .btnclear:focus{outline: none;}
-
-        margin-right: 20%;
-        border-radius: 20px;
-    }
-    .btnclear:focus{outline: none;}
-

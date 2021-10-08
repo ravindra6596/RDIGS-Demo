@@ -103,8 +103,6 @@ window.addEventListener('scroll', checkingScrollTop)
                                                                 <i className="fa fa-address-book" aria-hidden="true"></i>
                                                                 </div>
                                                                 <Link to ="#" className="corporate-submit">
-                                                                    <div class="buttons d-flex justify-content-center" style={{marginTop:'10px'}}>
-                                                                     <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light "></Button>
 
                                                                     <div class="buttons" style={{marginTop:'10px'}}>
                                                                      <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
