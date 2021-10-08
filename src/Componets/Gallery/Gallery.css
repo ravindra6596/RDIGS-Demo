@@ -95,11 +95,23 @@
 .bdt-icon>* {
     transform: translate(0, 0);
 }
-
-
 .nav-contaniner{
     height: 95px;
     background-color: lightblue;
   }
-
+.largemodel{
+    top:10%;
+}
+/* Opacity #2 */
+.largemodel {
+	background: #1abc9c;
+}
+.largemodel img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.largemodel:hover img {
+	opacity: .5;
+}
 
