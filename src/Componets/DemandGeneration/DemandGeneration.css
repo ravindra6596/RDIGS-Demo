@@ -125,6 +125,8 @@
 }
 .section-ser {
     background-image: url('../../img/services/banner_back.jpg');
+    background-size: cover;
+    
 }
 .about-list {
     margin-top: 30px;

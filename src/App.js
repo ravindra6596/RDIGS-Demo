@@ -7,7 +7,7 @@ import Header from './Componets/Header/header';
 import Footer from './Componets/Footer/Footer';
 
 AOS.init({
-  duration: 1500
+ duration: 1500
 });
 function App() {
 
@@ -17,7 +17,7 @@ const Teams = React.lazy(() => import('./Componets/Teams/teams'));
 const Careers = React.lazy(() => import('./Componets/Careers/careers'));
 const DemandGeneration = React.lazy(() => import('./Componets/DemandGeneration/DemandGeneration'));
 const LeadGeneration = React.lazy(() => import('./Componets/LeadGeneration/LeadGeneration'));
-const Gallary = React.lazy(() => import('./Componets/Gallary/Gallery'));
+const Gallary = React.lazy(() => import('./Componets/Gallery/Gallery'));
 const CompanyProfile1 = React.lazy(() => import('./Componets/CompanyProfile1/CompanyProfile1'));
 const Blog = React.lazy(() => import('./Componets/Blog/Blog'));
 
@@ -39,15 +39,12 @@ const Blog = React.lazy(() => import('./Componets/Blog/Blog'));
               <Route path='/companyprofile1' exact={true} component={CompanyProfile1}/>
               <Route path='/blog' exact={true} component={Blog}/>
               <Route path='/footer' exact={true} component={Footer}/>
- 
           </Switch>
           <Footer/>
           </Suspense>
-         
         </div>
     </BrowserRouter>
     </div>
   );
 }
-
 export default App;

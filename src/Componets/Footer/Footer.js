@@ -133,7 +133,7 @@ window.addEventListener('scroll', checkingScrollTop)
                 <div className="col-lg-3 col-md-6 col-sm-6 col-xs-6 footrescol">
                         <div className="footersec-RDInfo">
                             <h5 className="footer-tit text-light">RD INFO GLOBAL SOLUTIONS</h5>
-                            <p><a href="#" className="underline"></a></p>
+                            <p><Link to="#" className="underline"></Link></p>
                             <div className="sep"></div>
                             <h6 className="text-footer-info text-light">RDIGS was founded in 2013 formerly known as RD info Solutions.
                                 Bootstrapped serving clients for B2C Lead Generation campaigns.It was not too late when we identified the need of lead generation activities for B2B Marketers.
@@ -171,12 +171,12 @@ window.addEventListener('scroll', checkingScrollTop)
                     <div className="col-lg-3 col-md-6  col-sm-6 col-xs-6 footer-links footrescol">
                         <h5 className="ourservices text-light">OUR SERVICES</h5>
                         <ul className="text-light services">
-                            <li> <a className="services-webdevlopment" href="#">Demand Generation</a></li>
-                            <li><a className="services-webdevlopment" href="#">Lead generation</a></li>
-                            <li> <a className="services-webdevlopment" href="#">Product Management</a></li>  
-                            <li><a className="services-webdevlopment" href="#">Privacy Policy</a></li>   
-                            <li> <a className="services-webdevlopment" href="#">Terms And Conditions</a></li>   
-                            <li><a className="services-webdevlopment" href="#">Unsubscribe</a></li>                             
+                            <li> <Link className="services-webdevlopment" to="#">Demand Generation</Link></li>
+                            <li><Link className="services-webdevlopment" to="#">Lead generation</Link></li>
+                            <li> <Link className="services-webdevlopment" to="#">Product Management</Link></li>  
+                            <li><Link className="services-webdevlopment" to="#">Privacy Policy</Link></li>   
+                            <li> <Link className="services-webdevlopment" to="#">Terms And Conditions</Link></li>   
+                            <li><Link className="services-webdevlopment" to="#">Unsubscribe</Link></li>                             
                         </ul>
                     </div>
                     <div className="col-lg-3 col-md-6  col-sm-6 col-xs-6 text-light footer-newsletter footrescol">
@@ -195,12 +195,12 @@ window.addEventListener('scroll', checkingScrollTop)
                 <div className="row d-flex justify-space-between">
                     <div className="col-lg-6 col-md-6 col-sm-6 me-md-auto text-center text-md-start footrescol">
                         <div id="copyright" className="clr copyright-center" role="contentinfo">
-                            Copyright © <span>{getCurrentYear()}</span> <a href="https://rdigs.com/" target="_blank" className="footerlinkhover">RDIGS Info Global Solution</a>
+                            Copyright © <span>{getCurrentYear()}</span> <Link to="https://rdigs.com/" target="_blank" className="footerlinkhover">RDIGS Info Global Solution</Link>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6">
                         <div  className="copydesign" >
-                           Designed by <a href="http://lead-tronics.com/" target="_blank" className="footerlinkhover">Lead-Tronics</a>
+                           Designed by <Link to="http://lead-tronics.com/" target="_blank" className="footerlinkhover">Lead-Tronics</Link>
                         </div>
                     </div>
                 </div>

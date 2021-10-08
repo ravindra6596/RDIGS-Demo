@@ -1,34 +1,7 @@
 
-.blog-banner{
-    height: 80vh;
-    width: 100%;
-}
-.heading-primary-blog {
-    color:black;
-    text-transform: uppercase;
-}
-.heading-primary-main-blog {
-    display: block;
-    font-size: 40px;
-    font-weight: 900;
-    letter-spacing: 10px;
-    animation-name: moveInleft;
-    animation-duration: 3s;
-}
-
-.heading-primary-sub-blog {
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 15.9px;
-    padding: 30px;
-    animation-name: moveInRight;
-    animation-duration: 3s;
-}
 .card-general{
     margin:20px;
     box-shadow: 5px 5px 5px 5px lightblue;
-    height:500px;
 }
 .card-img-top{ position: relative;}
 .round-div-card{

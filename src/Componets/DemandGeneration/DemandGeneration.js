@@ -76,14 +76,23 @@ const DemandGeneration=()=>{
         }
 
     ];
-    
+   const aboutlistheading=[
+       {
+           heading:"Responsive site",
+           para:"Leverage agile frameworks to provide a robust synopsis for high level overviews"
+       },
+       {
+        heading:"Responsive site",
+        para:"Leverage agile frameworks to provide a robust synopsis for high level overviews"
+       }
+   ]
     return(
         <>
       <div className="nav-contaniner"/>
         <section className="Demand-Generation-Sec">
             <div className="container">     
-                    <div className="text-center heading-demand">
-                       <h1 className="text-center Demand-heading-top">Demand Generation</h1>
+                    <div className="d-flex justify-content-center heading-demand">
+                       <Heading title="Demand Generation"></Heading>
                     </div>
                 <div className="row">
                     <div className="col-sm-6 col-md-6 col-lg-6">
@@ -158,25 +167,17 @@ const DemandGeneration=()=>{
                     </p>
                     </div>
                     <ul class="about-list">
-                    <li>
-                        <h5 class="mb-2 text-light">
-                        <i class="fa fa-check-circle"></i>Responsive site</h5>
-                        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
-                    </li>
+                        {
+                            aboutlistheading.map((user,index)=>{
+                                return(
+                                    <li>
+                                       <h5 class="mb-2 text-light"><i class="fa fa-check-circle"></i>{user.heading}</h5>
+                                        <p>{user.para}</p>
+                                   </li>
+                                )
 
-                    <li>
-                        <h5 class="mb-2 text-light"><i class="fa fa-check-circle"></i> Latest bootstrap 4</h5>
-                        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
-                    </li>
-
-                    <li>
-                        <h5 class="mb-2 text-light"><i class="fa fa-check-circle"></i>Modern design</h5>
-                        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
-                    </li>
-                    <li>
-                        <h5 class="mb-2 text-light"><i class="fa fa-check-circle"></i>Working contact form</h5>
-                        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
-                    </li>
+                            })
+                        }
                     </ul>
                 </div>
                 </div>
