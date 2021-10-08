@@ -59,7 +59,7 @@ const Careeraccordian =()=>{
                                     <p className="oppdetails">{data.oppdesc}</p>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-3"  style={{paddingTop:'2%'}}>
-                                    <Button classNames="btnclear" text="Apply Now"/>
+                                    <Button classNames="btnclear" text="Apply Now" />
                                 </div>
                             </div>
                         </div>

@@ -51,6 +51,13 @@
     position: absolute;
     top: -45px;
 }
+.testimonial-heading{
+    color: #30a6e9;
+    margin: 10px 5px;
+}
+.testimonial-heading span{
+    color:#30a6e9;
+}
 
 .card-top{
    margin-top: -200px;

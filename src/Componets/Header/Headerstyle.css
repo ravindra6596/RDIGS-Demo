@@ -85,14 +85,46 @@ transition:0.5s;
     padding-right: 0;
 }
 
-/* / social icons  */
+/*  social icons button arrow  */
+
+.social-hide-button{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    justify-content: center;
+    background-color:white;
+    position: fixed;
+    z-index: 999999999;
+    left: 0px;
+    top: calc(67% - 100px);
+    display: flex;
+    flex-direction: column;
+    border:#30a6e9;
+    font-size: 30px;
+    font-weight: 900;
+}
+.social-hide-button:hover + #navbar{
+    display:flex;
+    border:none;
+    background-color:lightblue;
+}
+.social-hide-button i{
+    color:#30a6e9;
+}
+.social-hide-button:active,.social-hide-button:focus{
+    outline: none;
+}
+/* ===============social icon section===================== */
 #custom_html-9 {
     position: fixed;
     z-index: 999999999;
-    left: -20px;
     top: calc(50% - 100px);
+    display: flex;
+    flex-direction: column;
+    /* left: -10px; */
 }
-#floating-social a {
+
+#floating-social .a {
     border: 1px solid #C8CBD0;
     border-radius: 50%;
     padding: 10px;
@@ -107,7 +139,7 @@ transition:0.5s;
     align-content: center;
     transition: 0.3s !important;
 }
-#floating-social a:hover{
+#floating-social .a:hover{
     box-shadow: 2px 2px 8px 1px #30a6e9;
     background-color: black;
 }
@@ -122,101 +154,77 @@ transition:0.5s;
 #floating-social {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+   
 }
+#navbar {
+    background-color:lightblue;
+    border-radius: 0 8px 8px 0;
+    transform: translateX(calc(-100% + 10px));
+    transition: transform .4s cubic-bezier(.4, 0, .2, 1) .2s;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } 
+  #custom_html-9:hover #navbar {
+    transform: translateX(0);
+    transition-delay: 0s;
+  }
+
 /* Side Social Icons css */
-@media only screen and (min-width:320px) and (max-width:375px){
+@media only screen and (min-width:320px) and (max-width:768px){
     #floating-social{
         top:0px;
         display:flex;
-        flex-direction: row;
-        margin-left: 30%;
+        flex-direction: column;
+        justify-content: center;
     }
     #floating-social img:hover{
-        transform: scale(1.5);
+        transform: scale(2.1);
     }
     #floating-social img{
-        padding:0px;
+        padding:5px;
     }
     #floating-social a{
         margin:5px;
         height:30px;
         width:30px;
     }
-    #custom_html-9{
-        margin-left:10px;
-        top:0;
-    }
-}
-@media only screen and (min-width:375px) and (max-width:425px){
-    #floating-social{
-        top:0px;
-        display:flex;
-        flex-direction: row;
-        margin-left: 45%;
-    }
-    #floating-social img:hover{
-        transform: scale(2.1);
-    }
-    #floating-social img{
-        padding:0px;
-    }
-    #floating-social a{
-        margin:5px;
-        height:30px;
-        width:30px;
-    }
-    #custom_html-9{
-        margin-left:0px;
-        top:0;
-    }
-}
-@media only screen and (min-width:425px) and (max-width:768px){
-    #floating-social{
-        top:0px;
-        display:flex;
-        flex-direction: row;
-        margin-left: 25%;
-    }
-    #floating-social img:hover{
-        transform: scale(2.1);
-    }
-    #floating-social img{
-        padding:1px;
-    }
-    #floating-social a{
-        margin:5px;
-        height:50px;
-        width:50px;
-    }
-    #custom_html-9{
-        margin-left:15px;
-        top:0;
+    #custom_html-9 {
+        position: fixed;
+        z-index: 999999999;
+        left: 0px;
+        top: calc(50% - 100px);
+        left: -10px;
+        
     }
 }
 @media only screen and (min-width:768px) and (max-width:1023px){
     #floating-social{
         top:0px;
         display:flex;
-        flex-direction: row;
-        margin-left: 85%;
+        flex-direction: column;
+        justify-content: center;
     }
     #floating-social img:hover{
         transform: scale(2.1);
     }
     #floating-social img{
-        padding:1px;
+        padding:5px;
     }
     #floating-social a{
         margin:5px;
-        height:50px;
-        width:50px;
+        height:30px;
+        width:30px;
     }
-    #custom_html-9{
-        margin-left:35px;
-        top:0;
-    }
-}
+    #custom_html-9 {
+        position: fixed;
+        z-index: 999999999;
+        left: 0px;
+        top: calc(50% - 100px);
+        
+    } 
+} 
 
 /* DropDown of Service responsiveness */
 @media only screen and (min-width: 320px) and (max-width: 375px) {
@@ -241,6 +249,7 @@ transition:0.5s;
     .dropdownabout { right: 30%;}}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .dropdownabout { right: 35%;}}
+
 
 
 

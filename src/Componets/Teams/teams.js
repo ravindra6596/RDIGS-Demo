@@ -1,10 +1,13 @@
 import React from "react";
-import './teams.css';
-import team1 from '../../img/team/team-1.jpg';
-import team2 from '../../img/team/team-2.jpg';
-import team3 from '../../img/team/team-3.jpg';
-import team4 from '../../img/team/team-4.jpg';
-import Rolandimg from '../../img/team/Roland-Dcosta.jpg';
+import "./teams.css";
+import team1 from "../../img/team/team-1.jpg";
+import team2 from "../../img/team/team-2.jpg";
+import team3 from "../../img/team/team-3.jpg";
+import team4 from "../../img/team/team-4.jpg";
+import Rolandimg from "../../img/team/Roland-Dcosta.jpg";
+import { Link } from "react-router-dom";
+
+
 
 const teams =()=>{
 
@@ -35,25 +38,26 @@ const teams =()=>{
         },
       ];
     return(
-    <>
-        <div className="nav-contaniner"/>
-          {/* <!-- ======= Director Section ======= --> */}
-        <div className="container" style={{backgroundColor:'rgba(118, 206, 233, 0.35)',boxShadow:'0 4px 8px 0 #30a6e9, 0 6px 20px 0 #30a6e9',marginTop:'2%'}}>
-            <div className="row">
-                <div className="col-lg-8 col-md-8 col-sm-8 rolandiconcol" style={{textAlign:'justify'}}>
-                    <h2 className="rolandname" data-aos="fade-up">Roland D'costa</h2>
-                    <h4 style={{color:'#30a6e9'}}>Manging Director</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <i class="fa fa-twitter" style={{fontSize:'20px',marginRight:'2%'}}></i>
-                    <i class="fa fa-facebook" style={{fontSize:'20px',marginRight:'2%'}}></i>
-                    <i class="fa fa-instagram" style={{fontSize:'20px',marginRight:'2%'}}></i>
-                    <i class="fa fa-linkedin" style={{fontSize:'20px',marginRight:'2%'}}></i>
-                </div>
-                <div className="col-lg-4 col-md-4 col-sm-4" data-aos="fade-right" >
-                     <img src={Rolandimg} className="rolandimg" alt=""/>
-                </div>
+      <>
+        <div className="nav-contaniner" />
+        {/* {/ <!-- ======= Director Section ======= --> /} */}
+        <div className="container" style={{ backgroundColor: 'rgba(118, 206, 233, 0.35)', boxShadow: '0 4px 8px 0 #30a6e9, 0 6px 20px 0 #30a6e9', marginTop: '2%' }}>
+          <div className="row">
+            <div className="col-lg-8 col-md-8 col-sm-8 rolandiconcol" style={{ textAlign: 'justify' }}>
+              <h2 className="rolandname" data-aos="fade-up">Roland D'costa</h2>
+              <h4 style={{ color: '#30a6e9' }}>Manging Director</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <i class="fa fa-twitter" style={{ fontSize: '20px', marginRight: '2%' }}></i>
+              <i class="fa fa-facebook" style={{ fontSize: '20px', marginRight: '2%' }}></i>
+              <i class="fa fa-instagram" style={{ fontSize: '20px', marginRight: '2%' }}></i>
+              <i class="fa fa-linkedin" style={{ fontSize: '20px', marginRight: '2%' }}></i>
             </div>
+            <div className="col-lg-4 col-md-4 col-sm-4" data-aos="fade-right" >
+              <img src={Rolandimg} className="rolandimg" alt="" />
+            </div>
+          </div>
         </div>
+  
         {/* <!-- ======= Team Section ======= --> */}
         <section  id="team" class="team" style={{marginTop:'3%'}}>
         <div class="container" data-aos="fade-up">
@@ -88,9 +92,8 @@ const teams =()=>{
             </div>
         </div>
     </section>
-        
-    </>
-)
-}
-export default teams;
 
+    </>
+  );
+};
+export default teams;

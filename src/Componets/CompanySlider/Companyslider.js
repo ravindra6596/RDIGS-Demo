@@ -19,8 +19,8 @@ import s12 from '../../img/client/client12.jpg';
 
 
 
-const Companyslider=()=>{  
- var settings = {
+const Companyslider = () => {
+  var settings = {
     dots: false,
     infinite: true,
     speed: 500,
@@ -29,103 +29,103 @@ const Companyslider=()=>{
     autoplay: true,
     autoplaySpeed: 2000,
     variableWidth: true,
-responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-          
-        },
-        {
-            breakpoint: 320,
-             settings: {
-              slidesToShow: 1,
-               slidesToScroll: 1
-                }    
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
         }
-      
-]
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+
+    ]
   };
   const data = [
-    { 
-        clientimg:s1
+    {
+      clientimg: s1
     },
-    { 
-      clientimg:s2
+    {
+      clientimg: s2
     },
-    { 
-      clientimg:s3
+    {
+      clientimg: s3
     },
-    { 
-      clientimg:s4
+    {
+      clientimg: s4
     },
-    { 
-      clientimg:s5
+    {
+      clientimg: s5
     },
-    { 
-      clientimg:s6
+    {
+      clientimg: s6
     },
-    { 
-      clientimg:s7
+    {
+      clientimg: s7
     },
-    { 
-      clientimg:s8
+    {
+      clientimg: s8
     },
-    { 
-      clientimg:s9
+    {
+      clientimg: s9
     },
-    { 
-      clientimg:s10
+    {
+      clientimg: s10
     },
-    { 
-      clientimg:s11
+    {
+      clientimg: s11
     },
-    { 
-      clientimg:s12
-    },   
+    {
+      clientimg: s12
+    },
   ];
 
-    return(
-        <>  
-        <section className="clients">
-        <div className="section-title"> 
-                 <span> <Heading title="We Work With"/></span>
-                <p className="service-para" style={{marginTop:'2%'}}>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
-            </div> 
-             <div className="slide-overlay">
-                <div className="overlay1">
-                <div className="container slider-cont">
-                         <Slider {...settings} className="comp-slider">
-                              {/* Using Map Function to access the data */}
-                                {data.map((data) => ( 
-                                  <div className="image-clientslider">
-                                      <img src={data.clientimg} className="img-fluid" alt="Client"/>
-                                  </div>
-                                ))}                                
-                        </Slider>     
-                </div>
-                </div>
-              </div>  
-        </section>
-        </>
-    )
+  return (
+    <>
+      <section className="clients">
+        <div className="section-title">
+          <span> <Heading title="We Work With" /></span>
+          <p className="service-para" style={{ marginTop: '2%' }}>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
+        </div>
+        <div className="slide-overlay">
+          <div className="overlay1">
+            <div className="container slider-cont">
+              <Slider {...settings} className="comp-slider">
+                {/* {/ Using Map Function to access the data /} */}
+                {data.map((data) => (
+                  <div className="image-clientslider">
+                    <img src={data.clientimg} className="img-fluid" alt="Client" />
+                  </div>
+                ))}
+              </Slider>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  )
 }
 export default Companyslider;

@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import './homestyle.css';
 import Banner from "../Banner/Banner";
 import Counter from "../Counter/Counter";
@@ -8,11 +8,11 @@ import About from "../About/about";
 import Services from "../Services/Services";
 import Button from '../ButtonGroup/Button/button';
 import modalimg from '../../img/modalhomeimg.png';
-import {Modal, ModalBody} from 'reactstrap';
+import { Modal, ModalBody } from 'reactstrap';
 
-const Home =()=>{   
-{/* After page Load Model Automatic show */}
-   const [showModal, setShowModal] = useState(false)
+const Home = () => {
+//  { / After page Load Model Automatic show / }
+  const [showModal, setShowModal] = useState(false)
 
     useEffect(() => {
         const timeId = setTimeout(() => setShowModal(true), 90000)
@@ -53,7 +53,7 @@ const Home =()=>{
             </Modal>
         {/* After page Load Model Automatic show End  */}
     </>
-)
+  )
 }
 export default Home;
 

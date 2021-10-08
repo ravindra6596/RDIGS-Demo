@@ -1,10 +1,11 @@
-import './about.css';
-import aboutfrontimg from '../../img/About-us-1.png';
-import Heading from '../Heading/Heading';
+import "./about.css";
+import aboutfrontimg from "../../img/About-us-1.png";
+import Heading from "../Heading/Heading";
 
-const about =()=>{
-    return(
+const about = () => {
+  return (
     <>
+ 
             <section className="aboutsec1" style={{marginTop:'3%'}}>
                     <div className="container" data-aos="fade-up">
                         <div className="row">
@@ -23,8 +24,8 @@ const about =()=>{
                         </div>
                     </div>                   
                 </section>  
-    </>
-)
-}
-export default about;
 
+    </>
+  );
+};
+export default about;

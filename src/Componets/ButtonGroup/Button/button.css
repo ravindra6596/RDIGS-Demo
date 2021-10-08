@@ -12,7 +12,7 @@
     background-color: #6cbeee;
     border-color: #0062cc;}
 
-/* / button animation / */
+/* / / button animation / / */
     .glow-on-hover {
         background-color: #1799e3;
         font-weight: 500;
@@ -77,7 +77,7 @@
         50% { background-position: 400% 0; }
         100% { background-position: 0 0; }
     }
-    /* Button clear css */
+    /* / Button clear css / */
     .btnclear{
         width: 130px;
         height: 40px;

@@ -7,7 +7,7 @@ import Header from './Componets/Header/header';
 import Footer from './Componets/Footer/Footer';
 
 AOS.init({
-  duration: 1500
+ duration: 1500
 });
 function App() {
 
@@ -48,5 +48,4 @@ const Blog = React.lazy(() => import('./Componets/Blog/Blog'));
     </div>
   );
 }
-
 export default App;
