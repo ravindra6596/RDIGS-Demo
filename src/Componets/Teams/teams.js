@@ -55,7 +55,7 @@ const teams =()=>{
             </div>
         </div>
         {/* <!-- ======= Team Section ======= --> */}
-        <section  id="team" class="team section-bg" style={{marginTop:'3%'}}>
+        <section  id="team" class="team" style={{marginTop:'3%'}}>
         <div class="container" data-aos="fade-up">
             <div class="row justify-content-center">
                 <div class="col-md-6">

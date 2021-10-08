@@ -52,7 +52,6 @@ const Home =()=>{
                     </ModalBody>
             </Modal>
         {/* After page Load Model Automatic show End  */}
-
     </>
 )
 }
