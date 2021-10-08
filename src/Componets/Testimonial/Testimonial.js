@@ -1,4 +1,5 @@
 import React from 'react';
+import Heading from '../Heading/Heading';
 import team from '../../img/testimonial/testimonial1.png';
 import './Testimonial.css';
 import Slider from "react-slick";
@@ -47,7 +48,9 @@ const Testimonial=()=>{
             <div className="testimonil-img">
                 <div className="row justify-content-center mb-5">
                     <div className="col-md-7 text-center heading-section heading-section-white ftco-animate testimonial-heading">
-                    <h1 className=" testimonialkinds mb-3">Testimonial</h1>
+                        <div className="d-flex justify-content-center">
+                            <Heading title="Testimonial"></Heading>
+                        </div>
                     <span className="subheading">Kinds Words From Clients</span>
                     </div>
                 </div> 

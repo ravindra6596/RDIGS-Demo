@@ -2,7 +2,8 @@ import React from 'react';
 import './LeadGeneration.css';
 import Heading from '../Heading/Heading';
 import Button from '../ButtonGroup/Button/button';
-import Leadimg1 from '../../img/services/Leadimg1.png';
+import demand1 from '../../img/services/demand2.png';
+import min from '../../img/services/min.jpg';
 import service1 from '../../img/services/service1.jpg';
 import service2 from '../../img/services/service2.jpg';
 import service3 from '../../img/services/service3.jpg';
@@ -50,33 +51,15 @@ const LeadGeneration=()=>{
     return(
         <>
         <div className="nav-contaniner"/>
-         <section className="Lead-Generation-Sec" style={{marginTop:'1%'}}>
+         <section className="Lead-Generation-Sec">
             <div className="container">
                 <div className="text-center Lead-heading-top">
                      <h1 className="text-center">Lead Generation</h1>
                 </div>
                 <div className="row">
                     <div className="col-sm-6 col-md-6 col-lg-6">
-                        <div class="lead-title aos-init aos-animate" data-aos="fade-right">
-                            <h4 className="Lead-subhead" data-aos="fade-down">Identify your Target Accounts</h4>
-                            <p class="lead-right" data-aos="fade-down">
-                                We run account-based marketing (ABM) campaigns for targeting the accounts by professional 
-                                demographics to drive more conversions. We generate target accounts and nurture them based
-                                 on content, relevant communications and contextual marketing.
-                            </p>
-                                <button className="Drive-Excess-Conversion" data-aos="fade-left">Drive-Excess-Conversion</button>
-                        </div>
-                    </div>
-                    <div className="col-sm-6 col-md-6 col-lg-6">
                         <div class="text-center lg-img aos-init aos-animate" data-aos="fade-left">
-                            <img src={Leadimg1} alt="Lead Generation" className="Lead-img1" data-aos="fade-down"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-sm-6 col-md-6 col-lg-6">
-                        <div class="text-center lg-img aos-init aos-animate" data-aos="fade-left">
-                            <img src={Leadimg1} alt="Lead Generation" className="Lead-img1" data-aos="fade-up"/>
+                            <img src={demand1} alt="Lead Generation" className="Lead-img1" data-aos="fade-up"/>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6">
@@ -87,7 +70,7 @@ const LeadGeneration=()=>{
                                 by professional demographics to drive more conversions. We generate target 
                                 accounts and nurture them based on content, relevant communications and contextual marketing.
                             </p>
-                                <button className="Drive-Excess-Conversion" data-aos="fade-left">Drive-Excess-Conversion</button>
+                                <Button classNames="allbtn-primary glow-on-hover text-light Drive-Excess-Conversion" data-aos="fade-left" text="Drive-Excess-Conversion"></Button>
                             <br></br>
                         </div>  
                     </div>
@@ -97,7 +80,7 @@ const LeadGeneration=()=>{
      
         <section class="section-services text-center">
         <div class="container">
-            <div className="text-center justify-content-center" data-aos="fade-down">
+            <div className="d-flex justify-content-center" data-aos="fade-down">
                 <Heading title="Services"></Heading>
             </div>
           
@@ -109,7 +92,7 @@ const LeadGeneration=()=>{
                     {
                         data.map((user,index)=>{
                             return(
-                                <div class="col-sm-6 col-lg-3">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                                     <div className="serviceLead">
                                       <img class="thumbnail-light-image" src={user.serviceimg} alt="" />
                                     </div>
@@ -120,6 +103,37 @@ const LeadGeneration=()=>{
                     }
                 </div>  
         </div>
+      </section>
+      <section className="our-services-Lead">
+      <div class="support-company-area pt-100 pb-100 section-bg fix" data-background="assets/img/gallery/section_bg02.jpg">
+        <div class="container">
+        <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-6">
+        <div class="support-location-img">
+              <img src={min} alt="" data-pagespeed-url-hash="1368735680" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+        </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+        <div class="right-caption">
+
+        <div class="section-tittle section-tittle2 mb-50">
+            <div className="d-flex justify-content-center">
+                 <Heading title="Our Best Services"></Heading>
+            </div>
+        </div>
+        <div class="support-caption">
+        <p class="pera-top">Mollit anim laborum duis adseu dolor iuyn voluptcate velit ess cillum dolore egru lofrre dsu quality mollit anim laborumuis au dolor in voluptate velit cillu.</p>
+        <p class="mb-65">Mollit anim laborum.Dvcuis aute serunt iruxvfg dhjkolohr indd re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt moll.</p>
+        
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      </section>
+      <section id="services-3">
+
       </section>
         </>
     )

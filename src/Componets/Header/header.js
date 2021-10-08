@@ -24,7 +24,7 @@ const Header =()=>{
             <section className="fixed-top ">
             <Navbar className="mainnav"  collapseOnSelect expand="lg"  style={{backgroundColor: navstage ? "lightblue" :"transparent"}} >
             <Container>
-            <Navbar.Brand><img src={logoimg} className="headlogo"></img></Navbar.Brand>
+            <Navbar.Brand><img src={logoimg} className="headlogo" alt="logo"></img></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">

@@ -1,12 +1,10 @@
 import React, { Suspense } from 'react';
-import logo from './logo.svg';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './App.css';
 import { BrowserRouter, Route,Switch } from 'react-router-dom';
 import Header from './Componets/Header/header';
 import Footer from './Componets/Footer/Footer';
-
 
 AOS.init({
   duration: 1500
@@ -22,7 +20,6 @@ const LeadGeneration = React.lazy(() => import('./Componets/LeadGeneration/LeadG
 const Gallary = React.lazy(() => import('./Componets/Gallary/Gallery'));
 const CompanyProfile1 = React.lazy(() => import('./Componets/CompanyProfile1/CompanyProfile1'));
 const Blog = React.lazy(() => import('./Componets/Blog/Blog'));
-
 
   return (
     <div className="App">

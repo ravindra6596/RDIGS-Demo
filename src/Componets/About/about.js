@@ -9,7 +9,9 @@ const about =()=>{
                     <div className="container" data-aos="fade-up">
                         <div className="row">
                             <div className="col-lg-6 col-md-6 col-sm-6" data-aos="fade-right">
-                               <Heading title="About"/>
+                                <div className="d-flex justify-content-left">
+                                     <Heading title="About"/>
+                                </div>
                                 <p className="aboutpara" data-aos="flip-right">Pellentesque id erat venenatis, rhoncus tellus ac, laoreet mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Interdum et malesuada fames ac ante ipsum primis in faucibus.Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                                 <p className="aboutpara" data-aos="flip-left">Pellentesque id erat venenatis, rhoncus tellus ac, laoreet mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Interdum et malesuada fames ac ante ipsum primis in faucibus.Interdum et malesuada fames ac ante ipsum primis in faucibus.</p> 
                             </div>

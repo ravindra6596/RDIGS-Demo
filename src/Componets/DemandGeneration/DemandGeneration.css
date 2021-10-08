@@ -1,16 +1,16 @@
-.Demand-heading-top:hover{
-    color:midnightblue;   
-}
+
 .Demand-Generation-Sec{
-    background-color: lightblue;
+    background-color: white;
+    background-image: url('../../img/services/banner_back1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
 }
 .Demand-img1{ 
     width: 100%; 
-    height:300px;
+    height:auto;
     float: left;
-}
-.effect-circled img {
-    width: 120px;
+    background-color: transparent;
 }
 .Demand-right{
     padding:20px;
@@ -105,3 +105,111 @@
   .Demand-round-img2 {
     margin-left: 0rem;}
   }
+
+  /* for services */
+  #service-head {
+    padding-bottom: 100px;
+    padding-top: 90px;
+}
+.heading p{
+    font-size: 20px;
+}
+.service-style-two {
+    background: url(../../img/services/bg-2.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* service 1 */
+#service-2, .section-ser{
+    background-color: white;
+}
+.section-ser {
+    background-image: url('../../img/services/banner_back.jpg');
+}
+.about-list {
+    margin-top: 30px;
+    list-style-type: none;
+}
+.about-list li {
+    width: 45%;
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    color: #888;
+}
+.about-list li i {
+    color: #000;
+    margin-right: 10px;
+}
+.about-list p {
+    line-height: 28px;
+    font-size: 15px;
+    color:black;
+}
+.section-padding11 {
+    padding: 50px 0px;
+}
+.service-box-2 h4 {
+    font-size: 22px;
+    line-height: 32px;
+}
+/* services 2 */
+/* .service-box-2-col{
+    width: 0px;
+    height: 0px;
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+    border-bottom: 200px solid #abe2e9;
+    } */
+#service {
+    margin-top: -100px;
+    padding-bottom: 70px;
+}
+.service-box {
+    margin-bottom: 40px;
+    background: #fff;
+    text-align: center;
+    padding: 45px 25px 30px 25px;
+    border: 1px solid transparent;
+    transition: all .3s ease 0s;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px #00bcd4;
+}
+.service-box .service-img-icon {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background: #fff;
+    padding-top: 20px;
+    margin: 0 auto;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    background: lightblue;
+    border: 1px solid #00bcd4;
+    color: #fff;
+}
+.service-inner {
+    margin-top: 30px;
+}
+.service-inner h4 {
+    margin-bottom: 20px;
+}
+.service-inner p {
+    line-height: 28px;
+    font-size: 15px;
+    color:black;
+    
+}
+.service-inner span{
+    color:blue;
+} 
+/* image outer css */
+.demand-img-outer img{
+  padding:30px;
+  width:100%;
+} 
+.demand-img-outer{
+    margin:30px 0px;
+    background-color: white;
+    border-radius:50px 0 50px 0;
+}

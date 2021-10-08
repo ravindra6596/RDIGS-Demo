@@ -29,7 +29,7 @@ const Banner = () => {
                                          <input type="checkbox" checked/>
                                          <p className="homemodalAgree">I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our <span style={{color:'#30a6e9'}}>Privacy Policy</span> And <span style={{color:'#30a6e9'}}>Terms and Codition.</span> </p>
                                    </div>
-                                   <div style={{textAlign:'center'}}><Button text="Submit" /></div>                              
+                                   <div style={{textAlign:'center'}}><Button classNames="allbtn-primary glow-on-hover text-light" text="Submit" /></div>                              
                                </div>
                            </div>
                        </div>
@@ -44,7 +44,7 @@ const Banner = () => {
                         <h1>Build Your Business With   <marquee width="50%" direction="left" height="100px">RDIGS</marquee></h1>
                         <h2>We are team of talented designers making websites with Bootstrap</h2>
                         <div class="text-center text-lg-start">
-                            <Button text="KNOW MORE" fun={() => setModal(true)}/>
+                            <Button  classNames="allbtn-primary glow-on-hover text-light" text="KNOW MORE" fun={() => setModal(true)}/>
                         </div>
                     </div>
                     </div>

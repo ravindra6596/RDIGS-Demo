@@ -64,7 +64,7 @@ window.addEventListener('scroll', checkingScrollTop)
                     </div>
                     <div className="col-sm-4 col-lg-4 col-md-4 cop-btn" style={{ paddingTop: '5%' }}>
                         <div className="downbtncop">
-                    <Button text="DOWNLOAD NOW" fun={()=>setModal(true)} className="btn btn-primary glow-on-hover"/>
+                    <Button text="DOWNLOAD NOW" fun={()=>setModal(true)} classNames="allbtn-primary glow-on-hover text-light"/>
                     </div>
                     </div>
                     <div className="Modal-animation">
@@ -103,8 +103,8 @@ window.addEventListener('scroll', checkingScrollTop)
                                                                 <i className="fa fa-address-book" aria-hidden="true"></i>
                                                                 </div>
                                                                 <Link to ="#" className="corporate-submit">
-                                                                    <div class="buttons" style={{marginTop:'10px'}}>
-                                                                     <Button text="Submit" className="btn btn-primary glow-on-hover"></Button>
+                                                                    <div class="buttons d-flex justify-content-center" style={{marginTop:'10px'}}>
+                                                                     <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light "></Button>
                                                                     </div>
                                                                 </Link>
                                                                 <Recaptcha
