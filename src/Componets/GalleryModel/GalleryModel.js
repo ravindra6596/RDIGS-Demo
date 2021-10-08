@@ -36,23 +36,7 @@ function GalleryModel(props) {
                     alt="popup"
                     className="popup-image-model img-fluid"
                   />
-                  <div class="overlay">
-                    <h2>Hover effect 7</h2>
-                    <p>
-                      <Link to="#" className="a-tag">
-                        <i class="fa fa-twitter"></i>
-                      </Link>
-                      <Link to="#" className="a-tag">
-                        <i class="fa fa-facebook"></i>
-                      </Link>
-                      <Link to="#" className="a-tag">
-                        <i class="fa fa-instagram"></i>
-                      </Link>
-                      <Link to="#" className="a-tag">
-                        <i class="fa fa-dribbble"></i>
-                      </Link>
-                    </p>
-                  </div>
+               
                 </div>
               </div>
             </div>
