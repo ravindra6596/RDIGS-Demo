@@ -193,9 +193,6 @@ const Header = () => {
             </div>
           </div>
         </aside>
-        <button className="social-hide-button">
-          <i class="fa fa-angle-double-left" aria-hidden="true"></i>
-        </button>
       </section>
     </>
   );

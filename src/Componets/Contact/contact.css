@@ -38,9 +38,13 @@
         border-radius: .25rem;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+ 
+.conradiofirst{margin-left: 22%;}
+ 
 .conradiofirst{margin-left: 22%;
     margin-top: 5px;
 }
+
 .consubtxt{font-size: 20px;}
 .conaddmaker{
     font-size: 25px;

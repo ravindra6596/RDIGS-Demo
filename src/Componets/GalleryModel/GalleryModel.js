@@ -21,7 +21,7 @@ function GalleryModel(props) {
       </div>
       <Modal
         isOpen={modal1}
-        className="modal-dialog modal-lg"
+        className="modal-dialog modal-lg largemodel"
         toggle={toggle1}
         dialogClassName="modal-90w"
         aria-labelledby="example-custom-modal-styling-title"
@@ -36,7 +36,7 @@ function GalleryModel(props) {
                     alt="popup"
                     className="popup-image-model img-fluid"
                   />
-               
+
                 </div>
               </div>
             </div>
