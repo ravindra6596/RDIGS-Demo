@@ -57,6 +57,9 @@ margin-top: 5%;}
   background-repeat: no-repeat; 
   background-size: cover;
 }
+.flip-card-front img{
+  height:100%;
+}
 .flip-card-back {
 	opacity: 1;
 	-webkit-transition: .3s ease-in-out;

@@ -6,8 +6,8 @@
 .gallary-img{
     cursor: pointer;
     margin:30px;
-    width:450px;
-    height:300px;
+    width:100%;
+    height:100%;
 }
 .gallary-img:hover{
     cursor: pointer;
@@ -20,7 +20,7 @@
     100% { transform: translateY(0); }
   }
   .bdt-gallery-thumbnail img{
-	transform: scale(1.1);
+	transform: scale(1.0);
 	transition: .3s ease-in-out;
   }
   .bdt-gallery-thumbnail:hover img { 
@@ -101,17 +101,22 @@
   }
 .largemodel{
     top:10%;
-}
-/* Opacity #2 */
-.largemodel {
-	background: #1abc9c;
-}
-.largemodel img {
-	opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    border-radius: 1.3rem;
+    border: none;
 }
 .largemodel:hover img {
-	opacity: .5;
+    filter: grayscale(1);
+    transition: 0.5s ease-in-out;
+  }
+@media only screen and (min-width:320px) and (max-width: 768px) {
+    .gallary-img{
+        border: solid white 3px;
+        margin:0px;
+    }
 }
-
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    .gallary-img{
+        border: solid white 5px;
+        margin:0px;
+    }
+}

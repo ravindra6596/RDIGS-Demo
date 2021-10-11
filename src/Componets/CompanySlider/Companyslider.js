@@ -42,23 +42,23 @@ const Companyslider = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 3,
+          slidesToScroll: 3
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 3,
+          slidesToScroll: 3
         }
 
       },
       {
         breakpoint: 320,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 3,
+          slidesToScroll: 3
         }
       }
 
@@ -102,7 +102,6 @@ const Companyslider = () => {
       clientimg: s12
     },
   ];
-
   return (
     <>
       <section className="clients">

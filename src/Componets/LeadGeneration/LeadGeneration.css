@@ -5,6 +5,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.Lead-text-col{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
 .Lead-heading-top:hover{color:midnightblue;   }
 .Lead-img1{
     width:100%;
@@ -166,3 +172,61 @@
    border-radius: 50px 0 50px 0; 
    margin:30px 0px;
 }
+/* css for avatar */
+            #flamelab-convo-widget {
+                animation-name: flamelab-convo-widget_enter;
+                animation-duration: 10.5;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                color: black;
+            }
+            #flamelab-convo-widget img {
+                animation-name: flamelab-convo-widget_rotate;
+                animation-duration: 10.5s;
+                transform: rotate(20deg) to rotate(0deg) ;
+            }
+            .flamelab-cw-msg-box {
+                background: white;
+                width: 280px;
+                border-radius: 20px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, .25);
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                animation-name: flamelab-convo-widget_msg-appear;
+                animation-duration: 2s;
+                font-size: 15px;
+                line-height: 23px;
+            }
+            .flamelab-cw-buttons {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0 -4px;
+                margin-top: 8px;
+                font-weight: 600;
+            }
+            .flamelab-cw-button {
+                cursor: pointer;
+                padding: 4px;
+                margin-right: 12px;
+                display: block;
+                text-decoration: none;
+            }
+            .flamelab-cw-button-yes {
+                color: #FF1B96;
+                font-weight: 700;
+            }
+            @keyframes flamelab-convo-widget_enter {
+                from { left: -200px; }
+                to { left: -40px; }
+            }
+            @keyframes flamelab-convo-widget_rotate {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(20deg); }
+            }
+            @keyframes flamelab-convo-widget_msg-appear {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+        
