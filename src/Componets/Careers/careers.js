@@ -1,5 +1,6 @@
 import React  from "react";
 import './careers.css';
+import Heading from "../Heading/Heading";
 import CareerAccordian from "../Careers/CareerAccordian/careeraccordian";
 import career1 from "../../img/career/career-1.png";
 import career2 from "../../img/career/career-2.png";
@@ -57,7 +58,7 @@ const careers =()=>{
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12">
-                        <h1 style={{color:'#30a6e9'}}>Benefits of joining our Team</h1>
+                        <Heading title="Benefits of joining our Team" />
                     </div>
                 </div>
                 <div className="row" style={{marginBottom:'5%'}} data-aos="fade-up" data-aos-delay="200">

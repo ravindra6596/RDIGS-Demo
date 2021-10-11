@@ -7,11 +7,9 @@
     margin: 1% 0;
     background-color: #fff;
     border-radius: .30rem!important;
-    text-align: justify;
-    
+    text-align: justify; 
 }
 .carshadow:hover{
-    transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 .accordimg{
@@ -33,4 +31,11 @@
     color: #8b8e93;
     font-size: 15px;
     line-height: 1.6;
+}
+@media only screen and (min-width: 320px)and (max-width: 575px){
+    .carshadow {text-align: center;}
+    .carshadow p,h5{text-align: center;
+    margin: 5px;}
+    .btnclear {margin-right: 0px;}
+   
 }

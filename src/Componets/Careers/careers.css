@@ -8,6 +8,7 @@
     left: 10px;
     z-index: 1;
 }
+.carbox:hover{  background-color: lightblue;}
 .careercolm{ margin-top: 10%;}
 .carboximg{
     width: 35%;

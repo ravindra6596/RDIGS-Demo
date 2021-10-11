@@ -37,6 +37,7 @@ function GalleryModel(props) {
                     alt="popup"
                     className="popup-image-model img-fluid"
                   />
+
                 </div>
               </div>
             </div>

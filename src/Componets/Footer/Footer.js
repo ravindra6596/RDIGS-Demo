@@ -101,8 +101,8 @@ window.addEventListener('scroll', checkingScrollTop)
                                                                 </div>
                                                                 <Link to ="#" className="corporate-submit">
 
-                                                                    <div class="buttons d-flex justify-content-center" style={{marginTop:'10px'}}>
 
+                                                                    <div className="buttons d-flex justify-content-center" style={{marginTop:'10px'}}>
                                                                      <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
                                                                     </div>
                                                                 </Link>
@@ -195,12 +195,12 @@ window.addEventListener('scroll', checkingScrollTop)
                 <div className="row d-flex justify-space-between">
                     <div className="col-lg-6 col-md-6 col-sm-6 me-md-auto text-center text-md-start footrescol">
                         <div id="copyright" className="clr copyright-center" role="contentinfo">
-                            Copyright © <span>{getCurrentYear()}</span> <Link to="https://rdigs.com/" target="_blank" className="footerlinkhover">RDIGS Info Global Solution</Link>
+                            Copyright © <span>{getCurrentYear()}</span> <Link to="https://rdigs.com/" target="_blank" className="footerlinkhover">RD Info Global Solution</Link>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6">
                         <div  className="copydesign" >
-                           Designed by <Link to="http://lead-tronics.com/" target="_blank" className="footerlinkhover">Lead-Tronics</Link>
+                           Designed by <Link to="http://lead-tronics.com/" target="_blank" className="footerlinkhover">LeadTronics</Link>
                         </div>
                     </div>
                 </div>

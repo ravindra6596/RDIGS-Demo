@@ -1,5 +1,6 @@
 import React from "react";
 import "./teams.css";
+import Heading from "../Heading/Heading";
 import team1 from "../../img/team/team-1.jpg";
 import team2 from "../../img/team/team-2.jpg";
 import team3 from "../../img/team/team-3.jpg";
@@ -59,11 +60,11 @@ const teams =()=>{
         </div>
   
         {/* <!-- ======= Team Section ======= --> */}
-        <section  id="team" class="team  " style={{marginTop:'3%'}}>
+        <section  id="team" class="team" style={{marginTop:'3%'}}>
         <div class="container" data-aos="fade-up">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                  <h2>Meet Our Team</h2>
+                  <Heading title="Meet Our Team" />
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text</p>
                 </div>
             </div>

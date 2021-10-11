@@ -11,13 +11,13 @@ import modalimg from '../../img/modalhomeimg.png';
 import { Modal, ModalBody } from 'reactstrap';
 
 const Home = () => {
-  // { / After page Load Model Automatic show / }
+//  { / After page Load Model Automatic show / }
   const [showModal, setShowModal] = useState(false)
 
-  useEffect(() => {
-    const timeId = setTimeout(() => setShowModal(true), 90000)
-    return () => clearTimeout(timeId)
-  }, []);
+    useEffect(() => {
+        const timeId = setTimeout(() => setShowModal(true), 90000)
+        return () => clearTimeout(timeId)
+      },[]);
 
   return (
     <> 
@@ -52,6 +52,7 @@ const Home = () => {
         </ModalBody>
       </Modal> 
       {/* {/ After page Load Model Automatic show End  /} */}
+
     </>
   )
 }
