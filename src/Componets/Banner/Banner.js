@@ -17,7 +17,7 @@ const Banner = () => {
           <span className="homemodalclosebtn" onClick={() => setModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
           <div className="container">
             <div className="row">
-              <div className="col-lg-5 col-md-5 col-sm-5 col-xs-5" style={{ padding: '0px' }}>
+              <div className="col-lg-5 col-md-5 col-sm-5 col-xs-5" >
                 <img src={modalimg} className="homemain-modalimg img-fluid" />
               </div>
               <div className="col-lg-7 col-md-7 col-sm-7 col-xs-7">
@@ -39,16 +39,16 @@ const Banner = () => {
       <section id="hero" >
         <div class="container">
           <div class="row justify-content-between">
-            <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+            <div class="col-lg-7 col-md-7 col-sm-12 pt-lg-0 order-2 order-lg-1 d-flex align-items-center justify-content-center ">
               <div data-aos="zoom-out">
-                <h1>Build Your Business With   <marquee width="50%" direction="left" height="100px">RDIGS</marquee></h1>
+                <h1>Build Your Business With   <marquee width="50%" direction="left" >RDIGS</marquee></h1>
                 <h2>We are team of talented designers making websites with Bootstrap</h2>
                 <div class="text-center text-lg-start">
                   <Button classNames="allbtn-primary glow-on-hover text-light" text="KNOW MORE" fun={() => setModal(true)} />
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+            <div class="col-lg-4  col-md-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
               <img src={banimg} class="img-fluid animated" alt="" />
             </div>
           </div>
