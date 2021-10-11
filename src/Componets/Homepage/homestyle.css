@@ -1,12 +1,11 @@
 input:focus { outline: none !important;}
 .modal-open .modal {
-  overflow-x: hidden;
-  overflow-y: auto;
   margin-top: 6%;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
   }
+  .modal-open {overflow: auto!important;}
   .homemodalhead{
     border: none;
     background-color: lightblue;
@@ -33,8 +32,7 @@ input:focus { outline: none !important;}
   padding: 1%;
 }
 .homemain-modalimg {height: 270px;}
-
-  .homepagese2cont{
+.homepagese2cont{
     margin: 3%  0px;
     background-image: linear-gradient(to left, rgb(43, 50, 53) 0%, rgb(48, 166, 233) 100%); 
   }

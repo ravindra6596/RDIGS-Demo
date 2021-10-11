@@ -1,7 +1,7 @@
 .testimonil-img{
     background-image:url('../../img/testimonial/testimonialbg.png') ;
     background-size: cover;
-    height: 450px;
+    height: 350px;
     width: 100%;
 }
 .card img{
@@ -41,7 +41,6 @@
     color: grey;
     text-align: initial;
 }
-
 .item-i {
     background-color: #95adbe;
     color: white;

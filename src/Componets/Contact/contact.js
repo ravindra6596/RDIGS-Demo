@@ -47,16 +47,19 @@ const contact = () => {
                                     {/* others Radio button functinality */}
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" name="age" value="30" />
-                                        <label for="age1" style={{ marginLeft: '5px' }} >Other</label>
-                                        <input type="textarea" placeholder="Enter Discription" style={{display:'none'}} />
+                                        <label for="age1" style={{marginLeft:'5px'}} >Other</label>
                                     </div>
                                 </div>
+                                <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Enter Discription" style={{display:'block'}} />
+                                
                                 <div className="row" style={{ padding: '4%' }}>
                                     <div className="col conformcleardiv"> <Button classNames="btnclear" text="Clear" /></div>
                                     <div className="col btngetintouch"><Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" /></div>
                                 </div>
                             </form>
+                            
                         </div>
+                        
                     </div>
                 </div>
             </section>
