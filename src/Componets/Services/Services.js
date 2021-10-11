@@ -1,4 +1,4 @@
-import './Services.css';
+ import './Services.css';
  import service1 from '../../img/services/service1.jpg';
  import service2 from '../../img/services/service2.jpg';
  import service3 from '../../img/services/service3.jpg';
@@ -51,7 +51,7 @@ const Servicess =()=>{
             <div className="row" data-aos="fade-up" data-aos-delay="200" >
             {               
                 data.map((user, index) => (
-                <div className="col-lg-4 col-md-4 col-sm-4"style={{marginTop:'3%'}}>
+                <div className="col-lg-4 col-md-4 col-sm-4 service-col-img"style={{marginTop:'3%'}}>
                     <div className="flip-card">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">      

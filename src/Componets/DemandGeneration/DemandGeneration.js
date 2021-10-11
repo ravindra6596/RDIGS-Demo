@@ -2,6 +2,9 @@ import React from 'react';
 import './DemandGeneration.css';
 import Button from '../ButtonGroup/Button/button';
 import demad2 from '../../img/services/demand1.png';
+import goal from '../../img/services/goal.png';
+import paidsearch from '../../img/services/paidsearch.png';
+import headset from '../../img/services/headset.png';
 import s1 from '../../img/services/digital-marketing-3.png';
 import service1 from '../../img/services/service1.jpg';
 import service2 from '../../img/services/service2.jpg';
@@ -95,20 +98,15 @@ const DemandGeneration=()=>{
                        <Heading title="Demand Generation"></Heading>
                     </div>
                 <div className="row">
-                    <div className="col-sm-6 col-md-6 col-lg-6">
+                    <div className="col-sm-6 col-md-6 col-lg-6 Demand-text-col">
                         <div class="Demand-title aos-init aos-animate" data-aos="fade-right">
                             <h4 className="Demand-subhead" data-aos="fade-down">Create. Publish. Syndicate.</h4>
-                            <p class="Demand-right" data-aos="fade-down">
-                                
+                            <p class="Demand-right" data-aos="fade-down">  
                              Your strategy for content marketing should include business objectives along with audience 
                              targeting and running native ads. We can help you increase the number of viewers on your website
                               as well as your reputation by syndicating content.
-                    
                             </p>
-
                                 <Button classNames="allbtn-primary glow-on-hover text-light Drive-Excess-Conversion" text="Reach Customers Across the web" data-aos="fade-left"></Button>
-
-
                         </div>
                     </div>
                     <div className="col-sm-6 col-md-6 col-lg-6">
@@ -117,8 +115,6 @@ const DemandGeneration=()=>{
                         </div>
                     </div>
                 </div>
- 
-
             </div>
         </section>
         <section id="service-2" class="section-padding11 pb-5">
@@ -126,14 +122,14 @@ const DemandGeneration=()=>{
         <div class="row">
             <div class="col-lg-4 col-md-6 service-box-2-col">
                 <div class="service-box-2 mb-5">
-                <span>01</span>
+                <img src={goal} alt="demand-goal"></img>
                 <h4>Best <br></br>Analytics Audits</h4>
                 <p class="mb-0">We have had the pleasure of partnering with a wide array of brands ranging from tech startups to Fortune 500 enterprises.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 service-box-2-col">
                 <div class="service-box-2 mb-5">
-                <span>02</span>
+                <img src={paidsearch} alt="demand-goal"></img>
                 <h4>Deep <br></br>Technical SEO</h4>
                 <p class="mb-0">Over the last decade, we have had the pleasure of partnering with a wide array of brands ranging
                     enterprises.</p>
@@ -141,7 +137,7 @@ const DemandGeneration=()=>{
             </div>
             <div class="col-lg-4 col-md-6 service-box-2-col">
                 <div class="service-box-2 mb-5 ">
-                <span>03</span>
+                <img src={headset} alt="demand-goal"></img>
                 <h4>Modern <br></br>Keyword Analysis</h4>
                 <p class="mb-0">Over the last decade a wide array of brands ranging from tech startups to Fortune 500 enterprises.</p>
                 </div>
@@ -153,13 +149,10 @@ const DemandGeneration=()=>{
             <div class="container">
                 <div class="row align-items-center">
                 <div class="col-lg-5 col-sm-12 col-md-6 mb-5 mb-lg-0">
-                   
                         <div className="demand-img-outer">
                           <img src={min} alt="feature bg" class="img-fluid demand-imgleft"/>
                         </div>
-                    
                 </div>
-
                 <div class="col-lg-7 pl-4">
                     <div class="mb-5">
                     <div className="d-flex justify-content-center">
@@ -175,7 +168,7 @@ const DemandGeneration=()=>{
                             aboutlistheading.map((user,index)=>{
                                 return(
                                     <li>
-                                       <h5 class="mb-2 text-light"><i class="fa fa-check-circle"></i>{user.heading}</h5>
+                                       <h5 class="mb-2"><i class="fa fa-check-circle"></i>{user.heading}</h5>
                                         <p>{user.para}</p>
                                    </li>
                                 )
@@ -187,8 +180,6 @@ const DemandGeneration=()=>{
                 </div>
             </div>
       </section>
-    
-   
       <section id="service-head" class="service-style-two">
         <div class="container">
             <div class="row justify-content-center">
@@ -224,7 +215,6 @@ const DemandGeneration=()=>{
                      )
                  })
      }
- 
     </div>
   </div>
 </section>

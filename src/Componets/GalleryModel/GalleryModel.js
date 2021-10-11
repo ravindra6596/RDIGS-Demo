@@ -15,7 +15,7 @@ function GalleryModel(props) {
             className="gallary-img"
             src={props.image}
             alt="img-1-1"
-            onClick={toggle1}
+            onClick={toggle1} fun={()=>setModal1(true)}
           />
         </div>
       </div>
@@ -27,6 +27,7 @@ function GalleryModel(props) {
         aria-labelledby="example-custom-modal-styling-title"
       >
         <ModalBody>
+        <span  className="homemodalclosebtn"  onClick={() => setModal1(false)} ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
           <section className="Ppoup-model-header">
             <div className="container-fluid">
               <div className="row">

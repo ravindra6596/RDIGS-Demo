@@ -4,14 +4,15 @@ import Heading from "../Heading/Heading";
 import Button from "../ButtonGroup/Button/button";
 import demand1 from "../../img/services/demand2.png";
 import min from "../../img/services/min.jpg";
-import service1 from "../../img/services/service1.jpg";
-import service2 from "../../img/services/service2.jpg";
-import service3 from "../../img/services/service3.jpg";
-import service4 from "../../img/services/service4.jpg";
-import service5 from "../../img/services/service5.jpg";
-import service6 from "../../img/services/service6.jpg";
-import service7 from "../../img/services/service7.jpg";
-import service8 from "../../img/services/service8.jpg";
+import service1 from "../../img/services/s1.jpg";
+import service2 from "../../img/services/s2.jpg";
+import service3 from "../../img/services/s3.jpg";
+import service4 from "../../img/services/s4.jpg";
+import service5 from "../../img/services/s5.jpg";
+import service6 from "../../img/services/s6.jpg";
+import service7 from "../../img/services/s7.jpg";
+import service8 from "../../img/services/s8.jpg";
+import avatarsm from "../../img/services/avatar-sm.png";
 const LeadGeneration = () => {
   const data = [
     {
@@ -69,26 +70,30 @@ const LeadGeneration = () => {
                 />
               </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="col-sm-6 col-md-6 col-lg-6 Lead-text-col">
               <div class="lead-title aos-init aos-animate" data-aos="fade-up">
-                <h4 className="Lead-subhead" data-aos="fade-up">
-                  Reach your Target Audience
-                </h4>
-                <p class="lead-right" data-aos="fade-up">
-                  We run account-based marketing (ABM) campaigns for targeting
-                  the accounts by professional demographics to drive more
-                  conversions. We generate target accounts and nurture them
-                  based on content, relevant communications and contextual
-                  marketing.
-                </p>
-                <Button
-                  classNames="allbtn-primary glow-on-hover text-light Drive-Excess-Conversion"
-                  data-aos="fade-left"
-                  text="Drive-Excess-Conversion"
-                ></Button>
-                <br></br>
+                <div>
+                    <h4 className="Lead-subhead" data-aos="fade-up">
+                      Reach your Target Audience
+                    </h4>
+                   
+                    <p class="lead-right" data-aos="fade-up">
+                      We run account-based marketing (ABM) campaigns for targeting
+                      the accounts by professional demographics to drive more
+                      conversions. We generate target accounts and nurture them
+                      based on content, relevant communications and contextual
+                      marketing.
+                    </p>
+                    </div>
+                    <Button
+                      classNames="allbtn-primary glow-on-hover text-light Drive-Excess-Conversion"
+                      data-aos="fade-left"
+                      text="Drive-Excess-Conversion"
+                    ></Button>
+                    <br></br>
+                </div>
               </div>
-            </div></div>
+            </div>
         </div>
       </section>
       <section class="section-services text-center">
@@ -156,13 +161,23 @@ const LeadGeneration = () => {
                       iruxvfg dhjinulpadeserunt moll.
                     </p>
                   </div>
+                  <div id="flamelab-convo-widget"  data-aos="fade-left">
+                   <img src={avatarsm} alt="Avatar Image"/>
+                    <div class="flamelab-cw-msg-box">
+                        <span>Hey! Want to create your own Leads?</span>
+                        {/* <!-- <span style="opacity: 0.5;">- Mike (the creator of this site)</span> --> */}
+                        <div class="flamelab-cw-buttons">
+                            <a href="#" target="_blank" class="flamelab-cw-button flamelab-cw-button-yes">Yes!</a>
+                            <div class="flamelab-cw-button flamelab-cw-button-no">Thanks</div>
+                        </div>
+                    </div>
+                </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="services-3"></section>
     </>
   );
 };

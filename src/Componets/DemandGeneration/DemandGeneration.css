@@ -17,6 +17,11 @@
     font-size: 20px;
     text-align: left;
 }
+.Demand-text-col{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
 .Demand-subhead{
     padding: 10px;
 }
@@ -156,13 +161,6 @@
     line-height: 32px;
 }
 /* services 2 */
-/* .service-box-2-col{
-    width: 0px;
-    height: 0px;
-    border-left: 55px solid transparent;
-    border-right: 55px solid transparent;
-    border-bottom: 200px solid #abe2e9;
-    } */
 #service {
     margin-top: -100px;
     padding-bottom: 70px;
@@ -176,6 +174,11 @@
     transition: all .3s ease 0s;
     border-radius: 5px;
     box-shadow: 0px 2px 6px #00bcd4;
+}
+.service-box:hover{
+    color:white;
+    background-color:#1799e3;
+
 }
 .service-box .service-img-icon {
     width: 100px;

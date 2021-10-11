@@ -25,14 +25,7 @@ text-align: end;}
     color: white;
     text-shadow: .03em .03em 0;
   }
-  @keyframes animate {
-    0% {
-      background-position: -500%;
-    }
-    100% {
-      background-position: 500%;
-    }
-  }
+
 .footerlinkhover:hover,:focus,:active{
     color:rgb(29, 125, 156) ;
     text-decoration: none;
@@ -167,7 +160,7 @@ input::-webkit-inner-spin-button {
 
 @media only screen and (min-width:320px) and (max-width: 480px) {
 .copydesign {text-align: center;}
-.media-kit {height: 300px;}
+
     
 }
 @media only screen and (min-width:430px) and (max-width: 575px) {
@@ -512,6 +505,12 @@ input::-webkit-inner-spin-button {
     margin-right: 160px;
     color:white;
 }
+ .cop-btn{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+ }
+
 .modelhead11{
     background-color: lightblue;
 }

@@ -41,8 +41,6 @@ const scrollgoTop = () => {
   window.scrollTo({ top:0, behavior: 'smooth' });
 };
 window.addEventListener('scroll', checkingScrollTop)
-
-
     return (
         <>
         <div>
@@ -50,11 +48,10 @@ window.addEventListener('scroll', checkingScrollTop)
             style={{visibility: showScrollup ? 'visible' : 'hidden' }} >
            <i class="fa fa-angle-double-up"></i></button>
         </div>
-
         <section className="media-kit">
             <div className="container mediakit-cont">
             <div className="row">
-                    <div className="col-sm-8 col-lg-8 col-md-8 text-light">
+                    <div className="col-sm-12 col-lg-8 col-md-8 text-light">
                         <div className="mediakitdiv">
                         <h1 className="mediakithead data-shadow='dang!'">CORPORATE DECK 2021</h1>
                         </div>
@@ -62,7 +59,7 @@ window.addEventListener('scroll', checkingScrollTop)
                            <p className="mediakit-para" data-aos="flip-left">By focusing on top of the funnel,we arm your sales and marketing team with larger audience of potential leads to keep you ahead in the game.</p>
                         </div>
                     </div>
-                    <div className="col-sm-4 col-lg-4 col-md-4 cop-btn" style={{ paddingTop: '5%' }}>
+                    <div className="col-sm-12 col-lg-4 col-md-4 cop-btn">
                         <div className="downbtncop">
                     <Button text="DOWNLOAD NOW" fun={()=>setModal(true)} classNames="allbtn-primary glow-on-hover text-light"/>
                     </div>
@@ -122,7 +119,6 @@ window.addEventListener('scroll', checkingScrollTop)
                                                     </div>
                                                 </div> 
                                             </div>
-                                    
                                 </ModalBody>
                         </Modal>
                     </div>               
@@ -169,7 +165,6 @@ window.addEventListener('scroll', checkingScrollTop)
                         </span>
                         </div>
                     </div>
-                  
                     <div className="col-lg-3 col-md-6  col-sm-6 col-xs-6 footer-links footrescol">
                         <h5 className="ourservices text-light">OUR SERVICES</h5>
                         <ul className="text-light services">
@@ -195,7 +190,6 @@ window.addEventListener('scroll', checkingScrollTop)
                     </div>
                 </div>
             </div>
-
             <section className="copyright-section">
             <div className="container">
                 <div className="row d-flex justify-space-between">
