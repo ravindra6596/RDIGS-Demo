@@ -5,7 +5,7 @@ import './App.css';
 import { BrowserRouter, Route,Switch } from 'react-router-dom';
 import Header from './Componets/Header/header';
 import Footer from './Componets/Footer/Footer';
-import LoaderExampleDisabled from './Componets/Loader/LoaderExampleDisabled';
+import LoaderExampleDisabled from './Componets/LoaderExampleDisabled/LoaderExampleDisabled';
 
 AOS.init({
  duration: 1500
