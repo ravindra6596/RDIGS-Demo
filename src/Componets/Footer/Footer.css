@@ -26,10 +26,7 @@ text-align: end;}
     text-shadow: .03em .03em 0;
   }
 
-.footerlinkhover:hover,:focus,:active{
-    color:rgb(29, 125, 156) ;
-    text-decoration: none;
-}
+.footerlinkhover:hover,:focus,:active{text-decoration: none;}
 .footerlinkhover{
     color: #30a6e9;
     text-decoration: none;
@@ -251,8 +248,8 @@ input::-webkit-inner-spin-button {
 }
 .services li:hover{
     transition: all .2s ease-in-out;
-    left: -13px;
-    padding-left: 18px;
+    left: -3px;
+    padding-left: 3px;
     padding-right: 0;
 }
 .img-ind , .img-us{
@@ -446,12 +443,14 @@ font-size: 18px;}
     height:100%;
 }
 .form-corporateDeck-fname, .form-corporateDeck-number, .form-corporateDeck-company{
+    outline: none;
     width:100%;
     border-radius: 8px;
     border:1px solid #30a6e9;  
     padding: 4px;
 }
 .form-corporateDeck-lname, .form-corporateDeck-email, .form-corporateDeck-code{
+    outline: none;
     width:100%; 
     border-radius: 8px;
     border:1px solid #30a6e9;  

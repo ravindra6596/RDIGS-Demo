@@ -21,6 +21,7 @@ const LeadGeneration = React.lazy(() => import('./Componets/LeadGeneration/LeadG
 const Gallary = React.lazy(() => import('./Componets/Gallery/Gallery'));
 const CompanyProfile1 = React.lazy(() => import('./Componets/CompanyProfile1/CompanyProfile1'));
 const Blog = React.lazy(() => import('./Componets/Blog/Blog'));
+const JobDescription = React.lazy(() => import('./Componets/Careers/JobDescription/JobDescription'));
   return (
     <div className="App">
       <BrowserRouter>
@@ -39,6 +40,7 @@ const Blog = React.lazy(() => import('./Componets/Blog/Blog'));
               <Route path='/gallary' exact={true} component={Gallary}/>
               <Route path='/companyprofile1' exact={true} component={CompanyProfile1}/>
               <Route path='/blog' exact={true} component={Blog}/>
+              <Route path='/jobdescription' exact={true} component={JobDescription}/>
               <Route path='/footer' exact={true} component={Footer}/>
 
           </Switch>

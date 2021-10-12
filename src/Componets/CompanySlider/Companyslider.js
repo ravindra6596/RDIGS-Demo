@@ -1,6 +1,5 @@
 import React from 'react';
 import './Companyslider.css';
-import Heading from '../Heading/Heading';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -105,11 +104,11 @@ const Companyslider = () => {
   return (
     <>
       <section className="clients">
-        <div className="section-title">
-          <span> <Heading title="We Work With" /></span>
-          <p className="service-para" style={{ marginTop: '2%' }}>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
-        </div>
+        
         <div className="slide-overlay">
+        <div className="section-title">
+          <span> <h1 className="clientheadwe">We Work With</h1></span>
+        </div>
           <div className="overlay1">
             <div className="container slider-cont">
               <Slider {...settings} className="comp-slider">
