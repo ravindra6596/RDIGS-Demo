@@ -89,6 +89,26 @@ const DemandGeneration=()=>{
         para:"Leverage agile frameworks to provide a robust synopsis for high level overviews"
        }
    ]
+   const idservice2=[
+       {
+            s2img:goal,
+            s2h4:"Best",
+            s2h4para:"Analytics Audits",
+            s2para:"We have had the pleasure of partnering with a wide array of brands ranging from tech startups to Fortune 500 enterprises."
+       },
+       {
+           s2img:paidsearch,
+           s2h4:"Deep",
+           s2h4para:"Technical SEO",
+           s2para:"Over the last decade, we have had the pleasure of partnering with a wide array of brands ranging enterprises."
+       },
+       {
+           s2img:headset,
+           s2h4:"Modern",
+           s2h4para:"Keyword Analysis",
+           s2para:"Over the last decade a wide array of brands ranging from tech startups to Fortune 500 enterprises."
+       }
+   ]
     return(
         <>
       <div className="nav-contaniner"/>
@@ -120,28 +140,19 @@ const DemandGeneration=()=>{
         <section id="service-2" class="section-padding11 pb-5">
       <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6 service-box-2-col">
-                <div class="service-box-2 mb-5">
-                <img src={goal} alt="demand-goal"></img>
-                <h4>Best <br></br>Analytics Audits</h4>
-                <p class="mb-0">We have had the pleasure of partnering with a wide array of brands ranging from tech startups to Fortune 500 enterprises.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 service-box-2-col">
-                <div class="service-box-2 mb-5">
-                <img src={paidsearch} alt="demand-goal"></img>
-                <h4>Deep <br></br>Technical SEO</h4>
-                <p class="mb-0">Over the last decade, we have had the pleasure of partnering with a wide array of brands ranging
-                    enterprises.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 service-box-2-col">
-                <div class="service-box-2 mb-5 ">
-                <img src={headset} alt="demand-goal"></img>
-                <h4>Modern <br></br>Keyword Analysis</h4>
-                <p class="mb-0">Over the last decade a wide array of brands ranging from tech startups to Fortune 500 enterprises.</p>
-                </div>
-            </div>
+            {
+               idservice2.map((data)=>{
+                   return(
+                    <div class="col-lg-4 col-md-6 service-box-2-col">
+                        <div class="service-box-2 mb-5">
+                        <img src={data.s2img} alt="demand-goal"></img>
+                        <h4>{data.s2h4}<br></br>{data.s2h4para}</h4>
+                        <p class="mb-0">{data.s2para}</p>
+                        </div>
+                    </div>
+                   )
+               }) 
+            }    
         </div>
     </div>
     </section>
@@ -202,7 +213,7 @@ const DemandGeneration=()=>{
                 return(
                       <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="service-box">
-                            
+                            <div className="serviceboxeffect"></div>
                             <div class="service-img-icon">
                             <img src={user.serviceimgicon} alt="service-icon" class="img-fluid"/>
                             </div>

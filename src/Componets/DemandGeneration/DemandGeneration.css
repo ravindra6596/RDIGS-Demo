@@ -166,7 +166,6 @@
     padding-bottom: 70px;
 }
 .service-box {
-    margin-bottom: 40px;
     background: #fff;
     text-align: center;
     padding: 45px 25px 30px 25px;
@@ -177,8 +176,7 @@
 }
 .service-box:hover{
     color:white;
-    background-color:#1799e3;
-
+    background-color:#bae6ec;
 }
 .service-box .service-img-icon {
     width: 100px;
@@ -202,8 +200,7 @@
 .service-inner p {
     line-height: 28px;
     font-size: 15px;
-    color:black;
-    
+    color:black;   
 }
 .service-inner span{
     color:blue;

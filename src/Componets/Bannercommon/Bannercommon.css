@@ -1,0 +1,30 @@
+.banner-common{
+    background-image: url(https://source.unsplash.com/PTRzqc_h1r4/1600x900);
+}
+.page-header-ui-dark {
+    color: #fff;
+    background-color: #212832;
+}
+.page-header-ui {
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.bg-img-cover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* .position-relative {
+    position: relative !important;
+}
+.px-5 {
+    padding-right: 2.5rem !important;
+    padding-left: 2.5rem !important;
+}
+
+*/
+.svg-border-rounded {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+}
