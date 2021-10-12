@@ -1,9 +1,7 @@
-.accordiansec{
-    background-color: #f8f9fa!important;
-}
+.accordiansec{background-color: #f8f9fa!important;}
 .carshadow{
     box-shadow: 0px 15px 15px 0px rgb(8 18 109 / 10%) !important;
-    padding: 1% 0px;
+    padding: 10px 0px;
     margin: 1% 0;
     background-color: #fff;
     border-radius: .30rem!important;
@@ -11,6 +9,7 @@
 }
 .carshadow:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    background-color: lightblue;
 }
 .accordimg{
     width: 100px;
@@ -18,19 +17,17 @@
     margin: 0px 5%;
     padding: 1rem;
 }
+.accdetid{line-height: 8px;}
 .oppheading{
     color: #242f3e;
     text-transform: capitalize;
     font-weight: bold;
-    line-height: 1.2;
     transition: 0.2s ease;
-    padding: 2% 0px 0px;
 }
 .oppdetails{
     font-weight: 400;
     color: #8b8e93;
     font-size: 15px;
-    line-height: 1.6;
 }
 @media only screen and (min-width: 320px)and (max-width: 575px){
     .carshadow {text-align: center;}

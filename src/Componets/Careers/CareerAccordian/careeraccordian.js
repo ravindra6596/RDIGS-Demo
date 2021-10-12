@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './careeraccordian.css';
 import Button from '../../ButtonGroup/Button/button';
 import opportimg1 from '../../../img/career/oppoimg1.png';
@@ -14,32 +15,27 @@ const Careeraccordian =()=>{
             opportunityimg:opportimg1, 
             oppimgalt:"web project ",
             oppheading: "Web Project Manager - Team Of PHP MySQL Developers ",
-            oppdesc:"MySQL Developer I West New York, USA I Full Time I 2 Days Ago",
+            jobid:"001",
+            postdate:"12 Octomber 2021",
+            TillApply:"30 Oct 2021 "
         },
         { 
             opportunityimg:opportimg2, 
             oppimgalt:"web project ",
             oppheading: "DevOps Project Manager - Team Of DevOps Developers",
-            oppdesc:"MySQL Developer I West New York, USA I Full Time I 2 Days Ago",
+             jobid:"002",
+            postdate:"12 Octomber 2021",
+            TillApply:"30 Oct 2021 "
         },
         { 
             opportunityimg:opportimg3, 
             oppimgalt:"web project ",
             oppheading: "Magento Project Manager - Team Of Magento Developers ",
-            oppdesc:"MySQL Developer I West New York, USA I Full Time I 2 Days Ago",
+            jobid:"003",
+            postdate:"12 Octomber 2021",
+            TillApply:"30 Oct 2021 "
         },
-        { 
-            opportunityimg:opportimg4, 
-            oppimgalt:"web project ",
-            oppheading: "Web Project Manager - Team Of PHP Web Developers ",
-            oppdesc:"MySQL Developer I West New York, USA I Full Time I 2 Days Ago",
-        },
-        { 
-            opportunityimg:opportimg5, 
-            oppimgalt:"web project ",
-            oppheading: "React  Manager - Team Of React Developers ",
-            oppdesc:"MySQL Developer I West New York, USA I Full Time I 2 Days Ago",
-        }, 
+ 
       ];
     return(
     <>
@@ -56,10 +52,12 @@ const Careeraccordian =()=>{
                                 </div>
                                 <div className="col-lg-7 col-md-7 col-sm-7" style={{textAlign:'left'}}>
                                     <h5 className="oppheading">{data.oppheading}</h5>
-                                    <p className="oppdetails">{data.oppdesc}</p>
+                                   <span className="accdetid" style={{display:'flex'}}><p >Job Id:</p><p className="oppdetails">{data.jobid}</p></span>
+                                   <span  className="accdetid" style={{display:'flex'}}><p>Posted Date:</p><p className="oppdetails">{data.postdate}</p></span>
+                                   <span  className="accdetid" style={{display:'flex'}}><p>Till Apply:</p> <p className="oppdetails">{data.TillApply}</p></span>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-3"  style={{paddingTop:'2%'}}>
-                                    <Button classNames="btnclear" text="Apply Now" />
+                                   <Link to="/jobdescription"><Button classNames="btnclear " text="Apply Now" /></Link>
                                 </div>
                             </div>
                         </div>

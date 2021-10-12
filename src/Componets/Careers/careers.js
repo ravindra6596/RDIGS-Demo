@@ -75,7 +75,8 @@ const careers =()=>{
                 </div>
             </div>
             </section>
-        <CareerAccordian/>          
+
+        <CareerAccordian/>        
 </>
 )
 }
