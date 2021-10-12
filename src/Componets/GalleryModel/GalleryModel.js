@@ -18,6 +18,13 @@ function GalleryModel(props) {
             onClick={toggle1} fun={()=>setModal1(true)}
           />
         </div>
+        {/* <div className="gallery-info">
+          <h4>image date</h4>
+          <span>image Name</span>
+          <div className="large image">
+            <i className="fa fa-plus"></i>
+          </div>
+        </div> */}
       </div>
       <Modal
         isOpen={modal1}

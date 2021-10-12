@@ -147,16 +147,16 @@ const Header = () => {
           <div class="textwidget custom-html-widget" id="navbar">
             <div id="floating-social">
               <Link class="a" target="_blank" to="https://www.linkedin.com/" rel="noopener">
-                <img alt="linkedin" src="https://3yghedxb20r3923my4c3z70e-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/linkedin-2.svg"/>
+                <img alt="linkedin" src="https://3yghedxb20r3923my4c3z70e-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/linkedin-2.svg" href="https://www.linkedin.com/company/rd-info-global-solutions/"/>
               </Link>
               <Link class="a" target="_blank" to="https://www.facebook.com/" rel="noopener">
-                <img alt="facebook" src="https://3yghedxb20r3923my4c3z70e-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/facebook-2.svg"/>
+                <img alt="facebook" src="https://3yghedxb20r3923my4c3z70e-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/facebook-2.svg" href="https://www.facebook.com/RDInfoGlobalSolutions/"/>
               </Link>
-              <Link class="a" target="_blank" to="https://twitter.com/" rel="noopener">
-                <img alt="twitter"src="https://3yghedxb20r3923my4c3z70e-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/twitter-2.svg"/>
+              <Link class="a" target="_blank" to="https://youtube.com/" rel="noopener">
+                <img alt="twitter"src="https://3yghedxb20r3923my4c3z70e-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/twitter-2.svg" href="https://www.youtube.com/channel/UCumgvf7v5Z8JGHoSDqGrVAw"/>
               </Link>
               <Link class="a" target="_blank" to="https://www.instagram.com/" rel="noopener">
-                <img alt="instagram" src="https://3yghedxb20r3923my4c3z70e-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/instagram-2.svg"/>
+                <img alt="instagram" src="https://3yghedxb20r3923my4c3z70e-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/instagram-2.svg" href="https://twitter.com/"/>
               </Link>
             </div>
           </div>
