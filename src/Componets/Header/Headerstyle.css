@@ -7,7 +7,7 @@
 
 .navbar-expand-lg .navbar-collapse {justify-content: end;}
 .navbar-light .navbar-nav .nav-link  {
-    color: white;
+    color: #30a6e9;
 }
 .forunderline{
     background: 
@@ -20,7 +20,7 @@ transition:0.5s;
     --d: 100%;
 }
 .navbar-light .navbar-nav .nav-link a {
-    color: white;
+    color: #30a6e9;
     text-decoration: none;  
 }
 .navbar-light .navbar-nav .nav-link a :hover{

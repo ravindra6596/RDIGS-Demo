@@ -77,31 +77,26 @@ window.addEventListener('scroll', checkingScrollTop)
                                                         <h2 className="text-center model-head-cop">Corporate Deck 2021</h2>
                                                             <form onSubmit={onResolveddata}>
                                                               <div className="corporate-form-in1">
-                                                                <input type="text" className="form-corporateDeck-fname" id="Fname" placeholder="First Name" 
-                                                                />
+                                                                <input type="text" className="form-corporateDeck-fname" id="Fname" placeholder="First Name" required/>
                                                                 <i className="fa fa-user"></i>
                                                                 </div>
                                                                 <div className="corporate-form-in2">
-                                                                <input type="text" className="form-corporateDeck-lname" id="Lname" placeholder="Last Name" 
-                                                                />
+                                                                <input type="text" className="form-corporateDeck-lname" id="Lname" placeholder="Last Name" required />
                                                                 <i className="fa fa-user"></i>
                                                                 </div>
                                                                 <div className="corporate-form-in3">
-                                                                <input type="number" className="form-corporateDeck-number" id="Pnumber" placeholder="Phone Number"
-                                                                 maxLength="10"/>
+                                                                <input type="number" className="form-corporateDeck-number" id="Pnumber" placeholder="Phone Number" maxLength="10" required/>
                                                                 <i className="fa fa-phone"></i>
                                                                 </div>
                                                                 <div className="corporate-form-in4">
-                                                                <input type="text" className="form-corporateDeck-email" id="Email" placeholder="Your Email"/>
+                                                                <input type="text" className="form-corporateDeck-email" id="Email" placeholder="Your Email" autocomplete="off" required/>
                                                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                                                                 </div>
                                                                 <div className="corporate-form-in5">
-                                                                <input type="text" className="form-corporateDeck-company" id="Company" placeholder="Company Name"/>
+                                                                <input type="text" className="form-corporateDeck-company" id="Company" placeholder="Company Name" autocomplete="off" required/>
                                                                 <i className="fa fa-address-book" aria-hidden="true"></i>
                                                                 </div>
                                                                 <Link to ="#" className="corporate-submit">
-
-
                                                                     <div className="buttons d-flex justify-content-center" style={{marginTop:'10px'}}>
                                                                      <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
                                                                     </div>
@@ -180,7 +175,7 @@ window.addEventListener('scroll', checkingScrollTop)
                         <h5 style={{fontSize:'18px'}}>JOIN OUR NEWSLATTER</h5>
                         <p>Subscribe to our newsletter to get latest updates.</p>
                         <div className="inputs">
-                            <input maxlength="60" className="webform__form-control" name="email" size="20" type="email" required="" placeholder="Enter Email Address"/>
+                            <input maxlength="60" className="webform__form-control" name="email" size="20" type="email" placeholder="Enter Email Address" autocomplete="off" required/>
                             <input type="submit" name="submit" id="eesubmit" className="EWF__subscribe" value="SUBCRIBE"/>
                         </div>
                         {/* <div className="footsubscridiv">

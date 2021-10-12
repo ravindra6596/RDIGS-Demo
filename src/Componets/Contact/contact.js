@@ -31,18 +31,18 @@ const contact = () => {
                                     <input type="text" class="form-controlall" placeholder="Enter Company Name" />
                                 </div>
                                 <label className="conwhattxt">What Would You like to inquire about?</label><br />
-                                <div className=" row conradiodiv ">
+                                <div className=" row conradiodiv" style={{textAlign:'justify'}}>
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" name="age" value="30" />
-                                        <label for="age1">Demand Generation</label>
+                                        <label for="age1"  style={{marginLeft:'5px'}}>Demand Generation</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" name="age" value="30" />
-                                        <label for="age1" >Sales Empowerment</label>
+                                        <label for="age1"  style={{marginLeft:'5px'}}>Sales Empowerment</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" name="age" value="30" />
-                                        <label for="age1" >Data Enrichment</label>
+                                        <label for="age1" style={{marginLeft:'5px'}} >Data Enrichment</label>
                                     </div>
                                     {/* others Radio button functinality */}
                                     <div className="col-sm-3 conradiodiv">
@@ -52,9 +52,9 @@ const contact = () => {
                                 </div>
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Enter Discription" style={{display:'block'}} />
                                 
-                                <div className="row" style={{ padding: '4%' }}>
+                                <div className="row conbtnrow">
+                                <div className="col btngetintouch"><Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" /></div>
                                     <div className="col conformcleardiv"> <Button classNames="btnclear" text="Clear" /></div>
-                                    <div className="col btngetintouch"><Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" /></div>
                                 </div>
                             </form>
                             
@@ -87,10 +87,9 @@ const contact = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6">
+                        <div className="col-lg-6 col-md-6 col-sm-6" style={{textAlign:'justify'}}>
                             {/* USA Section */}
-                            <h3 className="conUSAoffice"  >
-                                <img src={unitedflag} className="flagimg" />USA Office</h3>
+                            <h3><img src={unitedflag} className="flagimg" />USA Office</h3>
                             <p>
                                 <span><i class="fa fa-map-marker" style={{ fontSize: '25px', color: '#30a6e9', marginRight: '3%' }}></i></span>
                                 919 North Market Street, Suite 950, Wilmington, Delaware 19801.

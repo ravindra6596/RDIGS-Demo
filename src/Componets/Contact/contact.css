@@ -23,8 +23,9 @@
     font-weight: 600;
 }
 .form-controlall{
+    outline: none;
     margin:2% 4%;
-    width: 85%;
+    width: 90%;
         display: block;
         height: calc(1.5em + .75rem + 2px);
         padding: .375rem .75rem;
@@ -38,23 +39,16 @@
         border-radius: .25rem;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
- 
 .conradiofirst{margin-left: 22%;}
- 
-.conradiofirst{margin-left: 22%;
-    margin-top: 5px;
-}
-
+ .conradiofirst{margin-left: 22%;
+    margin-top: 5px;}
 .consubtxt{font-size: 20px;}
 .conaddmaker{
     font-size: 25px;
     color: #30a6e9;
     margin-right: 2%;
 }
-.conformcleardiv{ margin-left: 10%;}
-.conUSAoffice{margin-right: 55%;}
 .conaddphone{ margin-right: 15%;}
-.usaconaddphone{ margin-right: 60%;}
 .contactuscols i.fa {
     display: inline-block;
     border-radius: 60px;
@@ -66,9 +60,12 @@
     padding-right: 10px;
     padding-bottom: 10px;
 }
+
+.conbtnrow{margin: 3% 12%;}
 .radiotextarea{
+    outline: none;
         margin: 2% 4%;
-        width: 85%;
+        width: 90%;
         height: calc(1.5em + .75rem + 2px);
         padding: .375rem .75rem;
         font-size: 1rem;
@@ -84,7 +81,10 @@
 /* / Media queries for contact / */
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     .conwhattxt { margin-right: 0%}
-       
+}
+@media only screen and (min-width: 320px) and (max-width: 435px) {
+    .btngetintouch{margin-bottom: 5%;}      
+
 }
 @media only screen and (min-width: 425px) and (max-width: 575px) {
     .conwhattxt {margin-right: 25%;}

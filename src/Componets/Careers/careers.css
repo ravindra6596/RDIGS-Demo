@@ -1,21 +1,121 @@
-.carbox{
-    height: 200px;  
-    border: 1px solid #30a6e9;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 8px 1px #30a6e9;
-    border-radius: 5px;
+/* .carbox {
+    height: 250px;
+    display: block;
     top: 10px;
     left: 10px;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
     z-index: 1;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
 }
-.carbox:hover{  background-color: lightblue;}
+.carbox:hover{
+      transition: all 0.2s ease-out;
+      box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+      top: -4px;
+      border: 1px solid #cccccc;
+      background-color: white;
+    }
+.carbox::before{ 
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 230px;
+      right: -16px;
+      background: #00838d;
+      height: 32px;
+      width: 32px;
+      border-radius: 32px;
+      transform: scale(2);
+      transform-origin: 50% 50%;
+      transition: transform 0.15s ease-out;
+    }
+ 
+.carbox:hover:before {  transform: scale(2.15);} */
+.carbox{
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease-in-out;   
+    box-shadow: 0 0 0 1px lightblue;
+    height: 200px;
+}
+.carbox:hover{ box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);}
+.carbox:before{
+    content: '';
+    border-radius: 50%;
+    border: 3px solid #fff;
+    opacity: 0.9;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+    animation: animate 1s infinite linear;
+}
+.carbox:hover:before{
+    height: 100px;
+    width: 100px;
+    top: -50px;
+    right: -37px;
+}
+.carbox img{
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease-in-out;
+}
+.carbox .carbox-content{
+    color: #fff;
+    text-align: center;
+    width: 200px;
+    opacity: 0;
+    filter: blur(10px);
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+}
+.carbox:hover .box-content{
+    filter: blur(0);
+    opacity: 1;
+    top: 80px;
+}
+.carbox .title{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px rgba(0,0,0,0.8);
+    margin: 0 0 2px;
+}
+.carbox .post{
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+    text-shadow: 0 0 5px rgba(0,0,0,0.8);
+    display: block;
+}
+@keyframes animate{
+    0%{ background-color: #30a6e9; }
+    20%{ background-color:#30a6e9;}
+    40%{ background-color: #30a6e9;}
+    60%{ background-color: #30a6e9;}
+    80%{ background-color: #30a6e9; }
+    100%{ background-color: #00838d;}
+}
 .careercolm{ margin-top: 10%;}
 .carboximg{
-    width: 35%;
-    position:absolute;
-    top: -85px;
-    left: 120px;
-    z-index: 2;
+    width: 35%!important;
+    position:fixed;
+    top: -75px;
+    left: 115px;
+    z-index: 1;
 }
 .carboximg:hover{
     transform: scale(1.1);
