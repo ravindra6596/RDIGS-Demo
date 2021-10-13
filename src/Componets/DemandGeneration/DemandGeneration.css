@@ -12,6 +12,9 @@
     float: left;
     background-color: transparent;
 }
+.Drive-Excess-Conversion-demand{
+    margin-bottom: 10px;
+}
 .Demand-right{
     padding:20px;
     font-size: 20px;
@@ -21,6 +24,11 @@
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+}
+.Demand-img-col{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;  
 }
 .Demand-subhead{
     padding: 10px;
@@ -96,21 +104,18 @@
 	}
 }
 /* responsive */
-@media only screen and (min-width: 774px) and (max-width: 1000px) {
-   .Demand-round-img2{margin-left: 30%;}
-   .Demand-round-img3{margin-left: 20%;}
-   .Demand-img-p2{margin-left:5rem;}
-   .Demand-img-p3{margin-right: 6rem;}
+  @media only screen and (min-width: 575px) and (min-width: 768px) { 
+  .Drive-Excess-Conversion-demand {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  .Demand-right{
+      padding:0px;
   }
-  @media only screen and (min-width:  768px) and (max-width: 772px) {
-    .Demand-round-img2, .Demand-img-p2{margin-left: 7rem;}
-    .Demand-round-img3, .Demand-img-p3{margin-right: 7rem;}
+  .Demand-subhead{
+      padding: 0px;
   }
-  @media only screen and (min-width: 320px) and (max-width: px) { 
-  .Demand-round-img2 {
-    margin-left: 0rem;}
   }
-
   /* for services */
   #service-head {
     padding-bottom: 100px;

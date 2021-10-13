@@ -79,16 +79,6 @@ const DemandGeneration=()=>{
         }
 
     ];
-   const aboutlistheading=[
-       {
-           heading:"Responsive site",
-           para:"Leverage agile frameworks to provide a robust synopsis for high level overviews"
-       },
-       {
-        heading:"Responsive site",
-        para:"Leverage agile frameworks to provide a robust synopsis for high level overviews"
-       }
-   ]
    const idservice2=[
        {
             s2img:goal,
@@ -126,10 +116,12 @@ const DemandGeneration=()=>{
                              targeting and running native ads. We can help you increase the number of viewers on your website
                               as well as your reputation by syndicating content.
                             </p>
+                            <div className="Drive-Excess-Conversion-demand">
                                 <Button classNames="allbtn-primary glow-on-hover text-light Drive-Excess-Conversion" text="Reach Customers Across the web" data-aos="fade-left"></Button>
+                            </div>
                         </div>
                     </div>
-                    <div className="col-sm-6 col-md-6 col-lg-6">
+                    <div className="col-sm-6 col-md-6 col-lg-6 Demand-img-col">
                         <div class="text-center lg-img aos-init aos-animate" data-aos="fade-left">
                             <img src={demad2} alt="Demand Generation" className="Demand-img1" data-aos="fade-down"/>
                         </div>
@@ -174,19 +166,6 @@ const DemandGeneration=()=>{
                     We generate target accounts and nurture them based on content, relevant communications and contextual marketing.
                     </p>
                     </div>
-                    <ul class="about-list">
-                        {
-                            aboutlistheading.map((user,index)=>{
-                                return(
-                                    <li>
-                                       <h5 class="mb-2"><i class="fa fa-check-circle"></i>{user.heading}</h5>
-                                        <p>{user.para}</p>
-                                   </li>
-                                )
-
-                            })
-                        }
-                    </ul>
                 </div>
                 </div>
             </div>

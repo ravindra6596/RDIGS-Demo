@@ -10,12 +10,18 @@
     justify-content: center !important;
     align-items: center !important;
 }
-
+.Drive-Excess-Conversion-Lead{
+    margin-bottom:10px;
+}
 .Lead-heading-top:hover{color:midnightblue;   }
 .Lead-img1{
     width:100%;
-    float: left;
     background-color: transparent;
+}
+.Lead-img-col{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 .effect-circled img { width: 120px;}
 .lead-right{
@@ -180,6 +186,7 @@
                 justify-content: flex-start;
                 align-items: center;
                 color: black;
+                margin-left: -22px;
             }
             #flamelab-convo-widget img {
                 animation-name: flamelab-convo-widget_rotate;

@@ -105,6 +105,10 @@ transition:0.5s;
 }
 
 /* ===============social icon section===================== */
+.socialimg-header{
+    width:30px;
+    height:30px;
+}
 #custom_html-9 {
     position: fixed;
     z-index: 999999999;
@@ -143,8 +147,7 @@ transition:0.5s;
 }
 #floating-social {
     display: flex;
-    flex-direction: column;
-   
+    flex-direction: column;  
 }
 #navbar {
     background-color:lightblue;

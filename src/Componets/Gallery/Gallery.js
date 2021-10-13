@@ -1,10 +1,10 @@
 
 import React from "react";
 import "./Gallery.css";
-import gallery1 from "../../img/Gallery/gallery1.jfif";
-import gallery2 from "../../img/Gallery/gallery2.jfif";
-import gallery3 from "../../img/Gallery/gallery3.jfif";
-import gallery4 from "../../img/Gallery/gallery4.jfif";
+import gallery1 from "../../img/Gallery/gallery1.png";
+import gallery2 from "../../img/Gallery/gallery2.png";
+import gallery3 from "../../img/Gallery/gallery3.png";
+import gallery4 from "../../img/Gallery/gallery4.png";
 import Heading from "../Heading/Heading";
 import GalleryModel from "../GalleryModel/GalleryModel";
 const Gallery = () => {

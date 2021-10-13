@@ -8,12 +8,10 @@ text-align: end;}
     color: black;
     font-size: 17px;
     text-align: justify;
-    word-spacing: -2px;
 }
 .mediakithead{
     position: relative;
     text-transform: uppercase;
-    letter-spacing: 4px;
     overflow: hidden;
     background: linear-gradient(90deg, #009ffd, #266a91,#4154f1);
     background-repeat: no-repeat;
@@ -156,9 +154,7 @@ input::-webkit-inner-spin-button {
   }
 
 @media only screen and (min-width:320px) and (max-width: 480px) {
-.copydesign {text-align: center;}
-
-    
+.copydesign {text-align: center;}    
 }
 @media only screen and (min-width:430px) and (max-width: 575px) {
     input[type=submit] {width: 21%;}     
@@ -509,9 +505,14 @@ input::-webkit-inner-spin-button {
         justify-content: center !important;
         align-items: center !important;
  }
-
 .modelhead11{
     background-color: lightblue;
+}
+/* media query for downloadbtn */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .cop-btn{
+        margin-bottom: 10px;
+    }  
 }
 /* All Footer responsive */
 @media only screen and (min-width: 320px) and (max-width: 575px) {

@@ -3,7 +3,10 @@ import "./Headerstyle.css";
 import logoimg from "../../img/logo.png";
 import { Nav, Container, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import Linkedin from '../../img/socialicon/Linkdin.png';
+import Facebook from '../../img/socialicon/Facebook.png';
+import Youtube from '../../img/socialicon/Youtube.png';
+import Insta from '../../img/socialicon/Insta.png';
 const Header = () => {
   //navbar scroll when active state
   const [navstage, setNavbar] = useState(false);
@@ -146,18 +149,18 @@ const Header = () => {
         <aside id="custom_html-9" class="widget_text widget widget_custom_html">
           <div class="textwidget custom-html-widget" id="navbar">
             <div id="floating-social">
-              <Link class="a" target="_blank" to="https://www.linkedin.com/" rel="noopener">
-                <img alt="linkedin" src="https://3yghedxb20r3923my4c3z70e-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/linkedin-2.svg" href="https://www.linkedin.com/company/rd-info-global-solutions/"/>
-              </Link>
-              <Link class="a" target="_blank" to="https://www.facebook.com/" rel="noopener">
-                <img alt="facebook" src="https://3yghedxb20r3923my4c3z70e-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/facebook-2.svg" href="https://www.facebook.com/RDInfoGlobalSolutions/"/>
-              </Link>
-              <Link class="a" target="_blank" to="https://youtube.com/" rel="noopener">
-                <img alt="twitter"src="https://3yghedxb20r3923my4c3z70e-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/twitter-2.svg" href="https://www.youtube.com/channel/UCumgvf7v5Z8JGHoSDqGrVAw"/>
-              </Link>
-              <Link class="a" target="_blank" to="https://www.instagram.com/" rel="noopener">
-                <img alt="instagram" src="https://3yghedxb20r3923my4c3z70e-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/instagram-2.svg" href="https://twitter.com/"/>
-              </Link>
+              <a class="a" target="_blank" href="https://www.linkedin.com/company/rd-info-global-solutions/" rel="noopener">
+                <img alt="linkedin" src={Linkedin} href="https://www.linkedin.com/company/rd-info-global-solutions/" className="socialimg-header"/>
+              </a>
+              <a class="a" target="_blank" href="https://www.facebook.com/RDInfoGlobalSolutions/" rel="noopener">
+                <img alt="facebook" src={Facebook} href="https://www.facebook.com/RDInfoGlobalSolutions/" className="socialimg-header"/>
+              </a>
+              <a class="a" target="_blank" href="https://www.youtube.com/channel/UCumgvf7v5Z8JGHoSDqGrVAw" rel="noopener">
+                <img alt="twitter"src={Insta} href="https://www.youtube.com/channel/UCumgvf7v5Z8JGHoSDqGrVAw" className="socialimg-header"/>
+              </a>
+              <a class="a" target="_blank" href="https://www.youtube.com/channel/UCumgvf7v5Z8JGHoSDqGrVAw" rel="noopener">
+                <img alt="instagram" src={Youtube} href="https://www.youtube.com/channel/UCumgvf7v5Z8JGHoSDqGrVAw" className="socialimg-header"/>
+              </a>
             </div>
           </div>
         </aside>

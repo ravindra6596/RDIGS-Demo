@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: center
 }
-.card {
+.card-blog-div {
     width: 320px;
     height: 520px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -40,19 +40,19 @@
     overflow: hidden
 }
 
-.card .backgroundEffect {
+.card-blog-div .backgroundEffect {
     bottom: 0;
     height: 0px;
     width: 100%
 }
 
-.card:hover {
+.card-blog-div:hover {
     color: #fff;
     transform: scale(1.025);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
 }
 
-.card:hover .backgroundEffect {
+.card-blog-div:hover .backgroundEffect {
     bottom: 0;
     height: 320px;
     width: 100%;
@@ -88,17 +88,17 @@
     }
 }
 
-.card .pic {
+.card-blog-div .pic {
     position: relative
 }
 
-.card .pic img {
+.card-blog-div .pic img {
     width: 100%;
     height: 280px;
     object-fit: cover
 }
 
-.card .date {
+.card-blog-div .date {
     margin-bottom: -25px;
     display: flex;
     flex-direction: column;
@@ -112,7 +112,7 @@
     bottom: 0px;
     transition: all ease
 }
-.card .date .day {
+.card-blog-div .date .day {
     font-size: 14px;
     font-weight: 600
 }
@@ -122,14 +122,14 @@
 .card-para{
     font-size: 18px;
 }
-.card .date .month,
-.card .date .year {
+.card-blog-div .date .month,
+.card-blog-div .date .year {
     font-size: 10px
 }
-.card .text-muted {
+.card-blog-div .text-muted {
     font-size: 12px
 }
-.card:hover .text-muted {
+.card-blog-div:hover .text-muted {
     color: #fff !important
 }
 
@@ -164,4 +164,37 @@
 }
 .card .content .foot .icon {
     font-size: 12px
+}
+/* blog4 css */
+.blog4-section{
+    background-image: url(../../img/services/banner_back1.png);
+}
+.blog4-img-row{
+    border-radius: 15px 0px 0px 15px;
+}
+.blog-4img-div{
+    width:500px;
+}
+.blog4-img-row img{
+    width:100%;
+    height:400px;
+    border-radius: 15px 0px 0px 15px;
+}
+.blog4para{
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+.blog4-content{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.blogbtn{
+    border-radius:25px;
+    margin:5px;
+}
+.blogbtn:hover{
+    background-color: white;
+    color:black;
 }

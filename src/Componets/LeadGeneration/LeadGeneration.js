@@ -57,16 +57,12 @@ const LeadGeneration = () => {
             <Heading title="Lead Generation"></Heading>
           </div>
           <div className="row">
-            <div className="col-sm-6 col-md-6 col-lg-6">
+            <div className="col-sm-6 col-md-6 col-lg-6 Lead-img-col">
               <div
                 class="text-center lg-img aos-init aos-animate"
                 data-aos="fade-left"
               >
-                <img
-                  src={demand1}
-                  alt="Lead Generation"
-                  className="Lead-img1"
-                  data-aos="fade-up"
+                <img src={demand1} alt="Lead Generation" className="Lead-img1" data-aos="fade-up"
                 />
               </div>
             </div>
@@ -85,11 +81,13 @@ const LeadGeneration = () => {
                       marketing.
                     </p>
                     </div>
-                    <Button
-                      classNames="allbtn-primary glow-on-hover text-light Drive-Excess-Conversion"
-                      data-aos="fade-left"
-                      text="Drive-Excess-Conversion"
-                    ></Button>
+                    <div className="Drive-Excess-Conversion-Lead">
+                        <Button
+                        classNames="allbtn-primary glow-on-hover text-light Drive-Excess-Conversion"
+                        data-aos="fade-left"
+                        text="Drive-Excess-Conversion">
+                        </Button>
+                    </div>
                     <br></br>
                 </div>
               </div>
@@ -162,7 +160,7 @@ const LeadGeneration = () => {
                     </p>
                   </div>
                   <div id="flamelab-convo-widget"  data-aos="fade-left">
-                   <img src={avatarsm} alt="Avatar Image"/>
+                   <img src={avatarsm} alt="AvatarImage"/>
                     <div class="flamelab-cw-msg-box">
                         <span>Hey! Want to create your own Leads?</span>
                         {/* <!-- <span style="opacity: 0.5;">- Mike (the creator of this site)</span> --> */}
