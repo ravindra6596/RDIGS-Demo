@@ -83,7 +83,7 @@ const Blog = () => {
                     >
                       <img
                         src={user.cardimg}
-                        className="card-img-top img-fluid"
+                        className="cardblogimg img-fluid"
                         alt="blog-img"
                       />
                       <div

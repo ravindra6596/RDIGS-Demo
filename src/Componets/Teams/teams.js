@@ -42,25 +42,27 @@ const teams =()=>{
       <>
         <div className="nav-contaniner" />
         {/* {/ <!-- ======= Director Section ======= --> /} */}
-        <div className="container" style={{ backgroundColor: 'rgba(118, 206, 233, 0.35)', boxShadow: '0 4px 8px 0 #30a6e9, 0 6px 20px 0 #30a6e9', marginTop: '2%' }}>
-          <div className="row">
-            <div className="col-lg-8 col-md-8 col-sm-8 rolandiconcol" style={{ textAlign: 'justify' }}>
-              <h2 className="rolandname" data-aos="fade-up">Roland D'costa</h2>
-              <h4 style={{ color: '#30a6e9' }}>Manging Director</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <i class="fa fa-twitter" style={{ fontSize: '20px', marginRight: '2%' }}></i>
-              <i class="fa fa-facebook" style={{ fontSize: '20px', marginRight: '2%' }}></i>
-              <i class="fa fa-instagram" style={{ fontSize: '20px', marginRight: '2%' }}></i>
-              <i class="fa fa-linkedin" style={{ fontSize: '20px', marginRight: '2%' }}></i>
+        <section>
+            <div className="container" >
+              <div className="row">
+              <div className="col-lg-4 col-md-4 col-sm-4" data-aos="fade-right" >
+                  <img src={Rolandimg} className="rolandimg" alt="" />
+                </div>
+                <div className="col-lg-8 col-md-8 col-sm-8 rolandiconcol" style={{ textAlign: 'justify' }}>
+                  <h2 className="rolandname" data-aos="fade-up">Roland D'costa</h2>
+                  <h4 style={{ color: '#30a6e9' }}>Manging Director</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <i class="fa fa-twitter" style={{ fontSize: '20px', marginRight: '2%' }}></i>
+                  <i class="fa fa-facebook" style={{ fontSize: '20px', marginRight: '2%' }}></i>
+                  <i class="fa fa-instagram" style={{ fontSize: '20px', marginRight: '2%' }}></i>
+                  <i class="fa fa-linkedin" style={{ fontSize: '20px', marginRight: '2%' }}></i>
+                </div>
+              </div>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-4" data-aos="fade-right" >
-              <img src={Rolandimg} className="rolandimg" alt="" />
-            </div>
-          </div>
-        </div>
+        </section>
   
         {/* <!-- ======= Team Section ======= --> */}
-        <section  id="team" class="team" style={{marginTop:'3%'}}>
+        <section  id="team" class="team">
         <div class="container" data-aos="fade-up">
             <div class="row justify-content-center">
                 <div class="col-md-6">

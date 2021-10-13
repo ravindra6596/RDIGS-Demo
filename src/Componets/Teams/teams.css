@@ -1,6 +1,7 @@
   .rolandimg{
-      width: 60%;
-      border-radius: 10px;
+    width: 80%;
+    height: 60%;
+    border-radius: 178px;
       margin: 10% 0px;
       box-shadow: 0 4px 8px 0 #30a6e9, 0 6px 20px 0 #30a6e9;
   }
@@ -18,7 +19,6 @@
   }
 
   #team {
-    padding: 60px 0;
     text-align: center;
     color: #145889;
 }

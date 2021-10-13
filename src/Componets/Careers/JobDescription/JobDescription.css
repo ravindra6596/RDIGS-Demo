@@ -1,0 +1,32 @@
+.jdcareerban{
+    background-color: #eae8fd;
+}
+.jdformcol{
+    background-color: #eae8fd;
+    border-radius: 10px;
+}
+.jdlist{
+    list-style:none ;
+}
+.jdicons{
+    font-size: 25px;
+    color: #30a6e9;
+    margin-right: 13px;
+}
+.formjd{
+    margin: 4%;
+         outline: none;
+        width: 90%;
+        display: block;
+        height: calc(1.5em + .75rem + 2px);
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

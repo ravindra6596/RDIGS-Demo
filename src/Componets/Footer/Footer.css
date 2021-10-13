@@ -155,11 +155,6 @@ input::-webkit-inner-spin-button {
     }
   }
 
-@media only screen and (min-width:320px) and (max-width: 480px) {
-.copydesign {text-align: center;}
-
-    
-}
 @media only screen and (min-width:430px) and (max-width: 575px) {
     input[type=submit] {width: 21%;}     
     input[type=email] {width: 39%; }        
@@ -514,12 +509,13 @@ input::-webkit-inner-spin-button {
     background-color: lightblue;
 }
 /* All Footer responsive */
+
 @media only screen and (min-width: 320px) and (max-width: 575px) {
     .ourservices {text-align: justify;}
     .services li{ margin: 0!important;}  
     .footer-tit {text-align: justify;}
     .footrescol{position: inherit!important;}
-    .copydesign { text-align: center; }
+    .copydesign {text-align: justify!important;} 
     .footerlinkhover {font-size: 11px;}
 }
 @media only screen and (min-width: 575px) and (max-width: 991px) {
