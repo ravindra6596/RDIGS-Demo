@@ -5,7 +5,10 @@ input:focus { outline: none !important;}
   margin-left: 0px;
   margin-right: 0px;
   }
-  .modal-open {overflow: auto!important;}
+  .modal-open {
+    overflow: auto!important;
+    padding-right: 0px!important;
+  }
   .homemodalhead{
     border: none;
     background-color: lightblue;
@@ -61,7 +64,6 @@ input:focus { outline: none !important;}
     50%  { transform: translateY(-100px); }
     100% { transform: translateY(0); }
   }
-
 @keyframes example {
   0%   { left:0px; top:0px;}
   25%  { left:200px; top:0px;}

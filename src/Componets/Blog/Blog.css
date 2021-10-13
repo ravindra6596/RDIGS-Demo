@@ -1,9 +1,8 @@
-
 .card-general{
     margin:20px;
     box-shadow: 5px 5px 5px 5px lightblue;
 }
-.card-img-top{ position: relative;}
+.cardblogimg{ position: relative;}
 .round-div-card{
     position: sticky;
     border-radius:50%;
@@ -39,8 +38,8 @@
     z-index: 10;
     overflow: hidden
 }
-
 .card-blog-div .backgroundEffect {
+
     bottom: 0;
     height: 0px;
     width: 100%

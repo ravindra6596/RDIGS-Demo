@@ -2,12 +2,10 @@
     background-image:url('../../img/testimonial/testimonialbg.png') ;
     background-size: cover;
     height: 350px;
-    width: 100%;
-}
+    width: 100%;}
 .card img{
     width: 100px;
     height: 100px;
-    border-radius: 50%;
 }
 .testuser-img{
     width: 68px;
