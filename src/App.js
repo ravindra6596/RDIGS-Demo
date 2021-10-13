@@ -6,12 +6,10 @@ import { BrowserRouter, Route,Switch } from 'react-router-dom';
 import Header from './Componets/Header/header';
 import Footer from './Componets/Footer/Footer';
 import LoaderExampleDisabled from './Componets/LoaderExampleDisabled/LoaderExampleDisabled';
-
 AOS.init({
  duration: 1500
 });
 function App() {
-//const LoaderExampleDisabled = React.lazy(()=>import('./Componets/Loader/LoaderExampleDisabled'));
 const Homepage = React.lazy(() => import('./Componets/Homepage/homepage'));
 const Contact = React.lazy(() => import('./Componets/Contact/contact'));
 const Teams = React.lazy(() => import('./Componets/Teams/teams'));
@@ -22,6 +20,7 @@ const Gallary = React.lazy(() => import('./Componets/Gallery/Gallery'));
 const CompanyProfile1 = React.lazy(() => import('./Componets/CompanyProfile1/CompanyProfile1'));
 const Blog = React.lazy(() => import('./Componets/Blog/Blog'));
 const JobDescription = React.lazy(() => import('./Componets/Careers/JobDescription/JobDescription'));
+const Bannercommon = React.lazy(()=>import('./Componets/Bannercommon/Bannercommon'));
   return (
     <div className="App">
       <BrowserRouter>
@@ -41,6 +40,7 @@ const JobDescription = React.lazy(() => import('./Componets/Careers/JobDescripti
               <Route path='/companyprofile1' exact={true} component={CompanyProfile1}/>
               <Route path='/blog' exact={true} component={Blog}/>
               <Route path='/jobdescription' exact={true} component={JobDescription}/>
+              <Route path='/bannercommon' exact={true} component={Bannercommon}/>
               <Route path='/footer' exact={true} component={Footer}/>
 
           </Switch>
