@@ -79,13 +79,9 @@
     }
   }
   @media (max-width: 575px) {
-    #hero .hero-img img {
-      width: 50%;
-    }
+    #hero .hero-img img { width: 50%;}
   }
-  @media (max-width: 320px) {
-    #hero .hero-img img {margin-top: 20%;}
-  }
+
   @-webkit-keyframes up-down {
     0% {
       transform: translateY(10px);
@@ -155,13 +151,14 @@
   }
 
 /* Modal Animation media */
+
 @media only screen and (min-width: 320px)and (max-width: 375px){
   #hero h1 {font-size: 25px;}
+  #hero .hero-img img {height: 141px;}
+
 }
 @media only screen and (min-width: 768px)and (max-width: 991px){
-  #hero .hero-img img {
-    max-width: 100%;
-  }
+  #hero .hero-img img { max-width: 100%;}
 }
 @media only screen and (min-width: 1200px)and (max-width: 1400px){
   #hero .hero-img img { height: 400px; }

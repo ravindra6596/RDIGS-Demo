@@ -50,15 +50,11 @@
     .glow-on-hover:active {
         color:#6cbeee; 
     }
-    
     .glow-on-hover:active:after {
-        background: transparent;
-    }
-    
+        background: transparent;}
     .glow-on-hover:hover:before {
         opacity: 1;
     }
-    
     .glow-on-hover:after {
         z-index: -1;
         content: '';
@@ -70,19 +66,18 @@
         top: 0;
         border-radius: 20px;
     }
-    
     @keyframes glowing {
         0% { background-position: 0 0; }
         50% { background-position: 400% 0; }
         100% { background-position: 0 0; }
     }
-    /* / Button clear css / */
+/* / Button clear css / */
     .btnclear{
        width: 130px;
         height: 47px;
         color:#30a6e9 ;
         background-color: transparent;
         border-color: #30a6e9;
-        border-radius: 40px;
-    }
-    .btnclear:focus{outline: none;}
+        border-radius: 40px;}
+.btnclear:focus{outline: none;}
+
