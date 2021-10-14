@@ -4,6 +4,7 @@ import './Banner.css';
 import Button from '../ButtonGroup/Button/button';
 import banimg from '../../img/Banner/hero-img.png';
 import modalimg from '../../img/modalhomeimg.png';
+import Heading from '../Heading/Heading';
 
 const Banner = () => {
 
@@ -41,7 +42,8 @@ const Banner = () => {
           <div class="row justify-content-between">
             <div class="col-lg-7 col-md-7 col-sm-12 pt-lg-0 order-2 order-lg-1 d-flex align-items-center justify-content-center ">
               <div data-aos="zoom-out">
-                <h1>Build Your Business With   <marquee width="50%" direction="left" className="company-Name-head" >RDIGS</marquee></h1>
+                <Heading title="Build Your Business With "/> <h1><marquee width="50%" direction="left" >RDIGS</marquee></h1>
+
                 <h2>We are team of talented designers making websites with Bootstrap</h2>
                 <div class="text-center text-lg-start">
                   <Button classNames="allbtn-primary glow-on-hover text-light" text="KNOW MORE" fun={() => setModal(true)} />

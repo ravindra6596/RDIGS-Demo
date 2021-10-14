@@ -6,6 +6,7 @@ import { BrowserRouter, Route,Switch } from 'react-router-dom';
 import Header from './Componets/Header/header';
 import Footer from './Componets/Footer/Footer';
 import LoaderExampleDisabled from './Componets/LoaderExampleDisabled/LoaderExampleDisabled';
+import Pagenotfound from './Componets/PageNotFound/Pagenotfound';
 AOS.init({
  duration: 1500
 });
@@ -22,14 +23,17 @@ const Blog = React.lazy(() => import('./Componets/Blog/Blog'));
 const JobDescription = React.lazy(() => import('./Componets/Careers/JobDescription/JobDescription'));
 const Bannercommon = React.lazy(()=>import('./Componets/Bannercommon/Bannercommon'));
 
+// const PageNotFound = React.lazy(()=>import('./Componets/PageNotFound/Pagenotfound'));
+
+
   return (
     <div className="App">
       <BrowserRouter>
         <div className="main"style={{overflow:"hidden"}} > 
         <Suspense fallback={<LoaderExampleDisabled/>}>
         <Header/>
-        {/* <LoaderExampleDisabled/> */}
           <Switch>
+              {/* <Route path='hhhh' exact={true} component={Pagenotfound}/> */}
               <Route path='/' exact={true} component={Homepage}/>
               <Route path='/home' exact={true} component={Homepage}/>
               <Route path='/teams' exact={true} component={Teams}/>

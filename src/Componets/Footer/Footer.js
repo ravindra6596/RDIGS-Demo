@@ -178,10 +178,6 @@ window.addEventListener('scroll', checkingScrollTop)
                             <input maxlength="60" className="webform__form-control" name="email" size="20" type="email" placeholder="Enter Email Address" autocomplete="off" required/>
                             <input type="submit" name="submit" id="eesubmit" className="EWF__subscribe" value="SUBCRIBE"/>
                         </div>
-                        {/* <div className="footsubscridiv">
-                            <input  className="footsubinput" placeholder="Enter Your Email.." />
-                            <span>Subscribe</span>
-                        </div> */}
                     </div>
                 </div>
             </div>

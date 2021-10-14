@@ -1,0 +1,16 @@
+.gal-item{
+	overflow: hidden;
+	padding: 8px;
+}
+.gal-item .careerculbox{
+	height: 100%;
+	overflow: hidden;
+}
+.careerculbox img{
+    border: 3px solid lightblue;
+	height: 100%;
+	width: auto;
+	object-fit:cover;
+}
+.careerculbox img:hover{
+    border: 10px solid lightblue;}

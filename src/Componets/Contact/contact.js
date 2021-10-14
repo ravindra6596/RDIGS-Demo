@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
+import Recaptcha from 'react-google-invisible-recaptcha';
 import Heading from "../Heading/Heading";
 import './contact.css';
 import indiaflag from "../../img/india.jpg";
 import unitedflag from "../../img/US.jpg";
 import Button from "../ButtonGroup/Button/button";
 
-const contact = () => {
+const Contact = () => {
+
+    const [radiotext, showRadiotext] = useState(false);
+ 
+   
+ 
     return (
         <>
             <div className="nav-contaniner" />
@@ -15,7 +21,7 @@ const contact = () => {
                         <div className="col-lg-6 col-md-6 col-sm-6">
                         </div>
 
-                        <div className="col-lg-6 col-md-12 col-sm-12" style={{ backgroundColor: 'white' }}>
+                        <div className="col-lg-6 col-md-12 col-sm-12" style={{backgroundColor: 'white' }}>
                             <h2 className="contgetin" data-aos="fade-up">Get in Touch</h2>
                             <form>
                                 <div class="form-group">
@@ -33,33 +39,34 @@ const contact = () => {
                                 <label className="conwhattxt">What Would You like to inquire about?</label><br />
                                 <div className=" row conradiodiv" style={{textAlign:'justify'}}>
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30" />
+                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30"  onClick={() => showRadiotext(false)} />
                                         <label for="age1"  style={{marginLeft:'5px'}}>Demand Generation</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30" />
+                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30"  onClick={() => showRadiotext(false)}/>
                                         <label for="age1"  style={{marginLeft:'5px'}}>Sales Empowerment</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30" />
+                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30" onClick={() => showRadiotext(false)}/>
                                         <label for="age1" style={{marginLeft:'5px'}} >Data Enrichment</label>
                                     </div>
-                                    {/* others Radio button functinality */}
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30" />
+                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30" onClick={() => showRadiotext(true)} />
                                         <label for="age1" style={{marginLeft:'5px'}} >Other</label>
                                     </div>
                                 </div>
-                                <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Enter Discription" style={{display:'block'}} />
-                                
+                                <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Service Name"/>
+                                {/* others Radio button functinality */}
+                                <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Your Message" 
+                                 style={{ display: radiotext ? "block" : "none"}}/>
+                               
+
                                 <div className="row conbtnrow">
-                                <div className="col btngetintouch"><Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" /></div>
+                                    <div className="col btngetintouch"><Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" /></div>
                                     <div className="col conformcleardiv"> <Button classNames="btnclear" text="Clear" /></div>
                                 </div>
-                            </form>
-                            
-                        </div>
-                        
+                            </form> 
+                        </div> 
                     </div>
                 </div>
             </section>
@@ -126,5 +133,5 @@ const contact = () => {
         </>
     )
 }
-export default contact;
+export default Contact;
 

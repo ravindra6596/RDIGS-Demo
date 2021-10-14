@@ -18,7 +18,7 @@ const JobDescription =()=>{
         <section>
             <div className="container">
                 <div className="row" style={{textAlign:'justify',margin:'5% 0px'}}>
-                    <div className="col-l-8 col-md-8 col-sm-8">
+                    <div className="col-lg-7 col-md-7 col-sm-12">
                     <h3><b>Job ID:</b>001</h3>
                         <h3>Roles and Responsibilities</h3>
                         <ul className="jdlist">
@@ -39,9 +39,9 @@ const JobDescription =()=>{
                         <h3> <b>Location -</b> Pune- Viman Nagar</h3>
 
                     </div>
-                    <div className="col-l-4 col-md-4 col-sm-4 jdformcol">
+                    <div className="col-lg-5 col-md-5 col-sm-12">
                         <h1>Apply Here...</h1>
-                         <form style={{paddingTop:'5%'}}>
+                         <form className="jdformcol" style={{padding:'5%'}}>
                                 <div class="form-group">
                                     <input type="text" className="formjd" aria-describedby="emailHelp" placeholder="Enter Name" />
                                 </div>
@@ -55,11 +55,8 @@ const JobDescription =()=>{
                                     <input type="text" className="formjd" placeholder="Enter Company Name" />
                                 </div>
                                     <input type="file" class="form-control formjd" id="customFile" />
-                            
-                                
-                                <div className="row" style={{margin:'5%'}}>
-                                <div className="col btngetintouch"><Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" /></div>
-                                    <div className="col conformcleardiv"> <Button classNames="btnclear" text="Clear" /></div>
+                                <div className="row" style={{margin:'5%',textAlign:'center'}}>
+                                <div className="col"><Button classNames="allbtn-primary glow-on-hover text-light" text="Apply" /></div>
                                 </div>
                             </form>
                     </div>

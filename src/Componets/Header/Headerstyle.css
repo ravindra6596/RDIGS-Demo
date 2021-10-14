@@ -236,8 +236,8 @@ transition:0.5s;
     .dropdownservice { right: 15%;}
     .dropdownabout { right: 15%;}
     .headlogo{
-        width: 75% !important;
-        height: 50px !important; }
+        width: 60% !important;
+        height: 60px !important; }
 }
 @media only screen and (min-width: 375px) and (max-width: 425px) {
     .dropdownservice { right: 20%;}
