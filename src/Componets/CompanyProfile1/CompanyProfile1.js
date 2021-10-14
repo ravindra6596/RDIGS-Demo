@@ -31,7 +31,7 @@ const CompanyProfile1 = () => {
                       <p>Our vision is to stay a foremost outsourcing company that gives our clients the simplest services at competitive costs.</p> 
                    </div>
                    <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                      <Heading title="PRINCIPAL"></Heading>
+                      <Heading title="PRINCIPLE"></Heading>
                       <p>Client Value Creation, Integrity &amp; Transparency, Authenticity and Excellence are the core values of RD info Solutions. Creating and delivering value is the core of our work system. We help our clients to provide the highest quality value-added services. Our people are authentic to the highest level of ethics and integrity. Transparency in a company can vastly improve company culture, employee morale and productivity.</p>
                    </div>
                 </div>
