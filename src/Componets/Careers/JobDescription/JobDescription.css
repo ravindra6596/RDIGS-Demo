@@ -1,8 +1,11 @@
 .jdcareerban{
-    background-color: #eae8fd;
+    background-image: url('../../../img/career/jdbanimg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
 }
 .jdformcol{
-    background-color: #eae8fd;
+    background-color: lightblue;
     border-radius: 10px;
 }
 .jdlist{

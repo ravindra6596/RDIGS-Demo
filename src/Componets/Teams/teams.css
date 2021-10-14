@@ -1,26 +1,20 @@
-  .rolandimg{
-    width: 80%;
-    height: 60%;
-    border-radius: 178px;
-      margin: 10% 0px;
-      box-shadow: 0 4px 8px 0 #30a6e9, 0 6px 20px 0 #30a6e9;
-  }
-  .rolandname{margin-top: 10%;}
-  .rolandiconcol i{
-      color:#30a6e9 ;
-    display: inline-block;
-    border-radius: 60px;
-    box-shadow: 0px 0px 2px #30a6e9;
-    padding: 0.5em 0.6em;
-  }
-  .rolandiconcol i:hover{
-      background-color: #30a6e9;
-      color:white;
-  }
-
-  #team {
+.teamsection{
+    background-image: url('../../img/team/teamban.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.teamsec2para{font-size: 20px;}
+.teams2img:hover{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    border: 10px solid lightblue;
+    border-radius: 5px;
+}
+ #team {
     text-align: center;
-    color: #145889;
+    color: #30a6e9;;
 }
 #team h2 {
     position: relative;

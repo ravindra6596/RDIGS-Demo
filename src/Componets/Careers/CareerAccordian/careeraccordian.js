@@ -16,7 +16,7 @@ const Careeraccordian =()=>{
             oppimgalt:"web project ",
             oppheading: "Web Project Manager - Team Of PHP MySQL Developers ",
             jobid:"001",
-            postdate:"12 Octomber 2021",
+            postdate:"10 Octomber 2021",
             TillApply:"30 Oct 2021 "
         },
         { 
@@ -25,15 +25,15 @@ const Careeraccordian =()=>{
             oppheading: "DevOps Project Manager - Team Of DevOps Developers",
              jobid:"002",
             postdate:"12 Octomber 2021",
-            TillApply:"30 Oct 2021 "
+            TillApply:"14 Oct 2021 "
         },
         { 
             opportunityimg:opportimg3, 
             oppimgalt:"web project ",
             oppheading: "Magento Project Manager - Team Of Magento Developers ",
             jobid:"003",
-            postdate:"12 Octomber 2021",
-            TillApply:"30 Oct 2021 "
+            postdate:"03 Octomber 2021",
+            TillApply:"09 Oct 2021 "
         },
  
       ];
@@ -52,9 +52,9 @@ const Careeraccordian =()=>{
                                 </div>
                                 <div className="col-lg-7 col-md-7 col-sm-7" style={{textAlign:'left'}}>
                                     <h5 className="oppheading">{data.oppheading}</h5>
-                                   <span className="accdetid" style={{display:'flex'}}><p >Job Id:</p><p className="oppdetails">{data.jobid}</p></span>
-                                   <span  className="accdetid" style={{display:'flex'}}><p>Posted Date:</p><p className="oppdetails">{data.postdate}</p></span>
-                                   <span  className="accdetid" style={{display:'flex'}}><p>Till Apply:</p> <p className="oppdetails">{data.TillApply}</p></span>
+                                    <p>Job ID:<span className="oppdetails">{data.jobid}</span>
+                                    Posted Date:<span className="oppdetails">{data.postdate}</span>
+                                    Till Apply:<span className="oppdetails">{data.TillApply}</span></p>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-3"  style={{paddingTop:'2%'}}>
                                    <Link to="/jobdescription"><Button classNames="btnclear " text="Apply Now" /></Link>

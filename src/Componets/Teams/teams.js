@@ -5,8 +5,7 @@ import team1 from "../../img/team/team-1.jpg";
 import team2 from "../../img/team/team-2.jpg";
 import team3 from "../../img/team/team-3.jpg";
 import team4 from "../../img/team/team-4.jpg";
-import Rolandimg from "../../img/team/Roland-Dcosta.jpg";
-import { Link } from "react-router-dom";
+import teamsection2 from "../../img/team/teamsec2img.jpg";
 
 
 
@@ -41,26 +40,37 @@ const teams =()=>{
     return(
       <>
         <div className="nav-contaniner" />
-        {/* {/ <!-- ======= Director Section ======= --> /} */}
-        <section>
-            <div className="container" >
-              <div className="row">
-              <div className="col-lg-4 col-md-4 col-sm-4" data-aos="fade-right" >
-                  <img src={Rolandimg} className="rolandimg" alt="" />
+        {/* <!-- ======= Team Banner Section ======= --> */}
+        <section className="teamsection">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12" style={{marginTop:'10%'}}>
+                            <Heading title="Team"/>
+                            <p style={{color:'white'}}>At Apisero, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
+                        </div>
+                    </div>
                 </div>
-                <div className="col-lg-8 col-md-8 col-sm-8 rolandiconcol" style={{ textAlign: 'justify' }}>
-                  <h2 className="rolandname" data-aos="fade-up">Roland D'costa</h2>
-                  <h4 style={{ color: '#30a6e9' }}>Manging Director</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <i class="fa fa-twitter" style={{ fontSize: '20px', marginRight: '2%' }}></i>
-                  <i class="fa fa-facebook" style={{ fontSize: '20px', marginRight: '2%' }}></i>
-                  <i class="fa fa-instagram" style={{ fontSize: '20px', marginRight: '2%' }}></i>
-                  <i class="fa fa-linkedin" style={{ fontSize: '20px', marginRight: '2%' }}></i>
+            </section>
+            {/* <!-- ======= Team Section 2 ======= --> */}
+            <section style={{margin:'3% 0px'}}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 col-md-6 col-sm-6">
+                            <img className="teams2img img-fluid" src={teamsection2}/>
+                        </div>
+                        <div className="col-lg-6 col-md-6 col-sm-6" style={{textAlign:'justify'}}>
+                            <Heading title="WE ARE RDIGS"/>
+                            <p className="teamsec2para">Digitallium is a company specializing in providing financial, marketing and analytical services to other companies and private entrepreneurs to help them improve their businesses. We are able to analyze any activity and provide with the bulk of solutions how to decrease your expense, use hidden opportunities and what spheres are good for investment.</p>
+                            <ul style={{fontSize:'20px'}}>
+                                <li>IT Team</li>
+                                <li>Sales Team</li>
+                                <li>Lead Generation </li>
+                                <li>Demand Generation </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-        </section>
-  
+            </section>
         {/* <!-- ======= Team Section ======= --> */}
         <section  id="team" class="team">
         <div class="container" data-aos="fade-up">
