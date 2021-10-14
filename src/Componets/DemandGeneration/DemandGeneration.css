@@ -168,7 +168,7 @@
 /* services 2 */
 #service {
     margin-top: -100px;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
 }
 .service-box {
     background: #fff;
@@ -219,4 +219,10 @@
     margin:30px 0px;
     background-color: white;
     border-radius:50px 0 50px 0;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .service-box{
+        margin-bottom: 10px;
+        margin-top:10px;
+    }
 }
