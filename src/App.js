@@ -22,7 +22,9 @@ const CompanyProfile1 = React.lazy(() => import('./Componets/CompanyProfile1/Com
 const Blog = React.lazy(() => import('./Componets/Blog/Blog'));
 const JobDescription = React.lazy(() => import('./Componets/Careers/JobDescription/JobDescription'));
 const Bannercommon = React.lazy(()=>import('./Componets/Bannercommon/Bannercommon'));
+
 // const PageNotFound = React.lazy(()=>import('./Componets/PageNotFound/Pagenotfound'));
+
 
   return (
     <div className="App">

@@ -128,10 +128,7 @@ const LeadGeneration = () => {
         </div>
       </section>
       <section className="our-services-Lead">
-        <div
-          class="support-company-area pt-100 pb-100 section-bg fix"
-          data-background="assets/img/gallery/section_bg02.jpg"
-        >
+        <div class="support-company-area pt-100 pb-100 section-bg fix" data-background="assets/img/gallery/section_bg02.jpg">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-xl-6 col-lg-6">

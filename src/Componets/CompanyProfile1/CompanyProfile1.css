@@ -1,27 +1,38 @@
-.CompanyProfile-section{
-    background-color: white;
+.companyprofilesection{
+    background-image: url('../../img/companyprofile/Comapany-profile.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:400px;
 }
-.row-companyprofile{
-    margin-bottom: 30px;   
+/* =================why we choosesection================ */
+.why-we-section{
+    background-color:midnightblue;
 }
-.why-chooseus{color: #2196f3;}
-.rounded-company-icon{
-    border-radius: 50%;
-    background-color: #30a6e9;;
-    width: 40%;
-    height: 30%;
-    margin-top: 50px;
+.companyheading-why-we{
+    justify-content: center;
+    text-align: center;
 }
-.rounded-company-icon i{
-    margin-top: 30px;
-    font-size: 50px;
-    color:white;
+.companyprofile-goal li{
+    width:300px;
+    height:70px;
+    background-color: rgb(155, 252, 244);
+    /* border-radius: 6px 25px; */
+    border-radius: 15px 0px 0px 15px;
+    list-style: none;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding: 20px;
 }
-.CompanyProfile-para1{
-    text-align: left;
-    font-size: 20px;
+.companyprofile-goal li:hover{
+    background-color: lightblue;
 }
-.CompanyProfile-icon-heading{
-    text-align: left;
-    padding:20px;
+.why-we-backimg{
+    background-image: url('https://apisero.com/wp-content/uploads/2021/01/global-team.jpg');
+    margin-left: -10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
