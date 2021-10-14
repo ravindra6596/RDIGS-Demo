@@ -41,7 +41,7 @@ const Banner = () => {
           <div class="row justify-content-between">
             <div class="col-lg-7 col-md-7 col-sm-12 pt-lg-0 order-2 order-lg-1 d-flex align-items-center justify-content-center ">
               <div data-aos="zoom-out">
-                <h1>Build Your Business With   <marquee width="50%" direction="left" >RDIGS</marquee></h1>
+                <h1>Build Your Business With   <marquee width="50%" direction="left" className="company-Name-head" >RDIGS</marquee></h1>
                 <h2>We are team of talented designers making websites with Bootstrap</h2>
                 <div class="text-center text-lg-start">
                   <Button classNames="allbtn-primary glow-on-hover text-light" text="KNOW MORE" fun={() => setModal(true)} />
@@ -49,7 +49,7 @@ const Banner = () => {
               </div>
             </div>
             <div class="col-lg-4  col-md-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-              <img src={banimg} class="img-fluid animated" alt="" />
+              <img src={banimg} class="img-fluid animated" alt="heroimgbanner" />
             </div>
           </div>
         </div>

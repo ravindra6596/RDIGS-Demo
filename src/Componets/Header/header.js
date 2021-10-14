@@ -10,6 +10,8 @@ import Insta from '../../img/socialicon/Insta.png';
 const Header = () => {
   //navbar scroll when active state
   const [navstage, setNavbar] = useState(false);
+  const [showText, setShowText] = useState(false);
+  const onClick = () => setShowText(true);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -145,27 +147,37 @@ const Header = () => {
           </Container>
         </Navbar>
       </section>
-      <section className="social-media-section">
-        <aside id="custom_html-9" class="widget_text widget widget_custom_html">
-          <div class="textwidget custom-html-widget" id="navbar">
-            <div id="floating-social">
-              <a class="a" target="_blank" href="https://www.linkedin.com/company/rd-info-global-solutions/" rel="noopener">
-                <img alt="linkedin" src={Linkedin} href="https://www.linkedin.com/company/rd-info-global-solutions/" className="socialimg-header"/>
-              </a>
-              <a class="a" target="_blank" href="https://www.facebook.com/RDInfoGlobalSolutions/" rel="noopener">
-                <img alt="facebook" src={Facebook} href="https://www.facebook.com/RDInfoGlobalSolutions/" className="socialimg-header"/>
-              </a>
-              <a class="a" target="_blank" href="https://www.youtube.com/channel/UCumgvf7v5Z8JGHoSDqGrVAw" rel="noopener">
-                <img alt="twitter"src={Insta} href="https://www.youtube.com/channel/UCumgvf7v5Z8JGHoSDqGrVAw" className="socialimg-header"/>
-              </a>
-              <a class="a" target="_blank" href="https://www.youtube.com/channel/UCumgvf7v5Z8JGHoSDqGrVAw" rel="noopener">
-                <img alt="instagram" src={Youtube} href="https://www.youtube.com/channel/UCumgvf7v5Z8JGHoSDqGrVAw" className="socialimg-header"/>
-              </a>
-            </div>
-          </div>
-        </aside>
-      </section>
+      <div className="socialicon-div">
+        <button className="socialicon-btn" onClick={onClick}><i class="fa fa-angle-left" aria-hidden="true"></i>
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </button>
+           {showText ? <Text /> : null}
+         </div>
+      {/* <section className="social-media-section">
+      
+        
+      </section> */}
     </>
-  );
-};
+  ); 
+}
+ const Text = () =><section className="social-media-section">
+ <aside id="custom_html-9" class="widget_text widget widget_custom_html">
+ <div class="textwidget custom-html-widget" id="navbar">
+   <div id="floating-social">
+     <a class="a" target="_blank" href="https://www.linkedin.com/company/rd-info-global-solutions/" rel="noopener">
+       <img alt="linkedin" src={Linkedin} href="https://www.linkedin.com/company/rd-info-global-solutions/" className="socialimg-header"/>
+     </a>
+     <a class="a" target="_blank" href="https://www.facebook.com/RDInfoGlobalSolutions/" rel="noopener">
+       <img alt="facebook" src={Facebook} href="https://www.facebook.com/RDInfoGlobalSolutions/" className="socialimg-header"/>
+     </a>
+     <a class="a" target="_blank" href="https://www.youtube.com/channel/UCumgvf7v5Z8JGHoSDqGrVAw" rel="noopener">
+       <img alt="twitter"src={Insta} href="https://www.youtube.com/channel/UCumgvf7v5Z8JGHoSDqGrVAw" className="socialimg-header"/>
+     </a>
+     <a class="a" target="_blank" href="https://www.youtube.com/channel/UCumgvf7v5Z8JGHoSDqGrVAw" rel="noopener">
+       <img alt="instagram" src={Youtube} href="https://www.youtube.com/channel/UCumgvf7v5Z8JGHoSDqGrVAw" className="socialimg-header"/>
+     </a>
+   </div>
+ </div>
+</aside>
+</section>;
 export default Header;
