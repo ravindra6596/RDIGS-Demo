@@ -1,5 +1,4 @@
-
-/* ============================= */
+/* / ============================= / */
 .card-cont{
     min-height: 100vh;
     padding: 20px 0;
@@ -70,13 +69,11 @@
 .card-blog-div .pic {
     position: relative
 }
-
 .card-blog-div .pic img {
     width: 100%;
     height: 280px;
     object-fit: cover
 }
-
 .card-blog-div .date {
     margin-bottom: -25px;
     display: flex;

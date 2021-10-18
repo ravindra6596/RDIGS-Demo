@@ -13,6 +13,7 @@
     font-weight: 600;
     margin: 3% 4%;
     color: #000000; 
+    font-family:Orbitron;
 }
 .conradiodiv{
     display: flex;
@@ -64,7 +65,7 @@
 .conbtnrow{margin: 3% 12%;}
 .radiotextarea{
     outline: none;
-        margin: 2% 4%;
+        margin: 2% 6%;
         width: 90%;
         height: calc(1.5em + .75rem + 2px);
         padding: .375rem .75rem;

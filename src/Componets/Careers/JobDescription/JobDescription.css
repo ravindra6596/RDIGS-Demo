@@ -5,11 +5,8 @@
     height: 500px;
 }
 .jdformcol{
-    background-color: lightblue;
+    border: 1px solid lightblue;
     border-radius: 10px;
-}
-.jdlist{
-    list-style:none ;
 }
 .jdicons{
     font-size: 25px;
@@ -17,9 +14,8 @@
     margin-right: 13px;
 }
 .formjd{
-    margin: 4%;
          outline: none;
-        width: 90%;
+        width: 100%;
         display: block;
         height: calc(1.5em + .75rem + 2px);
         padding: .375rem .75rem;
@@ -32,4 +28,9 @@
         border: 1px solid #ced4da;
         border-radius: .25rem;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.applyheretxt{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+    color:#30a6e9;
+    font-family:'Orbitron';
 }

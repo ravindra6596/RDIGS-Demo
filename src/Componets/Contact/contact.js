@@ -9,9 +9,6 @@ import Button from "../ButtonGroup/Button/button";
 const Contact = () => {
 
     const [radiotext, showRadiotext] = useState(false);
- 
-   
- 
     return (
         <>
             <div className="nav-contaniner" />
@@ -78,7 +75,7 @@ const Contact = () => {
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6" style={{ textAlign: 'justify' }}>
                             <h3 className="conindiaoffice" >
-                                <img src={indiaflag} className="flagimg" />India Office (HQ)</h3>
+                                <img src={indiaflag} className="flagimg"/>India Office (HQ)</h3>
                             <p className="conIndaddress">
                                 <span><i class="fa fa-map-marker conaddmaker" ></i></span>
                                 402, Vascon Garnets Bay,Besides Hotel Four Points By Sheraton,<br /><span style={{ paddingLeft: '4%' }}>Viman Nagar, Pune - 411014.</span>
@@ -86,11 +83,11 @@ const Contact = () => {
                             <div >
                                 <p className="conaddphone">
                                     <span><i class="fa fa-phone" style={{ color: '#30a6e9', fontSize: '25px', paddingRight: '10px' }}></i></span>
-                                    +91 848-404-0734
+                                    <a style={{color:'black'}}href="tel:+848-404-0734">+91 848-404-0734</a>
                                 </p>
                                 <p className="conaddphone">
                                     <span><i class="fa fa-envelope" style={{ fontSize: '20px', color: '#30a6e9', paddingRight: '10px' }}></i></span>
-                                    contact@rdigs.com
+                                    <a style={{color:'black'}} href="mailto:contact@rdigs.com" target="_blank">contact@rdigs.com</a>
                                 </p>
                             </div>
                         </div>
@@ -104,11 +101,11 @@ const Contact = () => {
                             <div style={{ paddingTop: '3%' }}>
                                 <p className="usaconaddphone">
                                     <span><i class="fa fa-phone" style={{ fontSize: '25px', color: '#30a6e9', paddingRight: '10px' }}></i></span>
-                                    +1 302-261-5312
+                                    <a style={{color:'black'}} href="tel:+1 3022615312">+1 302-261-5312</a>
                                 </p>
                                 <p className="usaconaddphone">
                                     <span><i class="fa fa-envelope" style={{ fontSize: '20px', color: '#30a6e9', paddingRight: '10px' }}></i></span>
-                                    sales@rdigs.com
+                                    <a style={{color:'black'}} href="mailto:sales@rdigs.com" target="_blank">sales@rdigs.com</a>
                                 </p>
                             </div>
 
