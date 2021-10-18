@@ -12,6 +12,7 @@ const Header = () => {
   const [navstage, setNavbar] = useState(false);
   const [showText, setShowText] = useState(false);
   const onClick = () => setShowText(true);
+  
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -153,10 +154,6 @@ const Header = () => {
         </button>
            {showText ? <Text /> : null}
          </div>
-      {/* <section className="social-media-section">
-      
-        
-      </section> */}
     </>
   ); 
 }
@@ -179,5 +176,5 @@ const Header = () => {
    </div>
  </div>
 </aside>
-</section>;
+</section>
 export default Header;

@@ -11,6 +11,7 @@ text-align: end;}
 }
 .mediakithead{
     text-transform: uppercase;
+    font-family: 'Orbitron';
     overflow: hidden;
     background: linear-gradient(90deg, #009ffd, #266a91,#4154f1);
     background-repeat: no-repeat;
@@ -18,17 +19,13 @@ text-align: end;}
     animation: animate 1s linear infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    /* display: inline-block; */
     color: white;
     text-shadow: .03em .03em 0;
-    font-size:2.0rem;
-  }
-
+    font-size:2.0rem; }
 .footerlinkhover:hover,:focus,:active{text-decoration: none;}
 .footerlinkhover{
     color: #30a6e9;
-    text-decoration: none;
-}
+    text-decoration: none;}
 .close-btn{
     color: lightblue;
     margin-left: 94%;
@@ -62,12 +59,10 @@ text-align: end;}
     padding-left: 7px;
     word-spacing: -3px;
 }
-.Email-info{
-    padding-left: 14px;
-}
-.footemailimg{
-    width: 30px;
-}
+.Email-info{ padding-left: 14px;}
+.Email-info a:hover{ text-decoration: none;}
+
+.footemailimg{width: 30px;}
 .model-head-cop{
     color: lightblue;
 }
@@ -230,15 +225,17 @@ input::-webkit-inner-spin-button {
   margin-top: 20px;
 }
 .footer-tit {
-    font-size: 18px;}
-.footer-row{
-    padding: 20px 0;
+    font-size: 15px;
+    font-family: 'Orbitron';
+    word-spacing: 1px;
 }
+.footer-row{ padding: 20px 0;}
 /* css for contact us */
 .contactus-footer{
     padding-bottom: 10px;
     font-size: 18px;
     text-align: initial;
+    font-family: 'Orbitron';
 }
 .text-email{
     float: left;
@@ -255,7 +252,6 @@ input::-webkit-inner-spin-button {
     width:30px;
     height:20px;
 }
-
 /* css for Footer services */
 .services {
     line-height: 0px;
@@ -264,7 +260,8 @@ input::-webkit-inner-spin-button {
     padding: 10px 0;
 }
 .ourservices{
-    margin-right: 15%;
+    font-family: 'Orbitron';
+    margin-right: 5%;
 font-size: 18px;}
 .services li{
     text-align: justify;
@@ -282,15 +279,6 @@ font-size: 18px;}
     color: white;
     text-decoration: none;
 }
-#arrow1{margin-right: 7px;}
-#arrow2 { margin-left: 35px;}
-#arrow3{margin-left: 53px;}
-#arrow4{margin-left: 12px;}
-#arrow5{margin-left: 25px;}
-#arrow6{margin-left: 52px;}
-#arrow7{margin-left: 14px;}
-#arrow8{margin-left: 62px;}
-#arrow9{margin-left: 0px;}
 .services-webdevlopment{font-size: 15px;}
 .services-webdevlopment :hover{ color:white;}
 /* css for copyright */
@@ -421,9 +409,7 @@ font-size: 18px;}
     justify-content: center!important;
     display: flex!important;
 }
-.back-to-top:focus{
-    outline: none;
-}
+.back-to-top:focus{outline: none;}
 .back-to-top i {
     font-size: 30px;
     color: #fff;
@@ -433,7 +419,6 @@ font-size: 18px;}
 .back-to-top i:hover {
     color: black;
     transform: scale(1.2);
-
 }
 /* / modal corporate Deck / */
 .corporate-img{
@@ -455,7 +440,6 @@ font-size: 18px;}
     padding: 4px;
 }
 .corporate-form-in1 i{
-    
     padding: 5px;
     position: absolute;
     margin-left: -25px; 
@@ -466,7 +450,6 @@ font-size: 18px;}
     margin-left: -25px;
 }
 .corporate-form-in3 i{
-    
     padding: 5px;
     position: absolute;
     margin-left: -25px;
@@ -477,17 +460,12 @@ font-size: 18px;}
     position: absolute;
 }
 .corporate-form-in5 i{
-   
     padding: 5px;
     position: absolute;
     margin-left: -25px;
 } 
-.corporate-form-in2 ,.corporate-form-in3{
-    margin-top:10px;
-}
-.corporate-form-in4,.corporate-form-in5{
-    margin-top:10px;
-}
+.corporate-form-in2 ,.corporate-form-in3{margin-top:10px;}
+.corporate-form-in4,.corporate-form-in5{ margin-top:10px;}
 /* / Chrome, Safari, Edge, Opera / */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -507,9 +485,6 @@ input::-webkit-inner-spin-button {
         justify-content: center !important;
         align-items: center !important;
  }
-.modelhead11{
-    background-color: lightblue;
-}
 /* media query for downloadbtn */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .cop-btn{
@@ -517,14 +492,17 @@ input::-webkit-inner-spin-button {
     }  
 }
 /* All Footer responsive */
-
 @media only screen and (min-width: 320px) and (max-width: 575px) {
-    .ourservices {text-align: justify;}
+    .ourservices {padding-top: 20px;}
     .services li{ margin: 0!important;}  
     .footer-tit {text-align: justify;}
-    .footrescol{position: inherit!important;}
+    .footrescol{position: inherit!important;
+    text-align: justify;}
     .copydesign {text-align: justify!important;} 
     .footerlinkhover {font-size: 11px;}
+    .footer-newsletter p { padding:0px;
+        font-size: 15px;}  
+     .contactus-footer { padding: 10px 0px;}
 }
 @media only screen and (min-width: 575px) and (max-width: 991px) {
     .ourservices {text-align: justify;}
@@ -538,8 +516,8 @@ input::-webkit-inner-spin-button {
 .media-kit {height: 300px;}}
 @media only screen and (min-width:430px) and (max-width: 575px) {
     input[type=submit] {width: 21%;}     
-    input[type=email] {width: 39%; }        }
-    
+    input[type=email] {width: 39%; }       
+ }    
 @media only screen and (min-width:992px) and (max-width: 1200px) {
     .newsletter-input1 {width: 52%;}}
 

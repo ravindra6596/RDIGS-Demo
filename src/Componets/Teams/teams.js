@@ -14,15 +14,15 @@ const teams =()=>{
     const data = [
         { 
             teamimg:team1,
-            teamalt:"Ajay Rawat",
-            teamName:"Ajay Rawat", 
-            teamdesi: "Chief Operating Officer",
+            teamalt:"Roland Dcoasta",
+            teamName:"Roland Dcoasta", 
+            teamdesi: "Founder",
         },
         { 
             teamimg:team2,
-            teamalt:"Rachel ",
-            teamName:"Rachel Mendis", 
-            teamdesi: "HR",
+            teamalt:"Ajay Rawat",
+            teamName:"Ajay Rawat", 
+            teamdesi: "Chief Operating Officer",
         },
         { 
             teamimg:team3,
@@ -32,9 +32,9 @@ const teams =()=>{
         },
         { 
             teamimg:team4,
-            teamalt:"Swapnil patil",
-            teamName:"Swapnil Patil", 
-            teamdesi: "Sr Software Developer",
+            teamalt:"Rachel",
+            teamName:"Rachel Mendis", 
+            teamdesi: "HR",
         },
       ];
     return(

@@ -5,7 +5,7 @@
     background-size: cover;
     height:400px;
 }
-/* =================why we choosesection================ */
+/* / =================why we choosesection================ / */
 .why-we-section{
     background-color:midnightblue;
 }
@@ -17,22 +17,18 @@
     width:300px;
     height:70px;
     background-color: rgb(155, 252, 244);
-    /* border-radius: 6px 25px; */
     border-radius: 15px 0px 0px 15px;
     list-style: none;
     margin-top:10px;
     margin-bottom:10px;
     padding: 20px;
 }
-.companyprofile-goal li:hover{
-    background-color: lightblue;
-}
+.companyprofile-goal li:hover{background-color: lightblue;}
 .why-we-backimg{
     background-image: url('https://apisero.com/wp-content/uploads/2021/01/global-team.jpg');
     margin-left: -10px;
     margin-top: 10px;
     margin-bottom: 15px;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;  
 }
