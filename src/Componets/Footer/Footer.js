@@ -41,6 +41,7 @@ const scrollgoTop = () => {
   window.scrollTo({ top:0, behavior: 'smooth' });
 };
 window.addEventListener('scroll', checkingScrollTop)
+
     return (
         <>
         <div>
@@ -48,6 +49,7 @@ window.addEventListener('scroll', checkingScrollTop)
             style={{visibility: showScrollup ? 'visible' : 'hidden' }} >
            <i class="fa fa-angle-double-up"></i></button>
         </div>
+        
         <section className="media-kit">
             <div className="container mediakit-cont">
             <div className="row">

@@ -17,7 +17,6 @@
     font-size: 20px;
     font-weight: 500;}
 .testprodesi{font-size: 12px;}
-
 .testimonial-card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,2);
     padding:20px;
@@ -52,16 +51,9 @@
     color: #30a6e9;
     margin: 10px 5px;
 }
-.testimonial-heading span{
-    color:#30a6e9;
-}
-
-.card-top{
-   margin-top: -200px;
-}
-.card-leftright{
-    margin-bottom: 50px;
-}
+.testimonial-heading span{color:#30a6e9;}
+.card-top{margin-top: -200px;}
+.card-leftright{margin-bottom: 50px;}
  .text{
     width:250px;
     height:250px;    

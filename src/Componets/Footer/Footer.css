@@ -33,12 +33,8 @@ text-align: end;}
     font-weight: 700;
     padding: 1%;
 }
-.close-btn:hover{
-    outline: none;
-}
-.close-btn:focus{
-    outline: none;
-}
+.close-btn:hover{outline: none;}
+.close-btn:focus{ outline: none;}
 .download-button{
     margin-top: 60px;
     border-radius: 25px;
@@ -63,23 +59,15 @@ text-align: end;}
 .Email-info a:hover{ text-decoration: none;}
 
 .footemailimg{width: 30px;}
-.model-head-cop{
-    color: lightblue;
-}
-.para-copdeck{
-    color:black;
-}
+.model-head-cop{ color: lightblue;}
+.para-copdeck{ color:black;}
 .close-btn{
     background-color: lightblue;
     border-radius: 50%;
     float:right;
 }
-.close-btn:hover{
-    outline: none;
-}
-.close-btn:focus{
-    outline: none;
-}
+.close-btn:hover{outline: none;}
+.close-btn:focus{outline: none;}
 .corporate-img{
     width:100%;
     height:100%;
@@ -97,8 +85,7 @@ text-align: end;}
     padding-left: 15px; 
 }
 .corporate-form-in1 i{
-    
-    padding: 5px;
+     padding: 5px;
     position: absolute;
     margin-left: -25px; 
 }
@@ -108,7 +95,6 @@ text-align: end;}
     margin-left: -25px;
 }
 .corporate-form-in3 i{
-    
     padding: 5px;
     position: absolute;
     margin-left: -25px;
@@ -119,25 +105,19 @@ text-align: end;}
     position: absolute;
 }
 .corporate-form-in5 i{
-   
     padding: 5px;
     position: absolute;
     margin-left: -25px;
 } 
-.corporate-form-in2 ,.corporate-form-in3{
-    margin-top:10px;
-}
-.corporate-form-in4,.corporate-form-in5{
-    margin-top:10px;
-}
+.corporate-form-in2 ,.corporate-form-in3{ margin-top:10px;}
+.corporate-form-in4,.corporate-form-in5{ margin-top:10px;}
 /* / / Chrome, Safari, Edge, Opera / / */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-  @media only screen and (min-width:994px) and (max-width: 1125px) {
+ @media only screen and (min-width:994px) and (max-width: 1125px) {
     .model-corporatedeck-style {
         margin-left: 14%;
     }
@@ -147,7 +127,6 @@ input::-webkit-inner-spin-button {
         margin-left: 0%;
     }
   }
-
 
 @media only screen and (min-width:320px) and (max-width: 480px) {
 .copydesign {text-align: center;}    
