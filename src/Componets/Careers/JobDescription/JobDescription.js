@@ -20,7 +20,7 @@ const JobDescription =()=>{
                 <div className="row" style={{margin:'5% 0px'}}>
                     <div className="col-lg-12 col-md-12 col-sm-12" style={{textAlign:'justify',marginBottom:'2%'}}>
                         <h4><b style={{fontFamily:'Orbitron',color:'#30a6e9',paddingRight:'5px'}}>Job ID:</b>001</h4>
-                        <h3 style={{fontFamily:'Orbitron',color:'#30a6e9'}}>Roles and Responsibilities</h3>
+                        <h3 className="jdroles-res">Roles and Responsibilities</h3>
                         <ul>
                         <span><li>Identify, analyze and develop interfaces and integration flows using mule ESP with Mule runtime, connectors, design center and API management.</li></span>
                         <span><li>0-5 years of hands on exp in mule DW and java, knowledge on mule architecture along with XML,SOAP,WSDL,XSLT,REST services, knowledge on security, login, policy management.</li></span>

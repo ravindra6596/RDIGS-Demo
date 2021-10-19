@@ -17,8 +17,7 @@ const Contact = () => {
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6">
                         </div>
-
-                        <div className="col-lg-6 col-md-12 col-sm-12" style={{backgroundColor: 'white' }}>
+                          <div className="col-lg-6 col-md-12 col-sm-12" style={{backgroundColor: 'white' }}>
                             <h2 className="contgetin" data-aos="fade-up">Get in Touch</h2>
                             <form>
                                 <div class="form-group">
@@ -52,12 +51,10 @@ const Contact = () => {
                                         <label for="age1" style={{marginLeft:'5px'}} >Other</label>
                                     </div>
                                 </div>
-                                <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Service Name"/>
+                                <input className="col-lg-12 col-md-12 radiotextarea" type="textarea" placeholder="Service Name"/>
                                 {/* others Radio button functinality */}
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Your Message" 
                                  style={{ display: radiotext ? "block" : "none"}}/>
-                               
-
                                 <div className="row conbtnrow">
                                     <div className="col btngetintouch"><Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" /></div>
                                     <div className="col conformcleardiv"> <Button classNames="btnclear" text="Clear" /></div>

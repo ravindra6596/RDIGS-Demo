@@ -14,7 +14,7 @@ const CareerGallery = () => {
             <section>          
                 <div class="container">
                     <Heading title="Our Culture"/>
-                    <p style={{color:'black'}}>At Apisero, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
+                    <p style={{color:'black'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
 
                     <div className="row">
                         <div className="col-md-8 col-sm-12 co-xs-12 gal-item">
@@ -25,7 +25,7 @@ const CareerGallery = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="row h-50">
+                            <div className="row h-50 cargalrow3">
                                 <div className="col-md-6 col-sm-6 co-xs-12 gal-item">
                                     <div className="careerculbox">
                                         <img src={culture2} className="img-ht img-fluid rounded" />

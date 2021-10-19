@@ -12,5 +12,11 @@
 	width: auto;
 	object-fit:cover;
 }
-.careerculbox img:hover{
-    border: 10px solid lightblue;}
+.cargalrow3{margin-top: 13%;}
+.careerculbox img:hover{ border: 10px solid lightblue;}
+@media only screen and (min-width: 320px)and (max-width: 575px){
+	.cargalrow3{margin-top: 0px;}
+	.careerculbox img {
+		height: 100%;
+		width: 100%;}
+}

@@ -8,12 +8,12 @@ import Facebook from '../../img/socialicon/Facebook.png';
 import Youtube from '../../img/socialicon/Youtube.png';
 import Insta from '../../img/socialicon/Insta.png';
 const Header = () => {
-  //navbar scroll when active state
+
+//navbar scroll when active state
   const [navstage, setNavbar] = useState(false);
   const [showText, setShowText] = useState(false);
   const onClick = () => setShowText(true);
   
-
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY >= 20) {
@@ -24,6 +24,11 @@ const Header = () => {
     });
   });
 
+// Navigation tab click open on top functionality
+const scrollgoTop = () => {
+  window.scrollTo({ top:0});
+};
+
   return (
     <>
       {/* Navbar coding */}
@@ -33,22 +38,22 @@ const Header = () => {
           collapseOnSelect
           expand="lg"
           style={{ backgroundColor: navstage ? "lightblue" : "transparent" }}
-        >
+          >
           <Container>
             <Navbar.Brand>
-              <img src={logoimg} className="headlogo" alt="logo"></img>
+              <img src={logoimg} className="headlogo" alt="logo"/>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link>
                   <div className="forunderline">
-                    <Link to="/home">HOME</Link>
+                    <Link to="/home" onClick={scrollgoTop}>HOME</Link>
                   </div>
                 </Nav.Link>
                 <div class="dropdown">
                   <div className="forunderline">
-                    <Nav.Link>
+                    <Nav.Link >
                       <span>SERVICES</span>
                     </Nav.Link>
                   </div>
@@ -59,7 +64,7 @@ const Header = () => {
                           <i class="fa fa-align-justify" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/leadgeneration">Lead Generation</Link>
+                              <Link to="/leadgeneration" onClick={scrollgoTop}>Lead Generation</Link>
                             </div>
                           </p>
                         </span>
@@ -67,7 +72,7 @@ const Header = () => {
                           <i class="fa fa-laptop" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/demandgeneration">
+                              <Link to="/demandgeneration" onClick={scrollgoTop}>
                                 Demand Generation{" "}
                               </Link>
                             </div>
@@ -92,7 +97,7 @@ const Header = () => {
                           <i class="fa fa-users" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/teams">Teams</Link>
+                              <Link to="/teams" onClick={scrollgoTop}>Teams</Link>
                             </div>
                           </p>
                         </span>
@@ -100,7 +105,7 @@ const Header = () => {
                           <i class="fa fa-laptop" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/careers">Careers</Link>
+                              <Link to="/careers" onClick={scrollgoTop}>Careers</Link>
                             </div>
                           </p>
                         </span>
@@ -108,7 +113,7 @@ const Header = () => {
                           <i class="fa fa-align-center"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/gallary">Gallery</Link>
+                              <Link to="/gallary" onClick={scrollgoTop}>Gallery</Link>
                             </div>
                           </p>
                         </span>
@@ -116,7 +121,7 @@ const Header = () => {
                           <i class="fa fa-th" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/companyprofile1">Company Profile</Link>
+                              <Link to="/companyprofile1" onClick={scrollgoTop}>Company Profile</Link>
                             </div>
                           </p>
                         </span>
@@ -124,7 +129,7 @@ const Header = () => {
                           <i class="fa fa-th" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="#">News Latter</Link>
+                              <Link to="#" onClick={scrollgoTop}>News Latter</Link>
                             </div>
                           </p>
                         </span>
@@ -135,12 +140,12 @@ const Header = () => {
                 <div className="forunderline">
                   {" "}
                   <Nav.Link>
-                    <Link to="/blog">BLOG</Link>
+                    <Link to="/blog" onClick={scrollgoTop}>BLOG</Link>
                   </Nav.Link>
                 </div>
                 <Nav.Link>
                   <div className="forunderline">
-                    <Link to="/contact"> CONTACT</Link>
+                    <Link to="/contact" onClick={scrollgoTop}> CONTACT</Link>
                   </div>
                 </Nav.Link>
               </Nav>

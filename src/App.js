@@ -6,7 +6,7 @@ import { BrowserRouter, Route,Switch,Redirect} from 'react-router-dom';
 import Header from './Componets/Header/header';
 import Footer from './Componets/Footer/Footer';
 import LoaderExampleDisabled from './Componets/LoaderExampleDisabled/LoaderExampleDisabled';
-import PageNotFound from './Componets/PageNotFound/Pagenotfound';
+
 AOS.init({
  duration: 1500
 });
@@ -25,8 +25,7 @@ const Bannercommon = React.lazy(()=>import('./Componets/Bannercommon/Bannercommo
 const Privacypolicy = React.lazy(()=>import('./Componets/Privacypolicy/Privacypolicy'));
 const Termscondition = React.lazy(()=>import('./Componets/Termscondition/Termscondition'));
 const Unsubscribe = React.lazy(()=>import('./Componets/Unsubscribe/Unsubscribe'));
-
- const PageNotFound = React.lazy(()=>import('./Componets/PageNotFound/Pagenotfound'));
+const PageNotFound = React.lazy(()=>import('./Componets/PageNotFound/Pagenotfound'));
   return (
     <div className="App">
       <BrowserRouter>
