@@ -31,7 +31,7 @@
 @media only screen and (min-width: 320px)and (max-width: 575px){
     .carshadow {text-align: center;}
     .carshadow p,h5{text-align: center;
-    margin: 5px;}
+    margin: 10px;}
     .btnclear {margin-right: 0px;}
    
 }

@@ -51,10 +51,10 @@ const Contact = () => {
                                         <label for="age1" style={{marginLeft:'5px'}} >Other</label>
                                     </div>
                                 </div>
-                                <input className="col-lg-12 col-md-12 radiotextarea" type="textarea" placeholder="Service Name"/>
                                 {/* others Radio button functinality */}
-                                <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Your Message" 
+                                <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Service Name" 
                                  style={{ display: radiotext ? "block" : "none"}}/>
+                                <input className="col-lg-12 col-md-12 radiotextarea" type="textarea" placeholder="Your Message"/>
                                 <div className="row conbtnrow">
                                     <div className="col btngetintouch"><Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" /></div>
                                     <div className="col conformcleardiv"> <Button classNames="btnclear" text="Clear" /></div>
@@ -67,7 +67,7 @@ const Contact = () => {
 
             <section>
                 <div className="container">
-                     <Heading title="Contact Us" />
+                     <Heading classNames="aboutwherewe" title="Contact Us" />
                     <p className="consubtxt">Get in Touch with us to embark on a path of success</p>
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6" style={{ textAlign: 'justify' }}>

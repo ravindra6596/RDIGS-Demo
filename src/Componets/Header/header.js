@@ -28,7 +28,6 @@ const Header = () => {
 const scrollgoTop = () => {
   window.scrollTo({ top:0});
 };
-
   return (
     <>
       {/* Navbar coding */}
@@ -43,7 +42,7 @@ const scrollgoTop = () => {
             <Navbar.Brand>
               <img src={logoimg} className="headlogo" alt="logo"/>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link>

@@ -32,7 +32,12 @@
         border-radius: .25rem;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+.custom-file-input-input[type=file]:focus{outline: none!important; border:transparent!important;outline-style: none;}
+.custom-file-input-input[type=file]:active{outline: none!important; border:transparent!important;outline-style: none;}
+.custom-file-label[type=file]:focus::after{outline: none!important; border:transparent!important;outline-style: none;}
+.custom-file-label[type=file]:active::after{outline: none!important; border:transparent!important;outline-style: none;}
 .applyheretxt{
+    padding-bottom: 3%;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
     color:#30a6e9;
     font-family:'Orbitron';

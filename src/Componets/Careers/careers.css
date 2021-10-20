@@ -42,7 +42,6 @@
       transform-origin: 50% 50%;
       transition: transform 0.15s ease-out;
     }
- 
 .carbox:hover:before {  transform: scale(2.15);} */
 .carbox{
     overflow: hidden;

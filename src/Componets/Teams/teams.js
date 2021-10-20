@@ -16,10 +16,10 @@ const teams =()=>{
             teamimg:team1,
             teamalt:"Roland Dcoasta",
             teamName:"Roland Dcoasta", 
-            teamdesi: "Founder",
+            teamdesi: "Managing Director,Founder",
         },
         { 
-            teamimg:team2,
+            teamimg:team1,
             teamalt:"Ajay Rawat",
             teamName:"Ajay Rawat", 
             teamdesi: "Chief Operating Officer",
@@ -34,7 +34,7 @@ const teams =()=>{
             teamimg:team4,
             teamalt:"Rachel",
             teamName:"Rachel Mendis", 
-            teamdesi: "HR",
+            teamdesi: "HR Manager",
         },
       ];
     return(
@@ -45,7 +45,7 @@ const teams =()=>{
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12" style={{marginTop:'10%'}}>
-                            <Heading title="Team"/>
+                            <Heading classNames="clientheadwe" title="Team"/>
                             <p style={{color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ const teams =()=>{
                             <img className="teams2img img-fluid" src={teamsection2}/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6" style={{textAlign:'justify'}}>
-                            <Heading title="WE ARE RDIGS"/>
+                           <Heading classNames="aboutwherewe" title="WE ARE RDIGS"/>
                             <p className="teamsec2para">Digitallium is a company specializing in providing financial, marketing and analytical services to other companies and private entrepreneurs to help them improve their businesses. We are able to analyze any activity and provide with the bulk of solutions how to decrease your expense, use hidden opportunities and what spheres are good for investment.</p>
                             <ul style={{fontSize:'20px'}}>
                                 <li>IT Team</li>
@@ -76,7 +76,7 @@ const teams =()=>{
         <div class="container" data-aos="fade-up">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                  <Heading title="Meet Our Team" />
+                  <Heading  classNames="aboutwherewe" title="Meet Our Team" />
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text</p>
                 </div>
             </div>
