@@ -106,7 +106,7 @@ const Counter = () => {
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="2000"
                 >
-                  Hours Of Support
+                  Hour Of Support
                 </p>
                 <CountUp start={0} end={1463} duration={10}></CountUp>
                 <span>+</span>

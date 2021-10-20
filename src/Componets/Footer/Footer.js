@@ -101,7 +101,7 @@ window.addEventListener('scroll', checkingScrollTop)
                                                                      <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
                                                                     </div>
                                                                 </Link>
-                                                                <Recaptcha
+                                                                <Recaptcha className="footer-captcha"
                                                                     badge="bottomleft"
                                                                     ref={recaptcha}
                                                                     onChange={onResolveddata}

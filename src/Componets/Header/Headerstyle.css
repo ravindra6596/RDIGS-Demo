@@ -110,9 +110,9 @@ transition:0.5s;
 .socialicon-btn:hover > .fa {
   display: none;
 }
-.socialicon-btn:hover > .fa + .fa {
+/* .socialicon-btn:hover > .fa + .fa {
   display: inherit;
-}
+} */
 /* ===============social icon section===================== */
 .socialimg-header{
     width:30px;

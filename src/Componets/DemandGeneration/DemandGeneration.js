@@ -66,7 +66,7 @@ const DemandGeneration=()=>{
             serviceinnerh1:"Email Marketing",
             serviceinnerpara:"Email Marketing is a great solution to reach a",
             serviceinnerspan:"high range of customers",
-            serviceinnerpara1:"eagrerly waiting to get a service."
+            serviceinnerpara1:"service."
 
         },
         {
@@ -192,7 +192,8 @@ const DemandGeneration=()=>{
                 return(
                       <div class="col-lg-4 col-xs-6 col-sm-6 col-md-4">
                         <div class="service-box">
-                            <div className="serviceboxeffect"></div>
+                            <div class="overlay-bottom-slide">
+                            </div>
                             <div class="service-img-icon">
                             <img src={user.serviceimgicon} alt="service-icon" class="img-fluid"/>
                             </div>

@@ -12,7 +12,7 @@ import service5 from "../../img/services/s5.jpg";
 import service6 from "../../img/services/s6.jpg";
 import service7 from "../../img/services/s7.jpg";
 import service8 from "../../img/services/s8.jpg";
-import avatarsm from "../../img/services/avatar-sm.png";
+import servicesicon from '../../img/services/servicesicon.jpg'
 const LeadGeneration = () => {
   const data = [
     {
@@ -149,24 +149,13 @@ const LeadGeneration = () => {
                       ess cillum dolore egru lofrre dsu quality mollit anim
                       laborumuis au dolor in voluptate velit cillu.
                     </p>
-                    <p class="mb-65">
-                      Mollit anim laborum.Dvcuis aute serunt iruxvfg dhjkolohr
-                      indd re voluptate velit esscillumlore eu quife nrulla
-                      parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute
-                      iruxvfg dhjinulpadeserunt moll.
-                    </p>
-                  </div>
-                  <div id="flamelab-convo-widget"  data-aos="fade-left">
-                   <img src={avatarsm} alt="AvatarImage"/>
-                    <div class="flamelab-cw-msg-box">
-                        <span>Hey! Want to create your own Leads?</span>
-                        {/* <!-- <span style="opacity: 0.5;">- Mike (the creator of this site)</span> --> */}
-                        <div class="flamelab-cw-buttons">
-                            <a href="#" target="_blank" class="flamelab-cw-button flamelab-cw-button-yes">Yes!</a>
-                            <div class="flamelab-cw-button flamelab-cw-button-no">Thanks</div>
-                        </div>
+                    <div className="support-caption-two">
+                      <img src={servicesicon} className="support-caption-two-img" alt=""></img> 
                     </div>
-                </div>
+                    <p>Mollit anim laborum duis adseu dolor iuyn voluptcate velit
+                      ess cillum dolore egru lofrre dsu quality mollit anim
+                      laborumuis au dolor in voluptate velit cillu.</p>
+                  </div>
                 </div>
               </div>
             </div>
