@@ -79,7 +79,7 @@ const CompanyProfile1 = () => {
                   </div>
               </div>
               </section>
-              {/* <section>
+               <section>
                 <div className="container">
               <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                 <Row>
@@ -109,7 +109,7 @@ const CompanyProfile1 = () => {
                 </Row>
               </Tab.Container>
               </div>
-              </section> */}
+              </section> 
     </>
   );
 };
