@@ -62,7 +62,7 @@ const careers = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12" style={{ marginTop:'5%'}}>
-                            <Heading title="Careers"/>
+                            <Heading  classNames="aboutwherewe" title="Careers"/>
                             <p style={{ color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ const careers = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-sm-12">
-                            <Heading title="Benefits of joining our Team" />
+                            <Heading classNames="aboutwherewe" title="Benefits of joining our Team" />
                         </div>
                     </div>
                     <div className="row" style={{ marginBottom: '5%' }} data-aos="fade-up" data-aos-delay="200">

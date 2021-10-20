@@ -10,7 +10,7 @@ const JobDescription =()=>{
         <div className="container ">
             <div className="row">
                 <div className="col-lg-12" style={{margin:'8% 0px'}}>
-                    <Heading title="Front-End Developer"/>
+                    <Heading classNames="clientheadwe" title="Front-End Developer"/>
                 </div>
             </div>
         </div>
@@ -46,23 +46,23 @@ const JobDescription =()=>{
                          <form className="jdformcol" style={{padding:'3%'}}>
                                 <h1 className="applyheretxt">Apply Here..</h1>
                                 <div className="form-group">
-                                    <input type="text" className="formjd" aria-describedby="emailHelp" placeholder="Enter Name" />
+                                    <input type="text" className="formjd" aria-describedby="emailHelp" placeholder="Enter Name"autocomplete="off" required />
                                 </div>
                                 <div className="form-group">
-                                    <input type="number" className="formjd" aria-describedby="emailHelp" placeholder="Enter Phone No" />
+                                    <input type="number" className="formjd" aria-describedby="emailHelp" placeholder="Enter Phone No" autocomplete="off" required/>
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className="formjd" aria-describedby="emailHelp" placeholder="Enter Email" />
+                                    <input type="text" className="formjd" aria-describedby="emailHelp" placeholder="Enter Email"autocomplete="off" required />
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className="formjd" placeholder="Enter Company Name" />
+                                    <input type="text" className="formjd" placeholder="Enter Company Name" autocomplete="off" />
                                 </div>
                                 <div className="form-group" style={{textAlign:'justify'}}>
                                     <label for="exampleInputFile">Upload File</label><i class="fa fa-image mx-2 updatePost"></i><small class="img-add">(only Pdf, Doc, & txt files are allowed)</small>
                                     <div className="input-group">
                                         <div className="custom-file">
-                                        <input type="file" name="mediafile" class="custom-file-input" accept="pdf/*" id="filetag"/>
-                                        <label className="custom-file-label" for="exampleInputFile">Choose file</label>
+                                        <input className="custom-file-input" type="file" name=""  accept="pdf/*" id="filetag" autocomplete="off" required/>
+                                        <label className="custom-file-label" for="">Choose file</label>
                                         </div>
                                     </div>
                                 </div>

@@ -6,4 +6,8 @@
   .aboutwherewe:hover {
     color:black;
   }
- 
+.clientheadwe{ color: #30a6e9;padding-top: 5px; font-family: 'Orbitron';}
+.clientheadwe:hover{ color: white;}
+@media only screen and (min-width: 320px)and (max-width: 370px){
+.aboutwherewe {font-size: 30px;}
+}

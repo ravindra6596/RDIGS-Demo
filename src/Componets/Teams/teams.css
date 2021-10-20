@@ -7,9 +7,9 @@
 }
 .teamsec2para{font-size: 20px;}
 .teams2img:hover{
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    border: 10px solid lightblue;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    border: 5px solid lightblue;
     border-radius: 5px;
 }
  #team {
@@ -70,20 +70,18 @@
     font-style: italic;
     display: block;
     font-size: 13px;
-    color: #0f74af;
+    color: #fff;
     font-weight: bold;
 }
+#team .member span:hover{ color: black;}
 #team .member .social-links {
     margin-top: 15px;
 }
 #team .member .social-links a {
     transition: none;
-    color: #fff;
-   
+    color: #fff;   
 }
-#team .member .social-links a :hover {
-    color:  #30a6e9;;
-}
+#team .member .social-links a :hover { color:#30a6e9;}
 #team .member .social-links i {
     font-size: 30px;
     margin: 0 2px;

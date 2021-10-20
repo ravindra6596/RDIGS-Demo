@@ -1,5 +1,6 @@
 import React from 'react';
 import './Companyslider.css';
+import Heading from '../Heading/Heading';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -107,7 +108,7 @@ const Companyslider = () => {
         
         <div className="slide-overlay">
         <div className="section-title">
-          <span> <h1 className="clientheadwe">We Work With</h1></span>
+          <Heading classNames="clientheadwe" title="We Work With"/>
         </div>
           <div className="overlay1">
             <div className="container slider-cont">

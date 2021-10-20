@@ -13,7 +13,7 @@ const CompanyProfile1 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12" style={{marginTop:'10%'}}>
-                            <Heading title="Company Profile"/>
+                            <Heading classNames="clientheadwe" title="Company Profile"/>
                             <p style={{color:'white'}}>At Apisero, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                         </div>
                     </div>
@@ -23,15 +23,15 @@ const CompanyProfile1 = () => {
               <div className="container">
                 <div className="row">
                    <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                     <Heading title="VISION"></Heading>
+                     <Heading classNames="aboutwherewe" title="VISION"></Heading>
                      <p>To provide highest quality added services to our purchasers and delivering measurable results. To provide purchasers with a reliable outsourcing service that gives worth, stability and profit to their operations. Build a strengthen relationships between our purchasers and their individual customers.</p>
                    </div>
                    <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                      <Heading title="MISSION"></Heading>
+                      <Heading classNames="aboutwherewe" title="MISSION"></Heading>
                       <p>Our vision is to stay a foremost outsourcing company that gives our clients the simplest services at competitive costs.</p> 
                    </div>
                    <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                      <Heading title="PRINCIPAL"></Heading>
+                      <Heading classNames="aboutwherewe" title="PRINCIPAL"></Heading>
                       <p>Client Value Creation, Integrity &amp; Transparency, Authenticity and Excellence are the core values of RD info Solutions. Creating and delivering value is the core of our work system. We help our clients to provide the highest quality value-added services. Our people are authentic to the highest level of ethics and integrity. Transparency in a company can vastly improve company culture, employee morale and productivity.</p>
                    </div>
                 </div>
@@ -41,7 +41,7 @@ const CompanyProfile1 = () => {
               <div className="container">
                 <div className="row">
                   <div className="col-12 companyheading-why-we">
-                    <Heading title="WHY WE CHOOSE US"></Heading>
+                    <Heading classNames="clientheadwe" title="WHY WE CHOOSE US"></Heading>
                     <p>sdfghjkl;sdfgfg <br></br>sdfghjklsdfghjk</p>
                   </div>
                    <div className="row">
@@ -71,7 +71,7 @@ const CompanyProfile1 = () => {
                     </div>
                     <div className="col-8 why-we-backimg">
                       <div className="why-we-list-content-div">
-                      <Heading title="global team"></Heading>
+                      <Heading classNames="clientheadwe" title="global team"></Heading>
                       <p className="text-light">With over 700+ certified and trained professionals, Apisero designs custom-built solutions for mid-market, enterprise, and strategic customers across the globe</p>
                     </div>
                     </div>
