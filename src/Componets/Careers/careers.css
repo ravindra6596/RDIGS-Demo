@@ -1,3 +1,10 @@
+.careersection{
+    background-image: url('../../img/career/careerbanner.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:450px;
+}
 /* .carbox {
     height: 250px;
     display: block;
@@ -35,7 +42,6 @@
       transform-origin: 50% 50%;
       transition: transform 0.15s ease-out;
     }
- 
 .carbox:hover:before {  transform: scale(2.15);} */
 .carbox{
     overflow: hidden;
@@ -114,12 +120,10 @@
     width: 35%!important;
     position:fixed;
     top: -75px;
-    left: 115px;
+    left: 31%;
     z-index: 1;
 }
-.carboximg:hover{
-    transform: scale(1.1);
-}
+.carboximg:hover{ transform: scale(1.1);}
 .carbox h4{
     margin-top: 20%;
     color: #30a6e9;
@@ -131,7 +135,7 @@
 }
 @media only screen and (min-width: 320px)and (max-width: 575px){
 .careercolm{ margin-top: 22%;}
-.carboximg {left: 110px;}
+.carboximg {left: 30%;}
 }
 @media only screen and (min-width: 576px)and (max-width: 991px){
 .carboximg {

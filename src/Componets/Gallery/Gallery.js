@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./Gallery.css";
 import gallery1 from "../../img/Gallery/gallery1.png";
@@ -28,7 +27,7 @@ const Gallery = () => {
       <section className="Gallery-section">
         <div className="container">
           <div className="d-flex justify-content-center heading-gallery1">
-            <Heading title="Gallery"></Heading>
+            <Heading classNames="aboutwherewe" title="Gallery"></Heading>
           </div>
         </div>
         <div className="row gallary-section1">

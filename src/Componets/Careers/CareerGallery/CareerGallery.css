@@ -1,0 +1,23 @@
+.gal-item{
+	overflow: hidden;
+	padding: 8px;
+}
+.gal-item .careerculbox{
+	height: 100%;
+	overflow: hidden;
+}
+.careerculbox img{
+	border: 2px solid lightblue;
+	height: 100%;
+	width: 100%;
+	object-fit:cover;
+}
+.cargalrow3{padding-top: 3%;}
+.careerculbox img:hover{ border: 5px solid lightblue;}
+@media only screen and (min-width: 320px)and (max-width: 575px){
+	.cargalrow3{margin-top: 0px;}
+	.careerculbox img {
+		height: 100%;
+		width: 100%;
+	    object-fit: fill;}	
+}

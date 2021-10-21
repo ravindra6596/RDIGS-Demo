@@ -2,10 +2,11 @@ import React, { Suspense } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './App.css';
-import { BrowserRouter, Route,Switch } from 'react-router-dom';
+import { BrowserRouter, Route,Switch,Redirect} from 'react-router-dom';
 import Header from './Componets/Header/header';
 import Footer from './Componets/Footer/Footer';
 import LoaderExampleDisabled from './Componets/LoaderExampleDisabled/LoaderExampleDisabled';
+
 AOS.init({
  duration: 1500
 });
@@ -21,16 +22,18 @@ const CompanyProfile1 = React.lazy(() => import('./Componets/CompanyProfile1/Com
 const Blog = React.lazy(() => import('./Componets/Blog/Blog'));
 const JobDescription = React.lazy(() => import('./Componets/Careers/JobDescription/JobDescription'));
 const Bannercommon = React.lazy(()=>import('./Componets/Bannercommon/Bannercommon'));
-
+const Privacypolicy = React.lazy(()=>import('./Componets/Privacypolicy/Privacypolicy'));
+const Termscondition = React.lazy(()=>import('./Componets/Termscondition/Termscondition'));
+const Unsubscribe = React.lazy(()=>import('./Componets/Unsubscribe/Unsubscribe'));
+const PageNotFound = React.lazy(()=>import('./Componets/PageNotFound/Pagenotfound'));
   return (
     <div className="App">
       <BrowserRouter>
         <div className="main"style={{overflow:"hidden"}} > 
         <Suspense fallback={<LoaderExampleDisabled/>}>
         <Header/>
-        {/* <LoaderExampleDisabled/> */}
           <Switch>
-              <Route path='/' exact={true} component={Homepage}/>
+              <Route path="/" exact={true} component={Homepage}/>
               <Route path='/home' exact={true} component={Homepage}/>
               <Route path='/teams' exact={true} component={Teams}/>
               <Route path='/careers' exact={true} component={Careers}/>
@@ -42,8 +45,12 @@ const Bannercommon = React.lazy(()=>import('./Componets/Bannercommon/Bannercommo
               <Route path='/blog' exact={true} component={Blog}/>
               <Route path='/jobdescription' exact={true} component={JobDescription}/>
               <Route path='/bannercommon' exact={true} component={Bannercommon}/>
+              <Route path='/Privacypolicy' exact={true} component={Privacypolicy}/>
+              <Route path='/termscondition' exact={true} component={Termscondition}/>
+              <Route path='/unsubscribe' exact={true} component={Unsubscribe}/>
               <Route path='/footer' exact={true} component={Footer}/>
-
+              <Route path="/Pagenotfound" exact={true} component={PageNotFound}/>
+              <Redirect from="*" to="/Pagenotfound"/>
           </Switch>
           <Footer/>
           </Suspense>

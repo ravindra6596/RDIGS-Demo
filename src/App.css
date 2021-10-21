@@ -2,9 +2,12 @@
   text-align: center;
 }
 body{
-  font-family: 'Montserrat';
+     font-family: 'Roboto';
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+     -ms-user-select: none;
+     user-select: none;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

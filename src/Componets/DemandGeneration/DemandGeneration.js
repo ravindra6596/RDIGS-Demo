@@ -105,7 +105,7 @@ const DemandGeneration=()=>{
         <section className="Demand-Generation-Sec">
             <div className="container">     
                     <div className="d-flex justify-content-center heading-demand">
-                       <Heading title="Demand Generation"></Heading>
+                       <Heading classNames="aboutwherewe" title="Demand Generation"></Heading>
                     </div>
                 <div className="row">
                     <div className="col-sm-6 col-md-6 col-lg-6 Demand-text-col">
@@ -159,7 +159,7 @@ const DemandGeneration=()=>{
                 <div class="col-lg-7 pl-4">
                     <div class="mb-5">
                     <div className="d-flex justify-content-center">
-                        <Heading title="Reach your Target Audience"></Heading>
+                        <Heading classNames="aboutwherewe" title="Reach your Target Audience"></Heading>
                     </div>
                     <p>
                     We run account-based marketing (ABM) campaigns for targeting the accounts by professional demographics to drive more conversions. 
@@ -176,7 +176,7 @@ const DemandGeneration=()=>{
             <div class="col-lg-8 col-sm-12 m-auto">
                 <div class="heading text-white text-center">
                     <div className="d-flex justify-content-center">
-                      <Heading title="Servicess Demand Generation"></Heading>
+                      <Heading classNames="clientheadwe" title="Servicess Demand Generation"></Heading>
                     </div>
                 <p>We’re full service which means we’ve got you covered on design &amp; content right through to digital. You’ll form a lasting relationship with us.</p>
                 </div>

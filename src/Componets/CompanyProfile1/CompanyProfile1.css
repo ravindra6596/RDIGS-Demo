@@ -19,6 +19,20 @@
 }
 /* =================why we choosesection================ */
 .company-choose-section{
+/* / =================why we choosesection================ / */
+.why-we-section{
+    background-color:midnightblue;
+}
+.companyheading-why-we{
+    justify-content: center;
+    text-align: center;
+}
+.companyprofile-goal li{
+    width:300px;
+    height:70px;
+    background-color: rgb(155, 252, 244);
+    border-radius: 15px 0px 0px 15px;
+    list-style: none;
     margin-top:10px;
     margin-bottom:10px;
    background-image: url('../../img/companyprofile/back.jpg');
@@ -69,3 +83,12 @@
     margin-bottom:5px;
 }
 /* ============slide color=========== */
+.companyprofile-goal li:hover{background-color: lightblue;}
+.why-we-backimg{
+    background-image: url('https://apisero.com/wp-content/uploads/2021/01/global-team.jpg');
+    margin-left: -10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}

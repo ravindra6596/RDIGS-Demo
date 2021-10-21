@@ -55,8 +55,8 @@
     transition: .5s ease;
     background-color: lightblue;
   }
+/* / heading / */
 
-/* heading */
 .heading-gallary{  color:#30a6e9;}
 
 .modelhead1 i:hover{border-radius: 50%;   }
@@ -149,8 +149,7 @@
         margin:0px;
     }
 }
-
-/* ====================== */
+/* / ====================== / */
 .gallery-info h4 {
     
     font-weight: 700;
