@@ -158,25 +158,12 @@ const LeadGeneration = () => {
                       iruxvfg dhjinulpadeserunt moll.
                     </p>
                   </div>
-                  <div id="flamelab-convo-widget"  data-aos="fade-left">
-                   <img src={avatarsm} alt="AvatarImage"/>
-                    <div className="flamelab-cw-msg-box">
-                        <span>Hey! Want to create your own Leads?</span>
-                        {/* <!-- <span style="opacity: 0.5;">- Mike (the creator of this site)</span> --> */}
-                        <div class="flamelab-cw-buttons">
-                            <a href="#" target="_blank" class="flamelab-cw-button flamelab-cw-button-yes">Yes!</a>
-                            <div class="flamelab-cw-button flamelab-cw-button-no">Thanks</div>
-                        </div>
-                    </div>
-                    <p>Mollit anim laborum duis adseu dolor iuyn voluptcate velit
-                      ess cillum dolore egru lofrre dsu quality mollit anim
-                      laborumuis au dolor in voluptate velit cillu.</p>
-                  </div>
+                  
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </div></div>
       </section>
     </>
   );
