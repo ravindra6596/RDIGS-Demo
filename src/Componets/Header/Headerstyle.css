@@ -96,6 +96,10 @@
 }
 .socialicon-btn i{color: #30a6e9;}
 .socialicon-btn > .fa + .fa,
+.socialicon-btn:hover > .fa {
+  display: none;
+}
+
 .socialicon-btn:hover > .fa { display: none;}
 .socialicon-btn:hover > .fa + .fa {display: inherit;}
 /* ===============social icon section===================== */

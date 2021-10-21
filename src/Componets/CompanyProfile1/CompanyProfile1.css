@@ -5,6 +5,20 @@
     background-size: cover;
     height:400px;
 }
+.vision-div,.mission-div,.principle-div{
+    border: 5px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px 1px #30a6e9;
+}
+.vision-mission-principle-row{
+    margin-top:10px;
+
+}
+.company-vmp{
+    padding:10px;
+}
+/* =================why we choosesection================ */
+.company-choose-section{
 /* / =================why we choosesection================ / */
 .why-we-section{
     background-color:midnightblue;
@@ -21,8 +35,54 @@
     list-style: none;
     margin-top:10px;
     margin-bottom:10px;
-    padding: 20px;
+   background-image: url('../../img/companyprofile/back.jpg');
+   background-repeat: no-repeat; background-size: cover;
 }
+.nav-pills .nav-link {
+    border-radius: 15px 0px 0px 15px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #172eb8;
+}
+.first-div{
+    background-image: url('../../img/companyprofile/first.jpg');
+    height:250px;
+    background-repeat: no-repeat; background-size: cover;
+}
+.second-div{
+    background-image: url('../../img/companyprofile/second.jpg');
+    height:250px;
+    background-repeat: no-repeat; background-size: cover;
+}
+.three-div{
+    background-image: url('../../img/companyprofile/third.jpg');
+    height:250px;
+    background-repeat: no-repeat; background-size: cover;
+}
+.four-div{
+    background-image:url('../../img/companyprofile/four.jpg');
+    height:250px;
+    background-repeat: no-repeat; background-size: cover;
+}
+.five-div{
+    background-image: url(https://apisero.com/wp-content/uploads/2021/01/global-team.jpg);
+    height:250px;
+    background-repeat: no-repeat; background-size: cover;
+}
+.six-div{
+    background-image: url('../../img/companyprofile/five.jpg');
+    height:250px;
+    background-repeat: no-repeat; background-size: cover;
+}
+/* ========= */
+.reason-compprofile{
+    border-radius: 15px 0px 0px 15px;
+    background-color: lightblue;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+/* ============slide color=========== */
 .companyprofile-goal li:hover{background-color: lightblue;}
 .why-we-backimg{
     background-image: url('https://apisero.com/wp-content/uploads/2021/01/global-team.jpg');

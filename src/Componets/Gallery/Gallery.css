@@ -10,6 +10,11 @@
     height:100%;
     background-color: lightblue;
 }
+.plusicon{
+   font-size: 25px;
+    font-weight: 900;
+    color:blue;
+}
 .gallary-img:hover{
     cursor: pointer;
     animation-name: bounce;
@@ -27,7 +32,31 @@
   .bdt-gallery-thumbnail:hover img { 
 	transform: scale(1);
 }
+/* ==================overlay============ */
+.bdt-gallery-thumbnail:hover{
+    opacity:0.7;
+ }
+
+.bdt-gallery-thumbnail:hover .overlay-bottom-slide
+{
+  top: 0;
+  height: 100%;
+  opacity:0.5;
+ }
+ .overlay-bottom-slide {
+    position: absolute;     
+    opacity:0;
+    bottom:0;
+    right:0;
+    top:100%;
+    height:0;
+  width:100%;
+    overflow: hidden;
+    transition: .5s ease;
+    background-color: lightblue;
+  }
 /* / heading / */
+
 .heading-gallary{  color:#30a6e9;}
 
 .modelhead1 i:hover{border-radius: 50%;   }
@@ -101,7 +130,6 @@
     background-color: lightblue;
   }
 .largemodel{
-    top:10%;
     border-radius: 1.3rem;
     border: none;
 }

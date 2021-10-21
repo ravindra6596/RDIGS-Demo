@@ -117,16 +117,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
- @media only screen and (min-width:994px) and (max-width: 1125px) {
-    .model-corporatedeck-style {
-        margin-left: 14%;
-    }
-  }
-  @media only screen and (min-width:320px) and (max-width: 995px){
-    .model-corporatedeck-style {
-        margin-left: 0%;
-    }
-  }
 
 @media only screen and (min-width:320px) and (max-width: 480px) {
 .copydesign {text-align: center;}    

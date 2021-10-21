@@ -12,7 +12,7 @@ import service5 from "../../img/services/s5.jpg";
 import service6 from "../../img/services/s6.jpg";
 import service7 from "../../img/services/s7.jpg";
 import service8 from "../../img/services/s8.jpg";
-import avatarsm from "../../img/services/avatar-sm.png";
+import servicesicon from '../../img/services/servicesicon.jpg'
 const LeadGeneration = () => {
   const data = [
     {
@@ -149,6 +149,8 @@ const LeadGeneration = () => {
                       ess cillum dolore egru lofrre dsu quality mollit anim
                       laborumuis au dolor in voluptate velit cillu.
                     </p>
+                    <div className="support-caption-two">
+                      <img src={servicesicon} className="support-caption-two-img" alt=""></img> 
                     <p className="mb-65">
                       Mollit anim laborum.Dvcuis aute serunt iruxvfg dhjkolohr
                       indd re voluptate velit esscillumlore eu quife nrulla
@@ -166,7 +168,10 @@ const LeadGeneration = () => {
                             <div class="flamelab-cw-button flamelab-cw-button-no">Thanks</div>
                         </div>
                     </div>
-                </div>
+                    <p>Mollit anim laborum duis adseu dolor iuyn voluptcate velit
+                      ess cillum dolore egru lofrre dsu quality mollit anim
+                      laborumuis au dolor in voluptate velit cillu.</p>
+                  </div>
                 </div>
               </div>
             </div>

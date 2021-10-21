@@ -7,15 +7,16 @@
     justify-content: center
 }
 .card-blog-div {
-    width: 320px;
-    height: 520px;
+    width: auto;
+    height: auto;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background: #fff;
     transition: all 0.5s ease;
     cursor: pointer;
     user-select: none;
     z-index: 10;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 15px;
 }
 .card-blog-div .backgroundEffect {
 
@@ -97,7 +98,11 @@
 }
 .card-para{
     font-size: 18px;
+    padding:10px;
 }
+/* .card-border{
+    padding:10px 0px;
+} */
 .card-blog-div .date .month,
 .card-blog-div .date .year {
     font-size: 10px
@@ -144,6 +149,7 @@
 /*=============== blog4 css=================== */
 .blog4-section{
     background-image: url(../../img/services/banner_back1.png);
+    margin-top: 10px;
 }
 .blog4-img-row img{
     width:100%;
@@ -161,9 +167,12 @@
 }
 .blogbtn{
     border-radius:25px;
-    margin:5px;
+    margin-left:15px;
 }
 .blogbtn:hover{
     background-color: white;
     color:black;
+}
+.blog-admin-msg{
+    margin-right:15px;
 }

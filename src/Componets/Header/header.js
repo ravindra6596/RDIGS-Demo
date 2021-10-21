@@ -11,9 +11,9 @@ const Header = () => {
 
 //navbar scroll when active state
   const [navstage, setNavbar] = useState(false);
-  const [showText, setShowText] = useState(false);
-  const onClick = () => setShowText(true);
-  
+  // toggle social icon
+  const [show, toggleShow] = React.useState(false);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY >= 20) {
@@ -153,10 +153,9 @@ const scrollgoTop = () => {
         </Navbar>
       </section>
       <div className="socialicon-div">
-        <button className="socialicon-btn" onClick={onClick}><i class="fa fa-angle-left" aria-hidden="true"></i>
-        <i class="fa fa-angle-right" aria-hidden="true"></i>
+        <button className="socialicon-btn" onClick={() => toggleShow(!show)}>{show ? <Text/> :<i class="fa fa-angle-right" aria-hidden="true"></i> }<i class="fa fa-angle-left" aria-hidden="true"></i>
         </button>
-           {showText ? <Text /> : null}
+        {/* <button  className="socialicon-btn" onclick={()=>toggleHide(!Hide)}>{Hide ? null :''} <i class="fa fa-angle-right" aria-hidden="true"></i></button> */}
          </div>
     </>
   ); 

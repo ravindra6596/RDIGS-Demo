@@ -45,7 +45,7 @@ const Blog = () => {
                 <div className="col-sm-12 col-md-6 col-lg-6 blog4-content">
                   <div className="heading-blog4">
                     <h4 className="d-flex justify-content-center">heading</h4>
-                    <p className="blog4para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p className="blog4para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
               </div>
@@ -58,7 +58,7 @@ const Blog = () => {
            carddata.map((data,i)=>{
              return(
                <div className="col-sm-12 col-md-4 col-lg-4">
-              <div class="d-lg-flex card-body">
+              <div class="d-lg-flex card-body card-border">
               <div class="card-blog-div border-0 me-lg-4 mb-lg-0 mb-4">
                   <div class="backgroundEffect"></div>
                   <div class="pic"><img class="" src={data.cardpic} alt=""/>
@@ -69,7 +69,7 @@ const Blog = () => {
                       <p class="text-muted mt-3 card-para">{data.cardpara}</p>
                       <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
                           <div class="btn btn-primary blogbtn">Read More &nbsp;<span class="fa fa-arrow-right"></span></div>
-                          <div class="d-flex align-items-center justify-content-center foot">
+                          <div class="d-flex align-items-center justify-content-center foot blog-admin-msg">
                               <p class="admin">Admin</p>&nbsp;&nbsp;
                               <p class="ps-3 icon text-muted"><span class="fa fa-comment pe-1"></span>3</p>
                           </div>
