@@ -61,8 +61,8 @@ const JobDescription =()=>{
                                     <label for="exampleInputFile">Upload File</label><i class="fa fa-image mx-2 updatePost"></i><small class="img-add">(only Pdf, Doc, & txt files are allowed)</small>
                                     <div className="input-group">
                                         <div className="custom-file">
-                                        <input className="custom-file-input" type="file" name=""  accept="pdf/*" id="filetag" autocomplete="off" required/>
-                                        <label className="custom-file-label" for="">Choose file</label>
+                                        <input className="jdfilechoose" type="file" name=""  accept="pdf/*" id="filetag" autocomplete="off" required />
+                                        <label className="jdfilechooselabel" for="">Choose file</label>
                                         </div>
                                     </div>
                                 </div>

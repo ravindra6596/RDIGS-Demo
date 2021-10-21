@@ -17,7 +17,7 @@ const Contact = () => {
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6">
                         </div>
-                          <div className="col-lg-6 col-md-12 col-sm-12" style={{backgroundColor: 'white' }}>
+                          <div className="col-lg-6 col-md-12 col-sm-12" style={{backgroundColor: 'white',marginTop:'4%' }}>
                             <h2 className="contgetin" data-aos="fade-up">Get in Touch</h2>
                             <form>
                                 <div class="form-group">

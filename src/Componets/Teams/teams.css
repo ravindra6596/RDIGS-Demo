@@ -1,10 +1,15 @@
 .teamsection{
-    background-image: url('../../img/team/teamban.jpg');
+    height: 65vh;
+    background-image: linear-gradient(
+        rgb(0 0 0 / 60%),
+        rgb(0 0 0 / 68%)
+      ),
+      url('../../img/team/teamban.jpg');
     background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
 }
+
 .teamsec2para{font-size: 20px;}
 .teams2img:hover{
     -webkit-transform: scaleX(1);
@@ -103,3 +108,10 @@
   -ms-transition: all 0.2s;
   transition: all 0.2s;
 }
+@media screen and (min-width:320px) and (max-width:768px) {
+    .teamsection {height: auto;} 
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .aboutwherewe {font-size: 30px;}
+}
+

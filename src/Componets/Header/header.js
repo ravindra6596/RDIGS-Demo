@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "./Headerstyle.css";
 import logoimg from "../../img/logo.png";
 import { Nav, Container, Navbar } from "react-bootstrap";
@@ -47,7 +48,7 @@ const scrollgoTop = () => {
               <Nav className="me-auto">
                 <Nav.Link>
                   <div className="forunderline">
-                    <Link to="/home" onClick={scrollgoTop}>HOME</Link>
+                    <NavLink exact to="/home" className="maincolor" activeClassName="main-nav-active" onClick={scrollgoTop}>HOME</NavLink>
                   </div>
                 </Nav.Link>
                 <div class="dropdown">
@@ -139,12 +140,12 @@ const scrollgoTop = () => {
                 <div className="forunderline">
                   {" "}
                   <Nav.Link>
-                    <Link to="/blog" onClick={scrollgoTop}>BLOG</Link>
+                    <NavLink exact to="/blog" className="maincolor" activeClassName="main-nav-active" onClick={scrollgoTop}>BLOG</NavLink>
                   </Nav.Link>
                 </div>
                 <Nav.Link>
                   <div className="forunderline">
-                    <Link to="/contact" onClick={scrollgoTop}> CONTACT</Link>
+                  <NavLink exact to="/contact" className="maincolor" activeClassName="main-nav-active" onClick={scrollgoTop}>CONTACT</NavLink>
                   </div>
                 </Nav.Link>
               </Nav>
