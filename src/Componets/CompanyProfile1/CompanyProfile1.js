@@ -12,10 +12,7 @@ const CompanyProfile1 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12" style={{marginTop:'10%'}}>
-                            <Heading title="Company Profile"/>
-                            <p style={{color:'white'}}> we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
-
-                            <Heading classNames="clientheadwe" title="Company Profile"/>
+                           <Heading classNames="clientheadwe" title="Company Profile"/>
                             <p style={{color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                         </div>
                     </div>
