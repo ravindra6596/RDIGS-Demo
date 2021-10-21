@@ -42,6 +42,11 @@ const scrollgoTop = () => {
 };
 window.addEventListener('scroll', checkingScrollTop)
 
+// Navigation tab click open on top functionality
+const scrollgoToplink = () => {
+    window.scrollTo({ top:0});
+  };
+
     return (
         <>
         <div>
@@ -167,13 +172,13 @@ window.addEventListener('scroll', checkingScrollTop)
                         <ul className="text-light services">
                             <li> <Link className="services-webdevlopment" to="/demandgeneration">Demand Generation</Link></li>
                             <li><Link className="services-webdevlopment" to="/leadgeneration">Lead generation</Link></li>
-                            <li><Link className="services-webdevlopment" to="/privacypolicy">Privacy Policy</Link></li>   
-                            <li> <Link className="services-webdevlopment" to="/termscondition">Terms And Conditions</Link></li>   
-                            <li><Link className="services-webdevlopment" to="/unsubscribe">Unsubscribe</Link></li>                             
+                            <li><Link className="services-webdevlopment" to="/privacypolicy" onClick={scrollgoToplink}>Privacy Policy</Link></li>   
+                            <li> <Link className="services-webdevlopment" to="/termscondition" onClick={scrollgoToplink}>Terms And Conditions</Link></li>   
+                            <li><Link className="services-webdevlopment" to="/unsubscribe" onClick={scrollgoToplink}>Unsubscribe</Link></li>                             
                         </ul>
                     </div>
                     <div className="col-lg-3 col-md-6  col-sm-6 col-xs-6 text-light footer-newsletter footrescol">
-                        <h5 style={{fontSize:'18px',fontFamily:'Orbitron'}}>JOIN OUR NEWSLATTER</h5>
+                        <h5 style={{fontSize:'17px',fontFamily:'Orbitron'}}>JOIN OUR NEWSLATTER</h5>
                         <p>Subscribe to our newsletter to get latest updates.</p>
                         <div className="inputs">
                             <input maxlength="60" className="webform__form-control" name="email" size="20" type="email" placeholder="Enter Email Address" autocomplete="off" required/>

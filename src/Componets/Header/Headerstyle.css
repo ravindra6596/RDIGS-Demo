@@ -13,15 +13,13 @@
     transition:0.5s;
 }
 .forunderline:hover{  --d: 100%;}
-.navbar-light .navbar-nav .nav-link a {
-    color: #30a6e9;
-    text-decoration: none;  
-}
-.navbar-light .navbar-nav .nav-link a :hover{ color: black; }
-/* .navbar-light .navbar-nav .nav-link a.active .show>.nav-link{ color: red; } */
 
+/* Active link color change  */
+.navbar-light .navbar-nav .nav-link a {text-decoration: none;  }
+.navbar-light .navbar-nav .nav-link a :hover{ color: black; }
 .navbar-light .navbar-nav .nav-link :hover{color: black;}
-/* .navbar-light .navbar-nav.nav-link.active .show>.nav-link{color: red;} */
+.main-nav-active{color: darkblue!important;}
+.maincolor{color: #30a6e9;}
 
 /* Drop down css */
 .dropdown {
@@ -99,9 +97,9 @@
 .socialicon-btn:hover > .fa {
   display: none;
 }
-
 .socialicon-btn:hover > .fa { display: none;}
 .socialicon-btn:hover > .fa + .fa {display: inherit;}
+
 /* ===============social icon section===================== */
 .socialimg-header{
     width:30px;
@@ -182,9 +180,7 @@
         flex-direction: column;
         justify-content: center;
     }
-    #floating-social img:hover{
-        transform: scale(2.1);
-}
+    #floating-social img:hover{ transform: scale(2.1);}
     #floating-social img{ padding:5px;}
     #floating-social a{
         margin:5px;
@@ -195,33 +191,37 @@
         position: fixed;
         z-index: 999999999;
         left: 0px;
-        top: calc(50% - 100px);
-        
+        top: calc(50% - 100px);   
     } 
 } 
-
 /* DropDown of Service responsiveness & dropdownabout of responsive */
 @media only screen and (min-width: 320px) and (max-width: 375px) {
     .dropdownservice { right: 15%;}
     .dropdownabout { right: 15%;}
-    .headlogo{height: 60px !important; }
+    .headlogo{
+        width: 50%;
+        height: 60px !important; }
 }
 @media only screen and (min-width: 375px) and (max-width: 425px) {
     .dropdownservice { right: 20%;}
     .dropdownabout { right: 20%;}
-    .headlogo{height: 50px !important; }
+    .headlogo{
+        width: 50%;
+        height: 50px !important; }
 }
 @media only screen and (min-width: 425px) and (max-width: 600px) {
     .dropdownservice { right: 23%;}
     .dropdownabout { right: 23%;}
-    .headlogo{ height: 50px !important; }
+    .headlogo{
+        width: 50%;
+         height: 50px !important; }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     .dropdownservice { right: 30%;}
     .dropdownabout { right: 30%;}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .dropdownservice { right: 35%;}
+    .dropdownservice { right: 35%;}
     .navbar-nav {background-color: lightblue;}
     .dropdownabout { right: 35%;}
  }

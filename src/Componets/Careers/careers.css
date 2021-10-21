@@ -1,9 +1,13 @@
 .careersection{
-    background-image: url('../../img/career/careerbanner.jpg');
+    height: 65vh;
+    background-image: linear-gradient(
+        rgb(0 0 0 / 60%),
+        rgb(0 0 0 / 68%)
+      ),
+      url('../../img/career/careerbanner.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height:450px;
 }
 /* .carbox {
     height: 250px;

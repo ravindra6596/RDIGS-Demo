@@ -1,0 +1,11 @@
+.termssection{
+    height: 50vh;
+    background-image: linear-gradient(
+        rgb(0 0 0 / 60%),
+        rgb(0 0 0 / 68%)
+      ),
+      url('../../img/termsconban.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
