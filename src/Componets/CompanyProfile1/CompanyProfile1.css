@@ -68,11 +68,6 @@
     z-index: 1;
 }
 /* =================why we choosesection================ */
-.company-choose-section{
-    margin-top:10px;
-   background-image: url('../../img/companyprofile/back.jpg');
-   background-repeat: no-repeat; background-size: cover;
-}
 /* col why we choose */
 .tab-divfor-img{
     padding:10px;
@@ -133,4 +128,5 @@
       margin-right: 10px;
       height:320px;
   }
+
 }

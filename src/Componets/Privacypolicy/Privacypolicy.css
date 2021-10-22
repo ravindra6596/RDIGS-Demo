@@ -1,0 +1,18 @@
+.privacysection{
+    height: 60vh;
+    background-image: linear-gradient(
+        rgb(0 0 0 / 60%),
+        rgb(0 0 0 / 68%)
+      ),
+      url('../../img/privacyban.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.privacyrow1{
+    border: 1px solid lightblue;
+    margin: 3% 0px;
+    border-top: 10px solid rgb(57, 177, 218);
+    text-align: justify;
+    
+}

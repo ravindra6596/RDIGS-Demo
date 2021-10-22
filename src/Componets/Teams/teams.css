@@ -1,26 +1,25 @@
-  .rolandimg{
-    width: 80%;
-    height: 60%;
-    border-radius: 178px;
-      margin: 10% 0px;
-      box-shadow: 0 4px 8px 0 #30a6e9, 0 6px 20px 0 #30a6e9;
-  }
-  .rolandname{margin-top: 10%;}
-  .rolandiconcol i{
-      color:#30a6e9 ;
-    display: inline-block;
-    border-radius: 60px;
-    box-shadow: 0px 0px 2px #30a6e9;
-    padding: 0.5em 0.6em;
-  }
-  .rolandiconcol i:hover{
-      background-color: #30a6e9;
-      color:white;
-  }
+.teamsection{
+    height: 65vh;
+    background-image: linear-gradient(
+        rgb(0 0 0 / 60%),
+        rgb(0 0 0 / 68%)
+      ),
+      url('../../img/team/teamban.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-  #team {
+.teamsec2para{font-size: 20px;}
+.teams2img:hover{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    border: 5px solid lightblue;
+    border-radius: 5px;
+}
+ #team {
     text-align: center;
-    color: #145889;
+    color: #30a6e9;;
 }
 #team h2 {
     position: relative;
@@ -76,20 +75,18 @@
     font-style: italic;
     display: block;
     font-size: 13px;
-    color: #0f74af;
+    color: #fff;
     font-weight: bold;
 }
+#team .member span:hover{ color: black;}
 #team .member .social-links {
     margin-top: 15px;
 }
 #team .member .social-links a {
     transition: none;
-    color: #fff;
-   
+    color: #fff;   
 }
-#team .member .social-links a :hover {
-    color:  #0f74af;
-}
+#team .member .social-links a :hover { color:#30a6e9;}
 #team .member .social-links i {
     font-size: 30px;
     margin: 0 2px;
@@ -111,3 +108,10 @@
   -ms-transition: all 0.2s;
   transition: all 0.2s;
 }
+@media screen and (min-width:320px) and (max-width:768px) {
+    .teamsection {height: auto;} 
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .aboutwherewe {font-size: 30px;}
+}
+

@@ -54,7 +54,7 @@ const LeadGeneration = () => {
       <section className="Lead-Generation-Sec">
         <div className="container">
           <div className="d-flex justify-content-center Lead-heading-top">
-            <Heading title="Lead Generation"></Heading>
+            <Heading classNames="aboutwherewe" title="Lead Generation"></Heading>
           </div>
           <div className="row">
             <div className="col-sm-6 col-md-6 col-lg-6 Lead-img-col">
@@ -97,7 +97,7 @@ const LeadGeneration = () => {
       <section class="section-services text-center">
         <div class="container">
           <div className="d-flex justify-content-center" data-aos="fade-down">
-            <Heading title="Services"></Heading>
+            <Heading classNames="aboutwherewe" title="Services"></Heading>
           </div>
 
           <p>
@@ -128,11 +128,11 @@ const LeadGeneration = () => {
         </div>
       </section>
       <section className="our-services-Lead">
-        <div class="support-company-area pt-100 pb-100 section-bg fix" data-background="assets/img/gallery/section_bg02.jpg">
-          <div class="container">
-            <div class="row align-items-center">
+        <div className="support-company-area pt-100 pb-100 section-bg fix" data-background="assets/img/gallery/section_bg02.jpg">
+          <div className="container">
+            <div className="row align-items-center">
               <div class="col-xl-6 col-lg-6">
-                <div class="support-location-img">
+                <div className="support-location-img">
                   <img src={min} alt="" data-pagespeed-url-hash="1368735680" />
                 </div>
               </div>
@@ -140,7 +140,7 @@ const LeadGeneration = () => {
                 <div class="right-caption">
                   <div class="section-tittle section-tittle2 mb-50">
                     <div className="d-flex justify-content-center">
-                      <Heading title="Our Best Services"></Heading>
+                      <Heading classNames="aboutwherewe"  title="Our Best Services"></Heading>
                     </div>
                   </div>
                   <div class="support-caption">
@@ -151,16 +151,19 @@ const LeadGeneration = () => {
                     </p>
                     <div className="support-caption-two">
                       <img src={servicesicon} className="support-caption-two-img" alt=""></img> 
-                    </div>
-                    <p>Mollit anim laborum duis adseu dolor iuyn voluptcate velit
-                      ess cillum dolore egru lofrre dsu quality mollit anim
-                      laborumuis au dolor in voluptate velit cillu.</p>
+                    <p className="mb-65">
+                      Mollit anim laborum.Dvcuis aute serunt iruxvfg dhjkolohr
+                      indd re voluptate velit esscillumlore eu quife nrulla
+                      parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute
+                      iruxvfg dhjinulpadeserunt moll.
+                    </p>
                   </div>
+                  
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </div></div>
       </section>
     </>
   );

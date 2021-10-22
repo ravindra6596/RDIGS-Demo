@@ -1,40 +1,35 @@
 /* Navbar css */
 .headlogo{
-    width: 100% !important;
-    height: 70px !important; }
-
+    width: 100%;
+    height: 70px; }
 .mainnav{height: auto;}
-
 .navbar-expand-lg .navbar-collapse {justify-content: end;}
-.navbar-light .navbar-nav .nav-link  {
-    color: #30a6e9;
-}
+.navbar-light .navbar-nav .nav-link  {color: #30a6e9;}
 .forunderline{
     background: 
     linear-gradient(currentColor 0 0) 
     bottom /var(--d, 0) 1px 
     no-repeat;
-transition:0.5s;
+    transition:0.5s;
 }
-.forunderline:hover{
-    --d: 100%;
-}
-.navbar-light .navbar-nav .nav-link a {
-    color: #30a6e9;
-    text-decoration: none;  
-}
-.navbar-light .navbar-nav .nav-link a :hover{
-    color: black; 
-}
-.navbar-light .navbar-nav .nav-link :hover{
-    color: black;
-}
+.navbar-toggler:focus, .navbar-toggler:hover {
+    outline: none;
+    text-decoration: none;
+    border: 1px solid black}
+.forunderline:hover{  --d: 100%;}
 
+/* Active link color change  */
+.navbar-light .navbar-nav .nav-link a {text-decoration: none;  }
+.navbar-light .navbar-nav .nav-link a :hover{ color: black; }
+.navbar-light .navbar-nav .nav-link :hover{color: black;}
+.main-nav-active{color: darkblue!important;}
+.maincolor{color: #30a6e9;}
 /* Drop down css */
 .dropdown {
     position: relative;
     display: inline-block;
   }
+.dropdown:focus {outline: none;border: 0px;}
 .dropdownservice {
     width: 200px;
     height: 150px;
@@ -66,8 +61,7 @@ transition:0.5s;
 .dropdown:hover .dropdownabout { display: block;}
 .blogmodelicon{
       display: flex;
-      margin-top: 10%;
-  }
+      margin-top: 10%; }
   .blogmodelicon a{color: black;}
   .blogmodelicon i{
       font-size: 20px;
@@ -84,7 +78,6 @@ transition:0.5s;
     padding-left: 3px;
     padding-right: 0;
 }
-
 /* =============social icons button arrow==============  */
 .socialicon-btn{
     width: 25px;
@@ -103,16 +96,12 @@ transition:0.5s;
     border:none !important;
     border-radius:0px 7px 7px 0px;   
 }
-.socialicon-btn i{
-    color: #30a6e9;
-}
+.socialicon-btn i{color: #30a6e9;}
 .socialicon-btn > .fa + .fa,
-.socialicon-btn:hover > .fa {
-  display: none;
-}
-/* .socialicon-btn:hover > .fa + .fa {
-  display: inherit;
-} */
+.socialicon-btn:hover > .fa {display: none;}
+.socialicon-btn:hover > .fa { display: none;}
+.socialicon-btn:hover > .fa + .fa {display: inherit;}
+
 /* ===============social icon section===================== */
 .socialimg-header{
     width:30px;
@@ -124,9 +113,7 @@ transition:0.5s;
     top: calc(50% - 100px);
     display: flex;
     flex-direction: column;
-    /* left: -10px; */
 }
-
 #floating-social .a {
     border: 1px solid #C8CBD0;
     border-radius: 50%;
@@ -185,8 +172,7 @@ transition:0.5s;
         z-index: 999999999;
         left: 0px;
         top: calc(50% - 100px);
-        left: -10px;
-        
+        left: -10px;  
     }
 }
 @media only screen and (min-width:768px) and (max-width:1023px){
@@ -196,12 +182,8 @@ transition:0.5s;
         flex-direction: column;
         justify-content: center;
     }
-    #floating-social img:hover{
-        transform: scale(2.1);
-    }
-    #floating-social img{
-        padding:5px;
-    }
+    #floating-social img:hover{ transform: scale(2.1);}
+    #floating-social img{ padding:5px;}
     #floating-social a{
         margin:5px;
         height:30px;
@@ -211,10 +193,10 @@ transition:0.5s;
         position: fixed;
         z-index: 999999999;
         left: 0px;
-        top: calc(50% - 100px);
-        
+        top: calc(50% - 100px);   
     } 
 } 
+
 /* privacy policy */
 .gdprcookie {
     box-shadow: 0 3px 12px #0000001f;
@@ -323,26 +305,27 @@ label {
 .customizebtn{
     margin:5px;
 }
+
 /* DropDown of Service responsiveness & dropdownabout of responsive */
 @media only screen and (min-width: 320px) and (max-width: 375px) {
     .dropdownservice { right: 15%;}
     .dropdownabout { right: 15%;}
     .headlogo{
-        width: 75% !important;
-        height: 50px !important; }
+        width: 50%;
+        height: 60px !important; }
 }
 @media only screen and (min-width: 375px) and (max-width: 425px) {
     .dropdownservice { right: 20%;}
     .dropdownabout { right: 20%;}
     .headlogo{
-        width: 75% !important;
+        width: 50%;
         height: 50px !important; }
 }
 @media only screen and (min-width: 425px) and (max-width: 600px) {
     .dropdownservice { right: 23%;}
     .dropdownabout { right: 23%;}
     .headlogo{
-        width: 75% !important;
+        width: 50%;
         height: 50px !important; }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
@@ -350,7 +333,7 @@ label {
     .dropdownabout { right: 30%;}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .dropdownservice { right: 35%;}
+    .dropdownservice { right: 35%;}
     .navbar-nav {background-color: lightblue;}
     .dropdownabout { right: 35%;}
  }

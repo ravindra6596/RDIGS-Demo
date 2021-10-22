@@ -1,0 +1,25 @@
+.termssection{
+    height: 50vh;
+    background-image: linear-gradient(
+        rgb(0 0 0 / 60%),
+        rgb(0 0 0 / 68%)
+      ),
+      url('../../img/termsconban.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.termsubhead{
+  color: #30a6e9;
+  border-bottom: solid 4px #30a6e9;
+  width: 180px;
+}
+.termdesclam{
+  color: #30a6e9;
+  border-bottom: solid 4px #30a6e9;
+  width: 100px;
+}
+.termdiscimg:hover{
+  -ms-transform: scaleY(1.1); /* IE 9 */
+  transform: scaleY(1.1);
+}

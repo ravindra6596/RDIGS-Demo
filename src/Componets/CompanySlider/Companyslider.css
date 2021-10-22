@@ -26,8 +26,6 @@
   background-attachment:scroll;
   background-size: auto;
 }
-.clientheadwe{ color: white;padding-top: 5px;}
-.clientheadwe:hover{ color: #30a6e9;}
 @media only screen and (min-width: 320px) and (max-width: 425px) {
   .image-clientslider img{
     width:50px;

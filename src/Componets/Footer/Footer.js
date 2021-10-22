@@ -41,6 +41,12 @@ const scrollgoTop = () => {
   window.scrollTo({ top:0, behavior: 'smooth' });
 };
 window.addEventListener('scroll', checkingScrollTop)
+
+// Navigation tab click open on top functionality
+const scrollgoToplink = () => {
+    window.scrollTo({ top:0});
+  };
+
     return (
         <>
         <div>
@@ -48,6 +54,7 @@ window.addEventListener('scroll', checkingScrollTop)
             style={{visibility: showScrollup ? 'visible' : 'hidden' }} >
            <i class="fa fa-angle-double-up"></i></button>
         </div>
+        
         <section className="media-kit">
             <div className="container mediakit-cont">
             <div className="row">
@@ -140,48 +147,43 @@ window.addEventListener('scroll', checkingScrollTop)
                          402, Vascon Garnets Bay,Besides Hotel Four Points By Sheraton, Viman Nagar, Pune-411014.
                         </span>
                         <div className="footresdiv" style={{marginTop:'5px'}}> 
-                            <img className="footemailimg" src={footenvolep} alt="No" />
-                            <span className="Email-info" style={{color:'white'}}> sales@rdigs.com </span>
+                            <img className="footemailimg" src={footenvolep} alt="No"/>
+                            <span className="Email-info"><a href="mailto:sales@rdigs.com" target="_blank">sales@rdigs.com</a></span>
                         </div>
                         <div className="footresdivhr" style={{marginTop:'5px'}}> 
                         <img className="footemailimg" src={footenvolep} alt="No" />  
-                        <span className="Email-info" style={{color:'white'}}> hr@rdigs.com  </span>
+                        <span className="Email-info"><a href="mailto:hr@rdigs.com" target="_blank">hr@rdigs.com</a></span>
                         </div>
                         <div className="footresdiv" style={{marginTop:'5px'}}> 
                         <span className="ind">
                             <img className="text-light img-us" src={ind} alt="No" />
-                            <span className="Email-info" style={{color:'white'}}> +91 848-404-0734  </span>
+                            <span className="Email-info"><a href="tel:+848-404-0734">+91 848-404-0734</a></span>
                         </span>
                         </div>
                         <div className="footresdiv" style={{marginTop:'5px'}}> 
                         <span className="us">
                             <img className="text-light img-ind" src={us} alt="No" />
-                            <span className="Email-info" style={{color:'white'}}> +1 302-261-5312</span>
+                            <span className="Email-info"><a  href="tel:+1 3022615312">+1 302-261-5312</a></span>
                         </span>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6  col-sm-6 col-xs-6 footer-links footrescol">
                         <h5 className="ourservices text-light">OUR SERVICES</h5>
                         <ul className="text-light services">
-                            <li> <Link className="services-webdevlopment" to="#">Demand Generation</Link></li>
-                            <li><Link className="services-webdevlopment" to="#">Lead generation</Link></li>
-                            <li> <Link className="services-webdevlopment" to="#">Product Management</Link></li>  
-                            <li><Link className="services-webdevlopment" to="#">Privacy Policy</Link></li>   
-                            <li> <Link className="services-webdevlopment" to="#">Terms And Conditions</Link></li>   
-                            <li><Link className="services-webdevlopment" to="#">Unsubscribe</Link></li>                             
+                            <li> <Link className="services-webdevlopment" to="/demandgeneration">Demand Generation</Link></li>
+                            <li><Link className="services-webdevlopment" to="/leadgeneration">Lead generation</Link></li>
+                            <li><Link className="services-webdevlopment" to="/privacypolicy" onClick={scrollgoToplink}>Privacy Policy</Link></li>   
+                            <li> <Link className="services-webdevlopment" to="/termscondition" onClick={scrollgoToplink}>Terms And Conditions</Link></li>   
+                            <li><Link className="services-webdevlopment" to="/unsubscribe" onClick={scrollgoToplink}>Unsubscribe</Link></li>                             
                         </ul>
                     </div>
                     <div className="col-lg-3 col-md-6  col-sm-6 col-xs-6 text-light footer-newsletter footrescol">
-                        <h5 style={{fontSize:'18px'}}>JOIN OUR NEWSLATTER</h5>
+                        <h5 style={{fontSize:'17px',fontFamily:'Orbitron'}}>JOIN OUR NEWSLATTER</h5>
                         <p>Subscribe to our newsletter to get latest updates.</p>
                         <div className="inputs">
                             <input maxlength="60" className="webform__form-control" name="email" size="20" type="email" placeholder="Enter Email Address" autocomplete="off" required/>
                             <input type="submit" name="submit" id="eesubmit" className="EWF__subscribe" value="SUBCRIBE"/>
                         </div>
-                        {/* <div className="footsubscridiv">
-                            <input  className="footsubinput" placeholder="Enter Your Email.." />
-                            <span>Subscribe</span>
-                        </div> */}
                     </div>
                 </div>
             </div>
