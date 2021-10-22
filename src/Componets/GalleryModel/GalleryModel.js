@@ -14,13 +14,12 @@ function GalleryModel(props) {
           <img
             className="gallary-img"
             src={props.image}
-            alt="img-1-1"
-            
-          />
-            <div class="overlay-bottom-slide">
+            alt="img-1-1" onClick={toggle1} fun={()=>setModal1(true)}
+           />
+            {/* <div class="overlay-bottom-slide">
             <div class="text">Image Title:Roland Sir</div>
             <span className="plusicon" onClick={toggle1} fun={()=>setModal1(true)}>+</span>
-        </div>
+            </div> */}
         </div>
       </div>
       <Modal
