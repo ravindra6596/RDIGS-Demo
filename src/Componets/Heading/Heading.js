@@ -3,7 +3,7 @@ import "./Heading.css";
 const Heading = (props) => {
   return (
     <>
-      <h1 className="aboutwherewe" data-aos="fade-down">
+      <h1 className={props.classNames} data-aos="fade-down">
         {props.title}
       </h1>
     </>

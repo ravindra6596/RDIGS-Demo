@@ -5,60 +5,114 @@
     background-size: cover;
     height:400px;
 }
-.vision-div,.mission-div,.principle-div{
-    border: 5px;
+.vision-div {
+    border: 0px;
     border-radius: 6px;
-    box-shadow: 2px 2px 8px 1px #30a6e9;
+    box-shadow: 1px 1px 1px 1px #8054c6; 
+    margin-top: 45px;
+    position: inherit;
+}
+.mission-div {
+    border: 0px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px #8054c6; 
+    margin-top: 45px;
+    position: inherit;
+}
+.principle-div{
+    border: 0px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px #8054c6; 
+    margin-top: 45px;
+    position: inherit;
 }
 .vision-mission-principle-row{
     margin-top:10px;
-
 }
 .company-vmp{
     padding:10px;
 }
+.vision-title {
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    width: 100%;
+    background: #8054c6;
+    height: 50px;
+    border-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0px;
+}
+.vision-title:before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: -0px;
+    width: 15px;
+    height: 30px;
+    background: #8054c6;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 2;
+}
+.vision-title:after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: -0px;
+    width: 15px;
+    height: 15px;
+    background: #8054c6;
+    z-index: 1;
+}
 /* =================why we choosesection================ */
 .company-choose-section{
     margin-top:10px;
-    margin-bottom:10px;
    background-image: url('../../img/companyprofile/back.jpg');
    background-repeat: no-repeat; background-size: cover;
+}
+/* col why we choose */
+.tab-divfor-img{
+    padding:10px;
 }
 .nav-pills .nav-link {
     border-radius: 15px 0px 0px 15px;
 }
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
     background-color: #172eb8;
 }
 .first-div{
     background-image: url('../../img/companyprofile/first.jpg');
-    height:250px;
+    height:300px;
     background-repeat: no-repeat; background-size: cover;
 }
 .second-div{
     background-image: url('../../img/companyprofile/second.jpg');
-    height:250px;
+    height:300px;
     background-repeat: no-repeat; background-size: cover;
 }
 .three-div{
     background-image: url('../../img/companyprofile/third.jpg');
-    height:250px;
+    height:300px;
     background-repeat: no-repeat; background-size: cover;
 }
 .four-div{
     background-image:url('../../img/companyprofile/four.jpg');
-    height:250px;
+    height:300px;
     background-repeat: no-repeat; background-size: cover;
 }
 .five-div{
     background-image: url(https://apisero.com/wp-content/uploads/2021/01/global-team.jpg);
-    height:250px;
+    height:300px;
     background-repeat: no-repeat; background-size: cover;
 }
 .six-div{
     background-image: url('../../img/companyprofile/five.jpg');
-    height:250px;
+    height:300px;
     background-repeat: no-repeat; background-size: cover;
 }
 /* ========= */
@@ -68,4 +122,15 @@
     margin-top:5px;
     margin-bottom:5px;
 }
-/* ============slide color=========== */
+/* media query for why we choose */
+@media screen and (min-width:320px) and (max-width:575px){
+  .six-reason-col {
+      margin-left:10px;
+      margin-right:10px;
+  }  
+  .six-reason-img{
+      margin-left: 10px;
+      margin-right: 10px;
+      height:320px;
+  }
+}

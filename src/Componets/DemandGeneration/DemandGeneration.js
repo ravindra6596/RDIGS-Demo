@@ -192,8 +192,6 @@ const DemandGeneration=()=>{
                 return(
                       <div class="col-lg-4 col-xs-6 col-sm-6 col-md-4">
                         <div class="service-box">
-                            <div class="overlay-bottom-slide">
-                            </div>
                             <div class="service-img-icon">
                             <img src={user.serviceimgicon} alt="service-icon" class="img-fluid"/>
                             </div>

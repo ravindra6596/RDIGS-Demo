@@ -67,7 +67,7 @@ window.addEventListener('scroll', checkingScrollTop)
                     <div className="Modal-animation">
                          <Modal isOpen={modal} toggle={toggle} className="model-corporatedeck-style">
                                 <ModalBody>
-                                  <span  className="homemodalclosebtn"  onClick={() => setModal(false)} ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                                  <span className="homemodalclosebtn" onClick={() => setModal(false)} ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
                                             <div className="container"> 
                                                 <div className="row">
                                                     <div className="col-sm-6 col-md-6 col-lg-6">
