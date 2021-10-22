@@ -147,23 +147,23 @@ const scrollgoToplink = () => {
                          402, Vascon Garnets Bay,Besides Hotel Four Points By Sheraton, Viman Nagar, Pune-411014.
                         </span>
                         <div className="footresdiv" style={{marginTop:'5px'}}> 
-                            <img className="footemailimg" src={footenvolep} alt="No" />
-                            <span className="Email-info"><a style={{color:'white'}} href="mailto:sales@rdigs.com" target="_blank">sales@rdigs.com</a></span>
+                            <img className="footemailimg" src={footenvolep} alt="No"/>
+                            <span className="Email-info"><a href="mailto:sales@rdigs.com" target="_blank">sales@rdigs.com</a></span>
                         </div>
                         <div className="footresdivhr" style={{marginTop:'5px'}}> 
                         <img className="footemailimg" src={footenvolep} alt="No" />  
-                        <span className="Email-info"><a style={{color:'white'}} href="mailto:hr@rdigs.com" target="_blank">hr@rdigs.com</a></span>
+                        <span className="Email-info"><a href="mailto:hr@rdigs.com" target="_blank">hr@rdigs.com</a></span>
                         </div>
                         <div className="footresdiv" style={{marginTop:'5px'}}> 
                         <span className="ind">
                             <img className="text-light img-us" src={ind} alt="No" />
-                            <span className="Email-info"><a style={{color:'white'}}href="tel:+848-404-0734">+91 848-404-0734</a></span>
+                            <span className="Email-info"><a href="tel:+848-404-0734">+91 848-404-0734</a></span>
                         </span>
                         </div>
                         <div className="footresdiv" style={{marginTop:'5px'}}> 
                         <span className="us">
                             <img className="text-light img-ind" src={us} alt="No" />
-                            <span className="Email-info"><a style={{color:'white'}} href="tel:+1 3022615312">+1 302-261-5312</a></span>
+                            <span className="Email-info"><a  href="tel:+1 3022615312">+1 302-261-5312</a></span>
                         </span>
                         </div>
                     </div>

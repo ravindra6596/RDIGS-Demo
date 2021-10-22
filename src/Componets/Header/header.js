@@ -8,12 +8,10 @@ import Linkedin from '../../img/socialicon/Linkdin.png';
 import Facebook from '../../img/socialicon/Facebook.png';
 import Youtube from '../../img/socialicon/Youtube.png';
 import Insta from '../../img/socialicon/Insta.png';
-const Header = () => {
 
+const Header = () => {
 //navbar scroll when active state
   const [navstage, setNavbar] = useState(false);
-  // toggle social icon
-  const [show, toggleShow] = React.useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -24,11 +22,18 @@ const Header = () => {
       }
     });
   });
+// toggle social icon
+  const [show, toggleShow] = React.useState(false);
+// Social link click then toggle close functinality
+const [expanded, setExpanded] = useState(false);
+//Click toggle Header toggle icon will change 
+const [isClosetoggle,setClosetoggle]=useState(false);
 
 // Navigation tab click open on top functionality
 const scrollgoTop = () => {
   window.scrollTo({ top:0});
 };
+
   return (
     <>
       {/* Navbar coding */}
@@ -38,17 +43,21 @@ const scrollgoTop = () => {
           collapseOnSelect
           expand="lg"
           style={{ backgroundColor: navstage ? "lightblue" : "transparent" }}
+          expanded={expanded}
           >
           <Container>
             <Navbar.Brand>
               <img src={logoimg} className="headlogo" alt="logo"/>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+        {/* <button className="socialicon-btn" onClick={() =>toggleShow(!show)}>{show ? <Text/> :<i class="fa fa-angle-right" aria-hidden="true"></i> }<i class="fa fa-angle-left" aria-hidden="true"></i>
+        </button>  */}
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}>
+            </Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link>
                   <div className="forunderline">
-                    <NavLink exact to="/home" className="maincolor" activeClassName="main-nav-active" onClick={scrollgoTop}>HOME</NavLink>
+                    <NavLink exact to="/home" className="maincolor" activeClassName="main-nav-active" onClick={() => {scrollgoTop(); setExpanded(false);}}>HOME</NavLink>
                   </div>
                 </Nav.Link>
                 <div class="dropdown">
@@ -64,7 +73,7 @@ const scrollgoTop = () => {
                           <i class="fa fa-align-justify" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/leadgeneration" onClick={scrollgoTop}>Lead Generation</Link>
+                              <Link to="/leadgeneration" onClick={() => {scrollgoTop(); setExpanded(false);}}>Lead Generation</Link>
                             </div>
                           </p>
                         </span>
@@ -72,9 +81,7 @@ const scrollgoTop = () => {
                           <i class="fa fa-laptop" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/demandgeneration" onClick={scrollgoTop}>
-                                Demand Generation{" "}
-                              </Link>
+                              <Link to="/demandgeneration" onClick={() => {scrollgoTop(); setExpanded(false);}}>Demand Generation{" "} </Link>
                             </div>
                           </p>
                         </span>
@@ -97,7 +104,7 @@ const scrollgoTop = () => {
                           <i class="fa fa-users" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/teams" onClick={scrollgoTop}>Teams</Link>
+                              <Link to="/teams"  onClick={() => {scrollgoTop(); setExpanded(false);}}>Teams</Link>
                             </div>
                           </p>
                         </span>
@@ -105,7 +112,7 @@ const scrollgoTop = () => {
                           <i class="fa fa-laptop" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/careers" onClick={scrollgoTop}>Careers</Link>
+                              <Link to="/careers" onClick={() => {scrollgoTop(); setExpanded(false);}}>Careers</Link>
                             </div>
                           </p>
                         </span>
@@ -113,7 +120,7 @@ const scrollgoTop = () => {
                           <i class="fa fa-align-center"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/gallary" onClick={scrollgoTop}>Gallery</Link>
+                              <Link to="/gallary"  onClick={() => {scrollgoTop(); setExpanded(false);}}>Gallery</Link>
                             </div>
                           </p>
                         </span>
@@ -121,7 +128,7 @@ const scrollgoTop = () => {
                           <i class="fa fa-th" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/companyprofile1" onClick={scrollgoTop}>Company Profile</Link>
+                              <Link to="/companyprofile1"  onClick={() => {scrollgoTop(); setExpanded(false);}}>Company Profile</Link>
                             </div>
                           </p>
                         </span>
@@ -129,7 +136,7 @@ const scrollgoTop = () => {
                           <i class="fa fa-th" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="#" onClick={scrollgoTop}>News Latter</Link>
+                              <Link to="#"  onClick={() => {scrollgoTop(); setExpanded(false);}}>News Latter</Link>
                             </div>
                           </p>
                         </span>
@@ -140,12 +147,12 @@ const scrollgoTop = () => {
                 <div className="forunderline">
                   {" "}
                   <Nav.Link>
-                    <NavLink exact to="/blog" className="maincolor" activeClassName="main-nav-active" onClick={scrollgoTop}>BLOG</NavLink>
+                    <NavLink exact to="/blog" className="maincolor" activeClassName="main-nav-active"  onClick={() => {scrollgoTop(); setExpanded(false);}}>BLOG</NavLink>
                   </Nav.Link>
                 </div>
                 <Nav.Link>
                   <div className="forunderline">
-                  <NavLink exact to="/contact" className="maincolor" activeClassName="main-nav-active" onClick={scrollgoTop}>CONTACT</NavLink>
+                  <NavLink exact to="/contact" className="maincolor" activeClassName="main-nav-active" onClick={() => {scrollgoTop(); setExpanded(false);}}>CONTACT</NavLink>
                   </div>
                 </Nav.Link>
               </Nav>
@@ -154,9 +161,8 @@ const scrollgoTop = () => {
         </Navbar>
       </section>
       <div className="socialicon-div">
-        <button className="socialicon-btn" onClick={() => toggleShow(!show)}>{show ? <Text/> :<i class="fa fa-angle-right" aria-hidden="true"></i> }<i class="fa fa-angle-left" aria-hidden="true"></i>
+        <button className="socialicon-btn" onClick={() =>toggleShow(!show)}>{show ? <Text/> :<i class="fa fa-angle-right" aria-hidden="true"></i> }<i class="fa fa-angle-left" aria-hidden="true"></i>
         </button>
-        {/* <button  className="socialicon-btn" onclick={()=>toggleHide(!Hide)}>{Hide ? null :''} <i class="fa fa-angle-right" aria-hidden="true"></i></button> */}
          </div>
     </>
   ); 

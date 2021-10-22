@@ -56,8 +56,10 @@ text-align: end;}
     word-spacing: -3px;
 }
 .Email-info{ padding-left: 14px;}
-.Email-info a:hover{ text-decoration: none;}
-
+.Email-info a{color: white;}
+.Email-info a:hover{ text-decoration: none;
+    color: #30a6e9;
+}
 .footemailimg{width: 30px;}
 .model-head-cop{ color: lightblue;}
 .para-copdeck{ color:black;}
