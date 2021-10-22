@@ -1,10 +1,10 @@
 .careersection{
-    height: 65vh;
+    height: 60vh;
     background-image: linear-gradient(
         rgb(0 0 0 / 60%),
         rgb(0 0 0 / 68%)
       ),
-      url('../../img/career/careerbanner.jpg');
+      url('../../img/career/careerbanner1.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

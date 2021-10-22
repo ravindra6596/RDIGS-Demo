@@ -10,7 +10,7 @@ const JobDescription =()=>{
         <div className="container ">
             <div className="row">
                 <div className="col-lg-12" style={{margin:'8% 0px'}}>
-                    <Heading classNames="clientheadwe" title="Front-End Developer"/>
+                    <Heading classNames="clientheadwe" title="Lead | Demand Generation "/>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@ const JobDescription =()=>{
                             <li>Willing to work in Night Shift.</li>
                         </ul>
                         <h5><b style={{fontFamily:'Orbitron',color:'#30a6e9'}}>Experience -</b> 0–1 Years</h5>
-                        <h5><b style={{fontFamily:'Orbitron',color:'#30a6e9'}}>Location -</b> Pune- Viman Nagar</h5>
+                        <h5><b style={{fontFamily:'Orbitron',color:'#30a6e9'}}>Location -</b>Viman Nagar-Pune</h5>
 
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12">
@@ -74,7 +74,6 @@ const JobDescription =()=>{
                 </div>
             </div>
         </section>
- 
     </>
 )
 }
