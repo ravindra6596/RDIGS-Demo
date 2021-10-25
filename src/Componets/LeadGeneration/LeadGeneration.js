@@ -60,8 +60,7 @@ const LeadGeneration = () => {
             <div className="col-sm-6 col-md-6 col-lg-6 Lead-img-col">
               <div
                 class="text-center lg-img aos-init aos-animate"
-                data-aos="fade-left"
-              >
+                data-aos="fade-left">
                 <img src={demand1} alt="Lead Generation" className="Lead-img1" data-aos="fade-up"
                 />
               </div>
