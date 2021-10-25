@@ -170,8 +170,8 @@ const scrollgoToplink = () => {
                     <div className="col-lg-3 col-md-6  col-sm-6 col-xs-6 footer-links footrescol">
                         <h5 className="ourservices text-light">OUR SERVICES</h5>
                         <ul className="text-light services">
-                            <li> <Link className="services-webdevlopment" to="/demandgeneration">Demand Generation</Link></li>
-                            <li><Link className="services-webdevlopment" to="/leadgeneration">Lead generation</Link></li>
+                            <li> <Link className="services-webdevlopment" to="/demandgeneration" onClick={scrollgoToplink}>Demand Generation</Link></li>
+                            <li><Link className="services-webdevlopment" to="/leadgeneration" onClick={scrollgoToplink}>Lead Generation</Link></li>
                             <li><Link className="services-webdevlopment" to="/privacypolicy" onClick={scrollgoToplink}>Privacy Policy</Link></li>   
                             <li> <Link className="services-webdevlopment" to="/termscondition" onClick={scrollgoToplink}>Terms And Conditions</Link></li>   
                             <li><Link className="services-webdevlopment" to="/unsubscribe" onClick={scrollgoToplink}>Unsubscribe</Link></li>                             

@@ -9,6 +9,7 @@ import career4 from "../../img/career/career-4.png";
 import career5 from "../../img/career/career-5.png";
 import career6 from "../../img/career/career-6.png";
 import CareerGallery from "./CareerGallery/CareerGallery";
+import CareerSlider from "./CareerSlider/CareerSlider";
 
 
 
@@ -58,7 +59,7 @@ const careers = () => {
     return (
         <>
             <div className="nav-contaniner" />
-            <section className="careersection">
+            {/* <section className="careersection">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12" style={{ marginTop:'10%'}}>
@@ -67,7 +68,8 @@ const careers = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
+            <CareerSlider/>
             <section>
                 <div className="container">
                     <div className="row">

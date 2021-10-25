@@ -8,7 +8,6 @@ import team4 from "../../img/team/team-4.jpg";
 import teamsection2 from "../../img/team/teamsec2img.jpg";
 
 
-
 const teams =()=>{
 
     const data = [
