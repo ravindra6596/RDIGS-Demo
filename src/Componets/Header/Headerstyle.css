@@ -1,9 +1,9 @@
 /* Navbar css */
 .headlogo{
-    width: 100%;
+    /* width: 100%; */
     height: 70px; }
 .mainnav{height: auto;}
-.navbar-expand-lg .navbar-collapse {justify-content: end;}
+.navbar-expand-lg .navbar-collapse {-webkit-justify-content: flex-end!important;}
 .navbar-light .navbar-nav .nav-link  {color: #30a6e9;}
 .forunderline{
     background: 

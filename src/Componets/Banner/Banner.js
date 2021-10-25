@@ -13,7 +13,7 @@ const Banner = () => {
   return (
     <>
       {/* {/ Header Modals /} */}
-      <Modal isOpen={modal} >
+      <Modal isOpen={modal} centered>
         <ModalBody className="homemodalbody" >
           <span className="homemodalclosebtn" onClick={() => setModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
           <div className="container">
