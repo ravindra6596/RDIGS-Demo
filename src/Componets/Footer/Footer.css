@@ -131,17 +131,6 @@ input::-webkit-inner-spin-button {
 @media only screen and (min-width:992px) and (max-width: 1200px) {
     .newsletter-input1 {width: 52%;}
 }
-/* / media query for model / */
-@media only screen and (min-width:768px) and (max-width: 1023px) {
-    .model-corporatedeck-style{
-        left:20%;
-    } 
-}
-@media only screen and (min-width:1024) and (max-width: 1439px) {
-    .model-corporatedeck-style{
-        left:30%;
-    } 
-}
   .model-corporatedeck-style {
     animation: zoom-in 0.7s ease-out ;
     transition: all 0.7s linear

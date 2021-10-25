@@ -1,9 +1,13 @@
 .companyprofilesection{
-    background-image: url('../../img/companyprofile/Comapany-profile.jpg');
+    height: 60vh;
+    background-image: linear-gradient(
+        rgb(0 0 0 / 60%),
+        rgb(0 0 0 / 68%)
+      ),
+      url('../../img/companyprofile/Comapany-profile.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height:400px;
 }
 .vision-div {
     border: 0px;
