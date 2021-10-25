@@ -28,7 +28,7 @@ const Home = () => {
       <Companyslider />
       <Testimonial />
       {/* {/ After page Load Model Automatic show /} */}
-       <Modal isOpen={showModal} toggle={showModal}>
+       <Modal isOpen={showModal} toggle={showModal} centered>
         <ModalBody className="homemodalbody" >
           <span className="homemodalclosebtn" onClick={() => setShowModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
           <div className="container">
