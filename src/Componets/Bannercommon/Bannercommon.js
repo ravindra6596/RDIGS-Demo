@@ -2,7 +2,6 @@ import React from 'react';
 import './Bannercommon.css';
 // import Background from '../../img/Banner/hero-bg.jpg';
 export default function Bannercommon(props) {
-
     return (
         <>
         <section id="hero-commonBanner" 

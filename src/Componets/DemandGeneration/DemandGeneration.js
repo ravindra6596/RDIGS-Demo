@@ -108,7 +108,7 @@ const DemandGeneration=()=>{
                        <Heading classNames="aboutwherewe" title="Demand Generation"></Heading>
                     </div>
                 <div className="row">
-                    <div className="col-sm-6 col-md-6 col-lg-6 Demand-text-col">
+                    <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 Demand-text-col">
                         <div class="Demand-title aos-init aos-animate" data-aos="fade-right">
                             <h4 className="Demand-subhead" data-aos="fade-down">Create. Publish. Syndicate.</h4>
                             <p class="Demand-right" data-aos="fade-down">  
@@ -151,12 +151,12 @@ const DemandGeneration=()=>{
       <section class="section-ser pt-0">
             <div class="container">
                 <div class="row align-items-center">
-                <div class="col-lg-5 col-sm-12 col-md-6 mb-5 mb-lg-0">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5 mb-lg-0">
                         <div className="demand-img-outer">
                           <img src={min} alt="feature bg" class="img-fluid demand-imgleft"/>
                         </div>
                 </div>
-                <div class="col-lg-7 pl-4">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pl-4">
                     <div class="mb-5">
                     <div className="d-flex justify-content-center">
                         <Heading classNames="aboutwherewe" title="Reach your Target Audience"></Heading>

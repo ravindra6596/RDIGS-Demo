@@ -1,6 +1,6 @@
 import React from "react";
 import "./Blog.css";
-import Bannercommon from "../Bannercommon/Bannercommon";
+import Heading from "../Heading/Heading";
 import cardimg2 from "../../img/blog/cardimg2.jpg";
 import blog4 from "../../img/blog/blog4.jpg";
 const Blog = () => {
@@ -33,7 +33,16 @@ const Blog = () => {
   return (
     <>
       <div className="nav-contaniner"/>
-      <Bannercommon title="BLOG"/>
+      <section className="Blogsection">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style={{ marginTop:'10%'}}>
+                            <Heading  classNames="clientheadwe" title="Blog"/>
+                            <p style={{ color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
+                        </div>
+                    </div>
+                </div>
+      </section>
       <section className="blog4-section">
         <div className="container">
               <div className="row blog4-img-row">
@@ -68,7 +77,7 @@ const Blog = () => {
                       <p class="h-1 mt-4 cardhead">{data.cardhead}</p>
                       <p class="text-muted mt-3 card-para">{data.cardpara}</p>
                       <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
-                          <div class="btn btn-primary blogbtn">Read More &nbsp;<span class="fa fa-arrow-right"></span></div>
+                          <div class="btn-primary blogbtn">Read More &nbsp;<span class="fa fa-arrow-right"></span></div>
                           <div class="d-flex align-items-center justify-content-center foot blog-admin-msg">
                               <p class="admin">Admin</p>&nbsp;&nbsp;
                               <p class="ps-3 icon text-muted"><span class="fa fa-comment pe-1"></span>3</p>

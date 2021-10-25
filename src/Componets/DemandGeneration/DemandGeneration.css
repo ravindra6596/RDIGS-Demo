@@ -62,7 +62,6 @@
 }
 .thumbnail-light-image{
     width: 100%;
-
     vertical-align: middle;
     border-style: none;
     display: inline-block;
@@ -179,10 +178,6 @@
     border-radius: 5px;
     box-shadow: 0px 2px 6px #00bcd4;
 }
-/* .service-box:hover{
-    color:white;
-    background-color:#bae6ec;
-} */
 .service-box .service-img-icon {
     width: 100px;
     height: 100px;
@@ -213,28 +208,30 @@
 /* image outer css */
 .demand-img-outer img{
     border:20px solid white;
-    border-radius:50px 0 50px 0;
-    
-  width:100%;
+    border-radius:50px 0 50px 0; 
+    width:100%;
 } 
 .demand-img-outer{
     margin:30px 0px;
     background-color: white;
-    border-radius:50px 0 50px 0;
-    
+    border-radius:50px 0 50px 0;  
 }
 /* hover effect card */
-
  .service-box{
-   
     background-size: 100% 200%;
-    background-image: linear-gradient(to bottom,white 50%, lightblue 50%);
+    background-image: linear-gradient(to bottom,white 0%, lightblue 100%);
     -webkit-transition: background-position 1s;
     -moz-transition: background-position 1s;
     transition: background-position 1s;
 }
 .service-box:hover {
     background-position: 0 -100%;
+}
+/* ====================media for reach customer button============= */
+@media only screen and (min-width:575px) and (max-width:768px){
+.Drive-Excess-Conversion{
+    padding: 5px 10px;
+ }
 }
 /* ====================media for servicebox card=================== */
 @media only screen and (min-width:320px) and (max-width:768px){
