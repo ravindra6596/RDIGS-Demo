@@ -170,6 +170,7 @@
     padding-bottom: 20px;
 }
 .service-box {
+    height:auto;
     background: #fff;
     text-align: center;
     padding: 45px 25px 30px 25px;
@@ -217,7 +218,7 @@
     border-radius:50px 0 50px 0;  
 }
 /* hover effect card */
- .service-box{
+ .service-box{ 
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom,white 0%, lightblue 100%);
     -webkit-transition: background-position 1s;
@@ -225,7 +226,7 @@
     transition: background-position 1s;
 }
 .service-box:hover {
-    background-position: 0 -100%;
+    background-position: 0-100%;
 }
 /* ====================media for reach customer button============= */
 @media only screen and (min-width:575px) and (max-width:768px){

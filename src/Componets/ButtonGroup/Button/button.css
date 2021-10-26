@@ -80,4 +80,6 @@
         border-color: #30a6e9;
         border-radius: 40px;}
 .btnclear:focus{outline: none;}
-
+.customizebtn{
+    margin-right:15px;
+}

@@ -12,21 +12,21 @@
 .vision-div {
     border: 0px;
     border-radius: 6px;
-    box-shadow: 1px 1px 1px 1px #8054c6; 
+    box-shadow: 1px 1px 1px 1px lightblue; 
     margin-top: 45px;
     position: inherit;
 }
 .mission-div {
     border: 0px;
     border-radius: 6px;
-    box-shadow: 1px 1px 1px 1px #8054c6; 
+    box-shadow: 1px 1px 1px 1px lightblue; 
     margin-top: 45px;
     position: inherit;
 }
 .principle-div{
     border: 0px;
     border-radius: 6px;
-    box-shadow: 1px 1px 1px 1px #8054c6; 
+    box-shadow: 1px 1px 1px 1px lightblue; 
     margin-top: 45px;
     position: inherit;
 }
@@ -39,9 +39,10 @@
 .vision-title {
     position: absolute;
     top: 0px;
-    left: -1px;
-    width: 100%;
-    background: #8054c6;
+    left: 5px;
+    right:5px;
+    width: 98%;
+    background: #53b1d6;
     height: 50px;
     border-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -56,7 +57,7 @@
     left: -0px;
     width: 15px;
     height: 30px;
-    background: #8054c6;
+    background: #53b1d6;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     z-index: 2;
@@ -68,7 +69,7 @@
     left: -0px;
     width: 15px;
     height: 15px;
-    background: #8054c6;
+    background: #53b1d6;
     z-index: 1;
 }
 /* =================why we choosesection================ */

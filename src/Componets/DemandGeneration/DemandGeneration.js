@@ -57,7 +57,7 @@ const DemandGeneration=()=>{
             serviceimgicon:s1,
             serviceinnerh1:"Video Marketing",
             serviceinnerpara:"Reach a huge area of users and get a publicty of your product and service ",
-            serviceinnerspan:"video marketing",
+            serviceinnerspan:"video",
             serviceinnerpara1:"solution."
 
         },
@@ -74,7 +74,7 @@ const DemandGeneration=()=>{
             serviceinnerh1:"SEO optimization",
             serviceinnerpara:"we provide wide range of",
             serviceinnerspan:"seo service",
-            serviceinnerpara1:"to make your site at top to reach your target customers provided."
+            serviceinnerpara1:"to make your site at top to reach your target"
 
         }
 
@@ -130,23 +130,23 @@ const DemandGeneration=()=>{
             </div>
         </section>
         <section id="service-2" class="section-padding11 pb-5">
-      <div class="container">
-        <div class="row">
-            {
-               idservice2.map((data)=>{
-                   return(
-                    <div class="col-lg-4 col-md-6 service-box-2-col">
-                        <div class="service-box-2 mb-5">
-                        <img src={data.s2img} alt="demand-goal"></img>
-                        <h4>{data.s2h4}<br></br>{data.s2h4para}</h4>
-                        <p class="mb-0">{data.s2para}</p>
-                        </div>
-                    </div>
-                   )
-               }) 
-            }    
-        </div>
-    </div>
+            <div class="container">
+                <div class="row">
+                    {
+                    idservice2.map((data)=>{
+                        return(
+                            <div class="col-xs-6 col-sm-12 col-md-4 col-lg-4 col-xl-4 service-box-2-col">
+                                <div class="service-box-2 mb-5">
+                                <img src={data.s2img} alt="demand-goal"></img>
+                                <h4>{data.s2h4}<br></br>{data.s2h4para}</h4>
+                                <p class="mb-0">{data.s2para}</p>
+                                </div>
+                            </div>
+                        )
+                    }) 
+                    }    
+                </div>
+            </div>
     </section>
       <section class="section-ser pt-0">
             <div class="container">
@@ -190,7 +190,7 @@ const DemandGeneration=()=>{
     {
             servicecard.map((user,index)=>{
                 return(
-                      <div class="col-lg-4 col-xs-6 col-sm-6 col-md-4">
+                      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                         <div class="service-box">
                             <div class="service-img-icon">
                             <img src={user.serviceimgicon} alt="service-icon" class="img-fluid"/>

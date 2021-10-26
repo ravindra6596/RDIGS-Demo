@@ -8,16 +8,13 @@ import Linkedin from '../../img/socialicon/Linkdin.png';
 import Facebook from '../../img/socialicon/Facebook.png';
 import Youtube from '../../img/socialicon/Youtube.png';
 import Insta from '../../img/socialicon/Insta.png';
-import cookie_bite from '../../img/cookie-bite.svg';
+import Cookie from "../Cookie/Cookie";
 
 const Header = () => {
   //navbar scroll when active state
   const [navstage, setNavbar] = useState(false);
   // toggle social icon
-   const [show, toggleShow] = React.useState(false);
-  // small model for cookie
-  const [showText, setShowText] = useState(false);
-  const onClick = () => setShowText(true);
+  const [show, toggleShow] = React.useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -161,25 +158,12 @@ const scrollgoTop = () => {
           </Container>
         </Navbar>
       </section>
+      <Cookie/>
 
-      <section>
-      <div class="gdprcookie"><div>
-        <img src={cookie_bite} class="cookie-img" alt="Cookie Image"/> Cookies &amp; Privacy Policy </div>
-        <p>We use cookies to personalize your experience and analyse web traffic. Learn more about our use of cookies in our 
-          <a href="#" target="_blank" class="cookie-privacy">Privacy Policy</a>.</p>
-
-          <div class="gdprcookie-buttons">
-            <button type="button" className="customizebtn" onClick={onClick}>Customize</button>
-            {showText ? <List /> : null}
-            <button type="button" className="AcceptAll">Accept All</button>
-          </div>
-          </div>
-      </section>  
           <div>
             <button className="socialicon-btn" onClick={() =>toggleShow(!show)}>{show ? <Text/> :<i class="fa fa-angle-right" aria-hidden="true"></i> }<i class="fa fa-angle-left" aria-hidden="true"></i>
             </button>
           </div>
-
       </>
      ); 
 
@@ -204,32 +188,6 @@ const Text = () => <section className="social-media-section">
     </div>
   </aside>
 </section>
-const List = () =><div class="gdprcookie-types">
-  <div class="gdpr-h2"></div>
-      <ul>
-        <li>
-        <input type="checkbox" id="gdpr-cookietype-0" name="gdpr[]" value="essential" checked="checked" />
-        <label for="gdpr-cookietype-0" title="These are cookies that are essential for the 
-        website to work correctly.">Essential</label>
-        </li>
-        <li>
-        <input type="checkbox" id="gdpr-cookietype-1" name="gdpr[]" value="preferences" checked="checked"/>
-        <label for="gdpr-cookietype-1" title="These are cookies that are related to your site 
-        preferences, e.g. remembering your username, site colours, etc.">Site Preferences</label>
-        </li>
-        <li>
-        <input type="checkbox" id="gdpr-cookietype-2" name="gdpr[]" value="analytics" checked="checked" />
-        <label for="gdpr-cookietype-2" title="Cookies related to site visits, browser types, 
-        etc.">Analytics</label>
-        </li>
-        <li>
-        <input type="checkbox" id="gdpr-cookietype-3" name="gdpr[]" value="marketing" checked="checked"/>
-        <label for="gdpr-cookietype-3" title="Cookies related to marketing, e.g. newsletters, 
-        social media, etc">Marketing</label>
-        </li>     
-      </ul>
-  </div> ;
-
 export default Header;
 
 
