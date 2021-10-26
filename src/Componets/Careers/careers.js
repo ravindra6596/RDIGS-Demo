@@ -59,16 +59,6 @@ const careers = () => {
     return (
         <>
             <div className="nav-contaniner" />
-            {/* <section className="careersection">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12" style={{ marginTop:'10%'}}>
-                            <Heading  classNames="clientheadwe" title="Careers"/>
-                            <p style={{ color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
             <CareerSlider/>
             <section>
                 <div className="container">

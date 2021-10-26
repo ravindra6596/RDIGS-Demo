@@ -8,7 +8,6 @@ import Linkedin from '../../img/socialicon/Linkdin.png';
 import Facebook from '../../img/socialicon/Facebook.png';
 import Youtube from '../../img/socialicon/Youtube.png';
 import Insta from '../../img/socialicon/Insta.png';
-
 import cookie_bite from '../../img/cookie-bite.svg';
 
 const Header = () => {
@@ -19,7 +18,6 @@ const Header = () => {
   // small model for cookie
   const [showText, setShowText] = useState(false);
   const onClick = () => setShowText(true);
-
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -49,10 +47,9 @@ const scrollgoTop = () => {
           collapseOnSelect
           expand="lg"
           style={{ backgroundColor: navstage ? "lightblue" : "transparent" }}
-          expanded={expanded}
-        >
+          expanded={expanded}>
           <Container>
-            <Navbar.Brand>
+            <Navbar.Brand style={{textAlign:'justify'}}>
               <img src={logoimg} className="headlogo" alt="logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}>
@@ -140,7 +137,7 @@ const scrollgoTop = () => {
                           <i class="fa fa-th" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="#" onClick={() => { scrollgoTop(); setExpanded(false); }}>News Latter</Link>
+                              <Link to="/newslatter" onClick={() => { scrollgoTop(); setExpanded(false); }}>News Latter</Link>
                             </div>
                           </p>
                         </span>
@@ -168,12 +165,8 @@ const scrollgoTop = () => {
       <section>
       <div class="gdprcookie"><div>
         <img src={cookie_bite} class="cookie-img" alt="Cookie Image"/> Cookies &amp; Privacy Policy </div>
-        <p>We use cookies to personalize your experience and analyse web traffic. Learn more about 
-
-      our use of cookies in our 
-          <a href="#" target="_blank" class="cookie-privacy">Privacy 
-      Policy</a>.</p>
-
+        <p>We use cookies to personalize your experience and analyse web traffic. Learn more about our use of cookies in our 
+          <a href="#" target="_blank" class="cookie-privacy">Privacy Policy</a>.</p>
 
           <div class="gdprcookie-buttons">
             <button type="button" className="customizebtn" onClick={onClick}>Customize</button>
@@ -233,8 +226,7 @@ const List = () =><div class="gdprcookie-types">
         <input type="checkbox" id="gdpr-cookietype-3" name="gdpr[]" value="marketing" checked="checked"/>
         <label for="gdpr-cookietype-3" title="Cookies related to marketing, e.g. newsletters, 
         social media, etc">Marketing</label>
-        </li>
-      
+        </li>     
       </ul>
   </div> ;
 

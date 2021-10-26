@@ -27,8 +27,8 @@ input:focus { outline: none !important;}
   }
  .homemodalbody{ box-shadow: 5px 10px 8px 10px #888888;}
 .homemodalclosebtn{
-  color: lightblue;
-  margin-left: 94%;
+  color: lightblue!important;
+  margin-left: 94%!important;
   font-size: 20px;
   font-weight: 700;
   padding: 1%;

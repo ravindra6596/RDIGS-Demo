@@ -40,7 +40,7 @@ const Contact = () => {
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" name="age" value="30"  onClick={() => showRadiotext(false)}/>
-                                        <label for="age1"  style={{marginLeft:'5px'}}>Sales Empowerment</label>
+                                        <label className="contactsale" for="age1">Sales Empowerment</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" name="age" value="30" onClick={() => showRadiotext(false)}/>
