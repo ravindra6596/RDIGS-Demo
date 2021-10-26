@@ -44,9 +44,7 @@
         border-radius: .25rem;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-.conradiofirst{margin-left: 22%;}
- .conradiofirst{margin-left: 22%;
-    margin-top: 5px;}
+ .conradiofirst{margin-top: 5px;}
 .consubtxt{font-size: 20px;}
 .conaddmaker{
     font-size: 25px;
@@ -65,7 +63,7 @@
     padding-right: 10px;
     padding-bottom: 10px;
 }
-.contactsale{padding-left: 8%;}
+.contactsale{padding-left: 10%;}
 .conbtnrow{margin: 3% 12%;}
 .radiotextarea{
     outline: none;
@@ -95,7 +93,7 @@
 @media only screen and (min-width: 425px) and (max-width: 575px) {
     .conwhattxt {margin-right: 25%;}
     .contactfirst-sec {margin-bottom: 15%;}
-    .contactsale{padding-left: 2%;}
+    .contactsale{padding-left: 3%;}
 }
 @media only screen and (min-width: 768px) and (max-width: 990px) {
     .conwhattxt {  margin-right: 51%;}

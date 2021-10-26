@@ -33,7 +33,7 @@ const Contact = () => {
                                     <input type="text" class="form-controlall" placeholder="Enter Company Name" />
                                 </div>
                                 <label className="conwhattxt">What Would You like to inquire about?</label><br />
-                                <div className=" row conradiodiv" style={{textAlign:'justify'}}>
+                                <div className=" row conradiodiv" style={{textAlign:'justify',paddingLeft:'4%'}}>
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" name="age" value="30"  onClick={() => showRadiotext(false)} />
                                         <label for="age1"  style={{marginLeft:'5px'}}>Demand Generation</label>
