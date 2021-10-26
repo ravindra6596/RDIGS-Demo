@@ -66,7 +66,7 @@ const Blog = () => {
          {
            carddata.map((data,i)=>{
              return(
-               <div className="col-sm-12 col-md-4 col-lg-4">
+               <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
               <div class="d-lg-flex card-body card-border">
               <div class="card-blog-div border-0 me-lg-4 mb-lg-0 mb-4">
                   <div class="backgroundEffect"></div>

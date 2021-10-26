@@ -12,7 +12,6 @@ const CompanyProfile1 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12" style={{marginTop:'10%'}}>
-
                             <Heading classNames="clientheadwe" title="Company Profile"/>
                             <p style={{color:'white'}}> we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                      </div>
@@ -22,7 +21,7 @@ const CompanyProfile1 = () => {
             <section className="vision-mission-principal">
               <div className="container">
                 <div className="row vision-mission-principle-row">
-                   <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                   <div className="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                       <div className="vision-title">
                      <Heading className="aboutwherewe" title="VISION"></Heading>
                      </div>
@@ -30,7 +29,7 @@ const CompanyProfile1 = () => {
                      <p  className="company-vmp">To provide highest quality added services to our purchasers and delivering measurable results. individual customers.learn more about each vission.</p>
                     </div>
                     </div>
-                   <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                   <div className="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                    <div className="vision-title">
                    <Heading className="aboutwherewe" title="MISSION"></Heading>
                      </div>
@@ -38,7 +37,7 @@ const CompanyProfile1 = () => {
                       <p  className="company-vmp">Our vision is to stay a foremost outsourcing company that gives our clients the simplest services at competitive costs.</p> 
                    </div>
                    </div>
-                   <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                   <div className="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                    <div className="vision-title">
                    <Heading className="aboutwherewe" title="PRINCIPLE"></Heading>
                    </div>

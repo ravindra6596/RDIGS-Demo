@@ -6,7 +6,7 @@ function GalleryModel(props) {
   const toggle1 = () => setModal1(!modal1);
   return (
     <>
-      <div className="col-sm-4 gallary-hover">
+      <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 gallary-hover">
         <div
           className="bdt-gallery-thumbnail bdt-transition-toggle"
           data-aos="zoom-in-up"
@@ -36,7 +36,6 @@ function GalleryModel(props) {
                     alt="popup"
                     className="popup-image-model img-fluid"
                   />
-
                 </div>
               </div>
             </div>

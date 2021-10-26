@@ -6,7 +6,6 @@ import { BrowserRouter, Route,Switch,Redirect} from 'react-router-dom';
 import Header from './Componets/Header/header';
 import Footer from './Componets/Footer/Footer';
 import LoaderExampleDisabled from './Componets/LoaderExampleDisabled/LoaderExampleDisabled';
-
 AOS.init({
  duration: 1500
 });
@@ -26,6 +25,7 @@ const Privacypolicy = React.lazy(()=>import('./Componets/Privacypolicy/Privacypo
 const Termscondition = React.lazy(()=>import('./Componets/Termscondition/Termscondition'));
 const Unsubscribe = React.lazy(()=>import('./Componets/Unsubscribe/Unsubscribe'));
 const PageNotFound = React.lazy(()=>import('./Componets/PageNotFound/Pagenotfound'));
+const Cookie =React.lazy(()=>import('./Componets/Cookie/Cookie'));
   return (
     <div className="App">
       <BrowserRouter>
@@ -48,6 +48,7 @@ const PageNotFound = React.lazy(()=>import('./Componets/PageNotFound/Pagenotfoun
               <Route path='/Privacypolicy' exact={true} component={Privacypolicy}/>
               <Route path='/termscondition' exact={true} component={Termscondition}/>
               <Route path='/unsubscribe' exact={true} component={Unsubscribe}/>
+              <Route path='/cookie' exact={true} componet={Cookie}/>
               <Route path='/footer' exact={true} component={Footer}/>
               <Route path="/Pagenotfound" exact={true} component={PageNotFound}/>
               <Redirect from="*" to="/Pagenotfound"/>
