@@ -1,0 +1,13 @@
+.newscard{
+    border-radius: 3px;
+    height: 600px; 
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s
+     box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+.newscard:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom: 5px solid lightblue;
+    transform: scale(1.05);
+}
+.newslatimg{border-radius:3px 3px 0px 0px ;}
+

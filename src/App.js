@@ -14,6 +14,7 @@ const Homepage = React.lazy(() => import('./Componets/Homepage/homepage'));
 const Contact = React.lazy(() => import('./Componets/Contact/contact'));
 const Teams = React.lazy(() => import('./Componets/Teams/teams'));
 const Careers = React.lazy(() => import('./Componets/Careers/careers'));
+const Newslatter = React.lazy(() => import('./Componets/Newslatter/Newslatter'));
 const DemandGeneration = React.lazy(() => import('./Componets/DemandGeneration/DemandGeneration'));
 const LeadGeneration = React.lazy(() => import('./Componets/LeadGeneration/LeadGeneration'));
 const Gallary = React.lazy(() => import('./Componets/Gallery/Gallery'));
@@ -37,6 +38,7 @@ const Cookie =React.lazy(()=>import('./Componets/Cookie/Cookie'));
               <Route path='/home' exact={true} component={Homepage}/>
               <Route path='/teams' exact={true} component={Teams}/>
               <Route path='/careers' exact={true} component={Careers}/>
+              <Route path='/newslatter' exact={true} component={Newslatter}/>
               <Route path='/contact' exact={true} component={Contact}/>
               <Route path='/demandgeneration' exact={true} component={DemandGeneration}/>
               <Route path='/leadgeneration' exact={true} component={LeadGeneration}/>
