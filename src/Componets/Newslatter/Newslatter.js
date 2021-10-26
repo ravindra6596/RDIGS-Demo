@@ -5,8 +5,8 @@ import Button from "../ButtonGroup/Button/button";
 import newscardimage1 from '../../img/Newslatter/newscardimg1.jpg';
 import newscardimage2 from '../../img/Newslatter/newscardimg2.jpg';
 import newscardimage3 from '../../img/Newslatter/newscardimg3.jpg';
-import newscardimage4 from '../../img/Newslatter/newscardimg4.jpg';
-import newscardimage5 from '../../img/Newslatter/newscardimg5.jpg';
+import newscardimage4 from '../../img/Newslatter/newscardimg2.jpg';
+import newscardimage5 from '../../img/Newslatter/newscardsimg4.jpg';
 import { Link } from "react-router-dom";
 const Newslatter =()=>{
   const [modal, setModal] = useState(false);
