@@ -26,14 +26,14 @@ const Header = () => {
     });
   });
 
-// Social link click then toggle close functinality
-const [expanded, setExpanded] = useState(false);
-//Click toggle Header toggle icon will change 
-const [isClosetoggle,setClosetoggle]=useState(false);
-// Navigation tab click open on top functionality
-const scrollgoTop = () => {
-  window.scrollTo({ top:0});
-};
+  // Social link click then toggle close functinality
+  const [expanded, setExpanded] = useState(false);
+  //Click toggle Header toggle icon will change 
+  const [isClosetoggle, setClosetoggle] = useState(false);
+  // Navigation tab click open on top functionality
+  const scrollgoTop = () => {
+    window.scrollTo({ top: 0 });
+  };
 
   return (
     <>
@@ -46,7 +46,7 @@ const scrollgoTop = () => {
           style={{ backgroundColor: navstage ? "lightblue" : "transparent" }}
           expanded={expanded}>
           <Container>
-            <Navbar.Brand style={{textAlign:'justify'}}>
+            <Navbar.Brand style={{ textAlign: 'justify' }}>
               <img src={logoimg} className="headlogo" alt="logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}>
@@ -158,14 +158,14 @@ const scrollgoTop = () => {
           </Container>
         </Navbar>
       </section>
-      <Cookie/>
+      <Cookie />
 
-          <div>
-            <button className="socialicon-btn" onClick={() =>toggleShow(!show)}>{show ? <Text/> :<i class="fa fa-angle-right" aria-hidden="true"></i> }<i class="fa fa-angle-left" aria-hidden="true"></i>
-            </button>
-          </div>
-      </>
-     ); 
+      <div>
+        <button className="socialicon-btn" onClick={() => toggleShow(!show)}>{show ? <Text /> : <i class="fa fa-angle-right" aria-hidden="true"></i>}<i class="fa fa-angle-left" aria-hidden="true"></i>
+        </button>
+      </div>
+    </>
+  );
 
 }
 const Text = () => <section className="social-media-section">
