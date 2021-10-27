@@ -2,7 +2,7 @@
 .modelcookie{
     bottom:0;
     position:absolute;
-    margin-left:5px;
+    margin-left:2px;
 }
 .gdprcookie {
     box-shadow: 0 3px 12px #0000001f;
@@ -101,7 +101,7 @@ label {
     font-weight: 500;
     border-radius: 20px;
     padding: 10px 30px;
-    background-color: lightyellow;
+    background-color: #30a6e9;
     border:none;
 }
 .customizebtn:hover{

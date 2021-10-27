@@ -4,7 +4,23 @@ import Heading from "../Heading/Heading";
 import { Header } from "semantic-ui-react";
 import Tab from 'react-bootstrap/Tab';
 import {Nav,Row,Col} from 'react-bootstrap';
+import userEvent from "@testing-library/user-event";
 const CompanyProfile1 = () => {
+  const userdata=[
+    {
+      heading:"VISSION",
+      vmppara:"To provide highest quality added services to our purchasers and delivering measurable results. individual customers.learn more."
+    },
+    {
+      heading:"MISSION",
+      vmppara:"Our vision is to stay a foremost outsourcing company that gives our clients the simplest services at competitive costs."
+    },
+    {
+      heading:"PRINCIPLE",
+      vmppara:"Client Value Creation, Integrity &amp; Transparency, Authenticity and Excellence are the core values of RD info Solutions."
+    }
+    
+  ]
   return (
     <>
       <div className="nav-contaniner" />
@@ -21,31 +37,20 @@ const CompanyProfile1 = () => {
             <section className="vision-mission-principal">
               <div className="container">
                 <div className="row vision-mission-principle-row">
-                   <div className="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                      <div className="vision-title">
-                     <Heading className="aboutwherewe" title="VISION"></Heading>
-                     </div>
-                     <div className="vision-div">
-                     <p  className="company-vmp">To provide highest quality added services to our purchasers and delivering measurable results. individual customers.learn more about each vission.</p>
+                  {
+                 userdata.map((data,i)=>{
+                   return(
+                    <div className="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <div className="vision-title">
+                      <h4 className="heading-vmp">{data.heading}</h4>
                     </div>
-                    </div>
-                   <div className="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                   <div className="vision-title">
-                   <Heading className="aboutwherewe" title="MISSION"></Heading>
-                     </div>
-                     <div className="mission-div">
-                      <p  className="company-vmp">Our vision is to stay a foremost outsourcing company that gives our clients the simplest services at competitive costs.</p> 
-                   </div>
-                   </div>
-                   <div className="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                   <div className="vision-title">
-                   <Heading className="aboutwherewe" title="PRINCIPLE"></Heading>
-                   </div>
-                     <div className="principle-div">
- 
-                      <p className="company-vmp">Client Value Creation, Integrity &amp; Transparency, Authenticity and Excellence are the core values of RD info Solutions. </p>
-                     </div>
-                   </div>
+                   <div className="vision-div">
+                   <p className="company-vmp">{data.vmppara}</p>
+                  </div>
+                  </div>
+                   )
+                 })
+                }
                 </div>
               </div>
             </section>
@@ -96,7 +101,7 @@ const CompanyProfile1 = () => {
                       <Tab.Content className="tab-divfor-img">
                         <Tab.Pane eventKey="first">
                           <div className="first-div">
-                            <Heading title="Global Team"></Heading>
+                            <Heading classNames="aboutwherewe" title="Global Team"></Heading>
                             <p className="text-light p-3">
                               With over 700+ certified and trained professionals, Apisero designs custom-built solutions for mid-market, enterprise, and strategic customers across the globe.
                             </p>
@@ -104,7 +109,7 @@ const CompanyProfile1 = () => {
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
                           <div className="second-div">
-                            <Heading title="Suite of Solutions"></Heading>
+                            <Heading classNames="aboutwherewe" title="Suite of Solutions"></Heading>
                             <p className="text-light p-3">
                               Apisero develops tailored solutions that fit your organization’s goals. From Architecture and Implementation to Managed Services, Data Migration, Advisory Services, and more, we’ve got you covered.
                             </p>
@@ -112,7 +117,7 @@ const CompanyProfile1 = () => {
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
                           <div className="three-div">
-                            <Heading title="Agile Delivery"></Heading>
+                            <Heading classNames="aboutwherewe" title="Agile Delivery"></Heading>
                             <p className="text-light p-3">
                             Your company needs a solution, and you need it as quickly and efficiently as possible. That’s why we offer quick ramp-up and down times to ensure you’re optimizing your business as soon as you can.
                             </p>
@@ -120,7 +125,7 @@ const CompanyProfile1 = () => {
                         </Tab.Pane>
                         <Tab.Pane eventKey="four">
                           <div className="four-div">
-                            <Heading title="Scaled Pricing"></Heading>
+                            <Heading classNames="aboutwherewe" title="Scaled Pricing"></Heading>
                             <p className="text-light p-3">
                             Your partnership matters to us. That’s why Apisero works with each customer to define a custom engagement and pricing model that suits your business’ unique needs.
                             </p>
@@ -128,7 +133,7 @@ const CompanyProfile1 = () => {
                         </Tab.Pane>
                         <Tab.Pane eventKey="five">
                           <div className="five-div">
-                            <Heading title="Team Collaboration"></Heading>
+                            <Heading classNames="aboutwherewe" title="Team Collaboration"></Heading>
                             <p className="text-light p-3">
                             We know change can be scary, but with us, it doesn’t have to be. We’ll work closely with your internal teams to ensure they’re trained, enabled, and ready for action.
                             </p>
@@ -136,7 +141,7 @@ const CompanyProfile1 = () => {
                         </Tab.Pane>
                         <Tab.Pane eventKey="six">
                           <div className="six-div">
-                            <Heading title="Integrated Knowledge"></Heading>
+                            <Heading classNames="aboutwherewe" title="Integrated Knowledge"></Heading>
                             <p className="text-light p-5">
                             Leveraging our extensive industry and platform know-how, Apisero offers customers specialized services that empower their business to capitalize on investments faster than ever before.
                             </p>
