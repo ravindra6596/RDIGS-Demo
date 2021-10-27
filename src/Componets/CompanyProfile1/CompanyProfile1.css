@@ -9,6 +9,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.company-choose-section{
+    background-color: aliceblue;
+}
 .vision-div {
     border: 0px;
     border-radius: 6px;
@@ -16,22 +19,12 @@
     margin-top: 45px;
     position: inherit;
 }
-.mission-div {
-    border: 0px;
-    border-radius: 6px;
-    box-shadow: 1px 1px 1px 1px lightblue; 
-    margin-top: 45px;
-    position: inherit;
-}
-.principle-div{
-    border: 0px;
-    border-radius: 6px;
-    box-shadow: 1px 1px 1px 1px lightblue; 
-    margin-top: 45px;
-    position: inherit;
-}
+
 .vision-mission-principle-row{
     margin-top:10px;
+}
+.heading-vmp{
+    margin-top:15px;
 }
 .company-vmp{
     padding:10px;
@@ -41,7 +34,7 @@
     top: 0px;
     left: 5px;
     right:5px;
-    width: 98%;
+    width: 97%;
     background: #53b1d6;
     height: 50px;
     border-radius: 30px;
