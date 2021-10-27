@@ -1,5 +1,6 @@
 import React, { useState }  from "react";
 import { Modal, ModalBody } from 'reactstrap';
+import Heading from '../Heading/Heading';
 import './Newslatter.css';
 import Button from "../ButtonGroup/Button/button";
 import newscardimage1 from '../../img/Newslatter/newscardimg1.jpg';
@@ -7,6 +8,9 @@ import newscardimage2 from '../../img/Newslatter/newscardimg2.jpg';
 import newscardimage3 from '../../img/Newslatter/newscardimg3.jpg';
 import newscardimage4 from '../../img/Newslatter/newscardimg2.jpg';
 import newscardimage5 from '../../img/Newslatter/newscardsimg4.jpg';
+import newsbanboximg1 from '../../img/Newslatter/newsbanboximg.jpg';
+import newsgalimg1 from '../../img/Newslatter/newsgalimg1.jpg';
+
 import { Link } from "react-router-dom";
 const Newslatter =()=>{
   const [modal, setModal] = useState(false);
@@ -48,6 +52,44 @@ const Newslatter =()=>{
             newslink1:"#squadghouls"
         },
     ];
+    const newgaldata = [
+      {
+        newsgalimg: newsgalimg1,
+        newsalt: "Promotion img",
+        newsgalpara1: "Nice Lily",
+        newsgalpara2:"Lily likes to play with crayons and pencils"
+      },
+      {
+        newsgalimg: newsgalimg1,
+        newsalt: "Promotion img",
+        newsgalpara1: "Nice Lily",
+        newsgalpara2:"Lily likes to play with crayons and pencils"
+      },
+      {
+        newsgalimg: newsgalimg1,
+        newsalt: "Promotion img",
+        newsgalpara1: "Nice Lily",
+        newsgalpara2:"Lily likes to play with crayons and pencils"
+      },
+      {
+        newsgalimg: newsgalimg1,
+        newsalt: "Promotion img",
+        newsgalpara1: "Nice Lily",
+        newsgalpara2:"Lily likes to play with crayons and pencils"
+      },
+      {
+        newsgalimg: newsgalimg1,
+        newsalt: "Promotion img",
+        newsgalpara1: "Nice Lily",
+        newsgalpara2:"Lily likes to play with crayons and pencils"
+      },
+      {
+        newsgalimg: newsgalimg1,
+        newsalt: "Promotion img",
+        newsgalpara1: "Nice Lily",
+        newsgalpara2:"Lily likes to play with crayons and pencils"
+    }
+  ];
     return(
     <>
 
@@ -74,27 +116,79 @@ const Newslatter =()=>{
         </ModalBody>
       </Modal> */}
         <div className="nav-contaniner"/>
+          {/* <!-- ======= Newslatter Banner Section ======= --> */}
+          <section className="newssection">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12" style={{marginTop:'10%'}}>
+                            <Heading classNames="clientheadwe" title="NewsLatter"/>
+                            <p style={{color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          {/* <!-- ======= Newslatter Section 2 ======= --> */}
+            <section>
+              <div className="container newsbanbox" data-aos="fade-up">
+                <div className="row">
+                  <div className="col-lg-6 col-md-6 col-sm-6">
+                    <img className="img-fluid newssec2img" src={newsbanboximg1}/>
+                  </div>
+                  <div className="col-lg-6 col-md-6 col-sm-6 newssec2col2" >
+                    <h2 style={{color:'#30a6e9'}}>Beer,Biryani,tech Bytes:Snowflake</h2>
+                    <span style={{color:'#7A7A7A'}}>2:00-3:30 IST</span>
+                    <p style={{paddingRight:'10% '}}>Looking to gain new user skills, share best practices, and network with fellow Snowflake and Big Data enthusiasts? Join our upcoming Beer, Biryani, and [tech] Bytes Snowflake series as we dive into Snowflake – a cloud data warehousing company revolutionizing the way businesses see and use their data.</p>
+                    <Button classNames="allbtn-primary glow-on-hover text-light" text="Register Now"/>
+                  </div>
+                </div>
+              </div>
+            </section>
+          {/* <!-- ======= Newslatter Gallery Section 3 ======= --> */}
+          <section>
+            <div className="container">
+              <div className="row no-gutters" style={{marginTop:'5%'}}>
+                {/* Using Map Function to access the data */}
+                  {newgaldata.map((newgaldata) => (
+                  <div className="col-lg-4 col-md-4 col-sm-4">
+                        <div class="newslattergrid">
+                          <figure class="effect-lily">
+                              <img src={newgaldata.newsgalimg} alt="img1"/>
+                                <figcaption>
+                                <div>
+                                <h2>{newgaldata.newsgalpara1}</h2>
+                                <p>{newgaldata.newsgalpara2}</p>
+                                </div>
+                                </figcaption>			
+                          </figure>
+                      </div>
+                  </div>
+                  ))}
+              </div>
+            </div>
+          </section>
+
+        {/* <!-- ======= Newslatter Section 4 ======= --> */}
         <section data-aos="fade-up">
             <div className="container">
-                <div className="row" style={{margin:'3% 0px'}}>
+                <div className="row" style={{marginTop:'5%'}}>
                 {/* Using Map Function to access the data */}
                  {data.map((data) => (
                     <div className="col-lg-4 col-md-4 col-sm-6" style={{marginBottom:'5%'}}>
                         <div className="newscard">
                             <img className="img-fluid newslatimg" src={data.newsimg}/>
                                 <div style={{textAlign:'justify',padding:'10%'}}>
-                                    <p>{data.para1}</p>
-                                    <p>{data.para2}</p>
+                                    <p className="newscardpara2">{data.para1}</p>
+                                    <p className="newscardpara2">{data.para2}</p>
                                     <Link to="/home"><p>{data.newslink1}</p></Link>
+                                   <Button  fun={() => setModal(true)} classNames="allbtn-primary glow-on-hover text-light" text="Get NewsLatter"/>
                                 </div>
-                                <Button  fun={() => setModal(true)} classNames="allbtn-primary glow-on-hover text-light" text="Get NewsLatter"/>
                         </div>
                     </div>
                  ))}
 
                 </div> 
             </div>
-        </section>   
+        </section> 
 </>
 )
 }
