@@ -154,24 +154,24 @@ input::-webkit-inner-spin-button {
 .inputs{margin-top: 10%;}
 .webform__form-control[type=email]{
     background: #fff;
-    border: 0;
+    border: none!important;
     padding: 6px 8px;
     width: 60%;
     outline: none;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    /* -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px; */
 }
 .EWF__subscribe[type=submit]{
-        border-bottom-right-radius: 5px;
-        border-top-right-radius: 5px;
         background-color: #219ee5;
-        border: 0;
+        border:none!important;
         width: 37%;
         padding: 6px 2px;
         text-align: center;
         color: #fff;
         transition: .3s;
         cursor: pointer;
+        /* -webkit-border-bottom-right-radius: 5px;
+        -webkit-border-top-right-radius: 5px; */
     }
 .EWF__subscribe:hover {
     background-image: linear-gradient(to right,#30a6e9 , lightblue);
@@ -278,8 +278,8 @@ font-size: 18px;}
 }
 .newsletter-input1:focus{  outline: none;}
 .subscribe-footer{
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+    -webkit-border-top-right-radius: 25px;
+    -webkit-border-bottom-right-radius: 25px;
     height: 39px;
     background-color: #30a6e9;
     color: white;
