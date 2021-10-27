@@ -11,7 +11,7 @@ const Cookie=()=>{
     const onClick = () => setShowText(true);
     // set time to show model
     useEffect(() => {
-        const timeId = setTimeout(() => setShowModal(true),200000)
+        const timeId = setTimeout(() => setShowModal(true),2000)
         return () => clearTimeout(timeId)
       },[]);
     return(
