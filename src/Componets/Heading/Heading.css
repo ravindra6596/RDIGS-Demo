@@ -3,12 +3,13 @@
     color: #30a6e9;
     font-family: 'Orbitron';
 }
-  .aboutwherewe:hover {
+  /* .spansubhead1:hover {
     color:black;
-}
-
+} */
 .clientheadwe{ color: #30a6e9;padding-top: 5px; font-family: 'Orbitron';}
-.clientheadwe:hover{ color: white;}
+
+/* .spansubhead2:hover{ color: white;} */
+
 @media only screen and (min-width: 320px)and (max-width: 370px){
 .aboutwherewe {font-size: 30px;}
 }

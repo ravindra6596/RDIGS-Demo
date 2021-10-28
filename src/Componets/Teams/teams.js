@@ -42,11 +42,9 @@ const teams =()=>{
         {/* <!-- ======= Team Banner Section ======= --> */}
         <section className="teamsection">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12" style={{marginTop:'10%'}}>
-                            <Heading classNames="clientheadwe" title="Team"/>
-                            <p style={{color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
-                        </div>
+                    <div className="row" style={{display:'grid',paddingTop:'10%'}}>
+                        <Heading h1Class="clientheadwe" spanClass="spansubhead2" title="Team"/>
+                        <p style={{color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                     </div>
                 </div>
             </section>
@@ -58,7 +56,7 @@ const teams =()=>{
                             <img className="teams2img img-fluid" src={teamsection2}/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6" style={{textAlign:'justify'}}>
-                           <Heading classNames="aboutwherewe" title="WE ARE RDIGS"/>
+                           <Heading h1Class="aboutwherewe" spanClass="spansubhead1" title="WE ARE RDIGS"/>
                             <p className="teamsec2para">Digitallium is a company specializing in providing financial, marketing and analytical services to other companies and private entrepreneurs to help them improve their businesses. We are able to analyze any activity and provide with the bulk of solutions how to decrease your expense, use hidden opportunities and what spheres are good for investment.</p>
                             <ul style={{fontSize:'20px'}}>
                                 <li>IT Team</li>
@@ -75,7 +73,7 @@ const teams =()=>{
         <div class="container" data-aos="fade-up">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                  <Heading  classNames="aboutwherewe" title="Meet Our Team" />
+                  <Heading  classNames="aboutwherewe" spanClass="spansubhead1" title="Meet Our Team" />
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text</p>
                 </div>
             </div>

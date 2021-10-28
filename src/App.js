@@ -47,7 +47,7 @@ const Cookie =React.lazy(()=>import('./Componets/Cookie/Cookie'));
               <Route path='/blog' exact={true} component={Blog}/>
               <Route path='/jobdescription' exact={true} component={JobDescription}/>
               <Route path='/bannercommon' exact={true} component={Bannercommon}/>
-              <Route path='/Privacypolicy' exact={true} component={Privacypolicy}/>
+              <Route path='/privacypolicy' exact={true} component={Privacypolicy}/>
               <Route path='/termscondition' exact={true} component={Termscondition}/>
               <Route path='/unsubscribe' exact={true} component={Unsubscribe}/>
               <Route path='/cookie' exact={true} componet={Cookie}/>

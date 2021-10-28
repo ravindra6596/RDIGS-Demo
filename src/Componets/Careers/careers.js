@@ -27,7 +27,7 @@ const careers = () => {
             carimg: career2,
             caralt: "Team Hardwork img",
             heading: "Team of Hardworking Individuals",
-            para: "Good team-work comes from well-synced and hardworking team members"
+            para: "Good team-work comes from well-synced and hardworking"
 
         },
         {
@@ -64,7 +64,7 @@ const careers = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-sm-12">
-                            <Heading classNames="aboutwherewe" title="Benefits of joining our Team" />
+                            <Heading h1Class="aboutwherewe" spanClass="spansubhead1" title="Benefits of joining our Team" />
                         </div>
                     </div>
                     <div className="row" style={{ marginBottom: '5%' }} data-aos="fade-up" data-aos-delay="200">

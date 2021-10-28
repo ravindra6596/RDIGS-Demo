@@ -142,17 +142,19 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
-                <div className="forunderline">
-                  {" "}
+               
                   <Nav.Link>
+                  <div className="forunderline">
                     <NavLink exact to="/blog" className="maincolor" activeClassName="main-nav-active" onClick={() => { scrollgoTop(); setExpanded(false); }}>BLOG</NavLink>
+                    </div>
                   </Nav.Link>
-                </div>
+            
                 <Nav.Link>
                   <div className="forunderline">
                     <NavLink exact to="/contact" className="maincolor" activeClassName="main-nav-active" onClick={() => { scrollgoTop(); setExpanded(false); }}>CONTACT</NavLink>
                   </div>
                 </Nav.Link>
+
               </Nav>
             </Navbar.Collapse>
           </Container>
