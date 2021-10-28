@@ -66,8 +66,8 @@ const Contact = () => {
             </section>
 
             <section>
-                <div className="container">
-                     <Heading classNames="aboutwherewe" title="Contact Us" />
+                <div className="container" data-aos="fade-up">
+                     <Heading h1Class="aboutwherewe" title="Contact Us" />
                     <p className="consubtxt">Get in Touch with us to embark on a path of success</p>
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6" style={{ textAlign: 'justify' }}>

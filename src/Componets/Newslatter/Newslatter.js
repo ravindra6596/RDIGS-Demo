@@ -115,15 +115,14 @@ const Newslatter =()=>{
           </div>
         </ModalBody>
       </Modal> */}
+      
+      {/* <!-- ======= Newslatter Banner Section ======= --> */}
         <div className="nav-contaniner"/>
-          {/* <!-- ======= Newslatter Banner Section ======= --> */}
           <section className="newssection">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-12" style={{marginTop:'10%'}}>
-                            <Heading classNames="clientheadwe" title="NewsLatter"/>
-                            <p style={{color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
-                        </div>
+                        <span className="newsheadcom"><Heading h1Class="clientheadwe" title="NewsLatter"/></span>
+                        <p className="headcomparg">At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                     </div>
                 </div>
             </section>

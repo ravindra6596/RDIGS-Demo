@@ -15,7 +15,7 @@ const Cookie = () => {
     const onList = () => setShowText(true);
     // set time to show model
     useEffect(() => {
-        const timeId = setTimeout(() => setShowModal(true), 2000);
+        const timeId = setTimeout(() => setShowModal(true), 200000);
         return () => clearTimeout(timeId)
     }, []);
     //   Cookie store
@@ -50,7 +50,7 @@ const Cookie = () => {
                         {showText ? <List /> : null}
                         <div class="gdprcookie-buttons">
                             <button type="button" value="SetCookies" name="set" className="customizebtn text-light" onClick={() => { onList(); createCookie(); }} >Customize</button>
-                            <Link to="/contact"> <Button value="GetCookies" name="get" classNames="allbtn-primary glow-on-hover text-light" text="Accept All" data-aos="fade-left" onClick={() => { readCookie(); setShowModal(false); }}></Button></Link>
+                            <span onClick={() => { readCookie(); setShowModal(false); }}> <Button value="GetCookies" name="get" classNames="allbtn-primary glow-on-hover text-light" text="Accept All" data-aos="fade-left" onClick={() => { readCookie(); setShowModal(false); }}></Button></span>
                         </div>
                     </div>
                 </Modal>
@@ -63,7 +63,7 @@ const List = () => <div class="gdprcookie-types">
     <form name="cookieform">
         <ul id="cookielist">
             <li>
-                <input type="checkbox" id="gdpr_cookietype_0" name="essential" value="essential" />
+                <input type="checkbox" id="gdpr_cookietype_0" name="essential" value="essential" checked/>
                 {/* onChange={(e) => setEssential(e.target.value)} */}
                 <label for="gdpr-cookietype-0" title="These are cookies that are essential for the 
         website to work correctly.">Essential</label>

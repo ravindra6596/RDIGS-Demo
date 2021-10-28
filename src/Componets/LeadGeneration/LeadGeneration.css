@@ -13,7 +13,7 @@
 .Drive-Excess-Conversion-Lead{
     margin-bottom:10px;
 }
-.Lead-heading-top:hover{color:midnightblue;   }
+
 .Lead-img1{
     width:100%;
     background-color: transparent;
@@ -142,18 +142,6 @@
 .support-company-area .right-caption {
     position: relative;
     
-}
-.section-tittle2 span {
-    color: #cecece;
-}
-.section-tittle span {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 17px;
-    text-transform: uppercase;
-    display: inline-block;
-    position: relative;
-    padding-left: 68px;
 }
 .section-tittle2 h2 {
     color: #fff;

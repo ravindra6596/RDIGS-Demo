@@ -192,12 +192,12 @@ const scrollgoToplink = () => {
                 <div className="row d-flex justify-space-between">
                     <div className="col-lg-6 col-md-6 col-sm-6 me-md-auto text-center text-md-start footrescol">
                         <div id="copyright" className="clr copyright-center" role="contentinfo">
-                            Copyright © <span>{getCurrentYear()}</span> <a href="https://rdigs.com/" target="_blank" className="footerlinkhover">RD Info Global Solution</a>
+                            Copyright © <span>{getCurrentYear()}</span> <a href="https://rdigs.com/" target="_blank" className="footerlinkhover" style={{fontWeight:'bolder'}}>RD Info Global Solutions</a>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6">
                         <div  className="copydesign" >
-                           Designed by <a href="http://lead-tronics.com/" target="_blank" className="footerlinkhover">LeadTronics</a>
+                           Designed by <a href="http://lead-tronics.com/" target="_blank" className="footerlinkhover" style={{fontWeight:'bolder'}}>LeadTronics</a>
                         </div>
                     </div>
                 </div>

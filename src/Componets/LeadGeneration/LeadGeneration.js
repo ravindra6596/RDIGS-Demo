@@ -54,7 +54,7 @@ const LeadGeneration = () => {
       <section className="Lead-Generation-Sec">
         <div className="container">
           <div className="d-flex justify-content-center Lead-heading-top">
-            <Heading classNames="aboutwherewe" title="Lead Generation"></Heading>
+            <Heading h1Class="aboutwherewe" title="Lead Generation"></Heading>
           </div>
           <div className="row">
             <div className="col-sm-6 col-md-6 col-lg-6 Lead-img-col">
@@ -96,7 +96,7 @@ const LeadGeneration = () => {
       <section class="section-services text-center">
         <div class="container">
           <div className="d-flex justify-content-center" data-aos="fade-down">
-            <Heading classNames="aboutwherewe" title="Services"></Heading>
+            <Heading h1Class="aboutwherewe" title="Services"></Heading>
           </div>
           <p>
             <span class="text-width-1" data-aos="fade-down">
@@ -138,7 +138,7 @@ const LeadGeneration = () => {
                 <div class="right-caption">
                   <div class="section-tittle section-tittle2 mb-50">
                     <div className="d-flex justify-content-center">
-                      <Heading classNames="aboutwherewe"  title="Our Best Services"></Heading>
+                      <Heading h1Class="aboutwherewe"  title="Our Best Services"></Heading>
                     </div>
                   </div>
                   <div class="support-caption">
