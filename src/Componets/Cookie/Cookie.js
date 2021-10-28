@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-// import {useCookies} from 'react-cookie';
 import Cookies from 'universal-cookie';
-import { strict } from 'assert';
 import './Cookie.css';
+import { useCookies } from 'react-cookie';
 import Button from "../ButtonGroup/Button/button";
 import { Modal, ModalBody } from 'reactstrap';
 import cookie_bite from '../../img/cookie-bite.svg';
@@ -13,28 +11,36 @@ const Cookie = () => {
     // // small model for cookie
     const [showText, setShowText] = useState(false);
     const onList = () => setShowText(true);
+    // customize button on off
+    const [list, toggleList] = React.useState(false);
     // set time to show model
     useEffect(() => {
         const timeId = setTimeout(() => setShowModal(true), 2000);
         return () => clearTimeout(timeId)
     }, []);
     //   Cookie store
-    const cookies = new Cookies();
+    const cookies = new Cookies('');
     const createCookie = () => {
-        cookies.set('myCat', 'Pacman', { path: '/' });
-        console.log(cookies.get('myCat'));
-        cookies.set('essential', 'essential', { path: '/' });
-        cookies.set('preferences', 'preferences', { path: '/' });
-        cookies.set('analytics', 'analytics', { path: '/' });
-        cookies.set('marketing', 'marketing', { path: '/' });
+        cookies.set('myCat', 'Pacman', { path: '/' ,expires : new Date(new Date().getTime() + 5 * 1000)});
+        cookies.set('essential', 'essential', { path: '/',expires : new Date(new Date().getTime() + 5 * 1000)});
+        cookies.set('preferences', 'preferences', { path: '/',expires : new Date(new Date().getTime() + 5 * 1000) });     
     }
-    // , sameSize:strict, expires : new Date(new Date().getTime() + 3 * 1000), httpOnly:true
+    
     const readCookie = () => {
-        cookies.get('essential');
-        cookies.get('preferences');
-        cookies.get('analytics');
-        cookies.get('marketing');
-    }
+        console.log(cookies.get('myCat'));
+        console.log(cookies.get('essential'));
+        console.log(cookies.get('preferences'));   
+     }
+    // coockie try
+    //  const cook=()=>{
+    //     const[preferences,setPreferences]=useState('');
+    //     const[coockie,setCoockie]=useState(['list']);
+    // }
+    // const handle=(e)=>{
+    //         setCoockie('name',value,{path:'/'});
+    //         setPreferences(e.target.value);
+    // }  
+     
     return (
         <>
             <section className="cookiesection">
@@ -42,15 +48,15 @@ const Cookie = () => {
                     <div class="gdprcookie">
                         <span className="Cookiemodalclosebtn" onClick={() => setShowModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
                         <div>
-                            <img src={cookie_bite} class="cookie-img" alt="Cookie Image" /> Cookies &amp; Privacy Policy <img src={cookie_bite} class="cookie-img" alt="Cookie Image" />
+                            <img src={cookie_bite} class="cookie-img" alt="Cookie Image" /> Cookies &amp; Privacy Policy
                         </div>
                         <p>We use cookies to personalize your experience and analyse web traffic. Learn more about
                             our use of cookies in our &nbsp;
-                            <a href="#" target="_blank" class="cookie-privacy">Privacy Policy</a>.</p>
-                        {showText ? <List /> : null}
+                            <a href="/Privacypolicy" target="_blank" class="cookie-privacy">Privacy Policy</a>.</p>
+                        {list ? <List /> : null}
                         <div class="gdprcookie-buttons">
-                            <button type="button" value="SetCookies" name="set" className="customizebtn text-light" onClick={() => { onList(); createCookie(); }} >Customize</button>
-                            <Link to="/contact"> <Button value="GetCookies" name="get" classNames="allbtn-primary glow-on-hover text-light" text="Accept All" data-aos="fade-left" onClick={() => { readCookie(); setShowModal(false); }}></Button></Link>
+                            <button type="button" value="SetCookies" name="set" className="customizebtn glow-on-hover text-light" onClick={() => { onList(); createCookie(); toggleList(!list);}}>Customize</button>
+                            <span onClick={() => { readCookie();  setShowModal(false); }}> <Button value="GetCookies" name="get" classNames="allbtn-primary glow-on-hover text-light" text="Accept All" data-aos="fade-left"></Button></span>
                         </div>
                     </div>
                 </Modal>
@@ -58,21 +64,22 @@ const Cookie = () => {
         </>
     )
 }
+
 const List = () => <div class="gdprcookie-types">
     <div class="gdpr-h2"></div>
     <form name="cookieform">
         <ul id="cookielist">
             <li>
-                <input type="checkbox" id="gdpr_cookietype_0" name="essential" value="essential" />
-                {/* onChange={(e) => setEssential(e.target.value)} */}
+                <input type="checkbox" id="gdpr_cookietype_0" name="essential" value="essential" checked/>
                 <label for="gdpr-cookietype-0" title="These are cookies that are essential for the 
-        website to work correctly.">Essential</label>
+                website to work correctly.">Essential</label>
+                
             </li>
             <li>
                 <input type="checkbox" id="gdpr_cookietype_1" name="preferences" />
-                {/* onChange={(e) => setPreferences(e.target.value)} */}
+                {/* value={preferences} onChange={(e) => setPreferences(e.target.value)} */}
                 <label for="gdpr-cookietype-1" title="These are cookies that are related to your site 
-        preferences, e.g. remembering your username, site colours, etc.">Site Preferences</label>
+                preferences, e.g. remembering your username, site colours, etc.">Site Preferences</label>
             </li>
             <li>
                 <input type="checkbox" id="gdpr_cookietype_2" name="analytics" value="analytics" />

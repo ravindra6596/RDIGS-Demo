@@ -82,13 +82,13 @@ const scrollgoToplink = () => {
                                                     </div>
                                                     <div className="col-sm-6 col-md-6 col-lg-6">
                                                         <h2 className="text-center model-head-cop">Corporate Deck 2021</h2>
-                                                            <form onSubmit={onResolveddata}>
+                                                            <form onSubmit={onResolveddata} autocomplete="off">
                                                               <div className="corporate-form-in1">
-                                                                <input type="text" className="form-corporateDeck-fname" id="Fname" placeholder="First Name" required/>
+                                                                <input type="text" className="form-corporateDeck-fname" id="Fname" placeholder="First Name" required autocomplete="off"/>
                                                                 <i className="fa fa-user"></i>
                                                                 </div>
                                                                 <div className="corporate-form-in2">
-                                                                <input type="text" className="form-corporateDeck-lname" id="Lname" placeholder="Last Name" required />
+                                                                <input type="text" className="form-corporateDeck-lname" id="Lname" placeholder="Last Name" required autocomplete="off"/>
                                                                 <i className="fa fa-user"></i>
                                                                 </div>
                                                                 <div className="corporate-form-in3">

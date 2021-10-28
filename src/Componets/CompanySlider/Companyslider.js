@@ -34,31 +34,31 @@ const Companyslider = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3
+          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 575,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3
+          slidesToScroll: 1
         }
 
       },
       {
         breakpoint: 320,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3
+          slidesToShow: 1,
+          slidesToScroll: 2
         }
       }
 
@@ -104,8 +104,7 @@ const Companyslider = () => {
   ];
   return (
     <>
-      <section className="clients">
-        
+      <section className="clients"> 
         <div className="slide-overlay">
         <div className="section-title">
           <Heading classNames="clientheadwe" title="We Work With"/>
