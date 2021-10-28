@@ -4,6 +4,9 @@
     position:absolute;
     margin-left:2px;
 }
+.Cookiemodalclosebtn{
+    float:right;
+}
 .gdprcookie {
     box-shadow: 0 3px 12px #0000001f;
 }
