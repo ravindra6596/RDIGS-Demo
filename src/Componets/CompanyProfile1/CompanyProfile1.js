@@ -28,7 +28,7 @@ const CompanyProfile1 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12" style={{marginTop:'10%'}}>
-                            <Heading classNames="clientheadwe" title="Company Profile"/>
+                            <Heading h1Class="clientheadwe" title="Company Profile"/>
                             <p style={{color:'white'}}> we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                      </div>
                     </div>
@@ -58,7 +58,7 @@ const CompanyProfile1 = () => {
                 <div className="container">
                 <div className="row">
                   <div className="col-12">
-                    <Heading className="aboutwherewe" title="WHY WE CHOOSE US"></Heading>
+                    <Heading h1Class="aboutwherewe" title="WHY WE CHOOSE US"></Heading>
                     <p>Choosing a solutions provider that understands your business’ needs can feel overwhelming; we’re here to tell you that it doesn’t have to be.</p>
                   </div>
                 <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -101,7 +101,7 @@ const CompanyProfile1 = () => {
                       <Tab.Content className="tab-divfor-img">
                         <Tab.Pane eventKey="first">
                           <div className="first-div">
-                            <Heading classNames="aboutwherewe" title="Global Team"></Heading>
+                            <Heading h1Class="aboutwherewe" title="Global Team"></Heading>
                             <p className="text-light p-3">
                               With over 700+ certified and trained professionals, Apisero designs custom-built solutions for mid-market, enterprise, and strategic customers across the globe.
                             </p>
@@ -109,7 +109,7 @@ const CompanyProfile1 = () => {
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
                           <div className="second-div">
-                            <Heading classNames="aboutwherewe" title="Suite of Solutions"></Heading>
+                            <Heading h1Class="aboutwherewe" title="Suite of Solutions"></Heading>
                             <p className="text-light p-3">
                               Apisero develops tailored solutions that fit your organization’s goals. From Architecture and Implementation to Managed Services, Data Migration, Advisory Services, and more, we’ve got you covered.
                             </p>
@@ -117,7 +117,7 @@ const CompanyProfile1 = () => {
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
                           <div className="three-div">
-                            <Heading classNames="aboutwherewe" title="Agile Delivery"></Heading>
+                            <Heading h1Class="aboutwherewe" title="Agile Delivery"></Heading>
                             <p className="text-light p-3">
                             Your company needs a solution, and you need it as quickly and efficiently as possible. That’s why we offer quick ramp-up and down times to ensure you’re optimizing your business as soon as you can.
                             </p>
@@ -125,7 +125,7 @@ const CompanyProfile1 = () => {
                         </Tab.Pane>
                         <Tab.Pane eventKey="four">
                           <div className="four-div">
-                            <Heading classNames="aboutwherewe" title="Scaled Pricing"></Heading>
+                            <Heading h1Class="aboutwherewe" title="Scaled Pricing"></Heading>
                             <p className="text-light p-3">
                             Your partnership matters to us. That’s why Apisero works with each customer to define a custom engagement and pricing model that suits your business’ unique needs.
                             </p>
@@ -133,7 +133,7 @@ const CompanyProfile1 = () => {
                         </Tab.Pane>
                         <Tab.Pane eventKey="five">
                           <div className="five-div">
-                            <Heading classNames="aboutwherewe" title="Team Collaboration"></Heading>
+                            <Heading h1Class="aboutwherewe" title="Team Collaboration"></Heading>
                             <p className="text-light p-3">
                             We know change can be scary, but with us, it doesn’t have to be. We’ll work closely with your internal teams to ensure they’re trained, enabled, and ready for action.
                             </p>
@@ -141,7 +141,7 @@ const CompanyProfile1 = () => {
                         </Tab.Pane>
                         <Tab.Pane eventKey="six">
                           <div className="six-div">
-                            <Heading classNames="aboutwherewe" title="Integrated Knowledge"></Heading>
+                            <Heading h1Class="aboutwherewe" title="Integrated Knowledge"></Heading>
                             <p className="text-light p-5">
                             Leveraging our extensive industry and platform know-how, Apisero offers customers specialized services that empower their business to capitalize on investments faster than ever before.
                             </p>

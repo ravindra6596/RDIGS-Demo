@@ -47,7 +47,7 @@ const Testimonial = () => {
       <section className="ftco-section testimony-section ftco-no-pb" >
         <div className="testimonil-img">
           <div className="section-title" >
-            <span> <Heading classNames="aboutwherewe" title="Testimonial" /></span>
+            <span> <Heading h1Class="aboutwherewe" spanClass="spansubhead1" title="Testimonial" /></span>
             <p className="service-para" style={{ marginTop: '2%' }}>Kinds Words From Clients.</p>
           </div>
 

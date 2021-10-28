@@ -1,7 +1,5 @@
 /* Navbar css */
-.headlogo{
-    /* width: 100%; */
-    height: 70px; }
+.headlogo{height: 70px; }
 .mainnav{height: auto;}
 .navbar-expand-lg .navbar-collapse {-webkit-justify-content: flex-end!important;}
 .navbar-light .navbar-nav .nav-link  {color: #30a6e9;outline: none;}
@@ -172,6 +170,7 @@
         top: calc(50% - 100px);
         left: -10px;  
     }
+    .forunderline {background: none;}
 }
 @media only screen and (min-width:768px) and (max-width:1023px){
     #floating-social{
@@ -198,23 +197,14 @@
 @media only screen and (min-width: 320px) and (max-width: 375px) {
     .dropdownservice { right: 15%;}
     .dropdownabout { right: 15%;}
-    .headlogo{
-        width: 50%;
-        height: 60px !important; }
 }
 @media only screen and (min-width: 375px) and (max-width: 425px) {
     .dropdownservice { right: 20%;}
     .dropdownabout { right: 20%;}
-    .headlogo{
-        width: 50%;
-        height: 50px !important; }
 }
 @media only screen and (min-width: 425px) and (max-width: 600px) {
     .dropdownservice { right: 23%;}
     .dropdownabout { right: 23%;}
-    .headlogo{
-        width: 50%;
-        height: 50px !important; }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     .dropdownservice { right: 30%;}
@@ -224,6 +214,8 @@
     .dropdownservice { right: 35%;}
     .navbar-nav {background-color: lightblue;}
     .dropdownabout { right: 35%;}
+    .forunderline {background: none;}
+
  }
 
  

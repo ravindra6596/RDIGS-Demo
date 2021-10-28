@@ -10,7 +10,7 @@ const JobDescription =()=>{
         <div className="container ">
             <div className="row">
                 <div className="col-lg-12" style={{margin:'8% 0px'}}>
-                    <Heading classNames="clientheadwe" title="Lead | Demand Generation "/>
+                    <Heading h1Class="clientheadwe" title="Lead | Demand Generation "/>
                 </div>
             </div>
         </div>

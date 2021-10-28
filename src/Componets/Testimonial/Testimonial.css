@@ -26,7 +26,7 @@
     height: 220px;
     outline: none;
 }
-.slick-initialized .slick-slide{pointer-events: none;}
+/* .slick-initialized .slick-slide{pointer-events: none;} */
 .testimonial-card:focus{outline: none;}
 .testimonial-card:hover{
     transform: scale(1.15);

@@ -37,7 +37,7 @@ const Blog = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style={{ marginTop:'10%'}}>
-                            <Heading  classNames="clientheadwe" title="Blog"/>
+                            <Heading  h1Class="clientheadwe" title="Blog"/>
                             <p style={{ color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                         </div>
                     </div>

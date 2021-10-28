@@ -44,7 +44,7 @@ const Servicess =()=>{
         <section id="services" className="portfolio">
             <div className="container" data-aos="fade-up">
             <div className="section-title"> 
-                 <span> <Heading classNames="aboutwherewe" title="Services"/></span>
+                <Heading h1Class="aboutwherewe" spanClass="spansubhead1" title="Services"/>
                 <p className="service-para">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
             </div> 
                
