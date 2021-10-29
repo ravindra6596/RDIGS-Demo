@@ -77,7 +77,9 @@ const Blog = () => {
                       <p class="h-1 mt-4 cardhead">{data.cardhead}</p>
                       <p class="text-muted mt-3 card-para">{data.cardpara}</p>
                       <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
-                          <div class="btn-primary blogbtn">Read More &nbsp;<span class="fa fa-arrow-right"></span></div>
+                          <div class="btn-primary blogbtn">
+                            Read More &nbsp;<span class="fa fa-arrow-right"></span>
+                            </div>
                           <div class="d-flex align-items-center justify-content-center foot blog-admin-msg">
                               <p class="admin">Admin</p>&nbsp;&nbsp;
                               <p class="ps-3 icon text-muted"><span class="fa fa-comment pe-1"></span>3</p>
