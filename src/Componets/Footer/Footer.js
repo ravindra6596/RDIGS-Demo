@@ -103,20 +103,11 @@ const scrollgoToplink = () => {
                                                                 <input type="text" className="form-corporateDeck-company" id="Company" placeholder="Company Name" autocomplete="off" required/>
                                                                 <i className="fa fa-address-book" aria-hidden="true"></i>
                                                                 </div>
-                                                                <Link to ="#" className="corporate-submit">
-                                                                    <div className="buttons d-flex justify-content-center" style={{marginTop:'10px'}}>
+            
+                                                                    <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
                                                                      <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
                                                                     </div>
-                                                                </Link>
-                                                                <Recaptcha className="footer-captcha"
-                                                                    badge="bottomleft"
-                                                                    ref={recaptcha}
-                                                                    onChange={onResolveddata}
-                                                                    onExpired={() => {
-                                                                        recaptcha.current.reset();
-                                                                    }}
-                                                                    sitekey="6Lf2AmsbAAAAAFdfecORFmrsAYstfD4DD4CTyHxE"
-                                                                />
+                                                          
                                                             </form>
                                                     </div>
                                                 </div> 

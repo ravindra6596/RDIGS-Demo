@@ -104,11 +104,11 @@ label {
     font-weight: 500;
     border-radius: 20px;
     padding: 10px 30px;
-    background-color: #30a6e9;
-    border:none;
+    border-color: #30a6e9;
+   
 }
 .customizebtn:hover{
-    border: none;
+    border-color: #0062cc;
 }
 .customizebtn:focus{
     border:none;
