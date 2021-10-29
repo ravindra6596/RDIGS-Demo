@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState,useRef} from "react";
 import Recaptcha from 'react-google-invisible-recaptcha';
 import Heading from "../Heading/Heading";
 import './contact.css';
@@ -9,6 +9,26 @@ import Button from "../ButtonGroup/Button/button";
 const Contact = () => {
 
     const [radiotext, showRadiotext] = useState(false);
+    const [inputs, setInputs] = useState({});
+
+    const handleChange = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
+        setInputs(values => ({...values, [name]: value}))
+      }
+    
+      const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(inputs);
+      }
+
+      const recaptchaRef = React.createRef();
+      let recaptcha = useRef(null);
+  
+      const onResolveddata = () => {
+          console.log("a" + recaptcha.current.getResponse());
+      }
+
     return (
         <>
             <div className="nav-contaniner" />
@@ -19,18 +39,38 @@ const Contact = () => {
                         </div>
                           <div className="col-lg-6 col-md-12 col-sm-12" style={{backgroundColor: 'white',marginTop:'4%' }}>
                             <h2 className="contgetin" data-aos="fade-up">Get in Touch</h2>
-                            <form>
+                            <form onSubmit={handleSubmit}>
                                 <div class="form-group">
-                                    <input type="text" class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Name" />
+                                    <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Name"
+                                     type="text" 
+                                     name="username" 
+                                     value={inputs.username || ""} 
+                                     onChange={handleChange}
+                                     />
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Phone No" />
+                                    <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Phone No"
+                                         type="number" 
+                                         name="phno" 
+                                         value={inputs.phno || ""} 
+                                         onChange={handleChange}
+                                    />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Email" />
+                                    <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Email"
+                                          type="text" 
+                                          name="email" 
+                                          value={inputs.email || ""} 
+                                          onChange={handleChange}
+                                    />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-controlall" placeholder="Enter Company Name" />
+                                    <input class="form-controlall" placeholder="Enter Company Name"
+                                         type="text" 
+                                         name="comname" 
+                                         value={inputs.comname || ""} 
+                                         onChange={handleChange}
+                                     />
                                 </div>
                                 <label className="conwhattxt">What Would You like to inquire about?</label><br />
                                 <div className=" row conradiodiv" style={{textAlign:'justify',paddingLeft:'4%'}}>
@@ -56,9 +96,18 @@ const Contact = () => {
                                  style={{ display: radiotext ? "block" : "none"}}/>
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="textarea" placeholder="Your Message"/>
                                 <div className="row conbtnrow">
-                                    <div className="col btngetintouch"><Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" /></div>
-                                    <div className="col conformcleardiv"> <Button classNames="btnclear" text="Clear" /></div>
+                                    <div className="col btngetintouch"><Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" type="submit"/></div>
+                                    <div className="col conformcleardiv"><Button classNames="btnclear" text="Clear"/></div>
                                 </div>
+                                <Recaptcha className="footer-captcha"
+                                     badge="bottomleft"
+                                     ref={recaptcha}
+                                     onChange={onResolveddata}
+                                     onExpired={() => {
+                                     recaptcha.current.reset();
+                                     }}
+                                     sitekey="6Lf2AmsbAAAAAFdfecORFmrsAYstfD4DD4CTyHxE"
+                                 />
                             </form> 
                         </div> 
                     </div>
