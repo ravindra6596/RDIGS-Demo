@@ -227,6 +227,61 @@
 .service-box:hover {
     background-position: 0-100%;
 }
+/* demand form */
+.form-backimg{
+    background-image: url('../../img/services/formbg.jpg');
+    background:center center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.demand-topimg {
+    width: 765px;
+    height: 150px;
+}
+
+.demand-input{
+    width: 100%;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+}
+.demand-input:focus{
+    outline: none;
+    border: none;
+    box-shadow: #00bcd4 2px 2px 2px 2px;
+}
+.demand-textarea{
+    width: 100%;
+    height: auto;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.form-demand i{
+    position: absolute;
+    padding: 5px;
+    margin-top:12px;
+    background-color: lightblue;
+    height: 30px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+
+}
+.demand-sideimg{
+    width:100%;
+    height:380px;
+}
+/* / Chrome, Safari, Edge, Opera remove arrow numbertype/ */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
 /* ====================media for reach customer button============= */
 @media only screen and (min-width:575px) and (max-width:768px){
 .Drive-Excess-Conversion{

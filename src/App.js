@@ -27,6 +27,7 @@ const Termscondition = React.lazy(()=>import('./Componets/Termscondition/Termsco
 const Unsubscribe = React.lazy(()=>import('./Componets/Unsubscribe/Unsubscribe'));
 const PageNotFound = React.lazy(()=>import('./Componets/PageNotFound/Pagenotfound'));
 const Cookie =React.lazy(()=>import('./Componets/Cookie/Cookie'));
+// const useSessionModal =React.lazy(()=>import('./Componets/useSessionModal/useSessionModal'));
   return (
     <div className="App">
       <BrowserRouter>
@@ -51,6 +52,7 @@ const Cookie =React.lazy(()=>import('./Componets/Cookie/Cookie'));
               <Route path='/termscondition' exact={true} component={Termscondition}/>
               <Route path='/unsubscribe' exact={true} component={Unsubscribe}/>
               <Route path='/cookie' exact={true} componet={Cookie}/>
+              {/* <Route path='/useSessionModal' exact={true} componet={useSessionModal}/> */}
               <Route path='/footer' exact={true} component={Footer}/>
               <Route path="/Pagenotfound" exact={true} component={PageNotFound}/>
               <Redirect from="*" to="/Pagenotfound"/>

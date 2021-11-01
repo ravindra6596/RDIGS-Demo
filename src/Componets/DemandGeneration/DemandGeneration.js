@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './DemandGeneration.css';
 import Button from '../ButtonGroup/Button/button';
 import demad2 from '../../img/services/demand1.png';
@@ -16,7 +16,12 @@ import service7 from '../../img/services/service7.jpg';
 import service8 from '../../img/services/service8.jpg';
 import min from '../../img/services/min.jpg';
 import Heading from '../Heading/Heading';
+import {Modal, ModalBody} from 'reactstrap';
+import dform from '../../img/services/dform.jpg';
+import sd1 from '../../img/services/sd1.jpg';
 const DemandGeneration=()=>{
+    const [modaldemand, setModaldemand] = useState(false);
+    const toggledemand = () => setModaldemand(!modaldemand);
     const data=[
         {
             servicename:"Cash Management",
@@ -117,10 +122,66 @@ const DemandGeneration=()=>{
                               as well as your reputation by syndicating content.
                             </p>
                             <div className="Drive-Excess-Conversion-demand">
-                               <Button classNames="allbtn-primary glow-on-hover text-light Drive-Excess-Conversion" text="Reach Customers Across the web" data-aos="fade-left"></Button>
+                               <Button classNames="allbtn-primary glow-on-hover text-light Drive-Excess-Conversion" text="Reach Customers Across the web" data-aos="fade-left"
+                               onClick={toggledemand} fun={()=>setModaldemand(true)}></Button>
                             </div>
-                            
                         </div>
+                    </div>
+                    <div className="demand-form">
+                    <Modal centered isOpen={modaldemand} className="modal-dialog modal-lg demand-form-model" toggle={toggledemand}
+                        dialogClassName="modal-90w"
+                        aria-labelledby="example-custom-modal-styling-title"
+                    >
+                            <ModalBody>
+                                <div className="row">
+                                <span  className="demandmodalclosebtn"  onClick={() => setModaldemand(false)} style={{float:'right'}} ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 demand-form-col12">
+                                            <div className="d-flex justify-content-center heading-form-demand">
+                                            <h4>Let's Connect With Us</h4>
+                                            </div>
+                                        <img src={dform} className="demand-topimg"alt="demand-form-topimg">
+                                        </img> 
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-4">
+                                        <img src={sd1} className="demand-sideimg" alt="demand-form-img"></img>
+                                    </div> 
+                                    <div className="col-8 form-backimg">
+                                    <form  autocomplete="off">
+                                                              <div className="form-demand">
+                                                                <i className="fa fa-user"></i>
+                                                                <input type="text" className="demand-input" id="Fname" placeholder="First Name" required autocomplete="off"/>
+                                                                </div>
+                                                                <div className="form-demand">
+                                                                <i className="fa fa-user"></i>
+                                                                <input type="text" className="demand-input" id="Lname" placeholder="Last Name" required autocomplete="off"/>
+                                                                </div>
+                                                                <div className="form-demand">
+                                                                <i className="fa fa-phone"></i>
+                                                                <input type="number" className="demand-input" id="Pnumber" placeholder="Phone Number" maxLength="10" required/>
+                                                                </div>
+                                                                <div className="form-demand">
+                                                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                                                <input type="text" className="demand-input" id="Email" placeholder="Your Email" autocomplete="off" required/>
+                                                                </div>
+                                                                <div className="form-demand">
+                                                                <i className="fa fa-address-book" aria-hidden="true"></i>
+                                                                <input type="text" className="demand-input" id="" placeholder="Company Name" autocomplete="off" required/>
+                                                                </div>
+                                                                <div className="textarea-demand">
+                                                                    <input type="text-area" className="demand-textarea" id="" placeholder="Write Message Here..." required></input>
+                                                                </div>
+            
+                                                                    <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
+                                                                     <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
+                                                                    </div>
+                                                          
+                                                            </form>
+                                    </div>
+                                </div>
+                            </ModalBody>
+                        </Modal>
                     </div>
                     <div className="col-sm-6 col-md-6 col-lg-6 Demand-img-col">
                         <div class="text-center lg-img aos-init aos-animate" data-aos="fade-left">
@@ -200,9 +261,9 @@ const DemandGeneration=()=>{
                             <h4>{user.serviceinnerh1}</h4>
                             <p>{user.serviceinnerpara}&nbsp;<span>{user.serviceinnerspan}</span>&nbsp;{user.serviceinnerpara1}</p>
                             </div>
-                            {/* <div class="btn-primary blogbtn">
-                            Read More &nbsp;<span class="fa fa-arrow-right"></span>
-                            </div> */}
+                          <Button classNames="readmore glow-on-hover" text="Readmore">
+                            
+                          </Button>
                         </div>
                       </div>
                      )

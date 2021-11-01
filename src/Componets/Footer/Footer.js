@@ -173,7 +173,7 @@ const scrollgoToplink = () => {
                         <p>Subscribe to our newsletter to get latest updates.</p>
                         <div className="inputs">
                             <input maxlength="60" className="webform__form-control" name="email" size="20" type="email" placeholder="Enter Your Email" autocomplete="off" required style={{borderRadius:'0px'}}/>
-                            <input type="submit" name="submit" id="eesubmit" className="EWF__subscribe" value="SUBCRIBE" style={{borderRadius:'0px'}}/>
+                            <input type="submit" name="submit" id="eesubmit" className="EWF__subscribe" value="SUBSCRIBE" style={{borderRadius:'0px'}}/>
                         </div>
                     </div>
                 </div>

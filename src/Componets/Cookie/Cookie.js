@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Cookies from 'universal-cookie';
 import './Cookie.css';
-import { useCookies } from 'react-cookie';
 import Button from "../ButtonGroup/Button/button";
 import { Modal, ModalBody } from 'reactstrap';
 import cookie_bite from '../../img/cookie-bite.svg';
@@ -29,7 +28,11 @@ const Cookie = () => {
     const createCookie = () => {
         cookies.set('myCat', 'Pacman','access_token', { path: '/' });
         cookies.set('essential', 'essential', { path: '/'});
-        cookies.set('preferences', 'preferences', { path: '/'});       
+        cookies.set('preferences', 'preferences', { path: '/'}); 
+        if(localStorage.getItem('.modelcookie') != 'shown'){
+            setShowModal(".modelcookie").delay(2000).fadeIn();
+            localStorage.setItem('.modelcookie','shown')
+        }      
     }
     function handlePreferences(e){
         if(setPreferences(e.target.value)===true){
@@ -58,7 +61,7 @@ const Cookie = () => {
           cookies.remove('');
         },[]);
       }
-  
+   
     return (
         <>
             <section className="cookiesection">
