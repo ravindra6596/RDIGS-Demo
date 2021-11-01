@@ -1,8 +1,19 @@
 import './JobDescription.css';
-import Button from '../../ButtonGroup/Button/button';
 import Heading from '../../Heading/Heading';
+import Button from '../../ButtonGroup/Button/button';
+import { useEffect, useState } from 'react';
 const JobDescription =()=>{
 
+        const[selectedFile,setSelectedFile] = useState();
+        const[isFilePicked,setIsFilePicked] = useState(false);
+        const changeHandler = (e) => {
+            setSelectedFile(e.target.files[0]);
+        }
+        const handleSubmission = () => {
+        }
+    
+
+    
     return(
     <>
     <div className="nav-contaniner"></div>
@@ -57,13 +68,45 @@ const JobDescription =()=>{
                                 <div className="form-group">
                                     <input type="text" className="formjd" placeholder="Enter Company Name" autocomplete="off" />
                                 </div>
-                                <div className="form-group" style={{textAlign:'justify'}}>
+                                <div className="form-group" style={{textAlign:'justify',border:'1px solid #ced4da'}}>
                                     <label for="exampleInputFile">Upload File</label><i class="fa fa-image mx-2 updatePost"></i><small class="img-add">(only Pdf, Doc, & txt files are allowed)</small>
                                     <div className="input-group">
-                                        <div className="custom-file">
+                                    <div className="custom-file">
+                                    <div class="input-group">
+                                        <input type="file" name="file" onChange={changeHandler} />
+                                        <div>
+                                            <button  onClick={handleSubmission}>Browse</button>
+                                        </div>
+                                    </div>
+                                            
+                                      
+
+                                        
+                                        
+                                   
+
+
+                                    {/* <div class="form-group">
+                                        <div class="input-group">
+                                        <input type="text" class="form-control" readonly/>
+                                        <div class="input-group-btn" >
+                                        <span class="fileUpload btn btn-success" type="submit"  onClick={handleSubmission}>
+                                            <span class="upl" id="upload">Upload single file</span>
+                                            <input type="file" class="upload up" onChange={changeHandler} id="up" onchange="readURL(this);" />
+                                            </span>
+                                        </div>
+                                        </div>
+                                    </div> */}
+ 
+                                        {/* <form >
+                                            <input className="jdfilechoose" type="file" id="myFile" name="filename"/>
+                                            <input className="jdfilechooselabel" type="submit"/>
+                                        </form> */}
+                                        </div>
+                                        {/* <div className="custom-file">
                                         <input className="jdfilechoose" type="file" name=""  accept="pdf/*" id="filetag" autocomplete="off" required />
                                         <label className="jdfilechooselabel" for="">Choose file</label>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 <div className="row" style={{margin:'5%',textAlign:'center'}}>
@@ -79,3 +122,5 @@ const JobDescription =()=>{
 }
 export default JobDescription;
 
+
+	

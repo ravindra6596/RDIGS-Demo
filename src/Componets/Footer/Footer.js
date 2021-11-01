@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import Button from '../ButtonGroup/Button/button';
 import ind from '../../img/india.jpg';
 import us from '../../img/US.jpg';
-import footenvolep from '../../img/Call-Icon.jpg';
+import footenvolep from '../../img/mailicon.jpg';
 import './Footer.css';
 import Recaptcha from 'react-google-invisible-recaptcha';
 import {Modal, ModalBody} from 'reactstrap';
@@ -174,6 +174,7 @@ const scrollgoToplink = () => {
                         <div className="inputs">
                             <input maxlength="60" className="webform__form-control" name="email" size="20" type="email" placeholder="Enter Your Email" autocomplete="off" required style={{borderRadius:'0px'}}/>
                             <input type="submit" name="submit" id="eesubmit" className="EWF__subscribe" value="SUBSCRIBE" style={{borderRadius:'0px'}}/>
+
                         </div>
                     </div>
                 </div>
