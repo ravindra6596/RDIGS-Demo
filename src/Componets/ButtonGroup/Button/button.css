@@ -86,9 +86,21 @@
         border-color: #30a6e9;
         border-radius: 40px;}
     .btnclear:focus{outline: none;}
-    .customizebtn{
-        margin-right:15px;
-} 
+    /* button */
+    .readmore{
+        border-radius: 25px ;
+        margin-left: 15px;
+        padding: 0px 10px;
+        cursor: pointer;
+        display: inline-block;
+        transition: 0.5s;
+        width:auto;
+        z-index: 0;
+    }
+    .readmore:hover {
+        background-color: white;
+        color: black;
+    }
 /* =================================================== */ 
  /* .glow-on-hoverarrow{
     cursor: pointer;

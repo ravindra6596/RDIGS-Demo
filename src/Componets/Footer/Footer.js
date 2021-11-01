@@ -172,8 +172,9 @@ const scrollgoToplink = () => {
                         <h5 style={{fontSize:'17px',fontFamily:'Orbitron'}}>JOIN OUR NEWSLATTER</h5>
                         <p>Subscribe to our newsletter to get latest updates.</p>
                         <div className="inputs">
-                            <input maxlength="60" className="webform__form-control" name="email" size="20" type="email" placeholder="Enter Your Email" autocomplete="off" required style={{borderTopLeftRadius:'5px',borderBottomLeftRadius:'5px'}} />
-                            <input type="submit" name="submit" id="eesubmit" className="EWF__subscribe" value="SUBCRIBE" style={{borderBottomRightRadius:'5px',borderTopRightRadius:'5px'}}/>
+                            <input maxlength="60" className="webform__form-control" name="email" size="20" type="email" placeholder="Enter Your Email" autocomplete="off" required style={{borderRadius:'0px'}}/>
+                            <input type="submit" name="submit" id="eesubmit" className="EWF__subscribe" value="SUBSCRIBE" style={{borderRadius:'0px'}}/>
+
                         </div>
                     </div>
                 </div>

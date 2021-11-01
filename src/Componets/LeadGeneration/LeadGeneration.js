@@ -1,8 +1,8 @@
-import React from "react";
+import React,{useState} from "react";
 import "./LeadGeneration.css";
 import Heading from "../Heading/Heading";
 import Button from "../ButtonGroup/Button/button";
-import demand1 from "../../img/services/demand2.png";
+import demand1 from "../../img/services/demand1.png";
 import min from "../../img/services/min.jpg";
 import service1 from "../../img/services/s1.jpg";
 import service2 from "../../img/services/s2.jpg";
@@ -12,8 +12,13 @@ import service5 from "../../img/services/s5.jpg";
 import service6 from "../../img/services/s6.jpg";
 import service7 from "../../img/services/s7.jpg";
 import service8 from "../../img/services/s8.jpg";
-import servicesicon from '../../img/services/servicesicon.jpg'
+import servicesicon from '../../img/services/servicesicon.jpg';
+import { Modal,ModalBody } from "reactstrap";
+import sd1 from '../../img/services/sd1.jpg';
+import lform from '../../img/services/lform.jpg';
 const LeadGeneration = () => {
+  const [modallead, setModallead] = useState(false);
+    const togglelead = () => setModallead(!modallead);
   const data = [
     {
       servicename: "Cash Management",
@@ -84,10 +89,67 @@ const LeadGeneration = () => {
                         <Button
                         classNames="allbtn-primary glow-on-hover text-light Drive-Excess-Conversion"
                         data-aos="fade-left"
-                        text="Drive-Excess-Conversion">
+                        text="Drive-Excess-Conversion" onClick={togglelead} fun={()=>setModallead(true)}>
                         </Button>
                     </div>
                     <br></br>
+                    <div className="lead-form">
+                    <Modal centered isOpen={modallead} className="modal-dialog modal-lg largemodel" toggle={togglelead}
+                        dialogClassName="modal-90w"
+                        aria-labelledby="example-custom-modal-styling-title"
+                    >
+                            <ModalBody>
+                                <div className="row">
+                                <span  className="leadmodalclosebtn"  onClick={() => setModallead(false)} style={{float:'right'}} ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                    <div className="d-flex justify-content-center heading-form-demand">
+                                            {/* <Heading h1Class="aboutwherewe" title="Let's Connect With Us"></Heading> */}
+                                            <h4>Let's Connect With Us</h4>
+                                            </div>
+                                        <img src={lform} className="lead-topimg"alt="lead-form-topimg">
+                                        </img> 
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-4">
+                                        <img src={sd1} className="lead-sideimg" alt="lead-form-img"></img>
+                                    </div> 
+                                    <div className="col-8">
+                                    <form  autocomplete="off">
+                                                              <div className="form-lead">
+                                                                <i className="fa fa-user"></i>
+                                                                <input type="text" className="lead-input" id="Fname" placeholder="First Name" required autocomplete="off"/>
+                                                                </div>
+                                                                <div className="form-lead">
+                                                                <i className="fa fa-user"></i>
+                                                                <input type="text" className="lead-input" id="Lname" placeholder="Last Name" required autocomplete="off"/>
+                                                                </div>
+                                                                <div className="form-lead">
+                                                                <i className="fa fa-phone"></i>
+                                                                <input type="number" className="lead-input" id="Pnumber" placeholder="Phone Number" maxLength="10" required/>
+                                                                </div>
+                                                                <div className="form-lead">
+                                                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                                                <input type="text" className="lead-input" id="Email" placeholder="Your Email" autocomplete="off" required/>
+                                                                </div>
+                                                                <div className="form-lead">
+                                                                <i className="fa fa-address-book" aria-hidden="true"></i>
+                                                                <input type="text" className="lead-input" id="" placeholder="Company Name" autocomplete="off" required/>
+                                                                </div>
+                                                                <div className="textarea-lead">
+                                                                    <input type="text-area" className="lead-textarea" id="" rows="4" cols="50" placeholder="Write Message Here..." required></input>
+                                                                </div>
+            
+                                                                    <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
+                                                                     <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
+                                                                    </div>
+                                                          
+                                                            </form>
+                                    </div>
+                                </div>
+                            </ModalBody>
+                        </Modal>
+                    </div>
                 </div>
               </div>
             </div>
