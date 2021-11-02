@@ -1,8 +1,9 @@
-// import React from 'react';
+// import React,{useState,useEffect,useSession} from 'react';
 // import {Modal,ModalBody} from 'react-strap';
 // import cookie_bite from '../../img/cookie-bite.svg';
 // const useSessionModal = ()=> {
 //     const session = useSession();
+//     const [showModal, hideModal] = useSessionModal();
 //     const [showModal, setShowModal] = useState(false);
 //     const hideModal = ()=>{
 //         const modalKey = "modalSession";
@@ -10,16 +11,14 @@
 //         setShowModal(false);
 //     }
 //     useEffect(()=> {
-//         const modalKey = "modalSession";a
+//         const modalKey = "modalSession";
 //         const modalSession = localStorage.getItem(modalKey);
 //         setShowModal(modalSession!==session);
 //     });
 //     return [showModal, hideModal];
 // }
 
-// // const Modal = () => {
-//     const [showModal, hideModal] = useSessionModal();
-
+//  const Modal = () => {
 //   return (
 //     <>
 //       {showModal ? (
@@ -30,5 +29,5 @@
 //       ) : null}
 //     </>
 //   );
-// // };
+//       };
 // export default useSessionModal;

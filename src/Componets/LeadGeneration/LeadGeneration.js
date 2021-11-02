@@ -14,8 +14,8 @@ import service7 from "../../img/services/s7.jpg";
 import service8 from "../../img/services/s8.jpg";
 import servicesicon from '../../img/services/servicesicon.jpg';
 import { Modal,ModalBody } from "reactstrap";
-import sd1 from '../../img/services/sd1.jpg';
-import lform from '../../img/services/lform.jpg';
+import d from '../../img/services/vissionimg.jpg';
+
 const LeadGeneration = () => {
   const [modallead, setModallead] = useState(false);
     const togglelead = () => setModallead(!modallead);
@@ -93,33 +93,28 @@ const LeadGeneration = () => {
                         </Button>
                     </div>
                     <br></br>
-                    <div className="lead-form">
-                    <Modal centered isOpen={modallead} className="modal-dialog modal-lg largemodel" toggle={togglelead}
-                        dialogClassName="modal-90w"
-                        aria-labelledby="example-custom-modal-styling-title"
+                   
+              </div>
+            </div>
+          </div>
+       </div>
+  </section>
+      <div className="lead-form">
+                    <Modal centered isOpen={modallead} className="modal-dialog" toggle={togglelead}
                     >
-                            <ModalBody>
-                                <div className="row">
-                                <span  className="leadmodalclosebtn"  onClick={() => setModallead(false)} style={{float:'right'}} ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
-                                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                    <div className="d-flex justify-content-center heading-form-demand">
-                                            {/* <Heading h1Class="aboutwherewe" title="Let's Connect With Us"></Heading> */}
-                                            <h4>Let's Connect With Us</h4>
-                                            </div>
-                                        <img src={lform} className="lead-topimg"alt="lead-form-topimg">
-                                        </img> 
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-4">
-                                        <img src={sd1} className="lead-sideimg" alt="lead-form-img"></img>
-                                    </div> 
-                                    <div className="col-8">
-                                    <form  autocomplete="off">
-                                                              <div className="form-lead">
-                                                                <i className="fa fa-user"></i>
-                                                                <input type="text" className="lead-input" id="Fname" placeholder="First Name" required autocomplete="off"/>
-                                                                </div>
+                      <ModalBody>
+                      <span  className="leadmodalclosebtn"  onClick={() => setModallead(false)} ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                          <div className="container"> 
+                            <div className="row">
+                                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                            <img src={d} className="lead-form-img" alt=""></img>
+                                 </div>
+                                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                      <form  autocomplete="off">
+                                        <div className="form-lead">
+                                            <i className="fa fa-user"></i>
+                                            <input type="text" className="lead-input" id="Fname" placeholder="First Name" required autocomplete="off"/>
+                                        </div>
                                                                 <div className="form-lead">
                                                                 <i className="fa fa-user"></i>
                                                                 <input type="text" className="lead-input" id="Lname" placeholder="Last Name" required autocomplete="off"/>
@@ -145,16 +140,12 @@ const LeadGeneration = () => {
                                                                     </div>
                                                           
                                                             </form>
-                                    </div>
-                                </div>
+                                                </div>
+                                      </div>
+                                  </div>
                             </ModalBody>
                         </Modal>
-                    </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </section>
+                  </div>
       <section class="section-services text-center">
         <div class="container">
           <div className="d-flex justify-content-center" data-aos="fade-down">
