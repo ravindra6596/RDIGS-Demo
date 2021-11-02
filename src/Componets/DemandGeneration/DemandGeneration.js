@@ -17,8 +17,7 @@ import service8 from '../../img/services/service8.jpg';
 import min from '../../img/services/min.jpg';
 import Heading from '../Heading/Heading';
 import {Modal, ModalBody} from 'reactstrap';
-import dform from '../../img/services/dform.jpg';
-import sd1 from '../../img/services/sd1.jpg';
+import d from '../../img/services/vissionimg.jpg';
 const DemandGeneration=()=>{
     const [modaldemand, setModaldemand] = useState(false);
     const toggledemand = () => setModaldemand(!modaldemand);
@@ -128,62 +127,57 @@ const DemandGeneration=()=>{
                         </div>
                     </div>
                     <div className="demand-form">
-                    <Modal centered isOpen={modaldemand} className="modal-dialog modal-lg demand-form-model" toggle={toggledemand}
-                        dialogClassName="modal-90w"
-                        aria-labelledby="example-custom-modal-styling-title"
-                    >
+                   
+                    <Modal centered isOpen={modaldemand} className="modal-dialog" toggle={toggledemand}>
                             <ModalBody>
+                                <span  className="demandmodalclosebtn" onClick={() => setModaldemand(false)}  ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                                <div className="container"> 
                                 <div className="row">
-                                <span  className="demandmodalclosebtn"  onClick={() => setModaldemand(false)} style={{float:'right'}} ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
-                                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 demand-form-col12">
-                                            <div className="d-flex justify-content-center heading-form-demand">
-                                            <h4>Let's Connect With Us</h4>
+                                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                            <img src={d} className="demand-form-img" alt=""></img>
+                                 </div>
+                                <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <div className="form-backimg">
+                                        <form  autocomplete="off">
+                                            <div className="form-demand">
+                                                <i className="fa fa-user"></i>
+                                                    <input type="text" className="demand-input" id="Fname" placeholder="First Name" required autocomplete="off"/>
                                             </div>
-                                        <img src={dform} className="demand-topimg"alt="demand-form-topimg">
-                                        </img> 
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-4">
-                                        <img src={sd1} className="demand-sideimg" alt="demand-form-img"></img>
-                                    </div> 
-                                    <div className="col-8 form-backimg">
-                                    <form  autocomplete="off">
-                                                              <div className="form-demand">
-                                                                <i className="fa fa-user"></i>
-                                                                <input type="text" className="demand-input" id="Fname" placeholder="First Name" required autocomplete="off"/>
-                                                                </div>
-                                                                <div className="form-demand">
-                                                                <i className="fa fa-user"></i>
-                                                                <input type="text" className="demand-input" id="Lname" placeholder="Last Name" required autocomplete="off"/>
-                                                                </div>
-                                                                <div className="form-demand">
-                                                                <i className="fa fa-phone"></i>
-                                                                <input type="number" className="demand-input" id="Pnumber" placeholder="Phone Number" maxLength="10" required/>
-                                                                </div>
-                                                                <div className="form-demand">
-                                                                <i className="fa fa-envelope" aria-hidden="true"></i>
-                                                                <input type="text" className="demand-input" id="Email" placeholder="Your Email" autocomplete="off" required/>
-                                                                </div>
-                                                                <div className="form-demand">
-                                                                <i className="fa fa-address-book" aria-hidden="true"></i>
-                                                                <input type="text" className="demand-input" id="" placeholder="Company Name" autocomplete="off" required/>
-                                                                </div>
-                                                                <div className="textarea-demand">
-                                                                    <input type="text-area" className="demand-textarea" id="" placeholder="Write Message Here..." required></input>
-                                                                </div>
+                                            <div className="form-demand">
+                                                <i className="fa fa-user"></i>
+                                                    <input type="text" className="demand-input" id="Lname" placeholder="Last Name" required autocomplete="off"/>
+                                            </div>
+                                            <div className="form-demand">
+                                                <i className="fa fa-phone"></i>
+                                                <input type="number" className="demand-input" id="Pnumber" placeholder="Phone Number" maxLength="10" required/>
+                                            </div>
+                                            <div className="form-demand">
+                                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                                <input type="text" className="demand-input" id="Email" placeholder="Your Email" autocomplete="off" required/>
+                                            </div>
+                                            <div className="form-demand">
+                                                <i className="fa fa-address-book" aria-hidden="true"></i>
+                                                <input type="text" className="demand-input" id="" placeholder="Company Name" autocomplete="off" required/>
+                                            </div>
+                                            <div className="textarea-demand">
+                                            <input type="text-area" className="demand-textarea" id="" placeholder="Write Message Here..." required></input>
+                                            </div>
             
-                                                                    <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
-                                                                     <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
-                                                                    </div>
+                                            <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
+                                                <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
+                                            </div>
                                                           
-                                                            </form>
-                                    </div>
-                                </div>
+                                        </form>
+                                        </div>
+                                        </div>    
+                                    </div> 
+                            </div>
+                               
                             </ModalBody>
                         </Modal>
+                       
                     </div>
-                    <div className="col-sm-6 col-md-6 col-lg-6 Demand-img-col">
+                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 Demand-img-col">
                         <div class="text-center lg-img aos-init aos-animate" data-aos="fade-left">
                             <img src={demad2} alt="Demand Generation" className="Demand-img1" data-aos="fade-down"/>
                         </div>

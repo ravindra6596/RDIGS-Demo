@@ -77,10 +77,10 @@ const scrollgoToplink = () => {
                                   <span className="homemodalclosebtn" onClick={() => setModal(false)} ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
                                             <div className="container"> 
                                                 <div className="row">
-                                                    <div className="col-sm-6 col-md-6 col-lg-6">
+                                                    <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                                         <img src={corporatedeskimg} alt="corporate-dec-img" className="corporate-img img-fluid"></img>
                                                     </div>
-                                                    <div className="col-sm-6 col-md-6 col-lg-6">
+                                                    <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                                         <h2 className="text-center model-head-cop">Corporate Deck 2021</h2>
                                                             <form onSubmit={onResolveddata} autocomplete="off">
                                                               <div className="corporate-form-in1">

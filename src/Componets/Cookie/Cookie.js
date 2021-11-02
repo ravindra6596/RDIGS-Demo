@@ -29,10 +29,10 @@ const Cookie = () => {
         cookies.set('myCat', 'Pacman','access_token', { path: '/' });
         cookies.set('essential', 'essential', { path: '/'});
         cookies.set('preferences', 'preferences', { path: '/'}); 
-        if(localStorage.getItem('.modelcookie') != 'shown'){
-            setShowModal(".modelcookie").delay(2000).fadeIn();
-            localStorage.setItem('.modelcookie','shown')
-        }      
+        // if(localStorage.getItem('.modelcookie') != 'shown'){
+        //     setShowModal(".modelcookie").delay(2000).fadeIn();
+        //     localStorage.setItem('.modelcookie','shown')
+        // }      
     }
     function handlePreferences(e){
         if(setPreferences(e.target.value)===true){
@@ -53,7 +53,8 @@ const Cookie = () => {
     const readCookie = () => {
         console.log(cookies.get('myCat'));
         console.log(cookies.get('essential'));
-        console.log(cookies.get('preferences'));   
+        console.log(cookies.get('preferences'));
+        localStorage.getItem('.modelcookie'); 
      }
     const componentDidMount=()=>{
         window.addEventListener("beforeunload", (e) => {

@@ -17,8 +17,6 @@ import s10 from '../../img/client/client10.jpg';
 import s11 from '../../img/client/client11.jpg';
 import s12 from '../../img/client/client12.jpg';
 
-
-
 const Companyslider = () => {
   var settings = {
     dots: false,

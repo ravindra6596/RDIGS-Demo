@@ -154,6 +154,21 @@ const CompanyProfile1 = () => {
               </div>
               </div>
               </section> 
+              <section>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-12">
+                      {/* <img src={} className="" alt=""></img> */}
+                    </div>
+                    <div class="card-comp">
+                      <h5 class="card-comp">Lara's 1th Birthday</h5>
+                      <p class="text-center">Sunday, September 26th at 7:00 pm</p>
+                      <p class="card-comp">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+      
     </>
   );
 };
