@@ -1,10 +1,9 @@
 import React from "react";
 import "./CompanyProfile1.css";
 import Heading from "../Heading/Heading";
-import { Header } from "semantic-ui-react";
 import Tab from 'react-bootstrap/Tab';
 import {Nav,Row,Col} from 'react-bootstrap';
-import userEvent from "@testing-library/user-event";
+import sliderbackground from '../../img/companyprofile/slider-background-1.jpg';
 const CompanyProfile1 = () => {
   const userdata=[
     {
@@ -154,20 +153,24 @@ const CompanyProfile1 = () => {
               </div>
               </div>
               </section> 
-              <section>
+              {/* <section>
                 <div className="container">
                   <div className="row">
                     <div className="col-12">
-                      {/* <img src={} className="" alt=""></img> */}
+                      <img src={sliderbackground} className="" alt=""></img>
                     </div>
-                    <div class="card-comp">
-                      <h5 class="card-comp">Lara's 1th Birthday</h5>
-                      <p class="text-center">Sunday, September 26th at 7:00 pm</p>
+                    <div className="row">
+                    <div classame="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 card-comp" style={{background:'yellow'}}>
+                      <h5 class="card-comp">jktyertghyjfghjklgjkfghjkl</h5>
+                      <p class="text-center">jhdhjluoiyhoiujopopopopuiuyiuh</p>
                       <p class="card-comp">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    </div>
+                    <div classame="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
                     </div>
                   </div>
                 </div>
-              </section>
+              </section> */}
       
     </>
   );

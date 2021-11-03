@@ -7,6 +7,7 @@ import avatarsm from '../../img/blog/avatar-sm.png';
 import Slider from "react-slick";
 import aboutimg from '../../img/blog/aboutimg.jpg';
 import about1 from '../../img/blog/about1.jpg';
+import bg from '../../video/bg.mp4';
 const Blog = () => {
   
   var blogslider = {
@@ -18,7 +19,40 @@ const Blog = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
 
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+
+    ]
   };
   const carddata=[
     {
@@ -48,20 +82,22 @@ const Blog = () => {
   ];
   const blogdata=[
     {
-      h3name:'Saul Goodman',
+      h3name:'Roland D’Costa',
       h4sub:'Ceo &amp; Founder',
-      slidep:'Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.',
+      h4sub1:'Captain Of The Ship',
+      slidep:'Roland D’Costa, a stellar entrepreneur and a result driven professional, having an incredible track record of building companies and growing pipeline and ultimately revenue.  Roland provides strategic leadership and management direction to RDIGS, he is young, dynamic, and an oracle for all technical solutions, and believes in investing his energy in continuous growth for the customer businesses and beneficiaries.'
     },
     {
-      h3name:'Saul Goodman',
-      h4sub:'Ceo &amp; Founder',
-      slidep:'Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.',
+      h3name:'Ajay Rawat',
+      h4sub:'Chief Operating Officer',
+      h4sub1:'The Superman',
+      slidep:'Best known for his operations, client management and customer service work. Ajay is the superman of our team. He handles the entire RDIGS operations. He has adapted the operational techniques and methodologies that allow RDIGS to excel in performance and gather appreciation from our clients. '
     }
   ]
   return (
     <>
       <div className="nav-contaniner"/>
-      <section className="Blogsection">
+      {/* <section className="Blogsection">
                 <div className="container">
                     <div className="row">
                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style={{ marginTop:'10%'}}>
@@ -70,7 +106,15 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-      </section> 
+      </section>  */}
+{/* ===================================================== */}
+<video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src={bg} type="video/mp4" /></video>
+        <div className="heading-banner-blog text-light">
+          <h2>RD Info Global Solution</h2>
+        </div>
+        <div class="masthead">
+        </div>
+      
 {/* ===================================================== */}
 <section id="about" class="about">
 <div class="container" data-aos="fade-up">
@@ -149,13 +193,15 @@ const Blog = () => {
     </div>
   </div>
      </section>
-  
+  {/* team testimonial slider */}
      <section id="testimonials" class="testimonials">
-      <Slider {...blogslider} className="newtestislider">
+      <div class="container" data-aos="zoom-in">
+       
+        <Slider {...blogslider} className="newtestislider">
       {
       blogdata.map((blog,i)=>{
         return(
-      <div class="container" data-aos="zoom-in">
+          <div className="row">
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -163,6 +209,7 @@ const Blog = () => {
                 <img src={avatarsm} class="testimonial-img" alt=""/>
                 <h3>{blog.h3name}</h3>
                 <h4>{blog.h4sub}</h4>
+                <h4>{blog.h4sub1}</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                  {blog.slidep}
@@ -172,12 +219,12 @@ const Blog = () => {
             </div>
           </div>
         </div>
-      </div>
-        )
-      })
-    }
-      </Slider>
-       
+        </div>
+           )
+          })
+        }
+          </Slider>
+      </div>  
     </section>
            
     </>
