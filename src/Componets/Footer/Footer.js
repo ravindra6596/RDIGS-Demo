@@ -1,6 +1,6 @@
 import React, { useState,useRef } from 'react';
 import {Link} from 'react-router-dom';
-import Button from '../ButtonGroup/Button/button';
+import Button from '../ButtonGroup/Button/Button';
 import ind from '../../img/india.jpg';
 import us from '../../img/US.jpg';
 import footenvolep from '../../img/mailicon.jpg';

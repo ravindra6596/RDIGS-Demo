@@ -1,3 +1,4 @@
+/* main btn css */
 .allbtn-primary {
     color: #fff;
 }
@@ -11,9 +12,7 @@
     color: #fff;
     background-color: #6cbeee;
     border-color: #0062cc;}
-
-/* / / button animation / / */
-     .glow-on-hover {
+ .glow-on-hover {
         width:auto;
         background-color: #1799e3;
         font-weight: 500;
@@ -23,7 +22,6 @@
         border-radius: 20px;
         border: 2px solid #30a6e9;
     }
-    
     .glow-on-hover:before {
         content: '';
         border-radius: 20px;
@@ -47,8 +45,7 @@
         opacity: 0;
         transition: opacity .3s ease-in-out;
         border-radius: 10px;
-    }
-    
+    } 
     .glow-on-hover:active {
         color:#6cbeee; 
         border-radius: 20px;
@@ -76,17 +73,21 @@
         0% { background-position: 0 0; }
         50% { background-position: 400% 0; }
         100% { background-position: 0 0; }
-    } */
+    } 
+
 /* / Button clear css / */
-     .btnclear{
+     .btnclear22{
        width: 130px;
         height: 47px;
         color:#30a6e9 ;
         background-color: transparent;
         border-color: #30a6e9;
-        border-radius: 40px;}
-    .btnclear:focus{outline: none;}
-    /* button */
+        border-radius: 40px;
+    }
+    .btnclear22:hover{border-color: #0062cc;}
+    .btnclear22:focus{
+        outline: none;
+        border-color:#30a6e9;}
     .readmore{
         border-radius: 25px ;
         margin-left: 15px;
@@ -101,37 +102,3 @@
         background-color: white;
         color: black;
     }
-/* =================================================== */ 
- /* .glow-on-hoverarrow{
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-    width:auto;
-    background-color: #1799e3;
-    font-weight: 500;
-    padding: 10px 30px;
-    z-index: 0;
-    border-radius: 20px;
-    border: 1px solid #30a6e9;
-  }
-  
-.glow-on-hoverarrow:after {
-    content: '»';
-    position: absolute;
-    opacity: 0;  
-    top: 10px;
-    font-size: 20px;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .glow-on-hoverarrow:hover{
-    padding-right: 24px;
-    padding-left:8px;
-  }
-  
-  .glow-on-hoverarrow:hover:after {
-    opacity: 1;
-    right: 10px;
-  } */

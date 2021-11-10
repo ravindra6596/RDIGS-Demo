@@ -19,7 +19,3 @@
   border-bottom: solid 4px #30a6e9;
   width: 100px;
 }
-.termdiscimg:hover{
-  -ms-transform: scaleY(1.1); /* IE 9 */
-  transform: scaleY(1.1);
-}

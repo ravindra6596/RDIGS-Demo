@@ -83,6 +83,14 @@ const Header = () => {
                             </div>
                           </p>
                         </span>
+                        <span className="blogmodelicon">
+                          <i class="fa fa-laptop" aria-hidden="true"></i>
+                          <p className="blogmodeltxt">
+                            <div className="forunderline">
+                              <Link to="#" onClick={() => { scrollgoTop(); setExpanded(false); }}>Database Service</Link>
+                            </div>
+                          </p>
+                        </span>
                       </div>
                     </div>
                   </div>

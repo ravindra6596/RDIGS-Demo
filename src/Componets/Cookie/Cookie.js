@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Cookies from 'universal-cookie';
 import './Cookie.css';
-import Button from "../ButtonGroup/Button/button";
+import Button from "../ButtonGroup/Button/Button";
 import { Modal, ModalBody } from 'reactstrap';
 import cookie_bite from '../../img/cookie-bite.svg';
 const Cookie = () => {
@@ -14,7 +14,7 @@ const Cookie = () => {
     const [list, toggleList] = React.useState(false);
     // set time to show model
     useEffect(() => {
-        const timeId = setTimeout(() => setShowModal(true), 2000);
+        const timeId = setTimeout(() => setShowModal(true), 200000);
         return () => clearTimeout(timeId)
     }, []);
 
@@ -77,8 +77,8 @@ const Cookie = () => {
                             <a href="/Privacypolicy" target="_blank" class="cookie-privacy">Privacy Policy</a>.</p>
                         {list ? <List /> : null}
                         <div class="gdprcookie-buttons">
-                            <button type="button" value="SetCookies" name="set" className="customizebtn" onClick={() => { onList(); createCookie(); toggleList(!list);}}>Customize</button>
-                            <span onClick={() => {readCookie(); setShowModal(false); }}> <Button value="GetCookies" name="get" classNames="allbtn-primary glow-on-hover text-light" text="Accept All" data-aos="fade-left"></Button></span>
+                            <Button type="button" value="SetCookies" name="set" classNames="btnclear22" onClick={() => { onList(); createCookie(); toggleList(!list);}} text="Customize"/>
+                            <span onClick={() => {readCookie(); setShowModal(false); }}> <Button value="GetCookies" name="get" classNames="allbtn-primary glow-on-hover text-light" text="Accept All" data-aos="fade-left"/></span>
 
                         </div>
                     </div>
