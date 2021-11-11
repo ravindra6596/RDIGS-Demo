@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
-import "./SalesDevelopment.css";
+import "./LeadGeneration.css";
 import Heading from "../Heading/Heading";
 import Button from "../ButtonGroup/Button/Button";
 import demand1 from "../../img/services/demand1.png";

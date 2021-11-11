@@ -71,7 +71,7 @@ const Header = () => {
                           <i class="fa fa-align-justify" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/salesdevelopment" onClick={() => { scrollgoTop(); setExpanded(false); }}>Sales Development</Link>
+                              <Link to="/leadGeneration" onClick={() => { scrollgoTop(); setExpanded(false); }}>Sales Development</Link>
                             </div>
                           </p>
                         </span>
