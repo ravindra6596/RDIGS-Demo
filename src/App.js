@@ -18,7 +18,7 @@ const Teams = React.lazy(() => import('./Componets/Teams/teams'));
 const Careers = React.lazy(() => import('./Componets/Careers/careers'));
 const Newslatter = React.lazy(() => import('./Componets/Newslatter/Newslatter'));
 const DemandGeneration = React.lazy(() => import('./Componets/DemandGeneration/DemandGeneration'));
-const SalesDevelopment = React.lazy(() => import('./Componets/SalesDevelopment/SalesDevelopment'));
+const LeadGeneration = React.lazy(() => import('./Componets/LeadGeneration/LeadGeneration'));
 const Gallary = React.lazy(() => import('./Componets/Gallery/Gallery'));
 const CompanyProfile1 = React.lazy(() => import('./Componets/CompanyProfile1/CompanyProfile1'));
 const Blog = React.lazy(() => import('./Componets/Blog/Blog'));
@@ -45,7 +45,7 @@ const useSessionModal =React.lazy(()=>import('./Componets/useSessionModal/useSes
               <Route path='/newslatter' exact={true} component={Newslatter}/>
               <Route path='/contact' exact={true} component={Contact}/>
               <Route path='/demandgeneration' exact={true} component={DemandGeneration}/>
-              <Route path='/salesdevelopment' exact={true} component={SalesDevelopment}/>
+              <Route path='/leadGeneration' exact={true} component={LeadGeneration}/>
               <Route path='/gallary' exact={true} component={Gallary}/>
               <Route path='/companyprofile1' exact={true} component={CompanyProfile1}/>
               <Route path='/blog' exact={true} component={Blog}/>
