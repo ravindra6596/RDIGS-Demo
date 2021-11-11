@@ -93,29 +93,6 @@ const Newslatter =()=>{
     return(
     <>
 
-
-  {/* {/ Header Modals /} */}
-  {/* <Modal isOpen={modal} centered>
-        <ModalBody className="homemodalbody" >
-          <span className="homemodalclosebtn" onClick={() => setModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-7 col-md-7 col-sm-7 col-xs-7">
-                <h1>To Get Latest Updates</h1>
-                <form>
-                  <input placeholder="Enter your E-Mail Here " className="homemodalinput" />
-                </form>
-                <div style={{ display: 'flex', marginTop: '5px' }}>
-                  <input type="checkbox" checked />
-                  <p className="homemodalAgree">I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our <span style={{ color: '#30a6e9' }}>Privacy Policy</span> And <span style={{ color: '#30a6e9' }}>Terms and Codition.</span> </p>
-                </div>
-                <div style={{ textAlign: 'center' }}><Button classNames="allbtn-primary glow-on-hover text-light" text="Submit" /></div>
-              </div>
-            </div>
-          </div>
-        </ModalBody>
-      </Modal> */}
-      
       {/* <!-- ======= Newslatter Banner Section ======= --> */}
         <div className="nav-contaniner"/>
           <section className="newssection">

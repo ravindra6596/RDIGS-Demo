@@ -9,7 +9,7 @@ const about = () => {
                 <div className="container" data-aos="fade-up">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6" data-aos="fade-right">
-                          <Heading  h1Class="aboutwherewe" title="About"/>
+                          <Heading  h1Class="clientheadwe" title="About"/>
                               <p className="aboutpara">RD Info Global Solutions, RDIGS is a human driven and technology powered lead and demand generation company. We aid companies to generate, nurture, and convert leads to revenue.</p>
                               <p className="aboutpara"> When our team of experts collaborate with you, we ensure that the lead and demand generation practices we adopt and implement are multi-channel and upscale in strategy and planning. </p> 
                         </div>

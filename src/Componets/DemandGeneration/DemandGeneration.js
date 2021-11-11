@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import { Link } from "react-router-dom";
 import './DemandGeneration.css';
 import Button from '../ButtonGroup/Button/Button';
 import demad2 from '../../img/services/demand1.png';
@@ -60,7 +61,7 @@ const DemandGeneration=()=>{
     const servicecard=[
         {
             serviceimgicon:s1,
-            serviceinnerh1:"Video Marketing",
+            serviceinnerh1:"Account Based Marketing",
             serviceinnerpara:"Reach a huge area of users and get a publicty of your product and service ",
             serviceinnerspan:"video",
             serviceinnerpara1:"solution."
@@ -68,7 +69,7 @@ const DemandGeneration=()=>{
         },
         {
             serviceimgicon:s1,
-            serviceinnerh1:"Email Marketing",
+            serviceinnerh1:"Marketing Qualified Leads",
             serviceinnerpara:"Email Marketing is a great solution to reach a",
             serviceinnerspan:"high range of customers",
             serviceinnerpara1:"service."
@@ -76,7 +77,7 @@ const DemandGeneration=()=>{
         },
         {
             serviceimgicon:s1,
-            serviceinnerh1:"SEO optimization",
+            serviceinnerh1:"Content Syndication",
             serviceinnerpara:"we provide wide range of",
             serviceinnerspan:"seo service",
             serviceinnerpara1:"to make your site at top to reach your target"
@@ -111,7 +112,7 @@ const DemandGeneration=()=>{
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12" style={{marginTop:'10%'}}>
-                            <Heading h1className="clientheadwe" spanClass="spansubhead2" title="Demand Generation"/>
+                            <Heading h1Class="clientheadwe"  title="Demand Generation"/>
                             <p style={{color:'white'}}> we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                      </div>
                     </div>
@@ -120,7 +121,7 @@ const DemandGeneration=()=>{
         <section className="Demand-Generation-Sec">
             <div className="container">     
                     <div className="d-flex justify-content-center heading-demand">
-                       <Heading  h1Class="aboutwherewe" title="Demand Generation"></Heading>
+                       <Heading  h1Class="clientheadwe" title="Demand Generation"></Heading>
                     </div>
                 <div className="row">
                     <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 Demand-text-col">
@@ -181,8 +182,7 @@ const DemandGeneration=()=>{
                                         </div>    
                                     </div> 
                             </div>
-                               
-                            </ModalBody>
+                             </ModalBody>
                         </Modal>
                        
                     </div>
@@ -224,7 +224,7 @@ const DemandGeneration=()=>{
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pl-4">
                     <div class="mb-5">
                     <div className="d-flex justify-content-center">
-                        <Heading  h1Class="aboutwherewe" title="Reach your Target Audience"></Heading>
+                        <Heading  h1Class="clientheadwe" title="Reach your Target Audience"></Heading>
                     </div>
                     <p>
                     We run account-based marketing (ABM) campaigns for targeting the accounts by professional demographics to drive more conversions. 
@@ -256,22 +256,19 @@ const DemandGeneration=()=>{
             servicecard.map((user,index)=>{
                 return(
                       <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                        <div class="service-box">
+                       <Link to="/salesdevelopment">
+                            <div class="service-box">
                             <div class="service-img-icon">
                             <img src={user.serviceimgicon} alt="service-icon" class="img-fluid"/>
                             </div>
                             <div class="service-inner">
                                 <h4>{user.serviceinnerh1}</h4>
-        
                                 <p className="text">{user.serviceinnerpara}&nbsp;<span>{user.serviceinnerspan}</span>&nbsp;{user.serviceinnerpara1} 
                                 </p>
-                         
                            </div>
-                        
-                          <Button  classNames="readmore glow-on-hover" text="Readmore">       
-                          </Button>  
-                            
-                        </div>
+                           <Button  classNames="readmore glow-on-hover" text="Readmore"/> 
+                         </div>
+                         </Link>
                       </div>
                      )
                  })

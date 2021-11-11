@@ -14,7 +14,7 @@ const Cookie = () => {
     const [list, toggleList] = React.useState(false);
     // set time to show model
     useEffect(() => {
-        const timeId = setTimeout(() => setShowModal(true), 2000);
+        const timeId = setTimeout(() => setShowModal(true), 200000);
         return () => clearTimeout(timeId)
     }, []);
 

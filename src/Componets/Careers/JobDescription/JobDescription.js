@@ -5,15 +5,12 @@ import { useEffect, useState } from 'react';
 const JobDescription =()=>{
 
         const[selectedFile,setSelectedFile] = useState();
-        const[isFilePicked,setIsFilePicked] = useState(false);
         const changeHandler = (e) => {
             setSelectedFile(e.target.files[0]);
         }
         const handleSubmission = () => {
         }
-    
-
-    
+ 
     return(
     <>
     <div className="nav-contaniner"></div>
@@ -71,14 +68,10 @@ const JobDescription =()=>{
                                 <div className="form-group" style={{textAlign:'justify',border:'1px solid #ced4da'}}>
                                     <label for="exampleInputFile">Upload File</label><i class="fa fa-image mx-2 updatePost"></i><small class="img-add">(only Pdf, Doc, & txt files are allowed)</small>
                                     <div className="input-group">
-                                    <div className="custom-file">
-                                    <div class="input-group">
-                                        <input type="file" name="file" onChange={changeHandler} />
-                                        <div style={{height:'60px'}}>
-                                            <Button text="Save" classNames="allbtn-primary glow-on-hover text-light" onClick={handleSubmission} />
-                                        </div>
-                                    </div>
-                               
+                                        <div className="custom-file">
+                                            <div class="input-group">
+                                                <input type="file" name="file" onChange={changeHandler} style={{backgroundColor:'lightblue'}}/>
+                                            </div> 
                                         </div>
                                     </div>
                                 </div>

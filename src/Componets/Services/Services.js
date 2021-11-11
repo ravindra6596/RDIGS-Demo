@@ -44,7 +44,7 @@ const Servicess =()=>{
         <section id="services" className="portfolio">
             <div className="container" data-aos="fade-up">
             <div className="section-title"> 
-                <Heading h1Class="aboutwherewe" spanClass="spansubhead1" title="Services"/>
+                <Heading h1Class="clientheadwe" spanClass="spansubhead1" title="Services"/>
                 <p className="service-para">We extensively evaluate the technology so as to bring the highest quality performance to you and after our research we adopted the Reverse Lead Generation Funnel, that increased our sales by 14.25% and we are able to move prospects through the sales cycle 23% faster.</p>
             </div> 
                
