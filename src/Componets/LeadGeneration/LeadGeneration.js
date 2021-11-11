@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import "./LeadGeneration.css";
 import Heading from "../Heading/Heading";
-import Button from "../ButtonGroup/Button/button";
+import Button from "../ButtonGroup/Button/Button";
 import demand1 from "../../img/services/demand1.png";
 import min from "../../img/services/min.jpg";
 import service1 from "../../img/services/s1.jpg";

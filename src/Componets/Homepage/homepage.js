@@ -6,7 +6,7 @@ import Testimonial from "../Testimonial/Testimonial";
 import Companyslider from "../CompanySlider/Companyslider";
 import About from "../About/about";
 import Services from "../Services/Services";
-import Button from '../ButtonGroup/Button/button';
+import Button from '../ButtonGroup/Button/Button';
 import modalimg from '../../img/modalhomeimg.png';
 import { Modal, ModalBody } from 'reactstrap';
 

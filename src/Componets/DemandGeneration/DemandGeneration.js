@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import './DemandGeneration.css';
-import Button from '../ButtonGroup/Button/button';
+import Button from '../ButtonGroup/Button/Button';
 import demad2 from '../../img/services/demand1.png';
 import goal from '../../img/services/goal.png';
 import paidsearch from '../../img/services/paidsearch.png';

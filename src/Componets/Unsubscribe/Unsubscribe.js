@@ -1,6 +1,6 @@
 import './Unsubscribe.css';
 import Heading from '../Heading/Heading';
-import Button from '../ButtonGroup/Button/button';
+import Button from '../ButtonGroup/Button/Button';
 import unsubimg from '../../img/unsub2.jpg';
 const Unsubscribe = () => {
    return (
@@ -11,7 +11,7 @@ const Unsubscribe = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12" style={{marginTop:'10%'}}>
-                            <Heading classNames="clientheadwe" title="Unsubscribe"/>
+                            <Heading h1Class="aboutwherewe" title="Unsubscribe"/>
                             <p style={{color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                         </div>
                     </div>
