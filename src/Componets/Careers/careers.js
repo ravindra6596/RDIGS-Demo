@@ -64,7 +64,7 @@ const careers = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-sm-12">
-                            <Heading h1Class="aboutwherewe" spanClass="spansubhead1" title="Benefits of joining our Team" />
+                            <Heading h1Class="clientheadwe" spanClass="spansubhead1" title="Benefits of joining our Team" />
                         </div>
                     </div>
                     <div className="row" style={{ marginBottom: '5%' }} data-aos="fade-up" data-aos-delay="200">

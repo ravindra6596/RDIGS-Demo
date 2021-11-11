@@ -1,5 +1,5 @@
 .Lead-Generation-banner{
-    height: 60vh;
+    height: 70vh;
     background-image: linear-gradient(
         rgb(0 0 0 / 60%),
         rgb(0 0 0 / 68%)
@@ -36,8 +36,8 @@
 }
 .effect-circled img { width: 120px;}
 .lead-right{
-    font-size: 20px;
-    text-align: left;
+    font-size: 18px;
+    text-align: justify;
 }
 .Lead-subhead{padding: 10px;}
 .Lead-icon-col{margin-top:50px;}

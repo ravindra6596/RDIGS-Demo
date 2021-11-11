@@ -27,7 +27,7 @@ const Gallery = () => {
       <section className="Gallery-section">
         <div className="container">
           <div className="d-flex justify-content-center heading-gallery1">
-            <Heading h1Class="aboutwherewe" title="Gallery"></Heading>
+            <Heading h1Class="clientheadwe" title="Gallery"></Heading>
           </div>
         </div>
         <div className="row gallary-section1">

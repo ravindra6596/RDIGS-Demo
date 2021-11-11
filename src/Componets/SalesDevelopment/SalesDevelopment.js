@@ -1,5 +1,6 @@
 import React,{useState} from "react";
-import "./LeadGeneration.css";
+import { Link } from "react-router-dom";
+import "./SalesDevelopment.css";
 import Heading from "../Heading/Heading";
 import Button from "../ButtonGroup/Button/Button";
 import demand1 from "../../img/services/demand1.png";
@@ -21,37 +22,18 @@ const LeadGeneration = () => {
     const togglelead = () => setModallead(!modallead);
   const data = [
     {
-      servicename: "Cash Management",
+      servicename: "Sales Qualified Leads",
       serviceimg: service1,
     },
     {
-      servicename: "Payments",
+      servicename: "Confirmed Call Back",
       serviceimg: service2,
     },
     {
-      servicename: "M &amp; A Assistance",
+      servicename: "Appointment Setting",
       serviceimg: service3,
     },
-    {
-      servicename: "Local Expertise",
-      serviceimg: service4,
-    },
-    {
-      servicename: "Video &amp; Photo Production",
-      serviceimg: service5,
-    },
-    {
-      servicename: "Graphic designed",
-      serviceimg: service6,
-    },
-    {
-      servicename: "Strategy",
-      serviceimg: service7,
-    },
-    {
-      servicename: "Branding",
-      serviceimg: service8,
-    },
+    
   ];
   return (
     <>
@@ -60,16 +42,20 @@ const LeadGeneration = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12" style={{marginTop:'10%'}}>
-                            <Heading h1className="clientheadwe" spanClass="spansubhead2" title="Lead Generation"/>
-                            <p style={{color:'white'}}> we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
-                     </div>
+                            <Heading h1Class="clientheadwe" title="Sales Development"/>
+                            <p style={{color:'white'}}> A Strong Sales Opportunity</p>
+                            <p style={{color:'white'}}>G-BANT- A perfect approach to help sales reps determine a good fit prospect based on the
+                              prospect’s Goals, Budget, Authority or Ability to purchase, Need, and Timeline of purchase. G-BANT
+                              strengthens your sales, marketing, management, and operations team to locate the prospects and
+                              focus on only those, who can become a customer.</p>
+                        </div>
                     </div>
                 </div>
             </section>
       <section className="Lead-Generation-Sec">
         <div className="container">
           <div className="d-flex justify-content-center Lead-heading-top">
-            <Heading h1Class="aboutwherewe" title="Lead Generation"></Heading>
+            <Heading h1Class="clientheadwe" title="G-BANT QUALIFIED LEADS"></Heading>
           </div>
           <div className="row">
             <div className="col-sm-6 col-md-6 col-lg-6 Lead-img-col">
@@ -82,19 +68,19 @@ const LeadGeneration = () => {
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6 Lead-text-col">
               <div class="lead-title aos-init aos-animate" data-aos="fade-up">
-                <div>
-                    <h4 className="Lead-subhead" data-aos="fade-up">
-                      Reach your Target Audience
-                    </h4>
-                   
-                    <p class="lead-right" data-aos="fade-up">
-                      We run account-based marketing (ABM) campaigns for targeting
-                      the accounts by professional demographics to drive more
-                      conversions. We generate target accounts and nurture them
-                      based on content, relevant communications and contextual
-                      marketing.
-                    </p>
-                    </div>
+                  <div>
+                    <h4 className="Lead-subhead" data-aos="fade-up" style={{textAlign:'justify'}}>A Deeper Understanding With G-BANT</h4>
+                    <p className="lead-right" data-aos="fade-up">After a deep research, we have our unique cut above process to help your reps with better tailor the
+                        next steps they take in the sale process. We have added a Goal, into our BANT process, because we
+                        think without knowing goal, everything is like, A shot in the dark. </p>
+                        <ul>
+                         <li className="lead-right" data-aos="fade-left">G- Goals – Do you know what are prospect’s Goals?</li>
+                        <li className="lead-right" data-aos="fade-left">B- Budget - Are there Funds allocated for a solution?</li>
+                        <li className="lead-right" data-aos="fade-left">A – Authority - Are you speaking with a person who will sign the deal?</li>
+                        <li className="lead-right" data-aos="fade-right">N – Need - Are you aware about the challenges prospect is facing?</li>
+                        <li className="lead-right" data-aos="fade-left">T- Timeline – In what months/ years/ days a solution can be implemented?</li>
+                        </ul>
+                  </div>
                     <div className="Drive-Excess-Conversion-Lead">
                         <Button
                         classNames="allbtn-primary glow-on-hover text-light Drive-Excess-Conversion"
@@ -159,7 +145,7 @@ const LeadGeneration = () => {
       <section class="section-services text-center">
         <div class="container">
           <div className="d-flex justify-content-center" data-aos="fade-down">
-            <Heading h1Class="aboutwherewe" title="Services"></Heading>
+            <Heading h1Class="clientheadwe" title="Services"></Heading>
           </div>
           <p>
             <span class="text-width-1" data-aos="fade-down">
@@ -171,14 +157,16 @@ const LeadGeneration = () => {
           <div class="row row-50 row-xxl-70 offset-top-2 services-row">
             {data.map((user, index) => {
               return (
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <div className="serviceLead">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                 <Link to="/demandgeneration">
+                    <div className="serviceLead">
                     <img
                       class="thumbnail-light-image"
                       src={user.serviceimg}
                       alt=""
                     />
                   </div>
+                  </Link>
                   <h5 class="thumbnail-light-title" data-aos="fade-left">
                     {user.servicename}
                   </h5>
@@ -201,7 +189,7 @@ const LeadGeneration = () => {
                 <div class="right-caption">
                   <div class="section-tittle section-tittle2 mb-50">
                     <div className="d-flex justify-content-center">
-                      <Heading h1Class="aboutwherewe"  title="Our Best Services"></Heading>
+                      <Heading h1Class="clientheadwe"  title="Our Best Services"></Heading>
                     </div>
                   </div>
                   <div class="support-caption">

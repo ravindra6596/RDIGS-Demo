@@ -13,7 +13,7 @@ const CareerGallery = () => {
         <>
             <section>          
                 <div class="container">
-                    <Heading h1Class="aboutwherewe" spanClass="spansubhead1"title="Our Culture"/>
+                    <Heading h1Class="clientheadwe" title="Our Culture"/>
                     <p style={{color:'black'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
 
                     <div className="row">

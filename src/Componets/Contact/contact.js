@@ -18,12 +18,8 @@ const Contact = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(inputs);
-        // event.target.reset();
       }
-      const resetdata =(event) =>{
-          event.target.value="";
-      }
-      // Capcha 
+ // Capcha 
       const recaptchaRef = React.createRef();
       let recaptcha = useRef(null);
   
@@ -33,7 +29,7 @@ const Contact = () => {
 
     return (
         <>
-            <div className="nav-contaniner" />
+        <div className="nav-contaniner" />
             <section className="contactfirst-sec">
                 <div className="container">
                     <div className="row">
@@ -121,7 +117,7 @@ const Contact = () => {
 
             <section>
                 <div className="container" data-aos="fade-up">
-                     <Heading h1Class="aboutwherewe" title="Contact Us" />
+                     <Heading h1Class="clientheadwe" title="Contact Us" />
                     <p className="consubtxt">Get in Touch with us to embark on a path of success</p>
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6" style={{ textAlign: 'justify' }}>
