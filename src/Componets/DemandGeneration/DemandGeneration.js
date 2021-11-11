@@ -152,11 +152,7 @@ const DemandGeneration=()=>{
                                         <form  autocomplete="off">
                                             <div className="form-demand">
                                                 <i className="fa fa-user"></i>
-                                                    <input type="text" className="demand-input" id="Fname" placeholder="First Name" required autocomplete="off"/>
-                                            </div>
-                                            <div className="form-demand">
-                                                <i className="fa fa-user"></i>
-                                                    <input type="text" className="demand-input" id="Lname" placeholder="Last Name" required autocomplete="off"/>
+                                                    <input type="text" className="demand-input" id="Fname" placeholder="Your Name" required autocomplete="off"/>
                                             </div>
                                             <div className="form-demand">
                                                 <i className="fa fa-phone"></i>
@@ -169,9 +165,6 @@ const DemandGeneration=()=>{
                                             <div className="form-demand">
                                                 <i className="fa fa-address-book" aria-hidden="true"></i>
                                                 <input type="text" className="demand-input" id="" placeholder="Company Name" autocomplete="off" required/>
-                                            </div>
-                                            <div className="textarea-demand">
-                                            <input type="text-area" className="demand-textarea" id="" placeholder="Write Message Here..." required></input>
                                             </div>
                                             <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
                                                 <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
