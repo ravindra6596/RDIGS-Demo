@@ -1,4 +1,14 @@
-
+.Demand-Generation-banner{
+    height: 60vh;
+    background-image: linear-gradient(
+        rgb(0 0 0 / 60%),
+        rgb(0 0 0 / 68%)
+      ),
+      url('../../img/services/demandbanner.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .Demand-Generation-Sec{
     background-color: white;
     background-image: url('../../img/services/banner_back1.png');

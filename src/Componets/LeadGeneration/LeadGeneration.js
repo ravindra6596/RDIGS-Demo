@@ -56,6 +56,16 @@ const LeadGeneration = () => {
   return (
     <>
       <div className="nav-contaniner" />
+      <section className="Lead-Generation-banner">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12" style={{marginTop:'10%'}}>
+                            <Heading h1className="clientheadwe" spanClass="spansubhead2" title="Lead Generation"/>
+                            <p style={{color:'white'}}> we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
+                     </div>
+                    </div>
+                </div>
+            </section>
       <section className="Lead-Generation-Sec">
         <div className="container">
           <div className="d-flex justify-content-center Lead-heading-top">
