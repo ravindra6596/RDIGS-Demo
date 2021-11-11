@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from "react";
 import "./Blog.css";
 import axios from 'axios';
-import Button from '../ButtonGroup/Button/button';
+import Button from '../ButtonGroup/Button/Button';
 import cardimg2 from "../../img/blog/cardimg2.jpg";
 import aboutimg from '../../img/blog/aboutimg.jpg';
 import bg from '../../video/bg.mp4';

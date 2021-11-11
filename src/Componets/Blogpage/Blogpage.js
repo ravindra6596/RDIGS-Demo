@@ -4,7 +4,7 @@ import cardimg2 from '../../img/blog/cardimg2.jpg';
 import blogrecent from '../../img/blog/blogrecent.jpg';
 import recentblog from '../../img/blog/recentblog.jpg';
 import blogauthor from '../../img/blog/blog-author.jpg';
-import Button from '../ButtonGroup/Button/button';
+import Button from '../ButtonGroup/Button/Button';
 const Blogpage=()=>{
     return(
         <>
