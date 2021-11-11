@@ -1,6 +1,6 @@
 import './JobDescription.css';
 import Heading from '../../Heading/Heading';
-import Button from '../../ButtonGroup/Button/button';
+import Button from '../../ButtonGroup/Button/Button';
 import { useEffect, useState } from 'react';
 const JobDescription =()=>{
 
@@ -74,39 +74,12 @@ const JobDescription =()=>{
                                     <div className="custom-file">
                                     <div class="input-group">
                                         <input type="file" name="file" onChange={changeHandler} />
-                                        <div>
-                                            <button  onClick={handleSubmission}>Browse</button>
+                                        <div style={{height:'60px'}}>
+                                            <Button text="Save" classNames="allbtn-primary glow-on-hover text-light" onClick={handleSubmission} />
                                         </div>
                                     </div>
-                                            
-                                      
-
-                                        
-                                        
-                                   
-
-
-                                    {/* <div class="form-group">
-                                        <div class="input-group">
-                                        <input type="text" class="form-control" readonly/>
-                                        <div class="input-group-btn" >
-                                        <span class="fileUpload btn btn-success" type="submit"  onClick={handleSubmission}>
-                                            <span class="upl" id="upload">Upload single file</span>
-                                            <input type="file" class="upload up" onChange={changeHandler} id="up" onchange="readURL(this);" />
-                                            </span>
+                               
                                         </div>
-                                        </div>
-                                    </div> */}
- 
-                                        {/* <form >
-                                            <input className="jdfilechoose" type="file" id="myFile" name="filename"/>
-                                            <input className="jdfilechooselabel" type="submit"/>
-                                        </form> */}
-                                        </div>
-                                        {/* <div className="custom-file">
-                                        <input className="jdfilechoose" type="file" name=""  accept="pdf/*" id="filetag" autocomplete="off" required />
-                                        <label className="jdfilechooselabel" for="">Choose file</label>
-                                        </div> */}
                                     </div>
                                 </div>
                                 <div className="row" style={{margin:'5%',textAlign:'center'}}>

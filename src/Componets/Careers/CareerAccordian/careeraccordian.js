@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './careeraccordian.css';
-import Button from '../../ButtonGroup/Button/button';
+import Button from '../../ButtonGroup/Button/Button';
 import opportimg1 from '../../../img/career/oppoimg1.png';
 import opportimg2 from '../../../img/career/oppoimg2.png';
 import opportimg3 from '../../../img/career/oppoimg3.png';
@@ -77,7 +77,7 @@ const scrollgoTop = () => {
                                     Till Apply:<span className="oppdetails">{data.TillApply}</span></p>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-3"  style={{paddingTop:'2%'}}>
-                                   <Link to="/jobdescription" onClick={scrollgoTop}><Button classNames="btnclear " text="Apply Now" /></Link>
+                                   <Link to="/jobdescription" onClick={scrollgoTop}><Button classNames="btnclear22" text="Apply Now" /></Link>
                                 </div>
                             </div>
                         </div>
