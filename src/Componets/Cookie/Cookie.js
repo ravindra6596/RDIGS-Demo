@@ -79,7 +79,6 @@ const Cookie = () => {
                         <div class="gdprcookie-buttons">
                             <Button type="button" value="SetCookies" name="set" classNames="btnclear22" onClick={() => { onList(); createCookie(); toggleList(!list);}} text="Customize"/>
                             <span onClick={() => {readCookie(); setShowModal(false); }}> <Button value="GetCookies" name="get" classNames="allbtn-primary glow-on-hover text-light" text="Accept All" data-aos="fade-left"/></span>
-
                         </div>
                     </div>
                 </Modal>

@@ -19,6 +19,7 @@ import Heading from '../Heading/Heading';
 import {Modal, ModalBody} from 'reactstrap';
 import d from '../../img/services/vissionimg.jpg';
 const DemandGeneration=()=>{
+    // modal
     const [modaldemand, setModaldemand] = useState(false);
     const toggledemand = () => setModaldemand(!modaldemand);
     const data=[
@@ -102,10 +103,20 @@ const DemandGeneration=()=>{
            s2h4para:"Keyword Analysis",
            s2para:"Over the last decade a wide array of brands ranging from tech startups to Fortune 500 enterprises."
        }
-   ]
+   ];
     return(
         <>
       <div className="nav-contaniner"/>
+      <section className="Demand-Generation-banner">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12" style={{marginTop:'10%'}}>
+                            <Heading h1className="clientheadwe" spanClass="spansubhead2" title="Demand Generation"/>
+                            <p style={{color:'white'}}> we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
+                     </div>
+                    </div>
+                </div>
+            </section>
         <section className="Demand-Generation-Sec">
             <div className="container">     
                     <div className="d-flex justify-content-center heading-demand">
@@ -127,7 +138,6 @@ const DemandGeneration=()=>{
                         </div>
                     </div>
                     <div className="demand-form">
-                   
                     <Modal centered isOpen={modaldemand} className="modal-dialog" toggle={toggledemand}>
                             <ModalBody>
                                 <span  className="demandmodalclosebtn" onClick={() => setModaldemand(false)}  ><i class="fa fa-times-circle" aria-hidden="true"></i></span>
@@ -162,7 +172,6 @@ const DemandGeneration=()=>{
                                             <div className="textarea-demand">
                                             <input type="text-area" className="demand-textarea" id="" placeholder="Write Message Here..." required></input>
                                             </div>
-            
                                             <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
                                                 <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
                                             </div>
@@ -240,7 +249,7 @@ const DemandGeneration=()=>{
             </div>
         </div>
        </section>
-       <section id="service">
+<section id="service">
   <div class="container">
     <div class="row">
     {
@@ -252,21 +261,27 @@ const DemandGeneration=()=>{
                             <img src={user.serviceimgicon} alt="service-icon" class="img-fluid"/>
                             </div>
                             <div class="service-inner">
-                            <h4>{user.serviceinnerh1}</h4>
-                            <p>{user.serviceinnerpara}&nbsp;<span>{user.serviceinnerspan}</span>&nbsp;{user.serviceinnerpara1}</p>
-                            </div>
-                          <Button classNames="readmore glow-on-hover" text="Readmore">
+                                <h4>{user.serviceinnerh1}</h4>
+        
+                                <p className="text">{user.serviceinnerpara}&nbsp;<span>{user.serviceinnerspan}</span>&nbsp;{user.serviceinnerpara1} 
+                                </p>
+                         
+                           </div>
+                        
+                          <Button  classNames="readmore glow-on-hover" text="Readmore">       
+                          </Button>  
                             
-                          </Button>
                         </div>
                       </div>
                      )
                  })
-     }
-    </div>
-  </div>
-</section>
+             }
+        </div>
+        </div>
+        </section>
+
         </>
     )
+
 }
 export default DemandGeneration;

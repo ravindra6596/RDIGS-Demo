@@ -6,6 +6,8 @@ import { BrowserRouter, Route,Switch,Redirect} from 'react-router-dom';
 import Header from './Componets/Header/header';
 import Footer from './Componets/Footer/Footer';
 import LoaderExampleDisabled from './Componets/LoaderExampleDisabled/LoaderExampleDisabled';
+import Blogpage from './Componets/Blogpage/Blogpage';
+
 AOS.init({
  duration: 1500
 });
@@ -26,7 +28,8 @@ const Privacypolicy = React.lazy(()=>import('./Componets/Privacypolicy/Privacypo
 const Termscondition = React.lazy(()=>import('./Componets/Termscondition/Termscondition'));
 const Unsubscribe = React.lazy(()=>import('./Componets/Unsubscribe/Unsubscribe'));
 const PageNotFound = React.lazy(()=>import('./Componets/PageNotFound/Pagenotfound'));
-const Cookie =React.lazy(()=>import('./Componets/Cookie/Cookie'));
+const Cookie = React.lazy(()=>import('./Componets/Cookie/Cookie'));
+const Blogpage =React.lazy(()=>import('./Componets/Blogpage/Blogpage'));
 const useSessionModal =React.lazy(()=>import('./Componets/useSessionModal/useSessionModal'));
   return (
     <div className="App">
@@ -55,6 +58,7 @@ const useSessionModal =React.lazy(()=>import('./Componets/useSessionModal/useSes
               <Route path='/useSessionModal' exact={true} componet={useSessionModal}/>
               <Route path='/footer' exact={true} component={Footer}/>
               <Route path="/Pagenotfound" exact={true} component={PageNotFound}/>
+              <Route path="/blogpage" exact={true} component={Blogpage}/>
               <Redirect from="*" to="/Pagenotfound"/>
           </Switch>
           <Footer/>

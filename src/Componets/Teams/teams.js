@@ -77,7 +77,6 @@ const teams =()=>{
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text</p>
                 </div>
             </div>
-
             <div class="row">
                  {data.map((data) => ( 
                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
@@ -88,6 +87,7 @@ const teams =()=>{
                         <div class="member-info">
                             <h4>{data.teamName}</h4>
                             <span>{data.teamdesi}</span>
+                           {/* <p>Roland D’Costa, a stellar entrepreneur and a result driven professional, having an incredible track record of building companies and growing pipeline and ultimately revenue. </p> */}
                             <div class="social-links">
                                 <a href="#"><i class="fa fa-facebook-square"></i></a>
                                 <a href="#"><i class="fa fa-twitter-square"></i></a>
