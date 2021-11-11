@@ -2,7 +2,7 @@ import React, { useState }  from "react";
 import { Modal, ModalBody } from 'reactstrap';
 import Heading from '../Heading/Heading';
 import './Newslatter.css';
-import Button from "../ButtonGroup/Button/button";
+import Button from "../ButtonGroup/Button/Button";
 import newscardimage1 from '../../img/Newslatter/newscardimg1.jpg';
 import newscardimage2 from '../../img/Newslatter/newscardimg2.jpg';
 import newscardimage3 from '../../img/Newslatter/newscardimg3.jpg';

@@ -1,5 +1,5 @@
 import React  from "react";
-import Button from "../ButtonGroup/Button/button";
+import Button from "../ButtonGroup/Button/Button";
 import { Link } from "react-router-dom";
 const Pagenotfound =()=>{
     return(

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, ModalBody } from 'reactstrap';
 import './Banner.css';
-import Button from '../ButtonGroup/Button/button';
+import Button from '../ButtonGroup/Button/Button';
 import banimg from '../../img/Banner/hero-img.png';
 import modalimg from '../../img/modalhomeimg.png';
 import Heading from '../Heading/Heading';
