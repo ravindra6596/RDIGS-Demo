@@ -113,7 +113,7 @@ const CompanyProfile1 = () => {
    {/* ========================== */}
    <section id="testimonials" className="testimonials">
       <div className="container" data-aos="zoom-in">
-      <div className="row">
+    
     <Carousel infiniteLoop useKeyboardArrows autoPlay>
       {
       blogdata.map((blog,i)=>{
@@ -142,7 +142,7 @@ const CompanyProfile1 = () => {
           })
         }
        </Carousel> 
-       </div> 
+
       </div>  
     </section>
   {/* team testimonial slider */}

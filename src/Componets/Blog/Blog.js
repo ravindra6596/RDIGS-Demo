@@ -7,7 +7,16 @@ import aboutimg from '../../img/blog/aboutimg.jpg';
 import bg from '../../video/bg.mp4';
 const Blog = () => {
   const [Data, setData] = useState([]);
-  const [showMore, setShowMore] = useState(false);
+  const [showText, setShowText] = useState(false);
+  const onContent = () => setShowText(true);
+  // customize button on off
+  const [content, toggleContent] = React.useState(false);
+  // const ReadMore = () => {
+  //   const [isReadMore, setIsReadMore] = useState(true);
+  //   const toggleReadMore = () => {
+  //     setIsReadMore(!isReadMore);
+  //   }
+  // }
   useEffect(() => {   
   axios.get(`https://b2bnetworkservices.online/blogs/public`)
               .then(res => {
@@ -15,68 +24,67 @@ const Blog = () => {
                 console.log(Data);
               });
   }, []);
-  // const [visiblecard,setVisiblecard]=useState([3]);
-  // const loadMore=()=>{
-  //   setVisiblecard({
-  //     items: [],
-  //     visiblecard: 3,
-  //     error: false
-  //   });
-  //   setShowMore((prev) => {
-  //      return {visiblecard: prev.visible + 3};
-  //    });
-  //  }
+  // -==================
+//  const[visible,setVisible]=useState(3);
+//  const showMoreItems =()=>{
+//    setVisible((prevValue)=>prevValue + 3);
+//  };
 
-  // const carddata=[
-  //   {
-  //     cardpic:cardimg2,
-  //     cardday:"26",
-  //     cardmonth:"June",
-  //     cardyear:"2021",
-  //     cardhead:"Finance And Legal Working Streams Occur Throughout",
-  //     cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  //   },
-  //    {
-  //     cardpic:cardimg2,
-  //     cardday:"26",
-  //     cardmonth:"June",
-  //     cardyear:"2021",
-  //     cardhead:"Finance And Legal Working Streams Occur Throughout",
-  //     cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  //   },
-  //   {
-  //     cardpic:cardimg2,
-  //     cardday:"26",
-  //     cardmonth:"June",
-  //     cardyear:"2021",
-  //     cardhead:"Finance And Legal Working Streams Occur Throughout",
-  //     cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  //   },
-  //   {
-  //     cardpic:cardimg2,
-  //     cardday:"26",
-  //     cardmonth:"June",
-  //     cardyear:"2021",
-  //     cardhead:"Finance And Legal Working Streams Occur Throughout",
-  //     cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  //   },
-  //   {
-  //     cardpic:cardimg2,
-  //     cardday:"26",
-  //     cardmonth:"June",
-  //     cardyear:"2021",
-  //     cardhead:"Finance And Legal Working Streams Occur Throughout",
-  //     cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  //   },
-  //   {
-  //     cardpic:cardimg2,
-  //     cardday:"26",
-  //     cardmonth:"June",
-  //     cardyear:"2021",
-  //     cardhead:"Finance And Legal Working Streams Occur Throughout",
-  //     cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  //   }
-  // ];
+  const carddata=[
+    {
+      cardpic:cardimg2,
+      cardday:"26",
+      cardmonth:"June",
+      cardyear:"2021",
+      cardhead:"Finance And Legal Working Streams Occur Throughout",
+      cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    },
+     {
+      cardpic:cardimg2,
+      cardday:"26",
+      cardmonth:"June",
+      cardyear:"2021",
+      cardhead:"Finance And Legal Working Streams Occur Throughout",
+      cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    },
+    {
+      cardpic:cardimg2,
+      cardday:"26",
+      cardmonth:"June",
+      cardyear:"2021",
+      cardhead:"Finance And Legal Working Streams Occur Throughout",
+      cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    },
+    {
+      cardpic:cardimg2,
+      cardday:"26",
+      cardmonth:"June",
+      cardyear:"2021",
+      cardhead:"Finance And Legal Working Streams Occur Throughout",
+      cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    },
+    {
+      cardpic:cardimg2,
+      cardday:"26",
+      cardmonth:"June",
+      cardyear:"2021",
+      cardhead:"Finance And Legal Working Streams Occur Throughout",
+      cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    },
+    {
+      cardpic:cardimg2,
+      cardday:"26",
+      cardmonth:"June",
+      cardyear:"2021",
+      cardhead:"Finance And Legal Working Streams Occur Throughout",
+      cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    }
+  ];
+const[noOfElement,setnoOfElement]=useState(3);
+const loadMore =()=>{
+  setnoOfElement(noOfElement + noOfElement);
+}
+const slice = Data.slice(0, noOfElement);
 
   return (
     <>
@@ -126,10 +134,12 @@ const Blog = () => {
      <section className="card-blog">
      <div className="container card-blog-cont ">
        <div className="row">
+       
         {
-          // items.slice(0, visible)
-           Data?.slice(0,3).map((data,i)=>{
-             console.log(data.title);
+          //  Data?.slice(0,3).map((data,i)=>{
+          slice.map((data,i)=>{
+            // Data.slice(0,visible).map((data,i)=>{
+           
              return(
                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 b-card">
                <div className="d-lg-flex card-body card-border">
@@ -139,12 +149,25 @@ const Blog = () => {
                        <div className="date"> <span className="day">{data.publishDate}</span> <span className="month">{data.cardmonth}</span> <span className="year">{data.cardyear}</span> </div>
                    </div> 
                    <div className="content">
+                     <span className="">{data._id}</span>
                        <p className="h-1 mt-4 cardhead">{data.title}</p>
-                        <p className="text-muted mt-3 card-para">{data.shortDes}</p>
+                        <p className="text-muted mt-3 card-para">{data.shortDes}
+                       {toggleContent ? data.shortDes.slice(0,10) : data.shortDes} 
+                        <span onClick={() => { Content();toggleContent(!content); }} className="read-or-hide">
+                        Readmore
+                        </span>
+                        </p>
+                        { content ? "Showless": "Showmore"}
                        <div className="d-flex align-items-center justify-content-between mt-3 pb-3">
-                           <a className="blog-single-page-link" href="/blogpage">
+                          <a className="blog-single-page-link" href="/blogpage">
                            <Button classNames="btnclear22" text="Read More">
                            </Button></a>
+                             {/* <p className="text">
+                            {isReadMore ? text.slice(0, 150) : text}
+                            <span onClick={toggleReadMore} className="read-or-hide">
+                            {isReadMore ? "...read more" : " show less"}
+                            </span>
+                            </p>  */}
                            <div className="d-flex align-items-center justify-content-center foot blog-admin-msg">
                                <p className="admin">{data.author}</p>&nbsp;&nbsp;
                                <p className="ps-3 icon text-muted"><span className="fa fa-comment pe-1"></span>{}</p>
@@ -154,21 +177,35 @@ const Blog = () => {
                </div>
                </div>
                </div> 
+ 
              )
            })
-         }  
-
-         <div className="col-12">
-          <div className="d-flex justify-content-center" style={{marginTop:'10px',marginBottom:'10px'}}>
-
-              <Button text="Load More" classNames="allbtn-primary glow-on-hover text-light" id="loadMore"></Button>
-              </div>
-        </div>
+         }   
     </div>
-  </div>
+    <div className="col-12">
+              <div className="d-flex justify-content-center" style={{marginTop:'10px',marginBottom:'10px'}}>
+                  <Button text="Load More" classNames="allbtn-primary glow-on-hover text-light" id="loadMore" onClick={()=>loadMore()}></Button>
+              </div>
+            </div>
+    </div>
      </section>
   {/* team testimonial slider */}      
     </>
-  );
+  );   
 };
+const Content = () => 
+      <div className="">
+        <h2>
+            GeeksforGeeks: A Computer Science portal for geeks. 
+            It contains well written, well thought and well explained
+            computer science, programming articles and quizzes. 
+            It provides a variety of services for you to learn, so thrive
+            and also have fun! Free Tutorials, Millions of Articles, Live, 
+            Online and Classroom Courses ,Frequent Coding Competitions,
+            Webinars by Industry Experts, Internship opportunities, and Job
+            Opportunities. Knowledge is power!
+        </h2>
+      </div>;
+
+ 
 export default Blog;

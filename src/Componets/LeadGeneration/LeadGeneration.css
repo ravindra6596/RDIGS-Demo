@@ -186,7 +186,7 @@
     align-items: flex-start;
     justify-content: flex-start;
 }
-  /*lead form  */
+  /*==========lead form ============ */
   .lead-input{
     width: 100%;
     border-radius: 6px;
@@ -215,7 +215,6 @@
     margin-top:12px;
 }
 .form-lead i{
-    background-color: lightblue;
     height: 30px;
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;

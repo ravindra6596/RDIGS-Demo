@@ -1,17 +1,18 @@
 /* privacy policy */
+.cookiesection{
+    border-radius: 50px;
+}
 .modelcookie{
     bottom:0;
     position:absolute;
     margin-left:2px;
+    border: 0px solid rgba(0,0,0,.0)!important;
+    background-color: none !important;
 }
 .Cookiemodalclosebtn{
     float:right;
 }
 .gdprcookie {
-    box-shadow: 0 3px 12px #0000001f;
-}
-.gdprcookie {
-    /* position: fixed; */
     color: #3e434d;
     font-size: .8em;
     line-height: 1.5em;
@@ -19,8 +20,10 @@
     max-width: 360px;
     padding: 1rem;
     z-index: 999;
-    border-radius: 10px;
-}
+    /* border-radius: 30px;
+    background-color: white !important; */
+    /* border: 0px solid rgba(0,0,0,.0)!important; */
+} 
 .gdprcookie div, .gdprcookie .gdpr-h2 {
     font-size: 18px;
 }

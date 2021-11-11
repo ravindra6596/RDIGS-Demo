@@ -45,7 +45,8 @@ const Banner = () => {
                 <Heading h1Class="aboutwherewe" spanClass="spansubhead1" title="Build Your Business With "/> 
 
                 <h1><marquee width="50%" direction="left" style={{ fontFamily: 'Orbitron'}} >RDIGS</marquee></h1>
-                <h2>We are team of talented Peoples making Business with your Choice</h2>
+                <h2>We Use Reverse Demand Generation Funnel</h2>
+                <h5>After our research we adopted the Reverse Lead Generation Funnel, that increased our sales by 14.25% and we are able to move prospects through the sales cycle 23% faster. </h5>
                 <div class="text-center text-lg-start">
                   <Button classNames="allbtn-primary glow-on-hover text-light" text="KNOW MORE" fun={() => setModal(true)} />
                 </div>

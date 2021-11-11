@@ -121,13 +121,9 @@ const LeadGeneration = () => {
                                  </div>
                                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                       <form  autocomplete="off">
-                                        <div className="form-lead">
-                                            <i className="fa fa-user"></i>
-                                            <input type="text" className="lead-input" id="Fname" placeholder="First Name" required autocomplete="off"/>
-                                        </div>
                                                                 <div className="form-lead">
-                                                                <i className="fa fa-user"></i>
-                                                                <input type="text" className="lead-input" id="Lname" placeholder="Last Name" required autocomplete="off"/>
+                                                                  <i className="fa fa-user"></i>
+                                                                  <input type="text" className="lead-input" id="Fname" placeholder="Your Name" required autocomplete="off"/>
                                                                 </div>
                                                                 <div className="form-lead">
                                                                 <i className="fa fa-phone"></i>
@@ -141,10 +137,6 @@ const LeadGeneration = () => {
                                                                 <i className="fa fa-address-book" aria-hidden="true"></i>
                                                                 <input type="text" className="lead-input" id="" placeholder="Company Name" autocomplete="off" required/>
                                                                 </div>
-                                                                <div className="textarea-lead">
-                                                                    <input type="text-area" className="lead-textarea" id="" rows="4" cols="50" placeholder="Write Message Here..." required></input>
-                                                                </div>
-            
                                                                     <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
                                                                      <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
                                                                     </div>

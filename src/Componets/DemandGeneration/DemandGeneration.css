@@ -258,18 +258,11 @@
     border: none;
     box-shadow: #00bcd4 2px 2px 2px 2px;
 }
-.demand-textarea{
-    width: 100%;
-    height: auto;
-    margin-top:10px;
-    margin-bottom: 10px;
-    box-shadow: #00bcd4 2px 2px 2px 2px;
-}
+
 .form-demand i{
     position: absolute;
     padding: 5px;
     margin-top:12px;
-    background-color: lightblue;
     height: 30px;
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
