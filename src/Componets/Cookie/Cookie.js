@@ -14,7 +14,7 @@ const Cookie = () => {
     const [list, toggleList] = React.useState(false);
     // set time to show model
     useEffect(() => {
-        const timeId = setTimeout(() => setShowModal(true), 200000);
+        const timeId = setTimeout(() => setShowModal(true), 2000);
         return () => clearTimeout(timeId)
     }, []);
 
@@ -66,22 +66,28 @@ const Cookie = () => {
     return (
         <>
             <section className="cookiesection">
-                <Modal className="modelcookie" isOpen={showModal} toggle={showModal} data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
-                    <div class="gdprcookie">
-                        <span className="Cookiemodalclosebtn" onClick={() => setShowModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
-                        <div>
-                            <img src={cookie_bite} class="cookie-img" alt="Cookie Image" /> Cookies &amp; Privacy Policy
+               <div className="container">
+                <div className="row">
+                    <div className="cookiemodal-div" style={{'border-radius':'30px'}}>
+                    <Modal className="modelcookie" isOpen={showModal} toggle={showModal} data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                        <div class="gdprcookie">
+                            <span className="Cookiemodalclosebtn" onClick={() => setShowModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                            <div>
+                                <img src={cookie_bite} class="cookie-img" alt="Cookie Image" /> Cookies &amp; Privacy Policy
+                            </div>
+                            <p>We use cookies to personalize your experience and analyse web traffic. Learn more about
+                                our use of cookies in our &nbsp;
+                                <a href="/Privacypolicy" target="_blank" class="cookie-privacy">Privacy Policy</a>.</p>
+                            {list ? <List /> : null}
+                            <div class="gdprcookie-buttons">
+                                <Button type="button" value="SetCookies" name="set" classNames="btnclear22" onClick={() => { onList(); createCookie(); toggleList(!list);}} text="Customize"/>
+                                <span onClick={() => {readCookie(); setShowModal(false); }}> <Button value="GetCookies" name="get" classNames="allbtn-primary glow-on-hover text-light" text="Accept All" data-aos="fade-left"/></span>
+                            </div>
                         </div>
-                        <p>We use cookies to personalize your experience and analyse web traffic. Learn more about
-                            our use of cookies in our &nbsp;
-                            <a href="/Privacypolicy" target="_blank" class="cookie-privacy">Privacy Policy</a>.</p>
-                        {list ? <List /> : null}
-                        <div class="gdprcookie-buttons">
-                            <Button type="button" value="SetCookies" name="set" classNames="btnclear22" onClick={() => { onList(); createCookie(); toggleList(!list);}} text="Customize"/>
-                            <span onClick={() => {readCookie(); setShowModal(false); }}> <Button value="GetCookies" name="get" classNames="allbtn-primary glow-on-hover text-light" text="Accept All" data-aos="fade-left"/></span>
-                        </div>
+                    </Modal>
                     </div>
-                </Modal>
+                </div>
+               </div>
             </section>
         </>
     )
