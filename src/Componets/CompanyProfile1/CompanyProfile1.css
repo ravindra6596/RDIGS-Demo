@@ -90,6 +90,10 @@
     z-index: 1;
 }
 /* =======================card testimonial for blog====================== */
+.carousel.carousel-slider .control-arrow{
+    background-color: none;
+}
+
 .testimonials {
     padding: 30px 0;
     background: url('../../img/blog/blog4.jpg') no-repeat; 
