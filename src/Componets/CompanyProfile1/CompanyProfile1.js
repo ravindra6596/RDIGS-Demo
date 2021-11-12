@@ -54,6 +54,12 @@ const CompanyProfile1 = () => {
       h4sub:'Chief Operating Officer',
       h4sub1:'The Superman',
       slidep:'Best known for his operations, client management and customer service work. Ajay is the superman of our team. He handles the entire RDIGS operations. He has adapted the operational techniques and methodologies that allow RDIGS to excel in performance and gather appreciation from our clients. '
+    },
+    {
+      h3name:'William Mathurai',
+      h4sub:'Chif Revenue Officer',
+      h4sub1:'The Superman',
+      slidep:'Best known for his operations, client management and customer service work. Ajay is the superman of our team. He handles the entire RDIGS operations. He has adapted the operational techniques and methodologies that allow RDIGS to excel in performance and gather appreciation from our clients. '
     }
   ]
   return (
@@ -144,7 +150,7 @@ const CompanyProfile1 = () => {
       </div>  
     </section>
   {/* team testimonial slider */}
-            <div className="blog-slider">
+            {/* <div className="blog-slider">
             <div className="blog-slider__wrp swiper-wrapper">
               <div className="blog-slider__item swiper-slide">
                 <div className="blog-slider__img">
@@ -157,7 +163,7 @@ const CompanyProfile1 = () => {
               </div>
             </div>
             <div className="blog-slider__pagination"></div>
-          </div> 
+          </div>  */}
             </section>
               <section className="company-choose-section">
                 <div className="container">

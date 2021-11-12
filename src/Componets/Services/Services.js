@@ -23,21 +23,7 @@ const Servicess =()=>{
             serviceimg:service3,
             servicetitle:"2 level QA check to ensure 100% intent and contact details"
         },
-        {
-            id:"04",
-            serviceimg:service4,
-            servicetitle:"100% accurate contact details"
-        },
-        {
-            id:"06",
-            serviceimg:service6,
-            servicetitle:"Demand Generation"
-        },
-        {
-            id:"07",
-            serviceimg:service7,
-            servicetitle:"Lead Generation"
-        }
+        
     ]
     return(
         <>
@@ -51,7 +37,7 @@ const Servicess =()=>{
             <div className="row" data-aos="fade-up" data-aos-delay="200" >
             {               
                 data.map((user, index) => (
-                <div className="col-lg-4 col-md-4 col-sm-4 service-col-img"style={{marginTop:'3%'}}>
+                <div className="col-lg-4 col-md-4 col-sm-4 service-col-img" data-aos="zoom-in-down" style={{marginTop:'3%'}}>
                     <div className="flip-card">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">      
