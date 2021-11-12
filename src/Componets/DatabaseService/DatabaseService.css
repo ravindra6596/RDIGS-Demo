@@ -9,3 +9,60 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
+
+
+
+
+.dbservice-boximg{
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* animation for image services */
+.serviceLead {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  background: white;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+}
+.serviceLead:after, .serviceLead:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 1s;
+}
+.serviceLead:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid #3085a3;
+  border-left: 5px solid #3085a3;
+}
+.serviceLead:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid #3085a3;
+  border-right: 5px solid #3085a3;
+}
+.serviceLead:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.serviceLead:hover:before, .serviceLead:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
