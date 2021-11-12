@@ -1,7 +1,7 @@
 import './Termscondition.css';
 import Heading from '../Heading/Heading';
 import termsimg from '../../img/termsimg3.png';
-import termsimg1 from '../../img/termsimg4.png';
+import termsimg1 from '../../img/liabilityimg.jpg';
 
 
 
@@ -14,7 +14,7 @@ const Termscondition = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12" style={{marginTop:'10%'}}>
-                        <Heading h1Class="aboutwherewe" title="Terms & Conditions"/>
+                        <Heading h1Class="clientheadwe" title="Terms & Conditions"/>
                         <p style={{color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                      </div>
                 </div>
@@ -90,8 +90,8 @@ const Termscondition = () => {
                            enable the functionality of this area and ease of use for those people visiting. Some of our affiliate / advertising partners may also use cookies.
                         </p>
                         </div>
-                        <div className="col-lg-6 col-md-6"style={{marginTop:'5%'}}>
-                            <img className=" termdiscimg" height={'300px'} src={termsimg1}/>
+                        <div className="col-lg-6 col-md-6">
+                            <img className="img-fluid termdiscimg"style={{height:'300px',width:'100%'}} src={termsimg1}/>
                         </div>
                     </div>
                 </div>
