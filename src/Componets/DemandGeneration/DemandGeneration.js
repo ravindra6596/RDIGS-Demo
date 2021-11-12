@@ -113,7 +113,8 @@ const DemandGeneration=()=>{
                     <div className="row">
                         <div className="col-lg-12" style={{marginTop:'10%'}}>
                             <Heading h1Class="clientheadwe"  title="Demand Generation"/>
-                            <p style={{color:'white'}}> we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
+                            <p style={{color:'white'}}data-aos="fade-right"> Focus On The Accounts That Matters The Most</p>
+                            <p style={{color:'white'}}data-aos="fade-right">ABM perfectly aligns marketing and sales department to derive greatest benefits and revenues. ABM targets accounts and nurture them based on content, relevant communications and contextual marketing</p>
                      </div>
                     </div>
                 </div>
@@ -236,7 +237,7 @@ const DemandGeneration=()=>{
                     <div className="d-flex justify-content-center">
                       <Heading h1Class="clientheadwe" title="Servicess Demand Generation"></Heading>
                     </div>
-                <p>We’re full service which means we’ve got you covered on design &amp; content right through to digital. You’ll form a lasting relationship with us.</p>
+                <p >We’re full service which means we’ve got you covered on design &amp; content right through to digital. You’ll form a lasting relationship with us.</p>
                 </div>
             </div>
             </div>

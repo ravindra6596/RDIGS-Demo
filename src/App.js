@@ -21,6 +21,9 @@ const DemandGeneration = React.lazy(() => import('./Componets/DemandGeneration/D
 const SalesDevelopment = React.lazy(() => import('./Componets/SalesDevelopment/SalesDevelopment'));
 const SalesQualified = React.lazy(() => import('./Componets/SalesQualified/SalesQualified'));
 const DatabaseService = React.lazy(() => import('./Componets/DatabaseService/DatabaseService'));
+const ConfirmedCallback = React.lazy(() => import('./Componets/ConfirmedCallback/ConfirmedCallback'));
+const AppointmentSetting = React.lazy(() => import('./Componets/AppointmentSetting/AppointmentSetting'));
+
 
 const Gallary = React.lazy(() => import('./Componets/Gallery/Gallery'));
 const CompanyProfile1 = React.lazy(() => import('./Componets/CompanyProfile1/CompanyProfile1'));
@@ -51,6 +54,8 @@ const useSessionModal =React.lazy(()=>import('./Componets/useSessionModal/useSes
               <Route path='/salesDevelopment' exact={true} component={SalesDevelopment}/>
               <Route path='/salesqualified' exact={true} component={SalesQualified}/>
               <Route path='/databaseservice' exact={true} component={DatabaseService}/>
+              <Route path='/confirmedcallback' exact={true} component={ConfirmedCallback}/>
+              <Route path='/appointmentsetting' exact={true} component={AppointmentSetting}/>
 
               
               <Route path='/gallary' exact={true} component={Gallary}/>
