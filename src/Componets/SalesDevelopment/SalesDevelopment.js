@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
-import "./LeadGeneration.css";
+import "./SalesDevelopment.css";
 import Heading from "../Heading/Heading";
 import Button from "../ButtonGroup/Button/Button";
 import demand1 from "../../img/services/demand1.png";
@@ -24,21 +24,24 @@ const LeadGeneration = () => {
     {
       servicename: "Sales Qualified Leads",
       serviceimg: service1,
+      servicelink:"/salesqualified",
     },
     {
       servicename: "Confirmed Call Back",
       serviceimg: service2,
+      servicelink:"/demandgeneration",
     },
     {
       servicename: "Appointment Setting",
       serviceimg: service3,
+      servicelink:"/salesqualified",
     },
     
   ];
   return (
     <>
       <div className="nav-contaniner" />
-      <section className="Lead-Generation-banner">
+          <section className="Lead-Generation-banner">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12" style={{marginTop:'10%'}}>
@@ -150,7 +153,7 @@ const LeadGeneration = () => {
             {data.map((user, index) => {
               return (
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                 <Link to="/demandgeneration">
+                 <Link to={user.servicelink}>
                     <div className="serviceLead">
                     <img
                       class="thumbnail-light-image"

@@ -71,7 +71,7 @@ const Header = () => {
                           <i class="fa fa-align-justify" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/leadGeneration" onClick={() => { scrollgoTop(); setExpanded(false); }}>Sales Development</Link>
+                              <Link to="/salesDevelopment" onClick={() => { scrollgoTop(); setExpanded(false); }}>Sales Development</Link>
                             </div>
                           </p>
                         </span>
@@ -87,7 +87,7 @@ const Header = () => {
                           <i class="fa fa-laptop" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="#" onClick={() => { scrollgoTop(); setExpanded(false); }}>Database Service</Link>
+                              <Link to="/databaseservice" onClick={() => { scrollgoTop(); setExpanded(false); }}>Database Service</Link>
                             </div>
                           </p>
                         </span>

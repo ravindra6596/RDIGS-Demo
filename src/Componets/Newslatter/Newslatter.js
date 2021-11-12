@@ -144,9 +144,9 @@ const Newslatter =()=>{
           </section>
 
         {/* <!-- ======= Newslatter Section 4 ======= --> */}
-        <section data-aos="fade-up">
+        <section>
             <div className="container">
-                <div className="row" style={{marginTop:'5%'}}>
+                <div className="row" style={{marginTop:'5%'}}  data-aos="zoom-in-down">
                 {/* Using Map Function to access the data */}
                  {data.map((data) => (
                     <div className="col-lg-4 col-md-4 col-sm-6" style={{marginBottom:'5%'}}>

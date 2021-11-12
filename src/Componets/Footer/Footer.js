@@ -162,7 +162,8 @@ const scrollgoToplink = () => {
                         <h5 className="ourservices text-light">OUR SERVICES</h5>
                         <ul className="text-light services">
                             <li> <Link className="services-webdevlopment" to="/demandgeneration" onClick={scrollgoToplink}>Demand Generation</Link></li>
-                            <li><Link className="services-webdevlopment" to="/leadgeneration" onClick={scrollgoToplink}>Lead Generation</Link></li>
+                            <li><Link className="services-webdevlopment" to="/salesDevelopment" onClick={scrollgoToplink}>Sales Development</Link></li>
+                            <li><Link className="services-webdevlopment" to="/databaseservice" onClick={scrollgoToplink}>Database Service</Link></li>
                             <li><Link className="services-webdevlopment" to="/privacypolicy" onClick={scrollgoToplink}>Privacy Policy</Link></li>   
                             <li> <Link className="services-webdevlopment" to="/termscondition" onClick={scrollgoToplink}>Terms And Conditions</Link></li>   
                             <li><Link className="services-webdevlopment" to="/unsubscribe" onClick={scrollgoToplink}>Unsubscribe</Link></li>                             

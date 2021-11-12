@@ -11,7 +11,7 @@ const privacypolicy = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12" style={{marginTop:'10%'}}>
-                            <Heading h1Class="aboutwherewe" title="Privacy Policy"/>
+                            <Heading h1Class="clientheadwe" title="Privacy Policy"/>
                             <p style={{color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                         </div>
                     </div>
@@ -21,12 +21,12 @@ const privacypolicy = () => {
             <section>
                 <div className="container">
                     <div className="row privacyrow1" >
-                   <span style={{margin:'5px 2%'}}> <Heading classNames="aboutwherewe" title="Our Privacy Commitments"/></span>
+                   <span style={{margin:'5px 2%'}}> <Heading h1Class="clientheadwe" title="Our Privacy Commitments"/></span>
                         <div className="col-lg-12">
                         <p>This website and associated webs (“Website”) are owned and maintained by: RD Info Global Solutions (OPC) Pvt. Ltd.
                             Address : 402, Vascon Garnets Bay, Besides Hotel Four Points By Sheraton, Viman Nagar, Pune, Maharashtra 411014
                         </p>
-                        <Heading classNames="aboutwherewe"  title="Welcome!"/>
+                        <Heading h1Class="clientheadwe"  title="Welcome!"/>
                         <p> Cookies improve your experience. We use cookies to help you access this Website faster and more efficiently. 
                             Cookies allow us to distinguish you from other users, so that we can recognize you each time you visit.  
                             Cookies also allow us to store user preferences and provide you with a positive experience when you browse this Website, 
