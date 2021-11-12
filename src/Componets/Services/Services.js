@@ -11,17 +11,17 @@ const Servicess =()=>{
         {
             id:"01",
             serviceimg:service1,
-            servicetitle:"Proof of receipt for each interaction"
+            servicetitle:"Sales Development"
         },
         {
             id:"02",
             serviceimg:service2,
-            servicetitle:"Real time delivery On Demand"
+            servicetitle:"Demand Generation"
         },
         {
             id:"03",
             serviceimg:service3,
-            servicetitle:"2 level QA check to ensure 100% intent and contact details"
+            servicetitle:"Database Service"
         },
         
     ]
