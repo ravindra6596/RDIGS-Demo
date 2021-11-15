@@ -48,6 +48,7 @@ const PageNotFound = React.lazy(()=>import('./Componets/PageNotFound/Pagenotfoun
 const Cookie = React.lazy(()=>import('./Componets/Cookie/Cookie'));
 const Blogpage =React.lazy(()=>import('./Componets/Blogpage/Blogpage'));
 const useSessionModal =React.lazy(()=>import('./Componets/useSessionModal/useSessionModal'));
+const Loadmore = React.lazy(()=>import('./Componets/Loadmore/Loadmore'));
   return (
     <div className="App">
       <BrowserRouter>
@@ -94,6 +95,7 @@ const useSessionModal =React.lazy(()=>import('./Componets/useSessionModal/useSes
               <Route path='/footer' exact={true} component={Footer}/>
               <Route path="/Pagenotfound" exact={true} component={PageNotFound}/>
               <Route path="/blogpage" exact={true} component={Blogpage}/>
+              <Route path="/loadmore" exact={true} component={Loadmore}/>
               <Redirect from="*" to="/Pagenotfound"/>
           </Switch>
           <Footer/>

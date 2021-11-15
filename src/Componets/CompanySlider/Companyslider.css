@@ -17,9 +17,9 @@
   margin: 20px;
   overflow-x: hidden;
 }
-.comp-slider{
+/* .comp-slider{
   overflow-x: hidden; 
-}
+} */
 .slide-overlay{
   background-image: url('../../img/background715.jpg');
   background-repeat: no-repeat;

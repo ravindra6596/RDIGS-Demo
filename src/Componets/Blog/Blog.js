@@ -9,6 +9,11 @@ const Blog = () => {
   const [items, setItems] = useState([]);
   const[visible,setVisible]=useState(3);
   const [isReadMore, setIsReadMore] = useState(true);
+  const [isReadmorepara, setIsReadmorepara]=useState(true);
+
+  const[isReadMoreCard,setIsReadMoreCard]=useState(true);
+  const [prevValue,setPrevValue]=useState(3);
+
   // useEffect(() => {   
   // axios.get(`https://b2bnetworkservices.online/blogs/public`)
   //             .then(res => {
@@ -21,19 +26,37 @@ const Blog = () => {
     .then((res)=>res.json())
     .then((data)=>setItems(data.blogs));
   },[]);
+
   const showMoreItems=()=>{
+    setPrevValue(3);
     setVisible((prevValue)=>prevValue + 3);
+    setIsReadMoreCard(!isReadMoreCard);
+    return;
   };
+
+  // const loadmore=()=>{
+  //   var currentindex=0;
+  //   var maxresult=3;
+  //   for (var i=0;i<maxresult; i++)
+  //   {
+  //       if(currentindex>=items.length)
+  //       {
+  //         setVisible("#loadMore")
+  //         return
+  //       }
+  //       setVisible("#cardblog").append("<div>" + items[i + currentindex]+ "</div>")
+  //   }
+  //   currentindex +=maxresult;
+  // };
+
   const toggleReadMore = () => {
         setIsReadMore(!isReadMore);
      };
+  const toggleHeadingreadmore=()=>{
+        setIsReadmorepara(!isReadmorepara);
+  }
  
   // ==================
-//  const[visible,setVisible]=useState(3);
-//  const showMoreItems =()=>{
-//    setVisible((prevValue)=>prevValue + 3);
-//  };
-
 
 
   // const carddata=[
@@ -103,9 +126,6 @@ const Blog = () => {
       </section>  */}
 {/* ===================================================== */}
 <video className="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src={bg} type="video/mp4" /></video>
-        <div className="heading-banner-blog text-light">
-          <h2>RD Info Global Solution</h2>
-        </div>
         <div className="masthead">
         </div>
 
@@ -137,11 +157,11 @@ const Blog = () => {
      <div className="container card-blog-cont ">
        <div className="row">
         {
-         items.slice(0,visible).map((item)=>{
+         items.slice(0,3).map((item)=>{
           // Data.map((data,i)=>{
          return(
                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 b-card" data-aos="zoom-in-down">
-               <div className="d-lg-flex card-body card-border">
+               <div className="d-lg-flex card-body card-border" id="cardblog">
                <div className="card-blog-div border-0 me-lg-4 mb-lg-0 mb-4">
                    <div className="backgroundEffect"></div>
                   <div className="pic"><img src={item.coverImg} alt=""/> 
@@ -152,11 +172,16 @@ const Blog = () => {
                  </div>  
                     <div className="content">
                    
-                       <p className="h-1 mt-4 cardhead">{item.title}</p>
+                         <p className="h-1 mt-4 cardhead">
+                            {isReadmorepara ? item.title.slice(0,25):item.title}
+                          <span onClick={toggleHeadingreadmore} className="read-or-hide">
+                          {isReadmorepara ? "..." : " "}
+                          </span>
+                        </p>
                         <p className="text-muted mt-3 card-para">
                             {isReadMore ? item.shortDes.slice(0,80) : item.shortDes}
                         <span onClick={toggleReadMore} className="read-or-hide">
-                            {isReadMore ? "...read more" : " show less"}
+                            {isReadMore ? "..." : " "}
                         </span>
                         </p> 
                        <div className="d-flex align-items-center justify-content-between mt-3 pb-3">
@@ -176,9 +201,12 @@ const Blog = () => {
            })
          } 
             <div className="col-12">
-              <div className="d-flex justify-content-center" style={{marginTop:'10px',marginBottom:'10px'}}>       
-              <Button text="Load More" classNames="allbtn-primary glow-on-hover text-light" id="loadMore" onClick={showMoreItems}></Button> 
-              </div>
+             {/* {visible < items.length &&  */}
+            {/* // {isReadMoreCard ? data.blogs.slice(0,3) : data.blogs } */}
+              <Button text="Load More" classNames="allbtn-primary glow-on-hover text-light" id="loadMore" onClick={() =>{showMoreItems();}}>
+              {/* {isReadMoreCard ? items.blogs.length.slice(0,3) : items.blogs.length } */}
+             </Button> 
+            {/* // } */}
             </div>
     </div>
     </div>
@@ -188,6 +216,4 @@ const Blog = () => {
   );   
 };
 // 
-
- 
 export default Blog;
