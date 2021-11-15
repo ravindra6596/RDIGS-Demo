@@ -12,6 +12,7 @@
 }
 
 /* =================================================== */
+
 .card-body{
     padding: 20px 0px;
 }
@@ -249,16 +250,12 @@
   /* ======================video================= */
   .bg-video{
     width:100%;
-    height: 90vh;
+    height: auto;
   } 
-.heading-banner-blog{
-  margin-top: -56px;
-  z-index: 10000;
-  }
 .masthead {
-  height: 90vh;
+  height: 100vh; 
   width:60%;
-  /* position: relative;  */
+   /* position: relative; */
   overflow: hidden;
   z-index: 2;
   display: flex;
@@ -266,14 +263,16 @@
   justify-content: center;
 }
 .masthead:before {
-  content: "";
+  content: "RD Info Global Solution";
+  font-size:50px;
+  color:white;
   position: absolute;
   top: 95px;
   bottom: 0;
   right: 0;
   left: 0;
   height: 90%;
-  width: 100%;
+  /* width: 100%; */
   background-color: rgb(54 53 53 / 85%);
 }
 .masthead .masthead-content {
@@ -304,7 +303,7 @@
   letter-spacing: 1px;
   padding: calc(1rem + 2px);
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width:1920px){
   .masthead {
     height: 100%;
     width: 75vw;
@@ -328,6 +327,7 @@
     font-size: 1.3rem;
   }
 }
+
 @media (min-width: 1200px) {
   .masthead {
     width: 65vw;

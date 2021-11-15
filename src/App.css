@@ -7,6 +7,7 @@ body{
     -moz-user-select: -moz-none;
      -ms-user-select: none;
      user-select: none;
+    
 }
 .App-logo {
   height: 40vmin;
@@ -45,3 +46,16 @@ body{
     transform: rotate(360deg);
   }
 }
+.p{
+  font-size:20px;
+  font-family: 'Roboto';
+}
+.h2{
+  font-size: 20px;
+  font-family: 'Orbitron';
+}
+.h5{
+  font-size: 18px;
+  font-family:'Roboto';
+}
+

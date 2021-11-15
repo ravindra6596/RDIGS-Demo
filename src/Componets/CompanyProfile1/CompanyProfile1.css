@@ -101,6 +101,9 @@
     background-size: cover;
     position: relative;
   }
+  .carousel.carousel-slider .control-arrow:hover {
+    background:rgba(0,0,0,0.0) !important; 
+ }
   .testimonials::before {
     content: "";
     position: absolute;

@@ -50,8 +50,6 @@ const Testimonial = () => {
             <span> <Heading h1Class="clientheadwe" spanClass="spansubhead1" title="Testimonial" /></span>
             <p className="service-para" style={{ marginTop: '2%' }}>Kinds Words From Clients.</p>
           </div>
-
-
         </div>
       </section>
       <section className="card-top">

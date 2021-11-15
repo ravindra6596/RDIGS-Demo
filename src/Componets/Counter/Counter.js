@@ -113,7 +113,7 @@ const Counter = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-sm-2 counter-p">
+          <div className="col-lg-2 col-md-4 col-sm-6 counter-p">
             <div
               className="count-box Hard-Workers"
               data-aos="flip-left"
