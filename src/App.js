@@ -23,6 +23,17 @@ const SalesQualified = React.lazy(() => import('./Componets/SalesQualified/Sales
 const DatabaseService = React.lazy(() => import('./Componets/DatabaseService/DatabaseService'));
 const ConfirmedCallback = React.lazy(() => import('./Componets/ConfirmedCallback/ConfirmedCallback'));
 const AppointmentSetting = React.lazy(() => import('./Componets/AppointmentSetting/AppointmentSetting'));
+const AccountBasemarketing = React.lazy(() => import('./Componets/AccountBasemarketing/AccountBasemarketing'));
+const MarketingQualiLeads = React.lazy(() => import('./Componets/MarketingQualiLeads/MarketingQualiLeads'));
+const ContentSyndication = React.lazy(() => import('./Componets/ContentSyndication/ContentSyndication'));
+const B2BCustomelist = React.lazy(() => import('./Componets/B2BCustomelist/B2BCustomelist'));
+const DatabaseCleaning = React.lazy(() => import('./Componets/DatabaseCleaning/DatabaseCleaning'));
+const InstallDatabase = React.lazy(() => import('./Componets/InstallDatabase/InstallDatabase'));
+
+
+
+
+
 
 
 const Gallary = React.lazy(() => import('./Componets/Gallery/Gallery'));
@@ -56,6 +67,18 @@ const useSessionModal =React.lazy(()=>import('./Componets/useSessionModal/useSes
               <Route path='/databaseservice' exact={true} component={DatabaseService}/>
               <Route path='/confirmedcallback' exact={true} component={ConfirmedCallback}/>
               <Route path='/appointmentsetting' exact={true} component={AppointmentSetting}/>
+              <Route path='/accountbasemarketing' exact={true} component={AccountBasemarketing}/>
+              <Route path='/marketingqualiLeads' exact={true} component={MarketingQualiLeads}/>
+              <Route path='/contentsyndication' exact={true} component={ContentSyndication}/>
+              <Route path='/b2bCustomelist' exact={true} component={B2BCustomelist}/>
+              <Route path='/databasecleaning' exact={true} component={DatabaseCleaning}/>
+              <Route path='/installdatabase' exact={true} component={InstallDatabase}/>
+
+
+
+
+
+
 
               
               <Route path='/gallary' exact={true} component={Gallary}/>

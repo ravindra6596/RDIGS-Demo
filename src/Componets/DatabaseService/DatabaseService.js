@@ -9,22 +9,26 @@ import service2 from "../../img/services/s2.jpg";
 import service3 from "../../img/services/s3.jpg";
 
 const DatabaseService =()=>{
+     //Link click open on top functionality
+  const scrollgoTop = () => {
+    window.scrollTo({ top: 0 });
+  };
 
     const data = [
         {
           servicename: "B2B Custom List Building",
           serviceimg: service1,
-          servicelink:"/salesqualified",
+          servicelink:"/b2bCustomelist",
         },
         {
           servicename: "Database Cleansing",
           serviceimg: service2,
-          servicelink:"/demandgeneration",
+          servicelink:"/databasecleaning",
         },
         {
           servicename: "Install Database",
           serviceimg: service3,
-          servicelink:"/salesqualified",
+          servicelink:"/installdatabase",
         },
         
       ];
@@ -54,8 +58,8 @@ const DatabaseService =()=>{
                         <div class="row row-50 row-xxl-70 offset-top-2 services-row">
                             {data.map((user, index) => {
                             return (
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <Link to={user.servicelink}>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"data-aos="zoom-in-up">
+                                <Link to={user.servicelink} onClick={scrollgoTop}>
                                     <div className="serviceLead">
                                     <img
                                     className="dbservice-boximg"

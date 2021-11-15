@@ -23,6 +23,10 @@ const DemandGeneration=()=>{
     // modal
     const [modaldemand, setModaldemand] = useState(false);
     const toggledemand = () => setModaldemand(!modaldemand);
+    //Link click open on top functionality
+    const scrollgoTop = () => {
+        window.scrollTo({ top: 0 });
+    };
     const data=[
         {
             servicename:"Cash Management",
@@ -64,7 +68,8 @@ const DemandGeneration=()=>{
             serviceinnerh1:"Account Based Marketing",
             serviceinnerpara:"Reach a huge area of users and get a publicty of your product and service ",
             serviceinnerspan:"video",
-            serviceinnerpara1:"solution."
+            serviceinnerpara1:"solution.",
+            Accountbaselinks:'/accountbasemarketing',
 
         },
         {
@@ -72,16 +77,16 @@ const DemandGeneration=()=>{
             serviceinnerh1:"Marketing Qualified Leads",
             serviceinnerpara:"Email Marketing is a great solution to reach a",
             serviceinnerspan:"high range of customers",
-            serviceinnerpara1:"service."
-
+            serviceinnerpara1:"service.",
+            Accountbaselinks:'/marketingqualiLeads',
         },
         {
             serviceimgicon:s1,
             serviceinnerh1:"Content Syndication",
             serviceinnerpara:"we provide wide range of",
             serviceinnerspan:"seo service",
-            serviceinnerpara1:"to make your site at top to reach your target"
-
+            serviceinnerpara1:"to make your site at top to reach your target",
+            Accountbaselinks:'/contentsyndication',
         }
 
     ];
@@ -249,8 +254,8 @@ const DemandGeneration=()=>{
     {
             servicecard.map((user,index)=>{
                 return(
-                      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                       <Link to="/salesdevelopment">
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4" data-aos="fade-up">
+                       <Link to={user.Accountbaselinks} style={{textDecoration:'none'}} onClick={scrollgoTop}>
                             <div class="service-box">
                             <div class="service-img-icon">
                             <img src={user.serviceimgicon} alt="service-icon" class="img-fluid"/>
