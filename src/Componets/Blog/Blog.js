@@ -126,8 +126,8 @@ const Blog = () => {
       </section>  */}
 {/* ===================================================== */}
 <video className="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src={bg} type="video/mp4" /></video>
-        <div className="masthead">
-        </div>
+        {/* <div className="masthead">
+        </div> */}
 
       {/* =======================section about blog==================== */}
       <section id="about" className="about">
@@ -190,7 +190,7 @@ const Blog = () => {
                            </Button></a>
                            <div className="d-flex align-items-center justify-content-center foot blog-admin-msg">
                                <p className="admin">{item.author}</p>&nbsp;&nbsp;
-                               <p className="ps-3 icon text-muted"><span className="fa fa-comment pe-1"></span>{}</p>
+                               <p className="ps-3 icon text-muted"><span className="fa fa-pencil pe-1"></span>{}</p>
                           </div>
                         </div> 
                    </div>
