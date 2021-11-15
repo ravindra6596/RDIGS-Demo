@@ -66,11 +66,11 @@ const JobDescription =()=>{
                                     <input type="text" className="formjd" placeholder="Enter Company Name" autocomplete="off" />
                                 </div>
                                 <div className="form-group" style={{textAlign:'justify',border:'1px solid #ced4da'}}>
-                                    <label for="exampleInputFile">Upload File</label><i class="fa fa-image mx-2 updatePost"></i><small class="img-add">(only Pdf, Doc, & txt files are allowed)</small>
+                                    <label for="exampleInputFile" style={{paddingLeft:'1%'}}>Upload File</label><i class="fa fa-image mx-2 updatePost"></i><small class="img-add">(only Pdf, Doc, & txt files are allowed)</small>
                                     <div className="input-group">
                                         <div className="custom-file">
                                             <div class="input-group">
-                                                <input type="file" name="file" onChange={changeHandler} style={{backgroundColor:'lightblue'}}/>
+                                                <input type="file" name="file" onChange={changeHandler} style={{paddingLeft:'1%'}}/>
                                             </div> 
                                         </div>
                                     </div>

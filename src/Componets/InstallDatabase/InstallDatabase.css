@@ -1,0 +1,11 @@
+.installdb-banner{
+    height: 70vh;
+    background-image: linear-gradient(
+        rgb(0 0 0 / 60%),
+        rgb(0 0 0 / 68%)
+      ),
+      url('../../img/dbinstallban.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

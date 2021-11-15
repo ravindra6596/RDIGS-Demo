@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <>
       {/* Navbar coding */}
-      <section className="fixed-top ">
+      <section className="fixed-top">
         <Navbar
           className="mainnav"
           collapseOnSelect
@@ -46,13 +46,14 @@ const Header = () => {
           style={{ backgroundColor: navstage ? "lightblue" : "transparent" }}
           expanded={expanded}>
           <Container>
-            <Navbar.Brand style={{ textAlign: 'justify' }}>
-              <img src={logoimg} className="headlogo" alt="logo" />
+            <Navbar.Brand style={{textAlign:'justify'}}>
+              <Link to="/home"><img src={logoimg} className="headlogo" alt="logo" /></Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}>
             </Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
+                {/* <Nav.Link><div className="forunderline"> <NavLink to="/" style={{color:'red'}}></NavLink></div></Nav.Link> */}
                 <Nav.Link>
                   <div className="forunderline">
                     <NavLink exact to="/home" className="maincolor" activeClassName="main-nav-active" onClick={() => { scrollgoTop(); setExpanded(false); }}>HOME</NavLink>

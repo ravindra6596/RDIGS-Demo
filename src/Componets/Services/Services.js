@@ -1,4 +1,5 @@
  import './Services.css';
+import { Link } from "react-router-dom";
  import service1 from '../../img/services/service1.jpg';
  import service2 from '../../img/services/service2.jpg';
  import service3 from '../../img/services/service3.jpg';
@@ -7,21 +8,30 @@
  import service7 from '../../img/services/service7.jpg';
 import Heading from '../Heading/Heading';
 const Servicess =()=>{
+// Navigation tab click open on top functionality
+  const scrollgoTop = () => {
+    window.scrollTo({ top: 0 });
+  };
     const data =[
         {
             id:"01",
             serviceimg:service1,
-            servicetitle:"Sales Development"
+            servicetitle:"Sales Development",
+            serviceLinks:'/salesDevelopment',
         },
         {
             id:"02",
             serviceimg:service2,
-            servicetitle:"Demand Generation"
+            servicetitle:"Demand Generation",
+            serviceLinks:'/demandgeneration',
+
         },
         {
             id:"03",
             serviceimg:service3,
-            servicetitle:"Database Service"
+            servicetitle:"Database Service",
+            serviceLinks:'/databaseservice',
+
         },
         
     ]
@@ -38,7 +48,7 @@ const Servicess =()=>{
             {               
                 data.map((user, index) => (
                 <div className="col-lg-4 col-md-4 col-sm-4 service-col-img" data-aos="zoom-in-down" style={{marginTop:'3%'}}>
-                    <div className="flip-card">
+                    <Link to={user.serviceLinks} onClick={scrollgoTop}><div className="flip-card">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">      
                              <img src={user.serviceimg} alt="Avatar" className="img-fluid"/>
@@ -47,7 +57,7 @@ const Servicess =()=>{
                                 <h3 style={{marginTop:'15%'}}>{user.servicetitle}</h3>
                             </div>
                         </div>
-                    </div>     
+                    </div>  </Link>   
                  </div>
                 ))
                 }
