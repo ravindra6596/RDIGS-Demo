@@ -7,12 +7,14 @@ import aboutimg from '../../img/blog/aboutimg.jpg';
 import bg from '../../video/bg.mp4';
 const Blog = () => {
   const [items, setItems] = useState([]);
+  
   const[visible,setVisible]=useState(3);
+  console.log(visible);
   const [isReadMore, setIsReadMore] = useState(true);
   const [isReadmorepara, setIsReadmorepara]=useState(true);
-
-  const[isReadMoreCard,setIsReadMoreCard]=useState(true);
+  const[isReadcard,setIsReadcard]=useState(true);
   const [prevValue,setPrevValue]=useState(3);
+  console.log(prevValue);
 
   // useEffect(() => {   
   // axios.get(`https://b2bnetworkservices.online/blogs/public`)
@@ -21,6 +23,7 @@ const Blog = () => {
   //               console.log(Data);
   //             });
   //           }, []);
+// =============================================
   useEffect(()=>{
     fetch('https://b2bnetworkservices.online/blogs/public')
     .then((res)=>res.json())
@@ -28,10 +31,9 @@ const Blog = () => {
   },[]);
 
   const showMoreItems=()=>{
-    setPrevValue(3);
-    setVisible((prevValue)=>prevValue + 3);
-    setIsReadMoreCard(!isReadMoreCard);
-    return;
+    // setPrevValue(prevValue + 3);
+    setVisible(visible + 3);
+    return
   };
 
   // const loadmore=()=>{
@@ -55,6 +57,7 @@ const Blog = () => {
   const toggleHeadingreadmore=()=>{
         setIsReadmorepara(!isReadmorepara);
   }
+  
  
   // ==================
 
@@ -125,10 +128,13 @@ const Blog = () => {
                 </div>
       </section>  */}
 {/* ===================================================== */}
-<video className="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src={bg} type="video/mp4" /></video>
-        <div className="masthead">
-        </div>
-
+<div className="container">
+  <div className="row">
+      <video className="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src={bg} type="video/mp4" /></video>
+        {/* <div className="masthead">
+        </div> */}
+    </div>
+</div>
       {/* =======================section about blog==================== */}
       <section id="about" className="about">
       <div className="container" data-aos="fade-up">
@@ -157,7 +163,7 @@ const Blog = () => {
      <div className="container card-blog-cont ">
        <div className="row">
         {
-         items.slice(0,3).map((item)=>{
+         items.slice(0,visible).map((item)=>{
           // Data.map((data,i)=>{
          return(
                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 b-card" data-aos="zoom-in-down">
@@ -201,12 +207,15 @@ const Blog = () => {
            })
          } 
             <div className="col-12">
-             {/* {visible < items.length &&  */}
-            {/* // {isReadMoreCard ? data.blogs.slice(0,3) : data.blogs } */}
-              <Button text="Load More" classNames="allbtn-primary glow-on-hover text-light" id="loadMore" onClick={() =>{showMoreItems();}}>
-              {/* {isReadMoreCard ? items.blogs.length.slice(0,3) : items.blogs.length } */}
-             </Button> 
-            {/* // } */}
+                <div className="d-flex justify-content-center" style={{marginTop:'10px',marginBottom:'10px'}}>
+                {/* {visible < items.length &&  */}
+                {/* {isReadcard ? items.slice(0+visible,3+visible) :null }  */}
+               <Button text="Load More" classNames="allbtn-primary glow-on-hover text-light" id="loadMore" onclick={()=>showMoreItems()}>
+                </Button> 
+                </div>
+            </div>
+            <div>
+              
             </div>
     </div>
     </div>

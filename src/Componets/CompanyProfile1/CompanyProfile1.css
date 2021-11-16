@@ -93,7 +93,6 @@
 .carousel.carousel-slider .control-arrow{
     background-color: none;
 }
-
 .testimonials {
     padding: 30px 0;
     background: url('../../img/blog/blog4.jpg') no-repeat; 
@@ -103,6 +102,9 @@
   }
   .carousel.carousel-slider .control-arrow:hover {
     background:rgba(0,0,0,0.0) !important; 
+ }
+ .carousel-status{
+     display:none !important;
  }
   .testimonials::before {
     content: "";

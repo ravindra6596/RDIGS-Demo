@@ -50,8 +50,6 @@ const Companyslider = () => {
           slidesToShow: 3,
           slidesToScroll: 1
         }
-
-      
       }
 
     ]

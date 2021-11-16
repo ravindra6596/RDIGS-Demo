@@ -20,6 +20,7 @@ const Footer = () => {
 // function for corporate disk
       const toggle = () => setModal(!modal);
       const [modal, setModal] = useState(false);
+      
       const recaptchaRef = React.createRef();
       let recaptcha = useRef(null);
   
