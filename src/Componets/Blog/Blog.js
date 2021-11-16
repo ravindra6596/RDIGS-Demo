@@ -129,7 +129,7 @@ const Blog = () => {
       </section>  */}
 {/* ===================================================== */}
 
-<div className="container">
+<div className="container-fluid">
   <div className="row">
       <video className="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src={bg} type="video/mp4" /></video>
         {/* <div className="masthead">
