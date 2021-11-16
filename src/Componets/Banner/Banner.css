@@ -154,7 +154,10 @@
 @media only screen and (min-width: 320px)and (max-width: 375px){
   #hero h1 {font-size: 25px;}
   #hero .hero-img img {height: 141px;}
-
+}
+@media only screen and (min-width: 320px)and (max-width: 767px){
+  #hero h2 { margin-bottom: 0px;}
+  #hero h5 {font-size: 14px;}
 }
 @media only screen and (min-width: 768px)and (max-width: 991px){
   #hero .hero-img img { max-width: 100%;}

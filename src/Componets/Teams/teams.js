@@ -35,6 +35,7 @@ const teams =()=>{
             teamName:"Rachel Mendis", 
             teamdesi: "HR Manager",
         },
+        
       ];
     return(
       <>
@@ -53,16 +54,16 @@ const teams =()=>{
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6">
-                            <img className="teams2img img-fluid" src={teamsection2}/>
+                            <img className="teams2img img-fluid" src={teamsection2} data-aos="flip-left"  data-aos-easing="ease-out-cubic" data-aos-duration="2000"/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6" style={{textAlign:'justify'}}>
-                           <Heading h1Class="clientheadwe" title="WE ARE RDIGS"/>
+                        <div className="col-lg-6 col-md-6 col-sm-6" style={{textAlign:'justify'}} data-aos="fade-right">
+                           <Heading h1Class="clientheadwe" spanClass="forRessubhead" title="WE ARE RDIGS"/>
                             <p className="teamsec2para">Digitallium is a company specializing in providing financial, marketing and analytical services to other companies and private entrepreneurs to help them improve their businesses. We are able to analyze any activity and provide with the bulk of solutions how to decrease your expense, use hidden opportunities and what spheres are good for investment.</p>
                             <ul style={{fontSize:'20px'}}>
-                                <li>IT Team</li>
-                                <li>Sales Team</li>
-                                <li>Lead Generation </li>
-                                <li>Demand Generation </li>
+                                <li data-aos="zoom-in-down">IT Team</li>
+                                <li data-aos="zoom-in-left" >Sales Team</li>
+                                <li data-aos="zoom-in-down">Lead Generation </li>
+                                <li data-aos="zoom-in-left">Demand Generation </li>
                             </ul>
                         </div>
                     </div>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Modal, ModalBody } from "reactstrap";
-import { Link } from "react-router-dom";
 function GalleryModel(props) {
   const [modal1, setModal1] = useState(false);
   const toggle1 = () => setModal1(!modal1);
@@ -9,8 +8,7 @@ function GalleryModel(props) {
       <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 gallary-hover">
         <div
           className="bdt-gallery-thumbnail bdt-transition-toggle"
-          data-aos="zoom-in-up"
-        >
+          data-aos="zoom-in-up">
           <img
             className="gallary-img"
             src={props.image}

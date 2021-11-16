@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Heading from '../Heading/Heading';
 import team from '../../img/testimonial/testimonial1.png';
 import './Testimonial.css';
@@ -6,7 +6,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const Testimonial = () => {
-
   var settings = {
     dots: false,
     infinite: true,
@@ -56,7 +55,7 @@ const Testimonial = () => {
         <Slider {...settings} className="newtestislider">
           {/* {/ Using Map Function to access the data /} */}
           {data.map((data) => (
-            <div className="container">
+            <div className="container" style={{outline:'none',border:'none'}}>
               <div className="row">
                 <div className="col">
                   <div className="testimonial-card">

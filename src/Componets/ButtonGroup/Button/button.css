@@ -91,7 +91,7 @@
     .readmore{
         border-radius: 25px ;
         margin-left: 15px;
-        padding: 0px 10px;
+        padding: 3px 10px;
         cursor: pointer;
         display: inline-block;
         transition: 0.5s;
@@ -102,3 +102,5 @@
         background-color: white;
         color: black;
     }
+    .readmore:focus {outline: none;}
+
