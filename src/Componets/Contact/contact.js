@@ -35,7 +35,7 @@ const Contact = () => {
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6">
                         </div>
-                          <div className="col-lg-6 col-md-12 col-sm-12" style={{backgroundColor: 'white',marginTop:'4%' }}>
+                          <div className="col-lg-6 col-md-12 col-sm-12" style={{backgroundColor:'white',marginTop:'4%' }}>
                             <h2 className="contgetin" data-aos="fade-up">Get in Touch</h2>
                             <form id="frm1" onSubmit={handleSubmit}>
                                 <div class="form-group">
@@ -100,14 +100,15 @@ const Contact = () => {
                                     <div className="col conformcleardiv">
                                     <Button classNames="btnclear22" text="Clear" onClick="resetdata()"/></div>
                                 </div>
-                                <Recaptcha className="footer-captcha"
+                                 <Recaptcha 
                                      badge="bottomleft"
                                      ref={recaptcha}
                                      onChange={onResolveddata}
                                      onExpired={() => {
                                      recaptcha.current.reset();
                                      }}
-                                     sitekey="6Lf2AmsbAAAAAFdfecORFmrsAYstfD4DD4CTyHxE"
+                                     sitekey="6Lct3zkdAAAAAO0KFEeZ9r7wmIfATa-qpOCp4F-T"
+                                     Secret Key="6Lct3zkdAAAAAGQ4KCB3UKQ9qqOg7VvYPyLqkfbL"    
                                  />
                             </form> 
                         </div> 

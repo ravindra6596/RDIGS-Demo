@@ -22,7 +22,7 @@ const SalesQualified =()=>{
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6">
-                            <Heading h1Class="clientheadwe" title="A Researched And Vetted Leads"/>
+                            <Heading h1Class="clientheadwe"title="A Researched And Vetted Leads"/>
                             <p style={{textAlign:'justify'}}>A Sales Qualified Lead is a lead that has been accepted by sales team and proceeded further to schedule an appointment. It meets the service level agreement (SLA) between marketing and sales – a lead that meets – ICP persona requirements, interested in company’s offerings, answered qualifying questions, and, agreed to schedule an appointment. </p>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6"data-aos="zoom-in-down">

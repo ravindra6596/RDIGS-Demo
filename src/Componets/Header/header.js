@@ -53,7 +53,7 @@ const Header = () => {
             </Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
-                {/* <Nav.Link><div className="forunderline"> <NavLink to="/" style={{color:'red'}}></NavLink></div></Nav.Link> */}
+                {/* <Nav.Link><div className="forunderline"> <NavLink to="/"  style={isActive => ({ color: isActive ? "green" : "blue"})}></NavLink></div></Nav.Link> */}
                 <Nav.Link>
                   <div className="forunderline">
                     <NavLink exact to="/home" className="maincolor" activeClassName="main-nav-active" onClick={() => { scrollgoTop(); setExpanded(false); }}>HOME</NavLink>

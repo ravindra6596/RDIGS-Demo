@@ -71,7 +71,7 @@ const LeadGeneration = () => {
                             <p className="lead-right" data-aos="fade-up">After a deep research, we have our unique cut above process to help your reps with better tailor the
                                 next steps they take in the sale process. We have added a Goal, into our BANT process, because we
                                 think without knowing goal, everything is like, A shot in the dark. </p>
-                                <ul style={{listStyle:'none'}}>
+                                <ul style={{listStyle:'none',fontSize:'15px'}}>
                                 <li className="lead-right" data-aos="fade-left"><i class="fa fa-arrow-right" aria-hidden="true" style={{color:'blue'}}></i> G- Goals – Do you know what are prospect’s Goals?</li>
                                 <li className="lead-right" data-aos="fade-left"><i class="fa fa-arrow-right" aria-hidden="true" style={{color:'blue'}}></i> B- Budget - Are there Funds allocated for a solution?</li>
                                 <li className="lead-right" data-aos="fade-left"><i class="fa fa-arrow-right" aria-hidden="true" style={{color:'blue'}}></i> A – Authority - Are you speaking with a person who will sign the deal?</li>
