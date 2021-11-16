@@ -37,7 +37,7 @@ const ContentSyndication =()=>{
                             <img className="img-fluid" src={salesquaimg2}/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6">
-                            <Heading h1Class="clientheadwe" title="Target. Engage. Activate. Measure"/>
+                            <Heading h1Class="clientheadwe" title="Target Engage Activate Measure"/>
                             <p style={{textAlign:'justify'}}>We tailor a message so as to communicate effectively. We help you to reach the right people with right message, at right time. Leverage RDIGS content syndication strategies to augment content and drive pipeline development.</p>
                         </div>
                     </div>

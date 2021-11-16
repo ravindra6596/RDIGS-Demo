@@ -35,6 +35,7 @@ const teams =()=>{
             teamName:"Rachel Mendis", 
             teamdesi: "HR Manager",
         },
+        
       ];
     return(
       <>
