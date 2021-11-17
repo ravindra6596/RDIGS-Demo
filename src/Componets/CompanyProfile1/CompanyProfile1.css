@@ -16,9 +16,14 @@
 .about1img{
     margin-left: -30px;
 }
+@media only screen and (min-width:320px)and (max-width:768px) {
+    .about1img{
+        margin-left: 0px !important;
+    }
+}
 .about .content {
     background-color: #f6f9ff;
-    padding: 40px;
+    padding: 80px;
   }
   .about h3 {
     font-size: 14px;
@@ -160,7 +165,6 @@
     top: 10px;
   }
   .testimonials .testimonial-item p {
-    font-style: italic;
     margin: 0 auto 15px auto;
     color: #fff;
   }
