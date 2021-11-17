@@ -7,7 +7,6 @@
     width: 100px;
     height: 100px;
 }
-
 .testuser-img{
     width: 68px;
     height: 65px;
@@ -26,6 +25,13 @@
     border-radius: 5px;
     height: 220px;
     outline: none;
+}
+.testcardcol1{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none   
 }
 /* .slick-initialized .slick-slide{pointer-events: none;} */
 .testimonial-card:focus{outline: none;}

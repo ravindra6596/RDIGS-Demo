@@ -88,7 +88,7 @@
 }
 .card-blog-div .pic img {
     width: 100%;
-}
+    height: auto;
 .card-blog-div .date {
     margin-bottom: -20px;
     display: flex;

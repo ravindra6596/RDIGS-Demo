@@ -35,9 +35,9 @@ const Contact = () => {
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6">
                         </div>
-                          <div className="col-lg-6 col-md-12 col-sm-12" style={{backgroundColor:'white',marginTop:'4%' }}>
+                          <div className="col-lg-6 col-md-12 col-sm-12 contformcol">
                             <h2 className="contgetin" data-aos="fade-up">Get in Touch</h2>
-                            <form id="frm1" onSubmit={handleSubmit}>
+                            <form id="frm1" onSubmit={handleSubmit}autocomplete="off">
                                 <div class="form-group">
                                     <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Name"
                                      type="text" 
