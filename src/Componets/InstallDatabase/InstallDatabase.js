@@ -20,11 +20,11 @@ const InstallDatabase =()=>{
             <section style={{margin:'2% 0px'}}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6 col-md-6 col-sm-6">
+                        <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols1">
                             <Heading h1Class="clientheadwe" title="Analyse the Need of Audience"/>
                             <p style={{textAlign:'justify'}}>Based on our extensive research and analysis of competitors and prospective company, we retrieve the information to amplify your business by reaching the right audience. All this information is retrieved from the trusted sources.</p>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6"data-aos="zoom-in-up">
+                        <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols2"data-aos="zoom-in-up">
                             <img className="img-fluid" src={callbackimg1}/>
                         </div>
                     </div>
@@ -33,10 +33,10 @@ const InstallDatabase =()=>{
             <section style={{margin:'2% 0px'}}>
                 <div className="container">
                     <div className="row">
-                    <div className="col-lg-6 col-md-6 col-sm-6"data-aos="zoom-in-down">
+                    <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols3"data-aos="zoom-in-down">
                             <img className="img-fluid" src={salesquaimg2}/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6">
+                        <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols4">
                             <Heading h1Class="clientheadwe" title="Let Technology Redefine Your Prospecting"/>
                             <p style={{textAlign:'justify'}}>RDIGS embeds technology to identify the right prospect for you. We target companies, who are into same industry and utilizing similar products. We study them, understand their requirement and produce analysed report that will aid you to get great start for your business to build your marketing strategy around your competitor's weakness.</p>
                         </div>

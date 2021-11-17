@@ -4,8 +4,6 @@ import Heading from '../Heading/Heading';
 import './Newslatter.css';
 import Button from "../ButtonGroup/Button/Button";
 import newscardimage1 from '../../img/Newslatter/newscardimg1.jpg';
-import newscardimage2 from '../../img/Newslatter/newscardimg2.jpg';
-import newscardimage3 from '../../img/Newslatter/newscardimg3.jpg';
 import newscardimage4 from '../../img/Newslatter/newscardimg2.jpg';
 import newscardimage5 from '../../img/Newslatter/newscardsimg4.jpg';
 import newsbanboximg1 from '../../img/Newslatter/newsbanboximg.jpg';
@@ -14,7 +12,6 @@ import newsgalimg1 from '../../img/Newslatter/newsgalimg1.jpg';
 import { Link } from "react-router-dom";
 const Newslatter =()=>{
   const [modal, setModal] = useState(false);
-    
     const data = [
         {
             newsimg: newscardimage1,
@@ -92,6 +89,30 @@ const Newslatter =()=>{
   ];
     return(
     <>
+       {/* {/ NewsLatter Modal /} */}
+      <Modal isOpen={modal} centered>
+        <ModalBody className="homemodalbody">
+          <span className="homemodalclosebtn" onClick={() => setModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+              <Heading h1Class="clientheadwe" spanClass="forRessubhead" title="To Get Latest News"/>
+                <form>
+                <div class="form-group">
+                        <input className="newslattinputs" autocomplete="off" placeholder="Your Name" type="text" name="name"/>
+                    </div>
+                    <div class="form-group">
+                        <input className="newslattinputs" autocomplete="off" placeholder="Your Email" type="email" name="email"/>
+                    </div>
+                    <div class="form-group">
+                        <input className="newslattinputs"autocomplete="off" placeholder="Your Number" type="number" name="number"/>
+                    </div>
+                </form>
+                  <div style={{ display: 'flex'}}>
+                    <input type="checkbox" checked style={{marginTop:'1%',paddingLeft:'2px'}}/>
+                    <p style={{paddingLeft:'2%'}}>I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our <span style={{ color: '#30a6e9' }}>Privacy Policy</span> And <span style={{ color: '#30a6e9' }}>Terms and Codition.</span> </p>
+                  </div>
+                  <div style={{ textAlign: 'center' }}><Button classNames="allbtn-primary glow-on-hover text-light" text="Submit" /></div>
+              
+        </ModalBody>
+      </Modal>
 
       {/* <!-- ======= Newslatter Banner Section ======= --> */}
         <div className="nav-contaniner"/>
@@ -114,7 +135,6 @@ const Newslatter =()=>{
                     <h2 style={{color:'#30a6e9'}}>Beer,Biryani,tech Bytes:Snowflake</h2>
                     <span style={{color:'#7A7A7A'}}>2:00-3:30 IST</span>
                     <p style={{paddingRight:'10% '}}>Looking to gain new user skills, share best practices, and network with fellow Snowflake and Big Data enthusiasts? Join our upcoming Beer, Biryani, and [tech] Bytes Snowflake series as we dive into Snowflake – a cloud data warehousing company revolutionizing the way businesses see and use their data.</p>
-                    <Button classNames="allbtn-primary glow-on-hover text-light" text="Register Now"/>
                   </div>
                 </div>
               </div>
@@ -125,7 +145,7 @@ const Newslatter =()=>{
               <div className="row no-gutters" style={{marginTop:'5%'}}>
                 {/* Using Map Function to access the data */}
                   {newgaldata.map((newgaldata) => (
-                  <div className="col-lg-4 col-md-4 col-sm-4">
+                  <div className="col-lg-4 col-md-4 col-sm-4" data-aos="zoom-in-up">
                         <div class="newslattergrid">
                           <figure class="effect-lily">
                               <img src={newgaldata.newsgalimg} alt="img1"/>

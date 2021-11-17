@@ -44,7 +44,7 @@ const teams =()=>{
         <section className="teamsection">
                 <div className="container">
                     <div className="row" style={{display:'grid',paddingTop:'10%'}}>
-                        <Heading h1Class="clientheadwe" spanClass="spansubhead2" title="Our Team"/>
+                        <Heading h1Class="clientheadwe"  title="Our Team"/>
                         <p style={{color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ const teams =()=>{
         <div class="container" data-aos="fade-up">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                  <Heading  classNames="aboutwherewe" spanClass="spansubhead1" title="Meet Our Team" />
+                  <Heading  h1Class="clientheadwe"  title="Meet Our Team" />
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text</p>
                 </div>
             </div>
@@ -88,7 +88,6 @@ const teams =()=>{
                         <div class="member-info">
                             <h4>{data.teamName}</h4>
                             <span>{data.teamdesi}</span>
-                           {/* <p>Roland D’Costa, a stellar entrepreneur and a result driven professional, having an incredible track record of building companies and growing pipeline and ultimately revenue. </p> */}
                             <div class="social-links">
                                 <a href="#"><i class="fa fa-facebook-square"></i></a>
                                 <a href="#"><i class="fa fa-twitter-square"></i></a>

@@ -7,7 +7,6 @@ import modalimg from '../../img/modalhomeimg.png';
 import Heading from '../Heading/Heading';
 
 const Banner = () => {
-
   const [modal, setModal] = useState(false);
 
   return (
@@ -24,10 +23,10 @@ const Banner = () => {
               <div className="col-lg-7 col-md-7 col-sm-7 col-xs-7">
                 <h1>To Get Latest Updates</h1>
                 <form>
-                  <input placeholder="Enter your E-Mail Here " className="homemodalinput" />
+                  <input placeholder="Enter E-Mail Here " className="homemodalinput" />
                 </form>
-                <div style={{ display: 'flex', marginTop: '5px' }}>
-                  <input type="checkbox" checked />
+                <div style={{ display:'flex',marginTop:'2%'}}>
+                  <input type="checkbox" checked style={{marginTop:'2%'}}/>
                   <p className="homemodalAgree">I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our <span style={{ color: '#30a6e9' }}>Privacy Policy</span> And <span style={{ color: '#30a6e9' }}>Terms and Codition.</span> </p>
                 </div>
                 <div style={{ textAlign: 'center' }}><Button classNames="allbtn-primary glow-on-hover text-light" text="Submit" /></div>

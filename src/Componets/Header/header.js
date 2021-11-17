@@ -47,7 +47,7 @@ const Header = () => {
           expanded={expanded}>
           <Container>
             <Navbar.Brand style={{textAlign:'justify'}}>
-              <Link to="/home"><img src={logoimg} className="headlogo" alt="logo" /></Link>
+              <Link to="/home" onClick={scrollgoTop}><img src={logoimg} className="headlogo" alt="logo" /></Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}>
             </Navbar.Toggle>

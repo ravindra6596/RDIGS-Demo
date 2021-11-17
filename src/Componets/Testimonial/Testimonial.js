@@ -55,9 +55,9 @@ const Testimonial = () => {
         <Slider {...settings} className="newtestislider">
           {/* {/ Using Map Function to access the data /} */}
           {data.map((data) => (
-            <div className="container" style={{outline:'none',border:'none'}}>
-              <div className="row">
-                <div className="col">
+            <div className="container" style={{outline:'none',border:'none',outline: '0px solid transparent'}}>
+              <div className="row" style={{outline:'none',border:'none',outline: '0px solid transparent'}}>
+                <div className="col testcardcol1">
                   <div className="testimonial-card">
                     <div className="testitem" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" >
                       <div className="testimony-wrap py-4">

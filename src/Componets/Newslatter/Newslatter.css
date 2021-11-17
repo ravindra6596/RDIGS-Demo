@@ -11,7 +11,6 @@
 }
 .newsheadcom{margin-top: 10%; padding-left: 40%;}
 .headcomparg{color: white; padding-left: 15%;}
-
 .newssec2img{padding: 3%;}
 .newsbanbox{
     background-color: white;
@@ -31,7 +30,7 @@
     border-radius: 3px;
     height: auto; 
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s
-     box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
 }
 .newscard:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -42,11 +41,32 @@
     border-radius:3px 3px 0px 0px;
     height: 220px;
     width: 400%;}
-    
-/*---------------*/
-/***** Lily *****/
-/*---------------*/
-
+/* Newslatter Modal CSS */
+.homemodalclosebtn {
+		color: #30a6e9!important;
+		margin-left: 94%!important;
+		font-size: 20px;
+		font-weight: 700;
+		padding: 1%;}
+.modal-open {
+	overflow: auto!important;
+	padding-right: 0px!important;
+}
+.modal-open .modal {
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	overflow: hidden;
+}
+.newslattinputs{
+	padding: 3%;
+	width: 100%!important;
+	height: 35px;
+	border-radius: 10px;
+	border: 1px solid #30a6e9;
+}
+.newslattinputs:focus{outline: none;}
+/* Lily Newslatter Gallery css */
 .newslattergrid {
 	position: relative;
 	margin: 0 auto;

@@ -9,3 +9,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+@media screen and (min-width:320px)and (max-width:575px) {
+  .setorder-forcols1{-webkit-order: 1;}
+  .setorder-forcols2{-webkit-order: 2;}
+  .setorder-forcols3{-webkit-order: 4;}
+  .setorder-forcols4{-webkit-order: 3;}
+}
