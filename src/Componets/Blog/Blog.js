@@ -7,15 +7,9 @@ import aboutimg from '../../img/blog/aboutimg.jpg';
 import bg from '../../video/bg.mp4';
 const Blog = () => {
   const [items, setItems] = useState([]);
-  
-  const[visible,setVisible]=useState(3);
-  console.log(visible);
   const [isReadMore, setIsReadMore] = useState(true);
   const [isReadmorepara, setIsReadmorepara]=useState(true);
-  const[isReadcard,setIsReadcard]=useState(true);
-  const [prevValue,setPrevValue]=useState(3);
-  console.log(prevValue);
-
+ 
   // useEffect(() => {   
   // axios.get(`https://b2bnetworkservices.online/blogs/public`)
   //             .then(res => {
@@ -29,13 +23,11 @@ const Blog = () => {
     .then((res)=>res.json())
     .then((data)=>setItems(data.blogs));
   },[]);
-
-  const showMoreItems=()=>{
-    // setPrevValue(prevValue + 3);
-    setVisible(visible + 3);
-    return
-  };
-
+  const[count,setCount]=useState(3);
+  const inc=()=>{
+    setCount(count+3);
+    console.log(setCount);
+  }
   // const loadmore=()=>{
   //   var currentindex=0;
   //   var maxresult=3;
@@ -57,8 +49,6 @@ const Blog = () => {
   const toggleHeadingreadmore=()=>{
         setIsReadmorepara(!isReadmorepara);
   }
-  
- 
   // ==================
 
 
@@ -136,9 +126,8 @@ const Blog = () => {
         </div> */}
     </div>
 </div>
-
       {/* =======================section about blog==================== */}
-      <section id="about" className="about">
+    <section id="about" className="about">
       <div className="container" data-aos="fade-up">
         <div className="row">
           <div className="col-lg-5 col-md-6">
@@ -161,11 +150,11 @@ const Blog = () => {
       </div>
     </section>
 
-     <section className="card-blog">
+    <section className="card-blog">
      <div className="container card-blog-cont ">
        <div className="row">
         {
-         items.slice(0,visible).map((item)=>{
+         items.slice(0,count).map((item)=>{
           // Data.map((data,i)=>{
          return(
                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 b-card" data-aos="zoom-in-down">
@@ -197,7 +186,7 @@ const Blog = () => {
                            <Button classNames="btnclear22" text="Read More">
                            </Button></a>
                            <div className="d-flex align-items-center justify-content-center foot blog-admin-msg">
-                               <p className="admin">{item.author}</p>&nbsp;&nbsp;
+                               <p className="admin justify-content-center align-items-center">{item.author}</p>&nbsp;&nbsp;
                                <p className="ps-3 icon text-muted"><span className="fa fa-pencil pe-1"></span>{}</p>
                           </div>
                         </div> 
@@ -208,16 +197,18 @@ const Blog = () => {
              )
            })
          } 
-            <div className="col-12">
+            {/* <div className="col-12">
                 <div className="d-flex justify-content-center" style={{marginTop:'10px',marginBottom:'10px'}}>
-                {/* {visible < items.length &&  */}
-                {/* {isReadcard ? items.slice(0+visible,3+visible) :null }  */}
-               <Button text="Load More" classNames="allbtn-primary glow-on-hover text-light" id="loadMore" onclick={()=>showMoreItems()}>
+                <Button text="Load More" classNames="allbtn-primary glow-on-hover text-light" id="loadMore" onclick={()=>showMoreItems()}  >
                 </Button> 
                 </div>
+            </div> */}
+            <div className="col-12">
+              <div className="d-flex justify-content-center" style={{marginTop:'10px',marginBottom:'10px'}}>
+                <button className="btn btn-primary Load-More" onClick={inc} >Load More</button>
+              </div>
             </div>
-            <div>
-              
+            <div> 
             </div>
     </div>
     </div>

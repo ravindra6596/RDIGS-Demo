@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
  import service1 from '../../img/services/service1.jpg';
  import service2 from '../../img/services/service2.jpg';
  import service3 from '../../img/services/service3.jpg';
- import service4 from '../../img/services/service4.jpg';
- import service6 from '../../img/services/service6.jpg';
- import service7 from '../../img/services/service7.jpg';
-import Heading from '../Heading/Heading';
+ import Heading from '../Heading/Heading';
 const Servicess =()=>{
 // Navigation tab click open on top functionality
   const scrollgoTop = () => {
@@ -54,7 +51,7 @@ const Servicess =()=>{
                              <img src={user.serviceimg} alt="Avatar" className="img-fluid"/>
                             </div>
                             <div className="flip-card-back">
-                                <h3 style={{marginTop:'15%'}}>{user.servicetitle}</h3>
+                                <h3 className="service-card-text">{user.servicetitle}</h3>
                             </div>
                         </div>
                     </div>  </Link>   

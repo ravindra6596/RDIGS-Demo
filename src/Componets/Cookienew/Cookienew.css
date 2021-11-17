@@ -1,3 +1,12 @@
+.cookie-newdiv{
+    width:500px;
+    height:300px;
+    background-color: white;
+    bottom: 0;
+    position:absolute; 
+    left:10px;
+}
+
 /* privacy policy */
 .modelcookie{
     bottom:0;
@@ -105,15 +114,5 @@ label {
     .customizebtn{
         margin-right: 0px;
         margin-bottom: 10px;
-    }
-}
-@media only screen and (min-width:320px) and (max-width:575px){
-    .modelcookie{
-        margin-left:5px !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* position: initial; */
-        max-width: 100%;
     }
 }
