@@ -20,11 +20,11 @@ const ContentSyndication =()=>{
             <section style={{margin:'2% 0px'}}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6 col-md-6 col-sm-6">
+                        <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols1">
                             <Heading h1Class="clientheadwe" title="Content Is King But Syndication Is Queen"/>
                             <p style={{textAlign:'justify'}}>We are not only marketing content but also changing the world of those who are consuming it. We include the business objectives along with our audience targeting. Our service will help you amplify website views, traffic and generate the company’s reputation through syndication.</p>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6"data-aos="zoom-in-up">
+                        <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols2"data-aos="zoom-in-up">
                             <img className="img-fluid" src={callbackimg1}/>
                         </div>
                     </div>
@@ -33,10 +33,10 @@ const ContentSyndication =()=>{
             <section style={{margin:'2% 0px'}}>
                 <div className="container">
                     <div className="row">
-                    <div className="col-lg-6 col-md-6 col-sm-6"data-aos="zoom-in-down">
+                    <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols3"data-aos="zoom-in-down">
                             <img className="img-fluid" src={salesquaimg2}/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6">
+                        <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols4">
                             <Heading h1Class="clientheadwe" title="Target Engage Activate Measure"/>
                             <p style={{textAlign:'justify'}}>We tailor a message so as to communicate effectively. We help you to reach the right people with right message, at right time. Leverage RDIGS content syndication strategies to augment content and drive pipeline development.</p>
                         </div>

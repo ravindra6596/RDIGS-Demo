@@ -20,11 +20,11 @@ const AppointmentSetting =()=>{
             <section style={{margin:'2% 0px'}}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6 col-md-6 col-sm-6">
+                        <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols1">
                             <Heading h1Class="clientheadwe" title="Turning Prospects Into Buyers"/>
                             <p style={{textAlign:'justify'}}>Appointment setting requires exemplary persuasive skills that will convert the conversation into customers. We have an astute team who drives sales and increases productivity.</p>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6"data-aos="zoom-in-down">
+                        <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols2"data-aos="zoom-in-down">
                             <img className="img-fluid" src={callbackimg1}/>
                         </div>
                     </div>
@@ -33,10 +33,10 @@ const AppointmentSetting =()=>{
             <section style={{margin:'2% 0px'}}>
                 <div className="container">
                     <div className="row">
-                    <div className="col-lg-6 col-md-6 col-sm-6"data-aos="zoom-in-up">
+                    <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols3"data-aos="zoom-in-up">
                             <img className="img-fluid" src={salesquaimg2}/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6">
+                        <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols4">
                             <Heading h1Class="clientheadwe" title="We Are Sales Pitch Masters"/>
                             <p style={{textAlign:'justify'}}>RDIGS with its adept workforce makes a healthy sales pipeline. Our communicators make a stunning first impression and get the interested prospects to meet our sales team and that will turn into a solid deal.</p>
                         </div>
