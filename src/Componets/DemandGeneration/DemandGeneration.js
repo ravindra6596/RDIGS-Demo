@@ -182,8 +182,7 @@ const DemandGeneration=()=>{
                                     </div> 
                             </div>
                              </ModalBody>
-                        </Modal>
-                       
+                        </Modal>  
                     </div>
                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 Demand-img-col">
                         <div class="text-center lg-img aos-init aos-animate" data-aos="fade-left">
@@ -261,11 +260,13 @@ const DemandGeneration=()=>{
                             </div>
                             <div class="service-inner">
                                 <h4>{user.serviceinnerh1}</h4>
-                                <p className="text">{user.serviceinnerpara}&nbsp;<span>{user.serviceinnerspan}</span>&nbsp;{user.serviceinnerpara1}</p>
+                                <p className="text-card-demand">{user.serviceinnerpara}&nbsp;<span>{user.serviceinnerspan}</span>&nbsp;{user.serviceinnerpara1}</p>
                             </div>
-                        <Link to={user.Accountbaselinks} style={{textDecoration:'none'}} onClick={scrollgoTop}>
-                           <Button  classNames="readmore glow-on-hover" text="Readmore"/> 
-                        </Link>
+                            <div className="justify-content-center align-items-center">
+                                <Link to={user.Accountbaselinks} style={{textDecoration:'none'}} fun={() =>scrollgoTop()}>
+                                   <Button classNames="btnclear22" text="Readmore"/> 
+                                </Link> 
+                            </div>
                         </div>
                     </div>
                      )

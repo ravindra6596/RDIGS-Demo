@@ -25,11 +25,11 @@ const CompanyProfile1 = () => {
       el: '.blog-slider__pagination',
       clickable: true,
     }
-  });
+  })
   const userdata=[
     {
       heading:"VISSION",
-     vmpimg:ourvision,
+      vmpimg:ourvision,
       vmppara:"To provide highest quality added services to our purchasers and delivering measurable results. individual customers.learn more."
     },
     {
@@ -120,12 +120,10 @@ const CompanyProfile1 = () => {
    {/* ========================== */}
    <section id="testimonials" className="testimonials">
       <div className="container" data-aos="zoom-in">
-    
     <Carousel infiniteLoop useKeyboardArrows autoPlay>
       {
       blogdata.map((blog,i)=>{
-        return(
-         
+        return( 
         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 swiper">
         <div className="testimonials-slider" data-aos="fade-up" data-aos-delay="100">
           <div className="swiper-wrapper">
@@ -149,7 +147,6 @@ const CompanyProfile1 = () => {
           })
         }
        </Carousel> 
-
       </div>  
     </section>
             </section>

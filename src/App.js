@@ -29,8 +29,6 @@ const B2BCustomelist = React.lazy(() => import('./Componets/B2BCustomelist/B2BCu
 const DatabaseCleaning = React.lazy(() => import('./Componets/DatabaseCleaning/DatabaseCleaning'));
 const InstallDatabase = React.lazy(() => import('./Componets/InstallDatabase/InstallDatabase'));
 const RdRoadMap = React.lazy(() => import('./Componets/RdRoadMap/RdRoadMap'));
-
-
 const Gallary = React.lazy(() => import('./Componets/Gallery/Gallery'));
 const CompanyProfile1 = React.lazy(() => import('./Componets/CompanyProfile1/CompanyProfile1'));
 const Blog = React.lazy(() => import('./Componets/Blog/Blog'));
@@ -43,7 +41,6 @@ const Cookie = React.lazy(()=>import('./Componets/Cookie/Cookie'));
 const Cookienew = React.lazy(()=>import('./Componets/Cookienew/Cookienew'));
 const Blogpage =React.lazy(()=>import('./Componets/Blogpage/Blogpage'));
 const useSessionModal =React.lazy(()=>import('./Componets/useSessionModal/useSessionModal'));
-const Loadmore = React.lazy(()=>import('./Componets/Loadmore/Loadmore'));
   return (
     <div className="App">
       <BrowserRouter>
@@ -84,7 +81,6 @@ const Loadmore = React.lazy(()=>import('./Componets/Loadmore/Loadmore'));
               <Route path='/footer' exact={true} component={Footer}/>
               <Route path="/Pagenotfound" exact={true} component={PageNotFound}/>
               <Route path="/blogpage" exact={true} component={Blogpage}/>
-              <Route path="/loadmore" exact={true} component={Loadmore}/>
               <Redirect from="*" to="/Pagenotfound"/>
           </Switch>
           <Footer/>

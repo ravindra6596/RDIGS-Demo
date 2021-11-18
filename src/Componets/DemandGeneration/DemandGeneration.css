@@ -114,15 +114,15 @@
 }
 /* responsive */
   @media only screen and (min-width: 575px) and (min-width: 768px) { 
-  .Drive-Excess-Conversion-demand {
-      padding: 10px 20px;
+    .Drive-Excess-Conversion-demand {
+        padding: 10px 20px;
+        }
+    .Demand-right{
+        padding:0px;
     }
-  .Demand-right{
-      padding:0px;
-  }
-  .Demand-subhead{
-      padding: 0px;
-  }
+    .Demand-subhead{
+        padding: 0px;
+    }
   }
   /* for services */
   #service-head {
@@ -143,8 +143,7 @@
 }
 .section-ser {
     background-image: url('../../img/services/banner_back.jpg');
-    background-size: cover;
-    
+    background-size: cover; 
 }
 .about-list {
     margin-top: 30px;

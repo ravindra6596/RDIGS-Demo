@@ -2,59 +2,65 @@ import React, { useState, useEffect } from "react";
 import Cookies from 'universal-cookie';
 import './Cookie.css';
 import Button from "../ButtonGroup/Button/Button";
-import { Modal, ModalBody } from 'reactstrap';
-import cookie_bite from '../../img/cookie-bite.svg';
+import { Modal } from 'reactstrap';
+import cookiebite from '../../img/cookiebite.svg';
 const Cookie = () => {
     // close model 
     const [showModal, setShowModal] = useState(false);
-    // // small model for cookie
-    const [showText, setShowText] = useState(true);
-    const onList = () => setShowText(false);
+    // small model for cookie
+    const [showText, setShowText] = useState(false);
+    const onList = () => setShowText(true);
     // customize button on off
     const [list, toggleList] = React.useState(true);
+    // set to check checkbox
+    // const [isCheckedpreferences, setIsCheckedpreferences] = useState(false);
+    // const [isCheckedanalytics, setIsCheckedanalytics] = useState(false);
+    // const [isCheckedmarketing, setIsCheckedmarketing] = useState(false);
     // set time to show model
     useEffect(() => {
         const timeId = setTimeout(() => setShowModal(true), 2000);
         return () => clearTimeout(timeId)
     }, []);
-
-    //   Cookie store
+    // Cookie store
     const cookies = new Cookies('');
     const d=new Date();
     d.setTime(d.getTime() + (5*10000));
-    const [preferences,setPreferences]=useState(false);
-    const [analytics,setAnalytics]=useState(false);
-    const [marketing,setMarketing]=useState(false);
+    // const [preferences,setPreferences]=useState(false);
+    // const [analytics,setAnalytics]=useState(false);
+    // const [marketing,setMarketing]=useState(false);
     const createCookie = () => {
-        cookies.set('myCat', 'Pacman','access_token', { path: '/' });
         cookies.set('essential', 'essential', { path: '/'});
-        cookies.set('preferences', 'preferences', { path: '/'}); 
+        cookies.set('preferences', 'preferences', { path: '/'});
+        cookies.set('analytics', 'analytics', { path: '/'});
+        cookies.set('marketing', 'marketing', { path: '/'}); 
         // if(localStorage.getItem('.modelcookie') != 'shown'){
         //     setShowModal(".modelcookie").delay(2000).fadeIn();
-        //     localStorage.setItem('.modelcookie','shown')
+        //     localStorage.setItem('.modelcookie','shown');
         // }      
     }
-    // function handlePreferences(e){
-    //     if(setPreferences(e.target.value)===true){
+    // const handlePreferences=()=>{
+    //     setIsCheckedpreferences(!isCheckedpreferences);
+    //     if('preferences'==='isChecked'){
     //         cookies.set('preferences', 'preferences', { path: '/',expires : d});
     //     }
-    // }
-    // function handleAnalytics(e){
-    //     if(setAnalytics(e.target.value)===true){
-    //         cookies.set('analytics', 'preferences', { path: '/',expires : d});
+    // };
+    // const handleAnalytics=()=>{
+    //     setIsCheckedanalytics(!isCheckedanalytics);
+    //     if('analytics'==='isChecked'){
+    //         cookies.set('analytics', 'analytics', { path: '/',expires : d});
     //     }
-    // }
-    // function handleMarketing(e){
-    //     if(setMarketing(e.target.value)===true){
+    // };
+    // const handleMarketing=()=>{
+    //     setIsCheckedmarketing(!isCheckedmarketing);
+    //     if('marketing' === 'isChecked'){
     //         cookies.set('marketing', 'marketing', { path: '/',expires : d});
     //     }
-    // }
-    // new Date(new Date().getTime() + 5 * 1000) 
+    // };
     const readCookie = () => {
         console.log(cookies.get('myCat'));
         console.log(cookies.get('essential'));
         console.log(cookies.get('preferences'));
-        localStorage.getItem('.modelcookie'); 
+        localStorage.getItem('.modelcookie');
      }
     return (
         <>
@@ -66,18 +72,17 @@ const Cookie = () => {
                         <div class="gdprcookie">
                             <span className="Cookiemodalclosebtn" onClick={() => setShowModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
                             <div>
-                                <img src={cookie_bite} class="cookie-img" alt="Cookie Image" /> Cookies &amp; Privacy Policy
+                                <img src={cookiebite} class="cookie-img" alt="Cookie_Image"/> Cookies &amp; Privacy Policy
                             </div>
                             <p>We use cookies to personalize your experience and analyse web traffic. Learn more about
                                 our use of cookies in our &nbsp;
                                 <a href="/Privacypolicy" target="_blank" class="cookie-privacy">Privacy Policy</a>.</p>
-                            {list ? <List /> : null}
+                            {showText ? <List /> : null}
                             <div class="gdprcookie-buttons">
-                                <Button type="button" value="SetCookies" name="set" classNames="btnclear22" onClick={() => {onList(); createCookie(); toggleList(!list);}} text="Customize"/>
+                                <Button type="button" value="SetCookies" name="set" classNames="btnclear22" fun={() => {onList(); createCookie(); toggleList(!list);}} text="Customize"/>
                                 <span onClick={() =>{readCookie(); setShowModal(false); }}> <Button value="GetCookies" name="get" classNames="allbtn-primary glow-on-hover text-light" text="Accept All" data-aos="fade-left"/></span>
                             </div>
-                        </div>
-                        
+                        </div>  
                     </Modal>
                     </div>
                 </div>
@@ -97,23 +102,27 @@ const List = () => <div class="gdprcookie-types">
                 website to work correctly.">Essential</label>
             </li>
             <li>
-                <input type="checkbox" id="gdpr_cookietype_1" name="preferences"  />
-                {/* onChange={handlePreferences()} */}
+                 <input type="checkbox" id="gdpr_cookietype_1" name="preferences" value="preferences"/> 
+                {/* onClick={handlePreferences} checked={checked} */}
                 {/* value={preferences} onChange={(e) => setPreferences(e.target.value)} */}
                 <label for="gdpr-cookietype-1" title="These are cookies that are related to your site 
             preferences, e.g. remembering your username, site colours, etc.">Site Preferences</label>
             </li>
             <li>
-                <input type="checkbox" id="gdpr_cookietype_2" name="analytics" />
+                <input type="checkbox" id="gdpr_cookietype_2" name="analytics" value="analytics" 
+                />
+                {/* onClick={handleAnalytics} checked={checked} */}
                 <label for="gdpr-cookietype-2" title="Cookies related to site visits, browser types, 
-        etc.">Analytics</label>
+            etc.">Analytics</label>
             </li>
             <li>
-                <input type="checkbox" id="gdpr_cookietype_3" name="marketing" />
+                <input type="checkbox" id="gdpr_cookietype_3" name="marketing" value="marketing"
+                 />
+                 {/* onClick={handleMarketing} checked={checked} */}
                 <label for="gdpr-cookietype-3" title="Cookies related to marketing, e.g. newsletters, 
-        social media, etc">Marketing</label>
+            social media, etc">Marketing</label>
             </li>
         </ul>
     </form>
-</div>;
+</div>
 export default Cookie;
