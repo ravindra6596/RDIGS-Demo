@@ -34,7 +34,7 @@ const Home = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-5 col-md-5 col-sm-5 col-xs-5" style={{ padding: '0px' }}>
-                <img src={modalimg} className="homemain-modalimg img-fluid" />
+                <img src={modalimg} className="homemain-modalimg img-fluid" alt=""/>
               </div>
               <div className="col-lg-7 col-md-7 col-sm-7 col-xs-7">
                 <h1>To Get Latest Updates</h1>

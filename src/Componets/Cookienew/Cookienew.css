@@ -1,4 +1,4 @@
-.cookie-newdiv{
+/* .cookie-newdiv{
     width:500px;
     height:300px;
     background-color: white;
@@ -6,16 +6,8 @@
     position:absolute; 
     left:10px;
 }
-
 /* privacy policy */
-.modelcookie{
-    bottom:0;
-    position:absolute;
-    margin-left:30px !important;
-    border: 30px !important;
-    background-color: none !important;
-}
-.Cookiemodalclosebtn{
+/* .Cookiemodalclosebtn{
     float:right;
 }
 .gdprcookie {
@@ -104,15 +96,4 @@ label {
 }
 .gdprcookie-buttons {
     text-align: center;
-}
-
-/* media for xs screen  */
-@media only screen and (min-width:320px)and (max-width:345px){
-    .glow-on-hover {
-        padding: 0;
-    }
-    .customizebtn{
-        margin-right: 0px;
-        margin-bottom: 10px;
-    }
-}
+}  */

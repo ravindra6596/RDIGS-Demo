@@ -39,13 +39,13 @@ const Servicess =()=>{
             <div className="section-title"> 
                 <Heading h1Class="clientheadwe" spanClass="spansubhead1" title="Services"/>
                 <p className="service-para">We extensively evaluate the technology so as to bring the highest quality performance to you and after our research we adopted the Reverse Lead Generation Funnel, that increased our sales by 14.25% and we are able to move prospects through the sales cycle 23% faster.</p>
-            </div> 
-               
+            </div>               
             <div className="row" data-aos="fade-up" data-aos-delay="200" >
             {               
                 data.map((user, index) => (
                 <div className="col-lg-4 col-md-4 col-sm-4 service-col-img" data-aos="zoom-in-down" style={{marginTop:'3%'}}>
-                    <Link to={user.serviceLinks} onClick={scrollgoTop}><div className="flip-card">
+                    <Link to={user.serviceLinks} onClick={scrollgoTop}>
+                       <div className="flip-card">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">      
                              <img src={user.serviceimg} alt="Avatar" className="img-fluid"/>
@@ -54,7 +54,8 @@ const Servicess =()=>{
                                 <h3 className="service-card-text">{user.servicetitle}</h3>
                             </div>
                         </div>
-                    </div>  </Link>   
+                       </div> 
+                    </Link>   
                  </div>
                 ))
                 }

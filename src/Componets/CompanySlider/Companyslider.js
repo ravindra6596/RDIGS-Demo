@@ -94,8 +94,7 @@ const Companyslider = () => {
   ];
   return (
     <>
-      <section className="clients"> 
-       
+      <section className="clients">  
         <div className="slide-overlay">
           <div className="section-title">
             <Heading h1Class="clientheadwe" title="We Work With" />

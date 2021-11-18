@@ -21,6 +21,11 @@
         margin-left: 0px !important;
     }
 }
+@media only screen and (min-width:768px)and (max-width:991px) {
+    .about1img{
+        margin-left: 0px !important;
+    }
+}
 .about .content {
     background-color: #f6f9ff;
     padding: 80px;
@@ -57,6 +62,7 @@
 }
 .company-vmp{
     padding:10px;
+    height:250px;
 }
 .vision-title {
     position: absolute;
