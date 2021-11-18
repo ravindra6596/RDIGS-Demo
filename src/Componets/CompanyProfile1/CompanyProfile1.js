@@ -3,6 +3,7 @@ import "./CompanyProfile1.css";
 import Heading from "../Heading/Heading";
 import Tab from 'react-bootstrap/Tab';
 import {Nav,Row,Col} from 'react-bootstrap';
+import RdRoadMap from '../RdRoadMap/RdRoadMap';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import about1 from '../../img/blog/about1.jpg';
@@ -65,16 +66,18 @@ const CompanyProfile1 = () => {
   return (
     <>
       <div className="nav-contaniner" />
-            <section className="companyprofilesection">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12" style={{marginTop:'10%',color:'white'}}>
-                            <Heading h1Class="clientheadwe" title="Company Profile"/>
-                            <p style={{color:'white'}}> we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
-                     </div>
-                    </div>
+          <section className="companyprofilesection">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12" style={{marginTop:'10%',color:'white'}}>
+                  <Heading h1Class="clientheadwe" title="Company Profile"/>
+                  <p style={{color:'white'}}> we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
                 </div>
-            </section>
+              </div>
+            </div>
+          </section>
+            {/* Road map */}
+            <RdRoadMap/>
             <section id="about" className="about">
             <div className="container" data-aos="fade-up">
               <div className="row gx-0">
@@ -146,21 +149,6 @@ const CompanyProfile1 = () => {
        </Carousel> 
       </div>  
     </section>
-  {/* team testimonial slider */}
-            {/* <div className="blog-slider">
-            <div className="blog-slider__wrp swiper-wrapper">
-              <div className="blog-slider__item swiper-slide">
-                <div className="blog-slider__img">
-                  <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt=""/>
-                </div>
-                <div className="blog-slider__content">
-                  <div className="blog-slider__title">{}</div>
-                  <div className="blog-slider__text">{}</div>
-                </div>
-              </div>
-            </div>
-            <div className="blog-slider__pagination"></div>
-          </div>  */}
             </section>
               <section className="company-choose-section">
                 <div className="container">
@@ -262,8 +250,6 @@ const CompanyProfile1 = () => {
               </div>
               </div>
               </section> 
-            
-      
     </>
   );
 };

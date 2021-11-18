@@ -33,8 +33,21 @@
     outline-width: 0 !important;
     box-shadow: none;
     -moz-box-shadow: none;
-    -webkit-box-shadow: none   
+    -webkit-box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;  
 }
+.slick-slide {border: none!important; outline: none!important;  
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none!important; }
+.slick-slide::-moz-focus-inner { border: 0; }
+.slick-slide:focus,:active,:visited {border: none!important; outline: none!important;}
+.newtestislider:focus{outline: none!important; border: none!important;-webkit-appearance: none;
+    -moz-appearance:none;
+    appearance: none; }
+    
 /* .slick-initialized .slick-slide{pointer-events: none;} */
 .testimonial-card:focus{outline: none;}
 .testimonial-card:hover{

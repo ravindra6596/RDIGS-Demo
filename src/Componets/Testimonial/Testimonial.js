@@ -52,7 +52,7 @@ const Testimonial = () => {
         </div>
       </section>
       <section className="card-top">
-        <Slider {...settings} className="newtestislider">
+        <Slider {...settings} className="newtestislider" style={{outline:'none',border:'none',outline: '0px solid transparent'}}>
           {/* {/ Using Map Function to access the data /} */}
           {data.map((data) => (
             <div className="container" style={{outline:'none',border:'none',outline: '0px solid transparent'}}>

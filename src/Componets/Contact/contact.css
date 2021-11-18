@@ -22,6 +22,14 @@
     color: #30a6e9; 
     font-family:Orbitron;
 }
+.contactclear22{
+    width: 130px;
+    height: 47px;
+    color:#30a6e9 ;
+    background-color: transparent;
+    border-color: #30a6e9;
+    border-radius: 40px;
+}
 .conradiodiv{display: flex;}
 .conwhattxt{
     color: black;
@@ -102,4 +110,7 @@
 @media only screen and (min-width: 768px) and (max-width: 990px) {
     .conwhattxt {  margin-right: 51%;}
     .contactfirst-sec { height: 665px;}
+}
+@media only screen and (min-width: 990px) and (max-width:1920px ) {
+.contactfirst-sec { height: 670px;}
 }

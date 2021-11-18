@@ -1,0 +1,29 @@
+.roadbox{
+    width: 100%;
+  height: 25px;
+  color: white;
+}
+.roadverticalline {
+    border-left: 2px solid #30a6e9;
+    height: 165px;
+    position:absolute;
+    left: 50%;
+}
+.roadverticalline2 {
+    border-left: 2px solid #30a6e9;
+    height: 115px;
+    position:absolute;
+    left: 50%;
+}
+.roadcol1{margin-bottom: 10%;}
+.roadcol2{padding-top: 5%; margin-bottom: 10%;}
+.roadcol3{margin-bottom: 10%;}
+.roadcol4{padding-top: 5%;margin-bottom: 10%;}
+.roadcol5{margin-bottom: 10%;}
+.roadcol6{padding-top: 5%; margin-bottom: 10%;}
+@media only screen and (min-width:320px)and (max-width:575px) {
+    .roadcol1{-webkit-order: 1;}
+    .roadcol7{-webkit-order: 2;}
+  }
+
+

@@ -158,8 +158,6 @@ input::-webkit-inner-spin-button {
     padding: 6px 8px;
     width: 60%;
     outline: none;
-    /* -webkit-border-top-left-radius: 5px;
-    -webkit-border-bottom-left-radius: 5px; */
 }
 .EWF__subscribe[type=submit]{
         background-color: #219ee5;
@@ -170,8 +168,6 @@ input::-webkit-inner-spin-button {
         color: #fff;
         transition: .3s;
         cursor: pointer;
-        /* -webkit-border-bottom-right-radius: 5px;
-        -webkit-border-top-right-radius: 5px; */
     }
 .EWF__subscribe:hover {
     background-image: linear-gradient(to right,#30a6e9 , lightblue);
@@ -260,9 +256,7 @@ font-size: 18px;}
     color: #266a91;
 }
 /* css for footerlinks */
-.footer-links{
-    list-style: none;
-}
+.footer-links{ list-style: none;}
 
 /* css for Footer newsletter */
 .footer-newsletter p {
@@ -338,7 +332,7 @@ font-size: 18px;}
     height: 36px;
     transition: 0.3s;
   }
-    .social-links-footer a:hover {
+.social-links-footer a:hover {
     background: #4154f1;
     color: #fff;
     text-decoration: none;
@@ -381,9 +375,7 @@ font-size: 18px;}
     transform: scale(1.2);
 }
 /* / modal corporate Deck / */
-.corporate-submit{
-    text-decoration: none;
-}
+.corporate-submit{text-decoration: none;}
 .corporate-img{
     width:100%;
     height:100%;
@@ -450,9 +442,7 @@ input::-webkit-inner-spin-button {
  }
 /* media query for downloadbtn */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .cop-btn{
-        margin-bottom: 10px;
-    }  
+    .cop-btn{ margin-bottom: 10px;}  
 }
 /* All Footer responsive */
 @media only screen and (min-width: 320px) and (max-width: 575px) {
@@ -483,5 +473,10 @@ input::-webkit-inner-spin-button {
  }    
 @media only screen and (min-width:992px) and (max-width: 1200px) {
     .newsletter-input1 {width: 52%;}}
-
+@media only screen and (min-width:991px) and (max-width: 1200px) {
+        .EWF__subscribe[type=submit] {
+        width: 40%;
+        padding: 6px 0px;
+        font-size: 15px;}
+}
     
