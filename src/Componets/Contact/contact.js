@@ -1,4 +1,4 @@
-import React, { useState,useRef} from "react";
+import React, { useState,useRef } from "react";
 import Recaptcha from 'react-google-invisible-recaptcha';
 import Heading from "../Heading/Heading";
 import './contact.css';
@@ -9,6 +9,7 @@ import Button from "../ButtonGroup/Button/Button";
 const Contact = () => {
 
     const [radiotext, showRadiotext] = useState(false);
+//   Form inputs logic  
     const [inputs, setInputs] = useState({});
     const handleChange = (event) => {
         const name = event.target.name;
@@ -19,6 +20,20 @@ const Contact = () => {
         event.preventDefault();
         console.log(inputs);
       }
+      
+//   Reset button functinality  
+    const[formstate,setState]=useState({});
+    const handleReset = (e) => {
+        setState(prevState => ({
+            ...prevState,
+            username: '',
+            phno: '',
+            email: '',
+            comname:''
+        }))
+        e.preventDefault();
+    }
+
  // Capcha 
       const recaptchaRef = React.createRef();
       let recaptcha = useRef(null);
@@ -37,7 +52,7 @@ const Contact = () => {
                         </div>
                           <div className="col-lg-6 col-md-12 col-sm-12 contformcol">
                             <h2 className="contgetin" data-aos="fade-up">Get in Touch</h2>
-                            <form id="frm1" onSubmit={handleSubmit}autocomplete="off">
+                            <form autocomplete="off">
                                 <div class="form-group">
                                     <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Name"
                                      type="text" 
@@ -55,8 +70,8 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Email"
-                                          type="text" 
+                                    <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Email" style={{width:'90%'}}
+                                          type="email" 
                                           name="email" 
                                           value={inputs.email || ""} 
                                           onChange={handleChange}
@@ -91,14 +106,16 @@ const Contact = () => {
                                 </div>
                                 {/* others Radio button functinality */}
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Service Name" 
-                                 style={{ display: radiotext ? "block" : "none"}}/>
+                                 style={{ display: radiotext ? "block" : "none"}} 
+                                 />
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="textarea" placeholder="Your Message"/>
                                 <div className="row conbtnrow">
                                     <div className="col btngetintouch">
-                                    <Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" type="submit"/>
+                                        <Button classNames="allbtn-primary glow-on-hover text-light" fun={() => handleSubmit()} text="GET IN TOUCH" />
                                     </div>
                                     <div className="col conformcleardiv">
-                                    <Button classNames="btnclear22" text="Clear" onClick="resetdata()"/></div>
+                                        <button className="contactclear22" onClick={handleReset} >Clear</button>
+                                    </div>
                                 </div>
                                  <Recaptcha 
                                      badge="bottomleft"
