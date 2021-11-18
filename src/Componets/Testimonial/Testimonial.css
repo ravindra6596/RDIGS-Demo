@@ -2,7 +2,8 @@
     background-image:url('../../img/testimonial/testimonialbg.png') ;
     background-size: cover;
     height: 350px;
-    width: 100%;}
+    width: 100%;
+}
 .card img{
     width: 100px;
     height: 100px;
@@ -15,9 +16,10 @@
 .testproinfodiv{line-height: 5px;}
 .testproname{
     font-size: 20px;
-    font-weight: 500;}
+    font-weight: 500;
+}
 .testprodesi{font-size: 12px;}
-.testimonial-card{
+.testimonial-card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,2);
     padding:20px;
     background-color: white;
@@ -26,7 +28,7 @@
     height: 220px;
     outline: none;
 }
-.testcardcol1{
+.testcardcol1 {
     outline:none !important;
     outline-width: 0 !important;
     box-shadow: none;
@@ -57,7 +59,7 @@
     position: absolute;
     top: -45px;
 }
-.testimonial-heading{
+.testimonial-heading {
     color: #30a6e9;
     margin: 10px 5px;
 }

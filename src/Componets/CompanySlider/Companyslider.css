@@ -17,7 +17,11 @@
   overflow-x: hidden;
 }
 .slide-overlay{
-  background-image: url('../../img/background715.jpg');
+  background-image: linear-gradient(
+    rgb(0 0 0 / 50%),
+    rgb(0 0 0 / 50%)
+  ),
+  url('../../img/weworkwith.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:scroll;

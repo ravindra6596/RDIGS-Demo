@@ -1,22 +1,12 @@
 import React,{useEffect,useState} from "react";
 import "./Blog.css";
-import axios from 'axios';
 import Button from '../ButtonGroup/Button/Button';
-import cardimg2 from "../../img/blog/cardimg2.jpg";
 import aboutimg from '../../img/blog/aboutimg.jpg';
 import bg from '../../video/bg.mp4';
 const Blog = () => {
   const [items, setItems] = useState([]);
   const [isReadMore, setIsReadMore] = useState(true);
   const [isReadmorepara, setIsReadmorepara]=useState(true);
- 
-  // useEffect(() => {   
-  // axios.get(`https://b2bnetworkservices.online/blogs/public`)
-  //             .then(res => {
-  //               setData(res.data.blogs);
-  //               console.log(Data);
-  //             });
-  //           }, []);
 // =============================================
   useEffect(()=>{
     fetch('https://b2bnetworkservices.online/blogs/public')
@@ -28,20 +18,6 @@ const Blog = () => {
     setCount(count+3);
     console.log(setCount);
   }
-  // const loadmore=()=>{
-  //   var currentindex=0;
-  //   var maxresult=3;
-  //   for (var i=0;i<maxresult; i++)
-  //   {
-  //       if(currentindex>=items.length)
-  //       {
-  //         setVisible("#loadMore")
-  //         return
-  //       }
-  //       setVisible("#cardblog").append("<div>" + items[i + currentindex]+ "</div>")
-  //   }
-  //   currentindex +=maxresult;
-  // };
 
   const toggleReadMore = () => {
         setIsReadMore(!isReadMore);
@@ -50,8 +26,6 @@ const Blog = () => {
         setIsReadmorepara(!isReadmorepara);
   }
   // ==================
-
-
   // const carddata=[
   //   {
   //     cardpic:cardimg2,
@@ -102,8 +76,6 @@ const Blog = () => {
   //     cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
   //   }
   // ];
-
-
   return (
     <>
       <div className="nav-contaniner"/>
@@ -118,7 +90,6 @@ const Blog = () => {
                 </div>
       </section>  */}
 {/* ===================================================== */}
-
 <div className="container-fluid">
   <div className="row">
       <video className="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src={bg} type="video/mp4" /></video>
@@ -149,26 +120,22 @@ const Blog = () => {
         </div>
       </div>
     </section>
-
     <section className="card-blog">
      <div className="container card-blog-cont ">
        <div className="row">
         {
          items.slice(0,count).map((item)=>{
-          // Data.map((data,i)=>{
          return(
                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 b-card" data-aos="zoom-in-down">
                <div className="d-lg-flex card-body card-border" id="cardblog">
                <div className="card-blog-div border-0 me-lg-4 mb-lg-0 mb-4">
                    <div className="backgroundEffect"></div>
                   <div className="pic"><img src={item.coverImg} alt=""/> 
-                       <div className="date"><span className="day">{item.publishDate}</span>
-                       {/* <span className="month">{data.cardmonth}</span>
-                        <span className="year">{data.cardyear}</span>  */}
-                         </div>
+                       <div className="date">
+                         <span className="day">{item.publishDate}</span>
+                       </div>
                  </div>  
                     <div className="content">
-                   
                          <p className="h-1 mt-4 cardhead">
                             {isReadmorepara ? item.title.slice(0,25):item.title}
                           <span onClick={toggleHeadingreadmore} className="read-or-hide">
@@ -199,21 +166,20 @@ const Blog = () => {
          } 
             {/* <div className="col-12">
                 <div className="d-flex justify-content-center" style={{marginTop:'10px',marginBottom:'10px'}}>
-                <Button text="Load More" classNames="allbtn-primary glow-on-hover text-light" id="loadMore" onclick={()=>showMoreItems()}  >
+                <Button text="Load More" classNames="allbtn-primary glow-on-hover text-light" id="loadMore" onClick={inc}>
                 </Button> 
                 </div>
             </div> */}
-            <div className="col-12">
+             <div className="col-12">
               <div className="d-flex justify-content-center" style={{marginTop:'10px',marginBottom:'10px'}}>
-                <button className="btn btn-primary Load-More" onClick={inc} >Load More</button>
+                <Button classNames="allbtn-primary glow-on-hover text-light" fun={() =>inc() } text='Load More'></Button>
               </div>
-            </div>
+            </div> 
             <div> 
             </div>
     </div>
     </div>
-     </section>
-  {/* team testimonial slider */}      
+     </section>     
     </>
   );   
 };

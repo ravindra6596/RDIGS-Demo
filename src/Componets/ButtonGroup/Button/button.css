@@ -22,7 +22,7 @@
         border-radius: 20px;
         border: 2px solid #30a6e9;
     }
-    .glow-on-hover:before {
+.glow-on-hover:before {
         content: '';
         border-radius: 20px;
         background: linear-gradient(45deg,
