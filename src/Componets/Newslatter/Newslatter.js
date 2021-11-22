@@ -8,10 +8,14 @@ import newscardimage4 from '../../img/Newslatter/newscardimg2.jpg';
 import newscardimage5 from '../../img/Newslatter/newscardsimg4.jpg';
 import newsbanboximg1 from '../../img/Newslatter/newsbanboximg.jpg';
 import newsgalimg1 from '../../img/Newslatter/newsgalimg1.jpg';
-
 import { Link } from "react-router-dom";
 const Newslatter =()=>{
   const [modal, setModal] = useState(false);
+
+//Link Navigation tab click open on top functionality
+const scrollgoToplinknews = () => {
+  window.scrollTo({ top:0});
+};
     const data = [
         {
             newsimg: newscardimage1,
@@ -107,9 +111,10 @@ const Newslatter =()=>{
                 </form>
                   <div style={{ display: 'flex'}}>
                     <input type="checkbox" checked style={{marginTop:'1%',paddingLeft:'2px'}}/>
-                    <p style={{paddingLeft:'2%'}}>I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our <span style={{ color: '#30a6e9' }}>Privacy Policy</span> And <span style={{ color: '#30a6e9' }}>Terms and Codition.</span> </p>
+                    <p style={{paddingLeft:'2%'}}>I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our 
+                    <Link to="/privacypolicy" onClick={scrollgoToplinknews}>Privacy Policy</Link> And <Link to="/termscondition" onClick={scrollgoToplinknews}>Terms and Codition.</Link></p>
                   </div>
-                  <div style={{ textAlign: 'center' }}><Button classNames="allbtn-primary glow-on-hover text-light" text="Submit" /></div>
+                  <div style={{ textAlign: 'center'}}><Button classNames="allbtn-primary glow-on-hover text-light" text="Submit" /></div>
               
         </ModalBody>
       </Modal>

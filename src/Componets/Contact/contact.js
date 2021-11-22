@@ -17,27 +17,20 @@ const Contact = () => {
         setInputs(values => ({...values, [name]: value}))
       }
     const handleSubmit = (event) => {
-        event.preventDefault();
         console.log(inputs);
+        event.PrevenDafult();
       }
       
-//   Reset button functinality  
-    const[formstate,setState]=useState({});
+//   Reset button functinality 
     const handleReset = (e) => {
-        setState(prevState => ({
-            ...prevState,
-            username: '',
-            phno: '',
-            email: '',
-            comname:''
-        }))
-        e.preventDefault();
+        console.log("reset");
+        setInputs(" ");   
+        e.PrevenDafult();
     }
-
+    
  // Capcha 
       const recaptchaRef = React.createRef();
       let recaptcha = useRef(null);
-  
       const onResolveddata = () => {
           console.log("a" + recaptcha.current.getResponse());
       }
@@ -57,8 +50,9 @@ const Contact = () => {
                                     <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Name"
                                      type="text" 
                                      name="username" 
-                                     value={inputs.username || ""} 
+                                     value={inputs.username ||""} 
                                      onChange={handleChange}
+                                     
                                      />
                                 </div>
                                 <div class="form-group">
@@ -88,33 +82,52 @@ const Contact = () => {
                                 <label className="conwhattxt">What Would You like to inquire about?</label><br />
                                 <div className=" row conradiodiv" style={{textAlign:'justify',paddingLeft:'4%'}}>
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30"  onClick={() => showRadiotext(false)} />
+                                        <input className="conradiofirst" type="radio" id="age1" value="30"  onClick={() => showRadiotext(false)}
+                                           name="demandrd" 
+                                           value={inputs.demandrd || "DemandGeneration"} 
+                                           onChange={handleChange}
+                                        />
                                         <label for="age1"  style={{marginLeft:'5px'}}>Demand Generation</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30"  onClick={() => showRadiotext(false)}/>
+                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30"  onClick={() => showRadiotext(false)}
+                                           name="salesempo" 
+                                           value={inputs.salesempo || "SalesEmpowerment"} 
+                                           onChange={handleChange}
+                                           />
                                         <label className="contactsale" for="age1">Sales Empowerment</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30" onClick={() => showRadiotext(false)}/>
+                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30" onClick={() => showRadiotext(false)}
+                                        name="dataenrich" 
+                                        value={inputs.dataenrich || "DataEnrichment"} 
+                                        onChange={handleChange}
+                                        />
                                         <label for="age1" style={{marginLeft:'5px'}} >Data Enrichment</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30" onClick={() => showRadiotext(true)} />
+                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30" onClick={() => showRadiotext(true)}  />
                                         <label for="age1" style={{marginLeft:'5px'}} >Other</label>
                                     </div>
                                 </div>
                                 {/* others Radio button functinality */}
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Service Name" 
                                  style={{ display: radiotext ? "block" : "none"}} 
+                                 name="otherinput1" 
+                                 value={inputs.otherinput1 || ""} 
+                                 onChange={handleChange}
                                  />
-                                <input className="col-lg-12 col-md-12 radiotextarea" type="textarea" placeholder="Your Message"/>
+                                <input className="col-lg-12 col-md-12 radiotextarea" type="textarea" placeholder="Your Message"
+                                  name="otherinput2" 
+                                  value={inputs.otherinput2 || ""} 
+                                  onChange={handleChange}
+                                />
                                 <div className="row conbtnrow">
                                     <div className="col btngetintouch">
                                         <Button classNames="allbtn-primary glow-on-hover text-light" fun={() => handleSubmit()} text="GET IN TOUCH" />
                                     </div>
                                     <div className="col conformcleardiv">
-                                        <button className="contactclear22" onClick={handleReset} >Clear</button>
+                                        <button className="contactclear22" onClick={handleReset}>Clear</button>
                                     </div>
                                 </div>
                                  <Recaptcha 

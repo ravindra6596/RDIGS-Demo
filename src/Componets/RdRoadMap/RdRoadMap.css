@@ -1,29 +1,56 @@
 .roadbox{
-    width: 100%;
-  height: 25px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
   color: white;
+  opacity: 1;
+  transition: 0.3s;
 }
+.roadbox:hover{opacity: 0.6;}
 .roadverticalline {
     border-left: 2px solid #30a6e9;
-    height: 165px;
+    height: 147px;
     position:absolute;
     left: 50%;
 }
+.rdcircleyear{margin-top: 35%;}
 .roadverticalline2 {
     border-left: 2px solid #30a6e9;
     height: 115px;
     position:absolute;
     left: 50%;
 }
+.roadverticallinerow{
+  border-right: 2px solid #30a6e9;
+  height: 113px;
+}
+.roadverticallinerow2 {
+  border-right: 2px solid #30a6e9;
+  height: 165px;
+}
 .roadcol1{margin-bottom: 10%;}
 .roadcol2{padding-top: 5%; margin-bottom: 10%;}
 .roadcol3{margin-bottom: 10%;}
 .roadcol4{padding-top: 5%;margin-bottom: 10%;}
 .roadcol5{margin-bottom: 10%;}
-.roadcol6{padding-top: 5%; margin-bottom: 10%;}
-@media only screen and (min-width:320px)and (max-width:575px) {
-    .roadcol1{-webkit-order: 1;}
-    .roadcol7{-webkit-order: 2;}
-  }
+.roadcol6 {
+  margin-top: 15%;
+  left: 13%;}
+.roadcol7{margin-top: 10%;
+  left: 13%;}
+  .roadcol8{margin-top: 15%;
+    left: 13%;}
+.roadmaptxtbox{
+  margin-top: 4%;
+  background-color: white;
+  border-radius: 0.3rem!important;
+}
+.roadmaptxtbox:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+
+
 
 
