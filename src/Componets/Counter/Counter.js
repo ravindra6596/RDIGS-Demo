@@ -13,7 +13,7 @@ const Counter = () => {
       <div className="container" data-aos="fade-up">
         <div className="row ">
           <div className="col-sm-1"></div>
-          <div className="col-lg-2 col-md-4 col-sm-2 counter-p">
+          <div className="col-xs-6 col-sm-12 col-md-4 col-lg-2 counter-p">
             <div
               className="count-box founded-in"
               data-aos="flip-left"
@@ -41,7 +41,7 @@ const Counter = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-sm-2 counter-p">
+          <div className="col-xs-6 col-sm-6 col-md-4 col-lg-2 counter-p">
             <div
               className="count-box Happy-Clients"
               data-aos="flip-left"
@@ -69,7 +69,7 @@ const Counter = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-sm-2 counter-p">
+          <div className="col-xs-6 col-sm-6 col-md-4 col-lg-2 counter-p">
             <div
               className="count-box Projects"
               data-aos="flip-left"
@@ -91,7 +91,7 @@ const Counter = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-sm-2 counter-p">
+          <div className="col-xs-6 col-sm-6 col-md-4 col-lg-2 counter-p">
             <div
               className="count-box Hours-Support"
               data-aos="flip-left"

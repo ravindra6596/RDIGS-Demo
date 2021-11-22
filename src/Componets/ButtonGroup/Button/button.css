@@ -104,3 +104,14 @@
     }
     .readmore:focus {outline: none;}
 
+    .downloadnow-btn {
+        animation: rotation 2s infinite linear;
+      }
+      @keyframes rotation {
+        from {
+          transform: rotate(-5deg);
+        }
+        to {
+          transform: rotate(5deg);
+        }
+      }

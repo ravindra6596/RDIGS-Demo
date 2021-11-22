@@ -102,13 +102,14 @@ const CompanyProfile1 = () => {
                   {
                  userdata.map((data,i)=>{
                    return(
-                    <div className="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <div className="vision-title">
-                      <h4 className="heading-vmp">{data.heading}</h4>
+                    <div className="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 vmp-col">
+                      <div className="vision-title">
+                        <h4 className="heading-vmp">{data.heading}</h4>
+                      </div>
+                    <div className="vision-div">
+                      {/* <img className="img-fluid" src={about1} alt="" style={{height:'250px'}}/> */}
+                    <p className="company-vmp">{data.vmppara}</p>
                     </div>
-                   <div className="vision-div">
-                   <p className="company-vmp">{data.vmppara}</p>
-                  </div>
                   </div>
                    )
                  })

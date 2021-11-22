@@ -250,6 +250,7 @@
     margin-bottom: 5px;
     height: 25px;
     text-indent: 10px;
+    border: 1px solid #30a6e9 !important;
   
 }
 .demand-input:focus{

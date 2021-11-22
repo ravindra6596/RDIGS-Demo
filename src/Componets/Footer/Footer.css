@@ -35,13 +35,13 @@ text-align: end;}
 }
 .close-btn:hover{outline: none;}
 .close-btn:focus{ outline: none;}
-.download-button{
+/* .download-button{
     margin-top: 60px;
     border-radius: 25px;
     color:white;
     border: 2px solid black;
     background-color:#30a6e9;
-}
+} */
 .footer-cont{
     background-color: black;
 }
@@ -63,6 +63,7 @@ text-align: end;}
 .footemailimg{width: 30px;}
 .model-head-cop{ color: lightblue;}
 .para-copdeck{ color:black;}
+/* corporate deck */
 .close-btn{
     background-color: lightblue;
     border-radius: 50%;
@@ -70,6 +71,7 @@ text-align: end;}
 }
 .close-btn:hover{outline: none;}
 .close-btn:focus{outline: none;}
+.corporate-submit{text-decoration: none;}
 .corporate-img{
     width:100%;
     height:100%;
@@ -77,39 +79,39 @@ text-align: end;}
 .form-corporateDeck-fname, .form-corporateDeck-number, .form-corporateDeck-company{
     width:100%;
     border-radius: 8px;
-    box-shadow: 2px 2px 2px 2px #30a6e9;
-    padding-left: 15px;
+    /* padding-left: 15px; */
+    border: 1px solid #30a6e9 !important;
+    text-indent: 20px;
 }
 .form-corporateDeck-lname, .form-corporateDeck-email, .form-corporateDeck-code{
     width:100%; 
     border-radius: 8px;
-    box-shadow: 2px 2px 2px 2px #30a6e9; 
-    padding-left: 15px; 
+    /* padding-left: 15px;  */
+    border: 1px solid #30a6e9 !important;
+    text-indent: 20px;
 }
 .corporate-form-in1 i{
-     padding: 5px;
+    padding: 5px;
     position: absolute;
-    margin-left: -25px; 
+    
 }
  .corporate-form-in2 i{
     padding: 5px;
     position: absolute;
-    margin-left: -25px;
+  
 }
 .corporate-form-in3 i{
     padding: 5px;
     position: absolute;
-    margin-left: -25px;
+  
 }
 .corporate-form-in4 i{
     padding: 5px;
-    margin-left: -25px;
     position: absolute;
 }
 .corporate-form-in5 i{
     padding: 5px;
     position: absolute;
-    margin-left: -25px;
 } 
 .corporate-form-in2 ,.corporate-form-in3{ margin-top:10px;}
 .corporate-form-in4,.corporate-form-in5{ margin-top:10px;}
@@ -119,7 +121,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
+/* end corporate deck */
 @media only screen and (min-width:320px) and (max-width: 480px) {
 .copydesign {text-align: center;}    
 }
@@ -150,6 +152,65 @@ input::-webkit-inner-spin-button {
     }
   }
    
+  /* corporate deck */
+/* / Chrome, Safari, Edge, Opera / */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* / button / */
+.downbtn{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 160px;
+    color:white;
+}
+ .cop-btn{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+ }
+/* media query for downloadbtn */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .cop-btn{ margin-bottom: 10px;}  
+}
+/* All Footer responsive */
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .ourservices {padding-top: 20px;    text-align: justify;}
+    .services li{ margin: 0!important;}  
+    .footer-tit {text-align: justify;}
+    .footrescol{position: inherit!important;}
+    .copydesign { text-align: center;}
+    .copyright-center {text-align: center;}
+    .footerlinkhover {font-size: 15px;}
+    .footer-newsletter p { padding:0px;
+        font-size: 15px;}  
+     .contactus-footer { padding: 10px 0px;}
+}
+@media only screen and (min-width: 575px) and (max-width: 991px) {
+    .ourservices {text-align: justify;}
+    .services li{ margin: 0!important;}
+    .footer-row {text-align: justify;}
+    .footer-tit {word-spacing: -5px;}
+    .footrescol{position: inherit!important;}
+    .copydesign { text-align: center; }
+}
+@media only screen and (min-width:320px) and (max-width: 480px) {
+.media-kit {height: 300px;}}
+@media only screen and (min-width:430px) and (max-width: 575px) {
+    input[type=submit] {width: 21%;}     
+    input[type=email] {width: 39%; }       
+ }    
+@media only screen and (min-width:992px) and (max-width: 1200px) {
+    .newsletter-input1 {width: 52%;}}
+@media only screen and (min-width:991px) and (max-width: 1200px) {
+        .EWF__subscribe[type=submit] {
+        width: 40%;
+        padding: 6px 0px;
+        font-size: 15px;}
+}
 /* Subscribe css */
 .inputs{margin-top: 10%;}
 .webform__form-control[type=email]{
@@ -374,109 +435,5 @@ font-size: 18px;}
     color: black;
     transform: scale(1.2);
 }
-/* / modal corporate Deck / */
-.corporate-submit{text-decoration: none;}
-.corporate-img{
-    width:100%;
-    height:100%;
-}
-.form-corporateDeck-fname, .form-corporateDeck-number, .form-corporateDeck-company{
-    outline: none;
-    width:100%;
-    border-radius: 8px;
-    border:1px solid #30a6e9;  
-    padding: 4px;
-}
-.form-corporateDeck-lname, .form-corporateDeck-email, .form-corporateDeck-code{
-    outline: none;
-    width:100%; 
-    border-radius: 8px;
-    border:1px solid #30a6e9;  
-    padding: 4px;
-}
-.corporate-form-in1 i{
-    padding: 5px;
-    position: absolute;
-    margin-left: -25px; 
-}
- .corporate-form-in2 i{
-    padding: 5px;
-    position: absolute;
-    margin-left: -25px;
-}
-.corporate-form-in3 i{
-    padding: 5px;
-    position: absolute;
-    margin-left: -25px;
-}
-.corporate-form-in4 i{
-    padding: 5px;
-    margin-left: -25px;
-    position: absolute;
-}
-.corporate-form-in5 i{
-    padding: 5px;
-    position: absolute;
-    margin-left: -25px;
-} 
-.corporate-form-in2 ,.corporate-form-in3{margin-top:10px;}
-.corporate-form-in4,.corporate-form-in5{ margin-top:10px;}
-/* / Chrome, Safari, Edge, Opera / */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-/* / button / */
-.downbtn{
-    width: 150px;
-    height: 50px;
-    border-radius: 25px;
-    margin-right: 160px;
-    color:white;
-}
- .cop-btn{
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
- }
-/* media query for downloadbtn */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .cop-btn{ margin-bottom: 10px;}  
-}
-/* All Footer responsive */
-@media only screen and (min-width: 320px) and (max-width: 575px) {
-    .ourservices {padding-top: 20px;    text-align: justify;}
-    .services li{ margin: 0!important;}  
-    .footer-tit {text-align: justify;}
-    .footrescol{position: inherit!important;}
-    .copydesign { text-align: center;}
-    .copyright-center {text-align: center;}
-    .footerlinkhover {font-size: 15px;}
-    .footer-newsletter p { padding:0px;
-        font-size: 15px;}  
-     .contactus-footer { padding: 10px 0px;}
-}
-@media only screen and (min-width: 575px) and (max-width: 991px) {
-    .ourservices {text-align: justify;}
-    .services li{ margin: 0!important;}
-    .footer-row {text-align: justify;}
-    .footer-tit {word-spacing: -5px;}
-    .footrescol{position: inherit!important;}
-    .copydesign { text-align: center; }
-}
-@media only screen and (min-width:320px) and (max-width: 480px) {
-.media-kit {height: 300px;}}
-@media only screen and (min-width:430px) and (max-width: 575px) {
-    input[type=submit] {width: 21%;}     
-    input[type=email] {width: 39%; }       
- }    
-@media only screen and (min-width:992px) and (max-width: 1200px) {
-    .newsletter-input1 {width: 52%;}}
-@media only screen and (min-width:991px) and (max-width: 1200px) {
-        .EWF__subscribe[type=submit] {
-        width: 40%;
-        padding: 6px 0px;
-        font-size: 15px;}
-}
+
     

@@ -45,7 +45,7 @@
     margin: 15px 0 30px 0;
     line-height: 24px;
   }
-/* ============== */
+/* ================================== */
 .vision-div {
     border: 0px;
     border-radius: 6px;
@@ -491,3 +491,29 @@
         width: 30px;
    }
 }
+/* card for vmp ===================================================================just try */
+@keyframes popBackground {
+    0% {
+        height: 20px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%
+    }
+
+    50% {
+        height: 80px;
+        border-top-left-radius: 75%;
+        border-top-right-radius: 75%
+    }
+
+    75% {
+        height: 160px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 85%
+    }
+
+    100% {
+        height: 320px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%
+    }
+} 

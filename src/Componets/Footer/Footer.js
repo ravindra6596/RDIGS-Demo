@@ -10,8 +10,6 @@ import {Modal, ModalBody} from 'reactstrap';
 import corporatedeskimg from '../../img/corpomodalimg.png'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-
 const Footer = () => {
 // variable for copy right get system date function
     const getCurrentYear = () => {
@@ -69,7 +67,12 @@ const scrollgoToplink = () => {
                     </div>
                     <div className="col-sm-12 col-lg-4 col-md-4 cop-btn">
                         <div className="downbtncop">
-                    <Button text="DOWNLOAD NOW" fun={()=>setModal(true)} classNames="allbtn-primary glow-on-hover text-light"/>
+                    <Button text="DOWNLOAD NOW" fun={()=>setModal(true)} classNames="allbtn-primary glow-on-hover text-light downloadnow-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </Button>
                     </div>
                     </div>
                     <div className="Modal-animation">
@@ -85,30 +88,28 @@ const scrollgoToplink = () => {
                                                         <h2 className="text-center model-head-cop">Corporate Deck 2021</h2>
                                                             <form onSubmit={onResolveddata} autocomplete="off">
                                                               <div className="corporate-form-in1">
+                                                              <i className="fa fa-user"></i>
                                                                 <input type="text" className="form-corporateDeck-fname" id="Fname" placeholder="First Name" required autocomplete="off"/>
-                                                                <i className="fa fa-user"></i>
                                                                 </div>
                                                                 <div className="corporate-form-in2">
-                                                                <input type="text" className="form-corporateDeck-lname" id="Lname" placeholder="Last Name" required autocomplete="off"/>
                                                                 <i className="fa fa-user"></i>
+                                                                <input type="text" className="form-corporateDeck-lname" id="Lname" placeholder="Last Name" required autocomplete="off"/>
                                                                 </div>
                                                                 <div className="corporate-form-in3">
-                                                                <input type="number" className="form-corporateDeck-number" id="Pnumber" placeholder="Phone Number" maxLength="10" required/>
                                                                 <i className="fa fa-phone"></i>
+                                                                <input type="number" className="form-corporateDeck-number" id="Pnumber" placeholder="Phone Number" maxLength="10" required/>
                                                                 </div>
                                                                 <div className="corporate-form-in4">
-                                                                <input type="text" className="form-corporateDeck-email" id="Email" placeholder="Your Email" autocomplete="off" required/>
                                                                 <i className="fa fa-envelope" aria-hidden="true"></i>
+                                                                <input type="text" className="form-corporateDeck-email" id="Email" placeholder="Your Email" autocomplete="off" required/>
                                                                 </div>
                                                                 <div className="corporate-form-in5">
-                                                                <input type="text" className="form-corporateDeck-company" id="Company" placeholder="Company Name" autocomplete="off" required/>
                                                                 <i className="fa fa-address-book" aria-hidden="true"></i>
+                                                                <input type="text" className="form-corporateDeck-company" id="Company" placeholder="Company Name" autocomplete="off" required/>
                                                                 </div>
-            
-                                                                    <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
+                                                                <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
                                                                      <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
-                                                                    </div>
-                                                          
+                                                                </div>
                                                             </form>
                                                     </div>
                                                 </div> 
