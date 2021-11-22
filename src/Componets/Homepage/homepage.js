@@ -9,7 +9,6 @@ import Services from "../Services/Services";
 import Button from '../ButtonGroup/Button/Button';
 import modalimg from '../../img/modalhomeimg.png';
 import { Modal, ModalBody } from 'reactstrap';
-
 const Home = () => {
 //  { / After page Load Model Automatic show / }
   const [showModal, setShowModal] = useState(false)
@@ -18,7 +17,6 @@ const Home = () => {
         const timeId = setTimeout(() => setShowModal(true), 90000)
         return () => clearTimeout(timeId)
       },[]);
-
   return (
     <> 
       <Banner />
@@ -52,7 +50,6 @@ const Home = () => {
         </ModalBody>
       </Modal> 
       {/* {/ After page Load Model Automatic show End  /} */}
-
     </>
   )
 }

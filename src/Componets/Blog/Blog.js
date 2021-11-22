@@ -164,12 +164,6 @@ const Blog = () => {
              )
            })
          } 
-            {/* <div className="col-12">
-                <div className="d-flex justify-content-center" style={{marginTop:'10px',marginBottom:'10px'}}>
-                <Button text="Load More" classNames="allbtn-primary glow-on-hover text-light" id="loadMore" onClick={inc}>
-                </Button> 
-                </div>
-            </div> */}
              <div className="col-12">
               <div className="d-flex justify-content-center" style={{marginTop:'10px',marginBottom:'10px'}}>
                 <Button classNames="allbtn-primary glow-on-hover text-light" fun={() =>inc() } text='Load More'></Button>

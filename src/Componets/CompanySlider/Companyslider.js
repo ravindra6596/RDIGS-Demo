@@ -16,7 +16,6 @@ import s9 from '../../img/client/client9.jpg';
 import s10 from '../../img/client/client10.jpg';
 import s11 from '../../img/client/client11.jpg';
 import s12 from '../../img/client/client12.jpg';
-
 const Companyslider = () => {
   var settings = {
     dots: false,
@@ -94,7 +93,7 @@ const Companyslider = () => {
   ];
   return (
     <>
-      <section className="clients">  
+      <section className="clients"> 
         <div className="slide-overlay">
           <div className="section-title">
             <Heading h1Class="clientheadwe" title="We Work With" />
