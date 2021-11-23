@@ -36,16 +36,46 @@ const DemandGeneration=()=>{
     //     .then((data)=>setItems(data));
     //     console.log(setItems);
     // },[]);
-    // Api calling for form
-    const [postform, setPostForm] = React.useState([]);
-    React.useEffect(() => {
-        axios.post('https://rdigs-api.herokuapp.com/').then((response) => {
-            setPostForm(response.data);
-             console.log();
-        });
-    }, []);
 
-     if (!postform) return null;
+    // Api calling for form
+    const [postform, setPostForm] = useState(null);
+    //  ===========================
+    const[name,setName]=useState('');
+    const[email,setEmail]=useState('');
+    const[contact,setContact]=useState('');
+    const[company_name,setCompanyName]=useState('');
+
+    const handleChange=(e)=>{
+        setName(e.target.value);
+      }
+    const handleEmail=(e)=>{
+        setEmail(e.target.value);
+    }
+     const handleContact=(e)=>{
+        setContact(e.target.value);
+    }
+    const handleCompanyName=(e)=>{
+        setCompanyName(e.target.value);
+    }
+    const handleSubmit = (e) => {
+        e.PrevenDafult();
+        // console.log(handleSubmit);
+        const user = {
+            _id:"",
+            name:"",
+            email:"",
+            contact:"",
+            company_name:""
+          };
+          axios.get('https://rdigs-api.herokuapp.com/services',{user})
+          .then((response) => {
+            setPostForm(response.data.getServices);
+            console.log(response.status);
+            console.log('response.status');
+            console.log(response.data);
+            console.log(setPostForm);
+          },[]);
+      }
     const data=[
         {
             servicename:"Cash Management",
@@ -158,26 +188,26 @@ const DemandGeneration=()=>{
                                 <div className="container"> 
                                 <div className="row">
                                  <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                            <img src={d} className="demand-form-img" alt=""></img>
+                                        <img src={d} className="demand-form-img" alt=""></img>
                                  </div>
                                 <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                     <div className="form-backimg">
-                                        <form  autocomplete="off">
+                                        <form autocomplete="off" onSubmit={handleSubmit}>
                                             <div className="form-demand">
                                                 <i className="fa fa-user"></i>
-                                                    <input type="text" className="demand-input" id="Fname" placeholder="Your Name" required autocomplete="off">{postform.name}</input>
+                                                    <input type="text" className="demand-input" id="Fname" placeholder="Your Name" value={data.name} required autocomplete="off" onChange={handleChange}></input>
                                             </div>
                                             <div className="form-demand">
                                                 <i className="fa fa-phone"></i>
-                                                <input type="number" className="demand-input" id="Pnumber" placeholder="Phone Number" maxLength="10" required>{postform.contact}</input>
+                                                <input type="number" className="demand-input" id="Pnumber" placeholder="Phone Number" maxLength="10" value={data.contact} onChange={handleEmail} required ></input>
                                             </div>
                                             <div className="form-demand">
                                                 <i className="fa fa-envelope" aria-hidden="true"></i>
-                                                <input type="text" className="demand-input" id="Email" placeholder="Your Email" autocomplete="off" required>{postform.email}</input>
+                                                <input type="text" className="demand-input" id="Email" placeholder="Your Email" autocomplete="off" value={data.email} onChange={handleContact} required></input>
                                             </div>
                                             <div className="form-demand">
                                                 <i className="fa fa-address-book" aria-hidden="true"></i>
-                                                <input type="text" className="demand-input" id="" placeholder="Company Name" autocomplete="off" required>{postform.company_name}</input>
+                                                <input type="text" className="demand-input" id="" placeholder="Company Name" autocomplete="off" value={data.company_name} onChange={handleCompanyName} required></input>
                                             </div>
                                             <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
                                                 <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>

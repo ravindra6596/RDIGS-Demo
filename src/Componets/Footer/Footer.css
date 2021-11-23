@@ -83,7 +83,7 @@ text-align: end;}
     border: 1px solid #30a6e9 !important;
     text-indent: 20px;
 }
-.form-corporateDeck-lname, .form-corporateDeck-email, .form-corporateDeck-code{
+.form-corporateDeck-email, .form-corporateDeck-code{
     width:100%; 
     border-radius: 8px;
     /* padding-left: 15px;  */
@@ -92,18 +92,11 @@ text-align: end;}
 }
 .corporate-form-in1 i{
     padding: 5px;
-    position: absolute;
-    
-}
- .corporate-form-in2 i{
-    padding: 5px;
-    position: absolute;
-  
+    position: absolute;  
 }
 .corporate-form-in3 i{
     padding: 5px;
     position: absolute;
-  
 }
 .corporate-form-in4 i{
     padding: 5px;
@@ -113,7 +106,7 @@ text-align: end;}
     padding: 5px;
     position: absolute;
 } 
-.corporate-form-in2 ,.corporate-form-in3{ margin-top:10px;}
+.corporate-form-in3{ margin-top:10px;}
 .corporate-form-in4,.corporate-form-in5{ margin-top:10px;}
 /* / / Chrome, Safari, Edge, Opera / / */
 input::-webkit-outer-spin-button,

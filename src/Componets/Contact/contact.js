@@ -5,9 +5,7 @@ import './contact.css';
 import indiaflag from "../../img/india.jpg";
 import unitedflag from "../../img/US.jpg";
 import Button from "../ButtonGroup/Button/Button";
-
 const Contact = () => {
-
     const [radiotext, showRadiotext] = useState(false);
 //   Form inputs logic  
     const [inputs, setInputs] = useState({});

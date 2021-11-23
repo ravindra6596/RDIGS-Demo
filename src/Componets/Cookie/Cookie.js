@@ -13,6 +13,11 @@ const Cookie = () => {
     const onList = () => setShowText(true);
     // customize button on off
     // const [list, toggleList] = React.useState(true);
+    
+//Link Navigation tab click open on top functionality
+  const scrollgoToplinknews = () => {
+    window.scrollTo({ top:0});
+  };
     // set time to show model
     useEffect(() => {
         const timeId = setTimeout(() => setShowModal(true), 2000);
@@ -96,7 +101,7 @@ const Cookie = () => {
                             </div>
                             <p>We use cookies to personalize your experience and analyse web traffic. Learn more about
                                 our use of cookies in our &nbsp;
-                                <Link to="/Privacypolicy" target="_blank" class="cookie-privacy">Privacy Policy</Link>.
+                                <Link to="/Privacypolicy" onClick={scrollgoToplinknews} class="cookie-privacy">Privacy Policy</Link>.
                             </p>
                             <div class="gdprcookie-types" style={{display:list ? "block":'none'}}>
                                 <div class="gdpr-h2"></div>
