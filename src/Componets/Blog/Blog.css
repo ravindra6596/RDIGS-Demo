@@ -6,12 +6,12 @@
         rgb(0 0 0 / 68%)
       )
 }
-.bg-video:hover{
+/* .bg-video:hover{
   transform: perspective(800px) rotateY(
 -12deg) rotateX(
 10deg);
   transition: transform 5s ease 0s;
-}
+} */
 /* =================================================== */
 .card-body{
     padding: 20px 0px;
@@ -36,16 +36,10 @@
     border-radius: 15px;
 }
 .card-blog-div .backgroundEffect {
-
     bottom: 0;
     height: 0px;
     width: 100%
 }
- /* .card-blog-div:hover {
-    transform: scale(1.025);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
-} */
-
 .card-blog-div .pic {
     position: relative
 }

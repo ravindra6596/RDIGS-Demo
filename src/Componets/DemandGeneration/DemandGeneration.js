@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
 import './DemandGeneration.css';
 import Button from '../ButtonGroup/Button/Button';
@@ -19,6 +19,7 @@ import min from '../../img/services/min.jpg';
 import Heading from '../Heading/Heading';
 import {Modal, ModalBody} from 'reactstrap';
 import d from '../../img/services/vissionimg.jpg';
+import axios from 'axios';
 const DemandGeneration=()=>{
     // modal
     const [modaldemand, setModaldemand] = useState(false);
@@ -27,6 +28,24 @@ const DemandGeneration=()=>{
     const scrollgoTop = () => {
         window.scrollTo({ top: 0 });
     };
+    // another way to implement api
+    // const [items, setItems] = useState([]);
+    // useEffect(()=>{
+    //     fetch('https://rdigs-api.herokuapp.com/')
+    //     .then((res)=>res.json())
+    //     .then((data)=>setItems(data));
+    //     console.log(setItems);
+    // },[]);
+    // Api calling for form
+    const [postform, setPostForm] = React.useState([]);
+    React.useEffect(() => {
+        axios.post('https://rdigs-api.herokuapp.com/').then((response) => {
+            setPostForm(response.data);
+             console.log();
+        });
+    }, []);
+
+     if (!postform) return null;
     const data=[
         {
             servicename:"Cash Management",
@@ -48,18 +67,6 @@ const DemandGeneration=()=>{
             servicename:"Video &amp; Photo Production",
             serviceimg:service5,
         },
-        {
-            servicename:"Graphic designed",
-            serviceimg:service6,
-        },
-        {
-            servicename:"Strategy",
-            serviceimg:service7,
-        },
-        {
-            servicename:"Branding",
-            serviceimg:service8,
-        }
        
     ];
     const servicecard=[
@@ -113,7 +120,7 @@ const DemandGeneration=()=>{
     return(
         <>
       <div className="nav-contaniner"/>
-      <section className="Demand-Generation-banner">
+        <section className="Demand-Generation-banner">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12" style={{marginTop:'10%'}}>
@@ -123,7 +130,7 @@ const DemandGeneration=()=>{
                      </div>
                     </div>
                 </div>
-            </section>
+        </section>
         <section className="Demand-Generation-Sec">
             <div className="container">     
                     <div className="d-flex justify-content-center heading-demand">
@@ -158,24 +165,23 @@ const DemandGeneration=()=>{
                                         <form  autocomplete="off">
                                             <div className="form-demand">
                                                 <i className="fa fa-user"></i>
-                                                    <input type="text" className="demand-input" id="Fname" placeholder="Your Name" required autocomplete="off"/>
+                                                    <input type="text" className="demand-input" id="Fname" placeholder="Your Name" required autocomplete="off">{postform.name}</input>
                                             </div>
                                             <div className="form-demand">
                                                 <i className="fa fa-phone"></i>
-                                                <input type="number" className="demand-input" id="Pnumber" placeholder="Phone Number" maxLength="10" required/>
+                                                <input type="number" className="demand-input" id="Pnumber" placeholder="Phone Number" maxLength="10" required>{postform.contact}</input>
                                             </div>
                                             <div className="form-demand">
                                                 <i className="fa fa-envelope" aria-hidden="true"></i>
-                                                <input type="text" className="demand-input" id="Email" placeholder="Your Email" autocomplete="off" required/>
+                                                <input type="text" className="demand-input" id="Email" placeholder="Your Email" autocomplete="off" required>{postform.email}</input>
                                             </div>
                                             <div className="form-demand">
                                                 <i className="fa fa-address-book" aria-hidden="true"></i>
-                                                <input type="text" className="demand-input" id="" placeholder="Company Name" autocomplete="off" required/>
+                                                <input type="text" className="demand-input" id="" placeholder="Company Name" autocomplete="off" required>{postform.company_name}</input>
                                             </div>
                                             <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
                                                 <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
-                                            </div>
-                                                          
+                                            </div>                
                                         </form>
                                         </div>
                                         </div>    

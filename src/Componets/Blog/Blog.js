@@ -13,6 +13,7 @@ const Blog = () => {
     .then((res)=>res.json())
     .then((data)=>setItems(data.blogs));
   },[]);
+  
   const[count,setCount]=useState(3);
   const inc=()=>{
     setCount(count+3);
