@@ -1,4 +1,5 @@
-import React, { useState }  from "react";
+import React, { useEffect, useState }  from "react";
+import axios from "axios";
 import { Modal, ModalBody } from 'reactstrap';
 import Heading from '../Heading/Heading';
 import './Newslatter.css';
@@ -91,6 +92,30 @@ const scrollgoToplinknews = () => {
         newsgalpara2:"Lily likes to play with crayons and pencils"
     }
   ];
+  //Post API Logic 
+  const [postemail,setPostemail]= useState("");
+  const handleChange = (event) => {
+    setPostemail({ email: event.target.value });
+  }
+
+ const handleSubmit = (event) => {
+    event.preventDefault();
+    const user = {
+      email:'' 
+    };
+
+    axios.post(`https://rdigs-api.herokuapp.com/newsletter`, { user })
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
+  }
+  const handleReset = (e) => {
+        console.log("reset");
+        setPostemail('');  
+  }
+ 
+
     return(
     <>
        {/* {/ NewsLatter Modal /} */}
@@ -98,24 +123,25 @@ const scrollgoToplinknews = () => {
         <ModalBody className="homemodalbody">
           <span className="homemodalclosebtn" onClick={() => setModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
               <Heading h1Class="clientheadwe" spanClass="forRessubhead" title="To Get Latest News"/>
-                <form>
-                <div class="form-group">
+                <form onSubmit={handleSubmit}>
+                {/* <div class="form-group">
                         <input className="newslattinputs" autocomplete="off" placeholder="Your Name" type="text" name="name"/>
-                    </div>
+                    </div> */}
+                   
                     <div class="form-group">
-                        <input className="newslattinputs" autocomplete="off" placeholder="Your Email" type="email" name="email"/>
+                        <input onChange={handleChange}  id="email" value={data.email} className="newslattinputs" autocomplete="off" placeholder="Your Email" type="email" name="email"/>
                     </div>
-                    <div class="form-group">
+                    {/* <div class="form-group">
                         <input className="newslattinputs"autocomplete="off" placeholder="Your Number" type="number" name="number"/>
-                    </div>
-                </form>
+                    </div> */}
+              
                   <div style={{ display: 'flex'}}>
                     <input type="checkbox" checked style={{marginTop:'1%',paddingLeft:'2px'}}/>
                     <p style={{paddingLeft:'2%'}}>I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our 
                     <Link to="/privacypolicy" onClick={scrollgoToplinknews}>Privacy Policy</Link> And <Link to="/termscondition" onClick={scrollgoToplinknews}>Terms and Codition.</Link></p>
                   </div>
-                  <div style={{ textAlign: 'center'}}><Button classNames="allbtn-primary glow-on-hover text-light" text="Submit" /></div>
-              
+                  <div style={{ textAlign: 'center'}}><Button fun={() => handleReset()} classNames="allbtn-primary glow-on-hover text-light" text="Submit"/></div>
+                </form>
         </ModalBody>
       </Modal>
 

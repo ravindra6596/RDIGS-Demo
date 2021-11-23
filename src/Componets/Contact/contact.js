@@ -1,4 +1,4 @@
-import React, { useState,useRef } from "react";
+import React, { useState,useRef,useEffect } from "react";
 import axios from "axios";
 import Recaptcha from 'react-google-invisible-recaptcha';
 import Heading from "../Heading/Heading";
@@ -10,16 +10,16 @@ import Button from "../ButtonGroup/Button/Button";
 const Contact = () => {
 
 //Form POST API   
-    const [postform, setPostForm] = React.useState([]);
-    React.useEffect(() => {
-        axios.post('https://rdigs-api.herokuapp.com/').then((response) => {
+    const [postform, setPostForm] = useState([]);
+    useEffect(() => {
+        axios.post('https://rdigs-api.herokuapp.com/contact').then((response) => {
             setPostForm(response.data);
-            console.log(setPostForm);
+           
+            console.log(response.data);
         });
     }, []);
 
 //Form inputs logic  
-    // const [data, setData] = useState({});
     const handleChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;
@@ -55,12 +55,12 @@ const Contact = () => {
                         </div>
                           <div className="col-lg-6 col-md-12 col-sm-12 contformcol">
                             <h2 className="contgetin" data-aos="fade-up">Get in Touch</h2>
-                            <form autocomplete="off">
+                            <form onSubmit={handleSubmit} autocomplete="off">
                                 <div class="form-group">
                                     <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Name"
                                      type="text" 
                                      name="name" 
-                                     value={postform.name ||""} 
+                                     value={postform.name} 
                                      onChange={handleChange}   
                                      />
                                 </div>
@@ -68,7 +68,7 @@ const Contact = () => {
                                     <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Phone No"
                                          type="number" 
                                          name="contact" 
-                                         value={postform.contact || ""} 
+                                         value={postform.contact } 
                                          onChange={handleChange}
                                     />
                                 </div>
@@ -76,7 +76,7 @@ const Contact = () => {
                                     <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Email" style={{width:'90%'}}
                                           type="email" 
                                           name="email" 
-                                          value={postform.email || ""} 
+                                          value={postform.email } 
                                           onChange={handleChange}
                                     />
                                 </div>
@@ -84,7 +84,7 @@ const Contact = () => {
                                     <input class="form-controlall" placeholder="Enter Company Name"
                                          type="text" 
                                          name="company_name" 
-                                         value={postform.company_name || ""} 
+                                         value={postform.company_name} 
                                          onChange={handleChange}
                                      />
                                 </div>
@@ -93,7 +93,7 @@ const Contact = () => {
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" value="30"  onClick={() => showRadiotext(false)}
                                            name="services" 
-                                           value={postform.services || ""} 
+                                           value={postform.services} 
                                            onChange={handleChange}
                                         />
                                         <label for="age1"  style={{marginLeft:'5px'}}>Demand Generation</label>
@@ -101,7 +101,7 @@ const Contact = () => {
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" name="age" value="30"  onClick={() => showRadiotext(false)}
                                            name="services" 
-                                           value={postform.services || ""} 
+                                           value={postform.services } 
                                            onChange={handleChange}
                                            />
                                         <label className="contactsale" for="age1">Sales Empowerment</label>
@@ -109,7 +109,7 @@ const Contact = () => {
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" name="age" value="30" onClick={() => showRadiotext(false)}
                                         name="services" 
-                                        value={postform.services || ""} 
+                                        value={postform.services } 
                                         onChange={handleChange}
                                         />
                                         <label for="age1" style={{marginLeft:'5px'}} >Data Enrichment</label>
@@ -123,12 +123,12 @@ const Contact = () => {
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Service Name" 
                                  style={{ display: radiotext ? "block" : "none"}} 
                                  name="services" 
-                                 value={postform.services || ""} 
+                                 value={postform.services } 
                                  onChange={handleChange}
                                  />
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="textarea" placeholder="Your Message"
                                   name="message" 
-                                  value={postform.message || ""} 
+                                  value={postform.message } 
                                   onChange={handleChange}
                                 />
                                 <div className="row conbtnrow">
