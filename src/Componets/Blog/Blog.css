@@ -6,12 +6,7 @@
         rgb(0 0 0 / 68%)
       )
 }
-/* .bg-video:hover{
-  transform: perspective(800px) rotateY(
--12deg) rotateX(
-10deg);
-  transition: transform 5s ease 0s;
-} */
+
 /* =================================================== */
 .card-body{
     padding: 20px 0px;

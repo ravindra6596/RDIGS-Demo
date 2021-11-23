@@ -1,4 +1,5 @@
 import './JobDescription.css';
+import axios from 'axios';
 import Heading from '../../Heading/Heading';
 import Button from '../../ButtonGroup/Button/Button';
 import { useEffect, useState } from 'react';
@@ -8,8 +9,37 @@ const JobDescription =()=>{
         const changeHandler = (e) => {
             setSelectedFile(e.target.files[0]);
         }
-        const handleSubmission = () => {
-        }
+        const handleSubmission = () => { }
+
+ //Post API Logic 
+  const url="https://rdigs-api.herokuapp.com/career"
+  const [jddata, setjdData] = useState({
+    name:"",
+    email:"",
+    contact:"",
+    company_name:"",
+    resume:""
+  });
+  function handle(e) {
+    const newapidata = {}
+    newapidata[e.target.id]=e.target.value
+    setjdData(newapidata);
+  }
+
+  function submit(e) {
+    e.prevenDefault();
+    axios.post(url,{
+      name:jddata.name,
+      email:jddata.email,
+      contact:jddata.contact,
+      company_name:jddata.company_name,
+      resume:jddata.resume
+    })
+    .then(res =>{
+      console.log(res.jddata);
+      console.log('asdfghjjhgfd');
+    })
+  }
  
     return(
     <>
@@ -51,26 +81,26 @@ const JobDescription =()=>{
 
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12">
-                         <form className="jdformcol" style={{padding:'3%'}}>
+                         <form onSubmit={(e)=> submit(e)} className="jdformcol" style={{padding:'3%'}}>
                                 <h1 className="applyheretxt">Apply Here..</h1>
                                 <div className="form-group">
-                                    <input type="text" className="formjd" aria-describedby="emailHelp" placeholder="Enter Name"autocomplete="off" required />
+                                    <input onChange={(e)=>handle(e)} value={jddata.name} id="name" type="text" className="formjd"  placeholder="Enter Name"autocomplete="off" required />
                                 </div>
                                 <div className="form-group">
-                                    <input type="number" className="formjd" aria-describedby="emailHelp" placeholder="Enter Phone No" autocomplete="off" required/>
+                                    <input onChange={(e)=>handle(e)} value={jddata.contact} id="contact" type="number" className="formjd" placeholder="Enter Phone No" autocomplete="off" required/>
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className="formjd" aria-describedby="emailHelp" placeholder="Enter Email"autocomplete="off" required />
+                                    <input onChange={(e)=>handle(e)} value={jddata.email} type="email" id="email" className="formjd"  placeholder="Enter Email" autocomplete="off" required />
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className="formjd" placeholder="Enter Company Name" autocomplete="off" />
+                                    <input onChange={(e)=>handle(e)} value={jddata.company_name} id="company_name" type="text" className="formjd" placeholder="Enter Company Name" autocomplete="off" />
                                 </div>
                                 <div className="form-group" style={{textAlign:'justify',border:'1px solid #ced4da'}}>
                                     <label for="exampleInputFile" style={{paddingLeft:'1%'}}>Upload File</label><i class="fa fa-image mx-2 updatePost"></i><small class="img-add">(only Pdf, Doc, & txt files are allowed)</small>
                                     <div className="input-group">
                                         <div className="custom-file">
                                             <div class="input-group">
-                                                <input type="file" name="file" onChange={changeHandler} style={{paddingLeft:'1%'}}/>
+                                                <input onChange={(e)=>changeHandler(e)} value={jddata.resume} id="resume" type="file" name="file"  style={{paddingLeft:'1%'}}/>
                                             </div> 
                                         </div>
                                     </div>

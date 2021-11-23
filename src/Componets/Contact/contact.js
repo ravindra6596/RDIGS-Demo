@@ -1,4 +1,5 @@
-import React, { useState,useRef } from "react";
+import React, { useState,useRef,useEffect } from "react";
+import axios from "axios";
 import Recaptcha from 'react-google-invisible-recaptcha';
 import Heading from "../Heading/Heading";
 import './contact.css';
@@ -6,27 +7,35 @@ import indiaflag from "../../img/india.jpg";
 import unitedflag from "../../img/US.jpg";
 import Button from "../ButtonGroup/Button/Button";
 const Contact = () => {
-    const [radiotext, showRadiotext] = useState(false);
-//   Form inputs logic  
-    const [inputs, setInputs] = useState({});
+//Form POST API   
+    const [postform, setPostForm] = useState([]);
+    useEffect(() => {
+        axios.post('https://rdigs-api.herokuapp.com/contact').then((response) => {
+            setPostForm(response.data);
+           
+            console.log(response.data);
+        });
+    }, []);
+
     const handleChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;
-        setInputs(values => ({...values, [name]: value}))
+        setPostForm(values => ({...values, [name]: value}))
       }
     const handleSubmit = (event) => {
-        console.log(inputs);
         event.PrevenDafult();
-      }
-      
+        console.log(postform);      
+      }     
 //   Reset button functinality 
     const handleReset = (e) => {
         console.log("reset");
-        setInputs(" ");   
+        setPostForm(" ");   
         e.PrevenDafult();
     }
-    
- // Capcha 
+
+//Form Radio button logic  
+     const [radiotext, showRadiotext] = useState(false); 
+// Google Captcha 
       const recaptchaRef = React.createRef();
       let recaptcha = useRef(null);
       const onResolveddata = () => {
@@ -43,21 +52,20 @@ const Contact = () => {
                         </div>
                           <div className="col-lg-6 col-md-12 col-sm-12 contformcol">
                             <h2 className="contgetin" data-aos="fade-up">Get in Touch</h2>
-                            <form autocomplete="off">
+                            <form onSubmit={handleSubmit} autocomplete="off">
                                 <div class="form-group">
                                     <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Name"
                                      type="text" 
-                                     name="username" 
-                                     value={inputs.username ||""} 
-                                     onChange={handleChange}
-                                     
+                                     name="name" 
+                                     value={postform.name} 
+                                     onChange={handleChange}   
                                      />
                                 </div>
                                 <div class="form-group">
                                     <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Phone No"
                                          type="number" 
-                                         name="phno" 
-                                         value={inputs.phno || ""} 
+                                         name="contact" 
+                                         value={postform.contact } 
                                          onChange={handleChange}
                                     />
                                 </div>
@@ -65,15 +73,15 @@ const Contact = () => {
                                     <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Email" style={{width:'90%'}}
                                           type="email" 
                                           name="email" 
-                                          value={inputs.email || ""} 
+                                          value={postform.email } 
                                           onChange={handleChange}
                                     />
                                 </div>
                                 <div class="form-group">
                                     <input class="form-controlall" placeholder="Enter Company Name"
                                          type="text" 
-                                         name="comname" 
-                                         value={inputs.comname || ""} 
+                                         name="company_name" 
+                                         value={postform.company_name} 
                                          onChange={handleChange}
                                      />
                                 </div>
@@ -81,24 +89,24 @@ const Contact = () => {
                                 <div className=" row conradiodiv" style={{textAlign:'justify',paddingLeft:'4%'}}>
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" value="30"  onClick={() => showRadiotext(false)}
-                                           name="demandrd" 
-                                           value={inputs.demandrd || "DemandGeneration"} 
+                                           name="services" 
+                                           value={postform.services} 
                                            onChange={handleChange}
                                         />
                                         <label for="age1"  style={{marginLeft:'5px'}}>Demand Generation</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" name="age" value="30"  onClick={() => showRadiotext(false)}
-                                           name="salesempo" 
-                                           value={inputs.salesempo || "SalesEmpowerment"} 
+                                           name="services" 
+                                           value={postform.services } 
                                            onChange={handleChange}
                                            />
                                         <label className="contactsale" for="age1">Sales Empowerment</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" name="age" value="30" onClick={() => showRadiotext(false)}
-                                        name="dataenrich" 
-                                        value={inputs.dataenrich || "DataEnrichment"} 
+                                        name="services" 
+                                        value={postform.services } 
                                         onChange={handleChange}
                                         />
                                         <label for="age1" style={{marginLeft:'5px'}} >Data Enrichment</label>
@@ -111,13 +119,13 @@ const Contact = () => {
                                 {/* others Radio button functinality */}
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Service Name" 
                                  style={{ display: radiotext ? "block" : "none"}} 
-                                 name="otherinput1" 
-                                 value={inputs.otherinput1 || ""} 
+                                 name="services" 
+                                 value={postform.services } 
                                  onChange={handleChange}
                                  />
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="textarea" placeholder="Your Message"
-                                  name="otherinput2" 
-                                  value={inputs.otherinput2 || ""} 
+                                  name="message" 
+                                  value={postform.message } 
                                   onChange={handleChange}
                                 />
                                 <div className="row conbtnrow">

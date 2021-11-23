@@ -40,6 +40,7 @@ const PageNotFound = React.lazy(()=>import('./Componets/PageNotFound/Pagenotfoun
 const Cookie = React.lazy(()=>import('./Componets/Cookie/Cookie'));
 const Cookienew = React.lazy(()=>import('./Componets/Cookienew/Cookienew'));
 const Blogpage =React.lazy(()=>import('./Componets/Blogpage/Blogpage'));
+
   return (
     <div className="App">
       <BrowserRouter>

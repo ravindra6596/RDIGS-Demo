@@ -12,7 +12,7 @@
     border-left: 2px solid #30a6e9;
     height: 147px;
     position:absolute;
-    left: 50%;
+    left: 51%;
 }
 .rdcircleyear{margin-top: 35%;}
 .roadverticalline2 {
@@ -49,8 +49,21 @@
 .roadmaptxtbox:hover{
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
-
-
+@media screen and (min-width:320px)and (max-width:767px) {
+  .roadverticalline{display: none;}
+  .roadverticalline2{display: none;}
+  .roadverticallinerow{display: none;}
+  .roadverticallinerow2{display: none;}
+}
+@media screen and (min-width:320px)and (max-width:575px) {
+  .roadcol6 { left: 0px;}
+  .roadcol7{left: 0px;}
+  .roadcol8{left: 0px;}
+}
+@media screen and (min-width:768px)and (max-width:991px) {
+  .roadverticalline {height: 108px;}
+  .roadverticalline2 {height: 74px;}
+}
 
 
 
