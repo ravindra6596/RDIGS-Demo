@@ -8,9 +8,6 @@ import roadimg6 from '../../img/Rdroadmap/roadmap6.jpg';
 import roadimg7 from '../../img/Rdroadmap/roadmap7.jpg';
 import roadimg8 from '../../img/Rdroadmap/roadmap8.jpg';
 
-
-
-
 const RdRoadMap=()=>{
     return(
         <>
@@ -24,7 +21,7 @@ const RdRoadMap=()=>{
                             <div className="roadverticalline"></div>
                         </div>
 
-                        <div className=" col roadcol2">
+                        <div className="col roadcol2">
                             <img src={roadimg2} className="img-fluid" style={{marginBottom:'5%',height:'100px'}}/>
                             <p className="roadmaptxtbox"  style={{color:'black'}}>1 million Lead Generated</p>
                             <div className="roadbox" style={{backgroundColor:'#F33A6A',boxShadow:'5px 5px #e509424f'}}><h5 className="rdcircleyear">2015 </h5></div>
@@ -75,11 +72,9 @@ const RdRoadMap=()=>{
                             <div className="roadverticallinerow2"></div> 
 
                         </div>
-                    
                 </div>
             </section>
-        </>
-     
+        </>     
     )
 }
 export default RdRoadMap;
