@@ -42,7 +42,6 @@ const Banner = () => {
             <div class="col-lg-7 col-md-7 col-sm-12 pt-lg-0 order-2 order-lg-1 d-flex align-items-center justify-content-center ">
               <div data-aos="zoom-out">
                 <Heading h1Class="aboutwherewe" spanClass="spansubhead1" title="Build Your Business With "/> 
-
                 <h1><marquee width="50%" direction="left" style={{ fontFamily: 'Orbitron'}} >RDIGS</marquee></h1>
                 <h2>We Use Reverse Demand Generation Funnel</h2>
                 <h5>After our research we adopted the Reverse Lead Generation Funnel, that increased our sales by 14.25% and we are able to move prospects through the sales cycle 23% faster. </h5>

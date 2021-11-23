@@ -107,8 +107,10 @@ const CompanyProfile1 = () => {
                         <h4 className="heading-vmp">{data.heading}</h4>
                       </div>
                     <div className="vision-div">
-                      {/* <img className="img-fluid" src={about1} alt="" style={{height:'250px'}}/> */}
-                    <p className="company-vmp">{data.vmppara}</p>
+                       <img src={data.vmpimg} alt="" style={{height:'250px'}}/> 
+                       <div className="vmp-paradiv">
+                          <p className="company-vmp" data-aos="zoom-in">{data.vmppara}</p>
+                       </div>
                     </div>
                   </div>
                    )

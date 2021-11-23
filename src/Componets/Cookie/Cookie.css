@@ -6,6 +6,16 @@
     border: 30px !important;
     background-color: none !important;
 }
+.modal-open {
+	overflow: auto!important;
+	padding-right: 0px!important;
+}
+.modal-open .modal {
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	overflow: hidden;
+}
 .Cookiemodalclosebtn{
     float:right;
 }

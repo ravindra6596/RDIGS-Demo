@@ -6,9 +6,7 @@ import './contact.css';
 import indiaflag from "../../img/india.jpg";
 import unitedflag from "../../img/US.jpg";
 import Button from "../ButtonGroup/Button/Button";
-
 const Contact = () => {
-
 //Form POST API   
     const [postform, setPostForm] = useState([]);
     useEffect(() => {
@@ -19,7 +17,6 @@ const Contact = () => {
         });
     }, []);
 
-//Form inputs logic  
     const handleChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;

@@ -85,7 +85,7 @@ const Header = () => {
                           </p>
                         </span>
                         <span className="blogmodelicon">
-                          <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <i class="fa fa-database" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
                               <Link to="/databaseservice" onClick={() => { scrollgoTop(); setExpanded(false); }}>Database Service</Link>
@@ -140,7 +140,7 @@ const Header = () => {
                           </p>
                         </span>
                         <span className="blogmodelicon">
-                          <i class="fa fa-th" aria-hidden="true"></i>
+                        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
                               <Link to="/newslatter" onClick={() => { scrollgoTop(); setExpanded(false); }}>News Latter</Link>

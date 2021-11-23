@@ -68,10 +68,6 @@ const scrollgoToplink = () => {
                     <div className="col-sm-12 col-lg-4 col-md-4 cop-btn">
                         <div className="downbtncop">
                     <Button text="DOWNLOAD NOW" fun={()=>setModal(true)} classNames="allbtn-primary glow-on-hover text-light downloadnow-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
                     </Button>
                     </div>
                     </div>
@@ -89,11 +85,7 @@ const scrollgoToplink = () => {
                                                             <form onSubmit={onResolveddata} autocomplete="off">
                                                               <div className="corporate-form-in1">
                                                               <i className="fa fa-user"></i>
-                                                                <input type="text" className="form-corporateDeck-fname" id="Fname" placeholder="First Name" required autocomplete="off"/>
-                                                                </div>
-                                                                <div className="corporate-form-in2">
-                                                                <i className="fa fa-user"></i>
-                                                                <input type="text" className="form-corporateDeck-lname" id="Lname" placeholder="Last Name" required autocomplete="off"/>
+                                                                <input type="text" className="form-corporateDeck-fname" id="Fname" placeholder="Enter Your Name" required autocomplete="off"/>
                                                                 </div>
                                                                 <div className="corporate-form-in3">
                                                                 <i className="fa fa-phone"></i>
