@@ -84,7 +84,7 @@ const Cookie = () => {
     // };
     return (
         <>
-            <section className="cookiesection" style={{ display: !show ? 'none' : 'inline-block' }}>
+            <section className="cookiesection" style={{ display: !show ? 'none' : '' }}>
                <div className="container">
                 <div className="row">
                     <div className="cookiemodal-div" style={{'border-radius':'30px' }}>
