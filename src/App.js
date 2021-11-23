@@ -40,7 +40,7 @@ const PageNotFound = React.lazy(()=>import('./Componets/PageNotFound/Pagenotfoun
 const Cookie = React.lazy(()=>import('./Componets/Cookie/Cookie'));
 const Cookienew = React.lazy(()=>import('./Componets/Cookienew/Cookienew'));
 const Blogpage =React.lazy(()=>import('./Componets/Blogpage/Blogpage'));
-const useSessionModal =React.lazy(()=>import('./Componets/useSessionModal/useSessionModal'));
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -67,7 +67,6 @@ const useSessionModal =React.lazy(()=>import('./Componets/useSessionModal/useSes
               <Route path='/databasecleaning' exact={true} component={DatabaseCleaning}/>
               <Route path='/installdatabase' exact={true} component={InstallDatabase}/>
               <Route path='/rdRoadMap' exact={true} component={RdRoadMap}/> 
-
               <Route path='/gallary' exact={true} component={Gallary}/>
               <Route path='/companyprofile1' exact={true} component={CompanyProfile1}/>
               <Route path='/blog' exact={true} component={Blog}/>
@@ -77,7 +76,6 @@ const useSessionModal =React.lazy(()=>import('./Componets/useSessionModal/useSes
               <Route path='/unsubscribe' exact={true} component={Unsubscribe}/>
               <Route path='/cookie' exact={true} componet={Cookie}/>
               <Route path='/cookienew' exact={true} component={Cookienew}/> 
-              <Route path='/useSessionModal' exact={true} componet={useSessionModal}/>
               <Route path='/footer' exact={true} component={Footer}/>
               <Route path="/Pagenotfound" exact={true} component={PageNotFound}/>
               <Route path="/blogpage" exact={true} component={Blogpage}/>
