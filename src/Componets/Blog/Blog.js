@@ -12,8 +12,10 @@ const Blog = () => {
     fetch('https://b2bnetworkservices.online/blogs/public')
     .then((res)=>res.json())
     .then((data)=>setItems(data.blogs));
+    console.log(setItems);
+    
   },[]);
-  
+
   const[count,setCount]=useState(3);
   const inc=()=>{
     setCount(count+3);
