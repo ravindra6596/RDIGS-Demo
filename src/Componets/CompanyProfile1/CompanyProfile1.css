@@ -46,6 +46,10 @@
     line-height: 24px;
   }
 /* ================================== */
+.vision-div img{
+-webkit-animation: ad_come_in .2s .8s forwards;
+animation: ad_come_in .2s .8s forwards;
+}
 .vision-div {
     border: 0px;
     border-radius: 6px;

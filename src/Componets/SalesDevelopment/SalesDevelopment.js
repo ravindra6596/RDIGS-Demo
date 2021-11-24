@@ -11,6 +11,8 @@ import service3 from "../../img/services/s3.jpg";
 import servicesicon from '../../img/services/servicesicon.jpg';
 import { Modal,ModalBody } from "reactstrap";
 import d from '../../img/services/vissionimg.jpg';
+import { useForm } from "react-hook-form";
+import axios from "axios";
 
 const LeadGeneration = () => {
   const [modallead, setModallead] = useState(false);
@@ -19,7 +21,16 @@ const LeadGeneration = () => {
   const scrollgoTop = () => {
     window.scrollTo({ top: 0 });
   };
-
+// API calling for Leadgeneration form
+const { register, handleSubmit, reset } = useForm();
+const onSubmit = (data)=> {
+      axios.post('https://rdigs-api.herokuapp.com/services',data)
+      .then((response) => {
+          console.log(response.data);
+         console.log(response);
+         reset();
+      })
+  }
   const data = [
     {
       servicename: "Sales Qualified Leads",
@@ -101,13 +112,13 @@ const LeadGeneration = () => {
                       <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                           <img src={d} className="lead-form-img" alt=""/></div>
                           <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                              <form  autocomplete="off">
-                                <div className="form-lead"><i className="fa fa-user"></i><input type="text" className="lead-input" id="Fname" placeholder="Your Name" required autocomplete="off"/></div>
-                                <div className="form-lead"> <i className="fa fa-phone"></i> <input type="number" className="lead-input" id="Pnumber" placeholder="Phone Number" maxLength="10" required/></div>
-                                <div className="form-lead"> <i className="fa fa-envelope" aria-hidden="true"></i><input type="text" className="lead-input" id="Email" placeholder="Your Email" autocomplete="off" required/></div>
-                                <div className="form-lead"> <i className="fa fa-address-book" aria-hidden="true"></i> <input type="text" className="lead-input" id="" placeholder="Company Name" autocomplete="off" required/> </div>
+                              <form onSubmit={handleSubmit(onSubmit)} autocomplete="off">
+                                <div className="form-lead"><i className="fa fa-user" aria-hidden="true"></i><input type="text" {...register("name")}className="lead-input" id="Fname" placeholder="Your Name" minLength="9" maxLength="20" required autocomplete="off"/></div>
+                                <div className="form-lead"><i className="fa fa-phone" aria-hidden="true"></i> <input type="number" {...register("contact")} className="lead-input" id="Pnumber" placeholder="Phone Number" minLength="10" maxLength="12" required/></div>
+                                <div className="form-lead"><i className="fa fa-envelope" aria-hidden="true"></i><input type="email" {...register("email")} className="lead-input" id="Email" placeholder="Your Email" autocomplete="off" required/></div>
+                                <div className="form-lead"><i className="fa fa-address-book" aria-hidden="true"></i> <input type="text" {...register("company_name")} className="lead-input" id="" placeholder="Company Name" autocomplete="off" required/> </div>
                                 <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
-                                  <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
+                                  <Button text="Submit" type="submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
                                 </div>
                               </form>
                           </div>

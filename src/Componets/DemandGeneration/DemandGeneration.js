@@ -1,4 +1,5 @@
 import React,{useState, useEffect} from 'react';
+import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import './DemandGeneration.css';
 import Button from '../ButtonGroup/Button/Button';
@@ -28,77 +29,17 @@ const DemandGeneration=()=>{
     const scrollgoTop = () => {
         window.scrollTo({ top: 0 });
     };
-    // another way to implement api
-    // const [items, setItems] = useState([]);
-    // useEffect(()=>{
-    //     fetch('https://rdigs-api.herokuapp.com/')
-    //     .then((res)=>res.json())
-    //     .then((data)=>setItems(data));
-    //     console.log(setItems);
-    // },[]);
-
     // Api calling for form
-    const [postform, setPostForm] = useState(null);
-    //  ===========================
-    const[name,setName]=useState('');
-    const[email,setEmail]=useState('');
-    const[contact,setContact]=useState('');
-    const[company_name,setCompanyName]=useState('');
-
-    const handleChange=(e)=>{
-        setName(e.target.value);
-      }
-    const handleEmail=(e)=>{
-        setEmail(e.target.value);
-    }
-     const handleContact=(e)=>{
-        setContact(e.target.value);
-    }
-    const handleCompanyName=(e)=>{
-        setCompanyName(e.target.value);
-    }
-    const handleSubmit = (e) => {
-        e.PrevenDafult();
-        // console.log(handleSubmit);
-        const user = {
-            _id:"",
-            name:"",
-            email:"",
-            contact:"",
-            company_name:""
-          };
-          axios.get('https://rdigs-api.herokuapp.com/services',{user})
+    
+    const { register, handleSubmit, reset } = useForm();
+    const onSubmit = (data)=> {
+          axios.post('https://rdigs-api.herokuapp.com/services',data)
           .then((response) => {
-            setPostForm(response.data.getServices);
-            console.log(response.status);
-            console.log('response.status');
-            console.log(response.data);
-            console.log(setPostForm);
-          },[]);
+              console.log(response.data);
+             console.log(response);
+             reset();
+          })
       }
-    const data=[
-        {
-            servicename:"Cash Management",
-            serviceimg:service1,
-        },
-        {
-            servicename:"Payments",
-            serviceimg:service2,
-        },
-        {
-            servicename:"M &amp; A Assistance",
-            serviceimg:service3,
-        },
-        {
-            servicename:"Local Expertise",
-            serviceimg:service4,
-        },
-        {
-            servicename:"Video &amp; Photo Production",
-            serviceimg:service5,
-        },
-       
-    ];
     const servicecard=[
         {
             serviceimgicon:s1,
@@ -192,25 +133,25 @@ const DemandGeneration=()=>{
                                  </div>
                                 <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                     <div className="form-backimg">
-                                        <form autocomplete="off" onSubmit={handleSubmit}>
+                                        <form autocomplete="off" onSubmit={handleSubmit(onSubmit)}>
                                             <div className="form-demand">
                                                 <i className="fa fa-user"></i>
-                                                    <input type="text" className="demand-input" id="Fname" placeholder="Your Name" value={data.name} required autocomplete="off" onChange={handleChange}></input>
+                                                    <input type="text" {...register("name")} className="demand-input"  placeholder="Your Name" required autocomplete="off"></input>
                                             </div>
                                             <div className="form-demand">
                                                 <i className="fa fa-phone"></i>
-                                                <input type="number" className="demand-input" id="Pnumber" placeholder="Phone Number" maxLength="10" value={data.contact} onChange={handleEmail} required ></input>
+                                                <input type="number" {...register("contact")} className="demand-input" id="Pnumber" placeholder="Phone Number" maxLength="10" required ></input>
                                             </div>
                                             <div className="form-demand">
                                                 <i className="fa fa-envelope" aria-hidden="true"></i>
-                                                <input type="text" className="demand-input" id="Email" placeholder="Your Email" autocomplete="off" value={data.email} onChange={handleContact} required></input>
+                                                <input type="email" {...register("email")} className="demand-input" id="Email" placeholder="Your Email" autocomplete="off"  required></input>
                                             </div>
                                             <div className="form-demand">
                                                 <i className="fa fa-address-book" aria-hidden="true"></i>
-                                                <input type="text" className="demand-input" id="" placeholder="Company Name" autocomplete="off" value={data.company_name} onChange={handleCompanyName} required></input>
-                                            </div>
+                                                <input type="text" {...register("company_name")} className="demand-input" id="" placeholder="Company Name" autocomplete="off"  required></input>
+                                            </div> 
                                             <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
-                                                <Button text="Submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
+                                                <Button text="Submit" type="submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
                                             </div>                
                                         </form>
                                         </div>
