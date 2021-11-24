@@ -1,46 +1,53 @@
 import './JobDescription.css';
 import axios from 'axios';
+import { useForm } from "react-hook-form";
 import Heading from '../../Heading/Heading';
 import Button from '../../ButtonGroup/Button/Button';
 import { useEffect, useState } from 'react';
 const JobDescription =()=>{
-
-        const[selectedFile,setSelectedFile] = useState();
-        const changeHandler = (e) => {
-            setSelectedFile(e.target.files[0]);
-        }
-        const handleSubmission = () => { }
-
+   
  //Post API Logic 
-  const url="https://rdigs-api.herokuapp.com/career"
-  const [jddata, setjdData] = useState({
-    name:"",
-    email:"",
-    contact:"",
-    company_name:"",
-    resume:""
-  });
-  function handle(e) {
-    const newapidata = {}
-    newapidata[e.target.id]=e.target.value
-    setjdData(newapidata);
+ const { register, handleSubmit ,reset} = useForm();
+ const [selectedFile1, setSelectedFile1] = useState(); 
+const onSubmit = (data)=> {
+    const formData = new FormData();
+    formData.append("file",selectedFile1);
+    
+    console.log(data);
+    axios.post('https://rdigs-api.herokuapp.com/career', data,formData).then(res => {
+        console.log(res);
+        console.log(res.data);
+        reset();
+        alert("File Upload success");
+      })  
   }
 
-  function submit(e) {
-    e.prevenDefault();
-    axios.post(url,{
-      name:jddata.name,
-      email:jddata.email,
-      contact:jddata.contact,
-      company_name:jddata.company_name,
-      resume:jddata.resume
-    })
-    .then(res =>{
-      console.log(res.jddata);
-      console.log('asdfghjjhgfd');
-    })
-  }
- 
+
+  //another one file upload
+    // const [selectedFile, setSelectedFile] = useState();
+    // const [isFilePicked, setIsFilePicked] = useState(false);
+    // const changeHandler = (event) => {
+    //  setSelectedFile(event.target.files[0]);
+    //  event.target.files[0] && setIsFilePicked(true);
+    // };
+    // const handleSubmission = () => {
+    //     // HANDLING FILE AS SENDING FILE INTO BACKEND
+    //     if (!isFilePicked) return;
+    //     const formData = new FormData();
+    //     formData.append("File", selectedFile);
+    //     fetch("https://rdigs-api.herokuapp.com/career", {
+    //         method: "POST",
+    //         body: formData,
+    //        })
+    //        .then((response) => response.json())
+    //        .then((result) => {
+    //         console.log("Success:", result);
+    //        })
+    //        .catch((error) => {
+    //          console.error("Error:", error);
+    //         });
+    //     };
+     
     return(
     <>
     <div className="nav-contaniner"></div>
@@ -81,26 +88,41 @@ const JobDescription =()=>{
 
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12">
-                         <form onSubmit={(e)=> submit(e)} className="jdformcol" style={{padding:'3%'}}>
+                         <form onSubmit={handleSubmit(onSubmit)} autocomplete="off" className="jdformcol" style={{padding:'3%'}}>
                                 <h1 className="applyheretxt">Apply Here..</h1>
                                 <div className="form-group">
-                                    <input onChange={(e)=>handle(e)} value={jddata.name} id="name" type="text" className="formjd"  placeholder="Enter Name"autocomplete="off" required />
+                                    <input  className="formjd"  placeholder="Enter Name"
+                                     type="text" 
+                                     {...register("name")}
+                                    />
                                 </div>
                                 <div className="form-group">
-                                    <input onChange={(e)=>handle(e)} value={jddata.contact} id="contact" type="number" className="formjd" placeholder="Enter Phone No" autocomplete="off" required/>
+                                    <input className="formjd" placeholder="Enter Phone No"
+                                     type="number" 
+                                     {...register("contact")}
+                                     />
                                 </div>
                                 <div className="form-group">
-                                    <input onChange={(e)=>handle(e)} value={jddata.email} type="email" id="email" className="formjd"  placeholder="Enter Email" autocomplete="off" required />
+                                    <input className="formjd"  placeholder="Enter Email" 
+                                      type="email"
+                                     {...register("email")} 
+                                    />
                                 </div>
                                 <div className="form-group">
-                                    <input onChange={(e)=>handle(e)} value={jddata.company_name} id="company_name" type="text" className="formjd" placeholder="Enter Company Name" autocomplete="off" />
+                                    <input className="formjd" placeholder="Enter Company Name" 
+                                        type="text" 
+                                        {...register("company_name")}
+                                     />
                                 </div>
                                 <div className="form-group" style={{textAlign:'justify',border:'1px solid #ced4da'}}>
                                     <label for="exampleInputFile" style={{paddingLeft:'1%'}}>Upload File</label><i class="fa fa-image mx-2 updatePost"></i><small class="img-add">(only Pdf, Doc, & txt files are allowed)</small>
                                     <div className="input-group">
                                         <div className="custom-file">
                                             <div class="input-group">
-                                                <input onChange={(e)=>changeHandler(e)} value={jddata.resume} id="resume" type="file" name="file"  style={{paddingLeft:'1%'}}/>
+                                                <input  type="file" style={{paddingLeft:'1%'}}
+                                                name="resume"
+                                                 {...register("resume")}
+                                                />
                                             </div> 
                                         </div>
                                     </div>
@@ -109,6 +131,10 @@ const JobDescription =()=>{
                                 <div className="col"><Button classNames="allbtn-primary glow-on-hover text-light" text="Apply" /></div>
                                 </div>
                             </form>
+                            {/* <form onSubmit={handleSubmission}>
+                            <input type="file" name="file" onChange={changeHandler} />
+                            <button type="submit">save</button>
+                            </form> */}
                     </div>
                 </div>
             </div>

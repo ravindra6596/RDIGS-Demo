@@ -1,5 +1,6 @@
 import React, { useState,useRef,useEffect } from "react";
 import axios from "axios";
+import { useForm } from "react-hook-form";
 import Recaptcha from 'react-google-invisible-recaptcha';
 import Heading from "../Heading/Heading";
 import './contact.css';
@@ -7,31 +8,18 @@ import indiaflag from "../../img/india.jpg";
 import unitedflag from "../../img/US.jpg";
 import Button from "../ButtonGroup/Button/Button";
 const Contact = () => {
+    
 //Form POST API   
-    const [postform, setPostForm] = useState([]);
-    useEffect(() => {
-        axios.post('https://rdigs-api.herokuapp.com/contact').then((response) => {
-            setPostForm(response.data);
-           
-            console.log(response.data);
-        });
-    }, []);
-
-    const handleChange = (event) => {
-        const name = event.target.name;
-        const value = event.target.value;
-        setPostForm(values => ({...values, [name]: value}))
-      }
-    const handleSubmit = (event) => {
-        event.PrevenDafult();
-        console.log(postform);      
-      }     
-//   Reset button functinality 
-    const handleReset = (e) => {
-        console.log("reset");
-        setPostForm(" ");   
-        e.PrevenDafult();
-    }
+const { register, handleSubmit ,reset} = useForm(); 
+const onSubmit = (data)=> {
+    console.log(data)
+    axios.post(`https://rdigs-api.herokuapp.com/contact`, data )
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+        reset();  
+      })
+  }
 
 //Form Radio button logic  
      const [radiotext, showRadiotext] = useState(false); 
@@ -52,88 +40,83 @@ const Contact = () => {
                         </div>
                           <div className="col-lg-6 col-md-12 col-sm-12 contformcol">
                             <h2 className="contgetin" data-aos="fade-up">Get in Touch</h2>
-                            <form onSubmit={handleSubmit} autocomplete="off">
+                            <form onSubmit={handleSubmit(onSubmit)} autocomplete="off">
                                 <div class="form-group">
                                     <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Name"
                                      type="text" 
-                                     name="name" 
-                                     value={postform.name} 
-                                     onChange={handleChange}   
+                                     name="name"
+                                     {...register("name")}
                                      />
                                 </div>
                                 <div class="form-group">
                                     <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Phone No"
                                          type="number" 
-                                         name="contact" 
-                                         value={postform.contact } 
-                                         onChange={handleChange}
+                                         name="contact"
+                                         {...register("contact")}
                                     />
                                 </div>
                                 <div class="form-group">
                                     <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Email" style={{width:'90%'}}
                                           type="email" 
                                           name="email" 
-                                          value={postform.email } 
-                                          onChange={handleChange}
+                                         {...register("email")}                                         
                                     />
                                 </div>
                                 <div class="form-group">
                                     <input class="form-controlall" placeholder="Enter Company Name"
                                          type="text" 
                                          name="company_name" 
-                                         value={postform.company_name} 
-                                         onChange={handleChange}
+                                        {...register("company_name")}
                                      />
                                 </div>
                                 <label className="conwhattxt">What Would You like to inquire about?</label><br />
                                 <div className=" row conradiodiv" style={{textAlign:'justify',paddingLeft:'4%'}}>
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" value="30"  onClick={() => showRadiotext(false)}
+                                        <input className="conradiofirst" type="radio" id="age1" value="Demand Generation"  onClick={() => showRadiotext(false)}
                                            name="services" 
-                                           value={postform.services} 
-                                           onChange={handleChange}
+                                           {...register("services")} 
                                         />
                                         <label for="age1"  style={{marginLeft:'5px'}}>Demand Generation</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30"  onClick={() => showRadiotext(false)}
+                                        <input className="conradiofirst" type="radio" id="age1" value="Sales Empowerment" onClick={() => showRadiotext(false)}
                                            name="services" 
-                                           value={postform.services } 
-                                           onChange={handleChange}
+                                           {...register("services")} 
                                            />
                                         <label className="contactsale" for="age1">Sales Empowerment</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30" onClick={() => showRadiotext(false)}
+                                        <input className="conradiofirst" type="radio" id="age1" value="Data Enrichment" onClick={() => showRadiotext(false)}
                                         name="services" 
-                                        value={postform.services } 
-                                        onChange={handleChange}
+                                        {...register("services")} 
                                         />
                                         <label for="age1" style={{marginLeft:'5px'}} >Data Enrichment</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" name="age" value="30" onClick={() => showRadiotext(true)}  />
+                                        <input className="conradiofirst" type="radio" id="age1" value="Other" onClick={() => showRadiotext(true)}
+                                         name="services"
+                                        {...register("services")}  
+                                        />
                                         <label for="age1" style={{marginLeft:'5px'}} >Other</label>
                                     </div>
                                 </div>
                                 {/* others Radio button functinality */}
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Service Name" 
                                  style={{ display: radiotext ? "block" : "none"}} 
-                                 name="services" 
-                                 value={postform.services } 
-                                 onChange={handleChange}
+                                 name="services"
+                                 {...register("services")} 
                                  />
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="textarea" placeholder="Your Message"
                                   name="message" 
-                                  value={postform.message } 
-                                  onChange={handleChange}
+                                  {...register("message")} 
                                 />
                                 <div className="row conbtnrow">
+                                {/* fun={() => handleSubmit()}  */}
                                     <div className="col btngetintouch">
-                                        <Button classNames="allbtn-primary glow-on-hover text-light" fun={() => handleSubmit()} text="GET IN TOUCH" />
+                                        <Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" />
                                     </div>
                                     <div className="col conformcleardiv">
-                                        <button className="contactclear22" onClick={handleReset}>Clear</button>
+                                        <button className="contactclear22">Clear</button>
                                     </div>
                                 </div>
                                  <Recaptcha 
