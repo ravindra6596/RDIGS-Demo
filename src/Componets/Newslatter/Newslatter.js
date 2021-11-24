@@ -1,4 +1,5 @@
 import React, { useEffect, useState }  from "react";
+import { useForm } from "react-hook-form";
 import axios from "axios";
 import { Modal, ModalBody } from 'reactstrap';
 import Heading from '../Heading/Heading';
@@ -92,29 +93,18 @@ const scrollgoToplinknews = () => {
         newsgalpara2:"Lily likes to play with crayons and pencils"
     }
   ];
-  //Post API Logic 
-  const [postemail,setPostemail]= useState("");
-  const handleChange = (event) => {
-    setPostemail({ email: event.target.value });
-  }
 
- const handleSubmit = (event) => {
-    event.preventDefault();
-    const user = {
-      email:'' 
-    };
-
-    axios.post(`https://rdigs-api.herokuapp.com/newsletter`, { user })
+//Post API Logic 
+const { register, handleSubmit ,reset} = useForm(); 
+const onSubmit = (data)=> {
+    console.log(data)
+    axios.post(`https://rdigs-api.herokuapp.com/newsletter`, data )
       .then(res => {
         console.log(res);
         console.log(res.data);
+        reset();  
       })
   }
-  const handleReset = (e) => {
-        console.log("reset");
-        setPostemail('');  
-  }
- 
 
     return(
     <>
@@ -123,13 +113,13 @@ const scrollgoToplinknews = () => {
         <ModalBody className="homemodalbody">
           <span className="homemodalclosebtn" onClick={() => setModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
               <Heading h1Class="clientheadwe" spanClass="forRessubhead" title="To Get Latest News"/>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit(onSubmit)}>
                 {/* <div class="form-group">
                         <input className="newslattinputs" autocomplete="off" placeholder="Your Name" type="text" name="name"/>
                     </div> */}
                    
                     <div class="form-group">
-                        <input onChange={handleChange}  id="email" value={data.email} className="newslattinputs" autocomplete="off" placeholder="Your Email" type="email" name="email"/>
+                        <input type="email" id="email" {...register("email")} className="newslattinputs" autocomplete="off" placeholder="Your Email" />
                     </div>
                     {/* <div class="form-group">
                         <input className="newslattinputs"autocomplete="off" placeholder="Your Number" type="number" name="number"/>
@@ -140,7 +130,8 @@ const scrollgoToplinknews = () => {
                     <p style={{paddingLeft:'2%'}}>I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our 
                     <Link to="/privacypolicy" onClick={scrollgoToplinknews}>Privacy Policy</Link> And <Link to="/termscondition" onClick={scrollgoToplinknews}>Terms and Codition.</Link></p>
                   </div>
-                  <div style={{ textAlign: 'center'}}><Button fun={() => handleReset()} classNames="allbtn-primary glow-on-hover text-light" text="Submit"/></div>
+                  <div style={{ textAlign: 'center'}}><Button  classNames="allbtn-primary glow-on-hover text-light" type="submit" text="Submit"/></div>
+                  
                 </form>
         </ModalBody>
       </Modal>
