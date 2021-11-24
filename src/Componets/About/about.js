@@ -15,7 +15,7 @@ const about = () => {
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6" data-aos="flip-right">
                           <div class="elementor-image">
-                            <img  className="aboutsecimg img-fluid" alt="" srcSet={aboutfrontimg} sizes="(max-width: 200px) 100vw, 200pxpx"/>											
+                            <img  className="aboutsecimg" alt="" srcSet={aboutfrontimg} sizes="(max-width: 100px) 50vw, 100px"/>											
                           </div>
                         </div>
                     </div>
