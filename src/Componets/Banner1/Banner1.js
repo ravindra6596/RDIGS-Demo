@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Banner1.css';
+import React, { Component }  from 'react';
 const Banner1=()=>{
     return(
         

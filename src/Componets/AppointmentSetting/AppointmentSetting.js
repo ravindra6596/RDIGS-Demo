@@ -1,5 +1,6 @@
-import React  from "react";
+
 import './AppointmentSetting.css';
+import React, { Component }  from 'react';
 import Heading from "../Heading/Heading";
 import callbackimg1 from "../../img/callbackimg1.png";
 import salesquaimg2 from "../../img/callbackimg2.jpg";

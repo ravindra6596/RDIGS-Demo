@@ -1,9 +1,8 @@
-import React  from "react";
 import './ConfirmedCallback.css';
 import Heading from "../Heading/Heading";
 import callbackimg1 from "../../img/callbackimg1.png";
 import salesquaimg2 from "../../img/callbackimg2.jpg";
-
+import React, { Component }  from 'react';
 const ConfirmedCallback =()=>{
     return(
     <>

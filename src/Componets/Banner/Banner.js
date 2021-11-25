@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,Component} from 'react';
 import { Modal, ModalBody } from 'reactstrap';
 import {Link} from 'react-router-dom';
 import './Banner.css';

@@ -1,6 +1,7 @@
-import React from "react";
+
 import "./CompanyProfile1.css";
 import Heading from "../Heading/Heading";
+import React, { Component }  from 'react';
 import Tab from 'react-bootstrap/Tab';
 import {Nav,Row,Col} from 'react-bootstrap';
 import RdRoadMap from '../RdRoadMap/RdRoadMap';
@@ -10,7 +11,10 @@ import about1 from '../../img/blog/about1.jpg';
 import ourvision from '../../img/companyprofile/ourvision.jpg';
 import ourmission from '../../img/companyprofile/ourmission.jpg';
 import ourprincipal from '../../img/companyprofile/ourprincipal.jpg';
-import avatarsm from '../../img/blog/avatar-sm.png';
+import companypro4 from '../../img/team/RachelMendis.png';
+import companypro1 from '../../img/team/RolandDcosta.jpg';
+import companypro3 from '../../img/team/WilliamMathurai.jpg';
+import companypro2 from '../../img/team/AjayRawat.jpg';
 const CompanyProfile1 = () => {
   // const[swiper, setSwiper]=usestate('');
  const Swiper=('.blog-slider', {
@@ -45,18 +49,21 @@ const CompanyProfile1 = () => {
   ]
   const blogdata=[
     {
+      slidimg:companypro1,
       h3name:'Roland D’Costa',
       h4sub:'Ceo &amp; Founder',
       h4sub1:'Captain Of The Ship',
       slidep:'Roland D’Costa, a stellar entrepreneur and a result driven professional, having an incredible track record of building companies and growing pipeline and ultimately revenue. Roland provides strategic leadership and management direction to RDIGS, he is young, dynamic, and an oracle for all technical solutions, and believes in investing his energy in continuous growth for the customer businesses and beneficiaries.'
     },
     {
+      slidimg:companypro2,
       h3name:'Ajay Rawat',
       h4sub:'Chief Operating Officer',
       h4sub1:'The Superman',
       slidep:'Best known for his operations, client management and customer service work. Ajay is the superman of our team. He handles the entire RDIGS operations. He has adapted the operational techniques and methodologies that allow RDIGS to excel in performance and gather appreciation from our clients. '
     },
     {
+      slidimg:companypro3,
       h3name:'William Mathurai',
       h4sub:'Chif Revenue Officer',
       h4sub1:'The Superman',
@@ -84,7 +91,7 @@ const CompanyProfile1 = () => {
                 <div className="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
                   <div className="content">
                     <h3>Who We Are</h3>
-                    <h2>Leadtronics Employee</h2>
+                    <h2>RDIGS Employee</h2>
                     <p>
                       Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti.
                     </p>
@@ -132,7 +139,7 @@ const CompanyProfile1 = () => {
           <div className="swiper-wrapper">
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src={avatarsm} className="testimonial-img" alt=""/>
+                <img src={blog.slidimg} className="testimonial-img" alt=""/>
                 <h3>{blog.h3name}</h3>
                 <h4>{blog.h4sub}</h4>
                 <h4>{blog.h4sub1}</h4>

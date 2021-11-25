@@ -1,4 +1,5 @@
 import './RdRoadMap.css';
+import React, { Component }  from 'react';
 import roadimg1 from '../../img/Rdroadmap/roadmap1.jpg';
 import roadimg2 from '../../img/Rdroadmap/roadmap2.jpg';
 import roadimg3 from '../../img/Rdroadmap/r.jpg';

@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from "react";
+import React,{useEffect,useState,Component} from "react";
 import "./Blog.css";
 import Button from '../ButtonGroup/Button/Button';
 import aboutimg from '../../img/blog/aboutimg.jpg';
@@ -28,57 +28,6 @@ const Blog = () => {
   const toggleHeadingreadmore=()=>{
         setIsReadmorepara(!isReadmorepara);
   }
-  // ==================
-  // const carddata=[
-  //   {
-  //     cardpic:cardimg2,
-  //     cardday:"26",
-  //     cardmonth:"June",
-  //     cardyear:"2021",
-  //     cardhead:"Finance And Legal Working Streams Occur Throughout",
-  //     cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  //   },
-  //    {
-  //     cardpic:cardimg2,
-  //     cardday:"26",
-  //     cardmonth:"June",
-  //     cardyear:"2021",
-  //     cardhead:"Finance And Legal Working Streams Occur Throughout",
-  //     cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  //   },
-  //   {
-  //     cardpic:cardimg2,
-  //     cardday:"26",
-  //     cardmonth:"June",
-  //     cardyear:"2021",
-  //     cardhead:"Finance And Legal Working Streams Occur Throughout",
-  //     cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  //   },
-  //   {
-  //     cardpic:cardimg2,
-  //     cardday:"26",
-  //     cardmonth:"June",
-  //     cardyear:"2021",
-  //     cardhead:"Finance And Legal Working Streams Occur Throughout",
-  //     cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  //   },
-  //   {
-  //     cardpic:cardimg2,
-  //     cardday:"26",
-  //     cardmonth:"June",
-  //     cardyear:"2021",
-  //     cardhead:"Finance And Legal Working Streams Occur Throughout",
-  //     cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  //   },
-  //   {
-  //     cardpic:cardimg2,
-  //     cardday:"26",
-  //     cardmonth:"June",
-  //     cardyear:"2021",
-  //     cardhead:"Finance And Legal Working Streams Occur Throughout",
-  //     cardpara:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  //   }
-  // ];
   return (
     <>
       <div className="nav-contaniner"/>

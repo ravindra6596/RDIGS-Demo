@@ -1,7 +1,7 @@
 import "./about.css";
 import aboutfrontimg from "../../img/About-us-1.png";
 import Heading from "../Heading/Heading";
-
+import React, { Component }  from 'react';
 const about = () => {
   return (
     <>

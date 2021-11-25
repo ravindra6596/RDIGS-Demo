@@ -1,5 +1,6 @@
 import React from 'react';
 import './Bannercommon.css';
+import React, { Component }  from 'react';
 // import Background from '../../img/Banner/hero-bg.jpg';
 export default function Bannercommon(props) {
     return (

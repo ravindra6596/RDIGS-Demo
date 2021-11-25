@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react';
+import React,{useState, useEffect,Component} from 'react';
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import './DemandGeneration.css';
@@ -30,7 +30,6 @@ const DemandGeneration=()=>{
         window.scrollTo({ top: 0 });
     };
     // Api calling for form
-    
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = (data)=> {
           axios.post('https://rdigs-api.herokuapp.com/services',data)
@@ -136,19 +135,19 @@ const DemandGeneration=()=>{
                                         <form autocomplete="off" onSubmit={handleSubmit(onSubmit)}>
                                             <div className="form-demand">
                                                 <i className="fa fa-user"></i>
-                                                    <input type="text" {...register("name")} className="demand-input"  placeholder="Your Name" required autocomplete="off"></input>
+                                                    <input type="text" {...register("name",{ required: "Please enter your name." })} className="demand-input"  placeholder="Your Name" minLength="9" maxLength="20" required autocomplete="off"></input>
                                             </div>
                                             <div className="form-demand">
                                                 <i className="fa fa-phone"></i>
-                                                <input type="number" {...register("contact")} className="demand-input" id="Pnumber" placeholder="Phone Number" maxLength="10" required ></input>
+                                                <input type="number" {...register("contact",{ required: "Please enter your contact." })} className="demand-input" id="Pnumber" placeholder="Phone Number" minLength="10" maxLength="12" required ></input>
                                             </div>
                                             <div className="form-demand">
                                                 <i className="fa fa-envelope" aria-hidden="true"></i>
-                                                <input type="email" {...register("email")} className="demand-input" id="Email" placeholder="Your Email" autocomplete="off"  required></input>
+                                                <input type="email" {...register("email",{ required: "Please enter your email." })} className="demand-input" id="Email" placeholder="Your Email" autocomplete="off"  required></input>
                                             </div>
                                             <div className="form-demand">
                                                 <i className="fa fa-address-book" aria-hidden="true"></i>
-                                                <input type="text" {...register("company_name")} className="demand-input" id="" placeholder="Company Name" autocomplete="off"  required></input>
+                                                <input type="text" {...register("company_name",{ required: "Please enter your conpamy name." })} className="demand-input" id="" placeholder="Company Name" autocomplete="off"  required></input>
                                             </div> 
                                             <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
                                                 <Button text="Submit" type="submit" classNames="allbtn-primary glow-on-hover text-light"></Button>

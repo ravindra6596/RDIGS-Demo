@@ -1,13 +1,11 @@
 import React from "react";
 import "./teams.css";
 import Heading from "../Heading/Heading";
-import team1 from "../../img/team/team-1.jpg";
-import team2 from "../../img/team/team-2.jpg";
-import team3 from "../../img/team/team-3.jpg";
-import team4 from "../../img/team/team-4.jpg";
+import team4 from '../../img/team/RachelMendis.png';
+import team1 from '../../img/team/RolandDcosta.jpg';
+import team3 from '../../img/team/WilliamMathurai.jpg';
+import team2 from '../../img/team/AjayRawat.jpg';
 import teamsection2 from "../../img/team/teamsec2img.jpg";
-
-
 const teams =()=>{
 
     const data = [
@@ -16,24 +14,40 @@ const teams =()=>{
             teamalt:"Roland Dcoasta",
             teamName:"Roland Dcoasta", 
             teamdesi: "Managing Director,Founder",
+            link_facebook:"",
+            link_linkedin:"https://www.linkedin.com/in/rolanddcosta0734/",
+            link_twitter:"",
+            link_insta:""
         },
         { 
-            teamimg:team1,
+            teamimg:team2,
             teamalt:"Ajay Rawat",
             teamName:"Ajay Rawat", 
             teamdesi: "Chief Operating Officer",
+            link_facebook:"",
+            link_linkedin:"https://www.linkedin.com/in/ajay-rawat-16896b206/",
+            link_twitter:"",
+            link_insta:""
         },
         { 
             teamimg:team3,
-            teamalt:"Gurdeep",
-            teamName:"Gurdeep Singh", 
+            teamalt:"William",
+            teamName:"William Mathurai", 
             teamdesi: "Sales Manager",
+            link_facebook:"",
+            link_linkedin:"https://www.linkedin.com/in/william-krishnamurthy-mathurai-12189737/",
+            link_twitter:"",
+            link_insta:""
         },
         { 
             teamimg:team4,
             teamalt:"Rachel",
             teamName:"Rachel Mendis", 
             teamdesi: "HR Manager",
+            link_facebook:"",
+            link_linkedin:"https://www.linkedin.com/in/rachel-mendis-b846b5179/",
+            link_twitter:"",
+            link_insta:""
         },
         
       ];
@@ -91,7 +105,7 @@ const teams =()=>{
                             <div class="social-links">
                                 <a href="#"><i class="fa fa-facebook-square"></i></a>
                                 <a href="#"><i class="fa fa-twitter-square"></i></a>
-                                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                                <a href={data.link_linkedin}><i class="fa fa-linkedin-square"></i></a>
                                 <a href="#"><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>

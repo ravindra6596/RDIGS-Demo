@@ -113,10 +113,10 @@ const onSubmit = (data)=> {
                           <img src={d} className="lead-form-img" alt=""/></div>
                           <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                               <form onSubmit={handleSubmit(onSubmit)} autocomplete="off">
-                                <div className="form-lead"><i className="fa fa-user" aria-hidden="true"></i><input type="text" {...register("name")}className="lead-input" id="Fname" placeholder="Your Name" minLength="9" maxLength="20" required autocomplete="off"/></div>
-                                <div className="form-lead"><i className="fa fa-phone" aria-hidden="true"></i> <input type="number" {...register("contact")} className="lead-input" id="Pnumber" placeholder="Phone Number" minLength="10" maxLength="12" required/></div>
-                                <div className="form-lead"><i className="fa fa-envelope" aria-hidden="true"></i><input type="email" {...register("email")} className="lead-input" id="Email" placeholder="Your Email" autocomplete="off" required/></div>
-                                <div className="form-lead"><i className="fa fa-address-book" aria-hidden="true"></i> <input type="text" {...register("company_name")} className="lead-input" id="" placeholder="Company Name" autocomplete="off" required/> </div>
+                                <div className="form-lead"><i className="fa fa-user" aria-hidden="true"></i><input type="text" {...register("name",{ required: "Please enter your name." })}className="lead-input" id="Fname" placeholder="Your Name" minLength="9" maxLength="20" required autocomplete="off"/></div>
+                                <div className="form-lead"><i className="fa fa-phone" aria-hidden="true"></i> <input type="number" {...register("contact",{ required: "Please enter your number." })} className="lead-input" id="Pnumber" placeholder="Phone Number" minLength="10" maxLength="12" required/></div>
+                                <div className="form-lead"><i className="fa fa-envelope" aria-hidden="true"></i><input type="email" {...register("email",{ required: "Please enter your email." })} className="lead-input" id="Email" placeholder="Your Email" autocomplete="off" required/></div>
+                                <div className="form-lead"><i className="fa fa-address-book" aria-hidden="true"></i> <input type="text" {...register("company_name",{ required: "Please enter your company name."})} className="lead-input" id="" placeholder="Company Name" autocomplete="off" required/> </div>
                                 <div className="d-flex justify-content-center" style={{marginTop:'10px'}}>
                                   <Button text="Submit" type="submit" classNames="allbtn-primary glow-on-hover text-light"></Button>
                                 </div>
