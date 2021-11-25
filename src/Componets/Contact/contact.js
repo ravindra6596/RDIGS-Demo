@@ -1,4 +1,4 @@
-import React, { useState,useRef,useEffect } from "react";
+import React, { useState,useRef} from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import Recaptcha from 'react-google-invisible-recaptcha';
@@ -8,16 +8,38 @@ import indiaflag from "../../img/india.jpg";
 import unitedflag from "../../img/US.jpg";
 import Button from "../ButtonGroup/Button/Button";
 const Contact = () => {
-    
+ 
 //Form POST API   
 const { register, handleSubmit ,reset} = useForm(); 
-const onSubmit = (data)=> {
+
+
+const [isRadio,setRadio] = useState("");
+    function handleRadioChange(event) {
+    setRadio(event.target.value)
+    }
+    console.log(isRadio);
+
+// const[selectradio,setSelectedradio] = useState();
+//     const handleChange=(e)=>{
+//         // setSelectedradio(target.type === 'radion' ? target.checked : target.value);
+//         const target = e.target;
+//         const value = target.type === 'radio' ? target.checked : target.value;
+//         const name = target.name;
+        
+//         setSelectedradio({
+//           [name]: value
+//         });
+//     }
+   
+
+const onSubmit = (data)=> {   
     console.log(data)
-    axios.post(`https://rdigs-api.herokuapp.com/contact`, data )
+    axios.post(`https://rdigs-api.herokuapp.com/contact`, data,isRadio)
       .then(res => {
         console.log(res);
         console.log(res.data);
-        reset();  
+        reset(); 
+        console.log(isRadio);
       })
   }
 
@@ -70,11 +92,13 @@ const onSubmit = (data)=> {
                                      />
                                 </div>
                                 <label className="conwhattxt">What Would You like to inquire about?</label><br />
-                                <div className=" row conradiodiv" style={{textAlign:'justify',paddingLeft:'4%'}}>
+                                <div className=" row conradiodiv" value={isRadio} onChange={(event) => handleRadioChange(event)} style={{textAlign:'justify',paddingLeft:'4%'}}>
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" value="Demand Generation"  onClick={() => showRadiotext(false)}
                                            name="services" 
                                            {...register("services")} 
+                                        //    onChange={handleChange}
+                                        //    checked={setSelectedradio === "Demand Generation"}
                                         />
                                         <label for="age1"  style={{marginLeft:'5px'}}>Demand Generation</label>
                                     </div>
@@ -82,6 +106,8 @@ const onSubmit = (data)=> {
                                         <input className="conradiofirst" type="radio" id="age1" value="Sales Empowerment" onClick={() => showRadiotext(false)}
                                            name="services" 
                                            {...register("services")} 
+                                        //    onChange={handleChange}
+                                        //    checked={setSelectedradio === "Sales Empowerment"}
                                            />
                                         <label className="contactsale" for="age1">Sales Empowerment</label>
                                     </div>
@@ -89,17 +115,22 @@ const onSubmit = (data)=> {
                                         <input className="conradiofirst" type="radio" id="age1" value="Data Enrichment" onClick={() => showRadiotext(false)}
                                         name="services" 
                                         {...register("services")} 
+                                        // onChange={handleChange}
+                                        // checked={setSelectedradio === "Data Enrichment"}
                                         />
                                         <label for="age1" style={{marginLeft:'5px'}} >Data Enrichment</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" value="Other" onClick={() => showRadiotext(true)}
                                          name="services"
-                                        {...register("services")}  
+                                        {...register("services")}
+                                        // onChange={handleChange} 
+                                        // checked={setSelectedradio === "Other"}
                                         />
                                         <label for="age1" style={{marginLeft:'5px'}} >Other</label>
                                     </div>
                                 </div>
+                              
                                 {/* others Radio button functinality */}
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Service Name" 
                                  style={{ display: radiotext ? "block" : "none"}} 
@@ -129,7 +160,7 @@ const onSubmit = (data)=> {
                                      sitekey="6Lct3zkdAAAAAO0KFEeZ9r7wmIfATa-qpOCp4F-T"
                                      Secret Key="6Lct3zkdAAAAAGQ4KCB3UKQ9qqOg7VvYPyLqkfbL"    
                                  />
-                            </form> 
+                            </form>                   
                         </div> 
                     </div>
                 </div>
