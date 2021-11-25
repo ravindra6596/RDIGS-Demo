@@ -15,7 +15,7 @@
 }
 .testproinfodiv{line-height: 5px;}
 .testproname{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
 }
 .testprodesi{font-size: 12px;}
@@ -25,7 +25,7 @@
     background-color: white;
     margin: 50px 0px 30px 20px;
     border-radius: 5px;
-    height: 220px;
+    height: auto;
     outline: none;
 }
 .testcardcol1 {
@@ -80,7 +80,7 @@
 .card-leftright{margin-bottom: 50px;}
  .text{
     width:250px;
-    height:250px;    
+    height:auto;    
 }
 .newtestislider{
     margin: 0px 12%;

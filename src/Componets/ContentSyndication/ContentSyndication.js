@@ -1,8 +1,8 @@
-import React  from "react";
 import './ContentSyndication.css';
 import Heading from "../Heading/Heading";
 import callbackimg1 from "../../img/contentsyndimg2.svg";
 import salesquaimg2 from "../../img/contentsyndimg1.png";
+import React, { Component }  from 'react';
 const ContentSyndication =()=>{
     return(
     <>

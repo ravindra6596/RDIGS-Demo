@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './careeraccordian.css';
+import React, { Component }  from 'react';
 import Button from '../../ButtonGroup/Button/Button';
 import opportimg1 from '../../../img/career/oppoimg1.png';
 import opportimg2 from '../../../img/career/oppoimg2.png';

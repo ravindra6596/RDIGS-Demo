@@ -1,9 +1,9 @@
+import React, { useEffect, useState ,Component }  from 'react';
 import './JobDescription.css';
 import axios from 'axios';
 import { useForm } from "react-hook-form";
 import Heading from '../../Heading/Heading';
 import Button from '../../ButtonGroup/Button/Button';
-import { useEffect, useState } from 'react';
 const JobDescription =()=>{
    
  //Post API Logic 

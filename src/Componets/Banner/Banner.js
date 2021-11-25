@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,Component} from 'react';
 import { Modal, ModalBody } from 'reactstrap';
 import './Banner.css';
 import Button from '../ButtonGroup/Button/Button';

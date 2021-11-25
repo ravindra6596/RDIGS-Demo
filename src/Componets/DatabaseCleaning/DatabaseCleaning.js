@@ -1,5 +1,5 @@
-import React  from "react";
 import './DatabaseCleaning.css';
+import React, { Component }  from 'react';
 import Heading from "../Heading/Heading";
 import callbackimg1 from "../../img/dbcleanimg1.png";
 import salesquaimg2 from "../../img/dbcleanimg2.jpg";

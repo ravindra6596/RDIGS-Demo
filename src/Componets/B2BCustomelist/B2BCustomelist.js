@@ -1,6 +1,7 @@
-import React  from "react";
+
 import './B2BCustomelist.css';
 import Heading from "../Heading/Heading";
+import React, { Component }  from 'react';
 import callbackimg1 from "../../img/b2bcust1.jpg";
 import salesquaimg2 from "../../img/b2bcust2.jpg";
 const B2BCustomelist =()=>{

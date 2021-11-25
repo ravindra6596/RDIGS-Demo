@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component }  from 'react';
 import './Companyslider.css';
 import Heading from '../Heading/Heading';
 import "slick-carousel/slick/slick.css";
@@ -115,4 +115,72 @@ const Companyslider = () => {
     </>
   )
 }
+
 export default Companyslider;
+// class Demo2 extends Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       name: "React"
+//     };
+//     onValueChange = onValueChange.bind();
+//     formSubmit = formSubmit.bind();
+//   }
+
+//   onValueChange(event) {
+//     this.setState({
+//       selectedOption: event.target.value
+//     });
+//   }
+
+//   formSubmit(event) {
+//     event.preventDefault();
+//     console.log(selectedOption)
+//   }
+
+//   render() {
+//     return (
+//       <form onSubmit={formSubmit}>
+//         <div className="radio">
+//           <label>
+//             <input
+//               type="radio"
+//               value="Male"
+//               checked={selectedOption === "Male"}
+//               onChange={onValueChange}
+//             />
+//             Male
+//           </label>
+//         </div>
+//         <div className="radio">
+//           <label>
+//             <input
+//               type="radio"
+//               value="Female"
+//               checked={selectedOption === "Female"}
+//               onChange={onValueChange}
+//             />
+//             Female
+//           </label>
+//         </div>
+//         <div className="radio">
+//           <label>
+//             <input
+//               type="radio"
+//               value="Other"
+//               checked={selectedOption === "Other"}
+//               onChange={onValueChange}
+//             />
+//             Other
+//           </label>
+//         </div>
+//         <div>
+//           Selected option is : {selectedOption}
+//         </div>
+//         <button className="btn btn-default" type="submit">
+//           Submit
+//         </button>
+//       </form>
+//     );
+//   }
+// }

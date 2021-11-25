@@ -1,4 +1,5 @@
 import './Termscondition.css';
+import React, { Component }  from 'react';
 import Heading from '../Heading/Heading';
 import termsimg from '../../img/termsimg3.png';
 import termsimg1 from '../../img/liabilityimg.jpg';

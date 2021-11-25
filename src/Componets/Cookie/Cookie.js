@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,Component } from "react";
 import Cookies from 'universal-cookie';
 import './Cookie.css';
 import Button from "../ButtonGroup/Button/Button";

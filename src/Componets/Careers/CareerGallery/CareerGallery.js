@@ -6,7 +6,6 @@ import culture2 from  "../../../img/career/cargalnew2.jpg";
 import culture3 from  "../../../img/career/carcoulteure.jpg";
 import culture4 from  "../../../img/career/cargalnew1.jpg";
 import culture5 from  "../../../img/career/carourculture5.jpg";
-
 const CareerGallery = () => {
   
     return (

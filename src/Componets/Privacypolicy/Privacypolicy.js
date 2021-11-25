@@ -1,4 +1,6 @@
 import './Privacypolicy.css';
+import React, { Component }  from 'react';
+
 import Heading from '../Heading/Heading';
 import privacymainimg from '../../img/policyimg.png';
 

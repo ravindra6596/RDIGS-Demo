@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
  import './Services.css';
 import { Link } from "react-router-dom";
  import service1 from '../../img/services/service1.jpg';
