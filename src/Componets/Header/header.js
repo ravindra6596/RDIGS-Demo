@@ -30,7 +30,7 @@ const Header = () => {
   const [expanded, setExpanded] = useState(false);
   //Click toggle Header toggle icon will change 
   const [isClosetoggle, setClosetoggle] = useState(false);
-  // Navigation tab click open on top functionality
+//any where in the page scroll on top Navigation tab click open on top
   const scrollgoTop = () => {
     window.scrollTo({ top: 0 });
   };

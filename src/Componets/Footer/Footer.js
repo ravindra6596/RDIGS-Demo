@@ -43,7 +43,7 @@ const scrollgoTop = () => {
 };
 window.addEventListener('scroll', checkingScrollTop)
 
-// Navigation tab click open on top functionality
+//any where in the page scroll on top Navigation click open on top
 const scrollgoToplink = () => {
     window.scrollTo({ top:0});
   };

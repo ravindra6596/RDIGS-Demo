@@ -11,9 +11,6 @@ import career6 from "../../img/career/career-6.png";
 import CareerGallery from "./CareerGallery/CareerGallery";
 import CareerSlider from "./CareerSlider/CareerSlider";
 
-
-
-
 const careers = () => {
 
     const data = [

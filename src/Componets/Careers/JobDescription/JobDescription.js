@@ -8,6 +8,13 @@ const JobDescription =()=>{
    
  //Post API Logic 
  const { register, handleSubmit ,reset} = useForm();
+ const [selectedFile, setSelectedFile] = useState();
+
+//For file upload set the value of variable
+ const handleChange =(event)=>{
+    console.log(event.target.file)  
+    setSelectedFile(event.target.files[0])
+}
 
 const onSubmit = (data)=> {
     const formData = new FormData();
@@ -15,7 +22,7 @@ const onSubmit = (data)=> {
     formData.append("contact",data.contact);
     formData.append("email",data.email);
     formData.append("company_name",data.company_name);
-    formData.append("resume",data.resume);
+    formData.append("resume",selectedFile);
     for (var pair of formData.entries()) {
         console.log(pair[0] + ':' + pair[1]);
     }
@@ -105,6 +112,7 @@ const onSubmit = (data)=> {
                                             <input  type="file" style={{paddingLeft:'1%'}}
                                               name="resume"
                                               {...register("resume")}
+                                              onChange={handleChange}
                                             />
                                             </div> 
                                         </div>
