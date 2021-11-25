@@ -8,45 +8,35 @@ const JobDescription =()=>{
    
  //Post API Logic 
  const { register, handleSubmit ,reset} = useForm();
- const [selectedFile1, setSelectedFile1] = useState(); 
+ const [selectedFile, setSelectedFile] = useState();
+
+//For file upload set the value of variable
+ const handleChange =(event)=>{
+    console.log(event.target.file)  
+    setSelectedFile(event.target.files[0])
+}
+
 const onSubmit = (data)=> {
     const formData = new FormData();
-    formData.append("file",selectedFile1);
-    
+    formData.append("name",data.name);
+    formData.append("contact",data.contact);
+    formData.append("email",data.email);
+    formData.append("company_name",data.company_name);
+    formData.append("resume",selectedFile);
+    for (var pair of formData.entries()) {
+        console.log(pair[0] + ':' + pair[1]);
+    }
+    console.log(formData);
+
     console.log(data);
-    axios.post('https://rdigs-api.herokuapp.com/career', data,formData).then(res => {
+    axios.post('https://rdigs-api.herokuapp.com/career', formData).then(res => {
         console.log(res);
         console.log(res.data);
         reset();
         alert("File Upload success");
       })  
+      console.log('hii');
   }
-
-
-  //another one file upload
-    // const [selectedFile, setSelectedFile] = useState();
-    // const [isFilePicked, setIsFilePicked] = useState(false);
-    // const changeHandler = (event) => {
-    //  setSelectedFile(event.target.files[0]);
-    //  event.target.files[0] && setIsFilePicked(true);
-    // };
-    // const handleSubmission = () => {
-    //     // HANDLING FILE AS SENDING FILE INTO BACKEND
-    //     if (!isFilePicked) return;
-    //     const formData = new FormData();
-    //     formData.append("File", selectedFile);
-    //     fetch("https://rdigs-api.herokuapp.com/career", {
-    //         method: "POST",
-    //         body: formData,
-    //        })
-    //        .then((response) => response.json())
-    //        .then((result) => {
-    //         console.log("Success:", result);
-    //        })
-    //        .catch((error) => {
-    //          console.error("Error:", error);
-    //         });
-    //     };
      
     return(
     <>
@@ -119,10 +109,11 @@ const onSubmit = (data)=> {
                                     <div className="input-group">
                                         <div className="custom-file">
                                             <div class="input-group">
-                                                <input  type="file" style={{paddingLeft:'1%'}}
-                                                name="resume"
-                                                 {...register("resume")}
-                                                />
+                                            <input  type="file" style={{paddingLeft:'1%'}}
+                                              name="resume"
+                                              {...register("resume")}
+                                              onChange={handleChange}
+                                            />
                                             </div> 
                                         </div>
                                     </div>
@@ -131,10 +122,6 @@ const onSubmit = (data)=> {
                                 <div className="col"><Button classNames="allbtn-primary glow-on-hover text-light" text="Apply" /></div>
                                 </div>
                             </form>
-                            {/* <form onSubmit={handleSubmission}>
-                            <input type="file" name="file" onChange={changeHandler} />
-                            <button type="submit">save</button>
-                            </form> */}
                     </div>
                 </div>
             </div>

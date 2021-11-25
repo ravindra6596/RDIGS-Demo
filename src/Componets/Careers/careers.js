@@ -11,8 +11,6 @@ import CareerGallery from "./CareerGallery/CareerGallery";
 import CareerSlider from "./CareerSlider/CareerSlider";
 import React, { Component }  from 'react';
 
-
-
 const careers = () => {
 
     const data = [

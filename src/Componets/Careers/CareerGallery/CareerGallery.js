@@ -1,11 +1,12 @@
 import React from "react";
 import './CareerGallery.css';
 import Heading from "../../Heading/Heading";
-import culture1 from "../../../img/career/carourculture1.jpg";
-import culture2 from  "../../../img/career/cargalnew2.jpg";
-import culture3 from  "../../../img/career/carcoulteure.jpg";
-import culture4 from  "../../../img/career/cargalnew1.jpg";
-import culture5 from  "../../../img/career/carourculture5.jpg";
+import culture1 from "../../../img/career/cargalimg5.jpg";
+import culture2 from  "../../../img/career/cargalimg3.jpg";
+import culture3 from  "../../../img/career/cargalimg2.png";
+import culture4 from  "../../../img/career/cargalimg4.jpg";
+import culture5 from  "../../../img/career/cargalimg1.png";
+
 const CareerGallery = () => {
   
     return (
@@ -20,7 +21,7 @@ const CareerGallery = () => {
                             <div className="row h-50">
                                 <div className="col-md-12 col-sm-12 co-xs-12 gal-item">
                                     <div className="careerculbox">
-                                        <img src={culture1} className="img-ht img-fluid rounded" />
+                                        <img src={culture1} className="img-ht img-fluid rounded"style={{height:'395px'}}/>
                                     </div>
                                 </div>
                             </div>

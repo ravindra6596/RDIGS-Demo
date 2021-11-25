@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link} from 'react-router-dom';
 import './homestyle.css';
 import Banner from "../Banner/Banner";
 import Counter from "../Counter/Counter";
@@ -41,7 +42,7 @@ const Home = () => {
                 </form>
                 <div style={{ display: 'flex', marginTop:'2%'}}>
                   <input type="checkbox" checked  style={{marginTop:'2%'}} />
-                  <p className="homemodalAgree">I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our <span style={{ color: '#30a6e9' }}>Privacy Policy</span> And <span style={{ color: '#30a6e9' }}>Terms and Codition.</span> </p>
+                  <p className="homemodalAgree">I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our <Link to="/privacypolicy">Privacy Policy</Link> And <Link to="/termscondition">Terms and Codition</Link></p>
                 </div>
                 <div style={{ textAlign: 'center'}} ><Button classNames="allbtn-primary glow-on-hover text-light" text="Submit" /></div>
               </div>

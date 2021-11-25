@@ -1,5 +1,6 @@
 import React, { useState ,Component} from 'react';
 import { Modal, ModalBody } from 'reactstrap';
+import {Link} from 'react-router-dom';
 import './Banner.css';
 import Button from '../ButtonGroup/Button/Button';
 import banimg from '../../img/Banner/hero-img.png';
@@ -8,6 +9,11 @@ import Heading from '../Heading/Heading';
 
 const Banner = () => {
   const [modal, setModal] = useState(false);
+
+//any where in the page scroll on top Navigation tab click open on top
+const scrollgoToplink = () => {
+  window.scrollTo({ top:0});
+};
 
   return (
     <>
@@ -27,7 +33,7 @@ const Banner = () => {
                 </form>
                 <div style={{ display:'flex',marginTop:'2%'}}>
                   <input type="checkbox" checked style={{marginTop:'2%'}}/>
-                  <p className="homemodalAgree">I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our <span style={{ color: '#30a6e9' }}>Privacy Policy</span> And <span style={{ color: '#30a6e9' }}>Terms and Codition.</span> </p>
+                  <p className="homemodalAgree">I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our <Link to="/privacypolicy" onClick={scrollgoToplink}>Privacy Policy</Link> And <Link to="/termscondition" onClick={scrollgoToplink}>Terms and Codition</Link></p>
                 </div>
                 <div style={{ textAlign: 'center' }}><Button classNames="allbtn-primary glow-on-hover text-light" text="Submit" /></div>
               </div>
