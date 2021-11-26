@@ -3,18 +3,35 @@ import "./Blog.css";
 import Button from '../ButtonGroup/Button/Button';
 import aboutimg from '../../img/blog/aboutimg.jpg';
 import bg from '../../video/bg.mp4';
-const Blog = () => {
+import { Link, useNavigate } from 'react-router-dom';
+import { useHistory } from 'react-router';
+const Blog = (props) => {
   const [items, setItems] = useState([]);
   const [isReadMore, setIsReadMore] = useState(true);
   const [isReadmorepara, setIsReadmorepara]=useState(true);
+  
 // =============================================
   useEffect(()=>{
-    fetch('https://b2bnetworkservices.online/blogs/public')
+    fetch(`https://b2bnetworkservices.online/blogs/public`)
     .then((res)=>res.json())
     .then((data)=>setItems(data.blogs));
     console.log(setItems);
-    
+          //  if(data.blogs._id)
+          //     {
+          //       history.push('/blogpage');
+          //     }          
   },[]);
+//pass the id to single blog page
+
+//scroll to top
+const scrollgoToplink = () => {
+  window.scrollTo({ top:0});
+};
+// const navigate = useNavigate();
+
+// const toComponentB=(props)=>{
+// navigate('/blogpage',{state:{id:_id}});
+// }
 
   const[count,setCount]=useState(3);
   const inc=()=>{
@@ -76,10 +93,10 @@ const Blog = () => {
      <div className="container card-blog-cont ">
        <div className="row">
         {
-         items.slice(0,count).map((item)=>{
+         items.slice(0,count).map((item,i)=>{
          return(
                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 b-card" data-aos="zoom-in-down">
-               <div className="d-lg-flex card-body card-border" id="cardblog">
+               <div className="d-lg-flex card-body card-border" id="cardblog" data-id={item._id}>
                <div className="card-blog-div border-0 me-lg-4 mb-lg-0 mb-4">
                    <div className="backgroundEffect"></div>
                   <div className="pic"><img src={item.coverImg} alt=""/> 
@@ -101,9 +118,11 @@ const Blog = () => {
                         </span>
                         </p> 
                        <div className="d-flex align-items-center justify-content-between mt-3 pb-3">
-                          <a className="blog-single-page-link" href="/blogpage">
-                           <Button classNames="btnclear22" text="Read More">
-                           </Button></a>
+                          <Link to={{pathname: `/blogpage`,state: {id:item._id}}} onClick={scrollgoToplink}>
+                          <Button classNames="btnclear22" text="Read More" fun={()=>Blog(item._id)}>
+                           </Button>
+                           {/* onClick={()=>{toComponentB()}}  Blog(item._id);*/}
+                           </Link>
                            <div className="d-flex align-items-center justify-content-center foot blog-admin-msg">
                                <p className="admin justify-content-center align-items-center">{item.author}</p>&nbsp;&nbsp;
                                <p className="ps-3 icon text-muted"><span className="fa fa-pencil pe-1"></span>{}</p>
@@ -131,3 +150,4 @@ const Blog = () => {
 };
 // 
 export default Blog;
+   

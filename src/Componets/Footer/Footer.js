@@ -57,7 +57,13 @@ const scrollgoToplink = () => {
           reset();
       })
   }
+  //validation
+  const[email,setEmail]=useState('');
+  function handleEmail(event){
 
+    setEmail(event.target.value)
+
+}
     return (
         <>
         <div>
@@ -105,7 +111,7 @@ const scrollgoToplink = () => {
                                                                 </div>
                                                                 <div className="corporate-form-in4">
                                                                 <i className="fa fa-envelope" aria-hidden="true"></i>
-                                                                <input type="email" {...register("email",{ required: "Please enter your email." })} className="form-corporateDeck-email" id="Email" placeholder="Your Email" autocomplete="off" required/>
+                                                                <input type="email" {...register("email",{ required: "Please enter your email." })} className="form-corporateDeck-email" id="Email" placeholder="Your Email" onChange={handleEmail} autocomplete="off" required/>
                                                                 </div>
                                                                 <div className="corporate-form-in5">
                                                                 <i className="fa fa-address-book" aria-hidden="true"></i>
