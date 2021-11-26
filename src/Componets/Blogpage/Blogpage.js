@@ -8,7 +8,6 @@ import blogauthor from '../../img/blog/blog-author.jpg';
 import Button from '../ButtonGroup/Button/Button';
 import axios from 'axios';
 import { useForm } from "react-hook-form";
-import ReactHtmlParser from 'react-html-parser';
 const Blogpage=()=>{
   const [isLoading, setIsLoading] = useState(true)
     const [items, setItems] = useState([]);
@@ -72,7 +71,7 @@ const Blogpage=()=>{
                   </p>
                 </blockquote>
                 {/* <img src={blogrecent} className="img-fluid" alt=""/> */}
-                  { ReactHtmlParser(<p>{item.description}</p>)}
+                  {/* { ReactHtmlParser(<p>{item.description}</p>)} */}
               </div>
                <div className="entry-footer">
                 <i className="fa fa-folder"></i>
