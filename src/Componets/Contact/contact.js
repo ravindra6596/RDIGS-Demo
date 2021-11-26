@@ -12,13 +12,25 @@ const Contact = () => {
 //Form POST API   
 const { register, handleSubmit ,reset} = useForm(); 
 
-
 const [isRadio,setRadio] = useState("");
     function handleRadioChange(event) {
     setRadio(event.target.value)
     }
     console.log(isRadio);
 
+const onSubmit = (data)=> { 
+    console.log(data)
+    axios.post(`https://rdigs-api.herokuapp.com/contact`, data,isRadio)
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+        reset(); 
+      })
+  }
+const forReset= ()=>{
+    reset();
+}
+  
 // const[selectradio,setSelectedradio] = useState();
 //     const handleChange=(e)=>{
 //         // setSelectedradio(target.type === 'radion' ? target.checked : target.value);
@@ -30,18 +42,6 @@ const [isRadio,setRadio] = useState("");
 //           [name]: value
 //         });
 //     }
-   
-
-const onSubmit = (data)=> {   
-    console.log(data)
-    axios.post(`https://rdigs-api.herokuapp.com/contact`, data,isRadio)
-      .then(res => {
-        console.log(res);
-        console.log(res.data);
-        reset(); 
-        console.log(isRadio);
-      })
-  }
 
 //Form Radio button logic  
      const [radiotext, showRadiotext] = useState(false); 
@@ -97,7 +97,7 @@ const onSubmit = (data)=> {
                                         <input className="conradiofirst" type="radio" id="age1" value="Demand Generation"  onClick={() => showRadiotext(false)}
                                            name="services" 
                                            {...register("services")} 
-                                        //    onChange={handleChange}
+                                        //    onChange={handleRadioChange}
                                         //    checked={setSelectedradio === "Demand Generation"}
                                         />
                                         <label for="age1"  style={{marginLeft:'5px'}}>Demand Generation</label>
@@ -106,7 +106,7 @@ const onSubmit = (data)=> {
                                         <input className="conradiofirst" type="radio" id="age1" value="Sales Empowerment" onClick={() => showRadiotext(false)}
                                            name="services" 
                                            {...register("services")} 
-                                        //    onChange={handleChange}
+                                        //    onChange={handleRadioChange}
                                         //    checked={setSelectedradio === "Sales Empowerment"}
                                            />
                                         <label className="contactsale" for="age1">Sales Empowerment</label>
@@ -122,11 +122,8 @@ const onSubmit = (data)=> {
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" value="Other" onClick={() => showRadiotext(true)}
-                                         name="services"
-                                        {...register("services")}
-                                        // onChange={handleChange} 
-                                        // checked={setSelectedradio === "Other"}
-                                        />
+                                        name="services" 
+                                        {...register("services")} />
                                         <label for="age1" style={{marginLeft:'5px'}} >Other</label>
                                     </div>
                                 </div>
@@ -147,7 +144,7 @@ const onSubmit = (data)=> {
                                         <Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" />
                                     </div>
                                     <div className="col conformcleardiv">
-                                        <button className="contactclear22">Clear</button>
+                                        <button className="contactclear22" onClick={forReset}>Clear</button>
                                     </div>
                                 </div>
                                  <Recaptcha 

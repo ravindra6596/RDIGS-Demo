@@ -27,7 +27,7 @@ const scrollgoToplink = () => {
                 <img src={modalimg} className="homemain-modalimg img-fluid" />
               </div>
               <div className="col-lg-7 col-md-7 col-sm-7 col-xs-7">
-                <h1>To Get Latest Updates</h1>
+                <h1 style={{color:'#6cbeee'}}>To Get Latest Updates</h1>
                 <form>
                   <input placeholder="Enter E-Mail Here " className="homemodalinput" />
                 </form>
