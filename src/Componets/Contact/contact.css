@@ -27,9 +27,10 @@
     height: 47px;
     color:#30a6e9 ;
     background-color: transparent;
-    border-color: #30a6e9;
+    border-color: #30a6e9!important;
     border-radius: 40px;
 }
+.contactclear22:focus{border-color: #30a6e9!important;outline: none;}
 .conradiodiv{display: flex;}
 .conwhattxt{
     color: black;

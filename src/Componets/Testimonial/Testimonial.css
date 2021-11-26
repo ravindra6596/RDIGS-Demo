@@ -43,7 +43,7 @@
     -moz-appearance:    none;
     appearance:         none!important; }
 .slick-slide::-moz-focus-inner { border: 0; }
-.slick-slide:focus,:active,:visited {border: none; outline: none!important;}
+.slick-slide:focus,:visited {border: none; outline: none!important;}
 .newtestislider:focus{outline: none!important; border: none!important;-webkit-appearance: none;
     -moz-appearance:none;
     appearance: none; }
