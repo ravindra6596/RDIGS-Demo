@@ -82,6 +82,7 @@ text-align: end;}
     /* padding-left: 15px; */
     border: 1px solid #30a6e9 !important;
     text-indent: 20px;
+    outline: none;
 }
 .form-corporateDeck-email, .form-corporateDeck-code{
     width:100%; 
@@ -89,6 +90,7 @@ text-align: end;}
     /* padding-left: 15px;  */
     border: 1px solid #30a6e9 !important;
     text-indent: 20px;
+    outline: none;
 }
 .corporate-form-in1 i{
     padding: 5px;
