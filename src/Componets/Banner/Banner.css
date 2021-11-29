@@ -148,7 +148,6 @@
   }
 
 /* Modal Animation media */
-
 @media only screen and (min-width: 320px)and (max-width: 375px){
   #hero h1 {font-size: 25px;}
   #hero .hero-img img {height: 141px;}
