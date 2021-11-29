@@ -135,7 +135,7 @@ const Header = () => {
                           <i class="fa fa-th" aria-hidden="true"></i>
                           <p className="blogmodeltxt">
                             <div className="forunderline">
-                              <Link to="/companyprofile1" onClick={() => { scrollgoTop(); setExpanded(false); }}>Company Profile</Link>
+                              <Link to="/companyprofile" onClick={() => { scrollgoTop(); setExpanded(false); }}>Company Profile</Link>
                             </div>
                           </p>
                         </span>

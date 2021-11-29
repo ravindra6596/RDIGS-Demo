@@ -10,6 +10,11 @@
     background-size: cover;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
+/* css for save data alert model */
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+        overflow: auto;
+        padding-right: 0px!important;
+    }
 .contformcol{
     background-color: white;
     margin-top: 4%;
@@ -27,9 +32,10 @@
     height: 47px;
     color:#30a6e9 ;
     background-color: transparent;
-    border-color: #30a6e9;
+    border-color: #30a6e9!important;
     border-radius: 40px;
 }
+.contactclear22:focus{border-color: #30a6e9!important;outline: none;}
 .conradiodiv{display: flex;}
 .conwhattxt{
     color: black;

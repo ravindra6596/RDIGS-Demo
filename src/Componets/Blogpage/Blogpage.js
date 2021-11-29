@@ -61,6 +61,7 @@ const Blogpage=(props)=>{
                   </p>
                 </blockquote>
                   { ReactHtmlParser(<p>{blogdata.description}</p>)}
+
               </div>
                <div className="entry-footer">
                 <i className="fa fa-folder"></i>
