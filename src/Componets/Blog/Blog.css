@@ -85,6 +85,9 @@
 .blog-single-page-link a:focus{
   text-decoration: none;
 }
+.btn-readmore-blog{
+  margin-left:15px;
+}
 .Load-More{
   width:200px;
   height:60px;

@@ -1,10 +1,11 @@
 import React,{useEffect,useState,Component} from "react";
 import "./Blog.css";
+import Blogpage from "../Blogpage/Blogpage";
 import Button from '../ButtonGroup/Button/Button';
 import aboutimg from '../../img/blog/aboutimg.jpg';
 import bg from '../../video/bg.mp4';
 import { Link, useNavigate } from 'react-router-dom';
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
 const Blog = (props) => {
   const [items, setItems] = useState([]);
   const [isReadMore, setIsReadMore] = useState(true);
@@ -12,27 +13,24 @@ const Blog = (props) => {
   
 // =============================================
   useEffect(()=>{
+
     fetch(`https://b2bnetworkservices.online/blogs/public`)
     .then((res)=>res.json())
     .then((data)=>setItems(data.blogs));
-    console.log(setItems);
-          //  if(data.blogs._id)
-          //     {
-          //       history.push('/blogpage');
-          //     }          
+    // console.log(setItems); 
   },[]);
+   
 //pass the id to single blog page
+const history = useHistory();
+const navigate = (_id) => {
+  history.push(`https://b2bnetworkservices.online/blogs/public/${_id}`)
+  console.log(navigate);
+}
 
 //scroll to top
 const scrollgoToplink = () => {
   window.scrollTo({ top:0});
 };
-// const navigate = useNavigate();
-
-// const toComponentB=(props)=>{
-// navigate('/blogpage',{state:{id:_id}});
-// }
-
   const[count,setCount]=useState(3);
   const inc=()=>{
     setCount(count+3);
@@ -88,17 +86,19 @@ const scrollgoToplink = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section> 
     <section className="card-blog">
      <div className="container card-blog-cont ">
        <div className="row">
         {
          items.slice(0,count).map((item,i)=>{
          return(
+          
                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 b-card" data-aos="zoom-in-down">
                <div className="d-lg-flex card-body card-border" id="cardblog" data-id={item._id}>
                <div className="card-blog-div border-0 me-lg-4 mb-lg-0 mb-4">
                    <div className="backgroundEffect"></div>
+                   <div className="cardid" key={item._id}></div>
                   <div className="pic"><img src={item.coverImg} alt=""/> 
                        <div className="date">
                          <span className="day">{item.publishDate}</span>
@@ -112,17 +112,19 @@ const scrollgoToplink = () => {
                           </span>
                         </p>
                         <p className="text-muted mt-3 card-para">
-                            {isReadMore ? item.shortDes.slice(0,80) : item.shortDes}
-                        <span onClick={toggleReadMore} className="read-or-hide">
+                            {isReadMore ? item.shortDes.slice(0,100) : item.shortDes}
+                        <span className="read-or-hide">
                             {isReadMore ? "..." : " "}
                         </span>
+                        {/* onClick={toggleReadMore} */}
                         </p> 
                        <div className="d-flex align-items-center justify-content-between mt-3 pb-3">
-                          <Link to={{pathname: `/blogpage`,state: {id:item._id}}} onClick={scrollgoToplink}>
-                          <Button classNames="btnclear22" text="Read More" fun={()=>Blog(item._id)}>
-                           </Button>
-                           {/* onClick={()=>{toComponentB()}}  Blog(item._id);*/}
-                           </Link>
+                           <div className="btn-readmore-blog">
+                              <Link to={{pathname: `/blogpage`}} key={item._id} onClick={()=>{scrollgoToplink(); navigate(item._id)}}>
+                              <Button classNames="btnclear22" text="Read More" >
+                              </Button>
+                              </Link>
+                           </div>
                            <div className="d-flex align-items-center justify-content-center foot blog-admin-msg">
                                <p className="admin justify-content-center align-items-center">{item.author}</p>&nbsp;&nbsp;
                                <p className="ps-3 icon text-muted"><span className="fa fa-pencil pe-1"></span>{}</p>
@@ -135,9 +137,11 @@ const scrollgoToplink = () => {
              )
            })
          } 
+         
              <div className="col-12">
+               
               <div className="d-flex justify-content-center" style={{marginTop:'10px',marginBottom:'10px'}}>
-                <Button classNames="allbtn-primary glow-on-hover text-light" fun={() =>inc() } text='Load More'></Button>
+                <Button classNames="allbtn-primary glow-on-hover text-light" fun={() =>{inc();}} text='Load More'></Button>
               </div>
             </div> 
             <div> 

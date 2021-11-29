@@ -9,59 +9,48 @@ import Button from '../ButtonGroup/Button/Button';
 import axios from 'axios';
 import { useForm } from "react-hook-form";
 import ReactHtmlParser from 'react-html-parser';
-const Blogpage=()=>{
-  const [isLoading, setIsLoading] = useState(true)
-    const [items, setItems] = useState([]);
+const Blogpage=(props)=>{
+   const [items, setItems] = useState([]);
     useEffect(()=>{
     fetch(`https://b2bnetworkservices.online/blogs/public`)
     .then((res)=>res.json())
     .then((data)=>setItems(data.blogs))
-    // .then((data)=>{
-    //   const respones = data.blogs._id.map((blog)=>{
-    //     fetch(`https://b2bnetworkservices.online/blogs/public/${items._id}`)
-    //     .then((res) => res.json())
-    //   });
-    //   Promise.all(respones).then((data) => {
-    //     setItems(data.blogs);
-    //     setIsLoading(false)
-    //   });
-    // });
   },[]);
   //API parser for html
-  
 
     return(
         <>
         <div className="nav-contaniner"/>
     {/*============== Blog Single Section================ */}
-   
+    <p>{props.data} </p>
     <section id="blog" className="blog">
       <div className="container" data-aos="fade-up">
-        {
-          items.map((item,i)=>{
+         {
+          items.map((blogdata,i)=>{
             return(
               <div className="row">
-              <div className="col-lg-8 entries">
-              <article className="entry entry-single">
+               
+              <div className="col-lg-8 entries" data-aos="zoom-in-right">
+              <article className="entry entry-single" >
               <div className="entry-img" key={i}>
-                <img src={item.coverImg} alt="" className="img-fluid"/>
+                <img src={blogdata.coverImg} alt="" className="img-fluid"/>
               </div>
-              <h2 className="entry-title" props={item}>
-                  {item.title}
+              <h2 className="entry-title" props={blogdata}>
+                  {blogdata.title}
               </h2>
               <div className="entry-meta">
                 <ul>
                   <li className="d-flex align-items-center">
                     <i className="fa fa-user-circle-o"></i>
-                   {item.author}
+                   {blogdata.author}
                   </li>
                   <li className="d-flex align-items-center">
                     <i className="fa fa-clock-o"></i> 
-                    <a href="blog-single.html"><time datetime="2020-01-01">{item.publishDate}</time></a>
+                    <a href="blog-single.html"><time datetime="2020-01-01">{blogdata.publishDate}</time></a>
                   </li>
                   <li className="d-flex align-items-center">
                     <i className="fa fa-comment"></i> 
-                    {/* <a href="#">{item.comments}</a> */}
+                    <a href="#"></a>
                   </li>
                 </ul>
               </div>
@@ -71,8 +60,7 @@ const Blogpage=()=>{
                     Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.
                   </p>
                 </blockquote>
-                {/* <img src={blogrecent} className="img-fluid" alt=""/> */}
-                  { ReactHtmlParser(<p>{item.description}</p>)}
+                  { ReactHtmlParser(<p>{blogdata.description}</p>)}
               </div>
                <div className="entry-footer">
                 <i className="fa fa-folder"></i>
@@ -97,7 +85,7 @@ const Blogpage=()=>{
                   <Link to="https://www.linkedin.com/#"><i className="fa fa-linkedin"></i></Link>
                 </div>
                 <p>
-                     {item.shortDes}  
+                     {blogdata.shortDes}  
                 </p>
               </div>
             </div>
@@ -118,7 +106,7 @@ const Blogpage=()=>{
               </div>
               </div>
               </div>
-             <div className="col-lg-4">
+             <div className="col-lg-4" data-aos="zoom-in-left">
 
             <div className="sidebar">
 
@@ -141,22 +129,22 @@ const Blogpage=()=>{
               <h3 className="sidebar-title">Recent Posts</h3>
               <div className="sidebar-item recent-posts">
                 <div className="post-item clearfix">
-                  <img src={item.coverImg} alt=""/>
-                  <h4><a href="#">{item.title}</a></h4>
-                  <time datetime="2020-01-01">{item.publishDate}</time>
+                  <img src={blogdata.coverImg} alt=""/>
+                  <h4><a href="#">{blogdata.title}</a></h4>
+                  <time datetime="2020-01-01">{blogdata.publishDate}</time>
                   <div>
                   <i className="fa fa-eye mx-2"></i>
-                  {item.views}</div>
+                  {blogdata.views}</div>
                 </div>
               </div>
-              {/* <h3 className="sidebar-title">Related Posts</h3>
+             <h3 className="sidebar-title">Related Posts</h3>
               <div className="sidebar-item recent-posts">
                 <div className="post-item clearfix">
                   <img src={recentblog} alt=""/>
                   <h4><a href="blog-single.html">Nihil blanditiis at in nihil autem</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
-              </div> */}
+              </div>
               <h3 className="sidebar-title">Tags</h3>
               <div className="sidebar-item tags">
                 <ul>
@@ -173,7 +161,7 @@ const Blogpage=()=>{
           
             )
           })
-        }
+        } 
     
         <div className="row">
         <div className="col-8">
