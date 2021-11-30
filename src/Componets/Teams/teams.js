@@ -5,7 +5,7 @@ import team4 from '../../img/team/RachelMendis.png';
 import team1 from '../../img/team/RolandDcosta.jpg';
 import team3 from '../../img/team/WilliamMathurai.jpg';
 import team2 from '../../img/team/AjayRawat.jpg';
-import teamsection2 from "../../img/team/teamsec2img.jpg";
+import teamsection2 from "../../img/team/teamsec2img2.jpg";
 const teams =()=>{
 
     const data = [
@@ -95,9 +95,9 @@ const teams =()=>{
             <div class="row">
                  {data.map((data) => ( 
                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
-                    <div class="member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member" data-aos="zoom-in-up">
                       <div class="member-img">
-                          <img src={data.teamimg} class="img-fluid" alt={data.teamalt}/>
+                          <img src={data.teamimg} class="img-fluid" alt={data.teamalt} style={{borderRadius:'5px',border:'1px solid #30a6e9'}}/>
                       </div>
                         <div class="member-info">
                             <h4>{data.teamName}</h4>

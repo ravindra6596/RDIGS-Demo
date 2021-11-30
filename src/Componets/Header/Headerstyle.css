@@ -21,7 +21,7 @@
 .navbar-light .navbar-nav .nav-link a :hover{ color: black; }
 .navbar-light .navbar-nav .nav-link :hover{color: black;}
 .main-nav-active{color: darkblue!important;}
-.maincolor{color: #30a6e9;}
+.maincolor{color: #30a6e9;} 
 /* Drop down css */
 .dropdown {
     position: relative;

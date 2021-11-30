@@ -67,7 +67,7 @@ const Blogpage =React.lazy(()=>import('./Componets/Blogpage/Blogpage'));
               <Route path='/installdatabase' exact={true} component={InstallDatabase}/>
               <Route path='/rdRoadMap' exact={true} component={RdRoadMap}/> 
               <Route path='/gallary' exact={true} component={Gallary}/>
-              <Route path='/companyprofile1' exact={true} component={CompanyProfile1}/>
+              <Route path='/companyprofile' exact={true} component={CompanyProfile1}/>
               <Route path='/blog' exact={true} component={Blog}/>
               <Route path='/jobdescription' exact={true} component={JobDescription}/>
               <Route path='/privacypolicy' exact={true} component={Privacypolicy}/>

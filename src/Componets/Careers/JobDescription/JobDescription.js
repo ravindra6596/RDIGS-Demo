@@ -1,5 +1,6 @@
 import React, { useEffect, useState ,Component }  from 'react';
 import './JobDescription.css';
+import Swal from "sweetalert2"; 
 import axios from 'axios';
 import { useForm } from "react-hook-form";
 import Heading from '../../Heading/Heading';
@@ -23,19 +24,24 @@ const onSubmit = (data)=> {
     formData.append("email",data.email);
     formData.append("company_name",data.company_name);
     formData.append("resume",selectedFile);
+    formData.append("message",data.message);
     for (var pair of formData.entries()) {
         console.log(pair[0] + ':' + pair[1]);
     }
     console.log(formData);
-
     console.log(data);
     axios.post('https://rdigs-api.herokuapp.com/career', formData).then(res => {
         console.log(res);
         console.log(res.data);
-        reset();
-        alert("File Upload success");
-      })  
-      console.log('hii');
+    }) 
+        Swal.fire({
+            position: 'centerd',
+            icon: 'success',
+            title: 'Your Data has been saved',
+            showConfirmButton: false,
+            timer: 1500
+          })
+        reset();    
   }
      
     return(
@@ -79,32 +85,36 @@ const onSubmit = (data)=> {
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12">
                          <form onSubmit={handleSubmit(onSubmit)} autocomplete="off" className="jdformcol" style={{padding:'3%'}}>
-                                <h1 className="applyheretxt">Apply Here..</h1>
+                                <h1 className="applyheretxt">Apply Now...</h1>
                                 <div className="form-group">
                                     <input  className="formjd"  placeholder="Enter Name"
                                      type="text" 
                                      {...register("name")}
+                                     required
                                     />
                                 </div>
                                 <div className="form-group">
                                     <input className="formjd" placeholder="Enter Phone No"
                                      type="number" 
                                      {...register("contact")}
+                                     required
                                      />
                                 </div>
                                 <div className="form-group">
                                     <input className="formjd"  placeholder="Enter Email" 
                                       type="email"
                                      {...register("email")} 
+                                     required
                                     />
                                 </div>
                                 <div className="form-group">
                                     <input className="formjd" placeholder="Enter Company Name" 
                                         type="text" 
                                         {...register("company_name")}
+                                        required
                                      />
                                 </div>
-                                <div className="form-group" style={{textAlign:'justify',border:'1px solid #ced4da'}}>
+                                <div className="form-group" style={{textAlign:'justify',border:'1px solid #ced4da',borderRadius:'5px'}}>
                                     <label for="exampleInputFile" style={{paddingLeft:'1%'}}>Upload File</label><i class="fa fa-image mx-2 updatePost"></i><small class="img-add">(only Pdf, Doc, & txt files are allowed)</small>
                                     <div className="input-group">
                                         <div className="custom-file">
@@ -113,10 +123,18 @@ const onSubmit = (data)=> {
                                               name="resume"
                                               {...register("resume")}
                                               onChange={handleChange}
+                                              required
                                             />
                                             </div> 
                                         </div>
                                     </div>
+                                </div>
+                                <div className="form-group">
+                                    <textarea className="formjd" rows="4" cols="123" name="message"  placeholder="Enter your message here..."
+                                    type="textarea" 
+                                    {...register("message")}
+                                    required
+                                    />
                                 </div>
                                 <div className="row" style={{margin:'5%',textAlign:'center'}}>
                                 <div className="col"><Button classNames="allbtn-primary glow-on-hover text-light" text="Apply" /></div>

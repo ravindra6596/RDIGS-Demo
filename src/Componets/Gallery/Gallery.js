@@ -37,9 +37,6 @@ const Gallery = () => {
       </section>
       <section className="Gallery-section">
         <div className="container">
-          {/* <div className="d-flex justify-content-center heading-gallery1">
-            <Heading h1Class="clientheadwe" title="Gallery"></Heading>
-          </div> */}
         <div className="row gallary-section1">
           {gallery.map((v, i) => {
             return (
