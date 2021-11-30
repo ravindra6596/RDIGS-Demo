@@ -108,6 +108,7 @@
   .blog .entry .entry-footer i {
     color: #988782;
     display: inline;
+    margin:10px;
   }
   .blog .entry .entry-footer a {
     color: #554945;
