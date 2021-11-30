@@ -33,7 +33,7 @@ const onSubmit = (data)=> {
     axios.post('https://rdigs-api.herokuapp.com/career', formData).then(res => {
         console.log(res);
         console.log(res.data);
-        reset();
+    }) 
         Swal.fire({
             position: 'centerd',
             icon: 'success',
@@ -41,7 +41,7 @@ const onSubmit = (data)=> {
             showConfirmButton: false,
             timer: 1500
           })
-      })  
+        reset();    
   }
      
     return(
@@ -90,24 +90,28 @@ const onSubmit = (data)=> {
                                     <input  className="formjd"  placeholder="Enter Name"
                                      type="text" 
                                      {...register("name")}
+                                     required
                                     />
                                 </div>
                                 <div className="form-group">
                                     <input className="formjd" placeholder="Enter Phone No"
                                      type="number" 
                                      {...register("contact")}
+                                     required
                                      />
                                 </div>
                                 <div className="form-group">
                                     <input className="formjd"  placeholder="Enter Email" 
                                       type="email"
                                      {...register("email")} 
+                                     required
                                     />
                                 </div>
                                 <div className="form-group">
                                     <input className="formjd" placeholder="Enter Company Name" 
                                         type="text" 
                                         {...register("company_name")}
+                                        required
                                      />
                                 </div>
                                 <div className="form-group" style={{textAlign:'justify',border:'1px solid #ced4da',borderRadius:'5px'}}>
@@ -119,15 +123,17 @@ const onSubmit = (data)=> {
                                               name="resume"
                                               {...register("resume")}
                                               onChange={handleChange}
+                                              required
                                             />
                                             </div> 
                                         </div>
                                     </div>
                                 </div>
                                 <div className="form-group">
-                                    <textarea className="formjd" rows="4" cols="123" name="message"  placeholder="Enter text here..."
+                                    <textarea className="formjd" rows="4" cols="123" name="message"  placeholder="Enter your message here..."
                                     type="textarea" 
                                     {...register("message")}
+                                    required
                                     />
                                 </div>
                                 <div className="row" style={{margin:'5%',textAlign:'center'}}>

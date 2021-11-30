@@ -11,17 +11,21 @@ import Button from "../ButtonGroup/Button/Button";
 const Contact = () => {
  
 //Form POST API   
-const { register, handleSubmit ,reset} = useForm(); 
+const { register, handleSubmit ,reset,setValue} = useForm(); 
 
 const [isRadio,setRadio] = useState("");
     function handleRadioChange(event) {
-    setRadio(event.target.value);
+        setRadio(event.target.value);
     }
     // console.log(isRadio);
     
 const onSubmit = (data)=> { 
-    data.services=isRadio;
-    
+    if ( data.services === '') {
+        console.log(data.services=isRadio)
+      } else{
+        console.log(isRadio);      
+      } 
+
     const formconData = new FormData();
     formconData.append("name",data.name);
     formconData.append("contact",data.contact);
@@ -33,7 +37,6 @@ const onSubmit = (data)=> {
     axios.post(`https://rdigs-api.herokuapp.com/contact`, data).then(res => {
         console.log(res);
         console.log(res.data);
-        reset(); 
       })
       Swal.fire({
         position: 'centerd',
@@ -42,22 +45,10 @@ const onSubmit = (data)=> {
         showConfirmButton: false,
         timer: 2000
       })
-  }
-const forReset= ()=>{
     reset();
-}
-  
-// const[selectradio,setSelectedradio] = useState();
-//     const handleChange=(e)=>{
-//          setSelectedradio(target.type === 'radio' ? target.checked : target.value);
-//         const target = e.target;
-//         const value = target.type === 'radio' ? target.checked : target.value;
-//         const name = target.name;
-        
-//         setSelectedradio({
-//           [name]: value
-//         });
-//     }
+  }
+ 
+
 
 //Form Radio button logic  
      const [radiotext, showRadiotext] = useState(false); 
@@ -84,6 +75,7 @@ const forReset= ()=>{
                                      type="text" 
                                      name="name"
                                      {...register("name")}
+                                     required
                                      />
                                 </div>
                                 <div class="form-group">
@@ -91,13 +83,15 @@ const forReset= ()=>{
                                          type="number" 
                                          name="contact"
                                          {...register("contact")}
+                                         required
                                     />
                                 </div>
                                 <div class="form-group">
                                     <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Email" style={{width:'90%'}}
                                         type="email" 
                                         name="email" 
-                                        {...register("email")}                                         
+                                        {...register("email")} 
+                                        required                                        
                                     />
                                 </div>
                                 <div class="form-group">
@@ -105,6 +99,7 @@ const forReset= ()=>{
                                          type="text" 
                                          name="company_name" 
                                         {...register("company_name")}
+                                         required
                                      />
                                 </div>
                                 <label className="conwhattxt">What Would You like to inquire about?</label><br />
@@ -116,8 +111,7 @@ const forReset= ()=>{
                                         name="services"
                                         value="Demand Generation" 
                                         {...register("services")} 
-                                        //    onChange={handleRadioChange}
-                                        //    checked={setSelectedradio === "Demand Generation"}
+                                        required
                                         />
                                         <label for="age1"  style={{marginLeft:'5px'}}>Demand Generation</label>
                                     </div>
@@ -128,8 +122,7 @@ const forReset= ()=>{
                                         name="services"
                                         value="Sales Empowerment"  
                                         {...register("services")} 
-                                        //    onChange={handleRadioChange}
-                                        //    checked={setSelectedradio === "Sales Empowerment"}
+                                        required
                                            />
                                         <label className="contactsale" for="age1">Sales Empowerment</label>
                                     </div>
@@ -140,10 +133,9 @@ const forReset= ()=>{
                                         name="services" 
                                         value="Data Enrichment"
                                         {...register("services")} 
-                                        // onChange={handleChange}
-                                        // checked={setSelectedradio === "Data Enrichment"}
+                                        required
                                         />
-                                        <label for="age1" style={{marginLeft:'5px'}} >Data Enrichment</label>
+                                        <label for="age1" style={{marginLeft:'5px'}}>Data Enrichment</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" value="Other" onClick={() => showRadiotext(true)}
@@ -151,7 +143,9 @@ const forReset= ()=>{
                                          type="radio" 
                                          name="services" 
                                          value="other"
-                                         {...register("services")} />
+                                         {...register("services")}
+                                         required
+                                         />
                                         <label for="age1" style={{marginLeft:'5px'}} >Other</label>
                                     </div>
                                 </div>                            
@@ -159,20 +153,20 @@ const forReset= ()=>{
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Service Name" 
                                  style={{ display: radiotext ? "block" : "none"}} 
                                  name="services" 
-                                 {...register("services")} 
+                                 {...register("services")}
+                                 required
                                  />
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="textarea" placeholder="Your Message"
                                   name="message" 
                                   {...register("message")} 
+                                  required
                                 />
                                 <div className="row conbtnrow">
                                 {/* fun={() => handleSubmit()}  */}
                                     <div className="col btngetintouch">
                                         <Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" />
                                     </div>
-                                    <div className="col conformcleardiv">
-                                        <button className="contactclear22" onClick={forReset}>Clear</button>
-                                    </div>
+                                   
                                 </div>
                                  <Recaptcha 
                                      badge="bottomleft"
@@ -184,7 +178,7 @@ const forReset= ()=>{
                                      sitekey="6Lct3zkdAAAAAO0KFEeZ9r7wmIfATa-qpOCp4F-T"
                                      Secret Key="6Lct3zkdAAAAAGQ4KCB3UKQ9qqOg7VvYPyLqkfbL"    
                                  />
-                            </form>                   
+                            </form>                  
                         </div> 
                     </div>
                 </div>

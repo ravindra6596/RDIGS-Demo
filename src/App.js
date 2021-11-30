@@ -38,7 +38,6 @@ const Termscondition = React.lazy(()=>import('./Componets/Termscondition/Termsco
 const Unsubscribe = React.lazy(()=>import('./Componets/Unsubscribe/Unsubscribe'));
 const PageNotFound = React.lazy(()=>import('./Componets/PageNotFound/Pagenotfound'));
 const Cookie = React.lazy(()=>import('./Componets/Cookie/Cookie'));
-const Cookienew = React.lazy(()=>import('./Componets/Cookienew/Cookienew'));
 const Blogpage =React.lazy(()=>import('./Componets/Blogpage/Blogpage'));
 
   return (
@@ -75,10 +74,9 @@ const Blogpage =React.lazy(()=>import('./Componets/Blogpage/Blogpage'));
               <Route path='/termscondition' exact={true} component={Termscondition}/>
               <Route path='/unsubscribe' exact={true} component={Unsubscribe}/>
               <Route path='/cookie' exact={true} componet={Cookie}/>
-              <Route path='/cookienew' exact={true} component={Cookienew}/> 
+              <Route path="/blogpage" exact={true} component={Blogpage}/>
               <Route path='/footer' exact={true} component={Footer}/>
               <Route path="/Pagenotfound" exact={true} component={PageNotFound}/>
-              <Route path="/blogpage" exact={true} component={Blogpage}/>
               <Redirect from="*" to="/Pagenotfound"/>
           </Switch>
           <Footer/>
