@@ -7,46 +7,63 @@ import recentblog from '../../img/blog/recentblog.jpg';
 import blogauthor from '../../img/blog/blog-author.jpg';
 import Button from '../ButtonGroup/Button/Button';
 import axios from 'axios';
-import { useForm } from "react-hook-form";
 import ReactHtmlParser from 'react-html-parser';
+import { useParams } from 'react-router-dom';
 const Blogpage=(props)=>{
    const [items, setItems] = useState([]);
-    useEffect(()=>{
-    fetch(`https://b2bnetworkservices.online/blogs/public`)
-    .then((res)=>res.json())
-    .then((data)=>setItems(data.blogs))
-  },[]);
+   const { id } = useParams();
+  //  useEffect(()=>{
+     
+  //   fetch(`https://b2bnetworkservices.online/blogs/public/${id}`)
+  //   .then((data)=>{
+  //     console.log("-----------");
+  //     console.log(data);
+  //     console.log("-----------");
+  //     setItems(data.blogs);
+  //   })
+  // },[]);
   //API parser for html
+  //+match.useParams.id
+  ///${id}
 
+//   const params = useParams();
+//   console.log(data);
+  useEffect(()=> {
+    axios.get(`https://b2bnetworkservices.online/blogs/public/${id}`)
+    .then(res => {
+        console.log(res);
+        console.log(res.data.seo);
+        setItems(res.data);
+        console.log(items);
+    })
+    .catch(err =>{
+        console.log(err)
+    })
+}, [])
     return(
         <>
         <div className="nav-contaniner"/>
     {/*============== Blog Single Section================ */}
-    <p>{props.data} </p>
     <section id="blog" className="blog">
       <div className="container" data-aos="fade-up">
-         {
-          items.map((blogdata,i)=>{
-            return(
-              <div className="row">
-               
+              <div className="row"> 
               <div className="col-lg-8 entries" data-aos="zoom-in-right">
               <article className="entry entry-single" >
-              <div className="entry-img" key={i}>
-                <img src={blogdata.coverImg} alt="" className="img-fluid"/>
+              <div className="entry-img">
+                <img src={items.coverImg} alt="" className="img-fluid"/>
               </div>
-              <h2 className="entry-title" props={blogdata}>
-                  {blogdata.title}
+              <h2 className="entry-title" props={items}>
+                  {items.title}
               </h2>
               <div className="entry-meta">
                 <ul>
                   <li className="d-flex align-items-center">
                     <i className="fa fa-user-circle-o"></i>
-                   {blogdata.author}
+                   {items.author}
                   </li>
                   <li className="d-flex align-items-center">
                     <i className="fa fa-clock-o"></i> 
-                    <a href="blog-single.html"><time datetime="2020-01-01">{blogdata.publishDate}</time></a>
+                    <a href="blog-single.html"><time datetime="2020-01-01">{items.publishDate}</time></a>
                   </li>
                   <li className="d-flex align-items-center">
                     <i className="fa fa-comment"></i> 
@@ -56,11 +73,9 @@ const Blogpage=(props)=>{
               </div>
               <div className="entry-content">
                 <blockquote>
-                  <p>
-                    Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.
-                  </p>
+                  <p>{items.shortDes}</p>
                 </blockquote>
-                  { ReactHtmlParser(<p>{blogdata.description}</p>)}
+                <p className="" dangerouslySetInnerHTML={{__html:items.description}}></p>
               </div>
                <div className="entry-footer">
                 <i className="fa fa-folder"></i>
@@ -85,22 +100,18 @@ const Blogpage=(props)=>{
                   <Link to="https://www.linkedin.com/#"><i className="fa fa-linkedin"></i></Link>
                 </div>
                 <p>
-                     {blogdata.shortDes}  
+                     {items.shortDes}  
                 </p>
               </div>
             </div>
-            <div className="blog-comments">
-              <h4 className="comments-count">8 Comments</h4>
+            <div className="blog-comments d-flex justify-content-center">
+              <h4 className="comments-count">{items.comments}</h4>
               <div id="comment-1" className="comment">
                 <div className="d-flex">
                   <div className="comment-img"><img src="assets/img/blog/comments-1.jpg" alt=""/></div>
                   <div>
-                    <h5><a href="">Georgia Reader</a> <a href="#" className="reply"><i className="fa fa-reply"></i> Reply</a></h5>
-                    <time datetime="2020-01-01">01 Jan, 2020</time>
-                    <p>
-                      Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. Est ad aut sapiente quis molestiae est qui cum soluta.
-                      Vero aut rerum vel. Rerum quos laboriosam placeat ex qui. Sint qui facilis et.
-                    </p>
+                    <h5><a href="">{items.author}</a> <a href="#" className="reply"><i className="fa fa-reply"></i> Reply</a></h5>
+                    <time datetime="2020-01-01">{items.createdAt}</time>
                   </div>
                 </div>
               </div>
@@ -129,12 +140,12 @@ const Blogpage=(props)=>{
               <h3 className="sidebar-title">Recent Posts</h3>
               <div className="sidebar-item recent-posts">
                 <div className="post-item clearfix">
-                  <img src={blogdata.coverImg} alt=""/>
-                  <h4><a href="#">{blogdata.title}</a></h4>
-                  <time datetime="2020-01-01">{blogdata.publishDate}</time>
+                  <img src={items.coverImg} alt=""/>
+                  <h4><a href="#">{items.title}</a></h4>
+                  <time datetime="2020-01-01">{items.publishDate}</time>
                   <div>
                   <i className="fa fa-eye mx-2"></i>
-                  {blogdata.views}</div>
+                  {items.views}</div>
                 </div>
               </div>
              <h3 className="sidebar-title">Related Posts</h3>
@@ -158,11 +169,6 @@ const Blogpage=(props)=>{
             </div>
           </div> 
          </div>
-          
-            )
-          })
-        } 
-    
         <div className="row">
         <div className="col-8">
         <div className="reply-form">
@@ -193,7 +199,7 @@ const Blogpage=(props)=>{
               </div>
         </div>
       </div>
-    </section>
+    </section> 
         </>
     )
 }
