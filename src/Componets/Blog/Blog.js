@@ -5,7 +5,8 @@ import Button from '../ButtonGroup/Button/Button';
 import aboutimg from '../../img/blog/aboutimg.jpg';
 import bg from '../../video/bg.mp4';
 import { Link, useNavigate } from 'react-router-dom';
-import { useHistory } from 'react-router-dom';
+import { useHistory,useParams } from 'react-router-dom';
+import { ItemMeta } from "semantic-ui-react";
 const Blog = (props) => {
   const [items, setItems] = useState([]);
   const [isReadMore, setIsReadMore] = useState(true);
@@ -13,19 +14,22 @@ const Blog = (props) => {
   
 // =============================================
   useEffect(()=>{
-
     fetch(`https://b2bnetworkservices.online/blogs/public`)
     .then((res)=>res.json())
     .then((data)=>setItems(data.blogs));
-    // console.log(setItems); 
   },[]);
-   
+//const {_id}=useParams()
 //pass the id to single blog page
-const history = useHistory();
-const navigate = (_id) => {
-  history.push(`https://b2bnetworkservices.online/blogs/public/${_id}`)
-  console.log(navigate);
-}
+//const [currentid, setcurrentid] = useState('');
+// const history = useHistory();
+// const navigate = (_id) => {
+//   setcurrentid(_id);
+//   history.push(`/blogpage/https://b2bnetworkservices.online/blogs/public/${_id}`)
+//   console.log(navigate);
+//   return(
+//     <Blogpage id = {_id}/>
+// )
+// }
 
 //scroll to top
 const scrollgoToplink = () => {
@@ -95,10 +99,10 @@ const scrollgoToplink = () => {
          return(
           
                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 b-card" data-aos="zoom-in-down">
-               <div className="d-lg-flex card-body card-border" id="cardblog" data-id={item._id}>
-               <div className="card-blog-div border-0 me-lg-4 mb-lg-0 mb-4">
+               <div className="d-lg-flex card-body card-border" id="cardblog" key={item._id}>
+               <div className="card-blog-div border-0 me-lg-4 mb-lg-0 mb-4" key={i} data-id={item._id}>
                    <div className="backgroundEffect"></div>
-                   <div className="cardid" key={item._id}></div>
+                   <div className="cardid"></div>
                   <div className="pic"><img src={item.coverImg} alt=""/> 
                        <div className="date">
                          <span className="day">{item.publishDate}</span>
@@ -120,10 +124,10 @@ const scrollgoToplink = () => {
                         </p> 
                        <div className="d-flex align-items-center justify-content-between mt-3 pb-3">
                            <div className="btn-readmore-blog">
-                              <Link to={{pathname: `/blogpage`}} key={item._id} onClick={()=>{scrollgoToplink(); navigate(item._id)}}>
-                              <Button classNames="btnclear22" text="Read More" >
-                              </Button>
-                              </Link>
+                              
+                                <Button classNames="btnclear22" text="Read More" link={`/blogpage/`+item._id}>
+                                </Button>
+              
                            </div>
                            <div className="d-flex align-items-center justify-content-center foot blog-admin-msg">
                                <p className="admin justify-content-center align-items-center">{item.author}</p>&nbsp;&nbsp;

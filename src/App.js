@@ -74,7 +74,7 @@ const Blogpage =React.lazy(()=>import('./Componets/Blogpage/Blogpage'));
               <Route path='/termscondition' exact={true} component={Termscondition}/>
               <Route path='/unsubscribe' exact={true} component={Unsubscribe}/>
               <Route path='/cookie' exact={true} componet={Cookie}/>
-              <Route path="/blogpage" exact={true} component={Blogpage}/>
+              <Route path="/blogpage/:id" exact={true} component={Blogpage}/>
               <Route path='/footer' exact={true} component={Footer}/>
               <Route path="/Pagenotfound" exact={true} component={PageNotFound}/>
               <Redirect from="*" to="/Pagenotfound"/>

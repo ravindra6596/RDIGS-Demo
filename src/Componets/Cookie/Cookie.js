@@ -5,15 +5,13 @@ import Button from "../ButtonGroup/Button/Button";
 import { Modal } from 'reactstrap';
 import cookiebite from '../../img/cookiebite.svg';
 import { Link } from "react-router-dom";
+import axios from "axios";
 const Cookie = () => {
     // close model 
     const [showModal, setShowModal] = useState(false);
     // small model for cookie
     const [showText, setShowText] = useState(false);
     const onList = () => setShowText(true);
-    // customize button on off
-    // const [list, toggleList] = React.useState(true);
-    
 //Link Navigation tab click open on top functionality
   const scrollgoToplinknews = () => {
     window.scrollTo({ top:0});
@@ -23,19 +21,13 @@ const Cookie = () => {
         const timeId = setTimeout(() => setShowModal(true), 2000);
         return () => clearTimeout(timeId)
     }, []);
-    // Cookie store
-    // const cookies = new Cookies('');
-    // const d=new Date();
-    // d.setTime(d.getTime() + (5*10000));
-    // ====================cookie coding cheched or not===============
-//   const [isCheckedpreferences,setIsCheckedpreferences]=useState(false);
-//   const [isCheckedanalytics,setIsCheckedanalytics]=useState(false);
-//   const [isCheckedmarketing,setIsCheckedmarketing]=useState(false);
+//cookie 
   const [show, setShow] = useState(true);
   const [list, showList] = useState(false);
   const [preferences,setPreferences]=useState(true);
   const [analytics,setAnalytics]=useState(true);
   const [marketing,setMarketing]=useState(true);
+  
   const cookies = new Cookies();
   useEffect(() => {
     let name = cookies.get('name');
@@ -66,27 +58,6 @@ const Cookie = () => {
         setShow(false)
     }
 }
-    // const handlePreferences=()=>{
-    //     setIsCheckedpreferences(!isCheckedpreferences);
-    //     // if('isCheckedpreferences'==="true"){
-    //     //     cookies.set('preferences', 'preferences', { path: '/',expires : d});
-    //     //     cookies.get('preferences', 'preferences', { path: '/',expires : d});
-    //     // }
-    // };
-    // const handleAnalytics=()=>{
-    //     setIsCheckedanalytics(!isCheckedanalytics);
-    //     // if('isCheckedanalytics'==="true"){
-    //     //     cookies.set('analytics', 'analytics', { path: '/',expires : d});
-    //     //     cookies.get('preferences', 'preferences', { path: '/',expires : d});
-    //     // }
-    // };
-    // const handleMarketing=()=>{
-    //     setIsCheckedmarketing(!isCheckedmarketing);
-    //     // if('isCheckedmarketing'==="true"){
-    //     //     cookies.set('marketing', 'marketing', { path: '/',expires : d});
-    //     //     cookies.get('marketing', 'marketing', { path: '/',expires : d});
-    //     // }
-    // };
     return (
         <>
             <section className="cookiesection" style={{ display: !show ? 'none' : '' }}>
