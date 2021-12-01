@@ -1,4 +1,4 @@
-import React, { useState, useEffect,Component } from "react";
+import React, { useState, useEffect, Component } from "react";
 import Cookies from 'universal-cookie';
 import './Cookie.css';
 import Button from "../ButtonGroup/Button/Button";
@@ -16,7 +16,7 @@ const Cookie = () => {
   const scrollgoToplinknews = () => {
     window.scrollTo({ top:0});
   };
-// set time to show model
+
     useEffect(() => {
         const timeId = setTimeout(() => setShowModal(true), 2000);
         return () => clearTimeout(timeId)
@@ -56,31 +56,31 @@ const handleset=()=>{
     else{
         cookies.set('essential','essential', {path:'/', expires : d});
         setShow(false)
+
     }
-}
     return (
         <>
             <section className="cookiesection" style={{ display: !show ? 'none' : '' }}>
-               <div className="container">
-                <div className="row">
-                    <div className="cookiemodal-div" style={{'border-radius':'30px' }}>
-                    <Modal className="modelcookie" isOpen={showModal} toggle={showModal} data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
-                        <div class="gdprcookie">
-                            <span className="Cookiemodalclosebtn" onClick={() => setShowModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
-                            <div>
-                                <img src={cookiebite} class="cookie-img" alt="Cookie_Image"/> Cookies &amp; Privacy Policy
-                            </div>
-                            <p>We use cookies to personalize your experience and analyse web traffic. Learn more about
-                                our use of cookies in our &nbsp;
-                                <Link to="/Privacypolicy" onClick={scrollgoToplinknews} class="cookie-privacy">Privacy Policy</Link>.
-                            </p>
-                            <div class="gdprcookie-types" style={{display:list ? "block":'none'}}>
-                                <div class="gdpr-h2"></div>
-                                <form name="cookieform">
-                                    <ul id="cookielist">
-                                        <li>
-                                            <input type="checkbox" id="gdpr_cookietype_0" name="essential" value="essential" checked/>
-                                            <label for="gdpr-cookietype-0" title="These are cookies that are essential for the 
+                <div className="container">
+                    <div className="row">
+                        <div className="cookiemodal-div" style={{ 'border-radius': '30px' }}>
+                            <Modal className="modelcookie" isOpen={showModal} toggle={showModal} data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                                <div class="gdprcookie">
+                                    <span className="Cookiemodalclosebtn" onClick={() => setShowModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                                    <div>
+                                        <img src={cookiebite} class="cookie-img" alt="Cookie_Image" /> Cookies &amp; Privacy Policy
+                                    </div>
+                                    <p>We use cookies to personalize your experience and analyse web traffic. Learn more about
+                                        our use of cookies in our &nbsp;
+                                        <Link to="/Privacypolicy" onClick={scrollgoToplinknews} class="cookie-privacy">Privacy Policy</Link>.
+                                    </p>
+                                    <div class="gdprcookie-types" style={{ display: list ? "block" : 'none' }}>
+                                        <div class="gdpr-h2"></div>
+                                        <form name="cookieform">
+                                            <ul id="cookielist">
+                                                <li>
+                                                    <input type="checkbox" id="gdpr_cookietype_0" name="essential" value="essential" checked />
+                                                    <label for="gdpr-cookietype-0" title="These are cookies that are essential for the 
                                             website to work correctly.">Essential</label>
                                         </li>
                                         <li> 
@@ -108,9 +108,9 @@ const handleset=()=>{
                             </div>
                         </div>  
                     </Modal>
+
                     </div>
                 </div>
-               </div>
             </section>
         </>
     )
