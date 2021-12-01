@@ -1,5 +1,5 @@
 import './Termscondition.css';
-import React, { Component }  from 'react';
+import React from 'react';
 import Heading from '../Heading/Heading';
 import termsimg from '../../img/termsimg3.png';
 import termsimg1 from '../../img/liabilityimg.jpg';
@@ -61,7 +61,7 @@ const Termscondition = () => {
                     </div>
                     <div className="row"style={{margin:'2% 0px',textAlign:'justify'}}>
                         <div className="col-lg-6 col-md-6">
-                            <img className="img-fluid termdiscimg" src={termsimg}/>
+                            <img className="img-fluid termdiscimg" src={termsimg} alt=""/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6">
                            <h3 className="termdesclam">Disclaimer</h3>
@@ -92,7 +92,7 @@ const Termscondition = () => {
                         </p>
                         </div>
                         <div className="col-lg-6 col-md-6">
-                            <img className="img-fluid termdiscimg"style={{height:'300px',width:'100%'}} src={termsimg1}/>
+                            <img className="img-fluid termdiscimg"style={{height:'300px',width:'100%'}} src={termsimg1} alt=""/>
                         </div>
                     </div>
                 </div>

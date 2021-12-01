@@ -1,7 +1,7 @@
 
 import './AccountBasemarketing.css';
 import Heading from "../Heading/Heading";
-import React, { Component }  from 'react';
+import React from 'react';
 import callbackimg1 from "../../img/accbaseimg1.png";
 import salesquaimg2 from "../../img/accbaseimg2.png";
 const AccountBasemarketing =()=>{

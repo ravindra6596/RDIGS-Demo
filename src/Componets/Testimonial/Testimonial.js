@@ -19,9 +19,9 @@ const Testimonial = () => {
   };
   //Readmore data
   const[isReadmorecardtext,setIsReadmorecardtext]=useState(true);
-  const toggleHeadingreadmore=()=>{
-        setIsReadmorecardtext(!isReadmorecardtext);
-  }
+  // const toggleHeadingreadmore=()=>{
+  //       setIsReadmorecardtext(!isReadmorecardtext);
+  // }
   const data = [
     {
       cardtext: "Our team has been growing exponentially in the past 1 year with both clients and our own in-house team. Due to our in-house expansion from 30 agents to 85 agents, we had decided to keep our top 15 partners to deliver for us.",
@@ -33,8 +33,8 @@ const Testimonial = () => {
       userdesi: "Account Success Manager"
     },
     {
-      cardtext: "We have worked with RD Info as our delivery partner for over three years.Throughout the period they have provided great customer service and responsiveness to both planned and unplanned needs.",
-      //They have developed good set of capabilities in their team and processes to ensure that their delivery is timely and comes with uncompromised quality.",
+      cardtext: "We have worked with RD Info as our delivery partner for over three years.Throughout the period they have provided great customer service and responsiveness to both planned and unplanned needs.They have developed good set of capabilities in their team.",
+     // and processes to ensure that their delivery is timely and comes with uncompromised quality.",
       // All in all they are a good team and willing to go extra mile when needed to partner in client's success.",
       cardimg: team,
       carduser: "Tech Company in San Francis,California",

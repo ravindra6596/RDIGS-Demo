@@ -1,12 +1,9 @@
-import React,{useEffect,useState,Component} from "react";
+import React,{useEffect,useState} from "react";
 import "./Blog.css";
-import Blogpage from "../Blogpage/Blogpage";
+import Banner1 from "../Banner1/Banner1";
 import Button from '../ButtonGroup/Button/Button';
 import aboutimg from '../../img/blog/aboutimg.jpg';
-import bg from '../../video/bg.mp4';
-import { Link, useNavigate } from 'react-router-dom';
-import { useHistory,useParams } from 'react-router-dom';
-import { ItemMeta } from "semantic-ui-react";
+import { Link} from 'react-router-dom';
 const Blog = (props) => {
   const [items, setItems] = useState([]);
   const [isReadMore, setIsReadMore] = useState(true);
@@ -18,19 +15,6 @@ const Blog = (props) => {
     .then((res)=>res.json())
     .then((data)=>setItems(data.blogs));
   },[]);
-//const {_id}=useParams()
-//pass the id to single blog page
-//const [currentid, setcurrentid] = useState('');
-// const history = useHistory();
-// const navigate = (_id) => {
-//   setcurrentid(_id);
-//   history.push(`/blogpage/https://b2bnetworkservices.online/blogs/public/${_id}`)
-//   console.log(navigate);
-//   return(
-//     <Blogpage id = {_id}/>
-// )
-// }
-
 //scroll to top
 const scrollgoToplink = () => {
   window.scrollTo({ top:0});
@@ -40,10 +24,9 @@ const scrollgoToplink = () => {
     setCount(count+3);
     console.log(setCount);
   }
-
-  const toggleReadMore = () => {
-        setIsReadMore(!isReadMore);
-     };
+  // const toggleReadMore = () => {
+  //       setIsReadMore(!isReadMore);
+  //    };
   const toggleHeadingreadmore=()=>{
         setIsReadmorepara(!isReadmorepara);
   }
@@ -60,14 +43,14 @@ const scrollgoToplink = () => {
                     </div>
                 </div>
       </section>  */}
+   
 {/* ===================================================== */}
-<div className="container-fluid">
+{/* <div className="container-fluid">
   <div className="row">
       <video className="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src={bg} type="video/mp4" /></video>
-        {/* <div className="masthead">
-        </div> */}
     </div>
-</div>
+</div> */}
+<Banner1/>
       {/* =======================section about blog==================== */}
     <section id="about" className="about">
       <div className="container" data-aos="fade-up">
@@ -124,10 +107,10 @@ const scrollgoToplink = () => {
                         </p> 
                        <div className="d-flex align-items-center justify-content-between mt-3 pb-3">
                            <div className="btn-readmore-blog">
-                              
-                                <Button classNames="btnclear22" text="Read More" link={`/blogpage/`+item._id}>
+                              <Link to={`/blogpage/`+item._id}>
+                                <Button classNames="btnclear22" text="Read More" link={`/blogpage/`+item._id} fun={()=>scrollgoToplink()}>
                                 </Button>
-              
+                              </Link>
                            </div>
                            <div className="d-flex align-items-center justify-content-center foot blog-admin-msg">
                                <p className="admin justify-content-center align-items-center">{item.author}</p>&nbsp;&nbsp;

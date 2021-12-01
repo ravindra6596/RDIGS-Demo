@@ -14,25 +14,25 @@
     color:black;
   }
   .carousel-item {
-    height: 90vh;
+    height: 85vh;
   }
   .item1-slider-banner{
-    background-image: url('https://preview.colorlib.com/theme/publishingcompany/images/ximage_1.jpg.pagespeed.ic.K--6tMW6Tl.webp');
+    background-image: url('../../img/career/image1.jpg');
   }
   .item2-slider-banner{
-    background-image: url('https://preview.colorlib.com/theme/publishingcompany/images/ximage_2.jpg.pagespeed.ic.yG61gYt8iz.webp');
+    background-image: url('../../img/career/image2.jpg');
   }
   .item3-slider-banner{
-    background-image: url('../../img/Gallery/gallery1.jfif');
+    background-image: url('../../img/career/image3.jpg');
   }
   .item4-slider-banner{
-    background-image: url('../../img/Gallery/gallery2.jfif');
+    background-image: url('../../img/Gallery/gallery2.png');
   }
   .item5-slider-banner{
-    background-image: url('../../img/Gallery/gallery3.jfif');
+    background-image: url('../../img/career/image3.jpg');
   }
   .item6-slider-banner{
-    background-image: url('../../img/Gallery/gallery4.jfif');
+    background-image: url('../../img/Gallery/gallery4.png');
   }
   /* heading */
   /*  */
@@ -153,5 +153,4 @@
     100% {left:0;}
 }
 
-  /* text shadow */
  

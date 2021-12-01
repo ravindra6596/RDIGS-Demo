@@ -1,4 +1,4 @@
-import React, { useEffect, useState }  from "react";
+import React, { useState }  from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { Modal, ModalBody } from 'reactstrap';
@@ -151,7 +151,7 @@ const onSubmit = (data)=> {
               <div className="container newsbanbox" data-aos="fade-up">
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-6">
-                    <img className="img-fluid newssec2img" src={newsbanboximg1}/>
+                    <img className="img-fluid newssec2img" src={newsbanboximg1} alt=""/>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-6 newssec2col2" >
                     <h2 style={{color:'#30a6e9'}}>Beer,Biryani,tech Bytes:Snowflake</h2>
@@ -193,7 +193,7 @@ const onSubmit = (data)=> {
                  {data.map((data) => (
                     <div className="col-lg-4 col-md-4 col-sm-6" style={{marginBottom:'5%'}}>
                         <div className="newscard">
-                            <img className="img-fluid newslatimg" src={data.newsimg}/>
+                            <img className="img-fluid newslatimg" src={data.newsimg} alt=""/>
                                 <div style={{textAlign:'justify',padding:'10%'}}>
                                     <p className="newscardpara2">{data.para1}</p>
                                     <p className="newscardpara2">{data.para2}</p>

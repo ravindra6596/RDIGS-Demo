@@ -2,7 +2,7 @@ import './ConfirmedCallback.css';
 import Heading from "../Heading/Heading";
 import callbackimg1 from "../../img/callbackimg1.png";
 import salesquaimg2 from "../../img/callbackimg2.jpg";
-import React, { Component }  from 'react';
+import React from 'react';
 const ConfirmedCallback =()=>{
     return(
     <>
@@ -31,7 +31,7 @@ const ConfirmedCallback =()=>{
                             </ul>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols2"data-aos="zoom-in-down">
-                            <img className="img-fluid" src={callbackimg1}/>
+                            <img className="img-fluid" src={callbackimg1} alt=""/>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ const ConfirmedCallback =()=>{
                 <div className="container">
                     <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols3"data-aos="zoom-in-down">
-                            <img className="img-fluid" src={salesquaimg2}/>
+                            <img className="img-fluid" src={salesquaimg2} alt=""/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols4">
                             <Heading h1Class="clientheadwe" title="Crafted For Your Needs"/>

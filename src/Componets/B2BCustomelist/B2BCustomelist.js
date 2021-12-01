@@ -1,7 +1,7 @@
 
 import './B2BCustomelist.css';
 import Heading from "../Heading/Heading";
-import React, { Component }  from 'react';
+import React from 'react';
 import callbackimg1 from "../../img/b2bcust1.jpg";
 import salesquaimg2 from "../../img/b2bcust2.jpg";
 const B2BCustomelist =()=>{
@@ -26,7 +26,7 @@ const B2BCustomelist =()=>{
                             <p style={{textAlign:'justify'}}>We have a team of proficient who build a contact list that will provide you an access to limitless combination of data fields for giving you a database of your ideal targets. We build a well-tailored list as per your requirement and ideal prospects. Our precise and verified list building service will increase your chances of success.</p>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols2"data-aos="zoom-in-down">
-                            <img className="img-fluid" src={callbackimg1}/>
+                            <img className="img-fluid" src={callbackimg1} alt=""/>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ const B2BCustomelist =()=>{
                 <div className="container">
                     <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols3"data-aos="zoom-in-down">
-                            <img className="img-fluid" src={salesquaimg2}/>
+                            <img className="img-fluid" src={salesquaimg2} alt=""/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols4">
                             <Heading h1Class="clientheadwe" title="Committed To Accurate And High-Quality Prospects"/>

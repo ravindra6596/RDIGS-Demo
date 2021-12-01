@@ -1,12 +1,11 @@
 import React  from "react";
 import './DatabaseService.css';
 import Heading from "../Heading/Heading";
-import Button from "../ButtonGroup/Button/Button";
 import { Link } from "react-router-dom";
-import dbserimg from "../../img/dbserimg1.jpg";
 import service1 from "../../img/services/s1.jpg";
 import service2 from "../../img/services/s2.jpg";
 import service3 from "../../img/services/s3.jpg";
+import d from "../../img/services/d.png";
 
 const DatabaseService =()=>{
      //Link click open on top functionality
@@ -77,9 +76,59 @@ const DatabaseService =()=>{
                         </div>
                         </div>
                 </section>
-            
-  
+                <section class="service-2 section">
+  <div class="container">
+    <div class="row justify-content-center">
 
+      <div class="col-lg-6">
+        <div class="title-database text-center">
+          <h2>What Do We Offer</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Voluptates, earum. </p>
+          <div class="border-database"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-4 text-center d-none d-md-block">
+        <img loading="lazy" src={d} class="img-fluid inline-block img-database" alt=""/>
+      </div>
+      <div class="col-md-8">
+        <div class="row text-center">
+          <div class="col-md-6 col-sm-6">
+            <div class="service-item-database">
+              <i class="tf-ion-ios-alarm-outline"></i>
+              <h4>Time Management</h4>
+              <p>To maximize your sales productivity, time block your schedule so that you spend a couple hours a day working on each of your activities instead of bouncing back and forth between tasks. Time blocking is a simple time management.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="service-item-database">
+              <i class="tf-ion-ios-briefcase-outline"></i>
+              <h4>Marketing Ideas</h4>
+              <p>In this step-by-step guide, we'll cover everything from thinking about a content marketing strategy to reporting on its success. No matter how experienced a content marketer you are, this guide offers something for everyone.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="service-item-database">
+              <i class="tf-ion-ios-email-outline"></i>
+              <h4>Mail Support</h4>
+              <p>Set goals.Create buyer personas.Run a content audit to identify gaps.Brainstorm content ideas.Keywords and search intent.Use topic clusters in your content strategy.Other content brainstorming methods you can use.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="service-item-database">
+              <i class="tf-ion-ios-locked-outline"></i>
+              <h4>Secure System</h4>
+              <p>B2B sales has changed. What used to work is no longer possible as the B2B buyer is firmly in control. Here’s what you need to know about the modern day sales process. We share 3 proven B2B sales. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> 
+</section>
 </>
 )
 }

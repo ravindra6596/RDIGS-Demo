@@ -1,6 +1,5 @@
 import './Privacypolicy.css';
-import React, { Component }  from 'react';
-
+import React  from 'react';
 import Heading from '../Heading/Heading';
 import privacymainimg from '../../img/policyimg.png';
 
@@ -90,7 +89,7 @@ const privacypolicy = () => {
                             and does not contain any Personal Data, except when such information has been supplied by you, such as when you 
                             provide your name and email address when completing a registration form.
                         </p>
-                        <img className="img-fluid" src={privacymainimg} />
+                        <img className="img-fluid" src={privacymainimg} alt=""/>
                         </div>
                     </div>
                 </div>

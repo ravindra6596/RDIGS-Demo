@@ -1,34 +1,14 @@
-import React, {useEffect,useState,Component} from 'react';
+import React, {useEffect,useState} from 'react';
 import {Link} from 'react-router-dom';
 import './Blogpage.css';
-// import cardimg2 from '../../img/blog/cardimg2.jpg';
 import team3 from '../../img/team/WilliamMathurai.jpg';
-import recentblog from '../../img/blog/recentblog.jpg';
-import blogauthor from '../../img/blog/blog-author.jpg';
 import Button from '../ButtonGroup/Button/Button';
 import axios from 'axios';
-import ReactHtmlParser from 'react-html-parser';
 import { useParams } from 'react-router-dom';
 const Blogpage=(props)=>{
    const [items, setItems] = useState([]);
    const { id } = useParams();
-  //  useEffect(()=>{
-     
-  //   fetch(`https://b2bnetworkservices.online/blogs/public/${id}`)
-  //   .then((data)=>{
-  //     console.log("-----------");
-  //     console.log(data);
-  //     console.log("-----------");
-  //     setItems(data.blogs);
-  //   })
-  // },[]);
-  //API parser for html
-  //+match.useParams.id
-  ///${id}
-
-//   const params = useParams();
-//   console.log(data);
-  useEffect(()=> {
+   useEffect(()=> {
     axios.get(`https://b2bnetworkservices.online/blogs/public/${id}`)
     .then(res => {
         console.log(res);
@@ -75,7 +55,7 @@ const Blogpage=(props)=>{
                 <blockquote>
                   <p>{items.shortDes}</p>
                 </blockquote>
-                <p className="" dangerouslySetInnerHTML={{__html:items.description}}></p>
+                <p className="description-blogpage" dangerouslySetInnerHTML={{__html:items.description}}></p>
               </div>
                <div className="entry-footer">
                 <i className="fa fa-folder"></i>
@@ -151,8 +131,8 @@ const Blogpage=(props)=>{
              <h3 className="sidebar-title">Related Posts</h3>
               <div className="sidebar-item recent-posts">
                 <div className="post-item clearfix">
-                  <img src={recentblog} alt=""/>
-                  <h4><a href="blog-single.html">Nihil blanditiis at in nihil autem</a></h4>
+                  <img src={items.coverImg} alt=""/>
+                  <h4><a href="blog-single.html">{items.author}</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
               </div>
@@ -170,7 +150,7 @@ const Blogpage=(props)=>{
           </div> 
          </div>
         <div className="row">
-        <div className="col-8">
+        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
         <div className="reply-form">
                 <h4>Leave a Reply</h4>
                 <p>Your email address will not be published. Required fields are marked * </p>

@@ -1,17 +1,13 @@
-import React, { useState, useEffect,Component } from "react";
+import React, { useState, useEffect } from "react";
 import Cookies from 'universal-cookie';
 import './Cookie.css';
 import Button from "../ButtonGroup/Button/Button";
 import { Modal } from 'reactstrap';
 import cookiebite from '../../img/cookiebite.svg';
 import { Link } from "react-router-dom";
-import axios from "axios";
 const Cookie = () => {
     // close model 
     const [showModal, setShowModal] = useState(false);
-    // small model for cookie
-    const [showText, setShowText] = useState(false);
-    const onList = () => setShowText(true);
 //Link Navigation tab click open on top functionality
   const scrollgoToplinknews = () => {
     window.scrollTo({ top:0});
@@ -68,7 +64,7 @@ const Cookie = () => {
                         <div class="gdprcookie">
                             <span className="Cookiemodalclosebtn" onClick={() => setShowModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
                             <div>
-                                <img src={cookiebite} class="cookie-img" alt="Cookie_Image"/> Cookies &amp; Privacy Policy
+                                <img src={cookiebite} class="cookie-img" alt="Cookie_Image" alt=""/> Cookies &amp; Privacy Policy
                             </div>
                             <p>We use cookies to personalize your experience and analyse web traffic. Learn more about
                                 our use of cookies in our &nbsp;

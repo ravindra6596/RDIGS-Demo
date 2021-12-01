@@ -11,12 +11,10 @@ import about1 from '../../img/blog/about1.jpg';
 import ourvision from '../../img/companyprofile/ourvision.jpg';
 import ourmission from '../../img/companyprofile/ourmission.jpg';
 import ourprincipal from '../../img/companyprofile/ourprincipal.jpg';
-import companypro4 from '../../img/team/RachelMendis.png';
 import companypro1 from '../../img/team/RolandDcosta.jpg';
 import companypro3 from '../../img/team/WilliamMathurai.jpg';
 import companypro2 from '../../img/team/AjayRawat.jpg';
 const CompanyProfile1 = () => {
-  // const[swiper, setSwiper]=usestate('');
  const Swiper=('.blog-slider', {
     spaceBetween: 30,
     effect: 'fade',
@@ -217,7 +215,7 @@ const CompanyProfile1 = () => {
                           <div className="second-div">
                             <Heading h1Class="clientheadwe" title="Suite of Solutions"></Heading>
                             <p className="text-light p-3">
-                              Apisero develops tailored solutions that fit your organization’s goals. From Architecture and Implementation to Managed Services, Data Migration, Advisory Services, and more, we’ve got you covered.
+                             Develops tailored solutions that fit your organization’s goals. From Architecture and Implementation to Managed Services, Data Migration, Advisory Services, and more, we’ve got you covered.
                             </p>
                           </div>
                         </Tab.Pane>

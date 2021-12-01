@@ -21,20 +21,20 @@ const CareerGallery = () => {
                             <div className="row h-50">
                                 <div className="col-md-12 col-sm-12 co-xs-12 gal-item">
                                     <div className="careerculbox">
-                                        <img src={culture1} className="img-ht img-fluid rounded"style={{height:'395px'}}/>
+                                        <img src={culture1} className="img-ht img-fluid rounded"style={{height:'395px'}} alt=""/>
                                     </div>
                                 </div>
                             </div>
                             <div className="row h-50 cargalrow3">
                                 <div className="col-md-6 col-sm-6 co-xs-12 gal-item">
                                     <div className="careerculbox">
-                                        <img src={culture2} className="img-ht img-fluid rounded" />
+                                        <img src={culture2} className="img-ht img-fluid rounded" alt="" />
                                     </div>
                                 </div>
 
                                 <div className="col-md-6 col-sm-6 co-xs-12 gal-item">
                                     <div className="careerculbox">
-                                        <img src={culture3} className="img-ht img-fluid rounded"/>
+                                        <img src={culture3} className="img-ht img-fluid rounded" alt=""/>
                                     </div>
                                 </div>
                             </div>
@@ -43,13 +43,13 @@ const CareerGallery = () => {
                         <div className="col-md-4 col-sm-6 co-xs-12 gal-item">
                             <div className="col-md-12 col-sm-6 co-xs-12 gal-item h-25">
                                 <div className="careerculbox">
-                                    <img src={culture4} className="img-ht img-fluid rounded"/>
+                                    <img src={culture4} className="img-ht img-fluid rounded" alt=""/>
                                 </div>
                             </div>
 
                             <div className="col-md-12 col-sm-6 co-xs-12 gal-item h-75">
                                 <div className="careerculbox">
-                                    <img src={culture5} className="img-ht img-fluid rounded"/>
+                                    <img src={culture5} className="img-ht img-fluid rounded" alt=""/>
                                 </div>
                             </div>
                         </div>

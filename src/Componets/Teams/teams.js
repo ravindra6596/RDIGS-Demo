@@ -68,7 +68,7 @@ const teams =()=>{
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6">
-                            <img className="teams2img img-fluid" src={teamsection2} data-aos="flip-left"  data-aos-easing="ease-out-cubic" data-aos-duration="2000"/>
+                            <img className="teams2img img-fluid" src={teamsection2} data-aos="flip-left"  data-aos-easing="ease-out-cubic" data-aos-duration="2000" alt=""/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6" style={{textAlign:'justify'}} data-aos="fade-right">
                            <Heading h1Class="clientheadwe" spanClass="forRessubhead" title="WE ARE RDIGS"/>
@@ -97,7 +97,7 @@ const teams =()=>{
                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="100">
                       <div class="member-img">
-                          <img src={data.teamimg} class="img-fluid" alt={data.teamalt}/>
+                          <img src={data.teamimg} class="img-fluid" alt={data.teamalt} alt=""/>
                       </div>
                         <div class="member-info">
                             <h4>{data.teamName}</h4>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState ,Component }  from 'react';
+import React, { useState }  from 'react';
 import './JobDescription.css';
 import axios from 'axios';
 import { useForm } from "react-hook-form";

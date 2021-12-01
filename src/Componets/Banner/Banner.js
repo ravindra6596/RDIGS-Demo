@@ -1,4 +1,4 @@
-import React, { useState ,Component} from 'react';
+import React, { useState} from 'react';
 import { Modal, ModalBody } from 'reactstrap';
 import {Link} from 'react-router-dom';
 import './Banner.css';
@@ -24,7 +24,7 @@ const scrollgoToplink = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-5 col-md-5 col-sm-5 col-xs-5" >
-                <img src={modalimg} className="homemain-modalimg img-fluid" />
+                <img src={modalimg} className="homemain-modalimg img-fluid" alt=""/>
               </div>
               <div className="col-lg-7 col-md-7 col-sm-7 col-xs-7">
                 <h1>To Get Latest Updates</h1>
@@ -57,7 +57,7 @@ const scrollgoToplink = () => {
               </div>
             </div>
             <div class="col-lg-4  col-md-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-              <img src={banimg} class="img-fluid animated" alt="heroimgbanner" />
+              <img src={banimg} class="img-fluid animated" alt="heroimgbanner" alt=""/>
             </div>
           </div>
         </div>

@@ -1,10 +1,8 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import './Banner1.css';
-import React, { Component }  from 'react';
+import React from 'react';
 const Banner1=()=>{
-    return(
-        
+    return(    
      <section class="slider-section">
 	<div id="carousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
@@ -70,14 +68,14 @@ const Banner1=()=>{
 			</div>
 		</div>
 		 {/* Previous & Next */}
-		<Link to="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+		{/* <Link to="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="sr-only"></span>
 		</Link>
 		<Link to="#carousel" class="carousel-control-next" role="button" data-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="sr-only"></span>
-		</Link>
+		</Link> */}
 	</div> 
   
     {/* End of Carousel  */}
