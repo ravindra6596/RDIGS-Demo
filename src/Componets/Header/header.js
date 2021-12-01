@@ -29,8 +29,7 @@ const Header = () => {
 
   // Social link click then toggle close functinality
   const [expanded, setExpanded] = useState(false);
-  //Click toggle Header toggle icon will change 
-  const [isClosetoggle, setClosetoggle] = useState(false);
+
 //any where in the page scroll on top Navigation tab click open on top
   const scrollgoTop = () => {
     window.scrollTo({ top: 0 });
@@ -171,14 +170,11 @@ const Header = () => {
         </Navbar>
       </section>
       <Cookie />
-
       <div>
-        <button className="socialicon-btn" onClick={() => toggleShow(!show)}>{show ? <Text /> : <i class="fa fa-angle-right" aria-hidden="true"></i>}<i class="fa fa-angle-left" aria-hidden="true"></i>
-        </button>
+        <button className="socialicon-btn" onClick={() => toggleShow(!show)}>{show ? <Text /> : <i class="fa fa-angle-right" aria-hidden="true"></i>}<i class="fa fa-angle-left" aria-hidden="true"></i></button>
       </div>
     </>
   );
-
 }
 const Text = () => <section className="social-media-section">
   <aside id="custom_html-9" class="widget_text widget widget_custom_html">

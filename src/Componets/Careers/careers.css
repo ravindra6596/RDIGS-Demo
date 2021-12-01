@@ -9,44 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* .carbox {
-    height: 250px;
-    display: block;
-    top: 10px;
-    left: 10px;
-    position: relative;
-    max-width: 262px;
-    background-color: #f2f8f9;
-    border-radius: 4px;
-    padding: 32px 24px;
-    margin: 12px;
-    text-decoration: none;
-    z-index: 1;
-    overflow: hidden;
-    border: 1px solid #f2f8f9;
-}
-.carbox:hover{
-      transition: all 0.2s ease-out;
-      box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-      top: -4px;
-      border: 1px solid #cccccc;
-      background-color: white;
-    }
-.carbox::before{ 
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 230px;
-      right: -16px;
-      background: #00838d;
-      height: 32px;
-      width: 32px;
-      border-radius: 32px;
-      transform: scale(2);
-      transform-origin: 50% 50%;
-      transition: transform 0.15s ease-out;
-    }
-.carbox:hover:before {  transform: scale(2.15);} */
+
 .carbox{
     overflow: hidden;
     position: relative;

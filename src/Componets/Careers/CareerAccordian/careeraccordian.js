@@ -62,11 +62,11 @@ const scrollgoTop = () => {
        
     <section  className="accordiansec">
         <div className="container">
-            <div className="row" >
+            <div className="row">
                 {
                     data.map((data) =>(
                         <div className="col-lg-12 col-md-12 col-sm-12 carshadow">
-                            <div className="row">
+                            <div className="row" data-aos="zoom-in">
                                 <div className="col-lg-2 col-md-2 col-sm-2">
                                     <img className="accordimg img-fluid" src={data.opportunityimg} alt={data.oppimgalt}/>
                                 </div>

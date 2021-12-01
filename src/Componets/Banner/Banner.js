@@ -29,13 +29,14 @@ const scrollgoToplink = () => {
               <div className="col-lg-7 col-md-7 col-sm-7 col-xs-7">
                 <h1 style={{color:'#6cbeee'}}>To Get Latest Updates</h1>
                 <form>
-                  <input placeholder="Enter E-Mail Here " className="homemodalinput" />
-                </form>
+                  <input placeholder="Enter E-Mail Here " className="homemodalinput" required/>
                 <div style={{ display:'flex',marginTop:'2%'}}>
                   <input type="checkbox" checked style={{marginTop:'2%'}}/>
                   <p className="homemodalAgree">I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our <Link to="/privacypolicy" onClick={scrollgoToplink}>Privacy Policy</Link> And <Link to="/termscondition" onClick={scrollgoToplink}>Terms and Codition</Link></p>
                 </div>
                 <div style={{ textAlign: 'center' }}><Button classNames="allbtn-primary glow-on-hover text-light" text="Submit" /></div>
+                </form>
+
               </div>
             </div>
           </div>

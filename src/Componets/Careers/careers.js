@@ -60,7 +60,7 @@ const careers = () => {
             <section>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-12 col-md-12 col-sm-12">
+                        <div className="col-lg-12 col-md-12 col-sm-12"style={{marginTop:'2%'}}>
                             <Heading h1Class="clientheadwe" spanClass="spansubhead1" title="Benefits of joining our Team" />
                         </div>
                     </div>

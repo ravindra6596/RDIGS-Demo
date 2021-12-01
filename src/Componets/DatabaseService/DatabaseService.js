@@ -1,9 +1,7 @@
 import React  from "react";
 import './DatabaseService.css';
 import Heading from "../Heading/Heading";
-import Button from "../ButtonGroup/Button/Button";
 import { Link } from "react-router-dom";
-import dbserimg from "../../img/dbserimg1.jpg";
 import service1 from "../../img/services/s1.jpg";
 import service2 from "../../img/services/s2.jpg";
 import service3 from "../../img/services/s3.jpg";

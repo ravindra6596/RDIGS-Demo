@@ -59,7 +59,7 @@ const onSubmit = (data)=> {
     return (
         <>
         <div className="nav-contaniner" />
-            <section className="contactfirst-sec">
+            <section className="contactfirst-sec" data-aos="zoom-in">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6">
