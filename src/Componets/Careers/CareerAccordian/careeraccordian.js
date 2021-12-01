@@ -8,7 +8,6 @@ import opportimg3 from '../../../img/career/oppoimg3.png';
 import opportimg4 from '../../../img/career/oppoimg4.png';
 import opportimg5 from '../../../img/career/oppoimg5.png';
 
-
 const Careeraccordian =()=>{
     // Navigation tab click open on top functionality
 const scrollgoTop = () => {
@@ -82,7 +81,6 @@ const scrollgoTop = () => {
                                 </div>
                             </div>
                         </div>
-
                     ))}
             </div>
         </div> 

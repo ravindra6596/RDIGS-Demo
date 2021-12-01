@@ -1,46 +1,30 @@
 import React, { useEffect, useState, Component } from "react";
 import "./Blog.css";
-import Blogpage from "../Blogpage/Blogpage";
 import Button from '../ButtonGroup/Button/Button';
 import aboutimg from '../../img/blog/aboutimg.jpg';
 import bg from '../../video/bg.mp4';
-import { Link, useNavigate } from 'react-router-dom';
-import { useHistory, useParams } from 'react-router-dom';
-import { ItemMeta } from "semantic-ui-react";
+import { Link} from 'react-router-dom';
 const Blog = (props) => {
   const [items, setItems] = useState([]);
   const [isReadMore, setIsReadMore] = useState(true);
   const [isReadmorepara, setIsReadmorepara] = useState(true);
-
   // =============================================
   useEffect(() => {
     fetch(`https://b2bnetworkservices.online/blogs/public`)
       .then((res) => res.json())
       .then((data) => setItems(data.blogs));
   }, []);
-  //const {_id}=useParams()
-  //pass the id to single blog page
-  //const [currentid, setcurrentid] = useState('');
-  // const history = useHistory();
-  // const navigate = (_id) => {
-  //   setcurrentid(_id);
-  //   history.push(`/blogpage/https://b2bnetworkservices.online/blogs/public/${_id}`)
-  //   console.log(navigate);
-  //   return(
-  //     <Blogpage id = {_id}/>
-  // )
-  // }
 
-  //scroll to top
+//scroll to top
   const scrollgoToplink = () => {
     window.scrollTo({ top: 0 });
   };
+//Load More button Functinality
   const [count, setCount] = useState(3);
   const inc = () => {
     setCount(count + 3);
     console.log(setCount);
   }
-
   const toggleReadMore = () => {
     setIsReadMore(!isReadMore);
   };
@@ -50,22 +34,9 @@ const Blog = (props) => {
   return (
     <>
       <div className="nav-contaniner" />
-      {/* <section className="Blogsection">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style={{ marginTop:'10%'}}>
-                            <Heading  h1className="clientheadwe" title="Blog"/>
-                            <p style={{ color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
-                        </div>
-                    </div>
-                </div>
-      </section>  */}
-      {/* ===================================================== */}
       <div className="container-fluid">
         <div className="row">
           <video className="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src={bg} type="video/mp4" /></video>
-          {/* <div className="masthead">
-        </div> */}
         </div>
       </div>
       {/* =======================section about blog==================== */}
@@ -120,7 +91,6 @@ const Blog = (props) => {
                             <span className="read-or-hide">
                               {isReadMore ? "..." : " "}
                             </span>
-                            {/* onClick={toggleReadMore} */}
                           </p>
                           <div className="d-flex align-items-center justify-content-between mt-3 pb-3">
                             <div className="btn-readmore-blog">
@@ -141,9 +111,7 @@ const Blog = (props) => {
                 )
               })
             }
-
             <div className="col-12">
-
               <div className="d-flex justify-content-center" style={{ marginTop: '10px', marginBottom: '10px' }}>
                 <Button classNames="allbtn-primary glow-on-hover text-light" fun={() => { inc(); }} text='Load More'></Button>
               </div>
@@ -156,5 +124,4 @@ const Blog = (props) => {
     </>
   );
 };
-// 
 export default Blog;

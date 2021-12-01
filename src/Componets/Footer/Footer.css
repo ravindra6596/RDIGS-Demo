@@ -35,13 +35,6 @@ text-align: end;}
 }
 .close-btn:hover{outline: none;}
 .close-btn:focus{ outline: none;}
-/* .download-button{
-    margin-top: 60px;
-    border-radius: 25px;
-    color:white;
-    border: 2px solid black;
-    background-color:#30a6e9;
-} */
 .footer-cont{
     background-color: black;
 }

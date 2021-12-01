@@ -9,7 +9,7 @@ import service2 from "../../img/services/s2.jpg";
 import service3 from "../../img/services/s3.jpg";
 
 const DatabaseService =()=>{
-     //Link click open on top functionality
+//Link click open on top functionality
   const scrollgoTop = () => {
     window.scrollTo({ top: 0 });
   };
@@ -77,11 +77,7 @@ const DatabaseService =()=>{
                         </div>
                         </div>
                 </section>
-            
-  
-
 </>
-)
-}
+)}
 export default DatabaseService;
 

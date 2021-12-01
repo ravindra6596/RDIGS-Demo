@@ -11,11 +11,12 @@ import Insta from '../../img/socialicon/Insta.png';
 import Cookie from "../Cookie/Cookie";
 
 const Header = () => {
-  //navbar scroll when active state
+  //navbar scroll when windowscroll down 20% active state
   const [navstage, setNavbar] = useState(false);
   // toggle social icon
   const [show, toggleShow] = React.useState(false);
 
+  //navbar scroll when windowscroll down 20% active state functionality
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY >= 20) {

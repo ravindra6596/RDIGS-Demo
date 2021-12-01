@@ -1,33 +1,15 @@
 import React, {useEffect,useState,Component} from 'react';
 import {Link} from 'react-router-dom';
 import './Blogpage.css';
-// import cardimg2 from '../../img/blog/cardimg2.jpg';
 import team3 from '../../img/team/WilliamMathurai.jpg';
 import recentblog from '../../img/blog/recentblog.jpg';
-import blogauthor from '../../img/blog/blog-author.jpg';
 import Button from '../ButtonGroup/Button/Button';
 import axios from 'axios';
-import ReactHtmlParser from 'react-html-parser';
 import { useParams } from 'react-router-dom';
 const Blogpage=(props)=>{
    const [items, setItems] = useState([]);
    const { id } = useParams();
-  //  useEffect(()=>{
-     
-  //   fetch(`https://b2bnetworkservices.online/blogs/public/${id}`)
-  //   .then((data)=>{
-  //     console.log("-----------");
-  //     console.log(data);
-  //     console.log("-----------");
-  //     setItems(data.blogs);
-  //   })
-  // },[]);
-  //API parser for html
-  //+match.useParams.id
-  ///${id}
 
-//   const params = useParams();
-//   console.log(data);
   useEffect(()=> {
     axios.get(`https://b2bnetworkservices.online/blogs/public/${id}`)
     .then(res => {
@@ -118,9 +100,7 @@ const Blogpage=(props)=>{
               </div>
               </div>
              <div className="col-lg-4" data-aos="zoom-in-left">
-
             <div className="sidebar">
-
               <h3 className="sidebar-title">Search</h3>
               <div className="sidebar-item search-form">
                 <form action="">

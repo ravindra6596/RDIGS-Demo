@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import './Banner.css';
 import Button from '../ButtonGroup/Button/Button';
 import banimg from '../../img/Banner/hero-img.png';
-import modalimg from '../../img/modalhomeimg.png';
+import modalimg from '../../img/homemodelnew1.jpg';
 import Heading from '../Heading/Heading';
 
 const Banner = () => {

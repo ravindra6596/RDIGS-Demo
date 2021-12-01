@@ -8,7 +8,7 @@ import Companyslider from "../CompanySlider/Companyslider";
 import About from "../About/about";
 import Services from "../Services/Services";
 import Button from '../ButtonGroup/Button/Button';
-import modalimg from '../../img/modalhomeimg.png';
+import modalimg from '../../img/homemodelnew1.jpg';
 import { Modal, ModalBody } from 'reactstrap';
 const Home = () => {
 //  { / After page Load Model Automatic show / }

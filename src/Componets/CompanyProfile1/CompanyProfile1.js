@@ -16,7 +16,8 @@ import companypro1 from '../../img/team/RolandDcosta.jpg';
 import companypro3 from '../../img/team/WilliamMathurai.jpg';
 import companypro2 from '../../img/team/AjayRawat.jpg';
 const CompanyProfile1 = () => {
-  // const[swiper, setSwiper]=usestate('');
+
+//blog slider/swipper functionality
  const Swiper=('.blog-slider', {
     spaceBetween: 30,
     effect: 'fade',
@@ -24,7 +25,6 @@ const CompanyProfile1 = () => {
     mousewheel: {
       invert: false,
     },
-    // autoHeight: true,
     pagination: {
       el: '.blog-slider__pagination',
       clickable: true,
