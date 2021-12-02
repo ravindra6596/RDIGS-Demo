@@ -29,7 +29,7 @@ const Unsubscribe = () => {
                             <Button text="Unsubscribe Now" classNames="allbtn-primary glow-on-hover text-light"></Button>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-4">
-                            <img className="img-fluid" src={unsubimg}/>
+                            <img className="img-fluid" src={unsubimg} alt=""/>
                         </div>
                     </div>
                 </div>

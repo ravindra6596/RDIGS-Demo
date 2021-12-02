@@ -1,11 +1,11 @@
-import React, { useState,useRef,Component } from 'react';
+import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import Button from '../ButtonGroup/Button/Button';
 import ind from '../../img/india.jpg';
 import us from '../../img/US.jpg';
 import footenvolep from '../../img/mailicon.jpg';
 import './Footer.css';
-import Recaptcha from 'react-google-invisible-recaptcha';
+import Swal from "sweetalert2"; 
 import {Modal, ModalBody} from 'reactstrap';
 import corporatedeskimg from '../../img/corpomodalimg.png'
 import "slick-carousel/slick/slick.css";
@@ -47,6 +47,14 @@ const scrollgoToplink = () => {
       axios.post('https://rdigs-api.herokuapp.com/mediakit',data)
       .then(res=>{
           console.log(res.data);
+          
+            Swal.fire({
+                position: 'centerd',
+                icon: 'success',
+                title: 'Your Data has been saved',
+                showConfirmButton: false,
+                timer: 2000
+            })
           reset();
       })
   }
@@ -87,7 +95,7 @@ const scrollgoToplink = () => {
                                             <div className="container"> 
                                                 <div className="row">
                                                     <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                                        <img src={corporatedeskimg} alt="corporate-dec-img" className="corporate-img img-fluid"></img>
+                                                        <img src={corporatedeskimg} alt="corporate-dec-img" className="corporate-img img-fluid" alt=""></img>
                                                     </div>
                                                     <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                                         <h2 className="text-center model-head-cop">Corporate Deck 2021</h2>
@@ -102,7 +110,7 @@ const scrollgoToplink = () => {
                                                                 </div>
                                                                 <div className="corporate-form-in4">
                                                                 <i className="fa fa-envelope" aria-hidden="true"></i>
-                                                                <input type="email" {...register("email",{ required: "Please enter your email." })} className="form-corporateDeck-email" id="Email" placeholder="Your Email" onChange={handleEmail} autocomplete="off" required/>
+                                                                <input type="email" {...register("email",{ required: "Please enter your email." })} className="form-corporateDeck-email" id="Email" placeholder="Your Email" autocomplete="off" required/>
                                                                 </div>
                                                                 <div className="corporate-form-in5">
                                                                 <i className="fa fa-address-book" aria-hidden="true"></i>
