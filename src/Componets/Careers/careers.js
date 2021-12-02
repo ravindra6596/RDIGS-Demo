@@ -9,7 +9,7 @@ import career5 from "../../img/career/career-5.png";
 import career6 from "../../img/career/career-6.png";
 import CareerGallery from "./CareerGallery/CareerGallery";
 import CareerSlider from "./CareerSlider/CareerSlider";
-import React, { Component }  from 'react';
+import React from 'react';
 
 const careers = () => {
 

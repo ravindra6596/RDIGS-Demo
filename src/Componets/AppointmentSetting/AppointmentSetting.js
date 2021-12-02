@@ -1,6 +1,6 @@
 
 import './AppointmentSetting.css';
-import React, { Component }  from 'react';
+import React from 'react';
 import Heading from "../Heading/Heading";
 import callbackimg1 from "../../img/callbackimg1.png";
 import salesquaimg2 from "../../img/callbackimg2.jpg";
@@ -26,7 +26,7 @@ const AppointmentSetting =()=>{
                             <p style={{textAlign:'justify'}}>Appointment setting requires exemplary persuasive skills that will convert the conversation into customers. We have an astute team who drives sales and increases productivity.</p>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols2"data-aos="zoom-in-down">
-                            <img className="img-fluid" src={callbackimg1}/>
+                            <img className="img-fluid" src={callbackimg1} alt=""/>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ const AppointmentSetting =()=>{
                 <div className="container">
                     <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols3"data-aos="zoom-in-up">
-                            <img className="img-fluid" src={salesquaimg2}/>
+                            <img className="img-fluid" src={salesquaimg2} alt=""/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols4">
                             <Heading h1Class="clientheadwe" title="We Are Sales Pitch Masters"/>

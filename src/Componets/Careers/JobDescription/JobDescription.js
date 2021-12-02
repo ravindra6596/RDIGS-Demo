@@ -1,4 +1,4 @@
-import React, { useEffect, useState ,Component }  from 'react';
+import React, { useState }  from 'react';
 import './JobDescription.css';
 import Swal from "sweetalert2"; 
 import axios from 'axios';

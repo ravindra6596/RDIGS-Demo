@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React  from 'react';
 import "./Counter.css";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";

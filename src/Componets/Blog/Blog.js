@@ -8,8 +8,9 @@ import { Link} from 'react-router-dom';
 const Blog = (props) => {
   const [items, setItems] = useState([]);
   const [isReadMore, setIsReadMore] = useState(true);
-  const [isReadmorepara, setIsReadmorepara] = useState(true);
-  useEffect(() => {
+  const [isReadmorepara, setIsReadmorepara]=useState(true); 
+  useEffect(()=>{
+
     fetch(`https://b2bnetworkservices.online/blogs/public`)
       .then((res) => res.json())
       .then((data) => setItems(data.blogs));
@@ -17,12 +18,10 @@ const Blog = (props) => {
 
 //scroll to top
   const scrollgoToplink = () => {
-    window.scrollTo({ top: 0 });
-  };
-//Load More button Functinality
-  const [count, setCount] = useState(3);
-  const inc = () => {
-    setCount(count + 3);
+  const[count,setCount]=useState(3);
+  const inc=()=>{
+    setCount(count+3);
+
     console.log(setCount);
   }
   const toggleReadMore = () => {
@@ -107,8 +106,9 @@ const Blog = (props) => {
                </div> 
              )
            })
-         } 
-             <div className="col-12">    
+         }  
+             <div className="col-12">   
+
               <div className="d-flex justify-content-center" style={{marginTop:'10px',marginBottom:'10px'}}>
                 <Button classNames="allbtn-primary glow-on-hover text-light" fun={() =>{inc();}} text='Load More'></Button>
               </div>

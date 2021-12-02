@@ -6,6 +6,7 @@ import { BrowserRouter, Route,Switch,Redirect} from 'react-router-dom';
 import Header from './Componets/Header/header';
 import Footer from './Componets/Footer/Footer';
 import LoaderExampleDisabled from './Componets/LoaderExampleDisabled/LoaderExampleDisabled';
+import Banner1 from './Componets/Banner1/Banner1';
 
 AOS.init({
  duration: 1500
@@ -35,6 +36,7 @@ const InstallDatabase = React.lazy(() => import('./Componets/InstallDatabase/Ins
 const RdRoadMap = React.lazy(() => import('./Componets/RdRoadMap/RdRoadMap'));
 const Gallary = React.lazy(() => import('./Componets/Gallery/Gallery'));
 const CompanyProfile1 = React.lazy(() => import('./Componets/CompanyProfile1/CompanyProfile1'));
+const Banner = React.lazy(()=>import('./Componets/Banner1/Banner1'));
 const Blog = React.lazy(() => import('./Componets/Blog/Blog'));
 const JobDescription = React.lazy(() => import('./Componets/Careers/JobDescription/JobDescription'));
 const Privacypolicy = React.lazy(()=>import('./Componets/Privacypolicy/Privacypolicy'));
@@ -77,7 +79,8 @@ const Blogpage =React.lazy(()=>import('./Componets/Blogpage/Blogpage'));
               <Route path='/privacypolicy' exact={true} component={Privacypolicy}/>
               <Route path='/termscondition' exact={true} component={Termscondition}/>
               <Route path='/unsubscribe' exact={true} component={Unsubscribe}/>
-              <Route path='/cookie' exact={true} componet={Cookie}/>
+              <Route path='/cookie' exact={true} component={Cookie}/>
+              <Route path='/banner1' exact={true} component={Banner1}/>
               <Route path="/blogpage/:id" exact={true} component={Blogpage}/>
               <Route path='/footer' exact={true} component={Footer}/>
               <Route path="/Pagenotfound" exact={true} component={PageNotFound}/>

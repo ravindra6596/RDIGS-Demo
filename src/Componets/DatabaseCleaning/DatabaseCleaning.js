@@ -1,5 +1,5 @@
 import './DatabaseCleaning.css';
-import React, { Component }  from 'react';
+import React from 'react';
 import Heading from "../Heading/Heading";
 import callbackimg1 from "../../img/dbcleanimg1.png";
 import salesquaimg2 from "../../img/dbcleanimg2.jpg";
@@ -25,7 +25,7 @@ const DatabaseCleaning =()=>{
                             <p style={{textAlign:'justify'}}>Cleaning your database in frequent interval is mandatory else your marketing efforts will have minimal impact. We believe in accuracy, as the explicit data generates more prospects. We will de-dupe your business data to identify and remove duplicates, while sourcing additional information that includes new contact details and unique firmographics.</p>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols2"data-aos="zoom-in-up">
-                            <img className="img-fluid" src={callbackimg1}/>
+                            <img className="img-fluid" src={callbackimg1} alt=""/>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ const DatabaseCleaning =()=>{
                 <div className="container">
                     <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols3"data-aos="zoom-in-down">
-                            <img className="img-fluid" src={salesquaimg2}/>
+                            <img className="img-fluid" src={salesquaimg2} alt=""/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols4">
                             <Heading h1Class="clientheadwe" title="Fuel Your Pipeline With Quality Prospects"/>
