@@ -87,9 +87,10 @@
     position: relative;}
 @media only screen and (min-width: 320px) and (max-width: 370px) {
     .newtestislider{margin: 0px -5px;}
-    .testimonial-card{margin-left: 16px;}}
+     .testimonial-card{margin-left: 11px;}}
 @media only screen and (min-width: 320px) and (max-width: 600px) {
-    .testcardtxt{margin-bottom: 0px!important; font-size: 12px;}}
+    .testcardtxt{margin-bottom: 0px!important; font-size: 12px;}
+    .testimonial-card{padding: 0px 20px;}}
 
 /* css for pointer event none */
 @media only screen and (min-width: 320px) and (max-width: 767px) {

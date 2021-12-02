@@ -107,7 +107,6 @@ const Blogpage=(props)=>{
                   <button type="submit"><i className="bi bi-search"></i></button>
                 </form>
               </div>
-
               <h3 className="sidebar-title">Categories</h3>
               <div className="sidebar-item categories">
                 <ul>
