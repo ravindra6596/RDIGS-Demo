@@ -1,5 +1,5 @@
 import './Unsubscribe.css';
-import React from 'react';
+import React, { Component }  from 'react';
 import Heading from '../Heading/Heading';
 import Button from '../ButtonGroup/Button/Button';
 import unsubimg from '../../img/unsub2.jpg';

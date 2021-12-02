@@ -8,7 +8,6 @@ import opportimg3 from '../../../img/career/oppoimg3.png';
 import opportimg4 from '../../../img/career/oppoimg4.png';
 import opportimg5 from '../../../img/career/oppoimg5.png';
 
-
 const Careeraccordian =()=>{
     // Navigation tab click open on top functionality
 const scrollgoTop = () => {
@@ -63,11 +62,11 @@ const scrollgoTop = () => {
        
     <section  className="accordiansec">
         <div className="container">
-            <div className="row" >
+            <div className="row">
                 {
                     data.map((data) =>(
                         <div className="col-lg-12 col-md-12 col-sm-12 carshadow">
-                            <div className="row">
+                            <div className="row" data-aos="zoom-in">
                                 <div className="col-lg-2 col-md-2 col-sm-2">
                                     <img className="accordimg img-fluid" src={data.opportunityimg} alt={data.oppimgalt}/>
                                 </div>
@@ -82,7 +81,6 @@ const scrollgoTop = () => {
                                 </div>
                             </div>
                         </div>
-
                     ))}
             </div>
         </div> 

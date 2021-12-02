@@ -11,11 +11,12 @@ import Insta from '../../img/socialicon/Insta.png';
 import Cookie from "../Cookie/Cookie";
 
 const Header = () => {
-  //navbar scroll when active state
+  //navbar scroll when windowscroll down 20% active state
   const [navstage, setNavbar] = useState(false);
   // toggle social icon
   const [show, toggleShow] = React.useState(false);
 
+  //navbar scroll when windowscroll down 20% active state functionality
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY >= 20) {
@@ -28,8 +29,7 @@ const Header = () => {
 
   // Social link click then toggle close functinality
   const [expanded, setExpanded] = useState(false);
-  //Click toggle Header toggle icon will change 
-  const [isClosetoggle, setClosetoggle] = useState(false);
+
 //any where in the page scroll on top Navigation tab click open on top
   const scrollgoTop = () => {
     window.scrollTo({ top: 0 });
@@ -170,14 +170,11 @@ const Header = () => {
         </Navbar>
       </section>
       <Cookie />
-
       <div>
-        <button className="socialicon-btn" onClick={() => toggleShow(!show)}>{show ? <Text /> : <i class="fa fa-angle-right" aria-hidden="true"></i>}<i class="fa fa-angle-left" aria-hidden="true"></i>
-        </button>
+        <button className="socialicon-btn" onClick={() => toggleShow(!show)}>{show ? <Text /> : <i class="fa fa-angle-right" aria-hidden="true"></i>}<i class="fa fa-angle-left" aria-hidden="true"></i></button>
       </div>
     </>
   );
-
 }
 const Text = () => <section className="social-media-section">
   <aside id="custom_html-9" class="widget_text widget widget_custom_html">

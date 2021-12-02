@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 import service1 from "../../img/services/s1.jpg";
 import service2 from "../../img/services/s2.jpg";
 import service3 from "../../img/services/s3.jpg";
-import d from "../../img/services/d.png";
+import d from "../../img/services/headset.png";
+import Button from "../ButtonGroup/Button/Button";
 
 const DatabaseService = () => {
   //Link click open on top functionality
-  const scrollgoTop = () => {
+  function scrollgoTop() {
     window.scrollTo({ top: 0 });
-  };
+  }
 
   const data = [
     {
