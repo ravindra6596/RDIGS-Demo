@@ -1,6 +1,6 @@
 .companyprofilesection {
   height: 60vh;
-  background-image: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 68%)),
+  background-image: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 68%)),
     url("../../img/companyprofile/companyprofile.png");
   background-position: center center;
   background-repeat: no-repeat;

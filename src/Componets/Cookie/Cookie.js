@@ -80,10 +80,10 @@ const handleset=()=>{
                                             website to work correctly.">Essential</label>
                                         </li>
                                         <li> 
-                                            <input type="checkbox" id="gdpr_cookietype_1" name="preferences" value="preferences" defaultChecked onChange={() =>setPreferences(false)} /> 
+                                            <input type="checkbox" id="gdpr_cookietype_1" name="preferences" value="preferences" defaultChecked onChange={() =>setPreferences(false)} />
                                             <label for="gdpr-cookietype-1" title="These are cookies that are related to your site 
                                         preferences, e.g. remembering your username, site colours, etc.">Site Preferences</label>
-                                        </li>       
+                                        </li>
                                         <li>
                                             <input type="checkbox" id="gdpr_cookietype_2" name="analytics" value="analytics" defaultChecked onChange={() =>setAnalytics(false)}/>
                                             <label for="gdpr-cookietype-2" title="Cookies related to site visits, browser types, 

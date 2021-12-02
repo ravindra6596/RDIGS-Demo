@@ -85,7 +85,6 @@ const Blog = (props) => {
                         <span className="read-or-hide">
                             {isReadMore ? "..." : " "}
                         </span>
-                        {/* onClick={toggleReadMore} */}
                         </p> 
                        <div className="d-flex align-items-center justify-content-between mt-3 pb-3">
                            <div className="btn-readmore-blog">

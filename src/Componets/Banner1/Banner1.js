@@ -1,123 +1,129 @@
-import { Link } from "react-router-dom";
+
 import "./Banner1.css";
 import React from "react";
 const Banner1 = () => {
   return (
-    <section class="slider-section">
-      <div id="carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel" data-slide-to="1"></li>
-          <li data-target="#carousel" data-slide-to="2"></li>
-          <li data-target="#carousel" data-slide-to="3"></li>
-          <li data-target="#carousel" data-slide-to="4"></li>
-          <li data-target="#carousel" data-slide-to="5"></li>
-          <li data-target="#carousel" data-slide-to="6"></li>
+    <section className="slider-section">
+      <div id="carousel" className="carousel slide" data-ride="carousel">
+        <ol className="carousel-indicators">
+          <li data-target="#carousel" data-slide-href="0" className="active"></li>
+          <li data-target="#carousel" data-slide-href="1"></li>
+          <li data-target="#carousel" data-slide-href="2"></li>
+          <li data-target="#carousel" data-slide-href="3"></li>
+          <li data-target="#carousel" data-slide-href="4"></li>
+          <li data-target="#carousel" data-slide-href="5"></li>
+          <li data-target="#carousel" data-slide-href="6"></li>
         </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item item1-slider-banner active">
-            <div class="carousel-caption d-none d-md-block">
+        <div className="carousel-inner" role="listbox">
+          <div className="carousel-item item1-slider-banner active">
+            <div className="carousel-caption d-none d-md-block">
               <h1 className="heading-b1">RD INFO GLOBAL SOLUTION</h1>
-              <h3>2013</h3>
+              <h3 className="text-light">2013</h3>
             </div>
+             <a
+                href="https://www.rdigs.com/"
+                className="glightbox play-btn"
+              >
             <div
-              class="col-lg-4 d-flex align-items-center justify-content-center position-relative"
+              className="col-lg-4 d-flex align-items-center justify-content-center position-relative"
               data-aos="zoom-in"
               data-aos-delay="200"
             >
-              <Link
-                to="https://www.youtube.com/watch?v=GlrxcuEDyF8"
-                class="glightbox play-btn"
-              ></Link>
             </div>
+            </a>
           </div>
-          <div class="carousel-item item2-slider-banner">
-            <div class="carousel-caption d-none d-md-block">
+          <div className="carousel-item item2-slider-banner">
+            <div className="carousel-caption d-none d-md-block">
               <h1 className="heading-b2">RD INFO GLOBAL SOLUTION</h1>
-              <h3>2014</h3>
+              <h3 className="text-light">2014</h3>
             </div>
+            <a
+                href="https://www.rdigs.com/"
+                className="glightbox play-btn"
+              >
             <div
-              class="col-lg-4 d-flex align-items-center justify-content-center position-relative"
+              className="col-lg-4 d-flex align-items-center justify-content-center position-relative"
               data-aos="zoom-in"
               data-aos-delay="200"
             >
-              <Link
-                to="https://www.youtube.com/watch?v=GlrxcuEDyF8"
-                class="glightbox play-btn"
-              ></Link>
             </div>
+            </a>
           </div>
-          <div class="carousel-item item3-slider-banner">
-            <div class="carousel-caption d-none d-md-block">
+          <div className="carousel-item item3-slider-banner">
+            <div className="carousel-caption d-none d-md-block">
               <h1 className="heading-b3">RD INFO GLOBAL SOLUTION</h1>
-              <h3>2015</h3>
+              <h3 className="text-light">2015</h3>
             </div>
+            <a
+                href="https://www.rdigs.com/"
+                className="glightbox play-btn"
+              >
             <div
-              class="col-lg-4 d-flex align-items-center justify-content-center position-relative"
+              className="col-lg-4 d-flex align-items-center justify-content-center position-relative"
               data-aos="zoom-in"
               data-aos-delay="200"
             >
-              <Link
-                to="https://www.youtube.com/watch?v=GlrxcuEDyF8"
-                class="glightbox play-btn"
-              ></Link>
             </div>
+            </a>
           </div>
-          <div class="carousel-item item4-slider-banner">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>2016</h3>
+          <div className="carousel-item item4-slider-banner">
+            <div className="carousel-caption d-none d-md-block">
+              <h3 className="text-light">2016</h3>
             </div>
+            <a
+                href="https://www.rdigs.com/"
+                className="glightbox play-btn"
+              >
             <div
-              class="col-lg-4 d-flex align-items-center justify-content-center position-relative"
+              className="col-lg-4 d-flex align-items-center justify-content-center position-relative"
               data-aos="zoom-in"
               data-aos-delay="200"
             >
-              <Link
-                to="https://www.youtube.com/watch?v=GlrxcuEDyF8"
-                class="glightbox play-btn"
-              ></Link>
             </div>
+            </a>
           </div>
-          <div class="carousel-item item5-slider-banner">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>2017</h3>
+          <div className="carousel-item item5-slider-banner">
+            <div className="carousel-caption d-none d-md-block">
+              <h3 className="text-light">2017</h3>
             </div>
+            <a
+                href="https://www.rdigs.com/"
+                className="glightbox play-btn"
+              >
             <div
-              class="col-lg-4 d-flex align-items-center justify-content-center position-relative"
+              className="col-lg-4 d-flex align-items-center justify-content-center position-relative"
               data-aos="zoom-in"
               data-aos-delay="200"
             >
-              <Link
-                to="https://www.youtube.com/watch?v=GlrxcuEDyF8"
-                class="glightbox play-btn"
-              ></Link>
             </div>
+            </a>
           </div>
-          <div class="carousel-item item6-slider-banner">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>2018</h3>
+          <div className="carousel-item item6-slider-banner">
+            <div className="carousel-caption d-none d-md-block">
+              <h3 className="text-light">2018</h3>
             </div>
+            <a
+                href="https://www.rdigs.com/"
+                className="glightbox play-btn"
+              >
             <div
-              class="col-lg-4 d-flex align-items-center justify-content-center position-relative"
+              className="col-lg-4 d-flex align-items-center justify-content-center position-relative"
               data-aos="zoom-in"
               data-aos-delay="200"
             >
-              <Link
-                to="https://www.youtube.com/watch?v=GlrxcuEDyF8"
-                class="glightbox play-btn"
-              ></Link>
             </div>
+            </a>
           </div>
         </div>
         {/* Previous & Next */}
-        {/* <Link to="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only"></span>
-		</Link>
-		<Link to="#carousel" class="carousel-control-next" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only"></span>
-		</Link> */}
+        {/* <a href="#carousel" className="carousel-control-prev" role="button" data-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only"></span>
+        </a>
+        <a href="#carousel" className="carousel-control-next" role="button" data-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only"></span>
+        </a>  */}
       </div>
 
       {/* End of Carousel  */}
