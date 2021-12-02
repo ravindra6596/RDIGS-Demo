@@ -9,9 +9,9 @@ import d from "../../img/services/d.jpg";
 
 const DatabaseService = () => {
   //Link click open on top functionality
-  const scrollgoTop = () => {
+  function scrollgoTop() {
     window.scrollTo({ top: 0 });
-  };
+  }
 
   const data = [
     {

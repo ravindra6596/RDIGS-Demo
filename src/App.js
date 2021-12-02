@@ -11,6 +11,10 @@ import Banner1 from './Componets/Banner1/Banner1';
 AOS.init({
  duration: 1500
 });
+//when we refresh the page on window refresh icon will open on top functionality
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 function App() {
 const Homepage = React.lazy(() => import('./Componets/Homepage/homepage'));
 const Contact = React.lazy(() => import('./Componets/Contact/contact'));
@@ -71,7 +75,7 @@ const Blogpage =React.lazy(()=>import('./Componets/Blogpage/Blogpage'));
               <Route path='/gallary' exact={true} component={Gallary}/>
               <Route path='/companyprofile' exact={true} component={CompanyProfile1}/>
               <Route path='/blog' exact={true} component={Blog}/>
-              <Route path='/jobdescription' exact={true} component={JobDescription}/>
+              <Route path='/jobdescription/:jobid' exact={true} component={JobDescription} />
               <Route path='/privacypolicy' exact={true} component={Privacypolicy}/>
               <Route path='/termscondition' exact={true} component={Termscondition}/>
               <Route path='/unsubscribe' exact={true} component={Unsubscribe}/>

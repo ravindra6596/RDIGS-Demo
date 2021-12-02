@@ -13,15 +13,15 @@ import "slick-carousel/slick/slick-theme.css";
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 const Footer = () => {
-// variable for copy right get system date function
+// variable for copy-right to get system date function
     const getCurrentYear = () => {
         return new Date().getFullYear();
       };
-// function for corporate disk
+// functionality for corporate disk model
       const toggle = () => setModal(!modal);
       const [modal, setModal] = useState(false);
-
-// footer scrollup icons show state
+      
+// footer scrollup icon show state & going to click scroll top
 const [showScrollup, setShowScroll] = useState(false)
 
 const checkingScrollTop = () => {
@@ -41,7 +41,7 @@ const scrollgoToplink = () => {
     window.scrollTo({ top:0});
   };
 
-  //API calling for media kit
+//POST API calling for media kit
   const { register, handleSubmit ,reset } = useForm();
   const onSubmit = (data) =>{
       axios.post('https://rdigs-api.herokuapp.com/mediakit',data)
@@ -58,7 +58,11 @@ const scrollgoToplink = () => {
           reset();
       })
   }
-
+//validation
+  const[email,setEmail]=useState('');
+  function handleEmail(event){
+    setEmail(event.target.value)
+}
     return (
         <>
         <div>

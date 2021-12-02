@@ -3,6 +3,7 @@ import './JobDescription.css';
 import Swal from "sweetalert2"; 
 import axios from 'axios';
 import { useForm } from "react-hook-form";
+import { useParams } from 'react-router-dom';
 import Heading from '../../Heading/Heading';
 import Button from '../../ButtonGroup/Button/Button';
 const JobDescription =()=>{
@@ -16,7 +17,6 @@ const JobDescription =()=>{
     console.log(event.target.file)  
     setSelectedFile(event.target.files[0])
 }
-
 const onSubmit = (data)=> {
     const formData = new FormData();
     formData.append("name",data.name);
@@ -42,8 +42,15 @@ const onSubmit = (data)=> {
             timer: 1500
           })
         reset();    
-  }
-     
+  }  
+
+const { jobid } = useParams()
+const { role1 } = useParams()
+const { role2 } = useParams()
+const { requiremet1 } = useParams()
+const { experience } = useParams()
+console.log(jobid);
+
     return(
     <>
     <div className="nav-contaniner"></div>
@@ -58,31 +65,39 @@ const onSubmit = (data)=> {
     </section>
         <section>
             <div className="container">
-                <div className="row" style={{margin:'5% 0px'}}>
+                <div className="row" style={{margin:'5% 0px'}}>           
                     <div className="col-lg-12 col-md-12 col-sm-12" style={{textAlign:'justify',marginBottom:'2%'}}>
-                        <h4><b style={{fontFamily:'Orbitron',color:'#30a6e9',paddingRight:'5px'}}>Job ID:</b>001</h4>
-                        <h3 className="jdroles-res">Roles and Responsibilities</h3>
-                        <ul>
-                        <span><li>Identify, analyze and develop interfaces and integration flows using mule ESP with Mule runtime, connectors, design center and API management.</li></span>
-                        <span><li>0-5 years of hands on exp in mule DW and java, knowledge on mule architecture along with XML,SOAP,WSDL,XSLT,REST services, knowledge on security, login, policy management.</li></span>
-                        <span><li>Prepares work to be accomplished by gathering information and materials.</li></span>
-                        <span><li>Enhancement of existing services when required, Implementation experience with Mule API management.</li></span>
-                        <spn><li>Creating/Developing RAML and microservices per requirement.</li></spn>
-                        </ul>
-                        <h4 style={{fontFamily:'Orbitron',color:'#30a6e9'}}>Requirements & Qualifications:</h4>
-                        <ul>
-                           <span> <li>Excellent Communication skills</li></span>
-                            <li>Should be able to speak fluent English.</li>
-                            <li>Good phone etiquette.</li>
-                            <li>Good personality.</li>
-                            <li>Minimum percentile of 50% in 10th, 12th, UG & PG (if applicable).</li>
-                            <li>Prepares final layout by marking and pasting up finished copy and art.</li>
-                            <li>Willing to work in Night Shift.</li>
-                        </ul>
-                        <h5><b style={{fontFamily:'Orbitron',color:'#30a6e9'}}>Experience -</b> 0–1 Years</h5>
-                        <h5><b style={{fontFamily:'Orbitron',color:'#30a6e9'}}>Location -</b>Viman Nagar-Pune</h5>
-
+                    {/* {
+                    data.map((data) =>{
+                        return(
+                        <> */}
+                            <h4><b style={{fontFamily:'Orbitron',color:'#30a6e9',paddingRight:'5px'}}>Job ID:</b>{jobid}</h4>
+                            <h3 className="jdroles-res">Roles and Responsibilities</h3>
+                            <ul>
+                                <li>Lead Identify and develop interfaces and integration flows using mule ESP with Mule runtime, connectors, design center and API management.</li>
+                                <li>0-5 years of hands on exp in mule DW and java, knowledge on mule architecture along with XML,SOAP,WSDL,XSLT,REST services, knowledge on security, login, policy management.</li>
+                                 {/*<li>{role1}</li>
+                             <span><li>{role4}</li></span>
+                            <spn><li>{role5}</li></spn> */}
+                            </ul>
+                            <h4 style={{fontFamily:'Orbitron',color:'#30a6e9'}}>Requirements & Qualifications:</h4>
+                            <ul>
+                                 <li>Good personality.</li>
+                                 <li>Excellent Communication skills</li>
+                                {/*<li>{data.requiremet3}</li>
+                                <li>{data.requiremet4}</li>
+                                <li>{data.requiremet5}</li>
+                                <li>{data.requiremet6}</li>
+                                <li>{data.requiremet7}</li>*/}
+                            </ul>
+                             <h5><b style={{fontFamily:'Orbitron',color:'#30a6e9'}}>Experience -</b>0-2 Year</h5> 
+                            <h5><b style={{fontFamily:'Orbitron',color:'#30a6e9'}}>Location -</b>Viman Nagar-Pune</h5> 
+                            
+                        {/* </>                     
+                        )}
+                    )} */}
                     </div>
+
                     <div className="col-lg-12 col-md-12 col-sm-12">
                          <form onSubmit={handleSubmit(onSubmit)} autocomplete="off" className="jdformcol" style={{padding:'3%'}}>
                                 <h1 className="applyheretxt">Apply Now...</h1>

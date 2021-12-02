@@ -8,8 +8,7 @@ const Counter = () => {
     <section
       id="counts"
       className="counts"
-      onclick={() => scroll.scrollToTop()}
-    >
+      onclick={() => scroll.scrollToTop()}>
       <div className="container" data-aos="fade-up">
         <div className="row ">
           <div className="col-sm-1"></div>
@@ -18,16 +17,14 @@ const Counter = () => {
               className="count-box founded-in"
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
-              data-aos-duration="500"
-            >
+              data-aos-duration="500">
               <i className="fa fa-history"></i>
               <div className="text-center para-icons">
                 <p
                   className=""
                   data-aos="flip-right"
                   data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
-                >
+                  data-aos-duration="2000">
                   Founded In
                 </p>
                 <CountUp end={2013} duration={10} redraw={true}>
@@ -46,16 +43,14 @@ const Counter = () => {
               className="count-box Happy-Clients"
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
-              data-aos-duration="500"
-            >
+              data-aos-duration="500">
               <i className="fa fa-smile-o"></i>
               <div className="text-center para-icons">
                 <p
                   className="text-center"
                   data-aos="flip-right"
                   data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
-                >
+                  data-aos-duration="2000">
                   Happy Clients
                 </p>
                 <CountUp end={232} duration={10} redraw={true}>
@@ -74,16 +69,14 @@ const Counter = () => {
               className="count-box Projects"
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
-              data-aos-duration="500"
-            >
+              data-aos-duration="500" >
               <i className="fa fa-newspaper-o"></i>
               <div className="text-center para-icons">
                 <p
                   className="text-center countpoject-para"
                   data-aos="flip-right"
                   data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
-                >
+                  data-aos-duration="2000" >
                   Our Projects
                 </p>
                 <CountUp start={0} end={521} duration={10}></CountUp>
@@ -96,16 +89,14 @@ const Counter = () => {
               className="count-box Hours-Support"
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
-              data-aos-duration="500"
-            >
+              data-aos-duration="500">
               <i className="fa fa-headphones"></i>
               <div className="text-center para-icons">
                 <p
                   className="text-center"
                   data-aos="flip-right"
                   data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
-                >
+                  data-aos-duration="2000" >
                   Hour Of Support
                 </p>
                 <CountUp start={0} end={1463} duration={10}></CountUp>
@@ -118,16 +109,14 @@ const Counter = () => {
               className="count-box Hard-Workers"
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
-              data-aos-duration="500"
-            >
+              data-aos-duration="500">
               <i className="fa fa-user"></i>
               <div className="text-center para-icons">
                 <p
                   className="text-center"
                   data-aos="flip-right"
                   data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
-                >
+                  data-aos-duration="2000">
                   Hard Workers
                 </p>
                 <CountUp start={0} end={15} duration={10}></CountUp>

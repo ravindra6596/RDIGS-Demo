@@ -243,9 +243,6 @@ const DemandGeneration=()=>{
         </div>
         </div>
         </section>
-
         </>
-    )
-
-}
+)}
 export default DemandGeneration;

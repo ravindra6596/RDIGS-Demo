@@ -6,13 +6,13 @@ import { Modal } from 'reactstrap';
 import cookiebite from '../../img/cookiebite.svg';
 import { Link } from "react-router-dom";
 const Cookie = () => {
-    // close model 
+// close model 
     const [showModal, setShowModal] = useState(false);
 //Link Navigation tab click open on top functionality
   const scrollgoToplinknews = () => {
     window.scrollTo({ top:0});
   };
-    // set time to show model
+// set time to show model
     useEffect(() => {
         const timeId = setTimeout(() => setShowModal(true), 2000);
         return () => clearTimeout(timeId)
@@ -34,7 +34,7 @@ const Cookie = () => {
         setShow(true)
     }
 }, []);
-  const handleset=()=>{
+const handleset=()=>{
     const d=new Date();
     d.setTime(d.getTime() + (5*10000))
     if(preferences)
@@ -86,7 +86,6 @@ const Cookie = () => {
                                         </li>
                                         <li>
                                             <input type="checkbox" id="gdpr_cookietype_2" name="analytics" value="analytics" defaultChecked onChange={() =>setAnalytics(false)}/>
-                                           
                                             <label for="gdpr-cookietype-2" title="Cookies related to site visits, browser types, 
                                         etc.">Analytics</label>
                                         </li>
@@ -98,7 +97,6 @@ const Cookie = () => {
                                     </ul>
                                 </form>
                             </div>
-                            {/* {showText ? <List /> : null} */}
                             <div class="gdprcookie-buttons">
                                 <Button type="button" value="SetCookies" name="set" classNames="btnclear22 btn-customise" fun={() => {list ? showList(false) : showList(true)}} text="Customize"/>
                                 <span onClick={() =>{setShowModal(false);}}> 
@@ -113,8 +111,4 @@ const Cookie = () => {
         </>
     )
 }
-
-// const List = () => <div class="gdprcookie-types">
-    
-// </div>
 export default Cookie;
