@@ -43,5 +43,4 @@ function GalleryModel(props) {
     </>
   );
 }
-
 export default GalleryModel;

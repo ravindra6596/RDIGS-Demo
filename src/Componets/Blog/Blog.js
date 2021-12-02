@@ -1,55 +1,39 @@
 import React,{useEffect,useState} from "react";
 import "./Blog.css";
-import Banner1 from "../Banner1/Banner1";
 import Button from '../ButtonGroup/Button/Button';
 import aboutimg from '../../img/blog/aboutimg.jpg';
+import bg from '../../video/bg.mp4';
+import Banner1 from "../Banner1/Banner1";
 import { Link} from 'react-router-dom';
 const Blog = (props) => {
   const [items, setItems] = useState([]);
   const [isReadMore, setIsReadMore] = useState(true);
-  const [isReadmorepara, setIsReadmorepara]=useState(true);
-  
-// =============================================
-  useEffect(()=>{
+  const [isReadmorepara, setIsReadmorepara] = useState(true);
+  useEffect(() => {
     fetch(`https://b2bnetworkservices.online/blogs/public`)
-    .then((res)=>res.json())
-    .then((data)=>setItems(data.blogs));
-  },[]);
+      .then((res) => res.json())
+      .then((data) => setItems(data.blogs));
+  }, []);
+
 //scroll to top
-const scrollgoToplink = () => {
-  window.scrollTo({ top:0});
-};
-  const[count,setCount]=useState(3);
-  const inc=()=>{
-    setCount(count+3);
+  const scrollgoToplink = () => {
+    window.scrollTo({ top: 0 });
+  };
+//Load More button Functinality
+  const [count, setCount] = useState(3);
+  const inc = () => {
+    setCount(count + 3);
     console.log(setCount);
   }
-  // const toggleReadMore = () => {
-  //       setIsReadMore(!isReadMore);
-  //    };
-  const toggleHeadingreadmore=()=>{
-        setIsReadmorepara(!isReadmorepara);
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
+  const toggleHeadingreadmore = () => {
+    setIsReadmorepara(!isReadmorepara);
   }
   return (
     <>
       <div className="nav-contaniner"/>
-      {/* <section className="Blogsection">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style={{ marginTop:'10%'}}>
-                            <Heading  h1className="clientheadwe" title="Blog"/>
-                            <p style={{ color:'white'}}>At RDIGS, we’re on a mission to help our clients deliver innovative experiences and drive value for their business</p>
-                        </div>
-                    </div>
-                </div>
-      </section>  */}
-   
-{/* ===================================================== */}
-{/* <div className="container-fluid">
-  <div className="row">
-      <video className="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src={bg} type="video/mp4" /></video>
-    </div>
-</div> */}
 <Banner1/>
       {/* =======================section about blog==================== */}
     <section id="about" className="about">
@@ -124,9 +108,7 @@ const scrollgoToplink = () => {
              )
            })
          } 
-         
-             <div className="col-12">
-               
+             <div className="col-12">    
               <div className="d-flex justify-content-center" style={{marginTop:'10px',marginBottom:'10px'}}>
                 <Button classNames="allbtn-primary glow-on-hover text-light" fun={() =>{inc();}} text='Load More'></Button>
               </div>
@@ -139,6 +121,5 @@ const scrollgoToplink = () => {
     </>
   );   
 };
-// 
 export default Blog;
    

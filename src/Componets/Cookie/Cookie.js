@@ -6,13 +6,13 @@ import { Modal } from 'reactstrap';
 import cookiebite from '../../img/cookiebite.svg';
 import { Link } from "react-router-dom";
 const Cookie = () => {
-    // close model 
+// close model 
     const [showModal, setShowModal] = useState(false);
 //Link Navigation tab click open on top functionality
   const scrollgoToplinknews = () => {
     window.scrollTo({ top:0});
   };
-    // set time to show model
+// set time to show model
     useEffect(() => {
         const timeId = setTimeout(() => setShowModal(true), 2000);
         return () => clearTimeout(timeId)
@@ -34,7 +34,7 @@ const Cookie = () => {
         setShow(true)
     }
 }, []);
-  const handleset=()=>{
+const handleset=()=>{
     const d=new Date();
     d.setTime(d.getTime() + (5*10000))
     if(preferences)
@@ -81,31 +81,22 @@ const Cookie = () => {
                                         </li>
                                         <li> 
                                             <input type="checkbox" id="gdpr_cookietype_1" name="preferences" value="preferences" defaultChecked onChange={() =>setPreferences(false)} /> 
-                                            {/* checked={isCheckedpreferences}
-                                            onChange={handlePreferences} */} 
                                             <label for="gdpr-cookietype-1" title="These are cookies that are related to your site 
                                         preferences, e.g. remembering your username, site colours, etc.">Site Preferences</label>
-                                        </li>
-                                       
+                                        </li>       
                                         <li>
                                             <input type="checkbox" id="gdpr_cookietype_2" name="analytics" value="analytics" defaultChecked onChange={() =>setAnalytics(false)}/>
-                                            {/* checked={isCheckedanalytics} 
-                                            onChange={handleAnalytics} */}
                                             <label for="gdpr-cookietype-2" title="Cookies related to site visits, browser types, 
                                         etc.">Analytics</label>
                                         </li>
                                         <li>
                                             <input type="checkbox" id="gdpr_cookietype_3" name="marketing" value="marketing" defaultChecked onChange={() =>setMarketing(false)}/>
-                                            {/* onChange={() => setMarketing(false)} */}
-                                            {/* checked={isCheckedmarketing} 
-                                            onChange={handleMarketing} */}
                                             <label for="gdpr-cookietype-3" title="Cookies related to marketing, e.g. newsletters, 
                                         social media, etc">Marketing</label>
                                         </li>
                                     </ul>
                                 </form>
                             </div>
-                            {/* {showText ? <List /> : null} */}
                             <div class="gdprcookie-buttons">
                                 <Button type="button" value="SetCookies" name="set" classNames="btnclear22 btn-customise" fun={() => {list ? showList(false) : showList(true)}} text="Customize"/>
                                 <span onClick={() =>{setShowModal(false);}}> 
@@ -120,8 +111,4 @@ const Cookie = () => {
         </>
     )
 }
-
-// const List = () => <div class="gdprcookie-types">
-    
-// </div>
 export default Cookie;
