@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import service1 from "../../img/services/s1.jpg";
 import service2 from "../../img/services/s2.jpg";
 import service3 from "../../img/services/s3.jpg";
-import d from "../../img/services/d.png";
+import d from "../../img/services/d.jpg";
 
 const DatabaseService = () => {
   //Link click open on top functionality
@@ -66,11 +66,11 @@ const DatabaseService = () => {
             amazing variety of financial solutions designed to help you solve
             all bookkeeping issues, no matter big or small.
           </p>
-          <div class="row row-50 row-xxl-70 offset-top-2 services-row">
+          <div className="row row-50 row-xxl-70 offset-top-2 services-row">
             {data.map((user, index) => {
               return (
                 <div
-                  class="col-lg-4 col-md-4 col-sm-6 col-xs-12"
+                  className="col-lg-4 col-md-4 col-sm-6 col-xs-12"
                   data-aos="zoom-in-up"
                 >
                   <Link to={user.servicelink} onClick={scrollgoTop}>
@@ -83,7 +83,7 @@ const DatabaseService = () => {
                     </div>
                   </Link>
                   <h5
-                    class="thumbnail-light-title"
+                    className="thumbnail-light-title"
                     data-aos="fade-left"
                     style={{ fontWeight: "bold" }}
                   >
@@ -95,35 +95,31 @@ const DatabaseService = () => {
           </div>
         </div>
       </section>
-      <section class="service-2 section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6">
-              <div class="title-database text-center">
-                <h2>What Do We Offer</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem
-                  ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptates, earum.{" "}
-                </p>
-                <div class="border-database"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 text-center d-none d-md-block">
+      <section className="service-2 section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4 text-center d-none d-md-block">
               <img
                 loading="lazy"
                 src={d}
-                class="img-fluid inline-block img-database"
+                className="img-fluid inline-block img-database"
                 alt=""
               />
             </div>
-            <div class="col-md-8">
-              <div class="row text-center">
-                <div class="col-md-6 col-sm-6">
-                  <div class="service-item-database">
-                    <i class="tf-ion-ios-alarm-outline"></i>
+            <div className="col-md-8">
+              <div className="row text-center">
+                <div className="col-lg-12">
+                <div className="title-database text-center">
+                  <h2>What Do We Offer</h2>
+                  <p>
+                      Building a relationship with potential buyers and supporting sales teams so that they can execute the sale.
+                  </p>
+                  <div className="border-database"></div>
+                </div>
+              </div>
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div className="service-item-database">
+                    <i className="fa fa-user"></i>
                     <h4>Time Management</h4>
                     <p>
                       To maximize your sales productivity, time block your
@@ -133,9 +129,9 @@ const DatabaseService = () => {
                     </p>
                   </div>
                 </div>
-                <div class="col-md-6 col-sm-6">
-                  <div class="service-item-database">
-                    <i class="tf-ion-ios-briefcase-outline"></i>
+                <div className="col-md-6 col-sm-6">
+                  <div className="service-item-database">
+                    <i className="fa fa-user"></i>
                     <h4>Marketing Ideas</h4>
                     <p>
                       In this step-by-step guide, we'll cover everything from
@@ -146,9 +142,9 @@ const DatabaseService = () => {
                     </p>
                   </div>
                 </div>
-                <div class="col-md-6 col-sm-6">
-                  <div class="service-item-database">
-                    <i class="tf-ion-ios-email-outline"></i>
+                <div className="col-md-6 col-sm-6">
+                  <div className="service-item-database">
+                    <i className="fa fa-user"></i>
                     <h4>Mail Support</h4>
                     <p>
                       Set goals.Create buyer personas.Run a content audit to
@@ -158,15 +154,15 @@ const DatabaseService = () => {
                     </p>
                   </div>
                 </div>
-                <div class="col-md-6 col-sm-6">
-                  <div class="service-item-database">
-                    <i class="tf-ion-ios-locked-outline"></i>
+                <div className="col-md-6 col-sm-6">
+                  <div className="service-item-database">
+                    <i className="fa fa-user"></i>
                     <h4>Secure System</h4>
                     <p>
                       B2B sales has changed. What used to work is no longer
                       possible as the B2B buyer is firmly in control. Here’s
                       what you need to know about the modern day sales process.
-                      We share 3 proven B2B sales.{" "}
+                      We share 3 proven B2B sales.
                     </p>
                   </div>
                 </div>

@@ -80,25 +80,18 @@ const Cookie = () => {
                                             website to work correctly.">Essential</label>
                                         </li>
                                         <li> 
-                                            <input type="checkbox" id="gdpr_cookietype_1" name="preferences" value="preferences" defaultChecked onChange={() =>setPreferences(false)} /> 
-                                            {/* checked={isCheckedpreferences}
-                                            onChange={handlePreferences} */} 
+                                            <input type="checkbox" id="gdpr_cookietype_1" name="preferences" value="preferences" defaultChecked onChange={() =>setPreferences(false)} />
                                             <label for="gdpr-cookietype-1" title="These are cookies that are related to your site 
                                         preferences, e.g. remembering your username, site colours, etc.">Site Preferences</label>
                                         </li>
-                                       
                                         <li>
                                             <input type="checkbox" id="gdpr_cookietype_2" name="analytics" value="analytics" defaultChecked onChange={() =>setAnalytics(false)}/>
-                                            {/* checked={isCheckedanalytics} 
-                                            onChange={handleAnalytics} */}
+                                           
                                             <label for="gdpr-cookietype-2" title="Cookies related to site visits, browser types, 
                                         etc.">Analytics</label>
                                         </li>
                                         <li>
                                             <input type="checkbox" id="gdpr_cookietype_3" name="marketing" value="marketing" defaultChecked onChange={() =>setMarketing(false)}/>
-                                            {/* onChange={() => setMarketing(false)} */}
-                                            {/* checked={isCheckedmarketing} 
-                                            onChange={handleMarketing} */}
                                             <label for="gdpr-cookietype-3" title="Cookies related to marketing, e.g. newsletters, 
                                         social media, etc">Marketing</label>
                                         </li>

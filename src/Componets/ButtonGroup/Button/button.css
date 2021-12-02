@@ -14,7 +14,9 @@
     border-color: #0062cc;}
  .glow-on-hover {
         width:auto;
-        background-color: #1799e3;
+        /* background-color: #1799e3; */
+        background: linear-gradient(
+          90deg, #0072ff 0%, #00d4ff 100%);
         font-weight: 500;
         padding: 10px 30px;
         position: relative;

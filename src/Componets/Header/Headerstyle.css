@@ -1,6 +1,14 @@
+/* .try{
+    height:100px;
+    background: linear-gradient(
+        90deg,#a7e3f1, #ffffff 3%, #a7e3f1 100%, #000508 5%);
+} */
 /* Navbar css */
 .headlogo{height: 70px; }
-.mainnav{height: auto;}
+.mainnav{height: auto;
+    /* background: linear-gradient(
+        90deg,#a7e3f1, #ffffff 3%, #a7e3f1 100%, #000508 5%);   */
+}
 .navbar-expand-lg .navbar-collapse {-webkit-justify-content: flex-end!important;}
 .navbar-light .navbar-nav .nav-link  {color: #30a6e9;outline: none;}
 .forunderline{
