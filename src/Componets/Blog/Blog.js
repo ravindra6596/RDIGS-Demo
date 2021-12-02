@@ -7,8 +7,7 @@ import { Link} from 'react-router-dom';
 const Blog = (props) => {
   const [items, setItems] = useState([]);
   const [isReadMore, setIsReadMore] = useState(true);
-  const [isReadmorepara, setIsReadmorepara]=useState(true);
-  
+  const [isReadmorepara, setIsReadmorepara]=useState(true); 
 // =============================================
   useEffect(()=>{
     fetch(`https://b2bnetworkservices.online/blogs/public`)
@@ -16,9 +15,9 @@ const Blog = (props) => {
     .then((data)=>setItems(data.blogs));
   },[]);
 //scroll to top
-const scrollgoToplink = () => {
-  window.scrollTo({ top:0});
-};
+  const scrollgoToplink = () => {
+    window.scrollTo({ top:0});
+  };
   const[count,setCount]=useState(3);
   const inc=()=>{
     setCount(count+3);
@@ -123,10 +122,8 @@ const scrollgoToplink = () => {
                </div> 
              )
            })
-         } 
-         
-             <div className="col-12">
-               
+         }  
+             <div className="col-12">   
               <div className="d-flex justify-content-center" style={{marginTop:'10px',marginBottom:'10px'}}>
                 <Button classNames="allbtn-primary glow-on-hover text-light" fun={() =>{inc();}} text='Load More'></Button>
               </div>

@@ -1,5 +1,6 @@
 import React, { useState,useRef,useEffect,Component } from "react";
 import axios from "axios";
+import Swal from "sweetalert2"; 
 import { useForm } from "react-hook-form";
 import Recaptcha from 'react-google-invisible-recaptcha';
 import Heading from "../Heading/Heading";
@@ -10,38 +11,44 @@ import Button from "../ButtonGroup/Button/Button";
 const Contact = () => {
  
 //Form POST API   
-const { register, handleSubmit ,reset} = useForm(); 
-
+const { register, handleSubmit ,reset,setValue} = useForm(); 
 
 const [isRadio,setRadio] = useState("");
     function handleRadioChange(event) {
-    setRadio(event.target.value)
+        setRadio(event.target.value);
     }
-    console.log(isRadio);
+    // console.log(isRadio);
+    
+const onSubmit = (data)=> { 
+    if ( data.services === '') {
+        console.log(data.services=isRadio)
+      } else{
+        console.log(isRadio);      
+      } 
 
-// const[selectradio,setSelectedradio] = useState();
-//     const handleChange=(e)=>{
-//         // setSelectedradio(target.type === 'radion' ? target.checked : target.value);
-//         const target = e.target;
-//         const value = target.type === 'radio' ? target.checked : target.value;
-//         const name = target.name;
-        
-//         setSelectedradio({
-//           [name]: value
-//         });
-//     }
-   
-
-const onSubmit = (data)=> {   
-    console.log(data)
-    axios.post(`https://rdigs-api.herokuapp.com/contact`, data,isRadio)
-      .then(res => {
+    const formconData = new FormData();
+    formconData.append("name",data.name);
+    formconData.append("contact",data.contact);
+    formconData.append("email",data.email);
+    formconData.append("company_name",data.company_name);
+    formconData.append("services",data.services);
+    formconData.append("message",data.message);
+    console.log(data);
+    axios.post(`https://rdigs-api.herokuapp.com/contact`, data).then(res => {
         console.log(res);
         console.log(res.data);
-        reset(); 
-        console.log(isRadio);
       })
+      Swal.fire({
+        position: 'centerd',
+        icon: 'success',
+        title: 'Your Data has been saved',
+        showConfirmButton: false,
+        timer: 2000
+      })
+    reset();
   }
+ 
+
 
 //Form Radio button logic  
      const [radiotext, showRadiotext] = useState(false); 
@@ -68,6 +75,7 @@ const onSubmit = (data)=> {
                                      type="text" 
                                      name="name"
                                      {...register("name")}
+                                     required
                                      />
                                 </div>
                                 <div class="form-group">
@@ -75,13 +83,15 @@ const onSubmit = (data)=> {
                                          type="number" 
                                          name="contact"
                                          {...register("contact")}
+                                         required
                                     />
                                 </div>
                                 <div class="form-group">
                                     <input class="form-controlall" aria-describedby="emailHelp" placeholder="Enter Email" style={{width:'90%'}}
-                                          type="email" 
-                                          name="email" 
-                                         {...register("email")}                                         
+                                        type="email" 
+                                        name="email" 
+                                        {...register("email")} 
+                                        required                                        
                                     />
                                 </div>
                                 <div class="form-group">
@@ -89,66 +99,74 @@ const onSubmit = (data)=> {
                                          type="text" 
                                          name="company_name" 
                                         {...register("company_name")}
+                                         required
                                      />
                                 </div>
                                 <label className="conwhattxt">What Would You like to inquire about?</label><br />
                                 <div className=" row conradiodiv" value={isRadio} onChange={(event) => handleRadioChange(event)} style={{textAlign:'justify',paddingLeft:'4%'}}>
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" value="Demand Generation"  onClick={() => showRadiotext(false)}
-                                           name="services" 
-                                           {...register("services")} 
-                                        //    onChange={handleChange}
-                                        //    checked={setSelectedradio === "Demand Generation"}
+                                        <input className="conradiofirst" onClick={() => showRadiotext(false)}
+                                        id="age1"                                                                    
+                                        type="radio"
+                                        name="services"
+                                        value="Demand Generation" 
+                                        {...register("services")} 
+                                        required
                                         />
                                         <label for="age1"  style={{marginLeft:'5px'}}>Demand Generation</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" value="Sales Empowerment" onClick={() => showRadiotext(false)}
-                                           name="services" 
-                                           {...register("services")} 
-                                        //    onChange={handleChange}
-                                        //    checked={setSelectedradio === "Sales Empowerment"}
+                                        <input className="conradiofirst" onClick={() => showRadiotext(false)}
+                                        id="age2"
+                                        type="radio"
+                                        name="services"
+                                        value="Sales Empowerment"  
+                                        {...register("services")} 
+                                        required
                                            />
                                         <label className="contactsale" for="age1">Sales Empowerment</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
-                                        <input className="conradiofirst" type="radio" id="age1" value="Data Enrichment" onClick={() => showRadiotext(false)}
+                                        <input className="conradiofirst" onClick={() => showRadiotext(false)}
+                                        id="age3"                                      
+                                        type="radio" 
                                         name="services" 
+                                        value="Data Enrichment"
                                         {...register("services")} 
-                                        // onChange={handleChange}
-                                        // checked={setSelectedradio === "Data Enrichment"}
+                                        required
                                         />
-                                        <label for="age1" style={{marginLeft:'5px'}} >Data Enrichment</label>
+                                        <label for="age1" style={{marginLeft:'5px'}}>Data Enrichment</label>
                                     </div>
                                     <div className="col-sm-3 conradiodiv">
                                         <input className="conradiofirst" type="radio" id="age1" value="Other" onClick={() => showRadiotext(true)}
-                                         name="services"
-                                        {...register("services")}
-                                        // onChange={handleChange} 
-                                        // checked={setSelectedradio === "Other"}
-                                        />
+                                         id="age3"                                      
+                                         type="radio" 
+                                         name="services" 
+                                         value="other"
+                                         {...register("services")}
+                                         required
+                                         />
                                         <label for="age1" style={{marginLeft:'5px'}} >Other</label>
                                     </div>
-                                </div>
-                              
-                                {/* others Radio button functinality */}
+                                </div>                            
+                                {/* others Radio button functionality */}
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="text" placeholder="Service Name" 
                                  style={{ display: radiotext ? "block" : "none"}} 
-                                 name="services"
-                                 {...register("services")} 
+                                 name="services" 
+                                 {...register("services")}
+                                 required
                                  />
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="textarea" placeholder="Your Message"
                                   name="message" 
                                   {...register("message")} 
+                                  required
                                 />
                                 <div className="row conbtnrow">
                                 {/* fun={() => handleSubmit()}  */}
                                     <div className="col btngetintouch">
                                         <Button classNames="allbtn-primary glow-on-hover text-light" text="GET IN TOUCH" />
                                     </div>
-                                    <div className="col conformcleardiv">
-                                        <button className="contactclear22">Clear</button>
-                                    </div>
+                                   
                                 </div>
                                  <Recaptcha 
                                      badge="bottomleft"
@@ -160,7 +178,7 @@ const onSubmit = (data)=> {
                                      sitekey="6Lct3zkdAAAAAO0KFEeZ9r7wmIfATa-qpOCp4F-T"
                                      Secret Key="6Lct3zkdAAAAAGQ4KCB3UKQ9qqOg7VvYPyLqkfbL"    
                                  />
-                            </form>                   
+                            </form>                  
                         </div> 
                     </div>
                 </div>

@@ -10,6 +10,11 @@
     background-size: cover;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
+/* css for save data alert model */
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+        overflow: auto;
+        padding-right: 0px!important;
+    }
 .contformcol{
     background-color: white;
     margin-top: 4%;
@@ -27,9 +32,10 @@
     height: 47px;
     color:#30a6e9 ;
     background-color: transparent;
-    border-color: #30a6e9;
+    border-color: #30a6e9!important;
     border-radius: 40px;
 }
+.contactclear22:focus{border-color: #30a6e9!important;outline: none;}
 .conradiodiv{display: flex;}
 .conwhattxt{
     color: black;
@@ -73,7 +79,7 @@
     padding-bottom: 10px;
 }
 .contactsale{padding-left: 10%;}
-.conbtnrow{margin: 3% 12%;}
+.conbtnrow{margin: 3%;}
 .radiotextarea{
     outline: none;
         margin: 2% 5%;
@@ -111,6 +117,8 @@
     .conwhattxt {  margin-right: 51%;}
     .contactfirst-sec { height: 665px;}
 }
+@media only screen and (min-width: 991px) and (max-width: 1197px) { .conwhattxt { margin-right: 32%;}}
+
 @media only screen and (min-width: 990px) and (max-width:1920px ) {
 .contactfirst-sec { height: 670px;}
 }

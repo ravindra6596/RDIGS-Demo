@@ -7,7 +7,7 @@
   opacity: 1;
   transition: 0.3s;
 }
-.roadbox:hover{opacity: 0.6;}
+.roadbox:hover{ background-color: #30a6e9!important;}
 .roadverticalline {
     border-left: 2px solid #30a6e9;
     height: 147px;
@@ -45,6 +45,7 @@
   margin-top: 4%;
   background-color: white;
   border-radius: 0.3rem!important;
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 .roadmaptxtbox:hover{
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
