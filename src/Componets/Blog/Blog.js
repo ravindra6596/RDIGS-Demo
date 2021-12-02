@@ -134,7 +134,6 @@ const Blog = (props) => {
      </section>     
     </>
   );   
-};
-// 
+}; 
 export default Blog;
    
