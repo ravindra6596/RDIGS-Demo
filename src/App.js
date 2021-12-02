@@ -73,7 +73,7 @@ const Blogpage =React.lazy(()=>import('./Componets/Blogpage/Blogpage'));
               <Route path='/gallary' exact={true} component={Gallary}/>
               <Route path='/companyprofile' exact={true} component={CompanyProfile1}/>
               <Route path='/blog' exact={true} component={Blog}/>
-              <Route path='/jobdescription' exact={true} component={JobDescription}/>
+              <Route path='/jobdescription/:jobid' exact={true} component={JobDescription} />
               <Route path='/privacypolicy' exact={true} component={Privacypolicy}/>
               <Route path='/termscondition' exact={true} component={Termscondition}/>
               <Route path='/unsubscribe' exact={true} component={Unsubscribe}/>

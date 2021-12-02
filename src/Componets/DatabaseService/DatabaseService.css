@@ -1,22 +1,19 @@
-.dbservice-banner{
-    height: 70vh;
-    background-image: linear-gradient(
-        rgb(0 0 0 / 60%),
-        rgb(0 0 0 / 68%)
-      ),
-      url('../../img/dbserviceban.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.dbservice-banner {
+  height: 70vh;
+  background-image: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 68%)),
+    url("../../img/dbserviceban.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.dbservice-boximg{
-    width: 100%;
-    vertical-align: middle;
-    border-style: none;
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
+.dbservice-boximg {
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
 /* animation for image services */
@@ -30,7 +27,8 @@
   border-bottom-left-radius: 10px;
   transition: all 1s;
 }
-.serviceLead:after, .serviceLead:before {
+.serviceLead:after,
+.serviceLead:before {
   content: " ";
   width: 10px;
   height: 10px;
@@ -54,8 +52,53 @@
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-.serviceLead:hover:before, .serviceLead:hover:after {
+.serviceLead:hover:before,
+.serviceLead:hover:after {
   width: 100%;
   height: 100%;
 }
-
+/* ======================================= */
+.service-2 section {
+  margin-bottom: 20px;
+}
+.title-database {
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.img-database {
+  height: 700px;
+}
+.border-database {
+  height: 2px;
+  margin: 20px auto 20px;
+  position: relative;
+  width: 80px;
+  background: #28abe3;
+}
+.service-2 .service-item-database {
+  border: 1px solid #eee;
+  margin-bottom: 30px;
+  padding: 50px 20px;
+  transition: all 0.3s ease 0s;
+}
+.service-2 .service-item-database i {
+  font-size: 30px;
+  display: inline-block;
+  background: #28abe3 none repeat scroll 0 0;
+  border-radius: 30px;
+  box-shadow: 0 5px 6px 0 rgb(0 0 0 / 10%);
+  color: #fff;
+  height: 55px;
+  line-height: 55px;
+  margin-bottom: 20px;
+  width: 55px;
+  transition: all 0.3s ease 0s;
+}
+.service-2 .service-item-database:hover {
+  box-shadow: 0 5px 65px 0 rgb(0 0 0 / 15%);
+  -webkit-box-shadow: 0 5px 65px 0 rgb(0 0 0 / 15%);
+}
+.service-2 .service-item-database:hover i {
+  background: #fff;
+  color: #28abe3;
+}
