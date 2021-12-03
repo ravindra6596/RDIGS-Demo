@@ -234,7 +234,6 @@
     background-position: 0-100%;
 }
 /* demand form */
-
 .demand-form-img{
     width:100%;
     height: 100%;
@@ -274,7 +273,14 @@ input::-webkit-inner-spin-button {
 input[type=number]{
     -moz-appearance: textfield;
 }
-
+.demand-goal:hover {
+    box-shadow: 0 5px 65px 0 rgb(0 0 0 / 15%);
+    -webkit-box-shadow: 0 5px 65px 0 rgb(0 0 0 / 15%);
+  }
+  .demand-iconpara:hover {
+    box-shadow: 0 5px 65px 0 rgb(0 0 0 / 15%);
+    -webkit-box-shadow: 0 5px 65px 0 rgb(0 0 0 / 15%);
+  }
 /* ====================media for reach customer button============= */
 @media only screen and (min-width:575px) and (max-width:768px){
 .Drive-Excess-Conversion{

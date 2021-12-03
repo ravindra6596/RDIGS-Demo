@@ -102,3 +102,11 @@
   background: #fff;
   color: #28abe3;
 }
+/* =====================new section feature============================== */
+.content-database{
+  margin-bottom: 50px;
+}
+.feature-item .icon{
+  width:50px;
+  height:50px;
+}
