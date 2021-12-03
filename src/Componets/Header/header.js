@@ -44,7 +44,7 @@ const Header = () => {
           className="mainnav"
           collapseOnSelect
           expand="lg"
-          style={{ backgroundColor: navstage ? "lightblue" : "transparent" }}
+          style={{ backgroundColor: navstage ? "#82cce0" : "transparent" }}
           expanded={expanded}>
           <Container>
             <Navbar.Brand style={{textAlign:'justify'}}>

@@ -25,9 +25,9 @@ input:focus { outline: none !important;}
     font-size: 11px;
     color: #545151f2;
   }
- .homemodalbody{ box-shadow: 5px 10px 8px 10px #888888;}
+ .homemodalbody{ box-shadow: 2px 2px 8px 10px #a8cdd9;}
 .homemodalclosebtn{
-  color: lightblue!important;
+  color: #30a6e9!important;
   margin-left: 94%!important;
   font-size: 20px;
   font-weight: 700;

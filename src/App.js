@@ -12,9 +12,10 @@ AOS.init({
  duration: 1500
 });
 //when we refresh the page on window refresh icon will open on top functionality
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
+// window.onbeforeunload = function () {
+//   window.scrollTo(0, 0);
+// }
+
 function App() {
 const Homepage = React.lazy(() => import('./Componets/Homepage/homepage'));
 const Contact = React.lazy(() => import('./Componets/Contact/contact'));
