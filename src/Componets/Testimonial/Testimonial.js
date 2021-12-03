@@ -90,13 +90,13 @@ const Testimonial = () => {
                               {isReadmorecardtext ? "..." : " "}
                           </span> */}
                           </p>
-                          <p className="testproname">{data.carduser}</p>
                           <div className="d-flex align-items-center">
                             <img className="testuser-img" src={data.cardimg} alt="user-img"></img>
                             <div className="testproinfodiv pl-3">
                               <span className="testprodesi">{data.userdesi}</span>
                             </div>
-                          </div>  
+                          </div> 
+                          <p className="testproname">{data.carduser}</p> 
                         </div>
                       </div>
                     </div>

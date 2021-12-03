@@ -4,7 +4,7 @@ import React from "react";
 const Banner1 = () => {
   return (
     <section className="slider-section">
-      <div id="carousel" className="carousel slide" data-ride="carousel">
+      <div id="carousel" className="carousel slide" data-ride="carousel" dots={true} infinite={true} speed={1000} slidesToScroll={1} arrows={true} slidesToShow={1} autoplay={true}>
         <ol className="carousel-indicators">
           <li data-target="#carousel" data-slide-href="0" className="active"></li>
           <li data-target="#carousel" data-slide-href="1"></li>

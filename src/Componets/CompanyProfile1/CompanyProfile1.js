@@ -53,7 +53,7 @@ const CompanyProfile1 = () => {
     {
       slidimg: companypro1,
       h3name: "Roland D’Costa",
-      h4sub: "Ceo &amp; Founder",
+      h4sub: "Ceo & Founder",
       h4sub1: "Captain Of The Ship",
       slidep:
         "Roland D’Costa, a stellar entrepreneur and a result driven professional, having an incredible track record of building companies and growing pipeline and ultimately revenue. Roland provides strategic leadership and management direction to RDIGS, he is young, dynamic, and an oracle for all technical solutions, and believes in investing his energy in continuous growth for the customer businesses and beneficiaries.",

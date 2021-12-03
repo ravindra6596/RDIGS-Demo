@@ -49,6 +49,12 @@ const Companyslider = () => {
           slidesToShow: 3,
           slidesToScroll: 1
         }
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 1
+        }
       }
 
     ]

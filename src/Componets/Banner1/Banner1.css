@@ -4,11 +4,18 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    -webkit-animation:slide 3s ease-in-out infinite;
-    -moz-animation:slide 3s ease-in-out infinite;
-    -ms-animation:slide 3s ease-in-out infinite;
-    -o-animation:slide 3s ease-in-out infinite;
-    animation:slide 3s ease-in-out infinite;
+    -webkit-animation:slide 1s ease-in-out infinite;
+    -moz-animation:slide 1s ease-in-out infinite;
+    -ms-animation:slide 1s ease-in-out infinite;
+    -o-animation:slide 1s ease-in-out infinite;
+    animation:slide 1s ease-in-out infinite;
+  }
+  .carousel-indicators{
+    -webkit-animation:slide 1s ease-in-out infinite;
+    -moz-animation:slide 1s ease-in-out infinite;
+    -ms-animation:slide 1s ease-in-out infinite;
+    -o-animation:slide 1s ease-in-out infinite;
+    animation:slide 1s ease-in-out infinite;
   }
   .carousel-caption h3{
     color:black;

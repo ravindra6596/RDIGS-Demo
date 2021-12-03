@@ -43,13 +43,13 @@ const Blog = (props) => {
                 </div>
       </section>  */}
    
-{/* ===================================================== */}
-{/* <div className="container-fluid">
-  <div className="row">
-      <video className="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src={bg} type="video/mp4" /></video>
-    </div>
-</div> */}
-<Banner1/>
+      {/* ===================================================== */}
+      {/* <div className="container-fluid">
+        <div className="row">
+            <video className="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src={bg} type="video/mp4" /></video>
+          </div>
+      </div> */}
+      <Banner1/>
       {/* =======================section about blog==================== */}
     <section id="about" className="about">
       <div className="container" data-aos="fade-up">
