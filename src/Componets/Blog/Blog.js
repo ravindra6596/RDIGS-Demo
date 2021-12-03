@@ -27,7 +27,7 @@ const Blog = (props) => {
   }
   return (
     <>
-    <div className="nav-contaniner"/>
+      <div className="nav-contaniner" />
       {/* <section className="Blogsection">
                 <div className="container">
                     <div className="row">
@@ -38,21 +38,22 @@ const Blog = (props) => {
                     </div>
                 </div>
       </section>  */}
-   
+
       {/* ===================================================== */}
       {/* <div className="container-fluid">
         <div className="row">
             <video className="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src={bg} type="video/mp4" /></video>
           </div>
       </div> */}
-      <Banner1/>
+      <Banner1 />
       {/* =======================section about blog==================== */}
-    <section id="about" className="about">
-      <div className="container" data-aos="fade-up">
-        <div className="row">
-          <div className="col-lg-5 col-md-6">
-            <div className="about-img" data-aos="fade-right" data-aos-delay="100">
-              <img src={aboutimg} alt=""/>
+      <section id="about" className="about">
+        <div className="container" data-aos="fade-up">
+          <div className="row">
+            <div className="col-lg-5 col-md-6">
+              <div className="about-img" data-aos="fade-right" data-aos-delay="100">
+                <img src={aboutimg} alt="" />
+              </div>
             </div>
             <div className="col-lg-7 col-md-6">
               <div className="about-content" data-aos="fade-left" data-aos-delay="100">
@@ -128,6 +129,6 @@ const Blog = (props) => {
         </div>
       </section>
     </>
-  );   
-}; 
+  );
+};
 export default Blog;
