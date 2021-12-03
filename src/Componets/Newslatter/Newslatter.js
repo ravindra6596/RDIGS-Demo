@@ -5,11 +5,12 @@ import { Modal, ModalBody } from 'reactstrap';
 import Heading from '../Heading/Heading';
 import './Newslatter.css';
 import Button from "../ButtonGroup/Button/Button";
-import newscardimage1 from '../../img/Newslatter/newscardimg1.jpg';
-import newscardimage4 from '../../img/Newslatter/newscardimg2.jpg';
-import newscardimage5 from '../../img/Newslatter/newscardsimg4.jpg';
-import newsbanboximg1 from '../../img/Newslatter/newsbanboximg.jpg';
+import newscardimage1 from '../../img/Newslatter/image3.jpg';
+import newscardimage4 from '../../img/Newslatter/gallery4.png';
+import newscardimage5 from '../../img/Newslatter/newscardimg3.jpg';
+import newsbanboximg1 from '../../img/Newslatter/image3.jpg';
 import newsgalimg1 from '../../img/Newslatter/newsgalimg1.jpg';
+
 import { Link } from "react-router-dom";
 const Newslatter =()=>{
   const [modal, setModal] = useState(false);
@@ -113,25 +114,16 @@ const onSubmit = (data)=> {
         <ModalBody className="homemodalbody">
           <span className="homemodalclosebtn" onClick={() => setModal(false)}><i class="fa fa-times-circle" aria-hidden="true"></i></span>
               <Heading h1Class="clientheadwe" spanClass="forRessubhead" title="To Get Latest News"/>
-                <form onSubmit={handleSubmit(onSubmit)}>
-                {/* <div class="form-group">
-                        <input className="newslattinputs" autocomplete="off" placeholder="Your Name" type="text" name="name"/>
-                    </div> */}
-                   
+                <form onSubmit={handleSubmit(onSubmit)}>                  
                     <div class="form-group">
-                        <input type="email" id="email" {...register("email")} className="newslattinputs" autocomplete="off" placeholder="Your Email" />
+                        <input type="email" id="email" {...register("email")} className="newslattinputs" autocomplete="off" placeholder="Your Email" required/>
                     </div>
-                    {/* <div class="form-group">
-                        <input className="newslattinputs"autocomplete="off" placeholder="Your Number" type="number" name="number"/>
-                    </div> */}
-              
                   <div style={{ display: 'flex'}}>
                     <input type="checkbox" checked style={{marginTop:'1%',paddingLeft:'2px'}}/>
                     <p style={{paddingLeft:'2%'}}>I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our 
                     <Link to="/privacypolicy" onClick={scrollgoToplinknews}>Privacy Policy</Link> And <Link to="/termscondition" onClick={scrollgoToplinknews}>Terms and Codition.</Link></p>
                   </div>
-                  <div style={{ textAlign: 'center'}}><Button  classNames="allbtn-primary glow-on-hover text-light" type="submit" text="Submit"/></div>
-                  
+                  <div style={{ textAlign: 'center'}}><Button  classNames="allbtn-primary glow-on-hover text-light" type="submit" text="Submit"/></div>                  
                 </form>
         </ModalBody>
       </Modal>
@@ -148,15 +140,17 @@ const onSubmit = (data)=> {
             </section>
           {/* <!-- ======= Newslatter Section 2 ======= --> */}
             <section>
-              <div className="container newsbanbox" data-aos="fade-up">
+              <div className="container newsbanbox">
                 <div className="row">
-                  <div className="col-lg-6 col-md-6 col-sm-6">
+                  <div className="col-lg-6 col-md-6 col-sm-6" data-aos="fade-left">
                     <img className="img-fluid newssec2img" src={newsbanboximg1} alt=""/>
                   </div>
-                  <div className="col-lg-6 col-md-6 col-sm-6 newssec2col2" >
+                  <div className="col-lg-6 col-md-6 col-sm-6 newssec2col2"data-aos="fade-right">
                     <h2 style={{color:'#30a6e9'}}>Beer,Biryani,tech Bytes:Snowflake</h2>
                     <span style={{color:'#7A7A7A'}}>2:00-3:30 IST</span>
                     <p style={{paddingRight:'10% '}}>Looking to gain new user skills, share best practices, and network with fellow Snowflake and Big Data enthusiasts? Join our upcoming Beer, Biryani, and [tech] Bytes Snowflake series as we dive into Snowflake – a cloud data warehousing company revolutionizing the way businesses see and use their data.</p>
+                    <p style={{paddingRight:'10% '}}>Looking to gain new user skills, share best practices, and network with fellow Snowflake and Big Data enthusiasts? Join our upcoming Beer, Biryani, and [tech] Bytes Snowflake series as we dive into Snowflake – a cloud data warehousing company revolutionizing the way businesses see and use their data.</p>
+
                   </div>
                 </div>
               </div>

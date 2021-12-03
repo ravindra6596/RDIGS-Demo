@@ -35,13 +35,6 @@ text-align: end;}
 }
 .close-btn:hover{outline: none;}
 .close-btn:focus{ outline: none;}
-/* .download-button{
-    margin-top: 60px;
-    border-radius: 25px;
-    color:white;
-    border: 2px solid black;
-    background-color:#30a6e9;
-} */
 .footer-cont{
     background-color: black;
 }
@@ -216,7 +209,8 @@ input::-webkit-inner-spin-button {
     outline: none;
 }
 .EWF__subscribe[type=submit]{
-        background-color: #219ee5;
+    background-image:linear-gradient( 
+        90deg, #0072ff 0%, #00d4ff 100%);    
         border:none!important;
         width: 37%;
         padding: 6px 2px;
@@ -407,10 +401,11 @@ font-size: 18px;}
     cursor: pointer;
 }
 .back-to-top {
+    background: linear-gradient( 
+90deg, #0072ff 0%, #00d4ff 100%);
     position: fixed;
     right: 6px;
     bottom: 29px;
-    background: #0492d4;;
     width: 40px;
     height: 40px;
     border: 1px solid #30a6e9;

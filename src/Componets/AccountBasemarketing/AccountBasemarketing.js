@@ -27,7 +27,7 @@ const AccountBasemarketing =()=>{
                             <p style={{textAlign:'justify'}}>ABM perfectly aligns marketing and sales department to derive greatest benefits and revenues. ABM targets accounts and nurture them based on content, relevant communications and contextual marketing.</p>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 setorder-forcols2"data-aos="zoom-in-up">
-                            <img className="img-fluid" src={callbackimg1}/>
+                            <img className="img-fluid" alt="callback-img" src={callbackimg1}/>
                         </div>
                     </div>
                 </div>

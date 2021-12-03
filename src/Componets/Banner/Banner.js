@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import './Banner.css';
 import Button from '../ButtonGroup/Button/Button';
 import banimg from '../../img/Banner/hero-img.png';
-import modalimg from '../../img/modalhomeimg.png';
+import modalimg from '../../img/homemodelnew1.jpg';
 import Heading from '../Heading/Heading';
 
 const Banner = () => {
@@ -29,13 +29,14 @@ const scrollgoToplink = () => {
               <div className="col-lg-7 col-md-7 col-sm-7 col-xs-7">
                 <h1 style={{color:'#6cbeee'}}>To Get Latest Updates</h1>
                 <form>
-                  <input placeholder="Enter E-Mail Here " className="homemodalinput" />
-                </form>
+                  <input placeholder="Enter E-Mail Here " className="homemodalinput" required/>
                 <div style={{ display:'flex',marginTop:'2%'}}>
                   <input type="checkbox" checked style={{marginTop:'2%'}}/>
                   <p className="homemodalAgree">I agree to receive marketing & promotional emails by RD Info Global Solutions.Check our <Link to="/privacypolicy" onClick={scrollgoToplink}>Privacy Policy</Link> And <Link to="/termscondition" onClick={scrollgoToplink}>Terms and Codition</Link></p>
                 </div>
                 <div style={{ textAlign: 'center' }}><Button classNames="allbtn-primary glow-on-hover text-light" text="Submit" /></div>
+                </form>
+
               </div>
             </div>
           </div>
@@ -49,8 +50,7 @@ const scrollgoToplink = () => {
               <div data-aos="zoom-out">
                 <Heading h1Class="aboutwherewe" spanClass="spansubhead1" title="Build Your Business With "/> 
                 <h1><marquee width="50%" direction="left" style={{ fontFamily: 'Orbitron'}} >RDIGS</marquee></h1>
-                <h2>We Use Reverse Demand Generation Funnel</h2>
-                <h5>After our research we adopted the Reverse Lead Generation Funnel, that increased our sales by 14.25% and we are able to move prospects through the sales cycle 23% faster. </h5>
+                <h5>We Use Reverse Demand Generation Funnel After our research we adopted the Reverse Lead Generation Funnel</h5>
                 <div class="text-center text-lg-start">
                   <Button classNames="allbtn-primary glow-on-hover text-light" text="KNOW MORE" fun={() => setModal(true)} />
                 </div>

@@ -1,4 +1,4 @@
-import React, { useState,useRef,useEffect,Component } from "react";
+import React, { useState,useRef,Component } from "react";
 import axios from "axios";
 import Swal from "sweetalert2"; 
 import { useForm } from "react-hook-form";
@@ -10,15 +10,14 @@ import unitedflag from "../../img/US.jpg";
 import Button from "../ButtonGroup/Button/Button";
 const Contact = () => {
  
-//Form POST API   
+//Form POST API coding  
 const { register, handleSubmit ,reset,setValue} = useForm(); 
 
 const [isRadio,setRadio] = useState("");
     function handleRadioChange(event) {
         setRadio(event.target.value);
     }
-    // console.log(isRadio);
-    
+    // console.log(isRadio);   
 const onSubmit = (data)=> { 
     if ( data.services === '') {
         console.log(data.services=isRadio)
@@ -48,8 +47,6 @@ const onSubmit = (data)=> {
     reset();
   }
  
-
-
 //Form Radio button logic  
      const [radiotext, showRadiotext] = useState(false); 
 // Google Captcha 
@@ -62,7 +59,7 @@ const onSubmit = (data)=> {
     return (
         <>
         <div className="nav-contaniner" />
-            <section className="contactfirst-sec">
+            <section className="contactfirst-sec" data-aos="zoom-in">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6">
@@ -111,7 +108,6 @@ const onSubmit = (data)=> {
                                         name="services"
                                         value="Demand Generation" 
                                         {...register("services")} 
-                                        required
                                         />
                                         <label for="age1"  style={{marginLeft:'5px'}}>Demand Generation</label>
                                     </div>
@@ -122,7 +118,6 @@ const onSubmit = (data)=> {
                                         name="services"
                                         value="Sales Empowerment"  
                                         {...register("services")} 
-                                        required
                                            />
                                         <label className="contactsale" for="age1">Sales Empowerment</label>
                                     </div>
@@ -132,8 +127,7 @@ const onSubmit = (data)=> {
                                         type="radio" 
                                         name="services" 
                                         value="Data Enrichment"
-                                        {...register("services")} 
-                                        required
+                                        {...register("services")}
                                         />
                                         <label for="age1" style={{marginLeft:'5px'}}>Data Enrichment</label>
                                     </div>
@@ -144,7 +138,6 @@ const onSubmit = (data)=> {
                                          name="services" 
                                          value="other"
                                          {...register("services")}
-                                         required
                                          />
                                         <label for="age1" style={{marginLeft:'5px'}} >Other</label>
                                     </div>
@@ -154,12 +147,10 @@ const onSubmit = (data)=> {
                                  style={{ display: radiotext ? "block" : "none"}} 
                                  name="services" 
                                  {...register("services")}
-                                 required
                                  />
                                 <input className="col-lg-12 col-md-12 radiotextarea" type="textarea" placeholder="Your Message"
                                   name="message" 
                                   {...register("message")} 
-                                  required
                                 />
                                 <div className="row conbtnrow">
                                 {/* fun={() => handleSubmit()}  */}

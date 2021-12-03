@@ -14,22 +14,21 @@ import companypro1 from "../../img/team/RolandDcosta.jpg";
 import companypro3 from "../../img/team/WilliamMathurai.jpg";
 import companypro2 from "../../img/team/AjayRawat.jpg";
 const CompanyProfile1 = () => {
-  const Swiper =
-    (".blog-slider",
-    {
-      spaceBetween: 30,
-      effect: "fade",
-      loop: true,
-      mousewheel: {
-        invert: false,
-      },
-      // autoHeight: true,
-      pagination: {
-        el: ".blog-slider__pagination",
-        clickable: true,
-      },
-    });
-  const userdata = [
+
+//blog slider/swipper functionality
+ const Swiper=('.blog-slider', {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mousewheel: {
+      invert: false,
+    },
+    pagination: {
+      el: '.blog-slider__pagination',
+      clickable: true,
+    }
+  })
+  const userdata=[
     {
       heading: "VISSION",
       vmpimg: ourvision,

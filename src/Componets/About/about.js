@@ -5,7 +5,7 @@ import React  from 'react';
 const about = () => {
   return (
     <>
-            <section className="aboutsec1" style={{marginTop:'2px'}}>
+            <section className="aboutsec1">
                 <div className="container" data-aos="fade-up">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6" data-aos="zoom-in-up">
