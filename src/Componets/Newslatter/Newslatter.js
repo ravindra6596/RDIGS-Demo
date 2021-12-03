@@ -10,6 +10,7 @@ import newscardimage4 from '../../img/Newslatter/gallery4.png';
 import newscardimage5 from '../../img/Newslatter/newscardimg3.jpg';
 import newsbanboximg1 from '../../img/Newslatter/image3.jpg';
 import newsgalimg1 from '../../img/Newslatter/newsgalimg1.jpg';
+
 import { Link } from "react-router-dom";
 const Newslatter =()=>{
   const [modal, setModal] = useState(false);
@@ -139,12 +140,12 @@ const onSubmit = (data)=> {
             </section>
           {/* <!-- ======= Newslatter Section 2 ======= --> */}
             <section>
-              <div className="container newsbanbox" data-aos="fade-up">
+              <div className="container newsbanbox">
                 <div className="row">
-                  <div className="col-lg-6 col-md-6 col-sm-6">
+                  <div className="col-lg-6 col-md-6 col-sm-6" data-aos="fade-left">
                     <img className="img-fluid newssec2img" src={newsbanboximg1} alt=""/>
                   </div>
-                  <div className="col-lg-6 col-md-6 col-sm-6 newssec2col2" >
+                  <div className="col-lg-6 col-md-6 col-sm-6 newssec2col2"data-aos="fade-right">
                     <h2 style={{color:'#30a6e9'}}>Beer,Biryani,tech Bytes:Snowflake</h2>
                     <span style={{color:'#7A7A7A'}}>2:00-3:30 IST</span>
                     <p style={{paddingRight:'10% '}}>Looking to gain new user skills, share best practices, and network with fellow Snowflake and Big Data enthusiasts? Join our upcoming Beer, Biryani, and [tech] Bytes Snowflake series as we dive into Snowflake – a cloud data warehousing company revolutionizing the way businesses see and use their data.</p>

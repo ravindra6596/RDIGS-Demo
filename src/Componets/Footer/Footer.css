@@ -209,7 +209,8 @@ input::-webkit-inner-spin-button {
     outline: none;
 }
 .EWF__subscribe[type=submit]{
-        background-color: #219ee5;
+    background-image:linear-gradient( 
+        90deg, #0072ff 0%, #00d4ff 100%);    
         border:none!important;
         width: 37%;
         padding: 6px 2px;

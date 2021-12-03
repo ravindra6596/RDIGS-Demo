@@ -18,6 +18,8 @@
 }
 .Cookiemodalclosebtn{
     float:right;
+    color: #30a6e9!important;
+    font-size: 15px;
 }
 .gdprcookie {
     color: #3e434d;
