@@ -401,10 +401,11 @@ font-size: 18px;}
     cursor: pointer;
 }
 .back-to-top {
+    background: linear-gradient( 
+90deg, #0072ff 0%, #00d4ff 100%);
     position: fixed;
     right: 6px;
     bottom: 29px;
-    background: #0492d4;;
     width: 40px;
     height: 40px;
     border: 1px solid #30a6e9;
