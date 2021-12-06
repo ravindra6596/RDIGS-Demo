@@ -1,12 +1,12 @@
 import './careers.css';
 import Heading from "../Heading/Heading";
 import CareerAccordian from "../Careers/CareerAccordian/careeraccordian";
-import career1 from "../../img/career/career-1.png";
-import career2 from "../../img/career/career-2.png";
-import career3 from "../../img/career/career-3.png";
-import career4 from "../../img/career/career-4.png";
-import career5 from "../../img/career/career-5.png";
-import career6 from "../../img/career/career-6.png";
+import career1 from "../../img/career/Diversified Work Culture (2).svg";
+import career2 from "../../img/career/Team of Hardworking Individuals (2).svg";
+import career3 from "../../img/career/Career Growth (2).svg";
+import career4 from "../../img/career/Learning Opportunity (2).svg";
+import career5 from "../../img/career/Promotion (2).svg";
+import career6 from "../../img/career/Fun Fiesta (2).svg";
 import CareerGallery from "./CareerGallery/CareerGallery";
 import CareerSlider from "./CareerSlider/CareerSlider";
 import React from 'react';

@@ -21,7 +21,7 @@
 .testprodesi{font-size: 12px;}
 .testimonial-card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,2);
-    padding:20px;
+    padding:1px 20px;
     background-color: white;
     margin: 50px 0px 30px 20px;
     border-radius: 5px;
@@ -29,6 +29,7 @@
     outline: none;
 }
 .testcardcol1 {
+    margin-top: 20px;
     outline:none !important;
     outline-width: 0 !important;
     box-shadow: none;
@@ -61,6 +62,7 @@
     font-size: 14px;
     color: grey;
     text-align: initial;
+    margin-bottom: 0px!important;
 }
 .item-i {
     background-color: #95adbe;
@@ -76,7 +78,7 @@
     margin: 10px 5px;
 }
 .testimonial-heading span{color:#30a6e9;}
-.card-top{margin-top: -200px;}
+.card-top{margin-top: -200px;margin-bottom: 10px;}
 .card-leftright{margin-bottom: 50px;}
  .text{
     width:250px;

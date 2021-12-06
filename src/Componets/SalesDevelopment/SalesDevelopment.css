@@ -102,7 +102,6 @@
 .serviceLead {
     cursor: pointer;
     position: relative;
-    padding: 10px 20px;
     background: white;
     font-size: 28px;
     border-top-right-radius: 10px;
@@ -120,8 +119,8 @@
 .serviceLead:after {
     top: -1px;
     left: -1px;
-    border-top: 5px solid #3085a3;
-    border-left: 5px solid #3085a3;
+    border-top: 5px solid #00a3fe;
+    border-left: 5px solid #00a3fe;
 }
 .serviceLead:before {
     bottom: -1px;

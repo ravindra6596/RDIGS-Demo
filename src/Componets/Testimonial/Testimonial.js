@@ -79,12 +79,12 @@ const Testimonial = () => {
                 <div className="col testcardcol1">
                   <div className="testimonial-card">
                     <div className="testitem" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" >
-                      <div className="testimony-wrap py-2">
+                      <div className="testimony-wrap">
                         <div className="icon d-flex align-items-center justify-content-center  item-i">
                           <i className="fa fa-quote-left" />
                         </div>
                         <div className="text">
-                          <p className="testcardtxt mb-4">
+                          <p className="testcardtxt">
                               {isReadmorecardtext ? data.cardtext.slice(0,300):data.cardtext} 
                           {/* <span onClick={toggleHeadingreadmore} className="read-or-hide">
                               {isReadmorecardtext ? "..." : " "}
