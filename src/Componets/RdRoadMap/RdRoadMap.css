@@ -8,6 +8,7 @@
   transition: 0.3s;
 }
 .roadbox:hover{ background-color: #30a6e9!important;}
+
 .roadverticalline {
     border-left: 2px solid #30a6e9;
     height: 147px;

@@ -44,7 +44,7 @@ const Servicess =()=>{
             <div className="row" data-aos="fade-up" data-aos-delay="200" >
             {               
                 data.map((user, index) => (
-                <div className="col-lg-4 col-md-4 col-sm-4 service-col-img" data-aos="zoom-in-down" style={{marginTop:'3%'}}>
+                <div className="col-lg-4 col-md-4 col-sm-4 service-col-img" data-aos="zoom-in-down" style={{marginTop:'3%' ,marginBottom:'3%'}}>
                     <Link to={user.serviceLinks} onClick={scrollgoTop}>
                        <div className="flip-card">
                         <div className="flip-card-inner">

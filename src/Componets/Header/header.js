@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <>
       {/* Navbar coding */}
-      {/* <div className="try"></div> */}
+     <div className="try"></div>
       <section className="fixed-top">
         <Navbar
           className="mainnav"

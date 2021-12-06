@@ -32,15 +32,14 @@ const DatabaseService = () => {
   ];
   return (
     <>
-      <div className="nav-contaniner" />
-      
+      <div className="nav-contaniner" /> 
       <section className="dbservice-banner">
         <div className="container">
           <div className="row">
             <div className="col-lg-12" style={{ marginTop: "10%" }}>
               <Heading h1Class="clientheadwe" title="Database Service" />
               <p style={{ color: "white" }} data-aos="fade-right">
-                Get Access To The Customized B2B List{" "}
+                Get Access To The Customized B2B List
               </p>
               <p style={{ color: "white" }} data-aos="fade-right">
                 We have a team of proficient who build a contact list that will
@@ -132,7 +131,7 @@ const DatabaseService = () => {
       </section>
       <section style={{ margin: "3% 0px" }}>
         <div className="container">
-          <div className="d-flex justify-content-database-center" data-aos="fade-down">
+          <div className="d-flex justify-content-center database-center" data-aos="fade-down">
             <Heading
               h1Class="clientheadwe"
               title="Our Database Services"
@@ -187,7 +186,7 @@ const DatabaseService = () => {
 			<div class="col-lg-4 align-self-center text-center text-lg-right">
 				<div class="feature-item">
 					<div class="icon">
-          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          <i class="fa fa-cogs" aria-hidden="true"></i>
 					</div>
 					<div class="content-database">
 						<h5>Beautiful Interface Design</h5>
@@ -195,8 +194,8 @@ const DatabaseService = () => {
 					</div>
 				</div>
 				<div class="feature-item">
-					<div class="icon">
-          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+					<div class="icon align-item-center">
+          <i class="fa fa-cogs" aria-hidden="true"></i>
 					</div>
 					<div class="content-database">
 						<h5>Unlimited Features</h5>
@@ -206,7 +205,7 @@ const DatabaseService = () => {
 			</div>
 			<div class="col-lg-4 text-center">
 				<div class="feature-item mb-0">
-					<div class="icon">
+					<div class="icon ">
           <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
 					</div>
 					<div class="content-database1">
@@ -230,7 +229,7 @@ const DatabaseService = () => {
 			<div class="col-lg-4 text-center text-lg-left align-self-center">
 				<div class="feature-item">
 					<div class="icon">
-          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          <i class="fa fa-cogs" aria-hidden="true"></i>
 					</div>
 					<div class="content-database">
 						<h5>Retina ready greaphics</h5>
@@ -239,7 +238,7 @@ const DatabaseService = () => {
 				</div>
 				<div class="feature-item">
 					<div class="icon">
-          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          <i class="fa fa-cogs" aria-hidden="true"></i>
 					</div>
 					<div class="content-database">
 						<h5>IOS & android version </h5>
